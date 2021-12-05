@@ -8,7 +8,34 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Heretic.InteractiveFiction" Version="0.1.0" />
+    <PackageReference Include="Heretic.InteractiveFiction" Version="0.1.5" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.0" />
+    <PackageReference Include="PowerArgs" Version="3.6.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\MetaData.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MetaData.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Descriptions.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Descriptions.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Resources\MetaData.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>MetaData.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\Descriptions.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Descriptions.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
 
 </Project>
