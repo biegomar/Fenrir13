@@ -25,6 +25,12 @@
         <value>(c) by Marc Biegota 2021</value>
     </data>
     <data name="DESCRIPTION" xml:space="preserve">
+        <value>Fenrir 13 - An Interactive Fiction</value>
+    </data>
+    <data name="VERSION" xml:space="preserve">
+        <value>v0.1.0</value>
+    </data>
+    <data name="ASCII_TITLE" xml:space="preserve">
         <value> ________ _______   ________   ________  ___  ________           _____  ________     
 |\  _____\\  ___ \ |\   ___  \|\   __  \|\  \|\   __  \         / __  \|\_____  \    
 \ \  \__/\ \   __/|\ \  \\ \  \ \  \|\  \ \  \ \  \|\  \       |\/_|\  \|____|\ /_   
@@ -32,10 +38,6 @@
   \ \  \_| \ \  \_|\ \ \  \\ \  \ \  \\  \\ \  \ \  \\  \|          \ \  \  __\_\  \ 
    \ \__\   \ \_______\ \__\\ \__\ \__\\ _\\ \__\ \__\\ _\           \ \__\|\_______\
     \|__|    \|_______|\|__| \|__|\|__|\|__|\|__|\|__|\|__|           \|__|\|_______|
- 
-Fenrir 13 - An Interactive Fiction</value>
-    </data>
-    <data name="VERSION" xml:space="preserve">
-        <value>v0.1.0</value>
+</value>
     </data>
 </root>

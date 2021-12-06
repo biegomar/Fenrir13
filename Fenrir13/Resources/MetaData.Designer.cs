@@ -61,6 +61,20 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to  ________ _______   ________   ________  ___  ________           _____  ________     
+        ///|\  _____\\  ___ \ |\   ___  \|\   __  \|\  \|\   __  \         / __  \|\_____  \    
+        ///\ \  \__/\ \   __/|\ \  \\ \  \ \  \|\  \ \  \ \  \|\  \       |\/_|\  \|____|\ /_   
+        /// \ \   __\\ \  \_|/_\ \  \\ \  \ \   _  _\ \  \ \   _  _\      \|/ \ \  \    \|\  \  
+        ///  \ \  \_| \ \  \_|\ \ \  \\ \  \ \  \\  \\ \  \ \  \\  \|          \ \  \  __\_\  \ 
+        ///   \ \__\   \ \_______\ \__\\ \__\ \__\\ _\\ \__\ \__\\ _\           \ \__\|\ [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string ASCII_TITLE {
+            get {
+                return ResourceManager.GetString("ASCII_TITLE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Marc Biegota.
         /// </summary>
         internal static string AUTHOR {
@@ -79,12 +93,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to  ________ _______   ________   ________  ___  ________           _____  ________     
-        ///|\  _____\\  ___ \ |\   ___  \|\   __  \|\  \|\   __  \         / __  \|\_____  \    
-        ///\ \  \__/\ \   __/|\ \  \\ \  \ \  \|\  \ \  \ \  \|\  \       |\/_|\  \|____|\ /_   
-        /// \ \   __\\ \  \_|/_\ \  \\ \  \ \   _  _\ \  \ \   _  _\      \|/ \ \  \    \|\  \  
-        ///  \ \  \_| \ \  \_|\ \ \  \\ \  \ \  \\  \\ \  \ \  \\  \|          \ \  \  __\_\  \ 
-        ///   \ \__\   \ \_______\ \__\\ \__\ \__\\ _\\ \__\ \__\\ _\           \ \__\|\ [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to Fenrir 13 - An Interactive Fiction.
         /// </summary>
         internal static string DESCRIPTION {
             get {

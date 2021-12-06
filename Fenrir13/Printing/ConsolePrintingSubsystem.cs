@@ -289,6 +289,10 @@ internal class ConsolePrintingSubsystem : IPrintingSubsystem
 
     public bool Opening()
     {
+        if (!string.IsNullOrEmpty(MetaData.ASCII_TITLE))
+        {
+            Console.WriteLine(MetaData.ASCII_TITLE);
+        }
         var (version, productName) = GetMetaInfo();
         Console.WriteLine($@"{productName} - {version}");
         Console.WriteLine();
@@ -446,9 +450,13 @@ internal class ConsolePrintingSubsystem : IPrintingSubsystem
 
     public bool Credits()
     {
+        if (!string.IsNullOrEmpty(MetaData.ASCII_TITLE))
+        {
+            Console.WriteLine(MetaData.ASCII_TITLE);
+        }
         Console.WriteLine($"{MetaData.DESCRIPTION} - {MetaData.VERSION}");
         Console.WriteLine($"Written by {MetaData.AUTHOR}");
-        Console.WriteLine($"{MetaData.COPYRIGHT}");
+        Console.WriteLine(MetaData.COPYRIGHT);
 
         return true;
     }
