@@ -12,7 +12,8 @@ public class CryoChamberPrerequisites
         {
             Key = Keys.CRYOCHAMBER,
             Name = Locations.CRYOCHAMBER,
-            Description = Descriptions.CRYOCHAMBER
+            Description = Descriptions.CRYOCHAMBER,
+            FirstLookDescription = Descriptions.CRYOCHAMBER_FIRSTLOOK
         };
     }
 }

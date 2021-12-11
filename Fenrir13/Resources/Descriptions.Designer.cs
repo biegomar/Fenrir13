@@ -61,7 +61,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Du befindest Dich in Deiner Cryo-Kammer..
+        ///   Looks up a localized string similar to Du befindest Dich in Deinem persönlichen Raum des Schiffs. Er ist sehr funktional und spatanisch ausgestattet, wirkt dabei aber dennoch wohnlich. Der Cryo-Pod, in dem Du gerade noch gelegen hast, hat seine Kokon-Form, die dem Passagier während der langen Schlafphase einer Raumreise Schutz und Versorgung bietet, in eine offene Bettform gewandelt. Der Fußboden ist metallisch und nur vor Deinem Bett befindet sich ein kleiner Teppich. Du weißt aus der Ehfahrung, das der Fußboden angenehmt beheizt ist und magnet [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string CRYOCHAMBER {
             get {
@@ -70,8 +70,18 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Schwarz. Langsam fräst sich ein auf- und abschwellendes Geräusch durch Deine vernebelten Sinne. Erst scheinbar fern, kommt es pulsierend näher. Ein Licht erscheint in der Dunkelheit. Ganz zart und klein. Gleichermaßen näher kommend und subtil bedrohlich. Ein Tunnel? Ein Zug?
-        ///Plötzlich zerreist ein stechender Schmerz in Deinen Lungen Deine Illusion. Adrenalien schiesst durch Deinen Körper und holt Dich mit voller, unbarmherziger Härte zurück ins Bewußtsein. Du reisst Deine Augen auf und wirst zugleich von d [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to Normalerweise kann man das Sichtfenster zum Schutz verschließen, doch aktuell ist er nicht aktiviert und es dringt der blinkende rote Schein der Alarmbeleuchtung durch das Glas und taucht Dein ansonsten halbdunkles Zimmer in einen gespenstigen Schimmer.
+        ///Auch das Display blinkt rot und bedeutet Dir, alsbald einen Blick darauf zu werfen..
+        /// </summary>
+        internal static string CRYOCHAMBER_FIRSTLOOK {
+            get {
+                return ResourceManager.GetString("CRYOCHAMBER_FIRSTLOOK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Schwarz. Langsam fräst sich ein auf- und abschwellendes Geräusch durch Deine vernebelten Sinne. Erst scheinbar fern, kommt es pulsierend näher. Ein roter Schein erscheint in der Dunkelheit. Ganz klein und schwach. Gleichermaßen näher kommend und subtil bedrohlich. Ein Tunnel? Ein Zug?
+        ///Plötzlich zerreist ein stechender Schmerz in Deinen Lungen Deine Illusion. Adrenalien schiesst durch Deinen Körper und holt Dich mit voller, unbarmherziger Härte zurück ins Bewußtsein. Du reisst Deine Augen auf und wirst zugl [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string OPENING {
             get {
@@ -80,7 +90,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Du bist eine smarte und gut aussehende Person. Du hast einen Abschluss in Geologie und hast in Exogeologie promoviert. Deine Aufgabe ist im Wesentlichen die Beurteilung der Qualität und Reinheit der seltenen Metalle wie Gold, Platin, Iridium und Rhenium, die während der Expedition abgebaut werden..
+        ///   Looks up a localized string similar to Du bist eine smarte und gut aussehende Person. Du hast einen Abschluss in Geologie und in Exogeologie promoviert. Deine Aufgabe ist im Wesentlichen die Beurteilung der Qualität und Reinheit der seltenen Metalle wie Gold, Platin, Iridium und Rhenium, die während der Expedition abgebaut werden..
         /// </summary>
         internal static string PLAYER {
             get {
@@ -89,7 +99,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Als Du an Dir herunter schaust stellst Du fest, dass Du nackt bist. Das ist normal, da man in dem Cryo-Pod immer unbekleidet schläft..
+        ///   Looks up a localized string similar to Als Du an Dir herunter schaust stellst Du fest, dass Du nackt bist. Klar! Der Space-Suite würde die Schlaf im Cryo-Pod auch eher bedindern..
         /// </summary>
         internal static string PLAYER_FIRSTLOOK {
             get {
