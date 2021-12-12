@@ -61,7 +61,70 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Du befindest Dich in Deinem persönlichen Raum des Schiffs. Er ist sehr funktional und spatanisch ausgestattet, wirkt dabei aber dennoch wohnlich. Der Cryo-Pod, in dem Du gerade noch gelegen hast, hat seine Kokon-Form, die dem Passagier während der langen Schlafphase einer Raumreise Schutz und Versorgung bietet, in eine offene Bettform gewandelt. Der Fußboden ist metallisch und nur vor Deinem Bett befindet sich ein kleiner Teppich. Du weißt aus der Ehfahrung, das der Fußboden angenehmt beheizt ist und magnet [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to Ein einfacher Teppich. Er soll den Raum ein wenig wohnlicher machen. Ansonsten aber nichts besonderes..
+        /// </summary>
+        internal static string CARPET {
+            get {
+                return ResourceManager.GetString("CARPET", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Der Fußboden ist metallisch, fühlt sich angenehm warm an Deinen Füßen an und kann magnetisiert werden. Ansonsten halt ein normaler Fußboden..
+        /// </summary>
+        internal static string CHAMBER_FLOOR {
+            get {
+                return ResourceManager.GetString("CHAMBER_FLOOR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Die Wand ist ebenfalls metallisch, schmucklos und spartanisch..
+        /// </summary>
+        internal static string CHAMBER_WALL {
+            get {
+                return ResourceManager.GetString("CHAMBER_WALL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dieser Power-Riegel ist genau das Richtige, um nach dem auslaugenden Cryo-Schlaf wieder zu Kräften zu kommen..
+        /// </summary>
+        internal static string CHOCOLATEBAR {
+            get {
+                return ResourceManager.GetString("CHOCOLATEBAR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to So ausgepowert wie Du bist schlingst Du Dir gierig den Power-Riegel herunter. Dieses Wunderzeug erweckt Dich fast augenblicklich wieder zum Leben und Du spürst, wie Dein Körper die Energie förmlich aufsaugt. Jetzt bist Du fit für die Aufgaben, die vor Dir liegen..
+        /// </summary>
+        internal static string CHOCOLATEBAR_EATEN {
+            get {
+                return ResourceManager.GetString("CHOCOLATEBAR_EATEN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Genug Platz für alle Dinge, die man während einer Reise in die entlegensten Winkel der Galaxie so braucht - auch wenn man die meiste Zeit der Reise schläft..
+        /// </summary>
+        internal static string CLOSET {
+            get {
+                return ResourceManager.GetString("CLOSET", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Du öffnest die Schranktür und findest weitere Klamotten und ...einen Powerriegel mit Schokogeschmack..
+        /// </summary>
+        internal static string CLOSET_DOOR {
+            get {
+                return ResourceManager.GetString("CLOSET_DOOR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Du befindest Dich in Deinem persönlichen Raum des Schiffs. Er ist sehr funktional und spatanisch ausgestattet, wirkt dabei aber dennoch wohnlich. Der Cryo-Pod, in dem Du gerade noch gelegen hast, hat seine Kokon-Form, die dem Passagier während der langen Schlafphase einer Raumreise Schutz und Versorgung bietet, in eine offene Bettform gewandelt. Der Fußboden ist metallisch und nur vor Deinem Bett befindet sich ein kleiner Teppich. Du weißt aus der Ehrfahrung, das der Fußboden angenehmt beheizt ist und magne [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string CRYOCHAMBER {
             get {
@@ -71,11 +134,48 @@ namespace Fenrir13.Resources {
         
         /// <summary>
         ///   Looks up a localized string similar to Normalerweise kann man das Sichtfenster zum Schutz verschließen, doch aktuell ist er nicht aktiviert und es dringt der blinkende rote Schein der Alarmbeleuchtung durch das Glas und taucht Dein ansonsten halbdunkles Zimmer in einen gespenstigen Schimmer.
-        ///Auch das Display blinkt rot und bedeutet Dir, alsbald einen Blick darauf zu werfen..
+        ///Auch das Display blinkt rot und bedeutet Dir, alsbald einen Blick darauf zu werfen. Aber im Moment fühlst Du Dich noch zu schwach und ausgepowert, desorientiert und ausserdem bist Du nackt..
         /// </summary>
         internal static string CRYOCHAMBER_FIRSTLOOK {
             get {
                 return ResourceManager.GetString("CRYOCHAMBER_FIRSTLOOK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Du schaust auf Deinen Cryo-Pod, der sich aktuell in ein normales, gemütliches und sehr erholsam dreinschauendes Bett verwandelt hat. So wie es aussieht, wirst Du in der nächsten Zeit weder die eine, noch die andere Funktion benötigen..
+        /// </summary>
+        internal static string CRYOPOD {
+            get {
+                return ResourceManager.GetString("CRYOPOD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to In den Schubladen befinden sie eine Reihe von Kleidungsstücken und auch anderen Dinge, die Du gerade nicht wirklich benötigst..
+        /// </summary>
+        internal static string DRAWER {
+            get {
+                return ResourceManager.GetString("DRAWER", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dein Laptop ist ein Relikt aus der informationstechnischen Steinzeit. Auch zu Beginn der Reise war das schon so. Normalerweise arbeitet niemand mehr mit solchen Geräten, aber Du magst das irgendwie. Und, es ist Dein Eigenes!
+        ///Du schaust Dir die Maschine an und versuchst es anzuschalten. Nichts passiert! Scheinbar ist der Akku leer. Das ist komisch, da das Gerät die gesamte Zeit an der Stromversorgnung hing..
+        /// </summary>
+        internal static string LAPTOP {
+            get {
+                return ResourceManager.GetString("LAPTOP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Neuste Materialen sorgen dafür, dass sich der Stuhl perfekt an Deinem Körper ausrichtet und ihn in eine angenehme ergonomische Position bringt. Eine nahezu perfekte Klimaregulierung machen diesen Stuhl zu einem der bequemsten Plätze hier auf dem Schiff. .
+        /// </summary>
+        internal static string OFFICECHAIR {
+            get {
+                return ResourceManager.GetString("OFFICECHAIR", resourceCulture);
             }
         }
         
@@ -90,6 +190,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Du geht zu dem runden Fenster in Deiner Arbeitsecke und schaust hinaus ins All. Ein atemberaubender Blick offenbart sich Dir. Am Horizont steht ein Roter Zwerg und hat auf diese Entfernung ungefähr die Größe des Mondes in einer beschaulichen Vollmond-Sommernacht. Du bist zwar kein Astrophysiker, aber Du weißt, dass es sich bei dem Stern um Proxima Centauri handeln muss. Nachdem Eure Expedition in den Bruchstücken eines Mondes des Planten Proxima Centauri b erfolgreich Erze von seltenen Metallen einsammeln k [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string PIERHOLE {
+            get {
+                return ResourceManager.GetString("PIERHOLE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Du bist eine smarte und gut aussehende Person. Du hast einen Abschluss in Geologie und in Exogeologie promoviert. Deine Aufgabe ist im Wesentlichen die Beurteilung der Qualität und Reinheit der seltenen Metalle wie Gold, Platin, Iridium und Rhenium, die während der Expedition abgebaut werden..
         /// </summary>
         internal static string PLAYER {
@@ -99,11 +208,65 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Als Du an Dir herunter schaust stellst Du fest, dass Du nackt bist. Klar! Der Space-Suite würde die Schlaf im Cryo-Pod auch eher bedindern..
+        ///   Looks up a localized string similar to Als Du an Dir herunter schaust stellst Du fest, dass Du nackt bist. Um den Cryo-Schlaf nicht zu beeinträchtigen wird er ohne Kleidung benutzt..
         /// </summary>
         internal static string PLAYER_FIRSTLOOK {
             get {
                 return ResourceManager.GetString("PLAYER_FIRSTLOOK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nun, auf diesen durch Gummi lärmreduzierten Rollen kannst Du Dich mit Deinem Bürostuhl frei im Raum bewegen..
+        /// </summary>
+        internal static string RUBBER_ROLLS {
+            get {
+                return ResourceManager.GetString("RUBBER_ROLLS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Der Einteiler ist wie eine zweite Haut konzipiert. Er wärmt, kühlt, schützt und überwacht den Körper und seine Funktion. Damit das Schiff permanent in Kontakt zu dem Crew-Mitglied ist, muss der Anzug ständig getragen werden. Nur während des Cryo-Schlafs wird er ausgezogen..
+        /// </summary>
+        internal static string SPACE_SUITE {
+            get {
+                return ResourceManager.GetString("SPACE_SUITE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Du trägst Deinen Space-Overall..
+        /// </summary>
+        internal static string SPACE_SUITE_FIT {
+            get {
+                return ResourceManager.GetString("SPACE_SUITE_FIT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Du nimmst den Anzug vom Bügel und streifst ihn Dir über. Du spürst sofort, wie sich das Material Deinen Konturen anpasst und förmlich mit Dir verschmilzt. Ein leises Bestätigungspiepen ist zu hören und der Anzug sitzt perfekt!.
+        /// </summary>
+        internal static string SPACE_SUITE_TAKEN {
+            get {
+                return ResourceManager.GetString("SPACE_SUITE_TAKEN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ein typischer Kleiderständer der es ermöglicht, schnell Kleidungsstücke aufzuhängen und ebenso schnell wieder herunterzunehmen..
+        /// </summary>
+        internal static string WARDROBE {
+            get {
+                return ResourceManager.GetString("WARDROBE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dein Arbeitsbereich gliedert sich in eine Arbeitsplatte, die bei Bedarf auch eingeklappt werden kann, einigen Ablagefächern, die Du mit gewöhnlichen Schreibutensilien bestückt hast und einer Beleuchtung, die Dir ausreichend Licht für die Arbeit spendet. Auf der Arbeitsplatte steht Dein Laptop und vor der Arbeitsplatte ein entsprechender Bürostuhl..
+        /// </summary>
+        internal static string WORKBENCH {
+            get {
+                return ResourceManager.GetString("WORKBENCH", resourceCulture);
             }
         }
     }

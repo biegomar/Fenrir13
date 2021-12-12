@@ -24,4 +24,49 @@
     <data name="PLAYER" xml:space="preserve">
         <value>PLAYER</value>
     </data>
+    <data name="CRYOPOD" xml:space="preserve">
+        <value>CRYOPOD</value>
+    </data>
+    <data name="CHAMBER_FLOOR" xml:space="preserve">
+        <value>CHAMBER_FLOOR</value>
+    </data>
+    <data name="CARPET" xml:space="preserve">
+        <value>CARPET</value>
+    </data>
+    <data name="WORKBENCH" xml:space="preserve">
+        <value>WORKBENCH</value>
+    </data>
+    <data name="LAPTOP" xml:space="preserve">
+        <value>LAPTOP</value>
+    </data>
+    <data name="CHAMBER_WALL" xml:space="preserve">
+        <value>CHAMBER_WALL</value>
+    </data>
+    <data name="PIERHOLE" xml:space="preserve">
+        <value>PIERHOLE</value>
+    </data>
+    <data name="OFFICECHAIR" xml:space="preserve">
+        <value>OFFICECHAIR</value>
+    </data>
+    <data name="RUBBER_ROLLS" xml:space="preserve">
+        <value>RUBBER_ROLLS</value>
+    </data>
+    <data name="CLOSET" xml:space="preserve">
+        <value>CLOSET</value>
+    </data>
+    <data name="DRAWER" xml:space="preserve">
+        <value>DRAWER</value>
+    </data>
+    <data name="CLOSET_DOOR" xml:space="preserve">
+        <value>CLOSET_DOOR</value>
+    </data>
+    <data name="CHOCOLATEBAR" xml:space="preserve">
+        <value>CHOCOLATEBAR</value>
+    </data>
+    <data name="WARDROBE" xml:space="preserve">
+        <value>WARDROBE</value>
+    </data>
+    <data name="SPACE_SUITE" xml:space="preserve">
+        <value>SPACE_SUITE</value>
+    </data>
 </root>

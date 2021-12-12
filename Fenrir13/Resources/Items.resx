@@ -18,4 +18,49 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
+    <data name="CRYOPOD" xml:space="preserve">
+        <value>Cryopod|Cryo-Pod|Bett|Schlafplatz|Schlafkammer|Pod</value>
+    </data>
+    <data name="CHAMBER_FLOOR" xml:space="preserve">
+        <value>Fußboden|Fussboden|Boden</value>
+    </data>
+    <data name="CARPET" xml:space="preserve">
+        <value>Teppich|Läufer</value>
+    </data>
+    <data name="WORKBENCH" xml:space="preserve">
+        <value>Arbeitsbereich|Arbeitsplatz|Schreibtisch</value>
+    </data>
+    <data name="LAPTOP" xml:space="preserve">
+        <value>LAPTOP|Rechner|Computer</value>
+    </data>
+    <data name="CHAMBER_WALL" xml:space="preserve">
+        <value>Wand|Zimmerwand</value>
+    </data>
+    <data name="PIERHOLE" xml:space="preserve">
+        <value>Bullauge|Fenster|Weltraum|All</value>
+    </data>
+    <data name="OFFICECHAIR" xml:space="preserve">
+        <value>Bürostuhl|Arbeitsstuhl</value>
+    </data>
+    <data name="RUBBER_ROLLS" xml:space="preserve">
+        <value>Metallrollen|Rollen|Stuhlrollen|Gummi|Gummirollen</value>
+    </data>
+    <data name="CLOSET" xml:space="preserve">
+        <value>Schrank|Kleiderschrank</value>
+    </data>
+    <data name="DRAWER" xml:space="preserve">
+        <value>Schublade|Schubfach|Schubfächer</value>
+    </data>
+    <data name="CLOSET_DOOR" xml:space="preserve">
+        <value>Schranktür|Kleiderschranktür</value>
+    </data>
+    <data name="CHOCOLATEBAR" xml:space="preserve">
+        <value>Ein Power-Riegel|Power-Riegel|Powerriegel|Schokoladen-Riegel|Schokoladenriegel|Schoko-Riegel|Schokoriegel|Riegel</value>
+    </data>
+    <data name="WARDROBE" xml:space="preserve">
+        <value>Die Garderobe|Garderobe</value>
+    </data>
+    <data name="SPACE_SUITE" xml:space="preserve">
+        <value>Der Space-Overall|Space-Overall|Spaceoverall|Space-Suite|Spacesuite</value>
+    </data>
 </root>

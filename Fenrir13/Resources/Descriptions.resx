@@ -25,8 +25,8 @@ Du wirst Dich nie an die Prozedur gewöhnen, die Dich aus dem Cryo-Schlaf zurüc
 Aber etwas ist anders! Das auf- und abschwellende Geräusch ist nach wie vor da. Und es klingt nach einer typischen Alarm-Sirene. Du schiebst die Kontrolleinheit, die während des Aufwachprozesses Deine Augenbewegungen überwacht haben, zur Seite und setzt Dich in Deinem Cryo-Pod auf. Noch müde und geschwächt erkennst Du nun das Alarm-Blinken, dass Deinen gesamten Raum in rotes Licht taucht. Du mühst Dich aus dem Pod und stehst nun wackelig im Raum. Was genau ist wohl passiert? Und wo ist der Rest der Crew?</value>
     </data>
     <data name="CRYOCHAMBER" xml:space="preserve">
-        <value>Du befindest Dich in Deinem persönlichen Raum des Schiffs. Er ist sehr funktional und spatanisch ausgestattet, wirkt dabei aber dennoch wohnlich. Der Cryo-Pod, in dem Du gerade noch gelegen hast, hat seine Kokon-Form, die dem Passagier während der langen Schlafphase einer Raumreise Schutz und Versorgung bietet, in eine offene Bettform gewandelt. Der Fußboden ist metallisch und nur vor Deinem Bett befindet sich ein kleiner Teppich. Du weißt aus der Ehfahrung, das der Fußboden angenehmt beheizt ist und magnetisiert werden kann, damit im Falle von Turbulenzen die größeren Gegenstände gegen Verrutschung gesichert sind. Naja, zumindest rudimentär. Ein kleiner Arbeitsbereich mit Deinem persönlichen Laptop ist in der rechten Ecke der Wand direkt vor Dir platziert und wenn Du dort sitzt, gibt Dir ein Bullauge den Blick in den Weltraum preis. Ein hochwertiger Bürostuhl ermöglicht Dir ein bequemes Arbeiten und an den, mit einer Art Gummi überzogenen Metallrollen kann man erkennen, dass der Stuhl auch magnetisch gesichert werden kann. 
-Der Rest der Wand wird von einem massiven Schrank mit diversen Schubfächern, einer Tür und einer offenen Garderobe, an der aktuell nur ein typischer Space-Overall hängt, dominiert.
+        <value>Du befindest Dich in Deinem persönlichen Raum des Schiffs. Er ist sehr funktional und spatanisch ausgestattet, wirkt dabei aber dennoch wohnlich. Der Cryo-Pod, in dem Du gerade noch gelegen hast, hat seine Kokon-Form, die dem Passagier während der langen Schlafphase einer Raumreise Schutz und Versorgung bietet, in eine offene Bettform gewandelt. Der Fußboden ist metallisch und nur vor Deinem Bett befindet sich ein kleiner Teppich. Du weißt aus der Ehrfahrung, das der Fußboden angenehmt beheizt ist und magnetisiert werden kann, damit im Falle von Turbulenzen die größeren Gegenstände gegen Verrutschung gesichert sind. Naja, zumindest rudimentär. Ein kleiner Arbeitsbereich mit Deinem persönlichen Laptop ist in der rechten Ecke der Wand direkt vor Dir platziert und wenn Du dort sitzt, gibt Dir ein Bullauge den Blick in den Weltraum preis. Ein hochwertiger Bürostuhl ermöglicht Dir ein bequemes Arbeiten und an den, mit einer Art Gummi überzogenen Metallrollen kann man erkennen, dass der Stuhl auch magnetisch gesichert werden kann. 
+Der Rest der Wand wird von einem massiven Schrank mit diversen Schubfächern, einer Schranktür und einer offenen Garderobe, an der aktuell nur ein typischer Space-Overall hängt, dominiert.
 In der Mitte des Raums befindet sich ein kleiner Tisch, gerade groß genug, um zwei Personen die Möglichkeit zu geben dort gemeinsam zu essen. Da es aber nur einen passenden Stuhl zum Tisch gibt, scheint diese Möglichkeit gar nicht vorgesehen zu sein.
 Zu Deiner Rechten, an der Fußseite des Cryo-Pods, befindet sich eine kleine Trennwand und Du kannst dahinter eine bescheidene Waschmöglichkeit und eine Toilette entdecken. 
 Zu Deiner Linken befindet sie die Zimmertür. Auch sie ist aus Metall und als solche eigentlich nur an ihren Umrissen und dem tellergroßen Guckloch in Kopfhöhe zu erkennen. Die Tür ist perfekt in die Wand eingelassen und rechts von ihr befindet sich ein kleines Display. Vermutlich dient es der Bedienung der Tür, denn eine erkennbare Klinke gibt es nicht.</value>
@@ -35,10 +35,70 @@ Zu Deiner Linken befindet sie die Zimmertür. Auch sie ist aus Metall und als so
         <value>Du bist eine smarte und gut aussehende Person. Du hast einen Abschluss in Geologie und in Exogeologie promoviert. Deine Aufgabe ist im Wesentlichen die Beurteilung der Qualität und Reinheit der seltenen Metalle wie Gold, Platin, Iridium und Rhenium, die während der Expedition abgebaut werden.</value>
     </data>
     <data name="PLAYER_FIRSTLOOK" xml:space="preserve">
-        <value>Als Du an Dir herunter schaust stellst Du fest, dass Du nackt bist. Klar! Der Space-Suite würde die Schlaf im Cryo-Pod auch eher bedindern.</value>
+        <value>Als Du an Dir herunter schaust stellst Du fest, dass Du nackt bist. Um den Cryo-Schlaf nicht zu beeinträchtigen wird er ohne Kleidung benutzt.</value>
     </data>
     <data name="CRYOCHAMBER_FIRSTLOOK" xml:space="preserve">
         <value>Normalerweise kann man das Sichtfenster zum Schutz verschließen, doch aktuell ist er nicht aktiviert und es dringt der blinkende rote Schein der Alarmbeleuchtung durch das Glas und taucht Dein ansonsten halbdunkles Zimmer in einen gespenstigen Schimmer.
-Auch das Display blinkt rot und bedeutet Dir, alsbald einen Blick darauf zu werfen.</value>
+Auch das Display blinkt rot und bedeutet Dir, alsbald einen Blick darauf zu werfen. Aber im Moment fühlst Du Dich noch zu schwach und ausgepowert, desorientiert und ausserdem bist Du nackt.</value>
+    </data>
+    <data name="CRYOPOD" xml:space="preserve">
+        <value>Du schaust auf Deinen Cryo-Pod, der sich aktuell in ein normales, gemütliches und sehr erholsam dreinschauendes Bett verwandelt hat. So wie es aussieht, wirst Du in der nächsten Zeit weder die eine, noch die andere Funktion benötigen.</value>
+    </data>
+    <data name="CHAMBER_FLOOR" xml:space="preserve">
+        <value>Der Fußboden ist metallisch, fühlt sich angenehm warm an Deinen Füßen an und kann magnetisiert werden. Ansonsten halt ein normaler Fußboden.</value>
+    </data>
+    <data name="CARPET" xml:space="preserve">
+        <value>Ein einfacher Teppich. Er soll den Raum ein wenig wohnlicher machen. Ansonsten aber nichts besonderes.</value>
+    </data>
+    <data name="WORKBENCH" xml:space="preserve">
+        <value>Dein Arbeitsbereich gliedert sich in eine Arbeitsplatte, die bei Bedarf auch eingeklappt werden kann, einigen Ablagefächern, die Du mit gewöhnlichen Schreibutensilien bestückt hast und einer Beleuchtung, die Dir ausreichend Licht für die Arbeit spendet. Auf der Arbeitsplatte steht Dein Laptop und vor der Arbeitsplatte ein entsprechender Bürostuhl.</value>
+    </data>
+    <data name="LAPTOP" xml:space="preserve">
+        <value>Dein Laptop ist ein Relikt aus der informationstechnischen Steinzeit. Auch zu Beginn der Reise war das schon so. Normalerweise arbeitet niemand mehr mit solchen Geräten, aber Du magst das irgendwie. Und, es ist Dein Eigenes!
+Du schaust Dir die Maschine an und versuchst es anzuschalten. Nichts passiert! Scheinbar ist der Akku leer. Das ist komisch, da das Gerät die gesamte Zeit an der Stromversorgnung hing.</value>
+    </data>
+    <data name="CHAMBER_WALL" xml:space="preserve">
+        <value>Die Wand ist ebenfalls metallisch, schmucklos und spartanisch.</value>
+    </data>
+    <data name="PIERHOLE" xml:space="preserve">
+        <value>Du geht zu dem runden Fenster in Deiner Arbeitsecke und schaust hinaus ins All. Ein atemberaubender Blick offenbart sich Dir. Am Horizont steht ein Roter Zwerg und hat auf diese Entfernung ungefähr die Größe des Mondes in einer beschaulichen Vollmond-Sommernacht. Du bist zwar kein Astrophysiker, aber Du weißt, dass es sich bei dem Stern um Proxima Centauri handeln muss. Nachdem Eure Expedition in den Bruchstücken eines Mondes des Planten Proxima Centauri b erfolgreich Erze von seltenen Metallen einsammeln konnte, sollte Euer Raumtransporter noch einmal näher an das Gestirn heranmanövrieren, um die Energie des Schiffes voll aufzuladen. Oh Nein! Wenn Ihr noch immer hier seid, hat Eure Heimreise offensichtlich noch nicht wirklich begonnen. Etwas muss also mächtig schief gegangen sein!
+
+Dein Blick löst sich und richtet sich weiter nach Westen und Du schaust nun auf das, was aus Deinen Augenwinkeln heraus schon die ganze Zeit sichtbar war - Euer Schiff in voller Pracht!
+ Es ist die Fenrir-13, ein Raumtransporter der Viking-Klasse mit einer maximalen Besatzung von sechs Personen. Es ist eines der kleinen Forschungsschiffe, die für Ersterkundungen in die entlegenen Schürfregionen entsandt werden. Der charakteristische Hammerkopf, der nicht ohne Absicht an Mjölnir, dem Hammer des Thor, erinnert, bildet den Wohn- und Arbeitsbereich für die Crew. Hier finden sich neben der Brücke und den Maschinen- und Technikräumen auch die Quartiere der Besatzung. 
+Dem Hammerkopf entwächst der Cargo-Bereich, der sich bei dieser Schiffsgröße auf ca. 20.000 TEU beläuft, und bildet passend zum Bild den Hammerstil. Der Transport der Erze erfolgt auch in den üblichen Schiffs-Containern und das Schiff hat so eine Länge von gut 600 m  und eine breite von ca. 100 m, wenn man den Hammerkopf mit berechnet.
+Voller Stolz prangt der Name des Schiffs in Runen an der Steuerbordseite des Cargo-Bereichs: ᚱᚨᚢᛗᚠᚱᚨᚲᚻᛏᛖᚱ ᚠᛖᚾᚱᛁᚱ 13 - Raumfrachter Fenrir 13.</value>
+    </data>
+    <data name="OFFICECHAIR" xml:space="preserve">
+        <value>Neuste Materialen sorgen dafür, dass sich der Stuhl perfekt an Deinem Körper ausrichtet und ihn in eine angenehme ergonomische Position bringt. Eine nahezu perfekte Klimaregulierung machen diesen Stuhl zu einem der bequemsten Plätze hier auf dem Schiff. </value>
+    </data>
+    <data name="RUBBER_ROLLS" xml:space="preserve">
+        <value>Nun, auf diesen durch Gummi lärmreduzierten Rollen kannst Du Dich mit Deinem Bürostuhl frei im Raum bewegen.</value>
+    </data>
+    <data name="CLOSET" xml:space="preserve">
+        <value>Genug Platz für alle Dinge, die man während einer Reise in die entlegensten Winkel der Galaxie so braucht - auch wenn man die meiste Zeit der Reise schläft.</value>
+    </data>
+    <data name="DRAWER" xml:space="preserve">
+        <value>In den Schubladen befinden sie eine Reihe von Kleidungsstücken und auch anderen Dinge, die Du gerade nicht wirklich benötigst.</value>
+    </data>
+    <data name="CLOSET_DOOR" xml:space="preserve">
+        <value>Du öffnest die Schranktür und findest weitere Klamotten und ...einen Powerriegel mit Schokogeschmack.</value>
+    </data>
+    <data name="CHOCOLATEBAR" xml:space="preserve">
+        <value>Dieser Power-Riegel ist genau das Richtige, um nach dem auslaugenden Cryo-Schlaf wieder zu Kräften zu kommen.</value>
+    </data>
+    <data name="CHOCOLATEBAR_EATEN" xml:space="preserve">
+        <value>So ausgepowert wie Du bist schlingst Du Dir gierig den Power-Riegel herunter. Dieses Wunderzeug erweckt Dich fast augenblicklich wieder zum Leben und Du spürst, wie Dein Körper die Energie förmlich aufsaugt. Jetzt bist Du fit für die Aufgaben, die vor Dir liegen.</value>
+    </data>
+    <data name="WARDROBE" xml:space="preserve">
+        <value>Ein typischer Kleiderständer der es ermöglicht, schnell Kleidungsstücke aufzuhängen und ebenso schnell wieder herunterzunehmen.</value>
+    </data>
+    <data name="SPACE_SUITE" xml:space="preserve">
+        <value>Der Einteiler ist wie eine zweite Haut konzipiert. Er wärmt, kühlt, schützt und überwacht den Körper und seine Funktion. Damit das Schiff permanent in Kontakt zu dem Crew-Mitglied ist, muss der Anzug ständig getragen werden. Nur während des Cryo-Schlafs wird er ausgezogen.</value>
+    </data>
+    <data name="SPACE_SUITE_TAKEN" xml:space="preserve">
+        <value>Du nimmst den Anzug vom Bügel und streifst ihn Dir über. Du spürst sofort, wie sich das Material Deinen Konturen anpasst und förmlich mit Dir verschmilzt. Ein leises Bestätigungspiepen ist zu hören und der Anzug sitzt perfekt!</value>
+    </data>
+    <data name="SPACE_SUITE_FIT" xml:space="preserve">
+        <value>Du trägst Deinen Space-Overall.</value>
     </data>
 </root>
