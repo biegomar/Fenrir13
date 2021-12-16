@@ -84,4 +84,7 @@
     <data name="TOILET" xml:space="preserve">
         <value>TOILET</value>
     </data>
+    <data name="MIRROR" xml:space="preserve">
+        <value>MIRROR</value>
+    </data>
 </root>

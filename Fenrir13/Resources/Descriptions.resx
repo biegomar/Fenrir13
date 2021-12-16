@@ -116,4 +116,7 @@ Voller Stolz prangt der Name des Schiffs in Runen an der Steuerbordseite des Car
     <data name="TOILET" xml:space="preserve">
         <value>Absolut unscheinbar dieser Thron, bestehend aus einem Metallkorpus und einer Klobrille aus beheiztem Kunststoff. Doch er ist, neben Deinem Space-Suite, die zentrale Überwachungsstation Deiner Gesundheit. Jede Ausscheidung wird akribisch analysiert und Dir im Display des Spiegels angezeigt. Viele der Werte sagen Dir noch nicht einmal etwas. Egal. Für Dich ist nur wichtig, dass Du gut umsorgt wirst und jeder erkannte Mangel über Zusätze in der Nahrung beseitigt werden.</value>
     </data>
+    <data name="MIRROR" xml:space="preserve">
+        <value>Den Spiegel schätzt Du so auf 90x120 cm und er ist kristallklar. Wenn Du längere Zeit eine der Ecken mit Deinen Augen fukossierst erscheint ein zusätzliches Display auf der Fläche und präsentiert Dir Deine gängigen Gesundheitsdaten. Als Du diesmal die Daten checkst erschrickst Du. Die letzte Messung ist über 5 Jahre her!</value>
+    </data>
 </root>

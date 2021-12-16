@@ -151,6 +151,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Spiegel.
+        /// </summary>
+        internal static string MIRROR {
+            get {
+                return ResourceManager.GetString("MIRROR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Bürostuhl|Arbeitsstuhl|Sitzgelegenheit.
         /// </summary>
         internal static string OFFICECHAIR {

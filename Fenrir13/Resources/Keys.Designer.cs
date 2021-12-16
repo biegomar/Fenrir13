@@ -160,6 +160,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to MIRROR.
+        /// </summary>
+        internal static string MIRROR {
+            get {
+                return ResourceManager.GetString("MIRROR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to OFFICECHAIR.
         /// </summary>
         internal static string OFFICECHAIR {

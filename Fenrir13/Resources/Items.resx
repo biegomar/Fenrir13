@@ -78,4 +78,7 @@
     <data name="TOILET" xml:space="preserve">
         <value>Toilette|Klo|Pott|Thron</value>
     </data>
+    <data name="MIRROR" xml:space="preserve">
+        <value>Spiegel</value>
+    </data>
 </root>
