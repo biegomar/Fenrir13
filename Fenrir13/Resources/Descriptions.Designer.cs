@@ -253,6 +253,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Der einfach gehaltene Tisch besteht aus einem Metallrahmen und einer Kunststoffsitzschale. Orange. Chic!.
+        /// </summary>
+        internal static string TABLE {
+            get {
+                return ResourceManager.GetString("TABLE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Ein typischer Kleiderständer der es ermöglicht, schnell Kleidungsstücke aufzuhängen und ebenso schnell wieder herunterzunehmen..
         /// </summary>
         internal static string WARDROBE {

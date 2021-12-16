@@ -69,4 +69,7 @@
     <data name="SPACE_SUITE" xml:space="preserve">
         <value>SPACE_SUITE</value>
     </data>
+    <data name="TABLE" xml:space="preserve">
+        <value>TABLE</value>
+    </data>
 </root>

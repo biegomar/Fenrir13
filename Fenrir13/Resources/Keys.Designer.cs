@@ -196,6 +196,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to TABLE.
+        /// </summary>
+        internal static string TABLE {
+            get {
+                return ResourceManager.GetString("TABLE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to WARDROBE.
         /// </summary>
         internal static string WARDROBE {

@@ -68,11 +68,12 @@ public class CryoChamberPrerequisites
         cryoChamber.Surroundings.Add(Keys.CHAMBER_WALL, Descriptions.CHAMBER_WALL);
         cryoChamber.Surroundings.Add(Keys.PIERHOLE, Descriptions.PIERHOLE);
         cryoChamber.Surroundings.Add(Keys.OFFICECHAIR, Descriptions.OFFICECHAIR);
+        cryoChamber.Surroundings.Add(Keys.RUBBER_ROLLS, Descriptions.RUBBER_ROLLS);
         cryoChamber.Surroundings.Add(Keys.CLOSET, Descriptions.CLOSET);
         cryoChamber.Surroundings.Add(Keys.DRAWER, Descriptions.DRAWER);
         cryoChamber.Surroundings.Add(Keys.CLOSET_DOOR, Descriptions.CLOSET_DOOR);
         cryoChamber.Surroundings.Add(Keys.WARDROBE, Descriptions.WARDROBE);
-        cryoChamber.Surroundings.Add(Keys.RUBBER_ROLLS, Descriptions.RUBBER_ROLLS);
+        cryoChamber.Surroundings.Add(Keys.TABLE, Descriptions.TABLE);
     }
     
     private static void AddAfterLookEvents(Location cryoChamber, EventProvider eventProvider)

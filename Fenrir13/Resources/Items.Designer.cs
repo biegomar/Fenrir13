@@ -142,7 +142,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bürostuhl|Arbeitsstuhl.
+        ///   Looks up a localized string similar to Bürostuhl|Arbeitsstuhl|Sitzgelegenheit.
         /// </summary>
         internal static string OFFICECHAIR {
             get {
@@ -174,6 +174,15 @@ namespace Fenrir13.Resources {
         internal static string SPACE_SUITE {
             get {
                 return ResourceManager.GetString("SPACE_SUITE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tisch.
+        /// </summary>
+        internal static string TABLE {
+            get {
+                return ResourceManager.GetString("TABLE", resourceCulture);
             }
         }
         

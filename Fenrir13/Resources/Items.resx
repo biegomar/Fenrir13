@@ -40,7 +40,7 @@
         <value>Bullauge|Fenster|Weltraum|All</value>
     </data>
     <data name="OFFICECHAIR" xml:space="preserve">
-        <value>Bürostuhl|Arbeitsstuhl</value>
+        <value>Bürostuhl|Arbeitsstuhl|Sitzgelegenheit</value>
     </data>
     <data name="RUBBER_ROLLS" xml:space="preserve">
         <value>Metallrollen|Rollen|Stuhlrollen|Gummi|Gummirollen</value>
@@ -62,5 +62,8 @@
     </data>
     <data name="SPACE_SUITE" xml:space="preserve">
         <value>Der Space-Overall|Space-Overall|Spaceoverall|Space-Suite|Spacesuite</value>
+    </data>
+    <data name="TABLE" xml:space="preserve">
+        <value>Tisch</value>
     </data>
 </root>
