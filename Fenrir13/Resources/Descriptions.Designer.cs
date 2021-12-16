@@ -289,6 +289,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Passend zum restlichen Interieur ist auch das Waschbecken aus Metall. Ein Spiegel mit einem Display Deiner zuletzt gemessenen Vitaldaten, eine Armatur mit Start-/Stop-Sensoren und digitaler Temperaturregelung, sowie eine ebenfalls sensorgesteuerte Seifenspendereinheit runden das Bild ab..
+        /// </summary>
+        internal static string WASHINGAREA {
+            get {
+                return ResourceManager.GetString("WASHINGAREA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Dein Arbeitsbereich gliedert sich in eine Arbeitsplatte, die bei Bedarf auch eingeklappt werden kann, einigen Ablagefächern, die Du mit gewöhnlichen Schreibutensilien bestückt hast und einer Beleuchtung, die Dir ausreichend Licht für die Arbeit spendet. Auf der Arbeitsplatte steht Dein Laptop und vor der Arbeitsplatte ein entsprechender Bürostuhl..
         /// </summary>
         internal static string WORKBENCH {

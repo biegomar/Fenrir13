@@ -72,4 +72,7 @@
     <data name="PARTITION_WALL" xml:space="preserve">
         <value>Trennwand|Sichtschutz</value>
     </data>
+    <data name="WASHINGAREA" xml:space="preserve">
+        <value>Waschmöglichkeit|Waschbereich|Bad|Badezimmer|Waschbecken</value>
+    </data>
 </root>

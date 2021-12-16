@@ -110,4 +110,7 @@ Voller Stolz prangt der Name des Schiffs in Runen an der Steuerbordseite des Car
     <data name="PARTITION_WALL" xml:space="preserve">
         <value>Die Trennwand zum Waschbereich soll sicherlich als Sichtschutz dienen, hat aber eher eine psychologische Wirkung. Niemand kann einfach so in den Raum kommen oder durch das Guckloch schauen, um zu sehen, was da wohl gerade passiert. Die Wand ist beidseitig mit einem grauen Filzstoff überzogen und man kann dort leichte Dinge, wie Bilder oder anderen Schnick-Schnack befestigen. Du hast von der Möglichkeit allerdings keinen Gebrauch gemacht.</value>
     </data>
+    <data name="WASHINGAREA" xml:space="preserve">
+        <value>Passend zum restlichen Interieur ist auch das Waschbecken aus Metall. Ein Spiegel mit einem Display Deiner zuletzt gemessenen Vitaldaten, eine Armatur mit Start-/Stop-Sensoren und digitaler Temperaturregelung, sowie eine ebenfalls sensorgesteuerte Seifenspendereinheit runden das Bild ab.</value>
+    </data>
 </root>

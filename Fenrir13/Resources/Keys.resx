@@ -78,4 +78,7 @@
     <data name="PARTITION_WALL" xml:space="preserve">
         <value>PARTITION_WALL</value>
     </data>
+    <data name="WASHINGAREA" xml:space="preserve">
+        <value>WASHINGAREA</value>
+    </data>
 </root>

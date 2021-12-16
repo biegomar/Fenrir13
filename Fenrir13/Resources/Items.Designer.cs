@@ -214,6 +214,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Waschmöglichkeit|Waschbereich|Bad|Badezimmer|Waschbecken.
+        /// </summary>
+        internal static string WASHINGAREA {
+            get {
+                return ResourceManager.GetString("WASHINGAREA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Arbeitsbereich|Arbeitsplatz|Schreibtisch.
         /// </summary>
         internal static string WORKBENCH {

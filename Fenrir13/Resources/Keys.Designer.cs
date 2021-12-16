@@ -232,6 +232,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to WASHINGAREA.
+        /// </summary>
+        internal static string WASHINGAREA {
+            get {
+                return ResourceManager.GetString("WASHINGAREA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to WORKBENCH.
         /// </summary>
         internal static string WORKBENCH {
