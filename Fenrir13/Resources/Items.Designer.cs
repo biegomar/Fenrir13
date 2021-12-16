@@ -70,6 +70,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Stuhl.
+        /// </summary>
+        internal static string CHAIR {
+            get {
+                return ResourceManager.GetString("CHAIR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Fußboden|Fussboden|Boden.
         /// </summary>
         internal static string CHAMBER_FLOOR {
@@ -147,6 +156,15 @@ namespace Fenrir13.Resources {
         internal static string OFFICECHAIR {
             get {
                 return ResourceManager.GetString("OFFICECHAIR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Trennwand|Sichtschutz.
+        /// </summary>
+        internal static string PARTITION_WALL {
+            get {
+                return ResourceManager.GetString("PARTITION_WALL", resourceCulture);
             }
         }
         

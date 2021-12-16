@@ -72,4 +72,10 @@
     <data name="TABLE" xml:space="preserve">
         <value>TABLE</value>
     </data>
+    <data name="CHAIR" xml:space="preserve">
+        <value>CHAIR</value>
+    </data>
+    <data name="PARTITION_WALL" xml:space="preserve">
+        <value>PARTITION_WALL</value>
+    </data>
 </root>

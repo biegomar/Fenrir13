@@ -70,6 +70,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Der einfach gehaltene Stuhl besteht aus einem Metallrahmen und einer Kunststoffsitzschale. Orange. Chic!.
+        /// </summary>
+        internal static string CHAIR {
+            get {
+                return ResourceManager.GetString("CHAIR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Der Fußboden ist metallisch, fühlt sich angenehm warm an Deinen Füßen an und kann magnetisiert werden. Ansonsten halt ein normaler Fußboden..
         /// </summary>
         internal static string CHAMBER_FLOOR {
@@ -190,6 +199,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Die Trennwand zum Waschbereich soll sicherlich als Sichtschutz dienen, hat aber eher eine psychologische Wirkung. Niemand kann einfach so in den Raum kommen oder durch das Guckloch schauen, um zu sehen, was da wohl gerade passiert. Die Wand ist beidseitig mit einem grauen Filzstoff überzogen und man kann dort leichte Dinge, wie Bilder oder anderen Schnick-Schnack befestigen. Du hast von der Möglichkeit allerdings keinen Gebrauch gemacht..
+        /// </summary>
+        internal static string PARTITION_WALL {
+            get {
+                return ResourceManager.GetString("PARTITION_WALL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Du geht zu dem runden Fenster in Deiner Arbeitsecke und schaust hinaus ins All. Ein atemberaubender Blick offenbart sich Dir. Am Horizont steht ein Roter Zwerg und hat auf diese Entfernung ungefähr die Größe des Mondes in einer beschaulichen Vollmond-Sommernacht. Du bist zwar kein Astrophysiker, aber Du weißt, dass es sich bei dem Stern um Proxima Centauri handeln muss. Nachdem Eure Expedition in den Bruchstücken eines Mondes des Planten Proxima Centauri b erfolgreich Erze von seltenen Metallen einsammeln k [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string PIERHOLE {
@@ -253,7 +271,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der einfach gehaltene Tisch besteht aus einem Metallrahmen und einer Kunststoffsitzschale. Orange. Chic!.
+        ///   Looks up a localized string similar to Der einfach gehaltene Tisch besteht aus einem Metallrahmen und einer eingelassenen Kunststofftischplatte. Orange. Chic!.
         /// </summary>
         internal static string TABLE {
             get {

@@ -66,4 +66,10 @@
     <data name="TABLE" xml:space="preserve">
         <value>Tisch</value>
     </data>
+    <data name="CHAIR" xml:space="preserve">
+        <value>Stuhl</value>
+    </data>
+    <data name="PARTITION_WALL" xml:space="preserve">
+        <value>Trennwand|Sichtschutz</value>
+    </data>
 </root>

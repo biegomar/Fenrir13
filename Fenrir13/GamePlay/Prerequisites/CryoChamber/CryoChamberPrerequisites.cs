@@ -74,6 +74,8 @@ public class CryoChamberPrerequisites
         cryoChamber.Surroundings.Add(Keys.CLOSET_DOOR, Descriptions.CLOSET_DOOR);
         cryoChamber.Surroundings.Add(Keys.WARDROBE, Descriptions.WARDROBE);
         cryoChamber.Surroundings.Add(Keys.TABLE, Descriptions.TABLE);
+        cryoChamber.Surroundings.Add(Keys.CHAIR, Descriptions.CHAIR);
+        cryoChamber.Surroundings.Add(Keys.PARTITION_WALL, Descriptions.PARTITION_WALL);
     }
     
     private static void AddAfterLookEvents(Location cryoChamber, EventProvider eventProvider)

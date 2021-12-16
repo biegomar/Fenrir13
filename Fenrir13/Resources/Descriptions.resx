@@ -102,6 +102,12 @@ Voller Stolz prangt der Name des Schiffs in Runen an der Steuerbordseite des Car
         <value>Du trägst Deinen Space-Overall.</value>
     </data>
     <data name="TABLE" xml:space="preserve">
-        <value>Der einfach gehaltene Tisch besteht aus einem Metallrahmen und einer Kunststoffsitzschale. Orange. Chic!</value>
+        <value>Der einfach gehaltene Tisch besteht aus einem Metallrahmen und einer eingelassenen Kunststofftischplatte. Orange. Chic!</value>
+    </data>
+    <data name="CHAIR" xml:space="preserve">
+        <value>Der einfach gehaltene Stuhl besteht aus einem Metallrahmen und einer Kunststoffsitzschale. Orange. Chic!</value>
+    </data>
+    <data name="PARTITION_WALL" xml:space="preserve">
+        <value>Die Trennwand zum Waschbereich soll sicherlich als Sichtschutz dienen, hat aber eher eine psychologische Wirkung. Niemand kann einfach so in den Raum kommen oder durch das Guckloch schauen, um zu sehen, was da wohl gerade passiert. Die Wand ist beidseitig mit einem grauen Filzstoff überzogen und man kann dort leichte Dinge, wie Bilder oder anderen Schnick-Schnack befestigen. Du hast von der Möglichkeit allerdings keinen Gebrauch gemacht.</value>
     </data>
 </root>
