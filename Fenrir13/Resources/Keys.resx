@@ -81,4 +81,7 @@
     <data name="WASHINGAREA" xml:space="preserve">
         <value>WASHINGAREA</value>
     </data>
+    <data name="TOILET" xml:space="preserve">
+        <value>TOILET</value>
+    </data>
 </root>

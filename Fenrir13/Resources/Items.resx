@@ -75,4 +75,7 @@
     <data name="WASHINGAREA" xml:space="preserve">
         <value>Waschmöglichkeit|Waschbereich|Bad|Badezimmer|Waschbecken</value>
     </data>
+    <data name="TOILET" xml:space="preserve">
+        <value>Toilette|Klo|Pott|Thron</value>
+    </data>
 </root>

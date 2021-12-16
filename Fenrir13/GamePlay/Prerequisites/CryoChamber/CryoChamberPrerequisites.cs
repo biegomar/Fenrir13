@@ -77,6 +77,7 @@ public class CryoChamberPrerequisites
         cryoChamber.Surroundings.Add(Keys.CHAIR, Descriptions.CHAIR);
         cryoChamber.Surroundings.Add(Keys.PARTITION_WALL, Descriptions.PARTITION_WALL);
         cryoChamber.Surroundings.Add(Keys.WASHINGAREA, Descriptions.WASHINGAREA);
+        cryoChamber.Surroundings.Add(Keys.TOILET, Descriptions.TOILET);
     }
     
     private static void AddAfterLookEvents(Location cryoChamber, EventProvider eventProvider)

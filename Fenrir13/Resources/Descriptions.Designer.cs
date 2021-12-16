@@ -280,6 +280,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Absolut unscheinbar dieser Thron, bestehend aus einem Metallkorpus und einer Klobrille aus beheiztem Kunststoff. Doch er ist, neben Deinem Space-Suite, die zentrale Überwachungsstation Deiner Gesundheit. Jede Ausscheidung wird akribisch analysiert und Dir im Display des Spiegels angezeigt. Viele der Werte sagen Dir noch nicht einmal etwas. Egal. Für Dich ist nur wichtig, dass Du gut umsorgt wirst und jeder erkannte Mangel über Zusätze in der Nahrung beseitigt werden..
+        /// </summary>
+        internal static string TOILET {
+            get {
+                return ResourceManager.GetString("TOILET", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Ein typischer Kleiderständer der es ermöglicht, schnell Kleidungsstücke aufzuhängen und ebenso schnell wieder herunterzunehmen..
         /// </summary>
         internal static string WARDROBE {
