@@ -81,6 +81,7 @@ public class CryoChamberPrerequisites
         cryoChamber.Surroundings.Add(Keys.MIRROR, Descriptions.MIRROR);
         cryoChamber.Surroundings.Add(Keys.OUTLINES, Descriptions.OUTLINES);
         cryoChamber.Surroundings.Add(Keys.PEEPHOLE, Descriptions.PEEPHOLE);
+        cryoChamber.Surroundings.Add(Keys.LATCH, Descriptions.LATCH);
     }
     
     private static void AddAfterLookEvents(Location cryoChamber, EventProvider eventProvider)

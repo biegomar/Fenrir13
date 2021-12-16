@@ -160,6 +160,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to LATCH.
+        /// </summary>
+        internal static string LATCH {
+            get {
+                return ResourceManager.GetString("LATCH", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to MIRROR.
         /// </summary>
         internal static string MIRROR {

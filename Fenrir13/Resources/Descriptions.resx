@@ -125,4 +125,7 @@ Voller Stolz prangt der Name des Schiffs in Runen an der Steuerbordseite des Car
     <data name="PEEPHOLE" xml:space="preserve">
         <value>Die Tür hat ein kleines, tellergroßes Fenster, durch das man in beide Richtungen schauen kann, wenn man das möchte. Es ist elektronisch schaltbar und so kann man bei Bedarf die Transparenz anpassen.</value>
     </data>
+    <data name="LATCH" xml:space="preserve">
+        <value>Wie gesagt. Es gibt ja keine Klinke, also kann ich auch nichts darüber berichten.</value>
+    </data>
 </root>

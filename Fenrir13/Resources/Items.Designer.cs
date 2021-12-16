@@ -151,6 +151,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Klinke|Türklinke|Türgriff.
+        /// </summary>
+        internal static string LATCH {
+            get {
+                return ResourceManager.GetString("LATCH", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Spiegel.
         /// </summary>
         internal static string MIRROR {

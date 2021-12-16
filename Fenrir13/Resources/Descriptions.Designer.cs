@@ -180,6 +180,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Wie gesagt. Es gibt ja keine Klinke, also kann ich auch nichts darüber berichten..
+        /// </summary>
+        internal static string LATCH {
+            get {
+                return ResourceManager.GetString("LATCH", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Den Spiegel schätzt Du so auf 90x120 cm und er ist kristallklar. Wenn Du längere Zeit eine der Ecken mit Deinen Augen fukossierst erscheint ein zusätzliches Display auf der Fläche und präsentiert Dir Deine gängigen Gesundheitsdaten. Als Du diesmal die Daten checkst erschrickst Du. Die letzte Messung ist über 5 Jahre her!.
         /// </summary>
         internal static string MIRROR {

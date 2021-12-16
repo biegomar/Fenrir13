@@ -87,4 +87,7 @@
     <data name="PEEPHOLE" xml:space="preserve">
         <value>Guckloch</value>
     </data>
+    <data name="LATCH" xml:space="preserve">
+        <value>Klinke|Türklinke|Türgriff</value>
+    </data>
 </root>
