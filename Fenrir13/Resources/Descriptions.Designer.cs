@@ -208,11 +208,29 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Naja, es handelt sich um einen ganz schmalen Grat zwischen der Tür und der Wand..
+        /// </summary>
+        internal static string OUTLINES {
+            get {
+                return ResourceManager.GetString("OUTLINES", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Die Trennwand zum Waschbereich soll sicherlich als Sichtschutz dienen, hat aber eher eine psychologische Wirkung. Niemand kann einfach so in den Raum kommen oder durch das Guckloch schauen, um zu sehen, was da wohl gerade passiert. Die Wand ist beidseitig mit einem grauen Filzstoff überzogen und man kann dort leichte Dinge, wie Bilder oder anderen Schnick-Schnack befestigen. Du hast von der Möglichkeit allerdings keinen Gebrauch gemacht..
         /// </summary>
         internal static string PARTITION_WALL {
             get {
                 return ResourceManager.GetString("PARTITION_WALL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Die Tür hat ein kleines, tellergroßes Fenster, durch das man in beide Richtungen schauen kann, wenn man das möchte. Es ist elektronisch schaltbar und so kann man bei Bedarf die Transparenz anpassen..
+        /// </summary>
+        internal static string PEEPHOLE {
+            get {
+                return ResourceManager.GetString("PEEPHOLE", resourceCulture);
             }
         }
         

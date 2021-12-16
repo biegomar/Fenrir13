@@ -87,4 +87,10 @@
     <data name="MIRROR" xml:space="preserve">
         <value>MIRROR</value>
     </data>
+    <data name="OUTLINES" xml:space="preserve">
+        <value>OUTLINES</value>
+    </data>
+    <data name="PEEPHOLE" xml:space="preserve">
+        <value>PEEPHOLE</value>
+    </data>
 </root>

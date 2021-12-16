@@ -119,4 +119,10 @@ Voller Stolz prangt der Name des Schiffs in Runen an der Steuerbordseite des Car
     <data name="MIRROR" xml:space="preserve">
         <value>Den Spiegel schätzt Du so auf 90x120 cm und er ist kristallklar. Wenn Du längere Zeit eine der Ecken mit Deinen Augen fukossierst erscheint ein zusätzliches Display auf der Fläche und präsentiert Dir Deine gängigen Gesundheitsdaten. Als Du diesmal die Daten checkst erschrickst Du. Die letzte Messung ist über 5 Jahre her!</value>
     </data>
+    <data name="OUTLINES" xml:space="preserve">
+        <value>Naja, es handelt sich um einen ganz schmalen Grat zwischen der Tür und der Wand.</value>
+    </data>
+    <data name="PEEPHOLE" xml:space="preserve">
+        <value>Die Tür hat ein kleines, tellergroßes Fenster, durch das man in beide Richtungen schauen kann, wenn man das möchte. Es ist elektronisch schaltbar und so kann man bei Bedarf die Transparenz anpassen.</value>
+    </data>
 </root>

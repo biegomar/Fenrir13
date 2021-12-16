@@ -178,11 +178,29 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to OUTLINES.
+        /// </summary>
+        internal static string OUTLINES {
+            get {
+                return ResourceManager.GetString("OUTLINES", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to PARTITION_WALL.
         /// </summary>
         internal static string PARTITION_WALL {
             get {
                 return ResourceManager.GetString("PARTITION_WALL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PEEPHOLE.
+        /// </summary>
+        internal static string PEEPHOLE {
+            get {
+                return ResourceManager.GetString("PEEPHOLE", resourceCulture);
             }
         }
         
