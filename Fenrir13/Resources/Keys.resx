@@ -102,4 +102,7 @@
     <data name="DISPLAY" xml:space="preserve">
         <value>DISPLAY</value>
     </data>
+    <data name="TOILET_SEAT" xml:space="preserve">
+        <value>TOILET_SEAT</value>
+    </data>
 </root>

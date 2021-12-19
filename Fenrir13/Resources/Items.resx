@@ -96,4 +96,7 @@
     <data name="DISPLAY" xml:space="preserve">
         <value>Display|Anzeige</value>
     </data>
+    <data name="TOILET_SEAT" xml:space="preserve">
+        <value>Toilettensitz|Klobrille|Klositz|WC-Sitz</value>
+    </data>
 </root>

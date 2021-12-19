@@ -268,6 +268,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Toilettensitz|Klobrille|Klositz|WC-Sitz.
+        /// </summary>
+        internal static string TOILET_SEAT {
+            get {
+                return ResourceManager.GetString("TOILET_SEAT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Die Garderobe|Garderobe.
         /// </summary>
         internal static string WARDROBE {

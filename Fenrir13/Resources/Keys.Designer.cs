@@ -286,6 +286,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to TOILET_SEAT.
+        /// </summary>
+        internal static string TOILET_SEAT {
+            get {
+                return ResourceManager.GetString("TOILET_SEAT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to WARDROBE.
         /// </summary>
         internal static string WARDROBE {

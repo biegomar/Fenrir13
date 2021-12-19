@@ -142,7 +142,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Du befindest Dich in Deinem persönlichen Raum des Schiffs. Er ist sehr funktional und spatanisch ausgestattet, wirkt dabei aber dennoch wohnlich. Der Cryo-Pod, in dem Du gerade noch gelegen hast, hat seine Kokon-Form, die dem Passagier während der langen Schlafphase einer Raumreise Schutz und Versorgung bietet, in eine offene Bettform gewandelt. Der Fußboden ist metallisch und nur vor Deinem Bett befindet sich ein kleiner Teppich. Du weißt aus der Ehrfahrung, das der Fußboden angenehmt beheizt ist und magne [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to Du befindest Dich in Deinem persönlichen Raum des Schiffs. Er ist sehr funktional und spatanisch eingerichtet, wirkt dabei aber dennoch wohnlich. Der Cryo-Pod, in dem Du gerade noch gelegen hast, hat seine Kokon-Form, die dem Passagier während der langen Schlafphase einer Raumreise Schutz und Versorgung bietet, in eine offene Bettform gewandelt. Der Fußboden ist metallisch und nur vor Deinem Bett befindet sich ein kleiner Teppich. Du weißt aus der Erfahrung, das der Fußboden angenehmt beheizt ist und magnet [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string CRYOCHAMBER {
             get {
@@ -376,11 +376,20 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Absolut unscheinbar dieser Thron, bestehend aus einem Metallkorpus und einer Klobrille aus beheiztem Kunststoff. Doch er ist, neben Deinem Space-Suite, die zentrale Überwachungsstation Deiner Gesundheit. Jede Ausscheidung wird akribisch analysiert und Dir im Display des Spiegels angezeigt. Viele der Werte sagen Dir noch nicht einmal etwas. Egal. Für Dich ist nur wichtig, dass Du gut umsorgt wirst und jeder erkannte Mangel über Zusätze in der Nahrung beseitigt werden..
+        ///   Looks up a localized string similar to Absolut unscheinbar dieser Thron, bestehend aus einem Metallkorpus und einem Toilettensitz aus beheiztem Kunststoff. Doch er ist, neben Deinem Space-Suite, die zentrale Überwachungsstation Deiner Gesundheit. Jede Ausscheidung wird akribisch analysiert und Dir im Display des Spiegels angezeigt. Viele der Werte sagen Dir noch nicht einmal etwas. Egal. Für Dich ist nur wichtig, dass Du gut umsorgt wirst und jeder erkannte Mangel über Zusätze in der Nahrung beseitigt werden..
         /// </summary>
         internal static string TOILET {
             get {
                 return ResourceManager.GetString("TOILET", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Also, so ein beheizter Toilettensitz ist schon sehr angenehm. Wenn man das einmal benutzt hat, möchte man eigentlich nichts anderes mehr..
+        /// </summary>
+        internal static string TOILET_SEAT {
+            get {
+                return ResourceManager.GetString("TOILET_SEAT", resourceCulture);
             }
         }
         
