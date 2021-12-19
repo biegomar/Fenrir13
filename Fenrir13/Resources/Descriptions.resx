@@ -81,7 +81,7 @@ Voller Stolz prangt der Name des Schiffs in Runen an der Steuerbordseite des Car
         <value>In den Schubladen befinden sie eine Reihe von Kleidungsstücken und auch anderen Dinge, die Du gerade nicht wirklich benötigst.</value>
     </data>
     <data name="CLOSET_DOOR" xml:space="preserve">
-        <value>Du öffnest die Schranktür und findest weitere Klamotten und ...einen Powerriegel mit Schokogeschmack.</value>
+        <value>Du öffnest die Schranktür und findest weitere Klamotten.</value>
     </data>
     <data name="CHOCOLATEBAR" xml:space="preserve">
         <value>Dieser Power-Riegel ist genau das Richtige, um nach dem auslaugenden Cryo-Schlaf wieder zu Kräften zu kommen.</value>
@@ -148,5 +148,8 @@ Your safety status has been upgraded from Level Z to Level Q. Please proceed to 
     </data>
     <data name="DISPLAY_BAR_NOT_EATEN" xml:space="preserve">
         <value>Du bist durch den langen Cryo-Schlaf extrem ausgelaugt und schlapp. Es gelingt Dir nicht, den Text auf dem Display zu fokussieren. Wahrscheinlich muss Dein Organismus erst einmal wieder zu Kräften kommen. </value>
+    </data>
+    <data name="CLOSET_DOOR_FIRSTLOOK" xml:space="preserve">
+        <value>... und einen Powerriegel mit Schokogeschmack.</value>
     </data>
 </root>

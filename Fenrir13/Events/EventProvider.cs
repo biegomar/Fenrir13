@@ -64,6 +64,7 @@ internal partial class EventProvider
             
             if (bar != default)
             {
+                PrintingSubsystem.Resource(Descriptions.CLOSET_DOOR_FIRSTLOOK);
                 bar.IsHidden = false;
                 this.universe.Score += this.universe.ScoreBoard[nameof(this.LookAtClosedDoor)];
                 cryoChamber.AfterLook -= LookAtClosedDoor;

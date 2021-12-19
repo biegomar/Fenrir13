@@ -124,11 +124,20 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Du öffnest die Schranktür und findest weitere Klamotten und ...einen Powerriegel mit Schokogeschmack..
+        ///   Looks up a localized string similar to Du öffnest die Schranktür und findest weitere Klamotten..
         /// </summary>
         internal static string CLOSET_DOOR {
             get {
                 return ResourceManager.GetString("CLOSET_DOOR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ... und einen Powerriegel mit Schokogeschmack..
+        /// </summary>
+        internal static string CLOSET_DOOR_FIRSTLOOK {
+            get {
+                return ResourceManager.GetString("CLOSET_DOOR_FIRSTLOOK", resourceCulture);
             }
         }
         
