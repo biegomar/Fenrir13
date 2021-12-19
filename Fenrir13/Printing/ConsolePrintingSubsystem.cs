@@ -8,6 +8,11 @@ namespace Fenrir13.Printing;
 
 internal class ConsolePrintingSubsystem : BaseConsolePrintingSubsystem
 {
+    public ConsolePrintingSubsystem()
+    {
+        Console.OutputEncoding = Encoding.UTF8;
+    }
+    
     public override bool Opening()
     {
         if (!string.IsNullOrEmpty(MetaData.ASCII_TITLE))
