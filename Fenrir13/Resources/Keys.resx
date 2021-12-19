@@ -96,4 +96,10 @@
     <data name="LATCH" xml:space="preserve">
         <value>LATCH</value>
     </data>
+    <data name="CRYOCHAMBER_DOOR" xml:space="preserve">
+        <value>CRYOCHAMBER_DOOR</value>
+    </data>
+    <data name="DISPLAY" xml:space="preserve">
+        <value>DISPLAY</value>
+    </data>
 </root>

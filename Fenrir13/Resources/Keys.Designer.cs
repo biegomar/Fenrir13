@@ -133,11 +133,29 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to CRYOCHAMBER_DOOR.
+        /// </summary>
+        internal static string CRYOCHAMBER_DOOR {
+            get {
+                return ResourceManager.GetString("CRYOCHAMBER_DOOR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to CRYOPOD.
         /// </summary>
         internal static string CRYOPOD {
             get {
                 return ResourceManager.GetString("CRYOPOD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to DISPLAY.
+        /// </summary>
+        internal static string DISPLAY {
+            get {
+                return ResourceManager.GetString("DISPLAY", resourceCulture);
             }
         }
         

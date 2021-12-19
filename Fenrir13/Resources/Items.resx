@@ -61,7 +61,7 @@
         <value>Die Garderobe|Garderobe</value>
     </data>
     <data name="SPACE_SUITE" xml:space="preserve">
-        <value>Der Space-Overall|Space-Overall|Spaceoverall|Space-Suite|Spacesuite</value>
+        <value>Der Space-Overall|Space-Overall|Spaceoverall|Space-Suite|Spacesuite|Overall</value>
     </data>
     <data name="TABLE" xml:space="preserve">
         <value>Tisch</value>
@@ -89,5 +89,11 @@
     </data>
     <data name="LATCH" xml:space="preserve">
         <value>Klinke|Türklinke|Türgriff</value>
+    </data>
+    <data name="CRYOCHAMBER_DOOR" xml:space="preserve">
+        <value>Zimmertür|Tür</value>
+    </data>
+    <data name="DISPLAY" xml:space="preserve">
+        <value>Display|Anzeige</value>
     </data>
 </root>

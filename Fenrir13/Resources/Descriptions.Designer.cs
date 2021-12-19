@@ -142,6 +142,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Der Begriff Tür umschreibt es schon ganz gut. Es ist ein Vorrichtung, die dazu dient einen Durchgang zu versperren. Also ja, eine Tür..
+        /// </summary>
+        internal static string CRYOCHAMBER_DOOR {
+            get {
+                return ResourceManager.GetString("CRYOCHAMBER_DOOR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Normalerweise kann man das Sichtfenster zum Schutz verschließen, doch aktuell ist er nicht aktiviert und es dringt der blinkende rote Schein der Alarmbeleuchtung durch das Glas und taucht Dein ansonsten halbdunkles Zimmer in einen gespenstigen Schimmer.
         ///Auch das Display blinkt rot und bedeutet Dir, alsbald einen Blick darauf zu werfen. Aber im Moment fühlst Du Dich noch zu schwach und ausgepowert, desorientiert und ausserdem bist Du nackt..
         /// </summary>
@@ -161,11 +170,53 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Das Display dient Dir als Bedienkonsole für diverse Funktionen..
+        /// </summary>
+        internal static string DISPLAY {
+            get {
+                return ResourceManager.GetString("DISPLAY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nach dem Powerriegel bist Du wieder voll konzentriert und kannst nun das Display ordentlich lesen.
+        ///Dort steht:.
+        /// </summary>
+        internal static string DISPLAY_BAR_EATEN {
+            get {
+                return ResourceManager.GetString("DISPLAY_BAR_EATEN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Du bist durch den langen Cryo-Schlaf extrem ausgelaugt und schlapp. Es gelingt Dir nicht, den Text auf dem Display zu fokussieren. Wahrscheinlich muss Dein Organismus erst einmal wieder zu Kräften kommen. .
+        /// </summary>
+        internal static string DISPLAY_BAR_NOT_EATEN {
+            get {
+                return ResourceManager.GetString("DISPLAY_BAR_NOT_EATEN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to In den Schubladen befinden sie eine Reihe von Kleidungsstücken und auch anderen Dinge, die Du gerade nicht wirklich benötigst..
         /// </summary>
         internal static string DRAWER {
             get {
                 return ResourceManager.GetString("DRAWER", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Intervention required
+        ///Hull breach detected, structural integrity compromised
+        ///Low energy
+        ///Low oxygen level
+        ///
+        ///Your safety status has been upgraded from Level Z to Level Q. Please proceed to the control bridge..
+        /// </summary>
+        internal static string INTERVENTION_REQUIRED {
+            get {
+                return ResourceManager.GetString("INTERVENTION_REQUIRED", resourceCulture);
             }
         }
         

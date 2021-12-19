@@ -82,6 +82,8 @@ public class CryoChamberPrerequisites
         cryoChamber.Surroundings.Add(Keys.OUTLINES, Descriptions.OUTLINES);
         cryoChamber.Surroundings.Add(Keys.PEEPHOLE, Descriptions.PEEPHOLE);
         cryoChamber.Surroundings.Add(Keys.LATCH, Descriptions.LATCH);
+        cryoChamber.Surroundings.Add(Keys.CRYOCHAMBER_DOOR, Descriptions.CRYOCHAMBER_DOOR);
+        cryoChamber.Surroundings.Add(Keys.DISPLAY, Descriptions.DISPLAY);
     }
     
     private static void AddAfterLookEvents(Location cryoChamber, EventProvider eventProvider)
@@ -91,6 +93,8 @@ public class CryoChamberPrerequisites
 
         cryoChamber.AfterLook += eventProvider.LookAtClosedDoor;
         eventProvider.ScoreBoard.Add(nameof(eventProvider.LookAtClosedDoor), 1);
+
+        cryoChamber.AfterLook += eventProvider.LookAtDisplay;
     }
     
     private static void AddAfterEatEvents(Item chocolateBar, EventProvider eventProvider)

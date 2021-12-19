@@ -28,6 +28,34 @@ internal partial class EventProvider
         }
     }
     
+    internal void LookAtDisplay(object sender, ContainerObjectEventArgs eventArgs)
+    {
+        if (sender is Location cryoChamber && cryoChamber.Key == Keys.CRYOCHAMBER && eventArgs.ExternalItemKey == Keys.DISPLAY)
+        {
+            var barEaten = false;
+            var bar = this.universe.ActiveLocation.GetItemByKey(Keys.CHOCOLATEBAR);
+            if (bar == default)
+            {
+                bar = this.universe.ActivePlayer.GetItemByKey(Keys.CHOCOLATEBAR);
+
+                if (bar == default)
+                {
+                    barEaten = true;
+                }
+            }
+
+            if (barEaten)
+            {
+                PrintingSubsystem.Resource(Descriptions.DISPLAY_BAR_EATEN);
+                PrintingSubsystem.Resource(Descriptions.INTERVENTION_REQUIRED);
+            }
+            else
+            {
+                PrintingSubsystem.Resource(Descriptions.DISPLAY_BAR_NOT_EATEN);
+            }
+        }
+    }
+    
     internal void LookAtClosedDoor(object sender, ContainerObjectEventArgs eventArgs)
     {
         if (sender is Location cryoChamber && cryoChamber.Key == Keys.CRYOCHAMBER && eventArgs.ExternalItemKey == Keys.CLOSET_DOOR)

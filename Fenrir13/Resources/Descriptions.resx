@@ -128,4 +128,25 @@ Voller Stolz prangt der Name des Schiffs in Runen an der Steuerbordseite des Car
     <data name="LATCH" xml:space="preserve">
         <value>Wie gesagt. Es gibt ja keine Klinke, also kann ich auch nichts darüber berichten.</value>
     </data>
+    <data name="CRYOCHAMBER_DOOR" xml:space="preserve">
+        <value>Der Begriff Tür umschreibt es schon ganz gut. Es ist ein Vorrichtung, die dazu dient einen Durchgang zu versperren. Also ja, eine Tür.</value>
+    </data>
+    <data name="DISPLAY" xml:space="preserve">
+        <value>Das Display dient Dir als Bedienkonsole für diverse Funktionen.</value>
+    </data>
+    <data name="DISPLAY_BAR_EATEN" xml:space="preserve">
+        <value>Nach dem Powerriegel bist Du wieder voll konzentriert und kannst nun das Display ordentlich lesen.
+Dort steht:</value>
+    </data>
+    <data name="INTERVENTION_REQUIRED" xml:space="preserve">
+        <value>Intervention required
+Hull breach detected, structural integrity compromised
+Low energy
+Low oxygen level
+
+Your safety status has been upgraded from Level Z to Level Q. Please proceed to the control bridge.</value>
+    </data>
+    <data name="DISPLAY_BAR_NOT_EATEN" xml:space="preserve">
+        <value>Du bist durch den langen Cryo-Schlaf extrem ausgelaugt und schlapp. Es gelingt Dir nicht, den Text auf dem Display zu fokussieren. Wahrscheinlich muss Dein Organismus erst einmal wieder zu Kräften kommen. </value>
+    </data>
 </root>

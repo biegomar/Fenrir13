@@ -124,11 +124,29 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Zimmertür|Tür.
+        /// </summary>
+        internal static string CRYOCHAMBER_DOOR {
+            get {
+                return ResourceManager.GetString("CRYOCHAMBER_DOOR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Cryopod|Cryo-Pod|Bett|Schlafplatz|Schlafkammer|Pod.
         /// </summary>
         internal static string CRYOPOD {
             get {
                 return ResourceManager.GetString("CRYOPOD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Display|Anzeige.
+        /// </summary>
+        internal static string DISPLAY {
+            get {
+                return ResourceManager.GetString("DISPLAY", resourceCulture);
             }
         }
         
@@ -223,7 +241,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Space-Overall|Space-Overall|Spaceoverall|Space-Suite|Spacesuite.
+        ///   Looks up a localized string similar to Der Space-Overall|Space-Overall|Spaceoverall|Space-Suite|Spacesuite|Overall.
         /// </summary>
         internal static string SPACE_SUITE {
             get {
