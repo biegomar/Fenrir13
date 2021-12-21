@@ -37,7 +37,7 @@
         <value>Wand|Zimmerwand</value>
     </data>
     <data name="PIERHOLE" xml:space="preserve">
-        <value>Bullauge|Fenster|Weltraum|All</value>
+        <value>Bullauge|Fenster|Weltraum|All|Weltall</value>
     </data>
     <data name="OFFICECHAIR" xml:space="preserve">
         <value>Bürostuhl|Arbeitsstuhl|Sitzgelegenheit</value>

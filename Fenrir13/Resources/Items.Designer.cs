@@ -223,7 +223,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bullauge|Fenster|Weltraum|All.
+        ///   Looks up a localized string similar to Bullauge|Fenster|Weltraum|All|Weltall.
         /// </summary>
         internal static string PIERHOLE {
             get {
