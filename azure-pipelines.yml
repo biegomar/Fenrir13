@@ -1,0 +1,30 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- master
+
+pool:
+  vmImage: windows-2022
+
+steps:
+- task: DotNetCoreCLI@2
+  displayName: 'Restore packages'
+  inputs:
+    command: 'restore'
+    feedsToUse: 'select'
+    vstsFeed: '036c7387-bd55-403b-bfbb-62bfc76e14d6/43a4376f-0cc6-4d91-a527-bee4677071c6'
+- task: DotNetCoreCLI@2
+  displayName: 'Build Solution'
+  inputs:
+    command: 'build'
+    projects: '**/*.csproj'
+- task: DotNetCoreCLI@2
+  displayName: 'dotnet publish Win-x64'
+  inputs:
+    command: 'publish'
+    publishWebProjects: false
+    projects: '**/*.sln'
+    arguments: '/p:PublishProfile=PublishWin-x64.pubxml'
