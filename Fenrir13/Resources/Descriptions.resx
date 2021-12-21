@@ -140,10 +140,7 @@ Dort steht:</value>
     </data>
     <data name="INTERVENTION_REQUIRED" xml:space="preserve">
         <value>Intervention required
-Hull breach detected, structural integrity compromised
-Low energy
-Low oxygen level
-
+Hull breach detected, structural integrity compromised. Low energy. Low oxygen level.
 Your safety status has been upgraded from Level Z to Level Q. Please proceed to the control bridge.</value>
     </data>
     <data name="DISPLAY_BAR_NOT_EATEN" xml:space="preserve">

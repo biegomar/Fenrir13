@@ -217,10 +217,7 @@ namespace Fenrir13.Resources {
         
         /// <summary>
         ///   Looks up a localized string similar to Intervention required
-        ///Hull breach detected, structural integrity compromised
-        ///Low energy
-        ///Low oxygen level
-        ///
+        ///Hull breach detected, structural integrity compromised. Low energy. Low oxygen level.
         ///Your safety status has been upgraded from Level Z to Level Q. Please proceed to the control bridge..
         /// </summary>
         internal static string INTERVENTION_REQUIRED {

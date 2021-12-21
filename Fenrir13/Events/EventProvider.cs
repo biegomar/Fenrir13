@@ -47,7 +47,9 @@ internal partial class EventProvider
             if (barEaten)
             {
                 PrintingSubsystem.Resource(Descriptions.DISPLAY_BAR_EATEN);
+                PrintingSubsystem.ForegroundColor = TextColor.Red;
                 PrintingSubsystem.Resource(Descriptions.INTERVENTION_REQUIRED);
+                PrintingSubsystem.ResetColors();
             }
             else
             {
