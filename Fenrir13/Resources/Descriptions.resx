@@ -157,4 +157,10 @@ Your safety status has been upgraded from Level Z to Level Q. Please proceed to 
 "Security Level Q", geistert es Dir durch den Kopf. Als Du das letzte Mal auf der Erde von einer Person gehört hast, die dieses Level hatte, hat er wirre Verschwörungstheorien in die Welt gesetzt. Aber der Gedanke verfliegt und Du bist wieder voll da.
 Du bestätigst die Meldung mit einem Fingertipp und das Display wechselt wieder in den Normalzustand und der gesamte Schiffsalarm erstirbt. Gut! Wenigstens hast Du jetzt Ruhe, um Dich zu konzentrieren. Offensichtlich wurde auch der automatische Türöffnungsmodus aktiviert, denn die Tür öffnet sich und gibt den Weg frei zum Korridor.</value>
     </data>
+    <data name="CORRIDOR_EAST" xml:space="preserve">
+        <value>Der Korridor durchzieht den gesamten 'Hammerkopf' des Schiffs von Ost nach West. Von ihm gehen Türen in die diversen Räume ab und in der Mitte, als bei gut 50 Metern führt ein Aufgang zur Brücke und ein Abgang herunter in die Maschinenräume. An den Wänden hängen neben typischen Raum- und Evakuierungsplänen auch Bilder von ehemaligen Mitarbeitern und Crewmitgliedern der Fenrir-13. Ansonsten ist der Flur einfach und karg.</value>
+    </data>
+    <data name="CORRIDOR_EAST_LOCKDESCRIPTION" xml:space="preserve">
+        <value>Deine Zimmertür ist geschlossen und versperrt den Weg.</value>
+    </data>
 </root>

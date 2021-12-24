@@ -5,7 +5,7 @@ using Heretic.InteractiveFiction.Objects;
 
 namespace Fenrir13.GamePlay.Prerequisites.CryoChamber;
 
-public class CryoChamberPrerequisites
+internal static class CryoChamberPrerequisites
 {
     internal static Location Get(EventProvider eventProvider)
     {
@@ -96,6 +96,7 @@ public class CryoChamberPrerequisites
         eventProvider.ScoreBoard.Add(nameof(eventProvider.LookAtClosedDoor), 1);
 
         cryoChamber.AfterLook += eventProvider.LookAtDisplay;
+        eventProvider.ScoreBoard.Add(nameof(eventProvider.LookAtDisplay), 1);
     }
     
     private static void AddAfterEatEvents(Item chocolateBar, EventProvider eventProvider)

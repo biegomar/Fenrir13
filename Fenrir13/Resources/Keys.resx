@@ -105,4 +105,7 @@
     <data name="TOILET_SEAT" xml:space="preserve">
         <value>TOILET_SEAT</value>
     </data>
+    <data name="CORRIDOR_EAST" xml:space="preserve">
+        <value>CORRIDOR</value>
+    </data>
 </root>

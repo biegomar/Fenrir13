@@ -21,4 +21,7 @@
     <data name="CRYOCHAMBER" xml:space="preserve">
         <value>Deine Cryo-Kammer|Cryo-Kammer|Cryokammer|Kammer</value>
     </data>
+    <data name="CORRIDOR_EAST" xml:space="preserve">
+        <value>Der Korridor|Korridor|Flur</value>
+    </data>
 </root>

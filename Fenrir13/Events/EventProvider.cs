@@ -51,7 +51,15 @@ internal partial class EventProvider
                 PrintingSubsystem.Resource(Descriptions.INTERVENTION_REQUIRED);
                 PrintingSubsystem.ResetColors();
                 PrintingSubsystem.Resource(Descriptions.INTERVENTION_REQUIRED_INTERPRETATION);
-                cryoChamber.AfterLook -= LookAtDisplay;
+                
+                var corridorMap = this.universe.GetLocationMapByEnumString(Enum.GetName(Directions.W));
+                var corridor = corridorMap.Location;
+                if (corridor is { IsLocked: true })
+                {
+                    corridor.IsLocked = false;
+                    this.universe.Score += this.universe.ScoreBoard[nameof(this.LookAtDisplay)];
+                    cryoChamber.AfterLook -= LookAtDisplay;
+                }
             }
             else
             {

@@ -61,6 +61,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Der Korridor|Korridor|Flur.
+        /// </summary>
+        internal static string CORRIDOR_EAST {
+            get {
+                return ResourceManager.GetString("CORRIDOR_EAST", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Deine Cryo-Kammer|Cryo-Kammer|Cryokammer|Kammer.
         /// </summary>
         internal static string CRYOCHAMBER {
