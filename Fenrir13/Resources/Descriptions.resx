@@ -152,4 +152,9 @@ Your safety status has been upgraded from Level Z to Level Q. Please proceed to 
     <data name="TOILET_SEAT" xml:space="preserve">
         <value>Also, so ein beheizter Toilettensitz ist schon sehr angenehm. Wenn man das einmal benutzt hat, möchte man eigentlich nichts anderes mehr.</value>
     </data>
+    <data name="INTERVENTION_REQUIRED_INTERPRETATION" xml:space="preserve">
+        <value>Ok. Also gibt es offensichtlich einen Hüllenbruch irgendwo im Schiff. Energie und Sauerstoff sind wohl auch knapp. Verständlich, dass nun irgendjemand eingreifen muss. Verdammt! Aber warum ausgerechnet Du? Als Geologe hast Du doch überhaupt keine Ahnung von dem Schiff. Aber scheinbar scheint niemand sonst von der Crew verfügbar zu sein. Warum sonst hätte man Deinen Security-Level erhöhen sollen? Ob sie tot sind? Hoffentlich nicht und alles entpuppt sich nur als dummer Fehlalarm. Aber es nutzt wohl nichts. Du solltest den Anweisungen folgen und auf die Brücke gehen... 
+"Security Level Q", geistert es Dir durch den Kopf. Als Du das letzte Mal auf der Erde von einer Person gehört hast, die dieses Level hatte, hat er wirre Verschwörungstheorien in die Welt gesetzt. Aber der Gedanke verfliegt und Du bist wieder voll da.
+Du bestätigst die Meldung mit einem Fingertipp und das Display wechselt wieder in den Normalzustand und der gesamte Schiffsalarm erstirbt. Gut! Wenigstens hast Du jetzt Ruhe, um Dich zu konzentrieren. Offensichtlich wurde auch der automatische Türöffnungsmodus aktiviert, denn die Tür öffnet sich und gibt den Weg frei zum Korridor.</value>
+    </data>
 </root>

@@ -227,6 +227,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Ok. Also gibt es offensichtlich einen Hüllenbruch irgendwo im Schiff. Energie und Sauerstoff sind wohl auch knapp. Verständlich, dass nun irgendjemand eingreifen muss. Verdammt! Aber warum ausgerechnet Du? Als Geologe hast Du doch überhaupt keine Ahnung von dem Schiff. Aber scheinbar scheint niemand sonst von der Crew verfügbar zu sein. Warum sonst hätte man Deinen Security-Level erhöhen sollen? Ob sie tot sind? Hoffentlich nicht und alles entpuppt sich nur als dummer Fehlalarm. Aber es nutzt wohl nichts. D [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string INTERVENTION_REQUIRED_INTERPRETATION {
+            get {
+                return ResourceManager.GetString("INTERVENTION_REQUIRED_INTERPRETATION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Dein Laptop ist ein Relikt aus der informationstechnischen Steinzeit. Auch zu Beginn der Reise war das schon so. Normalerweise arbeitet niemand mehr mit solchen Geräten, aber Du magst das irgendwie. Und, es ist Dein Eigenes!
         ///Du schaust Dir die Maschine an und versuchst es anzuschalten. Nichts passiert! Scheinbar ist der Akku leer. Das ist komisch, da das Gerät die gesamte Zeit an der Stromversorgnung hing..
         /// </summary>

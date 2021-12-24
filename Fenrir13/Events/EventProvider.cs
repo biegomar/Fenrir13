@@ -50,6 +50,8 @@ internal partial class EventProvider
                 PrintingSubsystem.ForegroundColor = TextColor.Red;
                 PrintingSubsystem.Resource(Descriptions.INTERVENTION_REQUIRED);
                 PrintingSubsystem.ResetColors();
+                PrintingSubsystem.Resource(Descriptions.INTERVENTION_REQUIRED_INTERPRETATION);
+                cryoChamber.AfterLook -= LookAtDisplay;
             }
             else
             {
