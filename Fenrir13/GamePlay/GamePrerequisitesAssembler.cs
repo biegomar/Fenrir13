@@ -23,13 +23,15 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
 
         var cryoChamber = CryoChamberPrerequisites.Get(this.eventProvider);
         var corridorEast = CorridorEastPrerequisites.Get(this.eventProvider);
+        var emptyChamberOne = EmptyCrewChamberOnePrerequisites.Get(this.eventProvider);
+        var emptyChamberTwo = EmptyCrewChamberTwoPrerequisites.Get(this.eventProvider);
         var corridorMidEast = CorridorMidEastPrerequisites.Get(this.eventProvider);
         var corridorMid = CorridorMidPrerequisites.Get(this.eventProvider);
         var corridorMidWest = CorridorMidWestPrerequisites.Get(this.eventProvider);
         var corridorWest = CorridorWestPrerequisites.Get(this.eventProvider);
         
         map.Add(cryoChamber, CryoChamberLocationMap(corridorEast));
-        map.Add(corridorEast, CorridorEastLocationMap(cryoChamber, corridorMidEast));
+        map.Add(corridorEast, CorridorEastLocationMap(cryoChamber, corridorMidEast, emptyChamberOne, emptyChamberTwo));
         map.Add(corridorMidEast, CorridorMidEastLocationMap(corridorEast, corridorMid));
         map.Add(corridorMid, CorridorMidLocationMap(corridorMidEast, corridorMidWest));
         map.Add(corridorMidWest, CorridorMidWestLocationMap(corridorMid, corridorWest));
@@ -50,12 +52,14 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
         return locationMap;
     }
     
-    private static List<DestinationNode> CorridorEastLocationMap(Location cryoChamber, Location corridorMidEast)
+    private static List<DestinationNode> CorridorEastLocationMap(Location cryoChamber, Location corridorMidEast, Location emptyChamberOne, Location emptyChamberTwo)
     {
         var locationMap = new List<DestinationNode>
         {
             new() {Direction = Directions.E, Location = cryoChamber, IsHidden = false},
             new() {Direction = Directions.W, Location = corridorMidEast, IsHidden = false},
+            new() {Direction = Directions.S, Location = emptyChamberOne, IsHidden = false},
+            new() {Direction = Directions.N, Location = emptyChamberTwo, IsHidden = false},
         };
         return locationMap;
     }

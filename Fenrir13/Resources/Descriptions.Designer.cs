@@ -151,7 +151,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Korridor durchzieht den gesamten &apos;Hammerkopf&apos; des Schiffs von Ost nach West. Von ihm gehen Türen in die diversen Räume ab und in der Mitte, als bei gut 50 Metern führt ein Aufgang zur Brücke und ein Abgang herunter in die Maschinenräume. An den Wänden hängen neben typischen Raum- und Evakuierungsplänen auch Bilder von ehemaligen Mitarbeitern und Crewmitgliedern der Fenrir-13. Ansonsten ist der Flur einfach und karg..
+        ///   Looks up a localized string similar to Der Korridor durchzieht den gesamten &apos;Hammerkopf&apos; des Schiffs von Ost nach West. Von ihm gehen Türen in die diversen Räume ab und in der Mitte, als bei gut 50 Metern führt ein Aufgang zur Brücke und ein Abgang herunter in die Maschinenräume. An den Wänden hängen neben typischen Raum- und Evakuierungsplänen auch Bilder von ehemaligen Mitarbeitern und Crewmitgliedern der Fenrir-13. Ansonsten ist der Flur einfach und karg. In diesem Abschnitt des Korridors liegt die erste Hälfte der sechs Crew-Quartiere. Aller [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string CORRIDOR_EAST {
             get {
@@ -275,6 +275,42 @@ namespace Fenrir13.Resources {
         internal static string DRAWER {
             get {
                 return ResourceManager.GetString("DRAWER", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Durch das runde Türfenster kannst Du einen Blick in das dunkle Zimmer erhaschen. Es ist ähnlich ausgestattet wie Dein Raum..
+        /// </summary>
+        internal static string EMPTYCREWCHAMBERONE {
+            get {
+                return ResourceManager.GetString("EMPTYCREWCHAMBERONE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Die Kammer ist auf dieser Reise unbenutzt und daher versiegelt..
+        /// </summary>
+        internal static string EMPTYCREWCHAMBERONE_LOCKDESCRIPTION {
+            get {
+                return ResourceManager.GetString("EMPTYCREWCHAMBERONE_LOCKDESCRIPTION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Durch das runde Türfenster kannst Du einen Blick in das dunkle Zimmer erhaschen. Es ist ähnlich ausgestattet wie Dein Raum..
+        /// </summary>
+        internal static string EMPTYCREWCHAMBERTWO {
+            get {
+                return ResourceManager.GetString("EMPTYCREWCHAMBERTWO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Die Kammer ist auf dieser Reise unbenutzt und daher versiegelt..
+        /// </summary>
+        internal static string EMPTYCREWCHAMBERTWO_LOCKDESCRIPTION {
+            get {
+                return ResourceManager.GetString("EMPTYCREWCHAMBERTWO_LOCKDESCRIPTION", resourceCulture);
             }
         }
         

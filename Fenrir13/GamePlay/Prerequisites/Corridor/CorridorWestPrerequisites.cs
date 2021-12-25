@@ -4,7 +4,7 @@ using Heretic.InteractiveFiction.Objects;
 
 namespace Fenrir13.GamePlay.Prerequisites.Corridor;
 
-public class CorridorWestPrerequisites
+public static class CorridorWestPrerequisites
 {
     internal static Location Get(EventProvider eventProvider)
     {

@@ -36,4 +36,10 @@
     <data name="CORRIDOR_MIDWEST" xml:space="preserve">
         <value>Der mittel-westliche Korridor|Korridor (mitte-west)</value>
     </data>
+    <data name="EMPTYCREWCHAMBERONE" xml:space="preserve">
+        <value>Crew-Kammer-1</value>
+    </data>
+    <data name="EMPTYCREWCHAMBERTWO" xml:space="preserve">
+        <value>Crew-Kammer-2</value>
+    </data>
 </root>

@@ -160,6 +160,24 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Crew-Kammer-1|Crew-Kammer1|Kammer-1|Kammer1|Crew-Raum 1|Crew-Raum1|Raum-1|Raum1.
+        /// </summary>
+        internal static string EMPTYCREWCHAMBERONE {
+            get {
+                return ResourceManager.GetString("EMPTYCREWCHAMBERONE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Crew-Kammer-2|Crew-Kammer2|Kammer-2|Kammer2|Crew-Raum 2|Crew-Raum2|Raum-2|Raum2.
+        /// </summary>
+        internal static string EMPTYCREWCHAMBERTWO {
+            get {
+                return ResourceManager.GetString("EMPTYCREWCHAMBERTWO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to LAPTOP|Rechner|Computer.
         /// </summary>
         internal static string LAPTOP {

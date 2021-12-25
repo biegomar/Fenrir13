@@ -214,6 +214,24 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to EMPTYCREWCHAMBERONE.
+        /// </summary>
+        internal static string EMPTYCREWCHAMBERONE {
+            get {
+                return ResourceManager.GetString("EMPTYCREWCHAMBERONE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EMPTYCREWCHAMBERTWO.
+        /// </summary>
+        internal static string EMPTYCREWCHAMBERTWO {
+            get {
+                return ResourceManager.GetString("EMPTYCREWCHAMBERTWO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to LAPTOP.
         /// </summary>
         internal static string LAPTOP {

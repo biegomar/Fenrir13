@@ -16,7 +16,15 @@ internal static class CorridorEastPrerequisites
             IsLocked = true,
             LockDescription = Descriptions.CORRIDOR_EAST_LOCKDESCRIPTION
         };
+        
+        AddSurroundings(corridor);
 
         return corridor;
+    }
+
+    private static void AddSurroundings(Location corridor)
+    {
+        corridor.Surroundings.Add(Keys.EMPTYCREWCHAMBERONE, Descriptions.EMPTYCREWCHAMBERONE);
+        corridor.Surroundings.Add(Keys.EMPTYCREWCHAMBERTWO, Descriptions.EMPTYCREWCHAMBERTWO);
     }
 }

@@ -113,5 +113,23 @@ namespace Fenrir13.Resources {
                 return ResourceManager.GetString("CRYOCHAMBER", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Crew-Kammer-1.
+        /// </summary>
+        internal static string EMPTYCREWCHAMBERONE {
+            get {
+                return ResourceManager.GetString("EMPTYCREWCHAMBERONE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Crew-Kammer-2.
+        /// </summary>
+        internal static string EMPTYCREWCHAMBERTWO {
+            get {
+                return ResourceManager.GetString("EMPTYCREWCHAMBERTWO", resourceCulture);
+            }
+        }
     }
 }

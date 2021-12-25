@@ -99,4 +99,10 @@
     <data name="TOILET_SEAT" xml:space="preserve">
         <value>Toilettensitz|Klobrille|Klositz|WC-Sitz</value>
     </data>
+    <data name="EMPTYCREWCHAMBERONE" xml:space="preserve">
+        <value>Crew-Kammer-1|Crew-Kammer1|Kammer-1|Kammer1|Crew-Raum 1|Crew-Raum1|Raum-1|Raum1</value>
+    </data>
+    <data name="EMPTYCREWCHAMBERTWO" xml:space="preserve">
+        <value>Crew-Kammer-2|Crew-Kammer2|Kammer-2|Kammer2|Crew-Raum 2|Crew-Raum2|Raum-2|Raum2</value>
+    </data>
 </root>

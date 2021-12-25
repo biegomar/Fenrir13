@@ -120,4 +120,10 @@
     <data name="CORRIDOR_MIDWEST" xml:space="preserve">
         <value>CORRIDOR_MIDWEST</value>
     </data>
+    <data name="EMPTYCREWCHAMBERONE" xml:space="preserve">
+        <value>EMPTYCREWCHAMBERONE</value>
+    </data>
+    <data name="EMPTYCREWCHAMBERTWO" xml:space="preserve">
+        <value>EMPTYCREWCHAMBERTWO</value>
+    </data>
 </root>
