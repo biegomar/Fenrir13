@@ -1,5 +1,6 @@
 using System.Text;
 using Fenrir13.Resources;
+using Heretic.InteractiveFiction.Exceptions;
 using Heretic.InteractiveFiction.GamePlay.EventSystem.EventArgs;
 using Heretic.InteractiveFiction.Objects;
 using Heretic.InteractiveFiction.Subsystems;
@@ -32,19 +33,7 @@ internal partial class EventProvider
     {
         if (sender is Location cryoChamber && cryoChamber.Key == Keys.CRYOCHAMBER && eventArgs.ExternalItemKey == Keys.DISPLAY)
         {
-            var barEaten = false;
-            var bar = this.universe.ActiveLocation.GetItemByKey(Keys.CHOCOLATEBAR);
-            if (bar == default)
-            {
-                bar = this.universe.ActivePlayer.GetItemByKey(Keys.CHOCOLATEBAR);
-
-                if (bar == default)
-                {
-                    barEaten = true;
-                }
-            }
-
-            if (barEaten)
+            if (IsPowerBarEaten())
             {
                 PrintingSubsystem.Resource(Descriptions.DISPLAY_BAR_EATEN);
                 PrintingSubsystem.ForegroundColor = TextColor.Red;
@@ -67,7 +56,24 @@ internal partial class EventProvider
             }
         }
     }
-    
+
+    private bool IsPowerBarEaten()
+    {
+        var barEaten = false;
+        var bar = this.universe.ActiveLocation.GetItemByKey(Keys.CHOCOLATEBAR);
+        if (bar == default)
+        {
+            bar = this.universe.ActivePlayer.GetItemByKey(Keys.CHOCOLATEBAR);
+
+            if (bar == default)
+            {
+                barEaten = true;
+            }
+        }
+
+        return barEaten;
+    }
+
     internal void LookAtClosedDoor(object sender, ContainerObjectEventArgs eventArgs)
     {
         if (sender is Location cryoChamber && cryoChamber.Key == Keys.CRYOCHAMBER && eventArgs.ExternalItemKey == Keys.CLOSET_DOOR)
@@ -81,7 +87,6 @@ internal partial class EventProvider
                 this.universe.Score += this.universe.ScoreBoard[nameof(this.LookAtClosedDoor)];
                 cryoChamber.AfterLook -= LookAtClosedDoor;
             }
-            
         }
     }
     
@@ -109,4 +114,19 @@ internal partial class EventProvider
         }
     }
     
+    internal void CantLeaveWithoutSuiteAndUneatenBar(object sender, ChangeLocationEventArgs eventArgs)
+    {
+        if (sender is Location chamber && chamber.Key == Keys.CRYOCHAMBER
+            && eventArgs.NewDestinationNode.Location.Key == Keys.CORRIDOR_EAST)
+        {
+            if (IsPowerBarEaten())
+            {
+                var suite = this.universe.ActiveLocation.GetItemByKey(Keys.SPACE_SUITE);
+                if (suite != default)
+                {
+                    throw new BeforeChangeLocationException(Descriptions.CANT_LEAVE_CHAMBER);
+                }   
+            }
+        }
+    }
 }

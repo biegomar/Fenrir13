@@ -24,6 +24,8 @@ internal static class CryoChamberPrerequisites
         
         AddAfterLookEvents(cryoChamber, eventProvider);
         
+        AddChangeLocationEvents(cryoChamber, eventProvider);
+        
         return cryoChamber;
     }
 
@@ -109,5 +111,10 @@ internal static class CryoChamberPrerequisites
     {
         item.AfterTake += eventProvider.TakeSpaceSuite;
         eventProvider.ScoreBoard.Add(nameof(eventProvider.TakeSpaceSuite), 1);
+    }
+    
+    private static void AddChangeLocationEvents(Location room, EventProvider eventProvider)
+    {
+        room.BeforeChangeLocation += eventProvider.CantLeaveWithoutSuiteAndUneatenBar;
     }
 }

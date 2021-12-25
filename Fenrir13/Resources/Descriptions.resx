@@ -163,4 +163,7 @@ Du bestätigst die Meldung mit einem Fingertipp und das Display wechselt wieder 
     <data name="CORRIDOR_EAST_LOCKDESCRIPTION" xml:space="preserve">
         <value>Deine Zimmertür ist geschlossen und versperrt den Weg.</value>
     </data>
+    <data name="CANT_LEAVE_CHAMBER" xml:space="preserve">
+        <value>Als Du versuchst den Raum zu verlassen schliesst sich die Tür abrupt. Gleichzeitig ertönt von dem Space-Overall ein kurzes Piepen. Scheinbar kannst Du nicht nackt durch das Raumschiff wandeln.</value>
+    </data>
 </root>

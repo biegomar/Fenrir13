@@ -61,6 +61,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Als Du versuchst den Raum zu verlassen schliesst sich die Tür abrupt. Gleichzeitig ertönt von dem Space-Overall ein kurzes Piepen. Scheinbar kannst Du nicht nackt durch das Raumschiff wandeln..
+        /// </summary>
+        internal static string CANT_LEAVE_CHAMBER {
+            get {
+                return ResourceManager.GetString("CANT_LEAVE_CHAMBER", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Ein einfacher Teppich. Er soll den Raum ein wenig wohnlicher machen. Ansonsten aber nichts besonderes..
         /// </summary>
         internal static string CARPET {
