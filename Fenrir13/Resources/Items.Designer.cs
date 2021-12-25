@@ -61,6 +61,24 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Schott|Abriegelung.
+        /// </summary>
+        internal static string BULKHEAD {
+            get {
+                return ResourceManager.GetString("BULKHEAD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sichtfenster.
+        /// </summary>
+        internal static string BULKHEAD_WINDOW {
+            get {
+                return ResourceManager.GetString("BULKHEAD_WINDOW", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Teppich|Läufer.
         /// </summary>
         internal static string CARPET {

@@ -61,6 +61,24 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Das Schott ist eine dieser massiven Sicherheitstüren, die es hier im Schiff an vielen Stellen gibt und bei Gefahr dazu dienen, einzelne Sektoren des Schiffs zu isolieren. Es hat ein Sichtfenster..
+        /// </summary>
+        internal static string BULKHEAD {
+            get {
+                return ResourceManager.GetString("BULKHEAD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Durch das Sichtfenster erhälst Du einen guten Blick in den abgesperrten Bereich. Oh nein! Du kannst deutlich erkennen, dass irgendetwas die Bordwand durchschlagen und ein ca. faustgroßes Loch gerissen hat. Du siehst auch die Türen zu den drei restlichen Crew-Kammern. Diese sind scheinbar unversehrt. Du kannst für den Rest der Besatzung nur hoffen, dass das den Tatsachen entspricht. Aber jetzt wird Dir klar, warum Du geweckt wurdest. Von dort sind die anderen Crew-Mitglieder machtlos und in den geschützen un [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string BULKHEAD_WINDOW {
+            get {
+                return ResourceManager.GetString("BULKHEAD_WINDOW", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Als Du versuchst den Raum zu verlassen schliesst sich die Tür abrupt. Gleichzeitig ertönt von dem Space-Overall ein kurzes Piepen. Scheinbar kannst Du nicht nackt durch das Raumschiff wandeln..
         /// </summary>
         internal static string CANT_LEAVE_CHAMBER {
@@ -201,6 +219,15 @@ namespace Fenrir13.Resources {
         internal static string CORRIDOR_WEST {
             get {
                 return ResourceManager.GetString("CORRIDOR_WEST", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Der Weg ist durch ein Schott abgeriegelt und damit gibt es auch keinen Zugang zum Rest der Crew. .
+        /// </summary>
+        internal static string CORRIDOR_WEST_LOCKDESCRIPTION {
+            get {
+                return ResourceManager.GetString("CORRIDOR_WEST_LOCKDESCRIPTION", resourceCulture);
             }
         }
         

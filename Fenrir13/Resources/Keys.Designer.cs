@@ -61,6 +61,24 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to BULKHEAD.
+        /// </summary>
+        internal static string BULKHEAD {
+            get {
+                return ResourceManager.GetString("BULKHEAD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to BULKHEAD_WINDOW.
+        /// </summary>
+        internal static string BULKHEAD_WINDOW {
+            get {
+                return ResourceManager.GetString("BULKHEAD_WINDOW", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to CARPET.
         /// </summary>
         internal static string CARPET {

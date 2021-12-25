@@ -15,6 +15,14 @@ public static class CorridorMidWestPrerequisites
             Description = Descriptions.CORRIDOR_MIDWEST
         };
 
+        AddSurroundings(corridor);
+        
         return corridor;
+    }
+
+    private static void AddSurroundings(Location corridor)
+    {
+        corridor.Surroundings.Add(Keys.BULKHEAD, Descriptions.BULKHEAD);
+        corridor.Surroundings.Add(Keys.BULKHEAD_WINDOW, Descriptions.BULKHEAD_WINDOW);
     }
 }

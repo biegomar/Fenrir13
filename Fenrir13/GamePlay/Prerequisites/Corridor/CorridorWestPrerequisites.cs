@@ -12,7 +12,10 @@ public static class CorridorWestPrerequisites
         {
             Key = Keys.CORRIDOR_WEST,
             Name = Locations.CORRIDOR_WEST,
-            Description = Descriptions.CORRIDOR_WEST
+            Description = Descriptions.CORRIDOR_WEST,
+            IsLocked = true,
+            LockDescription = Descriptions.CORRIDOR_WEST_LOCKDESCRIPTION
+            
         };
 
         return corridor;

@@ -190,4 +190,13 @@ Du bestätigst die Meldung mit einem Fingertipp und das Display wechselt wieder 
     <data name="EMPTYCREWCHAMBERTWO_LOCKDESCRIPTION" xml:space="preserve">
         <value>Die Kammer ist auf dieser Reise unbenutzt und daher versiegelt.</value>
     </data>
+    <data name="CORRIDOR_WEST_LOCKDESCRIPTION" xml:space="preserve">
+        <value>Der Weg ist durch ein Schott abgeriegelt und damit gibt es auch keinen Zugang zum Rest der Crew. </value>
+    </data>
+    <data name="BULKHEAD" xml:space="preserve">
+        <value>Das Schott ist eine dieser massiven Sicherheitstüren, die es hier im Schiff an vielen Stellen gibt und bei Gefahr dazu dienen, einzelne Sektoren des Schiffs zu isolieren. Es hat ein Sichtfenster.</value>
+    </data>
+    <data name="BULKHEAD_WINDOW" xml:space="preserve">
+        <value>Durch das Sichtfenster erhälst Du einen guten Blick in den abgesperrten Bereich. Oh nein! Du kannst deutlich erkennen, dass irgendetwas die Bordwand durchschlagen und ein ca. faustgroßes Loch gerissen hat. Du siehst auch die Türen zu den drei restlichen Crew-Kammern. Diese sind scheinbar unversehrt. Du kannst für den Rest der Besatzung nur hoffen, dass das den Tatsachen entspricht. Aber jetzt wird Dir klar, warum Du geweckt wurdest. Von dort sind die anderen Crew-Mitglieder machtlos und in den geschützen und hoffentlich unbeschädigten Cryo-Pods sind sie jahrelang sicher, selbst wenn ihre Räume ohne Sauerstoff sind und der eisigen Kälte des Welraums ausgesetzt sind.</value>
+    </data>
 </root>

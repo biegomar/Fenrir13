@@ -105,4 +105,10 @@
     <data name="EMPTYCREWCHAMBERTWO" xml:space="preserve">
         <value>Crew-Kammer-2|Crew-Kammer2|Kammer-2|Kammer2|Crew-Raum 2|Crew-Raum2|Raum-2|Raum2</value>
     </data>
+    <data name="BULKHEAD" xml:space="preserve">
+        <value>Schott|Abriegelung</value>
+    </data>
+    <data name="BULKHEAD_WINDOW" xml:space="preserve">
+        <value>Sichtfenster</value>
+    </data>
 </root>

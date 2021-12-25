@@ -126,4 +126,10 @@
     <data name="EMPTYCREWCHAMBERTWO" xml:space="preserve">
         <value>EMPTYCREWCHAMBERTWO</value>
     </data>
+    <data name="BULKHEAD" xml:space="preserve">
+        <value>BULKHEAD</value>
+    </data>
+    <data name="BULKHEAD_WINDOW" xml:space="preserve">
+        <value>BULKHEAD_WINDOW</value>
+    </data>
 </root>
