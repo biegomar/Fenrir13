@@ -132,4 +132,7 @@
     <data name="BULKHEAD_WINDOW" xml:space="preserve">
         <value>BULKHEAD_WINDOW</value>
     </data>
+    <data name="COMMANDBRIDGE" xml:space="preserve">
+        <value>COMMANDBRIDGE</value>
+    </data>
 </root>

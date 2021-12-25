@@ -169,6 +169,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Die Brücke ist das Herzstück der Mission..
+        /// </summary>
+        internal static string COMMANDBRIDGE {
+            get {
+                return ResourceManager.GetString("COMMANDBRIDGE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Der Korridor durchzieht den gesamten &apos;Hammerkopf&apos; des Schiffs von Ost nach West. Von ihm gehen Türen in die diversen Räume ab und in der Mitte, als bei gut 50 Metern führt ein Aufgang zur Brücke und ein Abgang herunter in die Maschinenräume. An den Wänden hängen neben typischen Raum- und Evakuierungsplänen auch Bilder von ehemaligen Mitarbeitern und Crewmitgliedern der Fenrir-13. Ansonsten ist der Flur einfach und karg. In diesem Abschnitt des Korridors liegt die erste Hälfte der sechs Crew-Quartiere. Aller [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string CORRIDOR_EAST {
@@ -187,7 +196,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Korridor durchzieht den gesamten &apos;Hammerkopf&apos; des Schiffs von Ost nach West. Von ihm gehen Türen in die diversen Räume ab und in der Mitte, als bei gut 50 Metern führt ein Aufgang zur Brücke und ein Abgang herunter in die Maschinenräume. An den Wänden hängen neben typischen Raum- und Evakuierungsplänen auch Bilder von ehemaligen Mitarbeitern und Crewmitgliedern der Fenrir-13. Ansonsten ist der Flur einfach und karg..
+        ///   Looks up a localized string similar to Du befindest Dich nun genau in der Mitte des Korridors. An der nördlichen Seite führt eine breite Treppe auf die Brücke. An der südlichen Seite liegt der Zugang zu den Technik- und Maschinenräumen. Auch hier geht es über eine Treppe, allerdings eine Etage nach unten. An der Wand hängt nur ein Bild, aber dafür handelt es sich um ein besonders exponiertes Gemälde. Ansonsten ist der Flur einfach und karg..
         /// </summary>
         internal static string CORRIDOR_MID {
             get {

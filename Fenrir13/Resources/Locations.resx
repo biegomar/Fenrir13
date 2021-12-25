@@ -42,4 +42,7 @@
     <data name="EMPTYCREWCHAMBERTWO" xml:space="preserve">
         <value>Crew-Kammer-2</value>
     </data>
+    <data name="COMMANDBRIDGE" xml:space="preserve">
+        <value>Die Kommando-Brücke|Kommando-Brücke|Brücke</value>
+    </data>
 </root>

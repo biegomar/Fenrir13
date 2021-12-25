@@ -1,4 +1,5 @@
 using Fenrir13.Events;
+using Fenrir13.GamePlay.Prerequisites.CommandBridge;
 using Fenrir13.GamePlay.Prerequisites.Corridor;
 using Fenrir13.GamePlay.Prerequisites.CryoChamber;
 using Fenrir13.GamePlay.Prerequisites.PlayerConfig;
@@ -29,13 +30,15 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
         var corridorMid = CorridorMidPrerequisites.Get(this.eventProvider);
         var corridorMidWest = CorridorMidWestPrerequisites.Get(this.eventProvider);
         var corridorWest = CorridorWestPrerequisites.Get(this.eventProvider);
+        var bridge = CommandBridgePrerequisites.Get(this.eventProvider);
         
         map.Add(cryoChamber, CryoChamberLocationMap(corridorEast));
         map.Add(corridorEast, CorridorEastLocationMap(cryoChamber, corridorMidEast, emptyChamberOne, emptyChamberTwo));
         map.Add(corridorMidEast, CorridorMidEastLocationMap(corridorEast, corridorMid));
-        map.Add(corridorMid, CorridorMidLocationMap(corridorMidEast, corridorMidWest));
+        map.Add(corridorMid, CorridorMidLocationMap(corridorMidEast, corridorMidWest, bridge));
         map.Add(corridorMidWest, CorridorMidWestLocationMap(corridorMid, corridorWest));
         map.Add(corridorWest, CorridorWestLocationMap(corridorMidWest));
+        map.Add(bridge, BridgeLocationMap(corridorMid));
         
         var activeLocation = cryoChamber;
         var activePlayer = PlayerPrerequisites.Get(this.eventProvider);
@@ -74,12 +77,22 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
         return locationMap;
     }
     
-    private static List<DestinationNode> CorridorMidLocationMap(Location corridorMidEast, Location corridorMidWest)
+    private static List<DestinationNode> CorridorMidLocationMap(Location corridorMidEast, Location corridorMidWest, Location bridge)
     {
         var locationMap = new List<DestinationNode>
         {
             new() {Direction = Directions.E, Location = corridorMidEast, IsHidden = false},
             new() {Direction = Directions.W, Location = corridorMidWest, IsHidden = false},
+            new() {Direction = Directions.UP, Location = bridge, IsHidden = false},
+        };
+        return locationMap;
+    }
+    
+    private static List<DestinationNode> BridgeLocationMap(Location corridorMid)
+    {
+        var locationMap = new List<DestinationNode>
+        {
+            new() {Direction = Directions.DOWN, Location = corridorMid, IsHidden = false},
         };
         return locationMap;
     }

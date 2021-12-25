@@ -142,6 +142,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to COMMANDBRIDGE.
+        /// </summary>
+        internal static string COMMANDBRIDGE {
+            get {
+                return ResourceManager.GetString("COMMANDBRIDGE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to CORRIDOR_EAST.
         /// </summary>
         internal static string CORRIDOR_EAST {
