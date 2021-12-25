@@ -19,7 +19,7 @@
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
     <data name="CRYOPOD" xml:space="preserve">
-        <value>Cryopod|Cryo-Pod|Bett|Schlafplatz|Schlafkammer|Pod</value>
+        <value>Cryopod|Cryo-Pod|Bett|Schlafplatz|Schlafkammer|Pod|Kokon</value>
     </data>
     <data name="CHAMBER_FLOOR" xml:space="preserve">
         <value>Fußboden|Fussboden|Boden</value>
@@ -49,7 +49,7 @@
         <value>Schrank|Kleiderschrank</value>
     </data>
     <data name="DRAWER" xml:space="preserve">
-        <value>Schublade|Schubfach|Schubfächer</value>
+        <value>Schublade|Schubladen|Schubfach|Schubfächer</value>
     </data>
     <data name="CLOSET_DOOR" xml:space="preserve">
         <value>Schranktür|Kleiderschranktür</value>

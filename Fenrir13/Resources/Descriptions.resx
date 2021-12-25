@@ -199,4 +199,7 @@ Du bestätigst die Meldung mit einem Fingertipp und das Display wechselt wieder 
     <data name="BULKHEAD_WINDOW" xml:space="preserve">
         <value>Durch das Sichtfenster erhälst Du einen guten Blick in den abgesperrten Bereich. Oh nein! Du kannst deutlich erkennen, dass irgendetwas die Bordwand durchschlagen und ein ca. faustgroßes Loch gerissen hat. Du siehst auch die Türen zu den drei restlichen Crew-Kammern. Diese sind scheinbar unversehrt. Du kannst für den Rest der Besatzung nur hoffen, dass das den Tatsachen entspricht. Aber jetzt wird Dir klar, warum Du geweckt wurdest. Von dort sind die anderen Crew-Mitglieder machtlos und in den geschützen und hoffentlich unbeschädigten Cryo-Pods sind sie jahrelang sicher, selbst wenn ihre Räume ohne Sauerstoff sind und der eisigen Kälte des Welraums ausgesetzt sind.</value>
     </data>
+    <data name="PASSWORD_HINT" xml:space="preserve">
+        <value>ᛗᚨᚱᛁᚾᛖ</value>
+    </data>
 </root>

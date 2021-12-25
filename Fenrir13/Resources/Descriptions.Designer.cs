@@ -427,6 +427,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to ᛗᚨᚱᛁᚾᛖ.
+        /// </summary>
+        internal static string PASSWORD_HINT {
+            get {
+                return ResourceManager.GetString("PASSWORD_HINT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Die Tür hat ein kleines, tellergroßes Fenster, durch das man in beide Richtungen schauen kann, wenn man das möchte. Es ist elektronisch schaltbar und so kann man bei Bedarf die Transparenz anpassen..
         /// </summary>
         internal static string PEEPHOLE {

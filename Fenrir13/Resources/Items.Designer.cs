@@ -151,7 +151,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Cryopod|Cryo-Pod|Bett|Schlafplatz|Schlafkammer|Pod.
+        ///   Looks up a localized string similar to Cryopod|Cryo-Pod|Bett|Schlafplatz|Schlafkammer|Pod|Kokon.
         /// </summary>
         internal static string CRYOPOD {
             get {
@@ -169,7 +169,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Schublade|Schubfach|Schubfächer.
+        ///   Looks up a localized string similar to Schublade|Schubladen|Schubfach|Schubfächer.
         /// </summary>
         internal static string DRAWER {
             get {
