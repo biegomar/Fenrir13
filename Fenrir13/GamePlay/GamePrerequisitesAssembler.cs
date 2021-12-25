@@ -23,9 +23,17 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
 
         var cryoChamber = CryoChamberPrerequisites.Get(this.eventProvider);
         var corridorEast = CorridorEastPrerequisites.Get(this.eventProvider);
+        var corridorMidEast = CorridorMidEastPrerequisites.Get(this.eventProvider);
+        var corridorMid = CorridorMidPrerequisites.Get(this.eventProvider);
+        var corridorMidWest = CorridorMidWestPrerequisites.Get(this.eventProvider);
+        var corridorWest = CorridorWestPrerequisites.Get(this.eventProvider);
         
         map.Add(cryoChamber, CryoChamberLocationMap(corridorEast));
-        map.Add(corridorEast, CorridorEastLocationMap(cryoChamber));
+        map.Add(corridorEast, CorridorEastLocationMap(cryoChamber, corridorMidEast));
+        map.Add(corridorMidEast, CorridorMidEastLocationMap(corridorEast, corridorMid));
+        map.Add(corridorMid, CorridorMidLocationMap(corridorMidEast, corridorMidWest));
+        map.Add(corridorMidWest, CorridorMidWestLocationMap(corridorMid, corridorWest));
+        map.Add(corridorWest, CorridorWestLocationMap(corridorMidWest));
         
         var activeLocation = cryoChamber;
         var activePlayer = PlayerPrerequisites.Get(this.eventProvider);
@@ -42,11 +50,51 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
         return locationMap;
     }
     
-    private static List<DestinationNode> CorridorEastLocationMap(Location cryoChamber)
+    private static List<DestinationNode> CorridorEastLocationMap(Location cryoChamber, Location corridorMidEast)
     {
         var locationMap = new List<DestinationNode>
         {
             new() {Direction = Directions.E, Location = cryoChamber, IsHidden = false},
+            new() {Direction = Directions.W, Location = corridorMidEast, IsHidden = false},
+        };
+        return locationMap;
+    }
+    
+    private static List<DestinationNode> CorridorMidEastLocationMap(Location corridorEast, Location corridorMid)
+    {
+        var locationMap = new List<DestinationNode>
+        {
+            new() {Direction = Directions.E, Location = corridorEast, IsHidden = false},
+            new() {Direction = Directions.W, Location = corridorMid, IsHidden = false},
+        };
+        return locationMap;
+    }
+    
+    private static List<DestinationNode> CorridorMidLocationMap(Location corridorMidEast, Location corridorMidWest)
+    {
+        var locationMap = new List<DestinationNode>
+        {
+            new() {Direction = Directions.E, Location = corridorMidEast, IsHidden = false},
+            new() {Direction = Directions.W, Location = corridorMidWest, IsHidden = false},
+        };
+        return locationMap;
+    }
+
+    private static List<DestinationNode> CorridorMidWestLocationMap(Location corridorMid, Location corridorWest)
+    {
+        var locationMap = new List<DestinationNode>
+        {
+            new() {Direction = Directions.E, Location = corridorMid, IsHidden = false},
+            new() {Direction = Directions.W, Location = corridorWest, IsHidden = false},
+        };
+        return locationMap;
+    }
+    
+    private static List<DestinationNode> CorridorWestLocationMap(Location corridorMidWest)
+    {
+        var locationMap = new List<DestinationNode>
+        {
+            new() {Direction = Directions.E, Location = corridorMidWest, IsHidden = false},
         };
         return locationMap;
     }

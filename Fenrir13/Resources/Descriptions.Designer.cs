@@ -169,6 +169,42 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Der Korridor durchzieht den gesamten &apos;Hammerkopf&apos; des Schiffs von Ost nach West. Von ihm gehen Türen in die diversen Räume ab und in der Mitte, als bei gut 50 Metern führt ein Aufgang zur Brücke und ein Abgang herunter in die Maschinenräume. An den Wänden hängen neben typischen Raum- und Evakuierungsplänen auch Bilder von ehemaligen Mitarbeitern und Crewmitgliedern der Fenrir-13. Ansonsten ist der Flur einfach und karg..
+        /// </summary>
+        internal static string CORRIDOR_MID {
+            get {
+                return ResourceManager.GetString("CORRIDOR_MID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Der Korridor durchzieht den gesamten &apos;Hammerkopf&apos; des Schiffs von Ost nach West. Von ihm gehen Türen in die diversen Räume ab und in der Mitte, als bei gut 50 Metern führt ein Aufgang zur Brücke und ein Abgang herunter in die Maschinenräume. An den Wänden hängen neben typischen Raum- und Evakuierungsplänen auch Bilder von ehemaligen Mitarbeitern und Crewmitgliedern der Fenrir-13. Ansonsten ist der Flur einfach und karg..
+        /// </summary>
+        internal static string CORRIDOR_MIDEAST {
+            get {
+                return ResourceManager.GetString("CORRIDOR_MIDEAST", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Der Korridor durchzieht den gesamten &apos;Hammerkopf&apos; des Schiffs von Ost nach West. Von ihm gehen Türen in die diversen Räume ab und in der Mitte, als bei gut 50 Metern führt ein Aufgang zur Brücke und ein Abgang herunter in die Maschinenräume. An den Wänden hängen neben typischen Raum- und Evakuierungsplänen auch Bilder von ehemaligen Mitarbeitern und Crewmitgliedern der Fenrir-13. Ansonsten ist der Flur einfach und karg..
+        /// </summary>
+        internal static string CORRIDOR_MIDWEST {
+            get {
+                return ResourceManager.GetString("CORRIDOR_MIDWEST", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Der Korridor durchzieht den gesamten &apos;Hammerkopf&apos; des Schiffs von Ost nach West. Von ihm gehen Türen in die diversen Räume ab und in der Mitte, als bei gut 50 Metern führt ein Aufgang zur Brücke und ein Abgang herunter in die Maschinenräume. An den Wänden hängen neben typischen Raum- und Evakuierungsplänen auch Bilder von ehemaligen Mitarbeitern und Crewmitgliedern der Fenrir-13. Ansonsten ist der Flur einfach und karg..
+        /// </summary>
+        internal static string CORRIDOR_WEST {
+            get {
+                return ResourceManager.GetString("CORRIDOR_WEST", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Du befindest Dich in Deinem persönlichen Raum des Schiffs. Er ist sehr funktional und spatanisch eingerichtet, wirkt dabei aber dennoch wohnlich. Der Cryo-Pod, in dem Du gerade noch gelegen hast, hat seine Kokon-Form, die dem Passagier während der langen Schlafphase einer Raumreise Schutz und Versorgung bietet, in eine offene Bettform gewandelt. Der Fußboden ist metallisch und nur vor Deinem Bett befindet sich ein kleiner Teppich. Du weißt aus der Erfahrung, das der Fußboden angenehmt beheizt ist und magnet [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string CRYOCHAMBER {

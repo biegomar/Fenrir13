@@ -106,6 +106,18 @@
         <value>TOILET_SEAT</value>
     </data>
     <data name="CORRIDOR_EAST" xml:space="preserve">
-        <value>CORRIDOR</value>
+        <value>CORRIDOR_EAST</value>
+    </data>
+    <data name="CORRIDOR_WEST" xml:space="preserve">
+        <value>CORRIDOR_WEST</value>
+    </data>
+    <data name="CORRIDOR_MIDEAST" xml:space="preserve">
+        <value>CORRIDOR_MIDEAST</value>
+    </data>
+    <data name="CORRIDOR_MID" xml:space="preserve">
+        <value>CORRIDOR_MID</value>
+    </data>
+    <data name="CORRIDOR_MIDWEST" xml:space="preserve">
+        <value>CORRIDOR_MIDWEST</value>
     </data>
 </root>

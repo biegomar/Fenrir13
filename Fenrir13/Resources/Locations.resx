@@ -22,6 +22,18 @@
         <value>Deine Cryo-Kammer|Cryo-Kammer|Cryokammer|Kammer</value>
     </data>
     <data name="CORRIDOR_EAST" xml:space="preserve">
-        <value>Der Korridor|Korridor|Flur</value>
+        <value>Der östliche Korridor|Korridor (ost)</value>
+    </data>
+    <data name="CORRIDOR_WEST" xml:space="preserve">
+        <value>Der westliche Korridor|Korridor (west)</value>
+    </data>
+    <data name="CORRIDOR_MIDEAST" xml:space="preserve">
+        <value>Der mittel-östliche Korridor|Korridor (mitte-ost)</value>
+    </data>
+    <data name="CORRIDOR_MID" xml:space="preserve">
+        <value>Mittlerer Korridor|Korridor (mitte)</value>
+    </data>
+    <data name="CORRIDOR_MIDWEST" xml:space="preserve">
+        <value>Der mittel-westliche Korridor|Korridor (mitte-west)</value>
     </data>
 </root>

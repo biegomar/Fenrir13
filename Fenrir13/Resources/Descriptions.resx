@@ -166,4 +166,16 @@ Du bestätigst die Meldung mit einem Fingertipp und das Display wechselt wieder 
     <data name="CANT_LEAVE_CHAMBER" xml:space="preserve">
         <value>Als Du versuchst den Raum zu verlassen schliesst sich die Tür abrupt. Gleichzeitig ertönt von dem Space-Overall ein kurzes Piepen. Scheinbar kannst Du nicht nackt durch das Raumschiff wandeln.</value>
     </data>
+    <data name="CORRIDOR_WEST" xml:space="preserve">
+        <value>Der Korridor durchzieht den gesamten 'Hammerkopf' des Schiffs von Ost nach West. Von ihm gehen Türen in die diversen Räume ab und in der Mitte, als bei gut 50 Metern führt ein Aufgang zur Brücke und ein Abgang herunter in die Maschinenräume. An den Wänden hängen neben typischen Raum- und Evakuierungsplänen auch Bilder von ehemaligen Mitarbeitern und Crewmitgliedern der Fenrir-13. Ansonsten ist der Flur einfach und karg.</value>
+    </data>
+    <data name="CORRIDOR_MIDEAST" xml:space="preserve">
+        <value>Der Korridor durchzieht den gesamten 'Hammerkopf' des Schiffs von Ost nach West. Von ihm gehen Türen in die diversen Räume ab und in der Mitte, als bei gut 50 Metern führt ein Aufgang zur Brücke und ein Abgang herunter in die Maschinenräume. An den Wänden hängen neben typischen Raum- und Evakuierungsplänen auch Bilder von ehemaligen Mitarbeitern und Crewmitgliedern der Fenrir-13. Ansonsten ist der Flur einfach und karg.</value>
+    </data>
+    <data name="CORRIDOR_MID" xml:space="preserve">
+        <value>Der Korridor durchzieht den gesamten 'Hammerkopf' des Schiffs von Ost nach West. Von ihm gehen Türen in die diversen Räume ab und in der Mitte, als bei gut 50 Metern führt ein Aufgang zur Brücke und ein Abgang herunter in die Maschinenräume. An den Wänden hängen neben typischen Raum- und Evakuierungsplänen auch Bilder von ehemaligen Mitarbeitern und Crewmitgliedern der Fenrir-13. Ansonsten ist der Flur einfach und karg.</value>
+    </data>
+    <data name="CORRIDOR_MIDWEST" xml:space="preserve">
+        <value>Der Korridor durchzieht den gesamten 'Hammerkopf' des Schiffs von Ost nach West. Von ihm gehen Türen in die diversen Räume ab und in der Mitte, als bei gut 50 Metern führt ein Aufgang zur Brücke und ein Abgang herunter in die Maschinenräume. An den Wänden hängen neben typischen Raum- und Evakuierungsplänen auch Bilder von ehemaligen Mitarbeitern und Crewmitgliedern der Fenrir-13. Ansonsten ist der Flur einfach und karg.</value>
+    </data>
 </root>
