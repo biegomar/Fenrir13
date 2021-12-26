@@ -269,6 +269,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Diese Tür hat ja keine Klinke und wird sich, wenn sie entsperrt ist, automatisch für Dich öffnen..
+        /// </summary>
+        internal static string CRYOCHAMBER_DOOR_TRY_OPEN {
+            get {
+                return ResourceManager.GetString("CRYOCHAMBER_DOOR_TRY_OPEN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Normalerweise kann man das Sichtfenster zum Schutz verschließen, doch aktuell ist er nicht aktiviert und es dringt der blinkende rote Schein der Alarmbeleuchtung durch das Glas und taucht Dein ansonsten halbdunkles Zimmer in einen gespenstigen Schimmer.
         ///Auch das Display blinkt rot und bedeutet Dir, alsbald einen Blick darauf zu werfen. Aber im Moment fühlst Du Dich noch zu schwach und ausgepowert, desorientiert und ausserdem bist Du nackt..
         /// </summary>

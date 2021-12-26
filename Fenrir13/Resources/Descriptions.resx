@@ -210,4 +210,7 @@ Sobald eine Person in dem Pilotensitz platzt nimmt, wird die Konsole entsprechen
     <data name="COMMANDBRIDGE_FIRSTLOOK" xml:space="preserve">
         <value>Das Du überhaupt in den Raum gelangen konntest verwundert Dich. Normalerweise ist Dir hier der Zutritt verwehrt. Aber scheinbar hat Deine "Beförderung" auf Security Level Q seine Wirkung nicht verfehlt.</value>
     </data>
+    <data name="CRYOCHAMBER_DOOR_TRY_OPEN" xml:space="preserve">
+        <value>Diese Tür hat ja keine Klinke und wird sich, wenn sie entsperrt ist, automatisch für Dich öffnen.</value>
+    </data>
 </root>

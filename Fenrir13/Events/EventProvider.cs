@@ -90,6 +90,14 @@ internal partial class EventProvider
         }
     }
     
+    internal void TryToOpenClosedDoor(object sender, ContainerObjectEventArgs eventArgs)
+    {
+        if (sender is Location cryoChamber && cryoChamber.Key == Keys.CRYOCHAMBER && eventArgs.ExternalItemKey == Keys.CRYOCHAMBER_DOOR)
+        {
+            PrintingSubsystem.Resource(Descriptions.CRYOCHAMBER_DOOR_TRY_OPEN);
+        }
+    }
+    
     internal void EatChocolateBar(object sender, ContainerObjectEventArgs eventArgs)
     {
         if (sender is Item powerBar && powerBar.Key == Keys.CHOCOLATEBAR)
