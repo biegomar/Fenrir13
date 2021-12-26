@@ -12,7 +12,8 @@ public class CommandBridgePrerequisites
         {
             Key = Keys.COMMANDBRIDGE,
             Name = Locations.COMMANDBRIDGE,
-            Description = Descriptions.COMMANDBRIDGE
+            Description = Descriptions.COMMANDBRIDGE,
+            FirstLookDescription = Descriptions.COMMANDBRIDGE_FIRSTLOOK
         };
 
         return corridor;

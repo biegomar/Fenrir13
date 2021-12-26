@@ -169,11 +169,21 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Brücke ist das Herzstück der Mission..
+        ///   Looks up a localized string similar to Die Brücke ist ein nur wenige Quadratmeter großer Ovoid, der an der Frontseite durch eine überdimensionale Sichtscheibe dominiert wird. Sie spannt sich fast 180 Grad um den zentralen Pilotensitz und umfasst somit das gesamte Gesichtsfeld eines Menschen. Durch die erhöhte Position der Brücke ist das Schiff gut zu überblicken und in der Regel durch nur eine Person gut zu steuern. Der Eingriff ist allerdings nur erforderlich, wenn der Autopilot nicht aktiv ist.
+        ///Der Pilotensitz wird von einer perfekt eingepass [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string COMMANDBRIDGE {
             get {
                 return ResourceManager.GetString("COMMANDBRIDGE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Das Du überhaupt in den Raum gelangen konntest verwundert Dich. Normalerweise ist Dir hier der Zutritt verwehrt. Aber scheinbar hat Deine &quot;Beförderung&quot; auf Security Level Q seine Wirkung nicht verfehlt..
+        /// </summary>
+        internal static string COMMANDBRIDGE_FIRSTLOOK {
+            get {
+                return ResourceManager.GetString("COMMANDBRIDGE_FIRSTLOOK", resourceCulture);
             }
         }
         
