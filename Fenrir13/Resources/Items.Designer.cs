@@ -277,7 +277,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Space-Overall|Space-Overall|Spaceoverall|Space-Suite|Spacesuite|Overall.
+        ///   Looks up a localized string similar to Der Space-Overall|Space-Overall|Spaceoverall|Space-Suite|Spacesuite|Overall|Anzug.
         /// </summary>
         internal static string SPACE_SUITE {
             get {
