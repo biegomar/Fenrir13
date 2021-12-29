@@ -203,7 +203,7 @@ Du bestätigst die Meldung mit einem Fingertipp und das Display wechselt wieder 
         <value>ᛗᚨᚱᛁᚾᛖ</value>
     </data>
     <data name="COMMANDBRIDGE" xml:space="preserve">
-        <value>Die Brücke ist ein nur wenige Quadratmeter großer Ovoid, der an der Frontseite durch eine überdimensionale Sichtscheibe dominiert wird. Sie spannt sich fast 180 Grad um den zentralen Pilotensitz und umfasst somit das gesamte Gesichtsfeld eines Menschen. Durch die erhöhte Position der Brücke ist das Schiff gut zu überblicken und in der Regel durch nur eine Person gut zu steuern. Der Eingriff ist allerdings nur erforderlich, wenn der Autopilot nicht aktiv ist.
+        <value>Die Brücke ist ein nur wenige Quadratmeter großer Ovoid, der an der Frontseite durch eine überdimensionale Sichtscheibe dominiert wird. Sie spannt sich fast 180 Grad um den zentralen Pilotensitz und umfasst somit das gesamte Gesichtsfeld eines Menschen. Durch die erhöhte Position der Brücke ist das Schiff vollständig zu überblicken und in der Regel durch nur eine Person gut zu steuern. Der Eingriff ist allerdings nur erforderlich, wenn der Autopilot nicht aktiv ist.
 Der Pilotensitz wird von einer perfekt eingepassten Bedienkonsole umschlossen, die sich wie ein Halbrund zwischen der sitzenden Person und der Sichtschreibe befindet. Sie besteht aus einer abgetönten Glasplatte und Du weißt, dass sie verschiedene Instrumente, Bilder und Informationstexte sowohl 2-dimensional, als auch 3-dimensional darstellen kann. Bei Bedarf werden weitere Daten direkt auf die Sichtscheiben projeziert. Mechanische Instrumente gibt es hingegen nicht.
 Sobald eine Person in dem Pilotensitz platzt nimmt, wird die Konsole entsprechend des Rangs, sowie nautischer Notwendigkeiten und persönlicher Einstellungen aktiviert. </value>
     </data>
@@ -212,5 +212,8 @@ Sobald eine Person in dem Pilotensitz platzt nimmt, wird die Konsole entsprechen
     </data>
     <data name="CRYOCHAMBER_DOOR_TRY_OPEN" xml:space="preserve">
         <value>Diese Tür hat ja keine Klinke und wird sich, wenn sie entsperrt ist, automatisch für Dich öffnen.</value>
+    </data>
+    <data name="PILOT_SEAT" xml:space="preserve">
+        <value>Dieser Sitz ist nochmal einige Nummer komfortabler als der aus Deinem Raum. Du weißt, dass sich die Konsole vor dem Sitz automatisch aktiviert, sobald jemand dort Platz nimmt.</value>
     </data>
 </root>

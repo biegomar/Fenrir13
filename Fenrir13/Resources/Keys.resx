@@ -135,4 +135,7 @@
     <data name="COMMANDBRIDGE" xml:space="preserve">
         <value>COMMANDBRIDGE</value>
     </data>
+    <data name="PILOT_SEAT" xml:space="preserve">
+        <value>PILOT_SEAT</value>
+    </data>
 </root>

@@ -268,6 +268,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Der Pilotensitz|Pilotensitz|Pilotsitz|Sitz|Pilotenstuhl|Stuhl.
+        /// </summary>
+        internal static string PILOT_SEAT {
+            get {
+                return ResourceManager.GetString("PILOT_SEAT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Metallrollen|Rollen|Stuhlrollen|Gummi|Gummirollen.
         /// </summary>
         internal static string RUBBER_ROLLS {

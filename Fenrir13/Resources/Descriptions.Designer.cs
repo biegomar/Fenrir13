@@ -169,8 +169,8 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Brücke ist ein nur wenige Quadratmeter großer Ovoid, der an der Frontseite durch eine überdimensionale Sichtscheibe dominiert wird. Sie spannt sich fast 180 Grad um den zentralen Pilotensitz und umfasst somit das gesamte Gesichtsfeld eines Menschen. Durch die erhöhte Position der Brücke ist das Schiff gut zu überblicken und in der Regel durch nur eine Person gut zu steuern. Der Eingriff ist allerdings nur erforderlich, wenn der Autopilot nicht aktiv ist.
-        ///Der Pilotensitz wird von einer perfekt eingepass [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to Die Brücke ist ein nur wenige Quadratmeter großer Ovoid, der an der Frontseite durch eine überdimensionale Sichtscheibe dominiert wird. Sie spannt sich fast 180 Grad um den zentralen Pilotensitz und umfasst somit das gesamte Gesichtsfeld eines Menschen. Durch die erhöhte Position der Brücke ist das Schiff vollständig zu überblicken und in der Regel durch nur eine Person gut zu steuern. Der Eingriff ist allerdings nur erforderlich, wenn der Autopilot nicht aktiv ist.
+        ///Der Pilotensitz wird von einer perfekt e [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string COMMANDBRIDGE {
             get {
@@ -478,6 +478,15 @@ namespace Fenrir13.Resources {
         internal static string PIERHOLE {
             get {
                 return ResourceManager.GetString("PIERHOLE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dieser Sitz ist nochmal einige Nummer komfortabler als der aus Deinem Raum. Du weißt, dass sich die Konsole vor dem Sitz automatisch aktiviert, sobald jemand dort Platz nimmt..
+        /// </summary>
+        internal static string PILOT_SEAT {
+            get {
+                return ResourceManager.GetString("PILOT_SEAT", resourceCulture);
             }
         }
         

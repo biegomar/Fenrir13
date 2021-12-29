@@ -111,4 +111,7 @@
     <data name="BULKHEAD_WINDOW" xml:space="preserve">
         <value>Sichtfenster</value>
     </data>
+    <data name="PILOT_SEAT" xml:space="preserve">
+        <value>Der Pilotensitz|Pilotensitz|Pilotsitz|Sitz|Pilotenstuhl|Stuhl</value>
+    </data>
 </root>

@@ -331,6 +331,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to PILOT_SEAT.
+        /// </summary>
+        internal static string PILOT_SEAT {
+            get {
+                return ResourceManager.GetString("PILOT_SEAT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to PLAYER.
         /// </summary>
         internal static string PLAYER {
