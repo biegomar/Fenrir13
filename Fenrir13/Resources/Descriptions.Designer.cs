@@ -427,8 +427,8 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Schwarz. Langsam fräst sich ein auf- und abschwellendes Geräusch durch Deine vernebelten Sinne. Erst scheinbar fern, kommt es pulsierend näher. Ein roter Schein erscheint in der Dunkelheit. Ganz klein und schwach. Gleichermaßen näher kommend und subtil bedrohlich. Ein Tunnel? Ein Zug?
-        ///Plötzlich zerreist ein stechender Schmerz in Deinen Lungen Deine Illusion. Adrenalien schiesst durch Deinen Körper und holt Dich mit voller, unbarmherziger Härte zurück ins Bewußtsein. Du reisst Deine Augen auf und wirst zugl [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to Schwarz. Langsam fräst sich ein auf- und abschwellendes Geräusch durch Deine vernebelten Sinne. Erst scheinbar fern, kommt es pulsierend näher. Ein roter Schein erscheint in der Dunkelheit. Ganz klein und schwach. Gleichermaßen näherkommend und subtil bedrohlich. Ein Tunnel? Ein Zug?
+        ///Plötzlich zerreist ein stechender Schmerz in Deinen Lungen Deine Illusion. Adrenalin schiesst durch Deinen Körper und holt Dich mit voller, unbarmherziger Härte zurück ins Bewußtsein. Du reisst Deine Augen auf und wirst zuglei [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string OPENING {
             get {
