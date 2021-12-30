@@ -188,6 +188,24 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Sofort als Du Dich setzt wird eine Abbildung einer Tastatur vor Dir auf der Platte eingeblendet und ein einfaches Computer-Terminal wird Dir als Bildschirm präsentiert..
+        /// </summary>
+        internal static string COMPUTER_TERMINAL {
+            get {
+                return ResourceManager.GetString("COMPUTER_TERMINAL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;&lt;wenn Du das Terminal verlassen möchtest, musst Du nur aufstehen&gt;&gt;.
+        /// </summary>
+        internal static string COMPUTER_TERMINAL_FIRSTLOOK {
+            get {
+                return ResourceManager.GetString("COMPUTER_TERMINAL_FIRSTLOOK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Der Korridor durchzieht den gesamten &apos;Hammerkopf&apos; des Schiffs von Ost nach West. Von ihm gehen Türen in die diversen Räume ab und in der Mitte, also bei gut 50 Metern führt ein Aufgang zur Brücke und ein Abgang herunter in die Maschinenräume. An den Wänden hängen Bilder von typischen Raum- und Evakuierungsplänen, sowie von ehemaligen Mitarbeitern und Crewmitgliedern der Fenrir-13. Ansonsten ist der Flur einfach und karg. In diesem Abschnitt des Korridors liegt die erste Hälfte der sechs Crew-Quartiere. Alle [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string CORRIDOR_EAST {

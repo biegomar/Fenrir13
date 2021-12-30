@@ -4,7 +4,7 @@ using Heretic.InteractiveFiction.Objects;
 
 namespace Fenrir13.GamePlay.Prerequisites.CommandBridge;
 
-public class CommandBridgePrerequisites
+internal class CommandBridgePrerequisites
 {
     internal static Location Get(EventProvider eventProvider)
     {

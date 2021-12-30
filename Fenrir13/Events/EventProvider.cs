@@ -137,4 +137,37 @@ internal partial class EventProvider
             }
         }
     }
+    
+    internal void BeforeStandUp(object sender, ContainerObjectEventArgs eventArgs)
+    {
+        if (sender is Player you && you.Key == Keys.PLAYER)
+        {
+            if (you.IsSitting && this.universe.ActiveLocation.Key == Keys.COMPUTER_TERMINAL)
+            {
+                var location = this.universe.LocationMap.Keys.FirstOrDefault(location => location.Key == Keys.COMMANDBRIDGE);
+                if (location is { } commandBridge)
+                {
+                    this.universe.ActiveLocation = commandBridge;
+                    PrintingSubsystem.ActiveLocation(this.universe.ActiveLocation, this.universe.LocationMap);
+                }
+            }
+        }
+    }
+    
+    internal void AfterSitDown(object sender, ContainerObjectEventArgs eventArgs)
+    {
+        if (sender is Player you && you.Key == Keys.PLAYER)
+        {
+            if (you.IsSitting && this.universe.ActiveLocation.Key == Keys.COMMANDBRIDGE)
+            {
+                var location = this.universe.LocationMap.Keys.FirstOrDefault(location => location.Key == Keys.COMPUTER_TERMINAL);
+                if (location is { } terminal)
+                {
+                    this.universe.ActiveLocation = terminal;
+                    PrintingSubsystem.ActiveLocation(this.universe.ActiveLocation, this.universe.LocationMap);
+                }
+            }
+        }
+    }
+    
 }

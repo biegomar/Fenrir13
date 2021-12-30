@@ -16,7 +16,20 @@ public class PlayerPrerequisites
             FirstLookDescription = Descriptions.PLAYER_FIRSTLOOK,
             MaxPayload = 5000,
         };
+        
+        AddSitDownEvents(player, eventProvider);
+        AddStandUpEvents(player, eventProvider);
 
         return player;
+    }
+
+    private static void AddStandUpEvents(Player you, EventProvider eventProvider)
+    {
+        you.BeforeStandUp += eventProvider.BeforeStandUp;
+    }
+    
+    private static void AddSitDownEvents(Player you, EventProvider eventProvider)
+    {
+        you.AfterSitDown += eventProvider.AfterSitDown;
     }
 }

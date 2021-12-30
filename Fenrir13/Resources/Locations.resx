@@ -45,4 +45,7 @@
     <data name="COMMANDBRIDGE" xml:space="preserve">
         <value>Die Kommando-Brücke|Kommando-Brücke|Brücke</value>
     </data>
+    <data name="COMPUTER_TERMINAL" xml:space="preserve">
+        <value>Das Computer-Terminal|Computer-Terminal|Computer|Terminal</value>
+    </data>
 </root>

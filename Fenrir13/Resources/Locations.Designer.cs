@@ -70,6 +70,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Das Computer-Terminal|Computer-Terminal|Computer|Terminal.
+        /// </summary>
+        internal static string COMPUTER_TERMINAL {
+            get {
+                return ResourceManager.GetString("COMPUTER_TERMINAL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Der östliche Korridor|Korridor (ost).
         /// </summary>
         internal static string CORRIDOR_EAST {

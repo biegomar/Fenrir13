@@ -31,6 +31,7 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
         var corridorMidWest = CorridorMidWestPrerequisites.Get(this.eventProvider);
         var corridorWest = CorridorWestPrerequisites.Get(this.eventProvider);
         var bridge = CommandBridgePrerequisites.Get(this.eventProvider);
+        var computerTerminal = ComputerTerminalPrerequisites.Get(this.eventProvider);
         
         map.Add(cryoChamber, CryoChamberLocationMap(corridorEast));
         map.Add(corridorEast, CorridorEastLocationMap(cryoChamber, corridorMidEast, emptyChamberOne, emptyChamberTwo));
@@ -39,6 +40,7 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
         map.Add(corridorMidWest, CorridorMidWestLocationMap(corridorMid, corridorWest));
         map.Add(corridorWest, CorridorWestLocationMap(corridorMidWest));
         map.Add(bridge, BridgeLocationMap(corridorMid));
+        map.Add(computerTerminal, new List<DestinationNode>());
         
         var activeLocation = cryoChamber;
         var activePlayer = PlayerPrerequisites.Get(this.eventProvider);

@@ -227,4 +227,10 @@ Das Bild zeigt ihn mit einem wilden Rauschebart und einem verwegenen Blick, der 
         <value>Dieses prächtige Gemälde zeigt den Firmengründer der Viking Space Freight Ltd., Kapitän zur See Poul Skov. Er war bei der Marine angestellt, als er für sich das Potential der Raumfracht erkannte und eines der ersten kommerziellen Raumfrachtunternehmen der Welt im Jahr 2152 gründete. Bis heute eines der erfolgreichsten Unternehmen der Branche.
 Du weißt, dass jedes Schiff der Flotte eins dieser Portraits an Bord hat. Man legt sehr viel Wert auf die Persönlichkeiten des Unternehmens und ihre Leistungen. Diese Wertschätzung hat auch Dich letzendlich in deren Dienste gebracht.</value>
     </data>
+    <data name="COMPUTER_TERMINAL" xml:space="preserve">
+        <value>Sofort als Du Dich setzt wird eine Abbildung einer Tastatur vor Dir auf der Platte eingeblendet und ein einfaches Computer-Terminal wird Dir als Bildschirm präsentiert.</value>
+    </data>
+    <data name="COMPUTER_TERMINAL_FIRSTLOOK" xml:space="preserve">
+        <value>&lt;&lt;wenn Du das Terminal verlassen möchtest, musst Du nur aufstehen&gt;&gt;</value>
+    </data>
 </root>

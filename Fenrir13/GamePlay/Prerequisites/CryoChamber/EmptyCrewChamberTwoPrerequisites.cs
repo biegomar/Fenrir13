@@ -4,7 +4,7 @@ using Heretic.InteractiveFiction.Objects;
 
 namespace Fenrir13.GamePlay.Prerequisites.CryoChamber;
 
-public static class EmptyCrewChamberTwoPrerequisites
+internal static class EmptyCrewChamberTwoPrerequisites
 {
     internal static Location Get(EventProvider eventProvider)
     {

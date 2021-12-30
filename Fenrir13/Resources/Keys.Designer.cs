@@ -151,6 +151,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to COMPUTER_TERMINAL.
+        /// </summary>
+        internal static string COMPUTER_TERMINAL {
+            get {
+                return ResourceManager.GetString("COMPUTER_TERMINAL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to CORRIDOR_EAST.
         /// </summary>
         internal static string CORRIDOR_EAST {
