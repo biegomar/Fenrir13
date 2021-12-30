@@ -188,7 +188,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Korridor durchzieht den gesamten &apos;Hammerkopf&apos; des Schiffs von Ost nach West. Von ihm gehen Türen in die diversen Räume ab und in der Mitte, also bei gut 50 Metern führt ein Aufgang zur Brücke und ein Abgang herunter in die Maschinenräume. An den Wänden hängen neben typischen Raum- und Evakuierungsplänen auch Bilder von ehemaligen Mitarbeitern und Crewmitgliedern der Fenrir-13. Ansonsten ist der Flur einfach und karg. In diesem Abschnitt des Korridors liegt die erste Hälfte der sechs Crew-Quartiere. Alle [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to Der Korridor durchzieht den gesamten &apos;Hammerkopf&apos; des Schiffs von Ost nach West. Von ihm gehen Türen in die diversen Räume ab und in der Mitte, also bei gut 50 Metern führt ein Aufgang zur Brücke und ein Abgang herunter in die Maschinenräume. An den Wänden hängen Bilder von typischen Raum- und Evakuierungsplänen, sowie von ehemaligen Mitarbeitern und Crewmitgliedern der Fenrir-13. Ansonsten ist der Flur einfach und karg. In diesem Abschnitt des Korridors liegt die erste Hälfte der sechs Crew-Quartiere. Alle [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string CORRIDOR_EAST {
             get {
@@ -215,7 +215,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Korridor durchzieht den gesamten &apos;Hammerkopf&apos; des Schiffs von Ost nach West. Von ihm gehen Türen in die diversen Räume ab und in der Mitte, also bei gut 50 Metern führt ein Aufgang zur Brücke und ein Abgang herunter in die Maschinenräume. An den Wänden hängen neben typischen Raum- und Evakuierungsplänen auch Bilder von ehemaligen Mitarbeitern und Crewmitgliedern der Fenrir-13. Ansonsten ist der Flur einfach und karg..
+        ///   Looks up a localized string similar to Du befindest Dich nun auf dem halb Weg zwischen Deinem Quartier und der Brücke. Auch hier hängt wieder ein Bild an der Wand. Ansonsten ist der Flur einfach und karg..
         /// </summary>
         internal static string CORRIDOR_MIDEAST {
             get {
@@ -229,6 +229,25 @@ namespace Fenrir13.Resources {
         internal static string CORRIDOR_MIDWEST {
             get {
                 return ResourceManager.GetString("CORRIDOR_MIDWEST", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to In diesem Abschnitt des Flures hängt das Bild eines Fluchtplans. Der Umriss dieser Etage mit den einzelnen Räumen. Ein roter Punkt markiert Deinen Standort und grüne Pfeile weisen in Richtung Mitte des Korridoren und dann nach unten in die Maschinenräume..
+        /// </summary>
+        internal static string CORRIDOR_PAINTING_EAST {
+            get {
+                return ResourceManager.GetString("CORRIDOR_PAINTING_EAST", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hier hängt ein erstes Portrait eines ehemalige Crew-Mitglieds. Es handelt sich um den dänischen Kapitän Eldar Rasmussen. Du kannst auf einem kleinen Schild unterhalb des Bildes lesen, dass er der erste Kapitän der Viking Space Freight Ltd. war und die Fenrir 13 auf ihrem Jungfernflug im Jahr 2174 begleitet hat.
+        ///Das Bild zeigt ihn mit einem wilden Rauschebart und einem verwegenen Blick, der die Abenteuerlust und Kühnheit diese Pioniere der industriellen Raumfracht erahnen lässt..
+        /// </summary>
+        internal static string CORRIDOR_PAINTING_MIDEAST {
+            get {
+                return ResourceManager.GetString("CORRIDOR_PAINTING_MIDEAST", resourceCulture);
             }
         }
         
@@ -505,6 +524,16 @@ namespace Fenrir13.Resources {
         internal static string PLAYER_FIRSTLOOK {
             get {
                 return ResourceManager.GetString("PLAYER_FIRSTLOOK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dieses prächtige Gemälde zeigt den Firmengründer der Viking Space Freight Ltd., Kapitän zur See Poul Skov. Er war bei der Marine angestellt, als er für sich das Potential der Raumfracht erkannte und eines der ersten kommerziellen Raumfrachtunternehmen der Welt im Jahr 2152 gründete. Bis heute eines der erfolgreichsten Unternehmen der Branche.
+        ///Du weißt, dass jedes Schiff der Flotte eins dieser Portraits an Bord hat. Man legt sehr viel Wert auf die Persönlichkeiten des Unternehmens und ihre Leistungen. Diese [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string PORTRAIT {
+            get {
+                return ResourceManager.GetString("PORTRAIT", resourceCulture);
             }
         }
         

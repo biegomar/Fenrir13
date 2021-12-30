@@ -138,4 +138,10 @@
     <data name="PILOT_SEAT" xml:space="preserve">
         <value>PILOT_SEAT</value>
     </data>
+    <data name="CORRIDOR_PAINTING" xml:space="preserve">
+        <value>CORRIDOR_PAINTING</value>
+    </data>
+    <data name="PORTRAIT" xml:space="preserve">
+        <value>PORTRAIT</value>
+    </data>
 </root>

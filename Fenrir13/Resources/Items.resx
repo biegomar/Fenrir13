@@ -114,4 +114,10 @@
     <data name="PILOT_SEAT" xml:space="preserve">
         <value>Der Pilotensitz|Pilotensitz|Pilotsitz|Sitz|Pilotenstuhl|Stuhl</value>
     </data>
+    <data name="CORRIDOR_PAINTING" xml:space="preserve">
+        <value>Bild|Plakat|Poster</value>
+    </data>
+    <data name="PORTRAIT" xml:space="preserve">
+        <value>Ein Gemälde|Gemälde|Portrait|Porträt</value>
+    </data>
 </root>

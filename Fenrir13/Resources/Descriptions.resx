@@ -158,7 +158,7 @@ Your safety status has been upgraded from Level Z to Level Q. Please proceed to 
 Du bestätigst die Meldung mit einem Fingertipp und das Display wechselt wieder in den Normalzustand und der gesamte Schiffsalarm erstirbt. Gut! Wenigstens hast Du jetzt Ruhe, um Dich zu konzentrieren. Offensichtlich wurde auch der automatische Türöffnungsmodus aktiviert, denn die Tür öffnet sich und gibt den Weg frei zum Korridor.</value>
     </data>
     <data name="CORRIDOR_EAST" xml:space="preserve">
-        <value>Der Korridor durchzieht den gesamten 'Hammerkopf' des Schiffs von Ost nach West. Von ihm gehen Türen in die diversen Räume ab und in der Mitte, also bei gut 50 Metern führt ein Aufgang zur Brücke und ein Abgang herunter in die Maschinenräume. An den Wänden hängen neben typischen Raum- und Evakuierungsplänen auch Bilder von ehemaligen Mitarbeitern und Crewmitgliedern der Fenrir-13. Ansonsten ist der Flur einfach und karg. In diesem Abschnitt des Korridors liegt die erste Hälfte der sechs Crew-Quartiere. Allerdings sind bei dieser Mission nur vier Crew-Mitglieder anwesend. Daher bist Du in diesem Trakt komplett allein und die anderen Räume sind standardmäßig versiegelt.</value>
+        <value>Der Korridor durchzieht den gesamten 'Hammerkopf' des Schiffs von Ost nach West. Von ihm gehen Türen in die diversen Räume ab und in der Mitte, also bei gut 50 Metern führt ein Aufgang zur Brücke und ein Abgang herunter in die Maschinenräume. An den Wänden hängen Bilder von typischen Raum- und Evakuierungsplänen, sowie von ehemaligen Mitarbeitern und Crewmitgliedern der Fenrir-13. Ansonsten ist der Flur einfach und karg. In diesem Abschnitt des Korridors liegt die erste Hälfte der sechs Crew-Quartiere. Allerdings sind bei dieser Mission nur vier Crew-Mitglieder anwesend. Daher bist Du in diesem Trakt komplett allein und die anderen Räume sind standardmäßig versiegelt.</value>
     </data>
     <data name="CORRIDOR_EAST_LOCKDESCRIPTION" xml:space="preserve">
         <value>Deine Zimmertür ist geschlossen und versperrt den Weg.</value>
@@ -170,7 +170,7 @@ Du bestätigst die Meldung mit einem Fingertipp und das Display wechselt wieder 
         <value>Der Korridor durchzieht den gesamten 'Hammerkopf' des Schiffs von Ost nach West. Von ihm gehen Türen in die diversen Räume ab und in der Mitte, also bei gut 50 Metern führt ein Aufgang zur Brücke und ein Abgang herunter in die Maschinenräume. An den Wänden hängen neben typischen Raum- und Evakuierungsplänen auch Bilder von ehemaligen Mitarbeitern und Crewmitgliedern der Fenrir-13. Ansonsten ist der Flur einfach und karg.</value>
     </data>
     <data name="CORRIDOR_MIDEAST" xml:space="preserve">
-        <value>Der Korridor durchzieht den gesamten 'Hammerkopf' des Schiffs von Ost nach West. Von ihm gehen Türen in die diversen Räume ab und in der Mitte, also bei gut 50 Metern führt ein Aufgang zur Brücke und ein Abgang herunter in die Maschinenräume. An den Wänden hängen neben typischen Raum- und Evakuierungsplänen auch Bilder von ehemaligen Mitarbeitern und Crewmitgliedern der Fenrir-13. Ansonsten ist der Flur einfach und karg.</value>
+        <value>Du befindest Dich nun auf dem halb Weg zwischen Deinem Quartier und der Brücke. Auch hier hängt wieder ein Bild an der Wand. Ansonsten ist der Flur einfach und karg.</value>
     </data>
     <data name="CORRIDOR_MID" xml:space="preserve">
         <value>Du befindest Dich nun genau in der Mitte des Korridors. An der nördlichen Seite führt eine breite Treppe auf die Brücke. An der südlichen Seite liegt der Zugang zu den Technik- und Maschinenräumen. Auch hier geht es über eine Treppe, allerdings eine Etage nach unten. An der Wand hängt nur ein Bild, aber dafür handelt es sich um ein besonders exponiertes Gemälde. Ansonsten ist der Flur einfach und karg.</value>
@@ -215,5 +215,16 @@ Sobald eine Person in dem Pilotensitz platzt nimmt, wird die Konsole entsprechen
     </data>
     <data name="PILOT_SEAT" xml:space="preserve">
         <value>Dieser Sitz ist nochmal einige Nummer komfortabler als der aus Deinem Raum. Du weißt, dass sich die Konsole vor dem Sitz automatisch aktiviert, sobald jemand dort Platz nimmt.</value>
+    </data>
+    <data name="CORRIDOR_PAINTING_EAST" xml:space="preserve">
+        <value>In diesem Abschnitt des Flures hängt das Bild eines Fluchtplans. Der Umriss dieser Etage mit den einzelnen Räumen. Ein roter Punkt markiert Deinen Standort und grüne Pfeile weisen in Richtung Mitte des Korridoren und dann nach unten in die Maschinenräume.</value>
+    </data>
+    <data name="CORRIDOR_PAINTING_MIDEAST" xml:space="preserve">
+        <value>Hier hängt ein erstes Portrait eines ehemalige Crew-Mitglieds. Es handelt sich um den dänischen Kapitän Eldar Rasmussen. Du kannst auf einem kleinen Schild unterhalb des Bildes lesen, dass er der erste Kapitän der Viking Space Freight Ltd. war und die Fenrir 13 auf ihrem Jungfernflug im Jahr 2174 begleitet hat.
+Das Bild zeigt ihn mit einem wilden Rauschebart und einem verwegenen Blick, der die Abenteuerlust und Kühnheit diese Pioniere der industriellen Raumfracht erahnen lässt.</value>
+    </data>
+    <data name="PORTRAIT" xml:space="preserve">
+        <value>Dieses prächtige Gemälde zeigt den Firmengründer der Viking Space Freight Ltd., Kapitän zur See Poul Skov. Er war bei der Marine angestellt, als er für sich das Potential der Raumfracht erkannte und eines der ersten kommerziellen Raumfrachtunternehmen der Welt im Jahr 2152 gründete. Bis heute eines der erfolgreichsten Unternehmen der Branche.
+Du weißt, dass jedes Schiff der Flotte eins dieser Portraits an Bord hat. Man legt sehr viel Wert auf die Persönlichkeiten des Unternehmens und ihre Leistungen. Diese Wertschätzung hat auch Dich letzendlich in deren Dienste gebracht.</value>
     </data>
 </root>

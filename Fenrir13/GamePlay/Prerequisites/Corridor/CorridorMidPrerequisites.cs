@@ -14,7 +14,21 @@ public static class CorridorMidPrerequisites
             Name = Locations.CORRIDOR_MID,
             Description = Descriptions.CORRIDOR_MID
         };
+        
+        corridor.Items.Add(GetPortrait(eventProvider));
 
         return corridor;
+    }
+    
+    private static Item GetPortrait(EventProvider eventProvider)
+    {
+        var portrait = new Item()
+        {
+            Key = Keys.PORTRAIT,
+            Name = Items.PORTRAIT,
+            Description = Descriptions.PORTRAIT
+        };
+
+        return portrait;
     }
 }

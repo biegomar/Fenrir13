@@ -142,6 +142,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Bild|Plakat|Poster.
+        /// </summary>
+        internal static string CORRIDOR_PAINTING {
+            get {
+                return ResourceManager.GetString("CORRIDOR_PAINTING", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Zimmertür|Tür.
         /// </summary>
         internal static string CRYOCHAMBER_DOOR {
@@ -273,6 +282,15 @@ namespace Fenrir13.Resources {
         internal static string PILOT_SEAT {
             get {
                 return ResourceManager.GetString("PILOT_SEAT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ein Gemälde|Gemälde|Portrait|Porträt.
+        /// </summary>
+        internal static string PORTRAIT {
+            get {
+                return ResourceManager.GetString("PORTRAIT", resourceCulture);
             }
         }
         

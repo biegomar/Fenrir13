@@ -187,6 +187,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to CORRIDOR_PAINTING.
+        /// </summary>
+        internal static string CORRIDOR_PAINTING {
+            get {
+                return ResourceManager.GetString("CORRIDOR_PAINTING", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to CORRIDOR_WEST.
         /// </summary>
         internal static string CORRIDOR_WEST {
@@ -345,6 +354,15 @@ namespace Fenrir13.Resources {
         internal static string PLAYER {
             get {
                 return ResourceManager.GetString("PLAYER", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PORTRAIT.
+        /// </summary>
+        internal static string PORTRAIT {
+            get {
+                return ResourceManager.GetString("PORTRAIT", resourceCulture);
             }
         }
         
