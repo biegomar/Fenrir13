@@ -165,6 +165,7 @@ internal partial class EventProvider
                 {
                     this.universe.ActiveLocation = terminal;
                     PrintingSubsystem.ActiveLocation(this.universe.ActiveLocation, this.universe.LocationMap);
+                    PrintPasswordMessage();
                 }
             }
         }
@@ -179,10 +180,49 @@ internal partial class EventProvider
             {
                 note.IsHidden = false;
                 PrintingSubsystem.Resource(Descriptions.STICKY_NOTE_FOUND);
-                this.universe.PickObject(note);
+                this.universe.PickObject(note, true);
                 this.universe.Score += this.universe.ScoreBoard[nameof(this.LookAtControlPanel)];
                 bridge.AfterLook -= LookAtControlPanel;
             }
         }
     }
+
+    internal void WriteTextToComputerTerminal(object sender, WriteEventArgs eventArgs)
+    {
+        if (sender is Location terminal && terminal.Key == Keys.COMPUTER_TERMINAL)
+        {
+            if (IsPasswordCorrect(eventArgs.Text))
+            {
+                PrintingSubsystem.Resource("You have entered the correct password.\nYou can now access the control panel.");
+                this.universe.Score += this.universe.ScoreBoard[nameof(this.WriteTextToComputerTerminal)];
+                this.universe.ActiveLocation.Write -= WriteTextToComputerTerminal;
+            }
+            else if (eventArgs.Text.ToLower() == Descriptions.TERMINAL_PASSWORD_HINT.ToLower())
+            {
+                PrintingSubsystem.Resource(
+                    "Hm? Das scheint es nicht gewesen zu sein. Vielleicht dient der Begriff auch vielmehr als Hinweis auf irgendetwas?");
+                PrintPasswordMessage();
+            }
+            else
+            {
+                PrintingSubsystem.Resource(Descriptions.WRONG_TERMINAL_PASSWORD);
+                PrintPasswordMessage();
+            }
+        }
+    }
+
+    private void PrintPasswordMessage()
+    {
+        PrintingSubsystem.ForegroundColor = TextColor.DarkGreen;
+        PrintingSubsystem.Resource(Descriptions.COMPUTER_TERMINAL_DISPLAY_PASSWORD);
+        PrintingSubsystem.ResetColors();
+    }
+
+    private bool IsPasswordCorrect(string password)
+    {
+        var passwordList = Descriptions.TERMINAL_PASSWORD.Split('|').ToList();
+        var lowerList = passwordList.Select(x => x.ToLower()).ToList();
+        return lowerList.Contains(password.ToLower());
+    }
+    
 }

@@ -16,6 +16,14 @@ internal static class ComputerTerminalPrerequisites
             FirstLookDescription = Descriptions.COMPUTER_TERMINAL_FIRSTLOOK
         };
         
+        AddWriteEvents(terminal, eventProvider);
+        
         return terminal;
+    }
+
+    private static void AddWriteEvents(Location terminal, EventProvider eventProvider)
+    {
+        terminal.Write += eventProvider.WriteTextToComputerTerminal;
+        eventProvider.ScoreBoard.Add(nameof(eventProvider.WriteTextToComputerTerminal), 5);
     }
 }

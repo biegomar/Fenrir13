@@ -197,6 +197,17 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to -----------------------------------------
+        ///--- Bitte geben sie das Password ein ---
+        ///-----------------------------------------.
+        /// </summary>
+        internal static string COMPUTER_TERMINAL_DISPLAY_PASSWORD {
+            get {
+                return ResourceManager.GetString("COMPUTER_TERMINAL_DISPLAY_PASSWORD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to &lt;&lt;wenn Du das Terminal verlassen möchtest, musst Du nur aufstehen&gt;&gt;.
         /// </summary>
         internal static string COMPUTER_TERMINAL_FIRSTLOOK {
@@ -601,7 +612,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Unter dem Pult klebt offensichtlich etwas. Du schaust genauer, fühlst an der Unterseite der Platte entlang und findest eine Haftnotiz..
+        ///   Looks up a localized string similar to Unter dem Pult klebt offensichtlich etwas. Du schaust genauer, fühlst an der Unterseite der Platte entlang und spürst eine Art Zettel. Die knibbelst ihn ab und hast nun eine Haftnotiz in der Hand..
         /// </summary>
         internal static string STICKY_NOTE_FOUND {
             get {
@@ -678,6 +689,15 @@ namespace Fenrir13.Resources {
         internal static string WORKBENCH {
             get {
                 return ResourceManager.GetString("WORKBENCH", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Das scheint nicht das richtige Passwort gewesen zu sein. Bitte probiere es noch einmal..
+        /// </summary>
+        internal static string WRONG_TERMINAL_PASSWORD {
+            get {
+                return ResourceManager.GetString("WRONG_TERMINAL_PASSWORD", resourceCulture);
             }
         }
     }

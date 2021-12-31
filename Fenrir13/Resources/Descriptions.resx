@@ -243,6 +243,14 @@ Du weißt, dass jedes Schiff der Flotte eins dieser Portraits an Bord hat. Man l
         <value>Die Bedienkonsole ist ein Halbrund, das aus einer abgetönten Glasplatte besteht. Es kann beliebige grafische Objekte, wie auch textliche Beschreibungen direkt projeziert. Sei es als zweidimensionale Abbildung auf der Platte selbst, oder als dreidimensionale holografische Projektion. Die jeweiligen Objekten können dann durch die Personen beliebig bearbeitet, verschoben, verändert oder auch gelöscht werden. Ziemlich cool.</value>
     </data>
     <data name="STICKY_NOTE_FOUND" xml:space="preserve">
-        <value>Unter dem Pult klebt offensichtlich etwas. Du schaust genauer, fühlst an der Unterseite der Platte entlang und findest eine Haftnotiz.</value>
+        <value>Unter dem Pult klebt offensichtlich etwas. Du schaust genauer, fühlst an der Unterseite der Platte entlang und spürst eine Art Zettel. Die knibbelst ihn ab und hast nun eine Haftnotiz in der Hand.</value>
+    </data>
+    <data name="WRONG_TERMINAL_PASSWORD" xml:space="preserve">
+        <value>Das scheint nicht das richtige Passwort gewesen zu sein. Bitte probiere es noch einmal.</value>
+    </data>
+    <data name="COMPUTER_TERMINAL_DISPLAY_PASSWORD" xml:space="preserve">
+        <value>-----------------------------------------
+--- Bitte geben sie das Password ein ---
+-----------------------------------------</value>
     </data>
 </root>
