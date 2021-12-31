@@ -120,4 +120,10 @@
     <data name="PORTRAIT" xml:space="preserve">
         <value>Ein Gemälde|Gemälde|Portrait|Porträt</value>
     </data>
+    <data name="STICKY_NOTE" xml:space="preserve">
+        <value>Eine Haftnotiz|Haftnotiz|Klebezettel|Notiz|Zettel</value>
+    </data>
+    <data name="CONTROL_PANEL" xml:space="preserve">
+        <value>Bedienkonsole|Konsole|Steuerpult|Pult|Platte</value>
+    </data>
 </root>

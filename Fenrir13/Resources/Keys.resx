@@ -147,4 +147,10 @@
     <data name="COMPUTER_TERMINAL" xml:space="preserve">
         <value>COMPUTER_TERMINAL</value>
     </data>
+    <data name="STICKY_NOTE" xml:space="preserve">
+        <value>STICKY_NOTE</value>
+    </data>
+    <data name="CONTROL_PANEL" xml:space="preserve">
+        <value>CONTROL_PANEL</value>
+    </data>
 </root>

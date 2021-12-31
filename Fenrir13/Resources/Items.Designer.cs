@@ -142,6 +142,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Bedienkonsole|Konsole|Steuerpult|Pult|Platte.
+        /// </summary>
+        internal static string CONTROL_PANEL {
+            get {
+                return ResourceManager.GetString("CONTROL_PANEL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Bild|Plakat|Poster.
         /// </summary>
         internal static string CORRIDOR_PAINTING {
@@ -309,6 +318,15 @@ namespace Fenrir13.Resources {
         internal static string SPACE_SUITE {
             get {
                 return ResourceManager.GetString("SPACE_SUITE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Eine Haftnotiz|Haftnotiz|Klebezettel|Notiz|Zettel.
+        /// </summary>
+        internal static string STICKY_NOTE {
+            get {
+                return ResourceManager.GetString("STICKY_NOTE", resourceCulture);
             }
         }
         

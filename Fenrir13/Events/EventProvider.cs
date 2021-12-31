@@ -170,4 +170,19 @@ internal partial class EventProvider
         }
     }
     
+    internal void LookAtControlPanel(object sender, ContainerObjectEventArgs eventArgs)
+    {
+        if (sender is Location bridge && bridge.Key == Keys.COMMANDBRIDGE && eventArgs.ExternalItemKey == Keys.CONTROL_PANEL)
+        {
+            var note = this.universe.ActiveLocation.GetItemByKey(Keys.STICKY_NOTE);
+            if (note != default)
+            {
+                note.IsHidden = false;
+                PrintingSubsystem.Resource(Descriptions.STICKY_NOTE_FOUND);
+                this.universe.PickObject(note);
+                this.universe.Score += this.universe.ScoreBoard[nameof(this.LookAtControlPanel)];
+                bridge.AfterLook -= LookAtControlPanel;
+            }
+        }
+    }
 }

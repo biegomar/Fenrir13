@@ -206,6 +206,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Die Bedienkonsole ist ein Halbrund, das aus einer abgetönten Glasplatte besteht. Es kann beliebige grafische Objekte, wie auch textliche Beschreibungen direkt projeziert. Sei es als zweidimensionale Abbildung auf der Platte selbst, oder als dreidimensionale holografische Projektion. Die jeweiligen Objekten können dann durch die Personen beliebig bearbeitet, verschoben, verändert oder auch gelöscht werden. Ziemlich cool..
+        /// </summary>
+        internal static string CONTROL_PANEL {
+            get {
+                return ResourceManager.GetString("CONTROL_PANEL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Der Korridor durchzieht den gesamten &apos;Hammerkopf&apos; des Schiffs von Ost nach West. Von ihm gehen Türen in die diversen Räume ab und in der Mitte, also bei gut 50 Metern führt ein Aufgang zur Brücke und ein Abgang herunter in die Maschinenräume. An den Wänden hängen Bilder von typischen Raum- und Evakuierungsplänen, sowie von ehemaligen Mitarbeitern und Crewmitgliedern der Fenrir-13. Ansonsten ist der Flur einfach und karg. In diesem Abschnitt des Korridors liegt die erste Hälfte der sechs Crew-Quartiere. Alle [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string CORRIDOR_EAST {
@@ -492,15 +501,6 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ᛗᚨᚱᛁᚾᛖ.
-        /// </summary>
-        internal static string PASSWORD_HINT {
-            get {
-                return ResourceManager.GetString("PASSWORD_HINT", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Die Tür hat ein kleines, tellergroßes Fenster, durch das man in beide Richtungen schauen kann, wenn man das möchte. Es ist elektronisch schaltbar und so kann man bei Bedarf die Transparenz anpassen..
         /// </summary>
         internal static string PEEPHOLE {
@@ -592,11 +592,47 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Auf dem Klebezettel steht nur ein Wort: {0}.
+        /// </summary>
+        internal static string STICKY_NOTE {
+            get {
+                return ResourceManager.GetString("STICKY_NOTE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Unter dem Pult klebt offensichtlich etwas. Du schaust genauer, fühlst an der Unterseite der Platte entlang und findest eine Haftnotiz..
+        /// </summary>
+        internal static string STICKY_NOTE_FOUND {
+            get {
+                return ResourceManager.GetString("STICKY_NOTE_FOUND", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Der einfach gehaltene Tisch besteht aus einem Metallrahmen und einer eingelassenen Kunststofftischplatte. Orange. Chic!.
         /// </summary>
         internal static string TABLE {
             get {
                 return ResourceManager.GetString("TABLE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PoulSkov|Poul|Skov.
+        /// </summary>
+        internal static string TERMINAL_PASSWORD {
+            get {
+                return ResourceManager.GetString("TERMINAL_PASSWORD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Marine.
+        /// </summary>
+        internal static string TERMINAL_PASSWORD_HINT {
+            get {
+                return ResourceManager.GetString("TERMINAL_PASSWORD_HINT", resourceCulture);
             }
         }
         

@@ -199,8 +199,8 @@ Du bestätigst die Meldung mit einem Fingertipp und das Display wechselt wieder 
     <data name="BULKHEAD_WINDOW" xml:space="preserve">
         <value>Durch das Sichtfenster erhälst Du einen guten Blick in den abgesperrten Bereich. Oh nein! Du kannst deutlich erkennen, dass irgendetwas die Bordwand durchschlagen und ein ca. faustgroßes Loch gerissen hat. Du siehst auch die Türen zu den drei restlichen Crew-Kammern. Diese sind scheinbar unversehrt. Du kannst für den Rest der Besatzung nur hoffen, dass das den Tatsachen entspricht. Aber jetzt wird Dir klar, warum Du geweckt wurdest. Von dort sind die anderen Crew-Mitglieder machtlos und in den geschützen und hoffentlich unbeschädigten Cryo-Pods sind sie jahrelang sicher, selbst wenn ihre Räume ohne Sauerstoff sind und der eisigen Kälte des Welraums ausgesetzt sind.</value>
     </data>
-    <data name="PASSWORD_HINT" xml:space="preserve">
-        <value>ᛗᚨᚱᛁᚾᛖ</value>
+    <data name="TERMINAL_PASSWORD_HINT" xml:space="preserve">
+        <value>Marine</value>
     </data>
     <data name="COMMANDBRIDGE" xml:space="preserve">
         <value>Die Brücke ist ein nur wenige Quadratmeter großer Ovoid, der an der Frontseite durch eine überdimensionale Sichtscheibe dominiert wird. Sie spannt sich fast 180 Grad um den zentralen Pilotensitz und umfasst somit das gesamte Gesichtsfeld eines Menschen. Durch die erhöhte Position der Brücke ist das Schiff vollständig zu überblicken und in der Regel durch nur eine Person gut zu steuern. Der Eingriff ist allerdings nur erforderlich, wenn der Autopilot nicht aktiv ist.
@@ -232,5 +232,17 @@ Du weißt, dass jedes Schiff der Flotte eins dieser Portraits an Bord hat. Man l
     </data>
     <data name="COMPUTER_TERMINAL_FIRSTLOOK" xml:space="preserve">
         <value>&lt;&lt;wenn Du das Terminal verlassen möchtest, musst Du nur aufstehen&gt;&gt;</value>
+    </data>
+    <data name="TERMINAL_PASSWORD" xml:space="preserve">
+        <value>PoulSkov|Poul|Skov</value>
+    </data>
+    <data name="STICKY_NOTE" xml:space="preserve">
+        <value>Auf dem Klebezettel steht nur ein Wort: {0}</value>
+    </data>
+    <data name="CONTROL_PANEL" xml:space="preserve">
+        <value>Die Bedienkonsole ist ein Halbrund, das aus einer abgetönten Glasplatte besteht. Es kann beliebige grafische Objekte, wie auch textliche Beschreibungen direkt projeziert. Sei es als zweidimensionale Abbildung auf der Platte selbst, oder als dreidimensionale holografische Projektion. Die jeweiligen Objekten können dann durch die Personen beliebig bearbeitet, verschoben, verändert oder auch gelöscht werden. Ziemlich cool.</value>
+    </data>
+    <data name="STICKY_NOTE_FOUND" xml:space="preserve">
+        <value>Unter dem Pult klebt offensichtlich etwas. Du schaust genauer, fühlst an der Unterseite der Platte entlang und findest eine Haftnotiz.</value>
     </data>
 </root>
