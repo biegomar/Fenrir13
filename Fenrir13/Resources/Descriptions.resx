@@ -234,7 +234,7 @@ Du weißt, dass jedes Schiff der Flotte eins dieser Portraits an Bord hat. Man l
         <value>&lt;&lt;wenn Du das Terminal verlassen möchtest, musst Du nur aufstehen&gt;&gt;</value>
     </data>
     <data name="TERMINAL_PASSWORD" xml:space="preserve">
-        <value>PoulSkov|Poul|Skov</value>
+        <value>PoulSkov|Poul|Skov|Poul Skov</value>
     </data>
     <data name="STICKY_NOTE" xml:space="preserve">
         <value>Auf dem Klebezettel steht nur ein Wort: {0}</value>

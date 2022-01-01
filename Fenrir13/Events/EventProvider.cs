@@ -148,8 +148,18 @@ internal partial class EventProvider
                 if (location is { } commandBridge)
                 {
                     this.universe.ActiveLocation = commandBridge;
-                    PrintingSubsystem.ActiveLocation(this.universe.ActiveLocation, this.universe.LocationMap);
                 }
+            }
+        }
+    }
+    
+    internal void AfterStandUp(object sender, ContainerObjectEventArgs eventArgs)
+    {
+        if (sender is Player you && you.Key == Keys.PLAYER)
+        {
+            if (this.universe.ActiveLocation.Key == Keys.COMMANDBRIDGE)
+            {
+                PrintingSubsystem.ActiveLocation(this.universe.ActiveLocation, this.universe.LocationMap);
             }
         }
     }

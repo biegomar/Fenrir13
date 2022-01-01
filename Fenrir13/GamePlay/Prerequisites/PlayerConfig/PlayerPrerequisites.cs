@@ -26,6 +26,7 @@ public class PlayerPrerequisites
     private static void AddStandUpEvents(Player you, EventProvider eventProvider)
     {
         you.BeforeStandUp += eventProvider.BeforeStandUp;
+        you.AfterStandUp += eventProvider.AfterStandUp;
     }
     
     private static void AddSitDownEvents(Player you, EventProvider eventProvider)

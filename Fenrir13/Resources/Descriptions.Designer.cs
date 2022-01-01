@@ -630,7 +630,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to PoulSkov|Poul|Skov.
+        ///   Looks up a localized string similar to PoulSkov|Poul|Skov|Poul Skov.
         /// </summary>
         internal static string TERMINAL_PASSWORD {
             get {
