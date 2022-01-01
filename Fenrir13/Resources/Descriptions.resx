@@ -204,7 +204,7 @@ Du bestätigst die Meldung mit einem Fingertipp und das Display wechselt wieder 
     </data>
     <data name="COMMANDBRIDGE" xml:space="preserve">
         <value>Die Brücke ist ein nur wenige Quadratmeter großer Ovoid, der an der Frontseite durch eine überdimensionale Sichtscheibe dominiert wird. Sie spannt sich fast 180 Grad um den zentralen Pilotensitz und umfasst somit das gesamte Gesichtsfeld eines Menschen. Durch die erhöhte Position der Brücke ist das Schiff vollständig zu überblicken und in der Regel durch nur eine Person gut zu steuern. Der Eingriff ist allerdings nur erforderlich, wenn der Autopilot nicht aktiv ist.
-Der Pilotensitz wird von einer perfekt eingepassten Bedienkonsole umschlossen, die sich wie ein Halbrund zwischen der sitzenden Person und der Sichtschreibe befindet. Sie besteht aus einer abgetönten Glasplatte und Du weißt, dass sie verschiedene Instrumente, Bilder und Informationstexte sowohl 2-dimensional, als auch 3-dimensional darstellen kann. Bei Bedarf werden weitere Daten direkt auf die Sichtscheiben projeziert. Mechanische Instrumente gibt es hingegen nicht.
+Der Pilotensitz wird von einer perfekt eingepassten Bedienkonsole umschlossen, die sich wie ein Halbrund zwischen der sitzenden Person und der Sichtschreibe befindet. Sie besteht aus einer abgetönten Glasplatte und Du weißt, dass sie verschiedene Instrumente, Bilder und Informationstexte sowohl 2-dimensional, als auch 3-dimensional darstellen kann. Bei Bedarf werden weitere Daten direkt auf die Sichtscheiben projeziert. Mechanische Apparaturen gibt es hingegen nicht.
 Sobald eine Person in dem Pilotensitz platzt nimmt, wird die Konsole entsprechend des Rangs, sowie nautischer Notwendigkeiten und persönlicher Einstellungen aktiviert. </value>
     </data>
     <data name="COMMANDBRIDGE_FIRSTLOOK" xml:space="preserve">
@@ -252,5 +252,26 @@ Du weißt, dass jedes Schiff der Flotte eins dieser Portraits an Bord hat. Man l
         <value>-----------------------------------------
 --- Bitte geben sie das Password ein ---
 -----------------------------------------</value>
+    </data>
+    <data name="OVOID" xml:space="preserve">
+        <value>Ein Ovoid ist ein dreidimensionaler, rundlicher und konvexer Körper. Die Kommando-Brücke ist halt genau so geformt. Wie ein abgeflachtes Ei.</value>
+    </data>
+    <data name="FRONTSIDE" xml:space="preserve">
+        <value>Naja, die Frontseite ist halt vorne. Da wo die Scheibe ist.</value>
+    </data>
+    <data name="FRONTWINDOW" xml:space="preserve">
+        <value>Die Sichtscheibe ermöglicht einen perfekten Panoramablick über den Ladungsbereich der Fenrir 13 und Proxima Centauri.</value>
+    </data>
+    <data name="CONTROL_PANEL_CONTENT" xml:space="preserve">
+        <value>Im Moment ist die Konsole nicht aktiv und zeigt diese Art von Inhalt nicht an.</value>
+    </data>
+    <data name="RANK" xml:space="preserve">
+        <value>Du weißt nicht, welche Freigaben Dir durch den erhöhten Rang Q noch zu Teil werden.</value>
+    </data>
+    <data name="NECESSITIES" xml:space="preserve">
+        <value>Puh, um ehrlich zu sein...keine Ahnung was nautische Notwendigkeiten so sind.</value>
+    </data>
+    <data name="PERSONAL_SETTINGS" xml:space="preserve">
+        <value>Da Du bisher nicht an dem System gearbeitet hast, wird es von Dir noch kein Profil und somit keine persönlichen Einstellungen geben. Also erwarte keine Spracheingabe oder biometrische Zugangssicherung.</value>
     </data>
 </root>

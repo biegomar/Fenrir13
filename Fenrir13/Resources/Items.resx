@@ -124,6 +124,27 @@
         <value>Eine Haftnotiz|Haftnotiz|Klebezettel|Notiz|Zettel</value>
     </data>
     <data name="CONTROL_PANEL" xml:space="preserve">
-        <value>Bedienkonsole|Konsole|Steuerpult|Pult|Platte</value>
+        <value>Bedienkonsole|Konsole|Steuerpult|Pult|Platte|Glasplatte|Halbrund</value>
+    </data>
+    <data name="OVOID" xml:space="preserve">
+        <value>Ovoid</value>
+    </data>
+    <data name="FRONTSIDE" xml:space="preserve">
+        <value>Frontseite|Front</value>
+    </data>
+    <data name="FRONTWINDOW" xml:space="preserve">
+        <value>FRONTWINDOW</value>
+    </data>
+    <data name="CONTROL_PANEL_CONTENT" xml:space="preserve">
+        <value>Instrumente|Bilder|Informationstexte|Daten</value>
+    </data>
+    <data name="RANK" xml:space="preserve">
+        <value>Rang|Rangs</value>
+    </data>
+    <data name="NECESSITIES" xml:space="preserve">
+        <value>Notwendigkeiten|Notwendigkeit|nautische Notwendigkeiten|nautische Notwendigkeit</value>
+    </data>
+    <data name="PERSONAL_SETTINGS" xml:space="preserve">
+        <value>Einstellungen|Einstellung|persönliche Einstellungen|persönliche Einstellung</value>
     </data>
 </root>

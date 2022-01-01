@@ -142,11 +142,20 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bedienkonsole|Konsole|Steuerpult|Pult|Platte.
+        ///   Looks up a localized string similar to Bedienkonsole|Konsole|Steuerpult|Pult|Platte|Glasplatte|Halbrund.
         /// </summary>
         internal static string CONTROL_PANEL {
             get {
                 return ResourceManager.GetString("CONTROL_PANEL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Instrumente|Bilder|Informationstexte|Daten.
+        /// </summary>
+        internal static string CONTROL_PANEL_CONTENT {
+            get {
+                return ResourceManager.GetString("CONTROL_PANEL_CONTENT", resourceCulture);
             }
         }
         
@@ -214,6 +223,24 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Frontseite|Front.
+        /// </summary>
+        internal static string FRONTSIDE {
+            get {
+                return ResourceManager.GetString("FRONTSIDE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FRONTWINDOW.
+        /// </summary>
+        internal static string FRONTWINDOW {
+            get {
+                return ResourceManager.GetString("FRONTWINDOW", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to LAPTOP|Rechner|Computer.
         /// </summary>
         internal static string LAPTOP {
@@ -241,6 +268,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Notwendigkeiten|Notwendigkeit|nautische Notwendigkeiten|nautische Notwendigkeit.
+        /// </summary>
+        internal static string NECESSITIES {
+            get {
+                return ResourceManager.GetString("NECESSITIES", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Bürostuhl|Arbeitsstuhl|Sitzgelegenheit.
         /// </summary>
         internal static string OFFICECHAIR {
@@ -259,6 +295,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Ovoid.
+        /// </summary>
+        internal static string OVOID {
+            get {
+                return ResourceManager.GetString("OVOID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Trennwand|Sichtschutz.
         /// </summary>
         internal static string PARTITION_WALL {
@@ -273,6 +318,15 @@ namespace Fenrir13.Resources {
         internal static string PEEPHOLE {
             get {
                 return ResourceManager.GetString("PEEPHOLE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Einstellungen|Einstellung|persönliche Einstellungen|persönliche Einstellung.
+        /// </summary>
+        internal static string PERSONAL_SETTINGS {
+            get {
+                return ResourceManager.GetString("PERSONAL_SETTINGS", resourceCulture);
             }
         }
         
@@ -300,6 +354,15 @@ namespace Fenrir13.Resources {
         internal static string PORTRAIT {
             get {
                 return ResourceManager.GetString("PORTRAIT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Rang|Rangs.
+        /// </summary>
+        internal static string RANK {
+            get {
+                return ResourceManager.GetString("RANK", resourceCulture);
             }
         }
         

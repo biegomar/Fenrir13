@@ -153,4 +153,25 @@
     <data name="CONTROL_PANEL" xml:space="preserve">
         <value>CONTROL_PANEL</value>
     </data>
+    <data name="OVOID" xml:space="preserve">
+        <value>OVOID</value>
+    </data>
+    <data name="FRONTSIDE" xml:space="preserve">
+        <value>FRONTSIDE</value>
+    </data>
+    <data name="FRONTWINDOW" xml:space="preserve">
+        <value>FRONTWINDOW</value>
+    </data>
+    <data name="CONTROL_PANEL_CONTENT" xml:space="preserve">
+        <value>CONTROL_PANEL_CONTENT</value>
+    </data>
+    <data name="RANK" xml:space="preserve">
+        <value>RANK</value>
+    </data>
+    <data name="NECESSITIES" xml:space="preserve">
+        <value>NECESSITIES</value>
+    </data>
+    <data name="PERSONAL_SETTINGS" xml:space="preserve">
+        <value>PERSONAL_SETTINGS</value>
+    </data>
 </root>

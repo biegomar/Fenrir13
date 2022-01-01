@@ -226,6 +226,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Im Moment ist die Konsole nicht aktiv und zeigt diese Art von Inhalt nicht an..
+        /// </summary>
+        internal static string CONTROL_PANEL_CONTENT {
+            get {
+                return ResourceManager.GetString("CONTROL_PANEL_CONTENT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Der Korridor durchzieht den gesamten &apos;Hammerkopf&apos; des Schiffs von Ost nach West. Von ihm gehen Türen in die diversen Räume ab und in der Mitte, also bei gut 50 Metern führt ein Aufgang zur Brücke und ein Abgang herunter in die Maschinenräume. An den Wänden hängen Bilder von typischen Raum- und Evakuierungsplänen, sowie von ehemaligen Mitarbeitern und Crewmitgliedern der Fenrir-13. Ansonsten ist der Flur einfach und karg. In diesem Abschnitt des Korridors liegt die erste Hälfte der sechs Crew-Quartiere. Alle [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string CORRIDOR_EAST {
@@ -427,6 +436,24 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Naja, die Frontseite ist halt vorne. Da wo die Scheibe ist..
+        /// </summary>
+        internal static string FRONTSIDE {
+            get {
+                return ResourceManager.GetString("FRONTSIDE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Die Sichtscheibe ermöglicht einen perfekten Panoramablick über den Ladungsbereich der Fenrir 13 und Proxima Centauri..
+        /// </summary>
+        internal static string FRONTWINDOW {
+            get {
+                return ResourceManager.GetString("FRONTWINDOW", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Intervention required
         ///Hull breach detected, structural integrity compromised. Low energy. Low oxygen level.
         ///Your safety status has been upgraded from Level Z to Level Q. Please proceed to the control bridge..
@@ -475,6 +502,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Puh, um ehrlich zu sein...keine Ahnung was nautische Notwendigkeiten so sind..
+        /// </summary>
+        internal static string NECESSITIES {
+            get {
+                return ResourceManager.GetString("NECESSITIES", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Neuste Materialen sorgen dafür, dass sich der Stuhl perfekt an Deinem Körper ausrichtet und ihn in eine angenehme ergonomische Position bringt. Eine nahezu perfekte Klimaregulierung machen diesen Stuhl zu einem der bequemsten Plätze hier auf dem Schiff. .
         /// </summary>
         internal static string OFFICECHAIR {
@@ -503,6 +539,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Ein Ovoid ist ein dreidimensionaler, rundlicher und konvexer Körper. Die Kommando-Brücke ist halt genau so geformt. Wie ein abgeflachtes Ei..
+        /// </summary>
+        internal static string OVOID {
+            get {
+                return ResourceManager.GetString("OVOID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Die Trennwand zum Waschbereich soll sicherlich als Sichtschutz dienen, hat aber eher eine psychologische Wirkung. Niemand kann einfach so in den Raum kommen oder durch das Guckloch schauen, um zu sehen, was da wohl gerade passiert. Die Wand ist beidseitig mit einem grauen Filzstoff überzogen und man kann dort leichte Dinge, wie Bilder oder anderen Schnick-Schnack befestigen. Du hast von der Möglichkeit allerdings keinen Gebrauch gemacht..
         /// </summary>
         internal static string PARTITION_WALL {
@@ -517,6 +562,15 @@ namespace Fenrir13.Resources {
         internal static string PEEPHOLE {
             get {
                 return ResourceManager.GetString("PEEPHOLE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Da Du bisher nicht an dem System gearbeitet hast, wird es von Dir noch kein Profil und somit keine persönlichen Einstellungen geben. Also erwarte keine Spracheingabe oder biometrische Zugangssicherung..
+        /// </summary>
+        internal static string PERSONAL_SETTINGS {
+            get {
+                return ResourceManager.GetString("PERSONAL_SETTINGS", resourceCulture);
             }
         }
         
@@ -563,6 +617,15 @@ namespace Fenrir13.Resources {
         internal static string PORTRAIT {
             get {
                 return ResourceManager.GetString("PORTRAIT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Du weißt nicht, welche Freigaben Dir durch den erhöhten Rang Q noch zu Teil werden..
+        /// </summary>
+        internal static string RANK {
+            get {
+                return ResourceManager.GetString("RANK", resourceCulture);
             }
         }
         

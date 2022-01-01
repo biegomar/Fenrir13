@@ -169,6 +169,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to CONTROL_PANEL_CONTENT.
+        /// </summary>
+        internal static string CONTROL_PANEL_CONTENT {
+            get {
+                return ResourceManager.GetString("CONTROL_PANEL_CONTENT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to CORRIDOR_EAST.
         /// </summary>
         internal static string CORRIDOR_EAST {
@@ -286,6 +295,24 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to FRONTSIDE.
+        /// </summary>
+        internal static string FRONTSIDE {
+            get {
+                return ResourceManager.GetString("FRONTSIDE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FRONTWINDOW.
+        /// </summary>
+        internal static string FRONTWINDOW {
+            get {
+                return ResourceManager.GetString("FRONTWINDOW", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to LAPTOP.
         /// </summary>
         internal static string LAPTOP {
@@ -313,6 +340,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to NECESSITIES.
+        /// </summary>
+        internal static string NECESSITIES {
+            get {
+                return ResourceManager.GetString("NECESSITIES", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to OFFICECHAIR.
         /// </summary>
         internal static string OFFICECHAIR {
@@ -331,6 +367,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to OVOID.
+        /// </summary>
+        internal static string OVOID {
+            get {
+                return ResourceManager.GetString("OVOID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to PARTITION_WALL.
         /// </summary>
         internal static string PARTITION_WALL {
@@ -345,6 +390,15 @@ namespace Fenrir13.Resources {
         internal static string PEEPHOLE {
             get {
                 return ResourceManager.GetString("PEEPHOLE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PERSONAL_SETTINGS.
+        /// </summary>
+        internal static string PERSONAL_SETTINGS {
+            get {
+                return ResourceManager.GetString("PERSONAL_SETTINGS", resourceCulture);
             }
         }
         
@@ -381,6 +435,15 @@ namespace Fenrir13.Resources {
         internal static string PORTRAIT {
             get {
                 return ResourceManager.GetString("PORTRAIT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to RANK.
+        /// </summary>
+        internal static string RANK {
+            get {
+                return ResourceManager.GetString("RANK", resourceCulture);
             }
         }
         
