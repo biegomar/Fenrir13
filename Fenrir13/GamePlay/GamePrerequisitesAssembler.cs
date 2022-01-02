@@ -2,6 +2,7 @@ using Fenrir13.Events;
 using Fenrir13.GamePlay.Prerequisites.CommandBridge;
 using Fenrir13.GamePlay.Prerequisites.Corridor;
 using Fenrir13.GamePlay.Prerequisites.CryoChamber;
+using Fenrir13.GamePlay.Prerequisites.MachineCorridor;
 using Fenrir13.GamePlay.Prerequisites.PlayerConfig;
 using Heretic.InteractiveFiction.Comparer;
 using Heretic.InteractiveFiction.GamePlay;
@@ -32,22 +33,33 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
         var corridorWest = CorridorWestPrerequisites.Get(this.eventProvider);
         var bridge = CommandBridgePrerequisites.Get(this.eventProvider);
         var computerTerminal = ComputerTerminalPrerequisites.Get(this.eventProvider);
+        var machineCorridorMid = MachineCorridorMidPrerequisites.Get(this.eventProvider);
         
         map.Add(cryoChamber, CryoChamberLocationMap(corridorEast));
         map.Add(corridorEast, CorridorEastLocationMap(cryoChamber, corridorMidEast, emptyChamberOne, emptyChamberTwo));
         map.Add(corridorMidEast, CorridorMidEastLocationMap(corridorEast, corridorMid));
-        map.Add(corridorMid, CorridorMidLocationMap(corridorMidEast, corridorMidWest, bridge));
+        map.Add(corridorMid, CorridorMidLocationMap(corridorMidEast, corridorMidWest, bridge, machineCorridorMid));
         map.Add(corridorMidWest, CorridorMidWestLocationMap(corridorMid, corridorWest));
         map.Add(corridorWest, CorridorWestLocationMap(corridorMidWest));
         map.Add(bridge, BridgeLocationMap(corridorMid));
         map.Add(computerTerminal, new List<DestinationNode>());
+        map.Add(machineCorridorMid, MachineCorridorMidLocationMap(corridorMid));
         
         var activeLocation = cryoChamber;
         var activePlayer = PlayerPrerequisites.Get(this.eventProvider);
         
         return (map, activeLocation, activePlayer);
     }
-    
+
+    private static IEnumerable<DestinationNode> MachineCorridorMidLocationMap(Location corridorMid)
+    {
+        var locationMap = new List<DestinationNode>
+        {
+            new() {Direction = Directions.UP, Location = corridorMid, IsHidden = false},
+        };
+        return locationMap;  
+    }
+
     private static List<DestinationNode> CryoChamberLocationMap(Location corridorEast)
     {
         var locationMap = new List<DestinationNode>
@@ -79,13 +91,14 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
         return locationMap;
     }
     
-    private static List<DestinationNode> CorridorMidLocationMap(Location corridorMidEast, Location corridorMidWest, Location bridge)
+    private static List<DestinationNode> CorridorMidLocationMap(Location corridorMidEast, Location corridorMidWest, Location bridge, Location machineCorridorMid)
     {
         var locationMap = new List<DestinationNode>
         {
             new() {Direction = Directions.E, Location = corridorMidEast, IsHidden = false},
             new() {Direction = Directions.W, Location = corridorMidWest, IsHidden = false},
             new() {Direction = Directions.UP, Location = bridge, IsHidden = false},
+            new() {Direction = Directions.DOWN, Location = machineCorridorMid, IsHidden = false},
         };
         return locationMap;
     }

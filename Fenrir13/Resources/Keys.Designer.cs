@@ -331,11 +331,11 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to MASCHINE_CORRIDOR_MID.
+        ///   Looks up a localized string similar to MACHINE_CORRIDOR_MID.
         /// </summary>
-        internal static string MASCHINE_CORRIDOR_MID {
+        internal static string MACHINE_CORRIDOR_MID {
             get {
-                return ResourceManager.GetString("MASCHINE_CORRIDOR_MID", resourceCulture);
+                return ResourceManager.GetString("MACHINE_CORRIDOR_MID", resourceCulture);
             }
         }
         

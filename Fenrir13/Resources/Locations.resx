@@ -48,7 +48,7 @@
     <data name="COMPUTER_TERMINAL" xml:space="preserve">
         <value>Das Computer-Terminal|Computer-Terminal|Computer|Terminal</value>
     </data>
-    <data name="MASCHINE_CORRIDOR_MID" xml:space="preserve">
+    <data name="MACHINE_CORRIDOR_MID" xml:space="preserve">
         <value>Der Maschinen-Korridor|Maschinen-Korridor|Maschinenkorridor</value>
     </data>
 </root>

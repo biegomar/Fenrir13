@@ -532,9 +532,18 @@ namespace Fenrir13.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Du befindest Dich im Korridor auf dem Maschinendeck. .
         /// </summary>
-        internal static string MASCHINE_CORRIDOR_MID {
+        internal static string MACHINE_CORRIDOR_MID {
             get {
-                return ResourceManager.GetString("MASCHINE_CORRIDOR_MID", resourceCulture);
+                return ResourceManager.GetString("MACHINE_CORRIDOR_MID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Der Bereich ist durch eine Tür gesichert. Sie scheint ähnlich zu funktionieren wie die von Deinem Zimmer. Allerdings öffnet sie sich nicht automatisch. Hm? Wahrscheinlich hast Du einfach keinen Zugang zu diesem Bereich..
+        /// </summary>
+        internal static string MACHINE_CORRIDOR_MID_LOCKDESCRIPTION {
+            get {
+                return ResourceManager.GetString("MACHINE_CORRIDOR_MID_LOCKDESCRIPTION", resourceCulture);
             }
         }
         
