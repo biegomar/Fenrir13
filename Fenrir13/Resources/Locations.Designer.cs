@@ -149,5 +149,14 @@ namespace Fenrir13.Resources {
                 return ResourceManager.GetString("EMPTYCREWCHAMBERTWO", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Der Maschinen-Korridor|Maschinen-Korridor|Maschinenkorridor.
+        /// </summary>
+        internal static string MASCHINE_CORRIDOR_MID {
+            get {
+                return ResourceManager.GetString("MASCHINE_CORRIDOR_MID", resourceCulture);
+            }
+        }
     }
 }

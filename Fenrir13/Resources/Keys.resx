@@ -174,4 +174,7 @@
     <data name="PERSONAL_SETTINGS" xml:space="preserve">
         <value>PERSONAL_SETTINGS</value>
     </data>
+    <data name="MASCHINE_CORRIDOR_MID" xml:space="preserve">
+        <value>MASCHINE_CORRIDOR_MID</value>
+    </data>
 </root>

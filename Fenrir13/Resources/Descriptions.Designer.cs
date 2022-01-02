@@ -188,7 +188,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sofort als Du Dich setzt wird eine Abbildung einer Tastatur vor Dir auf der Platte eingeblendet und ein einfaches Computer-Terminal wird Dir als Bildschirm präsentiert..
+        ///   Looks up a localized string similar to Sofort als Du Dich setzt wird eine Abbildung einer Tastatur vor Dir auf der Platte eingeblendet und ein einfaches Computer-Terminal wird Dir als Bildschirm präsentiert. Scheinbar kannst Du mit dem Terminal kommunizieren, indem Du tippst..
         /// </summary>
         internal static string COMPUTER_TERMINAL {
             get {
@@ -204,6 +204,43 @@ namespace Fenrir13.Resources {
         internal static string COMPUTER_TERMINAL_DISPLAY_PASSWORD {
             get {
                 return ResourceManager.GetString("COMPUTER_TERMINAL_DISPLAY_PASSWORD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ---------------------
+        ///--- Status Report ---
+        ///---------------------
+        ///
+        ///Please fix the following problems:
+        ///(number input for more details)
+        ///1. hull breach (use the repair unit)
+        ///2. low energy level (open the solar panels).
+        /// </summary>
+        internal static string COMPUTER_TERMINAL_DISPLAY_REPORT {
+            get {
+                return ResourceManager.GetString("COMPUTER_TERMINAL_DISPLAY_REPORT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Als Du den Menüpunkt auswählst erfährst Du, dass der Hüllenbruch zum Glück nur den westlichen Korridor-Abschnitt betrifft. Allerdings ist dadurch der Zugang zu den weiteren Crew-Kabinen unmöglich. 
+        ///Weiter erfährst Du, dass das Schiff offenbar einen Service-Roboter an der Schiffshaut mitführt, der genau für diese Art von Reparatur zuständig ist. Aber aus irgendeinem Grund hat er die Arbeit nicht verrichtet. Das System kann leider keinen Kontakt zu dem Roboter aufnehmen und kennt daher den Status nicht.
+        ///Abe [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string COMPUTER_TERMINAL_DISPLAY_REPORT_1 {
+            get {
+                return ResourceManager.GetString("COMPUTER_TERMINAL_DISPLAY_REPORT_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Der Detailbericht sagt aus, dass einfach kaum noch Energie vorhanden ist. Nur die Notsysteme - wie die Cryo-Pods - laufen noch. Da es langsam kritisch wird wurdest Du geweckt, um zu handeln.
+        ///Trotzdem ist Dir nicht klar, was eigentlich das Problem ist. Das Schiff verfügt über eine riesige Anzahl an Solarkollektoren, die die gesamte Fläche des Cargo-Bereichs bedecken können. Aber scheinbar sind die nicht ausgefahren worden, sonst wäre genug Energie vorhanden. Vielleicht kannst Du unten bei den Maschinenräume [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string COMPUTER_TERMINAL_DISPLAY_REPORT_2 {
+            get {
+                return ResourceManager.GetString("COMPUTER_TERMINAL_DISPLAY_REPORT_2", resourceCulture);
             }
         }
         
@@ -493,6 +530,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Du befindest Dich im Korridor auf dem Maschinendeck. .
+        /// </summary>
+        internal static string MASCHINE_CORRIDOR_MID {
+            get {
+                return ResourceManager.GetString("MASCHINE_CORRIDOR_MID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Den Spiegel schätzt Du so auf 90x120 cm und er ist kristallklar. Wenn Du längere Zeit eine der Ecken mit Deinen Augen fukossierst erscheint ein zusätzliches Display auf der Fläche und präsentiert Dir Deine gängigen Gesundheitsdaten. Als Du diesmal die Daten checkst erschrickst Du. Die letzte Messung ist über 5 Jahre her!.
         /// </summary>
         internal static string MIRROR {
@@ -693,6 +739,24 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 1|1..
+        /// </summary>
+        internal static string TERMINAL_MENU_1 {
+            get {
+                return ResourceManager.GetString("TERMINAL_MENU_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 2|2..
+        /// </summary>
+        internal static string TERMINAL_MENU_2 {
+            get {
+                return ResourceManager.GetString("TERMINAL_MENU_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to PoulSkov|Poul|Skov|Poul Skov.
         /// </summary>
         internal static string TERMINAL_PASSWORD {
@@ -707,6 +771,33 @@ namespace Fenrir13.Resources {
         internal static string TERMINAL_PASSWORD_HINT {
             get {
                 return ResourceManager.GetString("TERMINAL_PASSWORD_HINT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hm? Das scheint es nicht gewesen zu sein. Vielleicht dient der Begriff auch vielmehr als Hinweis auf irgendetwas?.
+        /// </summary>
+        internal static string TERMINAL_PASSWORD_HINT_WRONG {
+            get {
+                return ResourceManager.GetString("TERMINAL_PASSWORD_HINT_WRONG", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Geschafft! Das war das richtige Passwort. Sofort wechselt der Inhalt des Bildschirms und gibt Dir einen Statusbericht preis..
+        /// </summary>
+        internal static string TERMINAL_PASSWORD_SUCCESS {
+            get {
+                return ResourceManager.GetString("TERMINAL_PASSWORD_SUCCESS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Das scheint nicht das richtige Passwort gewesen zu sein. Bitte probiere es noch einmal..
+        /// </summary>
+        internal static string TERMINAL_PASSWORD_WRONG {
+            get {
+                return ResourceManager.GetString("TERMINAL_PASSWORD_WRONG", resourceCulture);
             }
         }
         
@@ -752,15 +843,6 @@ namespace Fenrir13.Resources {
         internal static string WORKBENCH {
             get {
                 return ResourceManager.GetString("WORKBENCH", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Das scheint nicht das richtige Passwort gewesen zu sein. Bitte probiere es noch einmal..
-        /// </summary>
-        internal static string WRONG_TERMINAL_PASSWORD {
-            get {
-                return ResourceManager.GetString("WRONG_TERMINAL_PASSWORD", resourceCulture);
             }
         }
     }

@@ -11,6 +11,7 @@ internal partial class EventProvider
 {
     private readonly Universe universe;
     private readonly IPrintingSubsystem PrintingSubsystem;
+    private bool isAccessGranted;
 
     internal IDictionary<string, int> ScoreBoard => this.universe.ScoreBoard;
 
@@ -18,6 +19,7 @@ internal partial class EventProvider
     {
         this.PrintingSubsystem = printingSubsystem;
         this.universe = universe;
+        this.isAccessGranted = false;
     }
     
     internal void LookAtPierhole(object sender, ContainerObjectEventArgs eventArgs)
@@ -175,7 +177,15 @@ internal partial class EventProvider
                 {
                     this.universe.ActiveLocation = terminal;
                     PrintingSubsystem.ActiveLocation(this.universe.ActiveLocation, this.universe.LocationMap);
-                    PrintPasswordMessage();
+                    if (this.isAccessGranted)
+                    {
+                        PrintPasswordMessage(Descriptions.COMPUTER_TERMINAL_DISPLAY_REPORT);    
+                    }
+                    else
+                    {
+                        PrintPasswordMessage(Descriptions.COMPUTER_TERMINAL_DISPLAY_PASSWORD);
+                    }
+                    
                 }
             }
         }
@@ -201,30 +211,37 @@ internal partial class EventProvider
     {
         if (sender is Location terminal && terminal.Key == Keys.COMPUTER_TERMINAL)
         {
-            if (IsPasswordCorrect(eventArgs.Text))
+            if (!this.isAccessGranted)
             {
-                PrintingSubsystem.Resource("You have entered the correct password.\nYou can now access the control panel.");
-                this.universe.Score += this.universe.ScoreBoard[nameof(this.WriteTextToComputerTerminal)];
-                this.universe.ActiveLocation.Write -= WriteTextToComputerTerminal;
-            }
-            else if (eventArgs.Text.ToLower() == Descriptions.TERMINAL_PASSWORD_HINT.ToLower())
-            {
-                PrintingSubsystem.Resource(
-                    "Hm? Das scheint es nicht gewesen zu sein. Vielleicht dient der Begriff auch vielmehr als Hinweis auf irgendetwas?");
-                PrintPasswordMessage();
+                if (IsPasswordCorrect(eventArgs.Text))
+                {
+                    PrintingSubsystem.Resource(Descriptions.TERMINAL_PASSWORD_SUCCESS);
+                    PrintPasswordMessage(Descriptions.COMPUTER_TERMINAL_DISPLAY_REPORT);
+                    this.isAccessGranted = true;
+                    this.universe.Score += this.universe.ScoreBoard[nameof(this.WriteTextToComputerTerminal)];
+                }
+                else if (eventArgs.Text.ToLower() == Descriptions.TERMINAL_PASSWORD_HINT.ToLower())
+                {
+                    PrintingSubsystem.Resource(Descriptions.TERMINAL_PASSWORD_HINT_WRONG);
+                    PrintPasswordMessage(Descriptions.COMPUTER_TERMINAL_DISPLAY_PASSWORD);
+                }
+                else
+                {
+                    PrintingSubsystem.Resource(Descriptions.TERMINAL_PASSWORD_WRONG);
+                    PrintPasswordMessage(Descriptions.COMPUTER_TERMINAL_DISPLAY_PASSWORD);
+                }
             }
             else
             {
-                PrintingSubsystem.Resource(Descriptions.WRONG_TERMINAL_PASSWORD);
-                PrintPasswordMessage();
+                this.PrintMenu(eventArgs.Text);
             }
         }
     }
 
-    private void PrintPasswordMessage()
+    private void PrintPasswordMessage(string message)
     {
         PrintingSubsystem.ForegroundColor = TextColor.DarkGreen;
-        PrintingSubsystem.Resource(Descriptions.COMPUTER_TERMINAL_DISPLAY_PASSWORD);
+        PrintingSubsystem.Resource(message);
         PrintingSubsystem.ResetColors();
     }
 
@@ -234,5 +251,25 @@ internal partial class EventProvider
         var lowerList = passwordList.Select(x => x.ToLower()).ToList();
         return lowerList.Contains(password.ToLower());
     }
+
+    private bool IsInSplitList(string resource, string text)
+    {
+        var splitList = resource.Split('|').ToList();
+        var lowerList = splitList.Select(x => x.ToLower()).ToList();
+        return lowerList.Contains(text.ToLower());
+    }
     
+    private void PrintMenu(string text)
+    {
+        if (IsInSplitList(Descriptions.TERMINAL_MENU_1, text))
+        {
+            PrintingSubsystem.Resource(Descriptions.COMPUTER_TERMINAL_DISPLAY_REPORT_1);
+        }
+        else if (IsInSplitList(Descriptions.TERMINAL_MENU_2, text))
+        {
+            PrintingSubsystem.Resource(Descriptions.COMPUTER_TERMINAL_DISPLAY_REPORT_2);
+        }
+        
+        PrintPasswordMessage(Descriptions.COMPUTER_TERMINAL_DISPLAY_REPORT);
+    }
 }

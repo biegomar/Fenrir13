@@ -331,6 +331,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to MASCHINE_CORRIDOR_MID.
+        /// </summary>
+        internal static string MASCHINE_CORRIDOR_MID {
+            get {
+                return ResourceManager.GetString("MASCHINE_CORRIDOR_MID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to MIRROR.
         /// </summary>
         internal static string MIRROR {

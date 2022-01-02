@@ -228,7 +228,7 @@ Das Bild zeigt ihn mit einem wilden Rauschebart und einem verwegenen Blick, der 
 Du weißt, dass jedes Schiff der Flotte eins dieser Portraits an Bord hat. Man legt sehr viel Wert auf die Persönlichkeiten des Unternehmens und ihre Leistungen. Diese Wertschätzung hat auch Dich letzendlich in deren Dienste gebracht.</value>
     </data>
     <data name="COMPUTER_TERMINAL" xml:space="preserve">
-        <value>Sofort als Du Dich setzt wird eine Abbildung einer Tastatur vor Dir auf der Platte eingeblendet und ein einfaches Computer-Terminal wird Dir als Bildschirm präsentiert.</value>
+        <value>Sofort als Du Dich setzt wird eine Abbildung einer Tastatur vor Dir auf der Platte eingeblendet und ein einfaches Computer-Terminal wird Dir als Bildschirm präsentiert. Scheinbar kannst Du mit dem Terminal kommunizieren, indem Du tippst.</value>
     </data>
     <data name="COMPUTER_TERMINAL_FIRSTLOOK" xml:space="preserve">
         <value>&lt;&lt;wenn Du das Terminal verlassen möchtest, musst Du nur aufstehen&gt;&gt;</value>
@@ -245,7 +245,7 @@ Du weißt, dass jedes Schiff der Flotte eins dieser Portraits an Bord hat. Man l
     <data name="STICKY_NOTE_FOUND" xml:space="preserve">
         <value>Unter dem Pult klebt offensichtlich etwas. Du schaust genauer, fühlst an der Unterseite der Platte entlang und spürst eine Art Zettel. Die knibbelst ihn ab und hast nun eine Haftnotiz in der Hand.</value>
     </data>
-    <data name="WRONG_TERMINAL_PASSWORD" xml:space="preserve">
+    <data name="TERMINAL_PASSWORD_WRONG" xml:space="preserve">
         <value>Das scheint nicht das richtige Passwort gewesen zu sein. Bitte probiere es noch einmal.</value>
     </data>
     <data name="COMPUTER_TERMINAL_DISPLAY_PASSWORD" xml:space="preserve">
@@ -273,5 +273,39 @@ Du weißt, dass jedes Schiff der Flotte eins dieser Portraits an Bord hat. Man l
     </data>
     <data name="PERSONAL_SETTINGS" xml:space="preserve">
         <value>Da Du bisher nicht an dem System gearbeitet hast, wird es von Dir noch kein Profil und somit keine persönlichen Einstellungen geben. Also erwarte keine Spracheingabe oder biometrische Zugangssicherung.</value>
+    </data>
+    <data name="COMPUTER_TERMINAL_DISPLAY_REPORT" xml:space="preserve">
+        <value>---------------------
+--- Status Report ---
+---------------------
+
+Please fix the following problems:
+(number input for more details)
+1. hull breach (use the repair unit)
+2. low energy level (open the solar panels)</value>
+    </data>
+    <data name="TERMINAL_PASSWORD_SUCCESS" xml:space="preserve">
+        <value>Geschafft! Das war das richtige Passwort. Sofort wechselt der Inhalt des Bildschirms und gibt Dir einen Statusbericht preis.</value>
+    </data>
+    <data name="TERMINAL_PASSWORD_HINT_WRONG" xml:space="preserve">
+        <value>Hm? Das scheint es nicht gewesen zu sein. Vielleicht dient der Begriff auch vielmehr als Hinweis auf irgendetwas?</value>
+    </data>
+    <data name="COMPUTER_TERMINAL_DISPLAY_REPORT_1" xml:space="preserve">
+        <value>Als Du den Menüpunkt auswählst erfährst Du, dass der Hüllenbruch zum Glück nur den westlichen Korridor-Abschnitt betrifft. Allerdings ist dadurch der Zugang zu den weiteren Crew-Kabinen unmöglich. 
+Weiter erfährst Du, dass das Schiff offenbar einen Service-Roboter an der Schiffshaut mitführt, der genau für diese Art von Reparatur zuständig ist. Aber aus irgendeinem Grund hat er die Arbeit nicht verrichtet. Das System kann leider keinen Kontakt zu dem Roboter aufnehmen und kennt daher den Status nicht.
+Aber Deine Aufgabe scheint klar zu sein. Den Roboter flott machen und den Hüllenbruch schließen! Vielleicht ergibt sich eine Lösung unten in den Maschinenräumen.</value>
+    </data>
+    <data name="TERMINAL_MENU_1" xml:space="preserve">
+        <value>1|1.</value>
+    </data>
+    <data name="TERMINAL_MENU_2" xml:space="preserve">
+        <value>2|2.</value>
+    </data>
+    <data name="COMPUTER_TERMINAL_DISPLAY_REPORT_2" xml:space="preserve">
+        <value>Der Detailbericht sagt aus, dass einfach kaum noch Energie vorhanden ist. Nur die Notsysteme - wie die Cryo-Pods - laufen noch. Da es langsam kritisch wird wurdest Du geweckt, um zu handeln.
+Trotzdem ist Dir nicht klar, was eigentlich das Problem ist. Das Schiff verfügt über eine riesige Anzahl an Solarkollektoren, die die gesamte Fläche des Cargo-Bereichs bedecken können. Aber scheinbar sind die nicht ausgefahren worden, sonst wäre genug Energie vorhanden. Vielleicht kannst Du unten bei den Maschinenräumen mehr unternehmen als von hier.</value>
+    </data>
+    <data name="MASCHINE_CORRIDOR_MID" xml:space="preserve">
+        <value>Du befindest Dich im Korridor auf dem Maschinendeck. </value>
     </data>
 </root>
