@@ -57,4 +57,7 @@
     <data name="SOCIALROOM" xml:space="preserve">
         <value>Der Sozialraum|Sozialraum|Aufenthaltsraum</value>
     </data>
+    <data name="KITCHEN" xml:space="preserve">
+        <value>Die Küche|Küche</value>
+    </data>
 </root>

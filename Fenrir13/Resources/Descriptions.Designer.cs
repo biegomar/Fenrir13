@@ -540,6 +540,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Für die maximal sechs Personen Besatzung ist die Küche üppig ausgestattet und sehr geräumig. .
+        /// </summary>
+        internal static string KITCHEN {
+            get {
+                return ResourceManager.GetString("KITCHEN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Dein Laptop ist ein Relikt aus der informationstechnischen Steinzeit. Auch zu Beginn der Reise war das schon so. Normalerweise arbeitet niemand mehr mit solchen Geräten, aber Du magst das irgendwie. Und, es ist Dein Eigenes!
         ///Du schaust Dir die Maschine an und versuchst es anzuschalten. Nichts passiert! Scheinbar ist der Akku leer. Das ist komisch, da das Gerät die gesamte Zeit an der Stromversorgnung hing..
         /// </summary>

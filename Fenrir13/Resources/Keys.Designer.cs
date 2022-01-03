@@ -322,6 +322,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to KITCHEN.
+        /// </summary>
+        internal static string KITCHEN {
+            get {
+                return ResourceManager.GetString("KITCHEN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to LAPTOP.
         /// </summary>
         internal static string LAPTOP {

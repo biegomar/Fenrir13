@@ -183,4 +183,7 @@
     <data name="SOCIALROOM" xml:space="preserve">
         <value>SOCIALROOM</value>
     </data>
+    <data name="KITCHEN" xml:space="preserve">
+        <value>KITCHEN</value>
+    </data>
 </root>

@@ -3,6 +3,7 @@ using Fenrir13.GamePlay.Prerequisites.CommandBridge;
 using Fenrir13.GamePlay.Prerequisites.Corridor;
 using Fenrir13.GamePlay.Prerequisites.CryoChamber;
 using Fenrir13.GamePlay.Prerequisites.Gym;
+using Fenrir13.GamePlay.Prerequisites.Kitchen;
 using Fenrir13.GamePlay.Prerequisites.MachineCorridor;
 using Fenrir13.GamePlay.Prerequisites.PlayerConfig;
 using Fenrir13.GamePlay.Prerequisites.SocialRoom;
@@ -38,10 +39,11 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
         var machineCorridorMid = MachineCorridorMidPrerequisites.Get(this.eventProvider);
         var gym = GymPrerequisites.Get(this.eventProvider);
         var socialRoom = SocialRoomPrerequisites.Get(this.eventProvider);
+        var kitchen = KitchenPrerequisites.Get(this.eventProvider);
         
         map.Add(cryoChamber, CryoChamberLocationMap(corridorEast));
         map.Add(corridorEast, CorridorEastLocationMap(cryoChamber, corridorMidEast, emptyChamberOne, emptyChamberTwo));
-        map.Add(corridorMidEast, CorridorMidEastLocationMap(corridorEast, corridorMid, socialRoom));
+        map.Add(corridorMidEast, CorridorMidEastLocationMap(corridorEast, corridorMid, socialRoom, kitchen));
         map.Add(corridorMid, CorridorMidLocationMap(corridorMidEast, corridorMidWest, bridge, machineCorridorMid));
         map.Add(corridorMidWest, CorridorMidWestLocationMap(corridorMid, corridorWest, gym));
         map.Add(corridorWest, CorridorWestLocationMap(corridorMidWest));
@@ -50,6 +52,7 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
         map.Add(machineCorridorMid, MachineCorridorMidLocationMap(corridorMid));
         map.Add(gym, GymLocationMap(corridorMidWest));
         map.Add(socialRoom, SocialRoomLocationMap(corridorMidEast));
+        map.Add(kitchen, KitchenLocationMap(corridorMidEast));
         
         var activeLocation = cryoChamber;
         var activePlayer = PlayerPrerequisites.Get(this.eventProvider);
@@ -87,13 +90,14 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
         return locationMap;
     }
     
-    private static List<DestinationNode> CorridorMidEastLocationMap(Location corridorEast, Location corridorMid, Location socialRoom)
+    private static List<DestinationNode> CorridorMidEastLocationMap(Location corridorEast, Location corridorMid, Location socialRoom, Location kitchen)
     {
         var locationMap = new List<DestinationNode>
         {
             new() {Direction = Directions.E, Location = corridorEast, IsHidden = false},
             new() {Direction = Directions.W, Location = corridorMid, IsHidden = false},
             new() {Direction = Directions.S, Location = socialRoom, IsHidden = false},
+            new() {Direction = Directions.N, Location = kitchen, IsHidden = false},
         };
         return locationMap;
     }
@@ -144,6 +148,15 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
         var locationMap = new List<DestinationNode>
         {
             new() {Direction = Directions.N, Location = corridorMidEast, IsHidden = false},
+        };
+        return locationMap;
+    }
+    
+    private static List<DestinationNode> KitchenLocationMap(Location corridorMidEast)
+    {
+        var locationMap = new List<DestinationNode>
+        {
+            new() {Direction = Directions.S, Location = corridorMidEast, IsHidden = false},
         };
         return locationMap;
     }

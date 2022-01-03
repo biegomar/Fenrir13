@@ -160,6 +160,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Die Küche|Küche.
+        /// </summary>
+        internal static string KITCHEN {
+            get {
+                return ResourceManager.GetString("KITCHEN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Der Maschinen-Korridor|Maschinen-Korridor|Maschinenkorridor.
         /// </summary>
         internal static string MACHINE_CORRIDOR_MID {

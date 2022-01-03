@@ -325,4 +325,7 @@ Trotzdem ist Dir nicht klar, was eigentlich das Problem ist. Das Schiff verfügt
     <data name="SOCIALROOM" xml:space="preserve">
         <value>In diesem Raum lassen sich viele Dinge verwirklichen. Hier kann man gemühtlich chillen, ein wenig Zocken oder einfach nur mit den Kollegen quatschen.</value>
     </data>
+    <data name="KITCHEN" xml:space="preserve">
+        <value>Für die maximal sechs Personen Besatzung ist die Küche üppig ausgestattet und sehr geräumig. </value>
+    </data>
 </root>
