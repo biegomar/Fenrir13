@@ -18,6 +18,13 @@ internal static class CorridorWestPrerequisites
             
         };
 
+        AddSurroundings(corridor);
+        
         return corridor;
+    }
+    
+    private static void AddSurroundings(Location corridor)
+    {
+        corridor.Surroundings.Add(Keys.CORRIDOR_PAINTING, Descriptions.CORRIDOR_PAINTING_WEST);
     }
 }

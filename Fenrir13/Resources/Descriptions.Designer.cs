@@ -133,7 +133,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to So ausgepowert wie Du bist schlingst Du Dir gierig den Power-Riegel herunter. Dieses Wunderzeug erweckt Dich fast augenblicklich wieder zum Leben und Du spürst, wie Dein Körper die Energie förmlich aufsaugt. Jetzt bist Du fit für die Aufgaben, die vor Dir liegen..
+        ///   Looks up a localized string similar to So ausgepowert wie Du bist, schlingst Du Dir gierig den Power-Riegel herunter. Dieses Wunderzeug erweckt Dich fast augenblicklich wieder zum Leben und Du spürst, wie Dein Körper die Energie förmlich aufsaugt. Jetzt bist Du fit für die Aufgaben, die vor Dir liegen..
         /// </summary>
         internal static string CHOCOLATEBAR_EATEN {
             get {
@@ -188,7 +188,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sofort als Du Dich setzt wird eine Abbildung einer Tastatur vor Dir auf der Platte eingeblendet und ein einfaches Computer-Terminal wird Dir als Bildschirm präsentiert. Scheinbar kannst Du mit dem Terminal kommunizieren, indem Du tippst..
+        ///   Looks up a localized string similar to Sofort als Du Dich setzt wird die Abbildung einer Tastatur vor Dir auf der Platte eingeblendet und ein einfaches Computer-Terminal wird Dir als Bildschirm präsentiert. Scheinbar kannst Du mit dem Terminal kommunizieren, indem Du tippst..
         /// </summary>
         internal static string COMPUTER_TERMINAL {
             get {
@@ -211,6 +211,8 @@ namespace Fenrir13.Resources {
         ///   Looks up a localized string similar to ---------------------
         ///--- Status Report ---
         ///---------------------
+        ///
+        ///Access confirmed - machine dock unlocked.
         ///
         ///Please fix the following problems:
         ///(number input for more details)
@@ -272,7 +274,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Korridor durchzieht den gesamten &apos;Hammerkopf&apos; des Schiffs von Ost nach West. Von ihm gehen Türen in die diversen Räume ab und in der Mitte, also bei gut 50 Metern führt ein Aufgang zur Brücke und ein Abgang herunter in die Maschinenräume. An den Wänden hängen Bilder von typischen Raum- und Evakuierungsplänen, sowie von ehemaligen Mitarbeitern und Crewmitgliedern der Fenrir-13. Ansonsten ist der Flur einfach und karg. In diesem Abschnitt des Korridors liegt die erste Hälfte der sechs Crew-Quartiere. Alle [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to Der Korridor durchzieht den gesamten &apos;Hammerkopf&apos; des Schiffs von Ost nach West. Von ihm gehen Türen in die diversen Räume ab und in der Mitte, also bei gut 50 Metern führt ein Aufgang zur Brücke und ein Abgang herunter in die Maschinenräume. An den Wänden hängen Bilder von typischen Raum- und Evakuierungsplänen, sowie von ehemaligen Mitarbeitern und Crewmitgliedern der Fenrir 13. Ansonsten ist der Flur einfach und karg. In diesem Abschnitt des Korridors liegt die erste Hälfte der sechs Crew-Quartiere. Alle [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string CORRIDOR_EAST {
             get {
@@ -308,7 +310,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Korridor durchzieht den gesamten &apos;Hammerkopf&apos; des Schiffs von Ost nach West. Von ihm gehen Türen in die diversen Räume ab und in der Mitte, also bei gut 50 Metern führt ein Aufgang zur Brücke und ein Abgang herunter in die Maschinenräume. An den Wänden hängen neben typischen Raum- und Evakuierungsplänen auch Bilder von ehemaligen Mitarbeitern und Crewmitgliedern der Fenrir-13. Ansonsten ist der Flur einfach und karg..
+        ///   Looks up a localized string similar to Der Korridor durchzieht den gesamten &apos;Hammerkopf&apos; des Schiffs von Ost nach West. Von ihm gehen Türen in die diversen Räume ab und in der Mitte, also bei gut 50 Metern führt ein Aufgang zur Brücke und ein Abgang herunter in die Maschinenräume. An den Wänden hängen neben typischen Raum- und Evakuierungsplänen auch Bilder von ehemaligen Mitarbeitern und Crewmitgliedern der Fenrir 13. Ansonsten ist der Flur einfach und karg..
         /// </summary>
         internal static string CORRIDOR_MIDWEST {
             get {
@@ -336,7 +338,25 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Korridor durchzieht den gesamten &apos;Hammerkopf&apos; des Schiffs von Ost nach West. Von ihm gehen Türen in die diversen Räume ab und in der Mitte, also bei gut 50 Metern führt ein Aufgang zur Brücke und ein Abgang herunter in die Maschinenräume. An den Wänden hängen neben typischen Raum- und Evakuierungsplänen auch Bilder von ehemaligen Mitarbeitern und Crewmitgliedern der Fenrir-13. Ansonsten ist der Flur einfach und karg..
+        ///   Looks up a localized string similar to Hier hängt ein erstes Portrait eines ehemalige Crew-Mitglieds. Klaus Neumann, ein deutscher Ingenieur und erster Maschinist auf der Fenrir 13. Seinem Einsatz und seiner Expertise sind viele Errungenschaften des Space-Minings zu verdanken, die auch heute noch Bestand haben..
+        /// </summary>
+        internal static string CORRIDOR_PAINTING_MIDWEST {
+            get {
+                return ResourceManager.GetString("CORRIDOR_PAINTING_MIDWEST", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to In diesem Abschnitt des Flures hängt das Bild eines Fluchtplans. Der Umriss dieser Etage mit den einzelnen Räumen. Ein roter Punkt markiert Deinen Standort und grüne Pfeile weisen in Richtung Mitte des Korridoren und dann nach unten in die Maschinenräume..
+        /// </summary>
+        internal static string CORRIDOR_PAINTING_WEST {
+            get {
+                return ResourceManager.GetString("CORRIDOR_PAINTING_WEST", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Der Korridor durchzieht den gesamten &apos;Hammerkopf&apos; des Schiffs von Ost nach West. Von ihm gehen Türen in die diversen Räume ab und in der Mitte, also bei gut 50 Metern führt ein Aufgang zur Brücke und ein Abgang herunter in die Maschinenräume. An den Wänden hängen neben typischen Raum- und Evakuierungsplänen auch Bilder von ehemaligen Mitarbeitern und Crewmitgliedern der Fenrir 13. Ansonsten ist der Flur einfach und karg..
         /// </summary>
         internal static string CORRIDOR_WEST {
             get {
@@ -793,7 +813,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Geschafft! Das war das richtige Passwort. Sofort wechselt der Inhalt des Bildschirms und gibt Dir einen Statusbericht preis..
+        ///   Looks up a localized string similar to Geschafft! Das war das richtige Passwort. Sofort wechselt der Inhalt des Bildschirms und gibt Dir einen Statusbericht preis. Dort kannst Du sehen, dass der Zugang zum Maschinendeck freigegeben wurde. Der Statusbericht beinhaltet zwei Unterpunkte, die Du Dir ebenfalls anschauen solltest..
         /// </summary>
         internal static string TERMINAL_PASSWORD_SUCCESS {
             get {

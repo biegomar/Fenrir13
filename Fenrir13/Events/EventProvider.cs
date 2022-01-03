@@ -217,6 +217,11 @@ internal partial class EventProvider
                 {
                     PrintingSubsystem.Resource(Descriptions.TERMINAL_PASSWORD_SUCCESS);
                     PrintPasswordMessage(Descriptions.COMPUTER_TERMINAL_DISPLAY_REPORT);
+                    var room = this.GetRoom(Keys.MACHINE_CORRIDOR_MID);
+                    if (room != default)
+                    {
+                        room.IsLocked = false;
+                    }
                     this.isAccessGranted = true;
                     this.universe.Score += this.universe.ScoreBoard[nameof(this.WriteTextToComputerTerminal)];
                 }
@@ -236,6 +241,18 @@ internal partial class EventProvider
                 this.PrintMenu(eventArgs.Text);
             }
         }
+    }
+
+    private Location GetRoom(string locationKey)
+    {
+        var room = this.universe.LocationMap.Keys.FirstOrDefault(location => location.Key == locationKey);
+        
+        if (room is { } roomLocation)
+        {
+            return roomLocation;
+        }
+
+        return default;
     }
 
     private void PrintPasswordMessage(string message)

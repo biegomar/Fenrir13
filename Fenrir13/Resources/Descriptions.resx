@@ -87,7 +87,7 @@ Voller Stolz prangt der Name des Schiffs in Runen an der Steuerbordseite des Car
         <value>Dieser Power-Riegel ist genau das Richtige, um nach dem auslaugenden Cryo-Schlaf wieder zu Kräften zu kommen.</value>
     </data>
     <data name="CHOCOLATEBAR_EATEN" xml:space="preserve">
-        <value>So ausgepowert wie Du bist schlingst Du Dir gierig den Power-Riegel herunter. Dieses Wunderzeug erweckt Dich fast augenblicklich wieder zum Leben und Du spürst, wie Dein Körper die Energie förmlich aufsaugt. Jetzt bist Du fit für die Aufgaben, die vor Dir liegen.</value>
+        <value>So ausgepowert wie Du bist, schlingst Du Dir gierig den Power-Riegel herunter. Dieses Wunderzeug erweckt Dich fast augenblicklich wieder zum Leben und Du spürst, wie Dein Körper die Energie förmlich aufsaugt. Jetzt bist Du fit für die Aufgaben, die vor Dir liegen.</value>
     </data>
     <data name="WARDROBE" xml:space="preserve">
         <value>Ein typischer Kleiderständer der es ermöglicht, schnell Kleidungsstücke aufzuhängen und ebenso schnell wieder herunterzunehmen.</value>
@@ -158,7 +158,7 @@ Your safety status has been upgraded from Level Z to Level Q. Please proceed to 
 Du bestätigst die Meldung mit einem Fingertipp und das Display wechselt wieder in den Normalzustand und der gesamte Schiffsalarm erstirbt. Gut! Wenigstens hast Du jetzt Ruhe, um Dich zu konzentrieren. Offensichtlich wurde auch der automatische Türöffnungsmodus aktiviert, denn die Tür öffnet sich und gibt den Weg frei zum Korridor.</value>
     </data>
     <data name="CORRIDOR_EAST" xml:space="preserve">
-        <value>Der Korridor durchzieht den gesamten 'Hammerkopf' des Schiffs von Ost nach West. Von ihm gehen Türen in die diversen Räume ab und in der Mitte, also bei gut 50 Metern führt ein Aufgang zur Brücke und ein Abgang herunter in die Maschinenräume. An den Wänden hängen Bilder von typischen Raum- und Evakuierungsplänen, sowie von ehemaligen Mitarbeitern und Crewmitgliedern der Fenrir-13. Ansonsten ist der Flur einfach und karg. In diesem Abschnitt des Korridors liegt die erste Hälfte der sechs Crew-Quartiere. Allerdings sind bei dieser Mission nur vier Crew-Mitglieder anwesend. Daher bist Du in diesem Trakt komplett allein und die anderen Räume sind standardmäßig versiegelt.</value>
+        <value>Der Korridor durchzieht den gesamten 'Hammerkopf' des Schiffs von Ost nach West. Von ihm gehen Türen in die diversen Räume ab und in der Mitte, also bei gut 50 Metern führt ein Aufgang zur Brücke und ein Abgang herunter in die Maschinenräume. An den Wänden hängen Bilder von typischen Raum- und Evakuierungsplänen, sowie von ehemaligen Mitarbeitern und Crewmitgliedern der Fenrir 13. Ansonsten ist der Flur einfach und karg. In diesem Abschnitt des Korridors liegt die erste Hälfte der sechs Crew-Quartiere. Allerdings sind bei dieser Mission nur vier Crew-Mitglieder anwesend. Daher bist Du in diesem Trakt komplett allein und die anderen Räume sind standardmäßig versiegelt.</value>
     </data>
     <data name="CORRIDOR_EAST_LOCKDESCRIPTION" xml:space="preserve">
         <value>Deine Zimmertür ist geschlossen und versperrt den Weg.</value>
@@ -167,7 +167,7 @@ Du bestätigst die Meldung mit einem Fingertipp und das Display wechselt wieder 
         <value>Als Du versuchst den Raum zu verlassen schliesst sich die Tür abrupt. Gleichzeitig ertönt von dem Space-Overall ein kurzes Piepen. Scheinbar kannst Du nicht nackt durch das Raumschiff wandeln.</value>
     </data>
     <data name="CORRIDOR_WEST" xml:space="preserve">
-        <value>Der Korridor durchzieht den gesamten 'Hammerkopf' des Schiffs von Ost nach West. Von ihm gehen Türen in die diversen Räume ab und in der Mitte, also bei gut 50 Metern führt ein Aufgang zur Brücke und ein Abgang herunter in die Maschinenräume. An den Wänden hängen neben typischen Raum- und Evakuierungsplänen auch Bilder von ehemaligen Mitarbeitern und Crewmitgliedern der Fenrir-13. Ansonsten ist der Flur einfach und karg.</value>
+        <value>Der Korridor durchzieht den gesamten 'Hammerkopf' des Schiffs von Ost nach West. Von ihm gehen Türen in die diversen Räume ab und in der Mitte, also bei gut 50 Metern führt ein Aufgang zur Brücke und ein Abgang herunter in die Maschinenräume. An den Wänden hängen neben typischen Raum- und Evakuierungsplänen auch Bilder von ehemaligen Mitarbeitern und Crewmitgliedern der Fenrir 13. Ansonsten ist der Flur einfach und karg.</value>
     </data>
     <data name="CORRIDOR_MIDEAST" xml:space="preserve">
         <value>Du befindest Dich nun auf dem halb Weg zwischen Deinem Quartier und der Brücke. Auch hier hängt wieder ein Bild an der Wand. Ansonsten ist der Flur einfach und karg.</value>
@@ -176,7 +176,7 @@ Du bestätigst die Meldung mit einem Fingertipp und das Display wechselt wieder 
         <value>Du befindest Dich nun genau in der Mitte des Korridors. An der nördlichen Seite führt eine breite Treppe auf die Brücke. An der südlichen Seite liegt der Zugang zu den Technik- und Maschinenräumen. Auch hier geht es über eine Treppe, allerdings eine Etage nach unten. An der Wand hängt nur ein Bild, aber dafür handelt es sich um ein besonders exponiertes Gemälde. Ansonsten ist der Flur einfach und karg.</value>
     </data>
     <data name="CORRIDOR_MIDWEST" xml:space="preserve">
-        <value>Der Korridor durchzieht den gesamten 'Hammerkopf' des Schiffs von Ost nach West. Von ihm gehen Türen in die diversen Räume ab und in der Mitte, also bei gut 50 Metern führt ein Aufgang zur Brücke und ein Abgang herunter in die Maschinenräume. An den Wänden hängen neben typischen Raum- und Evakuierungsplänen auch Bilder von ehemaligen Mitarbeitern und Crewmitgliedern der Fenrir-13. Ansonsten ist der Flur einfach und karg.</value>
+        <value>Der Korridor durchzieht den gesamten 'Hammerkopf' des Schiffs von Ost nach West. Von ihm gehen Türen in die diversen Räume ab und in der Mitte, also bei gut 50 Metern führt ein Aufgang zur Brücke und ein Abgang herunter in die Maschinenräume. An den Wänden hängen neben typischen Raum- und Evakuierungsplänen auch Bilder von ehemaligen Mitarbeitern und Crewmitgliedern der Fenrir 13. Ansonsten ist der Flur einfach und karg.</value>
     </data>
     <data name="EMPTYCREWCHAMBERONE" xml:space="preserve">
         <value>Durch das runde Türfenster kannst Du einen Blick in das dunkle Zimmer erhaschen. Es ist ähnlich ausgestattet wie Dein Raum.</value>
@@ -228,7 +228,7 @@ Das Bild zeigt ihn mit einem wilden Rauschebart und einem verwegenen Blick, der 
 Du weißt, dass jedes Schiff der Flotte eins dieser Portraits an Bord hat. Man legt sehr viel Wert auf die Persönlichkeiten des Unternehmens und ihre Leistungen. Diese Wertschätzung hat auch Dich letzendlich in deren Dienste gebracht.</value>
     </data>
     <data name="COMPUTER_TERMINAL" xml:space="preserve">
-        <value>Sofort als Du Dich setzt wird eine Abbildung einer Tastatur vor Dir auf der Platte eingeblendet und ein einfaches Computer-Terminal wird Dir als Bildschirm präsentiert. Scheinbar kannst Du mit dem Terminal kommunizieren, indem Du tippst.</value>
+        <value>Sofort als Du Dich setzt wird die Abbildung einer Tastatur vor Dir auf der Platte eingeblendet und ein einfaches Computer-Terminal wird Dir als Bildschirm präsentiert. Scheinbar kannst Du mit dem Terminal kommunizieren, indem Du tippst.</value>
     </data>
     <data name="COMPUTER_TERMINAL_FIRSTLOOK" xml:space="preserve">
         <value>&lt;&lt;wenn Du das Terminal verlassen möchtest, musst Du nur aufstehen&gt;&gt;</value>
@@ -279,13 +279,15 @@ Du weißt, dass jedes Schiff der Flotte eins dieser Portraits an Bord hat. Man l
 --- Status Report ---
 ---------------------
 
+Access confirmed - machine dock unlocked.
+
 Please fix the following problems:
 (number input for more details)
 1. hull breach (use the repair unit)
 2. low energy level (open the solar panels)</value>
     </data>
     <data name="TERMINAL_PASSWORD_SUCCESS" xml:space="preserve">
-        <value>Geschafft! Das war das richtige Passwort. Sofort wechselt der Inhalt des Bildschirms und gibt Dir einen Statusbericht preis.</value>
+        <value>Geschafft! Das war das richtige Passwort. Sofort wechselt der Inhalt des Bildschirms und gibt Dir einen Statusbericht preis. Dort kannst Du sehen, dass der Zugang zum Maschinendeck freigegeben wurde. Der Statusbericht beinhaltet zwei Unterpunkte, die Du Dir ebenfalls anschauen solltest.</value>
     </data>
     <data name="TERMINAL_PASSWORD_HINT_WRONG" xml:space="preserve">
         <value>Hm? Das scheint es nicht gewesen zu sein. Vielleicht dient der Begriff auch vielmehr als Hinweis auf irgendetwas?</value>
@@ -310,5 +312,11 @@ Trotzdem ist Dir nicht klar, was eigentlich das Problem ist. Das Schiff verfügt
     </data>
     <data name="MACHINE_CORRIDOR_MID_LOCKDESCRIPTION" xml:space="preserve">
         <value>Der Bereich ist durch eine Tür gesichert. Sie scheint ähnlich zu funktionieren wie die von Deinem Zimmer. Allerdings öffnet sie sich nicht automatisch. Hm? Wahrscheinlich hast Du einfach keinen Zugang zu diesem Bereich.</value>
+    </data>
+    <data name="CORRIDOR_PAINTING_WEST" xml:space="preserve">
+        <value>In diesem Abschnitt des Flures hängt das Bild eines Fluchtplans. Der Umriss dieser Etage mit den einzelnen Räumen. Ein roter Punkt markiert Deinen Standort und grüne Pfeile weisen in Richtung Mitte des Korridoren und dann nach unten in die Maschinenräume.</value>
+    </data>
+    <data name="CORRIDOR_PAINTING_MIDWEST" xml:space="preserve">
+        <value>Hier hängt ein erstes Portrait eines ehemalige Crew-Mitglieds. Klaus Neumann, ein deutscher Ingenieur und erster Maschinist auf der Fenrir 13. Seinem Einsatz und seiner Expertise sind viele Errungenschaften des Space-Minings zu verdanken, die auch heute noch Bestand haben.</value>
     </data>
 </root>
