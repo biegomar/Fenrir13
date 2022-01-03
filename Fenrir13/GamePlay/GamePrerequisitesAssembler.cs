@@ -2,8 +2,10 @@ using Fenrir13.Events;
 using Fenrir13.GamePlay.Prerequisites.CommandBridge;
 using Fenrir13.GamePlay.Prerequisites.Corridor;
 using Fenrir13.GamePlay.Prerequisites.CryoChamber;
+using Fenrir13.GamePlay.Prerequisites.Gym;
 using Fenrir13.GamePlay.Prerequisites.MachineCorridor;
 using Fenrir13.GamePlay.Prerequisites.PlayerConfig;
+using Fenrir13.GamePlay.Prerequisites.SocialRoom;
 using Heretic.InteractiveFiction.Comparer;
 using Heretic.InteractiveFiction.GamePlay;
 using Heretic.InteractiveFiction.Objects;
@@ -34,16 +36,20 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
         var bridge = CommandBridgePrerequisites.Get(this.eventProvider);
         var computerTerminal = ComputerTerminalPrerequisites.Get(this.eventProvider);
         var machineCorridorMid = MachineCorridorMidPrerequisites.Get(this.eventProvider);
+        var gym = GymPrerequisites.Get(this.eventProvider);
+        var socialRoom = SocialRoomPrerequisites.Get(this.eventProvider);
         
         map.Add(cryoChamber, CryoChamberLocationMap(corridorEast));
         map.Add(corridorEast, CorridorEastLocationMap(cryoChamber, corridorMidEast, emptyChamberOne, emptyChamberTwo));
-        map.Add(corridorMidEast, CorridorMidEastLocationMap(corridorEast, corridorMid));
+        map.Add(corridorMidEast, CorridorMidEastLocationMap(corridorEast, corridorMid, socialRoom));
         map.Add(corridorMid, CorridorMidLocationMap(corridorMidEast, corridorMidWest, bridge, machineCorridorMid));
-        map.Add(corridorMidWest, CorridorMidWestLocationMap(corridorMid, corridorWest));
+        map.Add(corridorMidWest, CorridorMidWestLocationMap(corridorMid, corridorWest, gym));
         map.Add(corridorWest, CorridorWestLocationMap(corridorMidWest));
         map.Add(bridge, BridgeLocationMap(corridorMid));
         map.Add(computerTerminal, new List<DestinationNode>());
         map.Add(machineCorridorMid, MachineCorridorMidLocationMap(corridorMid));
+        map.Add(gym, GymLocationMap(corridorMidWest));
+        map.Add(socialRoom, SocialRoomLocationMap(corridorMidEast));
         
         var activeLocation = cryoChamber;
         var activePlayer = PlayerPrerequisites.Get(this.eventProvider);
@@ -81,12 +87,13 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
         return locationMap;
     }
     
-    private static List<DestinationNode> CorridorMidEastLocationMap(Location corridorEast, Location corridorMid)
+    private static List<DestinationNode> CorridorMidEastLocationMap(Location corridorEast, Location corridorMid, Location socialRoom)
     {
         var locationMap = new List<DestinationNode>
         {
             new() {Direction = Directions.E, Location = corridorEast, IsHidden = false},
             new() {Direction = Directions.W, Location = corridorMid, IsHidden = false},
+            new() {Direction = Directions.S, Location = socialRoom, IsHidden = false},
         };
         return locationMap;
     }
@@ -112,12 +119,31 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
         return locationMap;
     }
 
-    private static List<DestinationNode> CorridorMidWestLocationMap(Location corridorMid, Location corridorWest)
+    private static List<DestinationNode> CorridorMidWestLocationMap(Location corridorMid, Location corridorWest, Location gym)
     {
         var locationMap = new List<DestinationNode>
         {
             new() {Direction = Directions.E, Location = corridorMid, IsHidden = false},
             new() {Direction = Directions.W, Location = corridorWest, IsHidden = false},
+            new() {Direction = Directions.S, Location = gym, IsHidden = false},
+        };
+        return locationMap;
+    }
+    
+    private static List<DestinationNode> GymLocationMap(Location corridorMidWest)
+    {
+        var locationMap = new List<DestinationNode>
+        {
+            new() {Direction = Directions.N, Location = corridorMidWest, IsHidden = false},
+        };
+        return locationMap;
+    }
+    
+    private static List<DestinationNode> SocialRoomLocationMap(Location corridorMidEast)
+    {
+        var locationMap = new List<DestinationNode>
+        {
+            new() {Direction = Directions.N, Location = corridorMidEast, IsHidden = false},
         };
         return locationMap;
     }

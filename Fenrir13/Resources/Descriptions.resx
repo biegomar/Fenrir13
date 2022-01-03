@@ -319,4 +319,10 @@ Trotzdem ist Dir nicht klar, was eigentlich das Problem ist. Das Schiff verfügt
     <data name="CORRIDOR_PAINTING_MIDWEST" xml:space="preserve">
         <value>Hier hängt ein erstes Portrait eines ehemalige Crew-Mitglieds. Klaus Neumann, ein deutscher Ingenieur und erster Maschinist auf der Fenrir 13. Seinem Einsatz und seiner Expertise sind viele Errungenschaften des Space-Minings zu verdanken, die auch heute noch Bestand haben.</value>
     </data>
+    <data name="GYM" xml:space="preserve">
+        <value>Dies ist ein gut ausgestatteter Fitnessraum für die Zeit der Reise, in der man aktiv und wach ist.</value>
+    </data>
+    <data name="SOCIALROOM" xml:space="preserve">
+        <value>In diesem Raum lassen sich viele Dinge verwirklichen. Hier kann man gemühtlich chillen, ein wenig Zocken oder einfach nur mit den Kollegen quatschen.</value>
+    </data>
 </root>

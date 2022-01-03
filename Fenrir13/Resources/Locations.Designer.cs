@@ -151,11 +151,29 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Der Fitnessraum|Fitnessraum|Trainingsraum|Gym.
+        /// </summary>
+        internal static string GYM {
+            get {
+                return ResourceManager.GetString("GYM", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Der Maschinen-Korridor|Maschinen-Korridor|Maschinenkorridor.
         /// </summary>
         internal static string MACHINE_CORRIDOR_MID {
             get {
                 return ResourceManager.GetString("MACHINE_CORRIDOR_MID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Der Sozialraum|Sozialraum|Aufenthaltsraum.
+        /// </summary>
+        internal static string SOCIALROOM {
+            get {
+                return ResourceManager.GetString("SOCIALROOM", resourceCulture);
             }
         }
     }

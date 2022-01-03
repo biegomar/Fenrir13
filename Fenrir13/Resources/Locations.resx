@@ -51,4 +51,10 @@
     <data name="MACHINE_CORRIDOR_MID" xml:space="preserve">
         <value>Der Maschinen-Korridor|Maschinen-Korridor|Maschinenkorridor</value>
     </data>
+    <data name="GYM" xml:space="preserve">
+        <value>Der Fitnessraum|Fitnessraum|Trainingsraum|Gym</value>
+    </data>
+    <data name="SOCIALROOM" xml:space="preserve">
+        <value>Der Sozialraum|Sozialraum|Aufenthaltsraum</value>
+    </data>
 </root>

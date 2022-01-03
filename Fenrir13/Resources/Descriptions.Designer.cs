@@ -511,6 +511,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Dies ist ein gut ausgestatteter Fitnessraum für die Zeit der Reise, in der man aktiv und wach ist..
+        /// </summary>
+        internal static string GYM {
+            get {
+                return ResourceManager.GetString("GYM", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Intervention required
         ///Hull breach detected, structural integrity compromised. Low energy. Low oxygen level.
         ///Your safety status has been upgraded from Level Z to Level Q. Please proceed to the control bridge..
@@ -710,6 +719,15 @@ namespace Fenrir13.Resources {
         internal static string RUBBER_ROLLS {
             get {
                 return ResourceManager.GetString("RUBBER_ROLLS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to In diesem Raum lassen sich viele Dinge verwirklichen. Hier kann man gemühtlich chillen, ein wenig Zocken oder einfach nur mit den Kollegen quatschen..
+        /// </summary>
+        internal static string SOCIALROOM {
+            get {
+                return ResourceManager.GetString("SOCIALROOM", resourceCulture);
             }
         }
         

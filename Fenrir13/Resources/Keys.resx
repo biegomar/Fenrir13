@@ -177,4 +177,10 @@
     <data name="MACHINE_CORRIDOR_MID" xml:space="preserve">
         <value>MACHINE_CORRIDOR_MID</value>
     </data>
+    <data name="GYM" xml:space="preserve">
+        <value>GYM</value>
+    </data>
+    <data name="SOCIALROOM" xml:space="preserve">
+        <value>SOCIALROOM</value>
+    </data>
 </root>
