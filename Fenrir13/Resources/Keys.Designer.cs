@@ -304,6 +304,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to ENGINE_ROOM.
+        /// </summary>
+        internal static string ENGINE_ROOM {
+            get {
+                return ResourceManager.GetString("ENGINE_ROOM", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to FRONTSIDE.
         /// </summary>
         internal static string FRONTSIDE {

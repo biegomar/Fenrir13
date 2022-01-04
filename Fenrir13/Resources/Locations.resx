@@ -61,6 +61,9 @@
         <value>Die Küche|Küche</value>
     </data>
     <data name="AIRLOCK" xml:space="preserve">
-        <value>Luftschleuse|Schleuse</value>
+        <value>Die Luftschleuse|Luftschleuse|Schleuse</value>
+    </data>
+    <data name="ENGINE_ROOM" xml:space="preserve">
+        <value>Der Maschinenraum|Maschinenraum</value>
     </data>
 </root>

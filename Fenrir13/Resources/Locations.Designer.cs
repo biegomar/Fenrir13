@@ -61,7 +61,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Luftschleuse|Schleuse.
+        ///   Looks up a localized string similar to Die Luftschleuse|Luftschleuse|Schleuse.
         /// </summary>
         internal static string AIRLOCK {
             get {
@@ -156,6 +156,15 @@ namespace Fenrir13.Resources {
         internal static string EMPTYCREWCHAMBERTWO {
             get {
                 return ResourceManager.GetString("EMPTYCREWCHAMBERTWO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Der Maschinenraum|Maschinenraum.
+        /// </summary>
+        internal static string ENGINE_ROOM {
+            get {
+                return ResourceManager.GetString("ENGINE_ROOM", resourceCulture);
             }
         }
         

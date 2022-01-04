@@ -331,4 +331,7 @@ Trotzdem ist Dir nicht klar, was eigentlich das Problem ist. Das Schiff verfügt
     <data name="AIRLOCK" xml:space="preserve">
         <value>Die Schleuse dient als Weg nach Draußen. Sobald irgendwelche Außenarbeiten erledigt werden müssen, muss ein Crewmitglied diesen Raum passieren.</value>
     </data>
+    <data name="ENGINE_ROOM" xml:space="preserve">
+        <value>Hier ist der Maschinenraum.</value>
+    </data>
 </root>

@@ -189,4 +189,7 @@
     <data name="AIRLOCK" xml:space="preserve">
         <value>AIRLOCK</value>
     </data>
+    <data name="ENGINE_ROOM" xml:space="preserve">
+        <value>ENGINE_ROOM</value>
+    </data>
 </root>

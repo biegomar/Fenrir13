@@ -3,6 +3,7 @@ using Fenrir13.GamePlay.Prerequisites.Airlock;
 using Fenrir13.GamePlay.Prerequisites.CommandBridge;
 using Fenrir13.GamePlay.Prerequisites.Corridor;
 using Fenrir13.GamePlay.Prerequisites.CryoChamber;
+using Fenrir13.GamePlay.Prerequisites.EngineRoom;
 using Fenrir13.GamePlay.Prerequisites.Gym;
 using Fenrir13.GamePlay.Prerequisites.Kitchen;
 using Fenrir13.GamePlay.Prerequisites.MachineCorridor;
@@ -42,6 +43,7 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
         var socialRoom = SocialRoomPrerequisites.Get(this.eventProvider);
         var kitchen = KitchenPrerequisites.Get(this.eventProvider);
         var airlock = AirlockPrerequisites.Get(this.eventProvider);
+        var engineRoom = EngineRoomPrerequisites.Get(this.eventProvider);
         
         map.Add(cryoChamber, CryoChamberLocationMap(corridorEast));
         map.Add(corridorEast, CorridorEastLocationMap(cryoChamber, corridorMidEast, emptyChamberOne, emptyChamberTwo));
@@ -51,11 +53,12 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
         map.Add(corridorWest, CorridorWestLocationMap(corridorMidWest));
         map.Add(bridge, BridgeLocationMap(corridorMid));
         map.Add(computerTerminal, new List<DestinationNode>());
-        map.Add(machineCorridorMid, MachineCorridorMidLocationMap(corridorMid, airlock));
+        map.Add(machineCorridorMid, MachineCorridorMidLocationMap(corridorMid, airlock, engineRoom));
         map.Add(gym, GymLocationMap(corridorMidWest));
         map.Add(socialRoom, SocialRoomLocationMap(corridorMidEast));
         map.Add(kitchen, KitchenLocationMap(corridorMidEast));
         map.Add(airlock, AirlockLocationMap(machineCorridorMid));
+        map.Add(engineRoom, EngineRoomLocationMap(machineCorridorMid));
 
         var activeLocation = cryoChamber;
         var activePlayer = PlayerPrerequisites.Get(this.eventProvider);
@@ -63,12 +66,13 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
         return (map, activeLocation, activePlayer);
     }
 
-    private static IEnumerable<DestinationNode> MachineCorridorMidLocationMap(Location corridorMid, Location airlock)
+    private static IEnumerable<DestinationNode> MachineCorridorMidLocationMap(Location corridorMid, Location airlock, Location engineRoom)
     {
         var locationMap = new List<DestinationNode>
         {
             new() {Direction = Directions.UP, Location = corridorMid, IsHidden = false},
-            new() {Direction = Directions.N, Location = airlock, IsHidden = false}
+            new() {Direction = Directions.N, Location = airlock, IsHidden = false},
+            new() {Direction = Directions.S, Location = engineRoom, IsHidden = false},
         };
         return locationMap;  
     }
@@ -78,6 +82,15 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
         var locationMap = new List<DestinationNode>
         {
             new() {Direction = Directions.S, Location = machineCorridorMid, IsHidden = false}
+        };
+        return locationMap;
+    }
+    
+    private static IEnumerable<DestinationNode> EngineRoomLocationMap(Location machineCorridorMid)
+    {
+        var locationMap = new List<DestinationNode>
+        {
+            new() {Direction = Directions.N, Location = machineCorridorMid, IsHidden = false}
         };
         return locationMap;
     }

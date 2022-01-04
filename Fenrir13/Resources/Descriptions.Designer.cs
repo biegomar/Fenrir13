@@ -502,6 +502,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Hier ist der Maschinenraum..
+        /// </summary>
+        internal static string ENGINE_ROOM {
+            get {
+                return ResourceManager.GetString("ENGINE_ROOM", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Naja, die Frontseite ist halt vorne. Da wo die Scheibe ist..
         /// </summary>
         internal static string FRONTSIDE {
