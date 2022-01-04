@@ -247,7 +247,7 @@ namespace Fenrir13.Resources {
         
         /// <summary>
         ///   Looks up a localized string similar to Der Detailbericht sagt aus, dass einfach kaum noch Energie vorhanden ist. Nur die Notsysteme - wie die Cryo-Pods - laufen noch. Da es langsam kritisch wird wurdest Du geweckt, um zu handeln.
-        ///Trotzdem ist Dir nicht klar, was eigentlich das Problem ist. Das Schiff verfügt über eine riesige Anzahl an Solarkollektoren, die die gesamte Fläche des Cargo-Bereichs bedecken können. Aber scheinbar sind die nicht ausgefahren worden, sonst wäre genug Energie vorhanden. Vielleicht kannst Du unten bei den Maschinenräume [rest of string was truncated]&quot;;.
+        ///Trotzdem ist Dir nicht klar, was eigentlich das Problem ist. Das Schiff verfügt über eine riesige Anzahl an Solarkollektoren, die die gesamte Fläche des Cargo-Bereichs bedecken können. Aber scheinbar sind die nicht ausgefahren worden, sonst wäre genug Energie vorhanden. Weiterhin erfährst Du, dass die Solarpanele über  [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string COMPUTER_TERMINAL_DISPLAY_REPORT_2 {
             get {

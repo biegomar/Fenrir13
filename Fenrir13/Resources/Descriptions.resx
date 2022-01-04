@@ -305,7 +305,8 @@ Aber Deine Aufgabe scheint klar zu sein. Den Roboter flott machen und den Hülle
     </data>
     <data name="COMPUTER_TERMINAL_DISPLAY_REPORT_2" xml:space="preserve">
         <value>Der Detailbericht sagt aus, dass einfach kaum noch Energie vorhanden ist. Nur die Notsysteme - wie die Cryo-Pods - laufen noch. Da es langsam kritisch wird wurdest Du geweckt, um zu handeln.
-Trotzdem ist Dir nicht klar, was eigentlich das Problem ist. Das Schiff verfügt über eine riesige Anzahl an Solarkollektoren, die die gesamte Fläche des Cargo-Bereichs bedecken können. Aber scheinbar sind die nicht ausgefahren worden, sonst wäre genug Energie vorhanden. Vielleicht kannst Du unten bei den Maschinenräumen mehr unternehmen als von hier.</value>
+Trotzdem ist Dir nicht klar, was eigentlich das Problem ist. Das Schiff verfügt über eine riesige Anzahl an Solarkollektoren, die die gesamte Fläche des Cargo-Bereichs bedecken können. Aber scheinbar sind die nicht ausgefahren worden, sonst wäre genug Energie vorhanden. Weiterhin erfährst Du, dass die Solarpanele über ein redundantes Steuersystem verfügen, um einzelne Ausfälle zu kompensieren. Es scheint für den rein mechanischen Prozess des Ein- und Ausfahrens der Panele ein hydraulsches System zu geben, das manuell ausserhalb des Schiffes aktiviert werden muss.
+Vielleicht kannst Du unten bei den Maschinenräumen mehr unternehmen als von hier.</value>
     </data>
     <data name="MACHINE_CORRIDOR_MID" xml:space="preserve">
         <value>Du befindest Dich im Korridor auf dem Maschinendeck. </value>
