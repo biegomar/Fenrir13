@@ -1,4 +1,5 @@
 using Fenrir13.Events;
+using Fenrir13.GamePlay.Prerequisites.Airlock;
 using Fenrir13.GamePlay.Prerequisites.CommandBridge;
 using Fenrir13.GamePlay.Prerequisites.Corridor;
 using Fenrir13.GamePlay.Prerequisites.CryoChamber;
@@ -40,6 +41,7 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
         var gym = GymPrerequisites.Get(this.eventProvider);
         var socialRoom = SocialRoomPrerequisites.Get(this.eventProvider);
         var kitchen = KitchenPrerequisites.Get(this.eventProvider);
+        var airlock = AirlockPrerequisites.Get(this.eventProvider);
         
         map.Add(cryoChamber, CryoChamberLocationMap(corridorEast));
         map.Add(corridorEast, CorridorEastLocationMap(cryoChamber, corridorMidEast, emptyChamberOne, emptyChamberTwo));
@@ -49,24 +51,35 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
         map.Add(corridorWest, CorridorWestLocationMap(corridorMidWest));
         map.Add(bridge, BridgeLocationMap(corridorMid));
         map.Add(computerTerminal, new List<DestinationNode>());
-        map.Add(machineCorridorMid, MachineCorridorMidLocationMap(corridorMid));
+        map.Add(machineCorridorMid, MachineCorridorMidLocationMap(corridorMid, airlock));
         map.Add(gym, GymLocationMap(corridorMidWest));
         map.Add(socialRoom, SocialRoomLocationMap(corridorMidEast));
         map.Add(kitchen, KitchenLocationMap(corridorMidEast));
-        
+        map.Add(airlock, AirlockLocationMap(machineCorridorMid));
+
         var activeLocation = cryoChamber;
         var activePlayer = PlayerPrerequisites.Get(this.eventProvider);
         
         return (map, activeLocation, activePlayer);
     }
 
-    private static IEnumerable<DestinationNode> MachineCorridorMidLocationMap(Location corridorMid)
+    private static IEnumerable<DestinationNode> MachineCorridorMidLocationMap(Location corridorMid, Location airlock)
     {
         var locationMap = new List<DestinationNode>
         {
             new() {Direction = Directions.UP, Location = corridorMid, IsHidden = false},
+            new() {Direction = Directions.N, Location = airlock, IsHidden = false}
         };
         return locationMap;  
+    }
+    
+    private static IEnumerable<DestinationNode> AirlockLocationMap(Location machineCorridorMid)
+    {
+        var locationMap = new List<DestinationNode>
+        {
+            new() {Direction = Directions.S, Location = machineCorridorMid, IsHidden = false}
+        };
+        return locationMap;
     }
 
     private static List<DestinationNode> CryoChamberLocationMap(Location corridorEast)

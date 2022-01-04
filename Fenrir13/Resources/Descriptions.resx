@@ -328,4 +328,7 @@ Trotzdem ist Dir nicht klar, was eigentlich das Problem ist. Das Schiff verfügt
     <data name="KITCHEN" xml:space="preserve">
         <value>Für die maximal sechs Personen Besatzung ist die Küche üppig ausgestattet und sehr geräumig. </value>
     </data>
+    <data name="AIRLOCK" xml:space="preserve">
+        <value>Die Schleuse dient als Weg nach Draußen. Sobald irgendwelche Außenarbeiten erledigt werden müssen, muss ein Crewmitglied diesen Raum passieren.</value>
+    </data>
 </root>

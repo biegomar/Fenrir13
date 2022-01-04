@@ -61,6 +61,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Luftschleuse|Schleuse.
+        /// </summary>
+        internal static string AIRLOCK {
+            get {
+                return ResourceManager.GetString("AIRLOCK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Die Kommando-Brücke|Kommando-Brücke|Brücke.
         /// </summary>
         internal static string COMMANDBRIDGE {

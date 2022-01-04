@@ -60,4 +60,7 @@
     <data name="KITCHEN" xml:space="preserve">
         <value>Die Küche|Küche</value>
     </data>
+    <data name="AIRLOCK" xml:space="preserve">
+        <value>Luftschleuse|Schleuse</value>
+    </data>
 </root>

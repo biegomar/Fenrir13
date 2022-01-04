@@ -61,6 +61,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to AIRLOCK.
+        /// </summary>
+        internal static string AIRLOCK {
+            get {
+                return ResourceManager.GetString("AIRLOCK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to BULKHEAD.
         /// </summary>
         internal static string BULKHEAD {

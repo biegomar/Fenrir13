@@ -61,6 +61,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Die Schleuse dient als Weg nach Draußen. Sobald irgendwelche Außenarbeiten erledigt werden müssen, muss ein Crewmitglied diesen Raum passieren..
+        /// </summary>
+        internal static string AIRLOCK {
+            get {
+                return ResourceManager.GetString("AIRLOCK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Das Schott ist eine dieser massiven Sicherheitstüren, die es hier im Schiff an vielen Stellen gibt und bei Gefahr dazu dienen, einzelne Sektoren des Schiffs zu isolieren. Es hat ein Sichtfenster..
         /// </summary>
         internal static string BULKHEAD {

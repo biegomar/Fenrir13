@@ -186,4 +186,7 @@
     <data name="KITCHEN" xml:space="preserve">
         <value>KITCHEN</value>
     </data>
+    <data name="AIRLOCK" xml:space="preserve">
+        <value>AIRLOCK</value>
+    </data>
 </root>
