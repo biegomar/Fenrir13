@@ -484,20 +484,20 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Eine Hantelstange fällt Dir allerdings ins Auge. Sie scheint nicht korrekt fixiert worden zu sein. Schlamperei! Wenn die sich während des Flugs gelöst hätte....
+        /// </summary>
+        internal static string DUMBBELL_BAR_CONTAINMENT {
+            get {
+                return ResourceManager.GetString("DUMBBELL_BAR_CONTAINMENT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Die Ablage dient der Organisation der Gewichte, Hanteln und der entsprechenden Stangen. Die meisten Einzelteile sind vorschriftsgemäß gesichert und fest mit dem Rack verbunden..
         /// </summary>
         internal static string DUMBBELL_RACK {
             get {
                 return ResourceManager.GetString("DUMBBELL_RACK", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Eine Hantelstange fällt Dir allerdings ins Auge. Sie scheint nicht korrekt fixiert worden zu sein. Schlamperei! Wenn die sich während des Flugs gelöst hätte....
-        /// </summary>
-        internal static string DUMBBELL_RACK_FIRSTLOOK {
-            get {
-                return ResourceManager.GetString("DUMBBELL_RACK_FIRSTLOOK", resourceCulture);
             }
         }
         

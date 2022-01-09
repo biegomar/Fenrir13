@@ -347,9 +347,6 @@ Vielleicht kannst Du unten bei den Maschinenräumen mehr unternehmen als von hie
     <data name="DUMBBELL_RACK" xml:space="preserve">
         <value>Die Ablage dient der Organisation der Gewichte, Hanteln und der entsprechenden Stangen. Die meisten Einzelteile sind vorschriftsgemäß gesichert und fest mit dem Rack verbunden.</value>
     </data>
-    <data name="DUMBBELL_RACK_FIRSTLOOK" xml:space="preserve">
-        <value>Eine Hantelstange fällt Dir allerdings ins Auge. Sie scheint nicht korrekt fixiert worden zu sein. Schlamperei! Wenn die sich während des Flugs gelöst hätte...</value>
-    </data>
     <data name="EXERCISE_AREA" xml:space="preserve">
         <value>Der Bereich ist auf dem Boden durch Matten gepolstert und ermöglich so auch das Workout im Liegen. Eine Art Klettergerüst mit vielen Möglichkeiten, um Dinge daran zu fixieren, nimmt gut die Hälfte der Fläche ein. </value>
     </data>
@@ -361,5 +358,8 @@ Vielleicht kannst Du unten bei den Maschinenräumen mehr unternehmen als von hie
     </data>
     <data name="WORKOUTS" xml:space="preserve">
         <value>Ja, Übung macht den Meister. Aber Du solltest Dich im Moment mit anderen Dingen befassen.</value>
+    </data>
+    <data name="DUMBBELL_BAR_CONTAINMENT" xml:space="preserve">
+        <value>Eine Hantelstange fällt Dir allerdings ins Auge. Sie scheint nicht korrekt fixiert worden zu sein. Schlamperei! Wenn die sich während des Flugs gelöst hätte...</value>
     </data>
 </root>

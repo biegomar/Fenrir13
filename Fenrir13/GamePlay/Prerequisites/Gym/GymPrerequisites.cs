@@ -43,7 +43,6 @@ public class GymPrerequisites
             Key = Keys.DUMBBELL_RACK,
             Name = Items.DUMBBELL_RACK,
             Description = Descriptions.DUMBBELL_RACK,
-            FirstLookDescription = Descriptions.DUMBBELL_RACK_FIRSTLOOK,
             IsHidden = true,
             IsPickAble = false
         };
@@ -60,6 +59,7 @@ public class GymPrerequisites
             Key = Keys.DUMBBELL_BAR,
             Name = Items.DUMBBELL_BAR,
             Description = Descriptions.DUMBBELL_BAR,
+            ContainmentDescription = Descriptions.DUMBBELL_BAR_CONTAINMENT,
             IsHidden = true,
             Weight = 5000
         };
