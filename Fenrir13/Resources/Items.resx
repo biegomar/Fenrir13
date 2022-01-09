@@ -147,4 +147,37 @@
     <data name="PERSONAL_SETTINGS" xml:space="preserve">
         <value>Einstellungen|Einstellung|persönliche Einstellungen|persönliche Einstellung</value>
     </data>
+    <data name="CARDIO_STATION" xml:space="preserve">
+        <value>Die Cardiostation|Cardiostation|Cardio</value>
+    </data>
+    <data name="GYM_POWERSTATION" xml:space="preserve">
+        <value>Die Powerstation|Powerstation|Gewichte|Gewicht</value>
+    </data>
+    <data name="DUMBBELL_BAR" xml:space="preserve">
+        <value>Die Hantelstange|Hantelstange|Stange</value>
+    </data>
+    <data name="DUMBBELL_RACK" xml:space="preserve">
+        <value>Die Hantelablage|Hantelablage|Ablage</value>
+    </data>
+    <data name="EXERCISE_AREA" xml:space="preserve">
+        <value>Der Gymnastikbereich|Gymnastikbereich</value>
+    </data>
+    <data name="BIKE" xml:space="preserve">
+        <value>Ein Fahrrad|Fahrrad|Rad</value>
+    </data>
+    <data name="CROSSTRAINER" xml:space="preserve">
+        <value>Ein Cross-Trainer|Cross-Trainer|Crosstrainer</value>
+    </data>
+    <data name="TREADMILL" xml:space="preserve">
+        <value>Das Laufband|Laufband</value>
+    </data>
+    <data name="STEPPER" xml:space="preserve">
+        <value>Der Stepper|Stepper</value>
+    </data>
+    <data name="FITNESSMACHINE" xml:space="preserve">
+        <value>Die Fitnessmaschinen|Fitnessmaschinen|Fitnessmaschine|Geräte|Plätze|Plätzen</value>
+    </data>
+    <data name="WORKOUTS" xml:space="preserve">
+        <value>Übungen|Übung|Handarbeit</value>
+    </data>
 </root>

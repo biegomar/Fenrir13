@@ -75,7 +75,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Marc Biegota.
+        ///   Looks up a localized string similar to Marc Biegota (twitter @biegomar).
         /// </summary>
         internal static string AUTHOR {
             get {
@@ -84,7 +84,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to (c) by Marc Biegota 2021.
+        ///   Looks up a localized string similar to (c) by Marc Biegota 2021, 2022.
         /// </summary>
         internal static string COPYRIGHT {
             get {

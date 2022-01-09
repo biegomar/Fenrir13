@@ -97,6 +97,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Durch geschickte Anordnung von einzelnen Elementen und der Fähigkeit durch leichte Umbauten die jeweilige Funktion zu ändern, bietet dieses Gerät ein Fahrrad, ein Laufband, einen Stepper, sowie einen Crosstrainer. .
+        /// </summary>
+        internal static string CARDIO_STATION {
+            get {
+                return ResourceManager.GetString("CARDIO_STATION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Ein einfacher Teppich. Er soll den Raum ein wenig wohnlicher machen. Ansonsten aber nichts besonderes..
         /// </summary>
         internal static string CARPET {
@@ -383,7 +392,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Du befindest Dich in Deinem persönlichen Raum des Schiffs. Er ist sehr funktional und spatanisch eingerichtet, wirkt dabei aber dennoch wohnlich. Der Cryo-Pod, in dem Du gerade noch gelegen hast, hat seine Kokon-Form, die dem Passagier während der langen Schlafphase einer Raumreise Schutz und Versorgung bietet, in eine offene Bettform gewandelt. Der Fußboden ist metallisch und nur vor Deinem Bett befindet sich ein kleiner Teppich. Du weißt aus der Erfahrung, das der Fußboden angenehmt beheizt ist und magnet [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to Du befindest Dich in Deinem persönlichen Raum des Schiffs. Er ist sehr funktional und spartanisch eingerichtet, wirkt dabei aber dennoch wohnlich. Der Cryo-Pod, in dem Du gerade noch gelegen hast, hat seine Kokon-Form, die dem Passagier während der langen Schlafphase einer Raumreise Schutz und Versorgung bietet, in eine offene Bettform gewandelt. Der Fußboden ist metallisch und nur vor Deinem Bett befindet sich ein kleiner Teppich. Du weißt aus der Erfahrung, das der Fußboden angenehm beheizt ist und magnet [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string CRYOCHAMBER {
             get {
@@ -448,7 +457,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Du bist durch den langen Cryo-Schlaf extrem ausgelaugt und schlapp. Es gelingt Dir nicht, den Text auf dem Display zu fokussieren. Wahrscheinlich muss Dein Organismus erst einmal wieder zu Kräften kommen. .
+        ///   Looks up a localized string similar to Du bist durch den langen Cryo-Schlaf extrem ausgelaugt und schlapp. Es gelingt Dir nicht, den kleingeschriebenen Text auf dem Display zu fokussieren. Wahrscheinlich muss Dein Organismus erst einmal wieder zu Kräften kommen. .
         /// </summary>
         internal static string DISPLAY_BAR_NOT_EATEN {
             get {
@@ -462,6 +471,33 @@ namespace Fenrir13.Resources {
         internal static string DRAWER {
             get {
                 return ResourceManager.GetString("DRAWER", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Mit ein paar Handgriffen lässt sich diese lange Hantelstange mit Gewichten bestücken und so für viele Kraftübungen einsetzen. Sie ist aus hochwertigem Stahl gefertigt und ca. 120 cm lang..
+        /// </summary>
+        internal static string DUMBBELL_BAR {
+            get {
+                return ResourceManager.GetString("DUMBBELL_BAR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Die Ablage dient der Organisation der Gewichte, Hanteln und der entsprechenden Stangen. Die meisten Einzelteile sind vorschriftsgemäß gesichert und fest mit dem Rack verbunden..
+        /// </summary>
+        internal static string DUMBBELL_RACK {
+            get {
+                return ResourceManager.GetString("DUMBBELL_RACK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Eine Hantelstange fällt Dir allerdings ins Auge. Sie scheint nicht korrekt fixiert worden zu sein. Schlamperei! Wenn die sich während des Flugs gelöst hätte....
+        /// </summary>
+        internal static string DUMBBELL_RACK_FIRSTLOOK {
+            get {
+                return ResourceManager.GetString("DUMBBELL_RACK_FIRSTLOOK", resourceCulture);
             }
         }
         
@@ -511,6 +547,24 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Der Bereich ist auf dem Boden durch Matten gepolstert und ermöglich so auch das Workout im Liegen. Eine Art Klettergerüst mit vielen Möglichkeiten, um Dinge daran zu fixieren, nimmt gut die Hälfte der Fläche ein. .
+        /// </summary>
+        internal static string EXERCISE_AREA {
+            get {
+                return ResourceManager.GetString("EXERCISE_AREA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Es gibt hier drei wesentliche Fitnessmaschinen, die aber alle multifunktional sind. Das sind die Cardiostation, die Powerstation und der Gymnastikbereich..
+        /// </summary>
+        internal static string FITNESSMACHINE {
+            get {
+                return ResourceManager.GetString("FITNESSMACHINE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Naja, die Frontseite ist halt vorne. Da wo die Scheibe ist..
         /// </summary>
         internal static string FRONTSIDE {
@@ -529,11 +583,29 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Dies ist ein gut ausgestatteter Fitnessraum für die Zeit der Reise, in der man aktiv und wach ist..
+        ///   Looks up a localized string similar to Dies ist ein gut ausgestatteter Fitnessraum für die Zeit der Reise, in der man aktiv und wach ist. Auch in modernen Zeiten legt man bei Viking Wert auf Handarbeit und Gewichte stemmen. Daher finden sich hier auch klassische Fitnessmaschinen mit variablen Gewichten. Du siehst die Cardiostation, die mehrere Übungen zulässt, genauso wie eine Powerstation und einen - na sagen wir mal - Gymnastikbereich, mit vielen Seilen, Sandsäcken und tragbaren Gewichten. Alle Geräte sind an ihren Plätzen verankert..
         /// </summary>
         internal static string GYM {
             get {
                 return ResourceManager.GetString("GYM", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ein tolles Fitnessgerät, aber im Moment solltest Du Dich mit anderen Dingen auseinandersetzen..
+        /// </summary>
+        internal static string GYM_FLOSKEL {
+            get {
+                return ResourceManager.GetString("GYM_FLOSKEL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Die Powerstation ist klar das Herzstück des Fitnessraums. Mit Gewichten, Hantelscheiben und den dazu passenden Hantelstangen lassen sich hier viele Übungen machen. Die fällt auf, dass alles schön auf einer Hantelablage organisiert ist..
+        /// </summary>
+        internal static string GYM_POWERSTATION {
+            get {
+                return ResourceManager.GetString("GYM_POWERSTATION", resourceCulture);
             }
         }
         
@@ -631,8 +703,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Schwarz. Langsam fräst sich ein auf- und abschwellendes Geräusch durch Deine vernebelten Sinne. Erst scheinbar fern, kommt es pulsierend näher. Ein roter Schein erscheint in der Dunkelheit. Ganz klein und schwach. Gleichermaßen näherkommend und subtil bedrohlich. Ein Tunnel? Ein Zug?
-        ///Plötzlich zerreist ein stechender Schmerz in Deinen Lungen Deine Illusion. Adrenalin schiesst durch Deinen Körper und holt Dich mit voller, unbarmherziger Härte zurück ins Bewußtsein. Du reisst Deine Augen auf und wirst zuglei [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to Schwarz. Langsam fräst sich ein auf- und abschwellendes Geräusch durch Deine vernebelten Sinne. Erst scheinbar fern, kommt es pulsierend näher. Ein roter Schein erscheint in der Dunkelheit. Ganz klein und schwach. Gleichermaßen näher kommend und subtil bedrohlich. Ein Tunnel? Ein Zug? Plötzlich zerreißt ein stechender Schmerz in Deinen Lungen Deine Illusion. Adrenalin schießt durch Deinen Körper und holt Dich mit voller, unbarmherziger Härte zurück ins Bewusstsein. Du reißt Deine Augen auf und wirst zugleic [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string OPENING {
             get {
@@ -704,7 +775,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Du bist eine smarte und gut aussehende Person. Du hast einen Abschluss in Geologie und in Exogeologie promoviert. Deine Aufgabe ist im Wesentlichen die Beurteilung der Qualität und Reinheit der seltenen Metalle wie Gold, Platin, Iridium und Rhenium, die während der Expedition abgebaut werden..
+        ///   Looks up a localized string similar to Du bist eine smarte und gut aussehende Person. Du hast einen Abschluss in Geologie und sogar in Exogeologie promoviert. Deine Aufgabe ist im Wesentlichen die Beurteilung der Qualität und Reinheit der seltenen Metalle wie Gold, Platin, Iridium und Rhenium, die während der Expedition abgebaut werden..
         /// </summary>
         internal static string PLAYER {
             get {
@@ -917,6 +988,15 @@ namespace Fenrir13.Resources {
         internal static string WORKBENCH {
             get {
                 return ResourceManager.GetString("WORKBENCH", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ja, Übung macht den Meister. Aber Du solltest Dich im Moment mit anderen Dingen befassen..
+        /// </summary>
+        internal static string WORKOUTS {
+            get {
+                return ResourceManager.GetString("WORKOUTS", resourceCulture);
             }
         }
     }

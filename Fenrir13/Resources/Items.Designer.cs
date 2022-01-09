@@ -61,6 +61,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Ein Fahrrad|Fahrrad|Rad.
+        /// </summary>
+        internal static string BIKE {
+            get {
+                return ResourceManager.GetString("BIKE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Schott|Abriegelung.
         /// </summary>
         internal static string BULKHEAD {
@@ -75,6 +84,15 @@ namespace Fenrir13.Resources {
         internal static string BULKHEAD_WINDOW {
             get {
                 return ResourceManager.GetString("BULKHEAD_WINDOW", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Die Cardiostation|Cardiostation|Cardio.
+        /// </summary>
+        internal static string CARDIO_STATION {
+            get {
+                return ResourceManager.GetString("CARDIO_STATION", resourceCulture);
             }
         }
         
@@ -169,6 +187,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Ein Cross-Trainer|Cross-Trainer|Crosstrainer.
+        /// </summary>
+        internal static string CROSSTRAINER {
+            get {
+                return ResourceManager.GetString("CROSSTRAINER", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Zimmertür|Tür.
         /// </summary>
         internal static string CRYOCHAMBER_DOOR {
@@ -205,6 +232,24 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Die Hantelstange|Hantelstange|Stange.
+        /// </summary>
+        internal static string DUMBBELL_BAR {
+            get {
+                return ResourceManager.GetString("DUMBBELL_BAR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Die Hantelablage|Hantelablage|Ablage.
+        /// </summary>
+        internal static string DUMBBELL_RACK {
+            get {
+                return ResourceManager.GetString("DUMBBELL_RACK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Crew-Kammer-1|Crew-Kammer1|Kammer-1|Kammer1|Crew-Raum 1|Crew-Raum1|Raum-1|Raum1.
         /// </summary>
         internal static string EMPTYCREWCHAMBERONE {
@@ -223,6 +268,24 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Der Gymnastikbereich|Gymnastikbereich.
+        /// </summary>
+        internal static string EXERCISE_AREA {
+            get {
+                return ResourceManager.GetString("EXERCISE_AREA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Die Fitnessmaschinen|Fitnessmaschinen|Fitnessmaschine|Geräte|Plätze|Plätzen.
+        /// </summary>
+        internal static string FITNESSMACHINE {
+            get {
+                return ResourceManager.GetString("FITNESSMACHINE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Frontseite|Front.
         /// </summary>
         internal static string FRONTSIDE {
@@ -237,6 +300,15 @@ namespace Fenrir13.Resources {
         internal static string FRONTWINDOW {
             get {
                 return ResourceManager.GetString("FRONTWINDOW", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Die Powerstation|Powerstation|Gewichte|Gewicht.
+        /// </summary>
+        internal static string GYM_POWERSTATION {
+            get {
+                return ResourceManager.GetString("GYM_POWERSTATION", resourceCulture);
             }
         }
         
@@ -385,6 +457,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Der Stepper|Stepper.
+        /// </summary>
+        internal static string STEPPER {
+            get {
+                return ResourceManager.GetString("STEPPER", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Eine Haftnotiz|Haftnotiz|Klebezettel|Notiz|Zettel.
         /// </summary>
         internal static string STICKY_NOTE {
@@ -421,6 +502,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Das Laufband|Laufband.
+        /// </summary>
+        internal static string TREADMILL {
+            get {
+                return ResourceManager.GetString("TREADMILL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Die Garderobe|Garderobe.
         /// </summary>
         internal static string WARDROBE {
@@ -444,6 +534,15 @@ namespace Fenrir13.Resources {
         internal static string WORKBENCH {
             get {
                 return ResourceManager.GetString("WORKBENCH", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Übungen|Übung|Handarbeit.
+        /// </summary>
+        internal static string WORKOUTS {
+            get {
+                return ResourceManager.GetString("WORKOUTS", resourceCulture);
             }
         }
     }

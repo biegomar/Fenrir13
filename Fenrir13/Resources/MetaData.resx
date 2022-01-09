@@ -19,10 +19,10 @@
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
     <data name="AUTHOR" xml:space="preserve">
-        <value>Marc Biegota</value>
+        <value>Marc Biegota (twitter @biegomar)</value>
     </data>
     <data name="COPYRIGHT" xml:space="preserve">
-        <value>(c) by Marc Biegota 2021</value>
+        <value>(c) by Marc Biegota 2021, 2022</value>
     </data>
     <data name="DESCRIPTION" xml:space="preserve">
         <value>Fenrir 13 - An Interactive Fiction</value>

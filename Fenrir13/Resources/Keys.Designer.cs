@@ -70,6 +70,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to BIKE.
+        /// </summary>
+        internal static string BIKE {
+            get {
+                return ResourceManager.GetString("BIKE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to BULKHEAD.
         /// </summary>
         internal static string BULKHEAD {
@@ -84,6 +93,15 @@ namespace Fenrir13.Resources {
         internal static string BULKHEAD_WINDOW {
             get {
                 return ResourceManager.GetString("BULKHEAD_WINDOW", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CARDIO_STATION.
+        /// </summary>
+        internal static string CARDIO_STATION {
+            get {
+                return ResourceManager.GetString("CARDIO_STATION", resourceCulture);
             }
         }
         
@@ -241,6 +259,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to CROSSTRAINER.
+        /// </summary>
+        internal static string CROSSTRAINER {
+            get {
+                return ResourceManager.GetString("CROSSTRAINER", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to CRYOCHAMBER.
         /// </summary>
         internal static string CRYOCHAMBER {
@@ -286,6 +313,24 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to DUMBBELL_BAR.
+        /// </summary>
+        internal static string DUMBBELL_BAR {
+            get {
+                return ResourceManager.GetString("DUMBBELL_BAR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to DUMBBELL_RACK.
+        /// </summary>
+        internal static string DUMBBELL_RACK {
+            get {
+                return ResourceManager.GetString("DUMBBELL_RACK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to EMPTYCREWCHAMBERONE.
         /// </summary>
         internal static string EMPTYCREWCHAMBERONE {
@@ -313,6 +358,24 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to EXERCISE_AREA.
+        /// </summary>
+        internal static string EXERCISE_AREA {
+            get {
+                return ResourceManager.GetString("EXERCISE_AREA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FITNESSMACHINE.
+        /// </summary>
+        internal static string FITNESSMACHINE {
+            get {
+                return ResourceManager.GetString("FITNESSMACHINE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to FRONTSIDE.
         /// </summary>
         internal static string FRONTSIDE {
@@ -336,6 +399,15 @@ namespace Fenrir13.Resources {
         internal static string GYM {
             get {
                 return ResourceManager.GetString("GYM", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GYM_POWERSTATION.
+        /// </summary>
+        internal static string GYM_POWERSTATION {
+            get {
+                return ResourceManager.GetString("GYM_POWERSTATION", resourceCulture);
             }
         }
         
@@ -520,6 +592,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to STEPPER.
+        /// </summary>
+        internal static string STEPPER {
+            get {
+                return ResourceManager.GetString("STEPPER", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to STICKY_NOTE.
         /// </summary>
         internal static string STICKY_NOTE {
@@ -556,6 +637,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to TREADMILL.
+        /// </summary>
+        internal static string TREADMILL {
+            get {
+                return ResourceManager.GetString("TREADMILL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to WARDROBE.
         /// </summary>
         internal static string WARDROBE {
@@ -579,6 +669,15 @@ namespace Fenrir13.Resources {
         internal static string WORKBENCH {
             get {
                 return ResourceManager.GetString("WORKBENCH", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to WORKOUTS.
+        /// </summary>
+        internal static string WORKOUTS {
+            get {
+                return ResourceManager.GetString("WORKOUTS", resourceCulture);
             }
         }
     }

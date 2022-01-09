@@ -207,6 +207,19 @@ internal partial class EventProvider
         }
     }
 
+    internal void LookAtPowerStation(object sender, ContainerObjectEventArgs eventArgs)
+    {
+        if (sender is Location gym && gym.Key == Keys.GYM && eventArgs.ExternalItemKey == Keys.GYM_POWERSTATION)
+        {
+            var rack = this.universe.ActiveLocation.GetItemByKey(Keys.DUMBBELL_RACK);
+            if (rack != default)
+            {
+                rack.IsHidden = false;
+                gym.AfterLook -= LookAtPowerStation;
+            }
+        }
+    }
+
     internal void WriteTextToComputerTerminal(object sender, WriteEventArgs eventArgs)
     {
         if (sender is Location terminal && terminal.Key == Keys.COMPUTER_TERMINAL)

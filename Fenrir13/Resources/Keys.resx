@@ -192,4 +192,37 @@
     <data name="ENGINE_ROOM" xml:space="preserve">
         <value>ENGINE_ROOM</value>
     </data>
+    <data name="CARDIO_STATION" xml:space="preserve">
+        <value>CARDIO_STATION</value>
+    </data>
+    <data name="GYM_POWERSTATION" xml:space="preserve">
+        <value>GYM_POWERSTATION</value>
+    </data>
+    <data name="DUMBBELL_BAR" xml:space="preserve">
+        <value>DUMBBELL_BAR</value>
+    </data>
+    <data name="DUMBBELL_RACK" xml:space="preserve">
+        <value>DUMBBELL_RACK</value>
+    </data>
+    <data name="EXERCISE_AREA" xml:space="preserve">
+        <value>EXERCISE_AREA</value>
+    </data>
+    <data name="BIKE" xml:space="preserve">
+        <value>BIKE</value>
+    </data>
+    <data name="CROSSTRAINER" xml:space="preserve">
+        <value>CROSSTRAINER</value>
+    </data>
+    <data name="TREADMILL" xml:space="preserve">
+        <value>TREADMILL</value>
+    </data>
+    <data name="STEPPER" xml:space="preserve">
+        <value>STEPPER</value>
+    </data>
+    <data name="FITNESSMACHINE" xml:space="preserve">
+        <value>FITNESSMACHINE</value>
+    </data>
+    <data name="WORKOUTS" xml:space="preserve">
+        <value>WORKOUTS</value>
+    </data>
 </root>
