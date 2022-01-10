@@ -4,7 +4,7 @@ using Heretic.InteractiveFiction.Objects;
 
 namespace Fenrir13.GamePlay.Prerequisites.Airlock;
 
-public class AirlockPrerequisites
+internal class AirlockPrerequisites
 {
     internal static Location Get(EventProvider eventProvider)
     {

@@ -225,4 +225,7 @@
     <data name="WORKOUTS" xml:space="preserve">
         <value>WORKOUTS</value>
     </data>
+    <data name="EQUIPMENT_ROOM" xml:space="preserve">
+        <value>EQUIPMENT_ROOM</value>
+    </data>
 </root>

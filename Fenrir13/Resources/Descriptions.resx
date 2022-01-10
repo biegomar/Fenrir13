@@ -26,7 +26,7 @@ Aber etwas ist anders! Das auf- und abschwellende Geräusch ist nach wie vor da.
     </data>
     <data name="CRYOCHAMBER" xml:space="preserve">
         <value>Du befindest Dich in Deinem persönlichen Raum des Schiffs. Er ist sehr funktional und spartanisch eingerichtet, wirkt dabei aber dennoch wohnlich. Der Cryo-Pod, in dem Du gerade noch gelegen hast, hat seine Kokon-Form, die dem Passagier während der langen Schlafphase einer Raumreise Schutz und Versorgung bietet, in eine offene Bettform gewandelt. Der Fußboden ist metallisch und nur vor Deinem Bett befindet sich ein kleiner Teppich. Du weißt aus der Erfahrung, das der Fußboden angenehm beheizt ist und magnetisiert werden kann, damit im Falle von Turbulenzen die größeren Gegenstände gegen Verrutschen gesichert sind. Na ja, zumindest rudimentär. Ein kleiner Arbeitsbereich mit Deinem persönlichen Laptop ist in der rechten Ecke der Wand direkt vor Dir platziert und wenn Du dort sitzt, gibt Dir ein Bullauge den Blick in den Weltraum preis. Ein hochwertiger Bürostuhl ermöglicht Dir ein bequemes Arbeiten und an den, mit einer Art Gummi überzogenen Metallrollen kann man erkennen, dass diese Sitzgelegenheit auch magnetisch gesichert werden kann. 
-Der Rest der Wand wird von einem massiven Schrank mit diversen Schubfächern, einer Schranktür und einer offenen Garderobe, an der aktuell nur ein typischer Space-Overall hängt, dominiert. 
+Der Rest der Wand wird von einem massiven Schrank mit diversen Schubfächern, einer Schranktür und einer offenen Garderobe dominiert. 
 In der Mitte des Raums befindet sich ein kleiner Tisch, gerade groß genug, um zwei Personen die Möglichkeit zu geben dort gemeinsam zu essen. Da es aber nur einen passenden Stuhl zum Tisch gibt, scheint diese Möglichkeit gar nicht vorgesehen zu sein. 
 Zu Deiner Rechten, an der Fußseite des Cryo-Pods, befindet sich eine kleine Trennwand und Du kannst dahinter eine bescheidene Waschmöglichkeit und eine Toilette entdecken. 
 Zu Deiner Linken befindet sie die Zimmertür. Auch sie ist aus Metall und als solche eigentlich nur an ihren Umrissen und dem tellergroßen Guckloch in Kopfhöhe zu erkennen. Die Tür ist perfekt in die Wand eingelassen und rechts von ihr befindet sich ein kleines Display. Vermutlich dient es der Bedienung der Tür, denn eine erkennbare Klinke gibt es nicht.</value>
@@ -295,7 +295,7 @@ Please fix the following problems:
     <data name="COMPUTER_TERMINAL_DISPLAY_REPORT_1" xml:space="preserve">
         <value>Als Du den Menüpunkt auswählst erfährst Du, dass der Hüllenbruch zum Glück nur den westlichen Korridor-Abschnitt betrifft. Allerdings ist dadurch der Zugang zu den weiteren Crew-Kabinen unmöglich. 
 Weiter erfährst Du, dass das Schiff offenbar einen Service-Roboter an der Schiffshaut mitführt, der genau für diese Art von Reparatur zuständig ist. Aber aus irgendeinem Grund hat er die Arbeit nicht verrichtet. Das System kann leider keinen Kontakt zu dem Roboter aufnehmen und kennt daher den Status nicht.
-Aber Deine Aufgabe scheint klar zu sein. Den Roboter flott machen und den Hüllenbruch schließen! Vielleicht ergibt sich eine Lösung unten in den Maschinenräumen.</value>
+Aber Deine Aufgabe scheint klar zu sein. Den Roboter flott machen und den Hüllenbruch schließen! Vielleicht ergibt sich eine Lösung unten im Maschinendeck.</value>
     </data>
     <data name="TERMINAL_MENU_1" xml:space="preserve">
         <value>1|1.</value>
@@ -361,5 +361,11 @@ Vielleicht kannst Du unten bei den Maschinenräumen mehr unternehmen als von hie
     </data>
     <data name="DUMBBELL_BAR_CONTAINMENT" xml:space="preserve">
         <value>Eine Hantelstange fällt Dir allerdings ins Auge. Sie scheint nicht korrekt fixiert worden zu sein. Schlamperei! Wenn die sich während des Flugs gelöst hätte...</value>
+    </data>
+    <data name="SPACE_SUITE_CONTAINMENT" xml:space="preserve">
+        <value>An der Garderobe hängt gerade ein typischer Space-Overall.</value>
+    </data>
+    <data name="EQUIPMENT_ROOM" xml:space="preserve">
+        <value>In diesem Raum bereiten sich die Mechaniker auf ihre Ausseneinsätze vor.</value>
     </data>
 </root>

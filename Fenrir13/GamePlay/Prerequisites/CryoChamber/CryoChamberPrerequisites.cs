@@ -56,7 +56,8 @@ internal static class CryoChamberPrerequisites
         {
             Key = Keys.SPACE_SUITE,
             Description = Descriptions.SPACE_SUITE,
-            Name = Items.SPACE_SUITE
+            Name = Items.SPACE_SUITE,
+            ContainmentDescription = Descriptions.SPACE_SUITE_CONTAINMENT
         };
         
         AddAfterTakeEvents(spaceSuite, eventProvider);

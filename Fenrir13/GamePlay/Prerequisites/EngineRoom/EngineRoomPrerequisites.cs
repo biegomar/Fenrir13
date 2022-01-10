@@ -4,7 +4,7 @@ using Heretic.InteractiveFiction.Objects;
 
 namespace Fenrir13.GamePlay.Prerequisites.EngineRoom;
 
-public class EngineRoomPrerequisites
+internal class EngineRoomPrerequisites
 {
     internal static Location Get(EventProvider eventProvider)
     {

@@ -66,4 +66,7 @@
     <data name="ENGINE_ROOM" xml:space="preserve">
         <value>Der Maschinenraum|Maschinenraum</value>
     </data>
+    <data name="EQUIPMENT_ROOM" xml:space="preserve">
+        <value>Der Ausrüstungsraum|Ausrüstungsraum</value>
+    </data>
 </root>

@@ -358,6 +358,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to EQUIPMENT_ROOM.
+        /// </summary>
+        internal static string EQUIPMENT_ROOM {
+            get {
+                return ResourceManager.GetString("EQUIPMENT_ROOM", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to EXERCISE_AREA.
         /// </summary>
         internal static string EXERCISE_AREA {

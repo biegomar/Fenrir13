@@ -547,6 +547,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to In diesem Raum bereiten sich die Mechaniker auf ihre Ausseneinsätze vor..
+        /// </summary>
+        internal static string EQUIPMENT_ROOM {
+            get {
+                return ResourceManager.GetString("EQUIPMENT_ROOM", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Der Bereich ist auf dem Boden durch Matten gepolstert und ermöglich so auch das Workout im Liegen. Eine Art Klettergerüst mit vielen Möglichkeiten, um Dinge daran zu fixieren, nimmt gut die Hälfte der Fläche ein. .
         /// </summary>
         internal static string EXERCISE_AREA {
@@ -835,6 +844,15 @@ namespace Fenrir13.Resources {
         internal static string SPACE_SUITE {
             get {
                 return ResourceManager.GetString("SPACE_SUITE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to An der Garderobe hängt gerade ein typischer Space-Overall..
+        /// </summary>
+        internal static string SPACE_SUITE_CONTAINMENT {
+            get {
+                return ResourceManager.GetString("SPACE_SUITE_CONTAINMENT", resourceCulture);
             }
         }
         
