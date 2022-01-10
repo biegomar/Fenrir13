@@ -547,6 +547,24 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Es handelt sich um eine Kiste aus silber eloxiertem Aluminium mit einem ungefähren Ausmaß von 80 cm x 60 cm x 40 cm. Sie ist durch ein Vorhängeschloß gesichert..
+        /// </summary>
+        internal static string EQUIPMENT_BOX {
+            get {
+                return ResourceManager.GetString("EQUIPMENT_BOX", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Unter einer der Bänke liegt eine Metallkiste..
+        /// </summary>
+        internal static string EQUIPMENT_BOX_CONTAINMENT {
+            get {
+                return ResourceManager.GetString("EQUIPMENT_BOX_CONTAINMENT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to In diesem Raum bereiten sich die Mechaniker auf ihre Ausseneinsätze vor..
         /// </summary>
         internal static string EQUIPMENT_ROOM {

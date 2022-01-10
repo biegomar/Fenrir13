@@ -368,4 +368,10 @@ Vielleicht kannst Du unten bei den Maschinenräumen mehr unternehmen als von hie
     <data name="EQUIPMENT_ROOM" xml:space="preserve">
         <value>In diesem Raum bereiten sich die Mechaniker auf ihre Ausseneinsätze vor.</value>
     </data>
+    <data name="EQUIPMENT_BOX" xml:space="preserve">
+        <value>Es handelt sich um eine Kiste aus silber eloxiertem Aluminium mit einem ungefähren Ausmaß von 80 cm x 60 cm x 40 cm. Sie ist durch ein Vorhängeschloß gesichert.</value>
+    </data>
+    <data name="EQUIPMENT_BOX_CONTAINMENT" xml:space="preserve">
+        <value>Unter einer der Bänke liegt eine Metallkiste.</value>
+    </data>
 </root>

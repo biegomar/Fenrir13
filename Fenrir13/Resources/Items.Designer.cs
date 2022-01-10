@@ -268,6 +268,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Die Metallkiste|Metallkiste|Ausrüstungsbox|Ausrüstungsbox|Box|Kiste.
+        /// </summary>
+        internal static string EQUIPMENT_BOX {
+            get {
+                return ResourceManager.GetString("EQUIPMENT_BOX", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Der Gymnastikbereich|Gymnastikbereich.
         /// </summary>
         internal static string EXERCISE_AREA {

@@ -228,4 +228,7 @@
     <data name="EQUIPMENT_ROOM" xml:space="preserve">
         <value>EQUIPMENT_ROOM</value>
     </data>
+    <data name="EQUIPMENT_BOX" xml:space="preserve">
+        <value>EQUIPMENT_BOX</value>
+    </data>
 </root>

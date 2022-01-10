@@ -14,6 +14,8 @@ internal class EquipmentRoomPrerequisites
             Name = Locations.EQUIPMENT_ROOM,
             Description = Descriptions.EQUIPMENT_ROOM
         };
+        
+        equipmentRoom.Items.Add(GetBox(eventProvider));
 
         AddSurroundings(equipmentRoom);
         
@@ -23,5 +25,18 @@ internal class EquipmentRoomPrerequisites
     private static void AddSurroundings(Location engine)
     {
         
-    } 
+    }
+
+    private static Item GetBox(EventProvider eventProvider)
+    {
+        var box = new Item()
+        {
+            Key = Keys.EQUIPMENT_BOX,
+            Name = Items.EQUIPMENT_BOX,
+            Description = Descriptions.EQUIPMENT_BOX,
+            ContainmentDescription = Descriptions.EQUIPMENT_BOX_CONTAINMENT
+        };
+
+        return box;
+    }
 }

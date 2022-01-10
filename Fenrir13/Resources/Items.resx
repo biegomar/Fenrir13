@@ -180,4 +180,7 @@
     <data name="WORKOUTS" xml:space="preserve">
         <value>Übungen|Übung|Handarbeit</value>
     </data>
+    <data name="EQUIPMENT_BOX" xml:space="preserve">
+        <value>Die Metallkiste|Metallkiste|Ausrüstungsbox|Ausrüstungsbox|Box|Kiste</value>
+    </data>
 </root>
