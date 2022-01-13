@@ -64,11 +64,19 @@ internal static class GymPrerequisites
             Weight = 5000
         };
         
+        AddAfterTakeEvents(item, eventProvider);
+        
         return item;
     }
     
     private static void AddAfterLookEvents(Location gym, EventProvider eventProvider)
     {
         gym.AfterLook += eventProvider.LookAtPowerStation;
+    }
+    
+    private static void AddAfterTakeEvents(Item bar, EventProvider eventProvider)
+    {
+        bar.AfterTake += eventProvider.TakeDumbbellBar;
+        eventProvider.ScoreBoard.Add(nameof(eventProvider.TakeDumbbellBar), 1);
     }
 }

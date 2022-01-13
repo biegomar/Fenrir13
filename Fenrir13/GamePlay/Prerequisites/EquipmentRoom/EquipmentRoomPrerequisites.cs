@@ -38,6 +38,7 @@ internal static class EquipmentRoomPrerequisites
             Description = Descriptions.EQUIPMENT_BOX,
             ContainmentDescription = Descriptions.EQUIPMENT_BOX_CONTAINMENT,
             LockDescription = Descriptions.EQUIPMENT_BOX_LOCKDESCRIPTION,
+            CloseDescription = Descriptions.EQUIPMENT_BOX_CLOSED,
             IsClosed = true,
             IsLocked = true,
             IsCloseAble = true

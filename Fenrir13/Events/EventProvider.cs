@@ -253,6 +253,15 @@ internal partial class EventProvider
         }
     }
     
+    internal void TakeDumbbellBar(object sender, ContainerObjectEventArgs eventArg)
+    {
+        if (sender is Item bar && bar.Key == Keys.DUMBBELL_BAR)
+        {
+            this.universe.Score += this.universe.ScoreBoard[nameof(this.TakeDumbbellBar)];
+            bar.AfterTake -= TakeDumbbellBar;
+        }
+    }
+    
     internal void WriteTextToComputerTerminal(object sender, WriteEventArgs eventArgs)
     {
         if (sender is Location terminal && terminal.Key == Keys.COMPUTER_TERMINAL)

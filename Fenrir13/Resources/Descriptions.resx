@@ -395,4 +395,7 @@ Vielleicht kannst Du unten bei den Maschinenräumen mehr unternehmen als von hie
     <data name="BREAK_EQUIPMENT_BOX_LOCK" xml:space="preserve">
         <value>Du schaust auf das Schloß, dann auf die Stange. Wiegst sie abschätzend in Deiner Hand und stemmst sie kurzentschlossen mit aller Kraft gegen das Schloß. Das bricht krachend auseinander und die Kiste ist nun nicht mehr gesichert!</value>
     </data>
+    <data name="EQUIPMENT_BOX_CLOSED" xml:space="preserve">
+        <value>Die Kiste ist geschlossen.</value>
+    </data>
 </root>

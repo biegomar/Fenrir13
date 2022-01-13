@@ -574,6 +574,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Die Kiste ist geschlossen..
+        /// </summary>
+        internal static string EQUIPMENT_BOX_CLOSED {
+            get {
+                return ResourceManager.GetString("EQUIPMENT_BOX_CLOSED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Unter einer der Bänke liegt eine Metallkiste..
         /// </summary>
         internal static string EQUIPMENT_BOX_CONTAINMENT {
