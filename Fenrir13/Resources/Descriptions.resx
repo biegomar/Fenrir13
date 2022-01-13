@@ -369,9 +369,24 @@ Vielleicht kannst Du unten bei den Maschinenräumen mehr unternehmen als von hie
         <value>In diesem Raum bereiten sich die Mechaniker auf ihre Ausseneinsätze vor.</value>
     </data>
     <data name="EQUIPMENT_BOX" xml:space="preserve">
-        <value>Es handelt sich um eine Kiste aus silber eloxiertem Aluminium mit einem ungefähren Ausmaß von 80 cm x 60 cm x 40 cm. Sie ist durch ein Vorhängeschloß gesichert.</value>
+        <value>Es handelt sich um eine Kiste aus silber eloxiertem Aluminium mit einem ungefähren Ausmaß von 80 cm x 60 cm x 40 cm.</value>
     </data>
     <data name="EQUIPMENT_BOX_CONTAINMENT" xml:space="preserve">
         <value>Unter einer der Bänke liegt eine Metallkiste.</value>
+    </data>
+    <data name="EQUIPMENT_BOX_LOCKDESCRIPTION" xml:space="preserve">
+        <value>Sie ist durch ein Vorhängeschloß gesichert.</value>
+    </data>
+    <data name="HELMET" xml:space="preserve">
+        <value>Der Helm schützt Dich im All und lässt Dich atmen. Im Bereich des Hinterkopf führt ein kurzer Schlauch auch dem Helm.</value>
+    </data>
+    <data name="HELMET_FIRSTLOOK" xml:space="preserve">
+        <value>Daran kann wohl eine Sauerstoffflasche montiert werden. Allerdings befindet sich im Moment keine an dem Helm.</value>
+    </data>
+    <data name="GLOVES" xml:space="preserve">
+        <value>Da Dein Space-Suite nicht die Hände bedeckt, sind diese Handschuhe erforderlich, um bei einem Einsatz im Weltraum auch die Hände zu schützen.</value>
+    </data>
+    <data name="BOOTS" xml:space="preserve">
+        <value>Da Dein Space-Suite Deine Füße nicht bedeckt, dienen die Boots dazu, Dich bei einem Space-Ausflug zu schützen. Auch sind die Stiefel magnetisch, damit man an der Aussenhaut des Schiffs sicheren Halt hat.</value>
     </data>
 </root>

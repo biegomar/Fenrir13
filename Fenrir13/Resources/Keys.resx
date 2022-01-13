@@ -231,4 +231,13 @@
     <data name="EQUIPMENT_BOX" xml:space="preserve">
         <value>EQUIPMENT_BOX</value>
     </data>
+    <data name="HELMET" xml:space="preserve">
+        <value>HELMET</value>
+    </data>
+    <data name="GLOVES" xml:space="preserve">
+        <value>GLOVES</value>
+    </data>
+    <data name="BOOTS" xml:space="preserve">
+        <value>BOOTS</value>
+    </data>
 </root>

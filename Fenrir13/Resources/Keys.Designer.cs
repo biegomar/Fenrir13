@@ -79,6 +79,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to BOOTS.
+        /// </summary>
+        internal static string BOOTS {
+            get {
+                return ResourceManager.GetString("BOOTS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to BULKHEAD.
         /// </summary>
         internal static string BULKHEAD {
@@ -412,6 +421,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to GLOVES.
+        /// </summary>
+        internal static string GLOVES {
+            get {
+                return ResourceManager.GetString("GLOVES", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to GYM.
         /// </summary>
         internal static string GYM {
@@ -426,6 +444,15 @@ namespace Fenrir13.Resources {
         internal static string GYM_POWERSTATION {
             get {
                 return ResourceManager.GetString("GYM_POWERSTATION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to HELMET.
+        /// </summary>
+        internal static string HELMET {
+            get {
+                return ResourceManager.GetString("HELMET", resourceCulture);
             }
         }
         

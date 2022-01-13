@@ -4,7 +4,7 @@ using Heretic.InteractiveFiction.Objects;
 
 namespace Fenrir13.GamePlay.Prerequisites.Gym;
 
-public class GymPrerequisites
+internal static class GymPrerequisites
 {
     internal static Location Get(EventProvider eventProvider)
     {

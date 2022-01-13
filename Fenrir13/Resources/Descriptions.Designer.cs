@@ -70,6 +70,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Da Dein Space-Suite Deine Füße nicht bedeckt, dienen die Boots dazu, Dich bei einem Space-Ausflug zu schützen. Auch sind die Stiefel magnetisch, damit man an der Aussenhaut des Schiffs sicheren Halt hat..
+        /// </summary>
+        internal static string BOOTS {
+            get {
+                return ResourceManager.GetString("BOOTS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Das Schott ist eine dieser massiven Sicherheitstüren, die es hier im Schiff an vielen Stellen gibt und bei Gefahr dazu dienen, einzelne Sektoren des Schiffs zu isolieren. Es hat ein Sichtfenster..
         /// </summary>
         internal static string BULKHEAD {
@@ -547,7 +556,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Es handelt sich um eine Kiste aus silber eloxiertem Aluminium mit einem ungefähren Ausmaß von 80 cm x 60 cm x 40 cm. Sie ist durch ein Vorhängeschloß gesichert..
+        ///   Looks up a localized string similar to Es handelt sich um eine Kiste aus silber eloxiertem Aluminium mit einem ungefähren Ausmaß von 80 cm x 60 cm x 40 cm..
         /// </summary>
         internal static string EQUIPMENT_BOX {
             get {
@@ -561,6 +570,15 @@ namespace Fenrir13.Resources {
         internal static string EQUIPMENT_BOX_CONTAINMENT {
             get {
                 return ResourceManager.GetString("EQUIPMENT_BOX_CONTAINMENT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sie ist durch ein Vorhängeschloß gesichert..
+        /// </summary>
+        internal static string EQUIPMENT_BOX_LOCKDESCRIPTION {
+            get {
+                return ResourceManager.GetString("EQUIPMENT_BOX_LOCKDESCRIPTION", resourceCulture);
             }
         }
         
@@ -610,6 +628,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Da Dein Space-Suite nicht die Hände bedeckt, sind diese Handschuhe erforderlich, um bei einem Einsatz im Weltraum auch die Hände zu schützen..
+        /// </summary>
+        internal static string GLOVES {
+            get {
+                return ResourceManager.GetString("GLOVES", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Dies ist ein gut ausgestatteter Fitnessraum für die Zeit der Reise, in der man aktiv und wach ist. Auch in modernen Zeiten legt man bei Viking Wert auf Handarbeit und Gewichte stemmen. Daher finden sich hier auch klassische Fitnessmaschinen mit variablen Gewichten. Du siehst die Cardiostation, die mehrere Übungen zulässt, genauso wie eine Powerstation und einen - na sagen wir mal - Gymnastikbereich, mit vielen Seilen, Sandsäcken und tragbaren Gewichten. Alle Geräte sind an ihren Plätzen verankert..
         /// </summary>
         internal static string GYM {
@@ -633,6 +660,24 @@ namespace Fenrir13.Resources {
         internal static string GYM_POWERSTATION {
             get {
                 return ResourceManager.GetString("GYM_POWERSTATION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Der Helm schützt Dich im All und lässt Dich atmen. Im Bereich des Hinterkopf führt ein kurzer Schlauch auch dem Helm..
+        /// </summary>
+        internal static string HELMET {
+            get {
+                return ResourceManager.GetString("HELMET", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Daran kann wohl eine Sauerstoffflasche montiert werden. Allerdings befindet sich im Moment keine an dem Helm..
+        /// </summary>
+        internal static string HELMET_FIRSTLOOK {
+            get {
+                return ResourceManager.GetString("HELMET_FIRSTLOOK", resourceCulture);
             }
         }
         

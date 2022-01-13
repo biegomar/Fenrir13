@@ -183,4 +183,13 @@
     <data name="EQUIPMENT_BOX" xml:space="preserve">
         <value>Die Metallkiste|Metallkiste|Ausrüstungsbox|Ausrüstungsbox|Box|Kiste</value>
     </data>
+    <data name="HELMET" xml:space="preserve">
+        <value>Der Weltraumhelm|Weltraumhelm|Helm</value>
+    </data>
+    <data name="GLOVES" xml:space="preserve">
+        <value>Die Handschuhe|Handschuhe</value>
+    </data>
+    <data name="BOOTS" xml:space="preserve">
+        <value>Die Stiefel|Stiefel|Moonboots</value>
+    </data>
 </root>

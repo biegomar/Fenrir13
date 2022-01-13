@@ -70,6 +70,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Die Stiefel|Stiefel|Moonboots.
+        /// </summary>
+        internal static string BOOTS {
+            get {
+                return ResourceManager.GetString("BOOTS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Schott|Abriegelung.
         /// </summary>
         internal static string BULKHEAD {
@@ -313,11 +322,29 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Die Handschuhe|Handschuhe.
+        /// </summary>
+        internal static string GLOVES {
+            get {
+                return ResourceManager.GetString("GLOVES", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Die Powerstation|Powerstation|Gewichte|Gewicht.
         /// </summary>
         internal static string GYM_POWERSTATION {
             get {
                 return ResourceManager.GetString("GYM_POWERSTATION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Der Weltraumhelm|Weltraumhelm|Helm.
+        /// </summary>
+        internal static string HELMET {
+            get {
+                return ResourceManager.GetString("HELMET", resourceCulture);
             }
         }
         
