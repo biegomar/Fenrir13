@@ -1,0 +1,23 @@
+nimm overall
+l all
+l schranktür
+iss riegel
+l display
+w
+w
+w
+hoch
+l platte
+setzen
+tippe skov
+aufstehen
+runter
+w
+s
+l powerstation
+l ablage
+nimm stange
+n
+e
+runter
+w

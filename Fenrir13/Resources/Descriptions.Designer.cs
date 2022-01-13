@@ -79,6 +79,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Du schaust auf das Schloß, dann auf die Stange. Wiegst sie abschätzend in Deiner Hand und stemmst sie kurzentschlossen mit aller Kraft gegen das Schloß. Das bricht krachend auseinander und die Kiste ist nun nicht mehr gesichert!.
+        /// </summary>
+        internal static string BREAK_EQUIPMENT_BOX_LOCK {
+            get {
+                return ResourceManager.GetString("BREAK_EQUIPMENT_BOX_LOCK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Das Schott ist eine dieser massiven Sicherheitstüren, die es hier im Schiff an vielen Stellen gibt und bei Gefahr dazu dienen, einzelne Sektoren des Schiffs zu isolieren. Es hat ein Sichtfenster..
         /// </summary>
         internal static string BULKHEAD {
@@ -570,6 +579,15 @@ namespace Fenrir13.Resources {
         internal static string EQUIPMENT_BOX_CONTAINMENT {
             get {
                 return ResourceManager.GetString("EQUIPMENT_BOX_CONTAINMENT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Das Schloß ist sehr massiv und wird normalerweise mit einem Schlüssel geöffnet. Sicherlich ist das die Kiste eines der Mechaniker und der Schlüssel wird in seiner Kabine sein. Da kommst Du aber aufgrund der Situation nicht dran. Mist!.
+        /// </summary>
+        internal static string EQUIPMENT_BOX_LOCK {
+            get {
+                return ResourceManager.GetString("EQUIPMENT_BOX_LOCK", resourceCulture);
             }
         }
         

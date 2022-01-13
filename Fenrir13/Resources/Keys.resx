@@ -240,4 +240,7 @@
     <data name="BOOTS" xml:space="preserve">
         <value>BOOTS</value>
     </data>
+    <data name="EQUIPMENT_BOX_LOCK" xml:space="preserve">
+        <value>EQUIPMENT_BOX_LOCK</value>
+    </data>
 </root>

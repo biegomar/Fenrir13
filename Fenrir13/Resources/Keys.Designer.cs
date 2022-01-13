@@ -376,6 +376,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to EQUIPMENT_BOX_LOCK.
+        /// </summary>
+        internal static string EQUIPMENT_BOX_LOCK {
+            get {
+                return ResourceManager.GetString("EQUIPMENT_BOX_LOCK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to EQUIPMENT_ROOM.
         /// </summary>
         internal static string EQUIPMENT_ROOM {

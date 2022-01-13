@@ -102,7 +102,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to v0.2.7.
+        ///   Looks up a localized string similar to v0.3.8.
         /// </summary>
         internal static string VERSION {
             get {

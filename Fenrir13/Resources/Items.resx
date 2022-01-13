@@ -192,4 +192,7 @@
     <data name="BOOTS" xml:space="preserve">
         <value>Die Stiefel|Stiefel|Moonboots</value>
     </data>
+    <data name="EQUIPMENT_BOX_LOCK" xml:space="preserve">
+        <value>Das Vorhängeschloß|Vorhängeschloß|Schloß</value>
+    </data>
 </root>

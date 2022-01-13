@@ -3,6 +3,7 @@ using Fenrir13.Resources;
 using Heretic.InteractiveFiction.Exceptions;
 using Heretic.InteractiveFiction.GamePlay.EventSystem.EventArgs;
 using Heretic.InteractiveFiction.Objects;
+using Heretic.InteractiveFiction.Resources;
 using Heretic.InteractiveFiction.Subsystems;
 
 namespace Fenrir13.Events;
@@ -220,6 +221,38 @@ internal partial class EventProvider
         }
     }
 
+    internal void BreakEquipmentBoxLock(object sender, BreakItemEventArg eventArg)
+    {
+        if (eventArg.ItemToUse == default)
+        {
+            throw new BreakException(BaseDescriptions.IMPOSSIBLE_BREAK_ITEM);
+        }
+        
+        if (sender is Location equipmentRoom && equipmentRoom.Key == Keys.EQUIPMENT_ROOM && eventArg.ItemToUse.Key == Keys.DUMBBELL_BAR)
+        {
+            var box = equipmentRoom.GetItemByKey(Keys.EQUIPMENT_BOX);
+            if (box != default)
+            {
+                box.IsLocked = false;
+                PrintingSubsystem.Resource(Descriptions.BREAK_EQUIPMENT_BOX_LOCK);
+                this.universe.Score += this.universe.ScoreBoard[nameof(this.BreakEquipmentBoxLock)];
+                equipmentRoom.Break -= BreakEquipmentBoxLock;
+            }
+        }
+    }
+    
+    internal void OpenEquipmentBox(object sender, ContainerObjectEventArgs eventArg)
+    {
+        if (sender is Item box && box.Key == Keys.EQUIPMENT_BOX)
+        {
+            if (!box.IsClosed)
+            {
+                box.ContainmentDescription = string.Empty;
+                box.AfterOpen -= OpenEquipmentBox;
+            }
+        }
+    }
+    
     internal void WriteTextToComputerTerminal(object sender, WriteEventArgs eventArgs)
     {
         if (sender is Location terminal && terminal.Key == Keys.COMPUTER_TERMINAL)

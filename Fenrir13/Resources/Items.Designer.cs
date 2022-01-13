@@ -286,6 +286,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Das Vorhängeschloß|Vorhängeschloß|Schloß.
+        /// </summary>
+        internal static string EQUIPMENT_BOX_LOCK {
+            get {
+                return ResourceManager.GetString("EQUIPMENT_BOX_LOCK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Der Gymnastikbereich|Gymnastikbereich.
         /// </summary>
         internal static string EXERCISE_AREA {

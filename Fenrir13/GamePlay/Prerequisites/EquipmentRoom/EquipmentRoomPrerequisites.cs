@@ -19,12 +19,14 @@ internal static class EquipmentRoomPrerequisites
 
         AddSurroundings(equipmentRoom);
         
+        AddBreakEvents(equipmentRoom, eventProvider);
+        
         return equipmentRoom;
     }
     
-    private static void AddSurroundings(Location engine)
+    private static void AddSurroundings(Location equipmentRoom)
     {
-        
+        equipmentRoom.Surroundings.Add(Keys.EQUIPMENT_BOX_LOCK, Descriptions.EQUIPMENT_BOX_LOCK);
     }
 
     private static Item GetBox(EventProvider eventProvider)
@@ -44,6 +46,8 @@ internal static class EquipmentRoomPrerequisites
         box.Items.Add(GetHelmet(eventProvider));
         box.Items.Add(GetGloves(eventProvider));
         box.Items.Add(GetBoots(eventProvider));
+        
+        AddOpenEvents(box, eventProvider);
 
         return box;
     }
@@ -85,4 +89,14 @@ internal static class EquipmentRoomPrerequisites
         return boots;
     }
     
+    private static void AddBreakEvents(Location equipmentRoom, EventProvider eventProvider)
+    {
+        equipmentRoom.Break += eventProvider.BreakEquipmentBoxLock;
+        eventProvider.ScoreBoard.Add(nameof(eventProvider.BreakEquipmentBoxLock), 5);
+    }
+    
+    private static void AddOpenEvents(Item box, EventProvider eventProvider)
+    {
+        box.AfterOpen += eventProvider.OpenEquipmentBox;
+    }
 }
