@@ -74,8 +74,8 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
         var locationMap = new List<DestinationNode>
         {
             new() {Direction = Directions.UP, Location = corridorMid, IsHidden = false},
-            new() {Direction = Directions.N, Location = airlock, IsHidden = false},
-            new() {Direction = Directions.S, Location = engineRoom, IsHidden = false},
+            new() {Direction = Directions.S, Location = airlock, IsHidden = false},
+            new() {Direction = Directions.N, Location = engineRoom, IsHidden = false},
             new() {Direction = Directions.W, Location = equipmentRoom, IsHidden = false},
         };
         return locationMap;  
@@ -94,7 +94,7 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
     {
         var locationMap = new List<DestinationNode>
         {
-            new() {Direction = Directions.S, Location = machineCorridorMid, IsHidden = false}
+            new() {Direction = Directions.N, Location = machineCorridorMid, IsHidden = false}
         };
         return locationMap;
     }
@@ -103,7 +103,7 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
     {
         var locationMap = new List<DestinationNode>
         {
-            new() {Direction = Directions.N, Location = machineCorridorMid, IsHidden = false}
+            new() {Direction = Directions.S, Location = machineCorridorMid, IsHidden = false}
         };
         return locationMap;
     }
