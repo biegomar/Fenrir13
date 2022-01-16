@@ -243,4 +243,13 @@
     <data name="EQUIPMENT_BOX_LOCK" xml:space="preserve">
         <value>EQUIPMENT_BOX_LOCK</value>
     </data>
+    <data name="AIRLOCK_KEYPAD" xml:space="preserve">
+        <value>AIRLOCK_KEYPAD</value>
+    </data>
+    <data name="AIRLOCK_KEYPAD_RED_BUTTON" xml:space="preserve">
+        <value>AIRLOCK_KEYPAD_RED_BUTTON</value>
+    </data>
+    <data name="AIRLOCK_KEYPAD_GREEN_BUTTON" xml:space="preserve">
+        <value>AIRLOCK_KEYPAD_GREEN_BUTTON</value>
+    </data>
 </root>

@@ -61,6 +61,33 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Das Tastenfeld|Tastenfeld|Tastatur.
+        /// </summary>
+        internal static string AIRLOCK_KEYPAD {
+            get {
+                return ResourceManager.GetString("AIRLOCK_KEYPAD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Der grüne Knopf|Grüner Knopf|Grüne Taste.
+        /// </summary>
+        internal static string AIRLOCK_KEYPAD_GREEN_BUTTON {
+            get {
+                return ResourceManager.GetString("AIRLOCK_KEYPAD_GREEN_BUTTON", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Der rote Knopf|Roter Knopf|Rote Taste.
+        /// </summary>
+        internal static string AIRLOCK_KEYPAD_RED_BUTTON {
+            get {
+                return ResourceManager.GetString("AIRLOCK_KEYPAD_RED_BUTTON", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Ein Fahrrad|Fahrrad|Rad.
         /// </summary>
         internal static string BIKE {
@@ -79,7 +106,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Schott|Abriegelung.
+        ///   Looks up a localized string similar to Das Schott|Schott|Abriegelung.
         /// </summary>
         internal static string BULKHEAD {
             get {
@@ -88,7 +115,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sichtfenster.
+        ///   Looks up a localized string similar to Das Sichtfenster|Sichtfenster.
         /// </summary>
         internal static string BULKHEAD_WINDOW {
             get {
@@ -493,7 +520,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Space-Overall|Space-Overall|Spaceoverall|Space-Suite|Spacesuite|Overall|Anzug.
+        ///   Looks up a localized string similar to Der Space-Overall|Space-Overall|Space Overall|Space-Suite|Space Suite|Overall|Anzug|Suite.
         /// </summary>
         internal static string SPACE_SUITE {
             get {

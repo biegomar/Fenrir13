@@ -26,7 +26,8 @@ internal class ResourceProvider: IResourceProvider
             foreach (DictionaryEntry entry in resourceSet)
             {
                 var inputList = entry.Value?.ToString()?.Split('|').ToList();
-                result.Add(entry.Key.ToString()!, inputList);
+                var normalizedList = this.NormalizeResourceList(inputList);
+                result.Add(entry.Key.ToString()!, normalizedList);
             }
         }
 
@@ -43,8 +44,9 @@ internal class ResourceProvider: IResourceProvider
         {
             foreach (DictionaryEntry entry in resourceSet)
             {
-                var inputList = entry.Value?.ToString().Split('|').ToList();
-                result.Add(entry.Key.ToString()!, inputList);
+                var inputList = entry.Value?.ToString()?.Split('|').ToList();
+                var normalizedList = this.NormalizeResourceList(inputList);
+                result.Add(entry.Key.ToString()!, normalizedList);
             }
         }
 
@@ -61,8 +63,25 @@ internal class ResourceProvider: IResourceProvider
         {
             foreach (DictionaryEntry entry in resourceSet)
             {
-                var inputList = entry.Value?.ToString().Split('|').ToList();
-                result.Add(entry.Key.ToString()!, inputList);
+                var inputList = entry.Value?.ToString()?.Split('|').ToList();
+                var normalizedList = this.NormalizeResourceList(inputList);
+                result.Add(entry.Key.ToString()!, normalizedList);
+            }
+        }
+
+        return result;
+    }
+    
+    private IEnumerable<string> NormalizeResourceList(IEnumerable<string> inputList)
+    {
+        var result = new List<string>();
+        foreach (var item in inputList)
+        {
+            result.Add(item);
+            var trimmedItem = string.Concat(item.Where(c => !char.IsWhiteSpace(c)));
+            if (item != trimmedItem)
+            {
+                result.Add(trimmedItem);
             }
         }
 

@@ -70,6 +70,33 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to AIRLOCK_KEYPAD.
+        /// </summary>
+        internal static string AIRLOCK_KEYPAD {
+            get {
+                return ResourceManager.GetString("AIRLOCK_KEYPAD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AIRLOCK_KEYPAD_GREEN_BUTTON.
+        /// </summary>
+        internal static string AIRLOCK_KEYPAD_GREEN_BUTTON {
+            get {
+                return ResourceManager.GetString("AIRLOCK_KEYPAD_GREEN_BUTTON", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AIRLOCK_KEYPAD_RED_BUTTON.
+        /// </summary>
+        internal static string AIRLOCK_KEYPAD_RED_BUTTON {
+            get {
+                return ResourceManager.GetString("AIRLOCK_KEYPAD_RED_BUTTON", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to BIKE.
         /// </summary>
         internal static string BIKE {

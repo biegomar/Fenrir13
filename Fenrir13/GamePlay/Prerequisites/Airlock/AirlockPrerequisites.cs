@@ -22,6 +22,8 @@ internal class AirlockPrerequisites
     
     private static void AddSurroundings(Location airlock)
     {
-        
+        airlock.Surroundings.Add(Keys.AIRLOCK_KEYPAD, Descriptions.AIRLOCK_KEYPAD);
+        airlock.Surroundings.Add(Keys.AIRLOCK_KEYPAD_GREEN_BUTTON, Descriptions.AIRLOCK_KEYPAD_GREEN_BUTTON);
+        airlock.Surroundings.Add(Keys.AIRLOCK_KEYPAD_RED_BUTTON, Descriptions.AIRLOCK_KEYPAD_RED_BUTTON);
     }
 }

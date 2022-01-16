@@ -330,7 +330,8 @@ Vielleicht kannst Du unten bei den Maschinenräumen mehr unternehmen als von hie
         <value>Für die maximal sechs Personen Besatzung ist die Küche üppig ausgestattet und sehr geräumig. </value>
     </data>
     <data name="AIRLOCK" xml:space="preserve">
-        <value>Die Schleuse dient als Weg nach Draußen. Sobald irgendwelche Außenarbeiten erledigt werden müssen, muss ein Crewmitglied diesen Raum passieren.</value>
+        <value>Die Schleuse dient als Weg nach Draußen und sobald Du komplett eingetreten bist, schließt sich die Tür hinter Dir und ein weiteres Schott wird davor heruntergelassen. Du fühlst plötzlich, dass Deine Glieder sich leichter anfühlen, Deine Bewegungen sind mühelos und Du spürst kaum noch Dein eigenes Gewicht und alle mitgeführten Gegenstände scheinen nichts mehr zu wiegen. Klar, denn hier in der Schleuse wird bereits auf die künstliche Schwerkraft verzichtet. 
+Am südlichen Ende der Schleuse trennt ein weiteres, massives Schott den Raum von einem breiten Steg, der bereits vollständig ins All ragt. Das Schott scheint über ein einfaches Tastenfeld gesteuert zu werden, dass sich direkt daneben an der Wand befindet.</value>
     </data>
     <data name="ENGINE_ROOM" xml:space="preserve">
         <value>Hier ist der Maschinenraum.</value>
@@ -397,5 +398,14 @@ Vielleicht kannst Du unten bei den Maschinenräumen mehr unternehmen als von hie
     </data>
     <data name="EQUIPMENT_BOX_CLOSED" xml:space="preserve">
         <value>Die Kiste ist geschlossen.</value>
+    </data>
+    <data name="AIRLOCK_KEYPAD" xml:space="preserve">
+        <value>Eigentlich sind es nur zwei große, beschriftete Tasten, die man bequem mit einer Hand auslösen kann. Eine der Tasten ist rot und mit dem Wort 'OPEN' beschriftet und die andere Taste grün und auf ihr prangt das Wort 'CLOSE'.</value>
+    </data>
+    <data name="AIRLOCK_KEYPAD_RED_BUTTON" xml:space="preserve">
+        <value>Hier ist etwas Vorsicht geboten. Denn mit diesem Knopf scheint man das massive Schott entriegeln und öffnen zu können.</value>
+    </data>
+    <data name="AIRLOCK_KEYPAD_GREEN_BUTTON" xml:space="preserve">
+        <value>Damit scheint man das massive Schott wieder verriegeln und schließen zu können.</value>
     </data>
 </root>

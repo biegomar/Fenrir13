@@ -61,7 +61,7 @@
         <value>Die Garderobe|Garderobe</value>
     </data>
     <data name="SPACE_SUITE" xml:space="preserve">
-        <value>Der Space-Overall|Space-Overall|Spaceoverall|Space-Suite|Spacesuite|Overall|Anzug</value>
+        <value>Der Space-Overall|Space-Overall|Space Overall|Space-Suite|Space Suite|Overall|Anzug|Suite</value>
     </data>
     <data name="TABLE" xml:space="preserve">
         <value>Tisch</value>
@@ -106,10 +106,10 @@
         <value>Crew-Kammer-2|Crew-Kammer2|Kammer-2|Kammer2|Crew-Raum 2|Crew-Raum2|Raum-2|Raum2</value>
     </data>
     <data name="BULKHEAD" xml:space="preserve">
-        <value>Schott|Abriegelung</value>
+        <value>Das Schott|Schott|Abriegelung</value>
     </data>
     <data name="BULKHEAD_WINDOW" xml:space="preserve">
-        <value>Sichtfenster</value>
+        <value>Das Sichtfenster|Sichtfenster</value>
     </data>
     <data name="PILOT_SEAT" xml:space="preserve">
         <value>Der Pilotensitz|Pilotensitz|Pilotsitz|Sitz|Pilotenstuhl|Stuhl</value>
@@ -194,5 +194,14 @@
     </data>
     <data name="EQUIPMENT_BOX_LOCK" xml:space="preserve">
         <value>Das Vorhängeschloß|Vorhängeschloß|Schloß</value>
+    </data>
+    <data name="AIRLOCK_KEYPAD" xml:space="preserve">
+        <value>Das Tastenfeld|Tastenfeld|Tastatur</value>
+    </data>
+    <data name="AIRLOCK_KEYPAD_RED_BUTTON" xml:space="preserve">
+        <value>Der rote Knopf|Roter Knopf|Rote Taste</value>
+    </data>
+    <data name="AIRLOCK_KEYPAD_GREEN_BUTTON" xml:space="preserve">
+        <value>Der grüne Knopf|Grüner Knopf|Grüne Taste</value>
     </data>
 </root>

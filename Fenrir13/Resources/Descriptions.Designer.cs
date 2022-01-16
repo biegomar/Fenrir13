@@ -61,11 +61,39 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Schleuse dient als Weg nach Draußen. Sobald irgendwelche Außenarbeiten erledigt werden müssen, muss ein Crewmitglied diesen Raum passieren..
+        ///   Looks up a localized string similar to Die Schleuse dient als Weg nach Draußen und sobald Du komplett eingetreten bist, schließt sich die Tür hinter Dir und ein weiteres Schott wird davor heruntergelassen. Du fühlst plötzlich, dass Deine Glieder sich leichter anfühlen, Deine Bewegungen sind mühelos und Du spürst kaum noch Dein eigenes Gewicht und alle mitgeführten Gegenstände scheinen nichts mehr zu wiegen. Klar, denn hier in der Schleuse wird bereits auf die künstliche Schwerkraft verzichtet. 
+        ///Am südlichen Ende der Schleuse trennt ein weiteres [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string AIRLOCK {
             get {
                 return ResourceManager.GetString("AIRLOCK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Eigentlich sind es nur zwei große, beschriftete Tasten, die man bequem mit einer Hand auslösen kann. Eine der Tasten ist rot und mit dem Wort &apos;OPEN&apos; beschriftet und die andere Taste grün und auf ihr prangt das Wort &apos;CLOSE&apos;..
+        /// </summary>
+        internal static string AIRLOCK_KEYPAD {
+            get {
+                return ResourceManager.GetString("AIRLOCK_KEYPAD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Damit scheint man das massive Schott wieder verriegeln und schließen zu können..
+        /// </summary>
+        internal static string AIRLOCK_KEYPAD_GREEN_BUTTON {
+            get {
+                return ResourceManager.GetString("AIRLOCK_KEYPAD_GREEN_BUTTON", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hier ist etwas Vorsicht geboten. Denn mit diesem Knopf scheint man das massive Schott entriegeln und öffnen zu können..
+        /// </summary>
+        internal static string AIRLOCK_KEYPAD_RED_BUTTON {
+            get {
+                return ResourceManager.GetString("AIRLOCK_KEYPAD_RED_BUTTON", resourceCulture);
             }
         }
         
