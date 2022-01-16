@@ -17,6 +17,8 @@ internal class AirlockPrerequisites
 
         AddSurroundings(airlock);
         
+        AddChangeRoomEvents(airlock, eventProvider);
+        
         return airlock;
     }
     
@@ -25,5 +27,11 @@ internal class AirlockPrerequisites
         airlock.Surroundings.Add(Keys.AIRLOCK_KEYPAD, Descriptions.AIRLOCK_KEYPAD);
         airlock.Surroundings.Add(Keys.AIRLOCK_KEYPAD_GREEN_BUTTON, Descriptions.AIRLOCK_KEYPAD_GREEN_BUTTON);
         airlock.Surroundings.Add(Keys.AIRLOCK_KEYPAD_RED_BUTTON, Descriptions.AIRLOCK_KEYPAD_RED_BUTTON);
+    }
+    
+    private static void AddChangeRoomEvents(Location airlock, EventProvider eventProvider)
+    {
+        airlock.AfterChangeLocation += eventProvider.EnterAirlock;
+        airlock.BeforeChangeLocation += eventProvider.LeaveAirlock;
     }
 }

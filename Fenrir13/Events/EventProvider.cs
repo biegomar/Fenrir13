@@ -1,4 +1,5 @@
 using System.Text;
+using Fenrir13.GamePlay;
 using Fenrir13.Resources;
 using Heretic.InteractiveFiction.Exceptions;
 using Heretic.InteractiveFiction.GamePlay.EventSystem.EventArgs;
@@ -294,6 +295,43 @@ internal partial class EventProvider
             else
             {
                 this.PrintMenu(eventArgs.Text);
+            }
+        }
+    }
+    
+    internal void EnterAirlock(object sender, ChangeLocationEventArgs eventArgs)
+    {
+        if (sender is Location airlock && airlock.Key == Keys.AIRLOCK)
+        {
+            ResetItemWeight(this.universe.ActivePlayer.Items);
+            PrintingSubsystem.Resource(Descriptions.ZERO_GRAVITY);
+        }
+    }
+    
+    internal void LeaveAirlock(object sender, ChangeLocationEventArgs eventArgs)
+    {
+        if (sender is Location airlock && airlock.Key == Keys.AIRLOCK && eventArgs.NewDestinationNode.Location.Key == Keys.MACHINE_CORRIDOR_MID)
+        {
+            SetItemWeight(this.universe.ActivePlayer.Items);
+            PrintingSubsystem.Resource(Descriptions.GRAVITY_NORMAL);
+        }
+    }
+
+    private void ResetItemWeight(ICollection<Item> items)
+    {
+        foreach (var item in items)
+        {
+            item.Weight = 0;
+        }
+    }
+
+    private void SetItemWeight(ICollection<Item> items)
+    {
+        foreach (var item in items)
+        {
+            if (ItemWeights.WeightDictionary.ContainsKey(item.Key))
+            {
+                item.Weight = ItemWeights.WeightDictionary[item.Key];    
             }
         }
     }

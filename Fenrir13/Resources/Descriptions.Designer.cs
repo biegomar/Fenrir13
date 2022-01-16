@@ -61,8 +61,8 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Schleuse dient als Weg nach Draußen und sobald Du komplett eingetreten bist, schließt sich die Tür hinter Dir und ein weiteres Schott wird davor heruntergelassen. Du fühlst plötzlich, dass Deine Glieder sich leichter anfühlen, Deine Bewegungen sind mühelos und Du spürst kaum noch Dein eigenes Gewicht und alle mitgeführten Gegenstände scheinen nichts mehr zu wiegen. Klar, denn hier in der Schleuse wird bereits auf die künstliche Schwerkraft verzichtet. 
-        ///Am südlichen Ende der Schleuse trennt ein weiteres [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to Die Schleuse dient als Weg nach Draußen und sobald Du komplett eingetreten bist, schließt sich die Tür hinter Dir und ein weiteres Schott wird davor heruntergelassen. Du fühlst plötzlich, dass Deine Glieder sich leichter anfühlen, Deine Bewegungen sind mühelos und Du spürst kaum noch Dein eigenes Gewicht. Klar, denn hier in der Schleuse wird bereits auf die künstliche Schwerkraft verzichtet. 
+        ///Am südlichen Ende der Schleuse trennt ein weiteres, massives Schott den Raum von einem breiten Steg, der bereits vo [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string AIRLOCK {
             get {
@@ -729,6 +729,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Alle Gegenstände, die Du mit Dir führst erhalten durch die einsetzende künstliche Schwerkraft wieder ihr gefühltes Normalgewicht..
+        /// </summary>
+        internal static string GRAVITY_NORMAL {
+            get {
+                return ResourceManager.GetString("GRAVITY_NORMAL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Dies ist ein gut ausgestatteter Fitnessraum für die Zeit der Reise, in der man aktiv und wach ist. Auch in modernen Zeiten legt man bei Viking Wert auf Handarbeit und Gewichte stemmen. Daher finden sich hier auch klassische Fitnessmaschinen mit variablen Gewichten. Du siehst die Cardiostation, die mehrere Übungen zulässt, genauso wie eine Powerstation und einen - na sagen wir mal - Gymnastikbereich, mit vielen Seilen, Sandsäcken und tragbaren Gewichten. Alle Geräte sind an ihren Plätzen verankert..
         /// </summary>
         internal static string GYM {
@@ -1170,6 +1179,15 @@ namespace Fenrir13.Resources {
         internal static string WORKOUTS {
             get {
                 return ResourceManager.GetString("WORKOUTS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Alle Gegenstände, die Du bei Dir trägst sind nun schwerelos und scheinen kein Gewicht mehr zu haben..
+        /// </summary>
+        internal static string ZERO_GRAVITY {
+            get {
+                return ResourceManager.GetString("ZERO_GRAVITY", resourceCulture);
             }
         }
     }

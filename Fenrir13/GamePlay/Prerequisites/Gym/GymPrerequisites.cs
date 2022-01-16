@@ -61,7 +61,7 @@ internal static class GymPrerequisites
             Description = Descriptions.DUMBBELL_BAR,
             ContainmentDescription = Descriptions.DUMBBELL_BAR_CONTAINMENT,
             IsHidden = true,
-            Weight = 5000
+            Weight = ItemWeights.DUMBBELL_BAR
         };
         
         AddAfterTakeEvents(item, eventProvider);

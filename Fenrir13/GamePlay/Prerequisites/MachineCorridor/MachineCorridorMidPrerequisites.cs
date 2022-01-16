@@ -1,3 +1,4 @@
+using System.Runtime.CompilerServices;
 using Fenrir13.Events;
 using Fenrir13.Resources;
 using Heretic.InteractiveFiction.Objects;
@@ -16,7 +17,7 @@ internal static class MachineCorridorMidPrerequisites
             IsLocked = true,
             LockDescription = Descriptions.MACHINE_CORRIDOR_MID_LOCKDESCRIPTION
         };
-
+        
         return corridor;
     }
 }

@@ -67,7 +67,7 @@ internal static class EquipmentRoomPrerequisites
             Name = Items.HELMET,
             Description = Descriptions.HELMET,
             FirstLookDescription = Descriptions.HELMET_FIRSTLOOK,
-            Weight = 2500
+            Weight = ItemWeights.HELMET
         };
 
         return helmet;
@@ -80,7 +80,7 @@ internal static class EquipmentRoomPrerequisites
             Key = Keys.GLOVES,
             Name = Items.GLOVES,
             Description = Descriptions.GLOVES,
-            Weight = 150
+            Weight = ItemWeights.GLOVES
         };
 
         return gloves;
@@ -93,7 +93,7 @@ internal static class EquipmentRoomPrerequisites
             Key = Keys.BOOTS,
             Name = Items.BOOTS,
             Description = Descriptions.BOOTS,
-            Weight = 500
+            Weight = ItemWeights.BOOTS
         };
 
         return boots;

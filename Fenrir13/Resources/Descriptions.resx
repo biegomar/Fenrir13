@@ -330,7 +330,7 @@ Vielleicht kannst Du unten bei den Maschinenräumen mehr unternehmen als von hie
         <value>Für die maximal sechs Personen Besatzung ist die Küche üppig ausgestattet und sehr geräumig. </value>
     </data>
     <data name="AIRLOCK" xml:space="preserve">
-        <value>Die Schleuse dient als Weg nach Draußen und sobald Du komplett eingetreten bist, schließt sich die Tür hinter Dir und ein weiteres Schott wird davor heruntergelassen. Du fühlst plötzlich, dass Deine Glieder sich leichter anfühlen, Deine Bewegungen sind mühelos und Du spürst kaum noch Dein eigenes Gewicht und alle mitgeführten Gegenstände scheinen nichts mehr zu wiegen. Klar, denn hier in der Schleuse wird bereits auf die künstliche Schwerkraft verzichtet. 
+        <value>Die Schleuse dient als Weg nach Draußen und sobald Du komplett eingetreten bist, schließt sich die Tür hinter Dir und ein weiteres Schott wird davor heruntergelassen. Du fühlst plötzlich, dass Deine Glieder sich leichter anfühlen, Deine Bewegungen sind mühelos und Du spürst kaum noch Dein eigenes Gewicht. Klar, denn hier in der Schleuse wird bereits auf die künstliche Schwerkraft verzichtet. 
 Am südlichen Ende der Schleuse trennt ein weiteres, massives Schott den Raum von einem breiten Steg, der bereits vollständig ins All ragt. Das Schott scheint über ein einfaches Tastenfeld gesteuert zu werden, dass sich direkt daneben an der Wand befindet.</value>
     </data>
     <data name="ENGINE_ROOM" xml:space="preserve">
@@ -420,5 +420,11 @@ Die Wand mit der Tür ist frei, nur ein kleiner Papiereimer steht dort.</value>
     </data>
     <data name="EQUIPMENT_ROOM_CLOTH" xml:space="preserve">
         <value>Im Moment ist keine Kleidung zu sehen. Die Nischen sind leer und auf den Bänken liegt auch nichts.</value>
+    </data>
+    <data name="ZERO_GRAVITY" xml:space="preserve">
+        <value>Alle Gegenstände, die Du bei Dir trägst sind nun schwerelos und scheinen kein Gewicht mehr zu haben.</value>
+    </data>
+    <data name="GRAVITY_NORMAL" xml:space="preserve">
+        <value>Alle Gegenstände, die Du mit Dir führst erhalten durch die einsetzende künstliche Schwerkraft wieder ihr gefühltes Normalgewicht.</value>
     </data>
 </root>
