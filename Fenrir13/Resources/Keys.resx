@@ -252,4 +252,16 @@
     <data name="AIRLOCK_KEYPAD_GREEN_BUTTON" xml:space="preserve">
         <value>AIRLOCK_KEYPAD_GREEN_BUTTON</value>
     </data>
+    <data name="EQUIPMENT_ROOM_BENCH" xml:space="preserve">
+        <value>EQUIPMENT_ROOM_BENCH</value>
+    </data>
+    <data name="EQUIPMENT_ROOM_NICHE" xml:space="preserve">
+        <value>EQUIPMENT_ROOM_NICHE</value>
+    </data>
+    <data name="EQUIPMENT_ROOM_TRASHBIN" xml:space="preserve">
+        <value>EQUIPMENT_ROOM_TRASHBIN</value>
+    </data>
+    <data name="EQUIPMENT_ROOM_CLOTH" xml:space="preserve">
+        <value>EQUIPMENT_ROOM_CLOTH</value>
+    </data>
 </root>

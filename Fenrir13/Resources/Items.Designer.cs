@@ -97,7 +97,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Stiefel|Stiefel|Moonboots.
+        ///   Looks up a localized string similar to Die Stiefel|Stiefel|Moonboots|Boots.
         /// </summary>
         internal static string BOOTS {
             get {
@@ -160,7 +160,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Wand|Zimmerwand.
+        ///   Looks up a localized string similar to Wand|Zimmerwand|Wände|Zimmerwände|Raumwand|Raumwände.
         /// </summary>
         internal static string CHAMBER_WALL {
             get {
@@ -322,6 +322,42 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Die Sitzbänke|Sitzbänke|Sitzbank|Bänke|Bank|Ausstattung.
+        /// </summary>
+        internal static string EQUIPMENT_ROOM_BENCH {
+            get {
+                return ResourceManager.GetString("EQUIPMENT_ROOM_BENCH", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Die Kleidungsstücke|Kleidungsstücke|Kleidung.
+        /// </summary>
+        internal static string EQUIPMENT_ROOM_CLOTH {
+            get {
+                return ResourceManager.GetString("EQUIPMENT_ROOM_CLOTH", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Die Nische|Nische|Wandnische|Nischen|Wandnischen.
+        /// </summary>
+        internal static string EQUIPMENT_ROOM_NICHE {
+            get {
+                return ResourceManager.GetString("EQUIPMENT_ROOM_NICHE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Der Mülleimer|Mülleimer|Papiereimer|Papierkorb|Müllkorb|Abfalleimer|Abfallkorb.
+        /// </summary>
+        internal static string EQUIPMENT_ROOM_TRASHBIN {
+            get {
+                return ResourceManager.GetString("EQUIPMENT_ROOM_TRASHBIN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Der Gymnastikbereich|Gymnastikbereich.
         /// </summary>
         internal static string EXERCISE_AREA {
@@ -358,7 +394,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Handschuhe|Handschuhe.
+        ///   Looks up a localized string similar to Die Handschuhe|Handschuhe|Handschuh.
         /// </summary>
         internal static string GLOVES {
             get {

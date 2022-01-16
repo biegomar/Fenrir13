@@ -593,7 +593,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Es handelt sich um eine Kiste aus silber eloxiertem Aluminium mit einem ungefähren Ausmaß von 80 cm x 60 cm x 40 cm..
+        ///   Looks up a localized string similar to Es handelt sich um eine Kiste aus silber eloxiertem Aluminium mit einem ungefähren Ausmaß von 80 cm Breite, 40 cm Höhe und 60 cm Tiefe. Naja, sie passt zumindest bequem unter die Sitzbank..
         /// </summary>
         internal static string EQUIPMENT_BOX {
             get {
@@ -638,11 +638,48 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to In diesem Raum bereiten sich die Mechaniker auf ihre Ausseneinsätze vor..
+        ///   Looks up a localized string similar to In diesem Raum bereiten sich die Mechaniker auf ihre Außeneinsätze vor. Er erinnert Dich von Aufbau und der Ausstattung fast an eine Umkleidekabine vom Schulsport. An drei Wänden stehen einfache Sitzbänke und in den Wänden sind kleine Nischen eingelassen, die dafür genutzt werden können, um Kleidung aufzuhängen. Jede Wand hat zwei Nischen, was konsequent ist, da an Bord der Fenrir 13 maximal 6 Crew-Mitglieder vorgesehen sind. 
+        ///Die Wand mit der Tür ist frei, nur ein kleiner Papiereimer steht dort..
         /// </summary>
         internal static string EQUIPMENT_ROOM {
             get {
                 return ResourceManager.GetString("EQUIPMENT_ROOM", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Die einfachen aber stabilen Sitzbänke geben mit ihrer Turnbankform dem Raum den schon beschriebenen Charakter einer Umkleidekabine. Sie nehmen ungefähr die Hälfte der Raumbreite ein, vielleicht so 2 Meter, sind etwas höher als die Metallbox und bieten eine nur recht schmale Sitzfläche. Das Gestell scheint aus Metall, wahrscheinlich Stahl zu sein und die Sitzfläche wird durch drei Holzpanele gebildet, die mit einem geringen Abstand nebeneinander verschraubt sind..
+        /// </summary>
+        internal static string EQUIPMENT_ROOM_BENCH {
+            get {
+                return ResourceManager.GetString("EQUIPMENT_ROOM_BENCH", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Im Moment ist keine Kleidung zu sehen. Die Nischen sind leer und auf den Bänken liegt auch nichts..
+        /// </summary>
+        internal static string EQUIPMENT_ROOM_CLOTH {
+            get {
+                return ResourceManager.GetString("EQUIPMENT_ROOM_CLOTH", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Die Nischen sind raumhoch, etwas breiter als einen halben Meter und tief genug, um seine Klamotten komplett verschwinden zu lassen. Auf Brusthöhe ist eine Garderobenstange eingelassen und ermöglich es, daran Klamotten aufzuhängen. Auf Höhe der Sitzfläche kann man auf einer Ablage beispielsweise eine Tasche oder Schuhe abstellen. Alles sehr funktional..
+        /// </summary>
+        internal static string EQUIPMENT_ROOM_NICHE {
+            get {
+                return ResourceManager.GetString("EQUIPMENT_ROOM_NICHE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Der runde Papierkorb besteht aus einem Drahtgeflecht und fügt sich mit seiner schönen und zugleich unaufdringlichen Optik bestens in diesen Raum ein. Du kannst erkennen, dass er leer ist..
+        /// </summary>
+        internal static string EQUIPMENT_ROOM_TRASHBIN {
+            get {
+                return ResourceManager.GetString("EQUIPMENT_ROOM_TRASHBIN", resourceCulture);
             }
         }
         

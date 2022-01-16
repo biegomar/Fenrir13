@@ -34,7 +34,7 @@
         <value>LAPTOP|Rechner|Computer</value>
     </data>
     <data name="CHAMBER_WALL" xml:space="preserve">
-        <value>Wand|Zimmerwand</value>
+        <value>Wand|Zimmerwand|Wände|Zimmerwände|Raumwand|Raumwände</value>
     </data>
     <data name="PIERHOLE" xml:space="preserve">
         <value>Bullauge|Fenster|Weltraum|All|Weltall</value>
@@ -187,10 +187,10 @@
         <value>Der Weltraumhelm|Weltraumhelm|Helm</value>
     </data>
     <data name="GLOVES" xml:space="preserve">
-        <value>Die Handschuhe|Handschuhe</value>
+        <value>Die Handschuhe|Handschuhe|Handschuh</value>
     </data>
     <data name="BOOTS" xml:space="preserve">
-        <value>Die Stiefel|Stiefel|Moonboots</value>
+        <value>Die Stiefel|Stiefel|Moonboots|Boots</value>
     </data>
     <data name="EQUIPMENT_BOX_LOCK" xml:space="preserve">
         <value>Das Vorhängeschloß|Vorhängeschloß|Schloß</value>
@@ -203,5 +203,17 @@
     </data>
     <data name="AIRLOCK_KEYPAD_GREEN_BUTTON" xml:space="preserve">
         <value>Der grüne Knopf|Grüner Knopf|Grüne Taste</value>
+    </data>
+    <data name="EQUIPMENT_ROOM_BENCH" xml:space="preserve">
+        <value>Die Sitzbänke|Sitzbänke|Sitzbank|Bänke|Bank|Ausstattung</value>
+    </data>
+    <data name="EQUIPMENT_ROOM_NICHE" xml:space="preserve">
+        <value>Die Nische|Nische|Wandnische|Nischen|Wandnischen</value>
+    </data>
+    <data name="EQUIPMENT_ROOM_TRASHBIN" xml:space="preserve">
+        <value>Der Mülleimer|Mülleimer|Papiereimer|Papierkorb|Müllkorb|Abfalleimer|Abfallkorb</value>
+    </data>
+    <data name="EQUIPMENT_ROOM_CLOTH" xml:space="preserve">
+        <value>Die Kleidungsstücke|Kleidungsstücke|Kleidung</value>
     </data>
 </root>

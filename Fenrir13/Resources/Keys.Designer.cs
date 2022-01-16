@@ -421,6 +421,42 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to EQUIPMENT_ROOM_BENCH.
+        /// </summary>
+        internal static string EQUIPMENT_ROOM_BENCH {
+            get {
+                return ResourceManager.GetString("EQUIPMENT_ROOM_BENCH", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EQUIPMENT_ROOM_CLOTH.
+        /// </summary>
+        internal static string EQUIPMENT_ROOM_CLOTH {
+            get {
+                return ResourceManager.GetString("EQUIPMENT_ROOM_CLOTH", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EQUIPMENT_ROOM_NICHE.
+        /// </summary>
+        internal static string EQUIPMENT_ROOM_NICHE {
+            get {
+                return ResourceManager.GetString("EQUIPMENT_ROOM_NICHE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EQUIPMENT_ROOM_TRASHBIN.
+        /// </summary>
+        internal static string EQUIPMENT_ROOM_TRASHBIN {
+            get {
+                return ResourceManager.GetString("EQUIPMENT_ROOM_TRASHBIN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to EXERCISE_AREA.
         /// </summary>
         internal static string EXERCISE_AREA {

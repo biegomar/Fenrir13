@@ -367,10 +367,11 @@ Am südlichen Ende der Schleuse trennt ein weiteres, massives Schott den Raum vo
         <value>An der Garderobe hängt gerade ein typischer Space-Overall.</value>
     </data>
     <data name="EQUIPMENT_ROOM" xml:space="preserve">
-        <value>In diesem Raum bereiten sich die Mechaniker auf ihre Ausseneinsätze vor.</value>
+        <value>In diesem Raum bereiten sich die Mechaniker auf ihre Außeneinsätze vor. Er erinnert Dich von Aufbau und der Ausstattung fast an eine Umkleidekabine vom Schulsport. An drei Wänden stehen einfache Sitzbänke und in den Wänden sind kleine Nischen eingelassen, die dafür genutzt werden können, um Kleidung aufzuhängen. Jede Wand hat zwei Nischen, was konsequent ist, da an Bord der Fenrir 13 maximal 6 Crew-Mitglieder vorgesehen sind. 
+Die Wand mit der Tür ist frei, nur ein kleiner Papiereimer steht dort.</value>
     </data>
     <data name="EQUIPMENT_BOX" xml:space="preserve">
-        <value>Es handelt sich um eine Kiste aus silber eloxiertem Aluminium mit einem ungefähren Ausmaß von 80 cm x 60 cm x 40 cm.</value>
+        <value>Es handelt sich um eine Kiste aus silber eloxiertem Aluminium mit einem ungefähren Ausmaß von 80 cm Breite, 40 cm Höhe und 60 cm Tiefe. Naja, sie passt zumindest bequem unter die Sitzbank.</value>
     </data>
     <data name="EQUIPMENT_BOX_CONTAINMENT" xml:space="preserve">
         <value>Unter einer der Bänke liegt eine Metallkiste.</value>
@@ -407,5 +408,17 @@ Am südlichen Ende der Schleuse trennt ein weiteres, massives Schott den Raum vo
     </data>
     <data name="AIRLOCK_KEYPAD_GREEN_BUTTON" xml:space="preserve">
         <value>Damit scheint man das massive Schott wieder verriegeln und schließen zu können.</value>
+    </data>
+    <data name="EQUIPMENT_ROOM_BENCH" xml:space="preserve">
+        <value>Die einfachen aber stabilen Sitzbänke geben mit ihrer Turnbankform dem Raum den schon beschriebenen Charakter einer Umkleidekabine. Sie nehmen ungefähr die Hälfte der Raumbreite ein, vielleicht so 2 Meter, sind etwas höher als die Metallbox und bieten eine nur recht schmale Sitzfläche. Das Gestell scheint aus Metall, wahrscheinlich Stahl zu sein und die Sitzfläche wird durch drei Holzpanele gebildet, die mit einem geringen Abstand nebeneinander verschraubt sind.</value>
+    </data>
+    <data name="EQUIPMENT_ROOM_NICHE" xml:space="preserve">
+        <value>Die Nischen sind raumhoch, etwas breiter als einen halben Meter und tief genug, um seine Klamotten komplett verschwinden zu lassen. Auf Brusthöhe ist eine Garderobenstange eingelassen und ermöglich es, daran Klamotten aufzuhängen. Auf Höhe der Sitzfläche kann man auf einer Ablage beispielsweise eine Tasche oder Schuhe abstellen. Alles sehr funktional.</value>
+    </data>
+    <data name="EQUIPMENT_ROOM_TRASHBIN" xml:space="preserve">
+        <value>Der runde Papierkorb besteht aus einem Drahtgeflecht und fügt sich mit seiner schönen und zugleich unaufdringlichen Optik bestens in diesen Raum ein. Du kannst erkennen, dass er leer ist.</value>
+    </data>
+    <data name="EQUIPMENT_ROOM_CLOTH" xml:space="preserve">
+        <value>Im Moment ist keine Kleidung zu sehen. Die Nischen sind leer und auf den Bänken liegt auch nichts.</value>
     </data>
 </root>

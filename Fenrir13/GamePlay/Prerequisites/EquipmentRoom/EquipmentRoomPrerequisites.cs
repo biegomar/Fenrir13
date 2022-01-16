@@ -27,6 +27,11 @@ internal static class EquipmentRoomPrerequisites
     private static void AddSurroundings(Location equipmentRoom)
     {
         equipmentRoom.Surroundings.Add(Keys.EQUIPMENT_BOX_LOCK, Descriptions.EQUIPMENT_BOX_LOCK);
+        equipmentRoom.Surroundings.Add(Keys.CHAMBER_WALL, Descriptions.CHAMBER_WALL);
+        equipmentRoom.Surroundings.Add(Keys.EQUIPMENT_ROOM_BENCH, Descriptions.EQUIPMENT_ROOM_BENCH);
+        equipmentRoom.Surroundings.Add(Keys.EQUIPMENT_ROOM_NICHE, Descriptions.EQUIPMENT_ROOM_NICHE);
+        equipmentRoom.Surroundings.Add(Keys.EQUIPMENT_ROOM_TRASHBIN, Descriptions.EQUIPMENT_ROOM_TRASHBIN);
+        equipmentRoom.Surroundings.Add(Keys.EQUIPMENT_ROOM_CLOTH, Descriptions.EQUIPMENT_ROOM_CLOTH);
     }
 
     private static Item GetBox(EventProvider eventProvider)
@@ -41,7 +46,8 @@ internal static class EquipmentRoomPrerequisites
             CloseDescription = Descriptions.EQUIPMENT_BOX_CLOSED,
             IsClosed = true,
             IsLocked = true,
-            IsCloseAble = true
+            IsCloseAble = true,
+            IsPickAble = false
         };
         
         box.Items.Add(GetHelmet(eventProvider));
@@ -60,7 +66,8 @@ internal static class EquipmentRoomPrerequisites
             Key = Keys.HELMET,
             Name = Items.HELMET,
             Description = Descriptions.HELMET,
-            FirstLookDescription = Descriptions.HELMET_FIRSTLOOK
+            FirstLookDescription = Descriptions.HELMET_FIRSTLOOK,
+            Weight = 2500
         };
 
         return helmet;
@@ -72,7 +79,8 @@ internal static class EquipmentRoomPrerequisites
         {
             Key = Keys.GLOVES,
             Name = Items.GLOVES,
-            Description = Descriptions.GLOVES
+            Description = Descriptions.GLOVES,
+            Weight = 150
         };
 
         return gloves;
@@ -84,7 +92,8 @@ internal static class EquipmentRoomPrerequisites
         {
             Key = Keys.BOOTS,
             Name = Items.BOOTS,
-            Description = Descriptions.BOOTS
+            Description = Descriptions.BOOTS,
+            Weight = 500
         };
 
         return boots;
