@@ -98,6 +98,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Dieses sehr dünne und leichte Geschirr dient bei Spaziergängen im All zur Sicherung..
+        /// </summary>
+        internal static string BELT {
+            get {
+                return ResourceManager.GetString("BELT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Da Dein Space-Suite Deine Füße nicht bedeckt, dienen die Boots dazu, Dich bei einem Space-Ausflug zu schützen. Auch sind die Stiefel magnetisch, damit man an der Aussenhaut des Schiffs sicheren Halt hat..
         /// </summary>
         internal static string BOOTS {
@@ -689,6 +698,24 @@ namespace Fenrir13.Resources {
         internal static string EXERCISE_AREA {
             get {
                 return ResourceManager.GetString("EXERCISE_AREA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Die Öse ist aus Metal und ist mit dem Haltegurt verwoben. Das sieht sehr reißfest und vertrauenswürdig aus..
+        /// </summary>
+        internal static string EYELET {
+            get {
+                return ResourceManager.GetString("EYELET", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to An einer Öse am Geschirr lässt sich eine Haltevorrichtung einhaken..
+        /// </summary>
+        internal static string EYELET_CONTAINMENT {
+            get {
+                return ResourceManager.GetString("EYELET_CONTAINMENT", resourceCulture);
             }
         }
         

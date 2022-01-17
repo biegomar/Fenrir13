@@ -264,4 +264,10 @@
     <data name="EQUIPMENT_ROOM_CLOTH" xml:space="preserve">
         <value>EQUIPMENT_ROOM_CLOTH</value>
     </data>
+    <data name="BELT" xml:space="preserve">
+        <value>BELT</value>
+    </data>
+    <data name="EYELET" xml:space="preserve">
+        <value>EYELET</value>
+    </data>
 </root>

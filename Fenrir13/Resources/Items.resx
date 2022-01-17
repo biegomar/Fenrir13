@@ -216,4 +216,10 @@
     <data name="EQUIPMENT_ROOM_CLOTH" xml:space="preserve">
         <value>Die Kleidungsstücke|Kleidungsstücke|Kleidung</value>
     </data>
+    <data name="BELT" xml:space="preserve">
+        <value>Der Sicherungsgurt|Sicherungsgurt|Gurt|Geschirr|Sicherungsgeschirr</value>
+    </data>
+    <data name="EYELET" xml:space="preserve">
+        <value>Die Öse|Öse</value>
+    </data>
 </root>

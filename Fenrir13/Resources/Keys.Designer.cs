@@ -97,6 +97,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to BELT.
+        /// </summary>
+        internal static string BELT {
+            get {
+                return ResourceManager.GetString("BELT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to BIKE.
         /// </summary>
         internal static string BIKE {
@@ -462,6 +471,15 @@ namespace Fenrir13.Resources {
         internal static string EXERCISE_AREA {
             get {
                 return ResourceManager.GetString("EXERCISE_AREA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EYELET.
+        /// </summary>
+        internal static string EYELET {
+            get {
+                return ResourceManager.GetString("EYELET", resourceCulture);
             }
         }
         

@@ -88,6 +88,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Der Sicherungsgurt|Sicherungsgurt|Gurt|Geschirr|Sicherungsgeschirr.
+        /// </summary>
+        internal static string BELT {
+            get {
+                return ResourceManager.GetString("BELT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Ein Fahrrad|Fahrrad|Rad.
         /// </summary>
         internal static string BIKE {
@@ -363,6 +372,15 @@ namespace Fenrir13.Resources {
         internal static string EXERCISE_AREA {
             get {
                 return ResourceManager.GetString("EXERCISE_AREA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Die Öse|Öse.
+        /// </summary>
+        internal static string EYELET {
+            get {
+                return ResourceManager.GetString("EYELET", resourceCulture);
             }
         }
         

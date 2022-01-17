@@ -32,6 +32,7 @@ internal static class EquipmentRoomPrerequisites
         equipmentRoom.Surroundings.Add(Keys.EQUIPMENT_ROOM_NICHE, Descriptions.EQUIPMENT_ROOM_NICHE);
         equipmentRoom.Surroundings.Add(Keys.EQUIPMENT_ROOM_TRASHBIN, Descriptions.EQUIPMENT_ROOM_TRASHBIN);
         equipmentRoom.Surroundings.Add(Keys.EQUIPMENT_ROOM_CLOTH, Descriptions.EQUIPMENT_ROOM_CLOTH);
+        equipmentRoom.Surroundings.Add(Keys.EYELET, Descriptions.EYELET);
     }
 
     private static Item GetBox(EventProvider eventProvider)
@@ -53,6 +54,7 @@ internal static class EquipmentRoomPrerequisites
         box.Items.Add(GetHelmet(eventProvider));
         box.Items.Add(GetGloves(eventProvider));
         box.Items.Add(GetBoots(eventProvider));
+        box.Items.Add(GetBelt(eventProvider));
         
         AddOpenEvents(box, eventProvider);
 
@@ -99,6 +101,36 @@ internal static class EquipmentRoomPrerequisites
         return boots;
     }
     
+    private static Item GetBelt(EventProvider eventProvider)
+    {
+        var belt = new Item()
+        {
+            Key = Keys.BELT,
+            Name = Items.BELT,
+            Description = Descriptions.BELT,
+            Weight = ItemWeights.BELT
+        };
+        
+        belt.Items.Add(GetEyelet(eventProvider));
+
+        return belt;
+    }
+    
+    private static Item GetEyelet(EventProvider eventProvider)
+    {
+        var eyelet = new Item()
+        {
+            Key = Keys.EYELET,
+            Name = Items.EYELET,
+            Description = Descriptions.EYELET,
+            ContainmentDescription = Descriptions.EYELET_CONTAINMENT,
+            IsPickAble = false
+        };
+
+        return eyelet;
+    }
+    
+
     private static void AddBreakEvents(Location equipmentRoom, EventProvider eventProvider)
     {
         equipmentRoom.Break += eventProvider.BreakEquipmentBoxLock;
