@@ -756,6 +756,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Mit dem plötzlichen Wiedereinsetzen der Schwerkraft hast Du nicht gerechnet und kannst einige Gegenstände nicht festhalten. Du lässt sie los und im Raum zurück..
+        /// </summary>
+        internal static string GRAVITY_ITEM_DROP {
+            get {
+                return ResourceManager.GetString("GRAVITY_ITEM_DROP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Alle Gegenstände, die Du mit Dir führst erhalten durch die einsetzende künstliche Schwerkraft wieder ihr gefühltes Normalgewicht..
         /// </summary>
         internal static string GRAVITY_NORMAL {

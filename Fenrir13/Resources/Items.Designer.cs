@@ -322,7 +322,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Das Vorhängeschloß|Vorhängeschloß|Schloß.
+        ///   Looks up a localized string similar to Das Vorhängeschloß|Vorhängeschloß|Schloß|Schloss|Vorhängeschloss.
         /// </summary>
         internal static string EQUIPMENT_BOX_LOCK {
             get {

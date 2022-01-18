@@ -312,8 +312,35 @@ internal partial class EventProvider
     {
         if (sender is Location airlock && airlock.Key == Keys.AIRLOCK && eventArgs.NewDestinationNode.Location.Key == Keys.MACHINE_CORRIDOR_MID)
         {
+            var isItemDropped = false;
             SetItemWeight(this.universe.ActivePlayer.Items);
-            PrintingSubsystem.Resource(Descriptions.GRAVITY_NORMAL);
+            var itemWeight = this.universe.ActivePlayer.Items.Sum(i => i.Weight);
+            do
+            {
+
+                if (itemWeight > this.universe.ActivePlayer.MaxPayload)
+                {
+                    var heaviestItem = this.universe.ActivePlayer.Items.OrderByDescending(i => i.Weight).First();
+                    var singleDropResult = this.universe.ActivePlayer.RemoveItem(heaviestItem);
+                    if (singleDropResult)
+                    {
+                        this.universe.ActiveLocation.Items.Add(heaviestItem);
+                        isItemDropped = true;
+                    }
+                }
+
+                itemWeight = this.universe.ActivePlayer.Items.Sum(i => i.Weight);
+            } while (itemWeight > this.universe.ActivePlayer.MaxPayload);
+
+            if (isItemDropped)
+            {
+                PrintingSubsystem.Resource(Descriptions.GRAVITY_ITEM_DROP);
+            }
+            else
+            {
+                PrintingSubsystem.Resource(Descriptions.GRAVITY_NORMAL);    
+            }
+            
         }
     }
 

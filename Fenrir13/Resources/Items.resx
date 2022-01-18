@@ -193,7 +193,7 @@
         <value>Die Stiefel|Stiefel|Moonboots|Boots</value>
     </data>
     <data name="EQUIPMENT_BOX_LOCK" xml:space="preserve">
-        <value>Das Vorhängeschloß|Vorhängeschloß|Schloß</value>
+        <value>Das Vorhängeschloß|Vorhängeschloß|Schloß|Schloss|Vorhängeschloss</value>
     </data>
     <data name="AIRLOCK_KEYPAD" xml:space="preserve">
         <value>Das Tastenfeld|Tastenfeld|Tastatur</value>

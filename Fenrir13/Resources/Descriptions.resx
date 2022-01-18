@@ -436,4 +436,7 @@ Die Wand mit der Tür ist frei, nur ein kleiner Papiereimer steht dort.</value>
     <data name="EYELET_CONTAINMENT" xml:space="preserve">
         <value>An einer Öse am Geschirr lässt sich eine Haltevorrichtung einhaken.</value>
     </data>
+    <data name="GRAVITY_ITEM_DROP" xml:space="preserve">
+        <value>Mit dem plötzlichen Wiedereinsetzen der Schwerkraft hast Du nicht gerechnet und kannst einige Gegenstände nicht festhalten. Du lässt sie los und im Raum zurück.</value>
+    </data>
 </root>
