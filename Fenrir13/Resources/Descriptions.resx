@@ -328,7 +328,7 @@ Vielleicht kannst Du unten bei den Maschinenräumen mehr unternehmen als von hie
         <value>In diesem Raum lassen sich viele Dinge verwirklichen. Hier kann man gemühtlich chillen, ein wenig Zocken oder einfach nur mit den Kollegen quatschen.</value>
     </data>
     <data name="KITCHEN" xml:space="preserve">
-        <value>Für die maximal sechs Personen Besatzung ist die Küche üppig ausgestattet und sehr geräumig. </value>
+        <value>Für die maximal sechs Personen Besatzung ist die Küche üppig ausgestattet und sehr geräumig. Es finden sich ein Ofen für die Zubereitung der Fertiggerichte, eine Spülmaschine, ein Kühlschrank für die Speisen und Getränke, sowie einige Schränke. Wenn man essen möchte nimmt man an einem der sechs Stühle vor dem geräumigen Tisch in der Mitte des Raumes Platz. Wie überall im Schiff ist der Boden aus magnetisierbarem Metall, um auch hier das Möbiliar gegen Verrutschen zu sichern.</value>
     </data>
     <data name="AIRLOCK" xml:space="preserve">
         <value>Die Schleuse dient als Weg nach Draußen und sobald Du komplett eingetreten bist, schließt sich die Tür hinter Dir und ein weiteres Schott wird davor heruntergelassen. Du fühlst plötzlich, dass Deine Glieder sich leichter anfühlen, Deine Bewegungen sind mühelos und Du spürst kaum noch Dein eigenes Gewicht. Klar, denn hier in der Schleuse wird bereits auf die künstliche Schwerkraft verzichtet. 
@@ -381,7 +381,7 @@ Die Wand mit der Tür ist frei, nur ein kleiner Papiereimer steht dort.</value>
         <value>Sie ist durch ein Vorhängeschloß gesichert.</value>
     </data>
     <data name="HELMET" xml:space="preserve">
-        <value>Der Helm schützt Dich im All und lässt Dich atmen. Im Bereich des Hinterkopf führt ein kurzer Schlauch auch dem Helm.</value>
+        <value>Der Helm schützt Dich im All und lässt Dich atmen. Im Bereich des Hinterkopf führt ein kurzer Schlauch aus dem Helm.</value>
     </data>
     <data name="HELMET_FIRSTLOOK" xml:space="preserve">
         <value>Daran kann wohl eine Sauerstoffflasche montiert werden. Allerdings befindet sich im Moment keine an dem Helm.</value>

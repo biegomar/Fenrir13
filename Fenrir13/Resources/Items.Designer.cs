@@ -439,6 +439,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Schrank|Schränke.
+        /// </summary>
+        internal static string KITCHEN_CLOSETS {
+            get {
+                return ResourceManager.GetString("KITCHEN_CLOSETS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to LAPTOP|Rechner|Computer.
         /// </summary>
         internal static string LAPTOP {

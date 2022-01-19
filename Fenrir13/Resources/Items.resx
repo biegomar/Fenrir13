@@ -222,4 +222,7 @@
     <data name="EYELET" xml:space="preserve">
         <value>Die Öse|Öse</value>
     </data>
+    <data name="KITCHEN_CLOSETS" xml:space="preserve">
+        <value>Schrank|Schränke</value>
+    </data>
 </root>

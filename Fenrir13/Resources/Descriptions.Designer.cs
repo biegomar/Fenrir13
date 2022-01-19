@@ -801,7 +801,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Helm schützt Dich im All und lässt Dich atmen. Im Bereich des Hinterkopf führt ein kurzer Schlauch auch dem Helm..
+        ///   Looks up a localized string similar to Der Helm schützt Dich im All und lässt Dich atmen. Im Bereich des Hinterkopf führt ein kurzer Schlauch aus dem Helm..
         /// </summary>
         internal static string HELMET {
             get {
@@ -839,7 +839,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Für die maximal sechs Personen Besatzung ist die Küche üppig ausgestattet und sehr geräumig. .
+        ///   Looks up a localized string similar to Für die maximal sechs Personen Besatzung ist die Küche üppig ausgestattet und sehr geräumig. Es finden sich ein Ofen für die Zubereitung der Fertiggerichte, eine Spülmaschine, ein Kühlschrank für die Speisen und Getränke, sowie einige Schränke. Wenn man essen möchte nimmt man an einem der sechs Stühle vor dem geräumigen Tisch in der Mitte des Raumes Platz. Wie überall im Schiff ist der Boden aus magnetisierbarem Metall, um auch hier das Möbiliar gegen Verrutschen zu sichern..
         /// </summary>
         internal static string KITCHEN {
             get {
