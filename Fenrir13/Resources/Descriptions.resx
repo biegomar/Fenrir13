@@ -93,7 +93,8 @@ Voller Stolz prangt der Name des Schiffs in Runen an der Steuerbordseite des Car
         <value>Ein typischer Kleiderständer der es ermöglicht, schnell Kleidungsstücke aufzuhängen und ebenso schnell wieder herunterzunehmen.</value>
     </data>
     <data name="SPACE_SUITE" xml:space="preserve">
-        <value>Der Einteiler ist wie eine zweite Haut konzipiert. Er wärmt, kühlt, schützt und überwacht den Körper und seine Funktion. Damit das Schiff permanent in Kontakt zu dem Crew-Mitglied ist, muss der Anzug ständig getragen werden. Nur während des Cryo-Schlafs wird er ausgezogen.</value>
+        <value>Der Einteiler ist einer dieser aktuellen Bio-Suites und ist wie eine zweite Haut konzipiert. Er wärmt, kühlt, schützt und überwacht den Körper und seine Funktion. Er ist auch dafür ausgelegt, als Raumanzug die Arbeitseinsätze ausserhalb des Schiffs durchzuführen. Dafür ist er in der Lage auch den benötigten Druck auf den Körper auszuüben. Nur die Sauerstoffversorgung geschieht über einen zusätzlichen Helm. 
+Damit das Schiff permanent in Kontakt zu dem Crew-Mitglied ist, muss der Anzug ständig getragen werden. Nur während des Cryo-Schlafs wird er ausgezogen.</value>
     </data>
     <data name="SPACE_SUITE_TAKEN" xml:space="preserve">
         <value>Du nimmst den Anzug vom Bügel und streifst ihn Dir über. Du spürst sofort, wie sich das Material Deinen Konturen anpasst und förmlich mit Dir verschmilzt. Ein leises Bestätigungspiepen ist zu hören und der Anzug sitzt perfekt!</value>
@@ -364,7 +365,7 @@ Am südlichen Ende der Schleuse trennt ein weiteres, massives Schott den Raum vo
         <value>Eine Hantelstange fällt Dir allerdings ins Auge. Sie scheint nicht korrekt fixiert worden zu sein. Schlamperei! Wenn die sich während des Flugs gelöst hätte...</value>
     </data>
     <data name="SPACE_SUITE_CONTAINMENT" xml:space="preserve">
-        <value>An der Garderobe hängt gerade ein typischer Space-Overall.</value>
+        <value>An der Garderobe hängt gerade ein typischer Bio-Suite.</value>
     </data>
     <data name="EQUIPMENT_ROOM" xml:space="preserve">
         <value>In diesem Raum bereiten sich die Mechaniker auf ihre Außeneinsätze vor. Er erinnert Dich von Aufbau und der Ausstattung fast an eine Umkleidekabine vom Schulsport. An drei Wänden stehen einfache Sitzbänke und in den Wänden sind kleine Nischen eingelassen, die dafür genutzt werden können, um Kleidung aufzuhängen. Jede Wand hat zwei Nischen, was konsequent ist, da an Bord der Fenrir 13 maximal 6 Crew-Mitglieder vorgesehen sind. 

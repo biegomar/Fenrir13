@@ -1039,7 +1039,8 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Einteiler ist wie eine zweite Haut konzipiert. Er wärmt, kühlt, schützt und überwacht den Körper und seine Funktion. Damit das Schiff permanent in Kontakt zu dem Crew-Mitglied ist, muss der Anzug ständig getragen werden. Nur während des Cryo-Schlafs wird er ausgezogen..
+        ///   Looks up a localized string similar to Der Einteiler ist einer dieser aktuellen Bio-Suites und ist wie eine zweite Haut konzipiert. Er wärmt, kühlt, schützt und überwacht den Körper und seine Funktion. Er ist auch dafür ausgelegt, als Raumanzug die Arbeitseinsätze ausserhalb des Schiffs durchzuführen. Dafür ist er in der Lage auch den benötigten Druck auf den Körper auszuüben. Nur die Sauerstoffversorgung geschieht über einen zusätzlichen Helm. 
+        ///Damit das Schiff permanent in Kontakt zu dem Crew-Mitglied ist, muss der Anzug ständig getragen werd [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string SPACE_SUITE {
             get {
@@ -1048,7 +1049,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to An der Garderobe hängt gerade ein typischer Space-Overall..
+        ///   Looks up a localized string similar to An der Garderobe hängt gerade ein typischer Bio-Suite..
         /// </summary>
         internal static string SPACE_SUITE_CONTAINMENT {
             get {
