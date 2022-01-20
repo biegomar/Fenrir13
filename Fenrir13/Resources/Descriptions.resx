@@ -440,4 +440,7 @@ Die Wand mit der Tür ist frei, nur ein kleiner Papiereimer steht dort.</value>
     <data name="GRAVITY_ITEM_DROP" xml:space="preserve">
         <value>Mit dem plötzlichen Wiedereinsetzen der Schwerkraft hast Du nicht gerechnet und kannst einige Gegenstände nicht festhalten. Du lässt sie los und im Raum zurück.</value>
     </data>
+    <data name="WRITING_MATERIALS" xml:space="preserve">
+        <value>Da sind ein paar Stifte, Textmarker und ein paar Blätter Papier. Aber die sind aktuell nicht wirklich von Bedeutung.</value>
+    </data>
 </root>

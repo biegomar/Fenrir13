@@ -225,4 +225,7 @@
     <data name="KITCHEN_CLOSETS" xml:space="preserve">
         <value>Schrank|Schränke</value>
     </data>
+    <data name="WRITING_MATERIALS" xml:space="preserve">
+        <value>Die Schreibutensilien|Schreibutensilien|Utensilien|Schreibmaterial|Schreibmaterialien|Papier|Blätter|Stifte|Stift|Textmarker</value>
+    </data>
 </root>

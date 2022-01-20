@@ -18,16 +18,16 @@ internal static class CryoChamberPrerequisites
             Description = Descriptions.CRYOCHAMBER,
             FirstLookDescription = Descriptions.CRYOCHAMBER_FIRSTLOOK
         };
-        
+
         cryoChamber.Items.Add(GetChocolateBar(eventProvider));
         cryoChamber.Items.Add(GetSpaceSuite(eventProvider));
-        
+
         AddSurroundings(cryoChamber);
-        
+
         AddAfterLookEvents(cryoChamber, eventProvider);
-        
+
         AddChangeLocationEvents(cryoChamber, eventProvider);
-        
+
         AddAfterOpenEvents(cryoChamber, eventProvider);
 
         return cryoChamber;
@@ -46,10 +46,10 @@ internal static class CryoChamberPrerequisites
         };
 
         AddAfterEatEvents(bar, eventProvider);
-        
+
         return bar;
     }
-    
+
     private static Item GetSpaceSuite(EventProvider eventProvider)
     {
         var spaceSuite = new Item
@@ -59,9 +59,9 @@ internal static class CryoChamberPrerequisites
             Name = Items.SPACE_SUITE,
             ContainmentDescription = Descriptions.SPACE_SUITE_CONTAINMENT
         };
-        
+
         AddAfterTakeEvents(spaceSuite, eventProvider);
-        
+
         return spaceSuite;
     }
 
@@ -92,8 +92,9 @@ internal static class CryoChamberPrerequisites
         cryoChamber.Surroundings.Add(Keys.CRYOCHAMBER_DOOR, Descriptions.CRYOCHAMBER_DOOR);
         cryoChamber.Surroundings.Add(Keys.DISPLAY, Descriptions.DISPLAY);
         cryoChamber.Surroundings.Add(Keys.TOILET_SEAT, Descriptions.TOILET_SEAT);
+        cryoChamber.Surroundings.Add(Keys.WRITING_MATERIALS, Descriptions.WRITING_MATERIALS);
     }
-    
+
     private static void AddAfterLookEvents(Location cryoChamber, EventProvider eventProvider)
     {
         cryoChamber.AfterLook += eventProvider.LookAtPierhole;
@@ -105,24 +106,24 @@ internal static class CryoChamberPrerequisites
         cryoChamber.AfterLook += eventProvider.LookAtDisplay;
         eventProvider.ScoreBoard.Add(nameof(eventProvider.LookAtDisplay), 1);
     }
-    
+
     private static void AddAfterEatEvents(Item chocolateBar, EventProvider eventProvider)
     {
         chocolateBar.AfterEat += eventProvider.EatChocolateBar;
         eventProvider.ScoreBoard.Add(nameof(eventProvider.EatChocolateBar), 5);
     }
-    
+
     private static void AddAfterTakeEvents(Item item, EventProvider eventProvider)
     {
         item.AfterTake += eventProvider.TakeSpaceSuite;
         eventProvider.ScoreBoard.Add(nameof(eventProvider.TakeSpaceSuite), 1);
     }
-    
+
     private static void AddAfterOpenEvents(Location room, EventProvider eventProvider)
     {
         room.AfterOpen += eventProvider.TryToOpenClosedDoor;
     }
-    
+
     private static void AddChangeLocationEvents(Location room, EventProvider eventProvider)
     {
         room.BeforeChangeLocation += eventProvider.CantLeaveWithoutSuiteAndUneatenBar;
