@@ -66,8 +66,8 @@
     <data name="WARDROBE" xml:space="preserve">
         <value>WARDROBE</value>
     </data>
-    <data name="SPACE_SUITE" xml:space="preserve">
-        <value>SPACE_SUITE</value>
+    <data name="SPACE_SUIT" xml:space="preserve">
+        <value>SPACE_SUIT</value>
     </data>
     <data name="TABLE" xml:space="preserve">
         <value>TABLE</value>

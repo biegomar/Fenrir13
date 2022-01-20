@@ -115,13 +115,13 @@ internal partial class EventProvider
     
     internal void TakeSpaceSuite(object sender, ContainerObjectEventArgs eventArgs)
     {
-        if (sender is Item spaceSuite && spaceSuite.Key == Keys.SPACE_SUITE)
+        if (sender is Item spaceSuite && spaceSuite.Key == Keys.SPACE_SUIT)
         {
             this.universe.ActivePlayer.FirstLookDescription = string.Empty;
-            this.universe.ActivePlayer.StandardClothing = Descriptions.SPACE_SUITE_FIT;
+            this.universe.ActivePlayer.StandardClothing = Descriptions.SPACE_SUIT_FIT;
             this.universe.ActivePlayer.Items.Remove(spaceSuite);
             this.universe.Score += this.universe.ScoreBoard[nameof(this.TakeSpaceSuite)];
-            PrintingSubsystem.Resource(Descriptions.SPACE_SUITE_TAKEN);
+            PrintingSubsystem.Resource(Descriptions.SPACE_SUIT_TAKEN);
             spaceSuite.AfterTake -= TakeSpaceSuite;
         }
     }
@@ -133,7 +133,7 @@ internal partial class EventProvider
         {
             if (IsPowerBarEaten())
             {
-                var suite = this.universe.ActiveLocation.GetItemByKey(Keys.SPACE_SUITE);
+                var suite = this.universe.ActiveLocation.GetItemByKey(Keys.SPACE_SUIT);
                 if (suite != default)
                 {
                     throw new BeforeChangeLocationException(Descriptions.CANT_LEAVE_CHAMBER);

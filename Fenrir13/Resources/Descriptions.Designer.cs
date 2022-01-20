@@ -165,21 +165,21 @@ namespace Fenrir13.Resources {
             }
         }
         
-        internal static string SPACE_SUITE {
+        internal static string SPACE_SUIT {
             get {
-                return ResourceManager.GetString("SPACE_SUITE", resourceCulture);
+                return ResourceManager.GetString("SPACE_SUIT", resourceCulture);
             }
         }
         
-        internal static string SPACE_SUITE_TAKEN {
+        internal static string SPACE_SUIT_TAKEN {
             get {
-                return ResourceManager.GetString("SPACE_SUITE_TAKEN", resourceCulture);
+                return ResourceManager.GetString("SPACE_SUIT_TAKEN", resourceCulture);
             }
         }
         
-        internal static string SPACE_SUITE_FIT {
+        internal static string SPACE_SUIT_FIT {
             get {
-                return ResourceManager.GetString("SPACE_SUITE_FIT", resourceCulture);
+                return ResourceManager.GetString("SPACE_SUIT_FIT", resourceCulture);
             }
         }
         
@@ -657,9 +657,9 @@ namespace Fenrir13.Resources {
             }
         }
         
-        internal static string SPACE_SUITE_CONTAINMENT {
+        internal static string SPACE_SUIT_CONTAINMENT {
             get {
-                return ResourceManager.GetString("SPACE_SUITE_CONTAINMENT", resourceCulture);
+                return ResourceManager.GetString("SPACE_SUIT_CONTAINMENT", resourceCulture);
             }
         }
         

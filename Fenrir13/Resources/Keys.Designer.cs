@@ -141,9 +141,9 @@ namespace Fenrir13.Resources {
             }
         }
         
-        internal static string SPACE_SUITE {
+        internal static string SPACE_SUIT {
             get {
-                return ResourceManager.GetString("SPACE_SUITE", resourceCulture);
+                return ResourceManager.GetString("SPACE_SUIT", resourceCulture);
             }
         }
         

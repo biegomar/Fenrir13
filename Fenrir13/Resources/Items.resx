@@ -60,8 +60,8 @@
     <data name="WARDROBE" xml:space="preserve">
         <value>Die Garderobe|Garderobe</value>
     </data>
-    <data name="SPACE_SUITE" xml:space="preserve">
-        <value>Der Bio-Suite|Bio-Suite| Bio Suite|Space-Overall|Space Overall|Space-Suite|Space Suite|Overall|Anzug|Suite</value>
+    <data name="SPACE_SUIT" xml:space="preserve">
+        <value>Der Bio-Suit|Bio-Suit| Bio Suit|Space-Overall|Space Overall|Space-Suit|Space Suit|Overall|Anzug|Suit</value>
     </data>
     <data name="TABLE" xml:space="preserve">
         <value>Tisch</value>

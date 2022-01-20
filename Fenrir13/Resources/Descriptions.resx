@@ -92,15 +92,15 @@ Voller Stolz prangt der Name des Schiffs in Runen an der Steuerbordseite des Car
     <data name="WARDROBE" xml:space="preserve">
         <value>Ein typischer Kleiderständer der es ermöglicht, schnell Kleidungsstücke aufzuhängen und ebenso schnell wieder herunterzunehmen.</value>
     </data>
-    <data name="SPACE_SUITE" xml:space="preserve">
-        <value>Der Einteiler ist einer dieser aktuellen Bio-Suites und ist wie eine zweite Haut konzipiert. Er wärmt, kühlt, schützt und überwacht den Körper und seine Funktion. Er ist auch dafür ausgelegt, als Raumanzug die Arbeitseinsätze ausserhalb des Schiffs durchzuführen. Dafür ist er in der Lage auch den benötigten Druck auf den Körper auszuüben. Nur die Sauerstoffversorgung geschieht über einen zusätzlichen Helm. 
+    <data name="SPACE_SUIT" xml:space="preserve">
+        <value>Der Einteiler ist einer dieser aktuellen Bio-Suits und ist wie eine zweite Haut konzipiert. Er wärmt, kühlt, schützt und überwacht den Körper und seine Funktion. Er ist auch dafür ausgelegt, als Raumanzug die Arbeitseinsätze ausserhalb des Schiffs durchzuführen. Dafür ist er in der Lage auch den benötigten Druck auf den Körper auszuüben. Nur die Sauerstoffversorgung geschieht über einen zusätzlichen Helm. 
 Damit das Schiff permanent in Kontakt zu dem Crew-Mitglied ist, muss der Anzug ständig getragen werden. Nur während des Cryo-Schlafs wird er ausgezogen.</value>
     </data>
-    <data name="SPACE_SUITE_TAKEN" xml:space="preserve">
+    <data name="SPACE_SUIT_TAKEN" xml:space="preserve">
         <value>Du nimmst den Anzug vom Bügel und streifst ihn Dir über. Du spürst sofort, wie sich das Material Deinen Konturen anpasst und förmlich mit Dir verschmilzt. Ein leises Bestätigungspiepen ist zu hören und der Anzug sitzt perfekt!</value>
     </data>
-    <data name="SPACE_SUITE_FIT" xml:space="preserve">
-        <value>Du trägst Deinen Space-Overall.</value>
+    <data name="SPACE_SUIT_FIT" xml:space="preserve">
+        <value>Du trägst Deinen Bio-Suit.</value>
     </data>
     <data name="TABLE" xml:space="preserve">
         <value>Der einfach gehaltene Tisch besteht aus einem Metallrahmen und einer eingelassenen Kunststofftischplatte. Orange. Chic!</value>
@@ -115,7 +115,7 @@ Damit das Schiff permanent in Kontakt zu dem Crew-Mitglied ist, muss der Anzug s
         <value>Passend zum restlichen Interieur ist auch das Waschbecken aus Metall. Ein Spiegel mit einem Display Deiner zuletzt gemessenen Vitaldaten, eine Armatur mit Start-/Stop-Sensoren und digitaler Temperaturregelung, sowie eine ebenfalls sensorgesteuerte Seifenspendereinheit runden das Bild ab.</value>
     </data>
     <data name="TOILET" xml:space="preserve">
-        <value>Absolut unscheinbar dieser Thron, bestehend aus einem Metallkorpus und einem Toilettensitz aus beheiztem Kunststoff. Doch er ist, neben Deinem Space-Suite, die zentrale Überwachungsstation Deiner Gesundheit. Jede Ausscheidung wird akribisch analysiert und Dir im Display des Spiegels angezeigt. Viele der Werte sagen Dir noch nicht einmal etwas. Egal. Für Dich ist nur wichtig, dass Du gut umsorgt wirst und jeder erkannte Mangel über Zusätze in der Nahrung beseitigt werden.</value>
+        <value>Absolut unscheinbar dieser Thron, bestehend aus einem Metallkorpus und einem Toilettensitz aus beheiztem Kunststoff. Doch er ist, neben Deinem Bio-Suit, die zentrale Überwachungsstation Deiner Gesundheit. Jede Ausscheidung wird akribisch analysiert und Dir im Display des Spiegels angezeigt. Viele der Werte sagen Dir noch nicht einmal etwas. Egal. Für Dich ist nur wichtig, dass Du gut umsorgt wirst und jeder erkannte Mangel über Zusätze in der Nahrung beseitigt werden.</value>
     </data>
     <data name="MIRROR" xml:space="preserve">
         <value>Den Spiegel schätzt Du so auf 90x120 cm und er ist kristallklar. Wenn Du längere Zeit eine der Ecken mit Deinen Augen fukossierst erscheint ein zusätzliches Display auf der Fläche und präsentiert Dir Deine gängigen Gesundheitsdaten. Als Du diesmal die Daten checkst erschrickst Du. Die letzte Messung ist über 5 Jahre her!</value>
@@ -364,8 +364,8 @@ Am südlichen Ende der Schleuse trennt ein weiteres, massives Schott den Raum vo
     <data name="DUMBBELL_BAR_CONTAINMENT" xml:space="preserve">
         <value>Eine Hantelstange fällt Dir allerdings ins Auge. Sie scheint nicht korrekt fixiert worden zu sein. Schlamperei! Wenn die sich während des Flugs gelöst hätte...</value>
     </data>
-    <data name="SPACE_SUITE_CONTAINMENT" xml:space="preserve">
-        <value>An der Garderobe hängt gerade ein typischer Bio-Suite.</value>
+    <data name="SPACE_SUIT_CONTAINMENT" xml:space="preserve">
+        <value>An der Garderobe hängt gerade ein typischer Bio-Suit.</value>
     </data>
     <data name="EQUIPMENT_ROOM" xml:space="preserve">
         <value>In diesem Raum bereiten sich die Mechaniker auf ihre Außeneinsätze vor. Er erinnert Dich von Aufbau und der Ausstattung fast an eine Umkleidekabine vom Schulsport. An drei Wänden stehen einfache Sitzbänke und in den Wänden sind kleine Nischen eingelassen, die dafür genutzt werden können, um Kleidung aufzuhängen. Jede Wand hat zwei Nischen, was konsequent ist, da an Bord der Fenrir 13 maximal 6 Crew-Mitglieder vorgesehen sind. 
@@ -387,10 +387,10 @@ Die Wand mit der Tür ist frei, nur ein kleiner Papiereimer steht dort.</value>
         <value>Daran kann wohl eine Sauerstoffflasche montiert werden. Allerdings befindet sich im Moment keine an dem Helm.</value>
     </data>
     <data name="GLOVES" xml:space="preserve">
-        <value>Da Dein Space-Suite nicht die Hände bedeckt, sind diese Handschuhe erforderlich, um bei einem Einsatz im Weltraum auch die Hände zu schützen.</value>
+        <value>Da Dein Bio-Suit nicht die Hände bedeckt, sind diese Handschuhe erforderlich, um bei einem Einsatz im Weltraum auch die Hände zu schützen.</value>
     </data>
     <data name="BOOTS" xml:space="preserve">
-        <value>Da Dein Space-Suite Deine Füße nicht bedeckt, dienen die Boots dazu, Dich bei einem Space-Ausflug zu schützen. Auch sind die Stiefel magnetisch, damit man an der Aussenhaut des Schiffs sicheren Halt hat.</value>
+        <value>Da Dein Bio-Suit Deine Füße nicht bedeckt, dienen die Boots dazu, Dich bei einem Space-Ausflug zu schützen. Auch sind die Stiefel magnetisch, damit man an der Aussenhaut des Schiffs sicheren Halt hat.</value>
     </data>
     <data name="EQUIPMENT_BOX_LOCK" xml:space="preserve">
         <value>Das Schloß ist sehr massiv und wird normalerweise mit einem Schlüssel geöffnet. Sicherlich ist das die Kiste eines der Mechaniker und der Schlüssel wird in seiner Kabine sein. Da kommst Du aber aufgrund der Situation nicht dran. Mist!</value>
