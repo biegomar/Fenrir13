@@ -469,4 +469,7 @@ In einigen typischen OP-Schränken sind alle relevanten Instrumente und Verbands
     <data name="CEILING" xml:space="preserve">
         <value>Jede Decke hier an Bord ist gleich. Sie ist mit einer Art Kunststoff bezogen, der in der Lage ist, wie eine riesige Leinwand beliebige Dinge zu projezieren. Wenn man wollte könnte man sich aufs Bett legen und Bilder oder Filme schauen. Einige machen das sogar manchmal, aber meistens wird sie als reine indirekte Lichtquelle genutzt, um die Wohn- und Arbeitsbereiche zu erhellen.</value>
     </data>
+    <data name="AMBULANCE_BED" xml:space="preserve">
+        <value>Das Bett ermöglicht sowohl eine kurzzeitige Erholung, als auch eine langwierige Rekonvaleszens. Elektronisch verstellbar, top Pflegematraze...alles was ein modernes Pflegebett benötigt.</value>
+    </data>
 </root>

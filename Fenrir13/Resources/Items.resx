@@ -237,4 +237,7 @@
     <data name="CEILING" xml:space="preserve">
         <value>Die Zimmerdecke|Zimmerdecke|Decke</value>
     </data>
+    <data name="AMBULANCE_BED" xml:space="preserve">
+        <value>Das Krankenbett|Krankenbett|Krankenhausbett|Bett|Pflegebett</value>
+    </data>
 </root>

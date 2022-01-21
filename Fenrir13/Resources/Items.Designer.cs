@@ -88,6 +88,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Das Krankenbett|Krankenbett|Krankenhausbett|Bett|Pflegebett.
+        /// </summary>
+        internal static string AMBULANCE_BED {
+            get {
+                return ResourceManager.GetString("AMBULANCE_BED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to OP-Roboter| OP Roboter|Roboter|Arm|Arme|vier Arme.
         /// </summary>
         internal static string AMBULANCE_OP_ROBOTER {

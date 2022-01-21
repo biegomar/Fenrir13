@@ -107,6 +107,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Das Bett ermöglicht sowohl eine kurzzeitige Erholung, als auch eine langwierige Rekonvaleszens. Elektronisch verstellbar, top Pflegematraze...alles was ein modernes Pflegebett benötigt..
+        /// </summary>
+        internal static string AMBULANCE_BED {
+            get {
+                return ResourceManager.GetString("AMBULANCE_BED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Der Roboter ist in der Lage einfache Operationen selbständig durchzuführen. Seine vier Arme helfen ihm dabei auch schwierige Hand - oder besser - Robotergriffe zu meistern. Bei schwierigeren Eingriffen wird er in der Regel aber als Assistenzsystem eingesetzt und durch einen Menschen geführt. .
         /// </summary>
         internal static string AMBULANCE_OP_ROBOTER {

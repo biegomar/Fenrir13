@@ -285,4 +285,7 @@
     <data name="CEILING" xml:space="preserve">
         <value>CEILING</value>
     </data>
+    <data name="AMBULANCE_BED" xml:space="preserve">
+        <value>AMBULANCE_BED</value>
+    </data>
 </root>

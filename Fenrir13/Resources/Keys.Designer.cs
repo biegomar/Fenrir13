@@ -106,6 +106,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to AMBULANCE_BED.
+        /// </summary>
+        internal static string AMBULANCE_BED {
+            get {
+                return ResourceManager.GetString("AMBULANCE_BED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to AMBULANCE_OP_ROBOTER.
         /// </summary>
         internal static string AMBULANCE_OP_ROBOTER {
