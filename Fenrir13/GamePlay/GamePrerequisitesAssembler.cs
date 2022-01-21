@@ -10,6 +10,7 @@ using Fenrir13.GamePlay.Prerequisites.Kitchen;
 using Fenrir13.GamePlay.Prerequisites.MachineCorridor;
 using Fenrir13.GamePlay.Prerequisites.PlayerConfig;
 using Fenrir13.GamePlay.Prerequisites.SocialRoom;
+using Fenrir13.Resources;
 using Heretic.InteractiveFiction.Comparer;
 using Heretic.InteractiveFiction.GamePlay;
 using Heretic.InteractiveFiction.Objects;
@@ -123,8 +124,8 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
         {
             new() {Direction = Directions.E, Location = cryoChamber, IsHidden = false},
             new() {Direction = Directions.W, Location = corridorMidEast, IsHidden = false},
-            new() {Direction = Directions.S, Location = emptyChamberOne, IsHidden = false},
-            new() {Direction = Directions.N, Location = emptyChamberTwo, IsHidden = false},
+            new() {Direction = Directions.S, Location = emptyChamberOne, IsHidden = false, DestinationDescription = Descriptions.EMPTYCREWCHAMBERONE_DESTINATION,},
+            new() {Direction = Directions.N, Location = emptyChamberTwo, IsHidden = false, ShowInDescription = false},
         };
         return locationMap;
     }
@@ -133,8 +134,8 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
     {
         var locationMap = new List<DestinationNode>
         {
-            new() {Direction = Directions.E, Location = corridorEast, IsHidden = false},
-            new() {Direction = Directions.W, Location = corridorMid, IsHidden = false},
+            new() {Direction = Directions.E, Location = corridorEast, IsHidden = false, ShowInDescription = false},
+            new() {Direction = Directions.W, Location = corridorMid, IsHidden = false, DestinationDescription = Descriptions.CORRIDOR_DESTINATION},
             new() {Direction = Directions.S, Location = socialRoom, IsHidden = false},
             new() {Direction = Directions.N, Location = kitchen, IsHidden = false},
         };
@@ -145,9 +146,9 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
     {
         var locationMap = new List<DestinationNode>
         {
-            new() {Direction = Directions.E, Location = corridorMidEast, IsHidden = false},
-            new() {Direction = Directions.W, Location = corridorMidWest, IsHidden = false},
-            new() {Direction = Directions.UP, Location = bridge, IsHidden = false},
+            new() {Direction = Directions.E, Location = corridorMidEast, IsHidden = false, ShowInDescription = false},
+            new() {Direction = Directions.W, Location = corridorMidWest, IsHidden = false, ShowInDescription = false},
+            new() {Direction = Directions.UP, Location = bridge, IsHidden = false, DestinationDescription = Descriptions.BRIDGE_DESTINATION},
             new() {Direction = Directions.DOWN, Location = machineCorridorMid, IsHidden = false},
         };
         return locationMap;
@@ -157,7 +158,7 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
     {
         var locationMap = new List<DestinationNode>
         {
-            new() {Direction = Directions.DOWN, Location = corridorMid, IsHidden = false},
+            new() {Direction = Directions.DOWN, Location = corridorMid, IsHidden = false, DestinationDescription = Descriptions.COMMANDBRIDGE_TO_CORRIDOR_DESTINATION},
         };
         return locationMap;
     }
@@ -166,8 +167,8 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
     {
         var locationMap = new List<DestinationNode>
         {
-            new() {Direction = Directions.E, Location = corridorMid, IsHidden = false},
-            new() {Direction = Directions.W, Location = corridorWest, IsHidden = false},
+            new() {Direction = Directions.E, Location = corridorMid, IsHidden = false, ShowInDescription = false},
+            new() {Direction = Directions.W, Location = corridorWest, IsHidden = false, DestinationDescription = Descriptions.CORRIDOR_DESTINATION},
             new() {Direction = Directions.S, Location = gym, IsHidden = false},
         };
         return locationMap;

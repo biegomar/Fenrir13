@@ -49,7 +49,7 @@
         <value>Das Computer-Terminal|Computer-Terminal|Computer|Terminal</value>
     </data>
     <data name="MACHINE_CORRIDOR_MID" xml:space="preserve">
-        <value>Der Maschinen-Korridor|Maschinen-Korridor|Maschinenkorridor</value>
+        <value>Der Vorraum|Vorraum|Korridor</value>
     </data>
     <data name="GYM" xml:space="preserve">
         <value>Der Fitnessraum|Fitnessraum|Trainingsraum|Gym</value>

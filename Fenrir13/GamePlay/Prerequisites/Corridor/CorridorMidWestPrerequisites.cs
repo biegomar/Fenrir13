@@ -12,7 +12,7 @@ internal static class CorridorMidWestPrerequisites
         {
             Key = Keys.CORRIDOR_MIDWEST,
             Name = Locations.CORRIDOR_MIDWEST,
-            Description = Descriptions.CORRIDOR_MIDWEST
+            Description = Descriptions.CORRIDOR_MIDWEST,
         };
 
         AddSurroundings(corridor);
