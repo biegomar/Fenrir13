@@ -88,6 +88,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to OP-Roboter| OP Roboter|Roboter.
+        /// </summary>
+        internal static string AMBULANCE_OP_ROBOTER {
+            get {
+                return ResourceManager.GetString("AMBULANCE_OP_ROBOTER", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Der OP-Tisch|OP-Tisch|OP Tisch|Tisch.
         /// </summary>
         internal static string AMBULANCE_OP_TABLE {

@@ -279,4 +279,7 @@
     <data name="AMBULANCE_OP_TABLE" xml:space="preserve">
         <value>AMBULANCE_OP_TABLE</value>
     </data>
+    <data name="AMBULANCE_OP_ROBOTER" xml:space="preserve">
+        <value>AMBULANCE_OP_ROBOTER</value>
+    </data>
 </root>

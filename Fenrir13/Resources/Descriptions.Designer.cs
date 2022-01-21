@@ -107,6 +107,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Der Roboter ist in der Lage einfache Operationen selbständig durchzuführen. Bei schwierigeren Eingriffen wird er in der Regel aber als Assistenzsystem eingesetzt und durch einen Menschen geführt. .
+        /// </summary>
+        internal static string AMBULANCE_OP_ROBOTER {
+            get {
+                return ResourceManager.GetString("AMBULANCE_OP_ROBOTER", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Der OP-Tisch ist ein elektrisch verstellbarer, mobiler Operationstisch, der aus Edelstahl hergestellt ist. Die segmentierte Liegefläche ist durch ein ausgeklügeltes System in der Tischplatte schnell und einfach zu wechseln, so können viele fachspezifische Eingriffe realisiert werden..
         /// </summary>
         internal static string AMBULANCE_OP_TABLE {

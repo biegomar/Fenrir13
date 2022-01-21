@@ -23,5 +23,6 @@ internal static class AmbulancePrerequisites
     private static void AddSurroundings(Location location)
     {
         location.Surroundings.Add(Keys.AMBULANCE_OP_TABLE, Descriptions.AMBULANCE_OP_TABLE);
+        location.Surroundings.Add(Keys.AMBULANCE_OP_ROBOTER, Descriptions.AMBULANCE_OP_ROBOTER);
     }
 }
