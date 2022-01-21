@@ -97,6 +97,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Der Medizinschrank|Medizinschrank|Medischrank|Medikamente|Medikament|Medis.
+        /// </summary>
+        internal static string AMBULANCE_MEDIS {
+            get {
+                return ResourceManager.GetString("AMBULANCE_MEDIS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Die OP-Schränke|OP-Schränke| OP Schränke|OP-Schrank|OP Schrank|Das Verbandszeug|Verbandszeug|Verbandszeuge|Die Instrumente|Instrumente|Instrument|OP-Besteck.
         /// </summary>
         internal static string AMBULANCE_OP_ITEMS {

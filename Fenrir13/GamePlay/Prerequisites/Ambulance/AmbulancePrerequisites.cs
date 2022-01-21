@@ -28,5 +28,6 @@ internal static class AmbulancePrerequisites
         location.Surroundings.Add(Keys.CHAMBER_WALL, Descriptions.CHAMBER_WALL);
         location.Surroundings.Add(Keys.AMBULANCE_BED, Descriptions.AMBULANCE_BED);
         location.Surroundings.Add(Keys.AMBULANCE_OP_ITEMS, Descriptions.AMBULANCE_OP_ITEMS);
+        location.Surroundings.Add(Keys.AMBULANCE_MEDIS, Descriptions.AMBULANCE_MEDIS);
     }
 }

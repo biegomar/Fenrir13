@@ -291,4 +291,7 @@
     <data name="AMBULANCE_OP_ITEMS" xml:space="preserve">
         <value>AMBULANCE_OP_ITEMS</value>
     </data>
+    <data name="AMBULANCE_MEDIS" xml:space="preserve">
+        <value>AMBULANCE_MEDIS</value>
+    </data>
 </root>

@@ -116,6 +116,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Ein rechteckiger Schrank mit einer abschließbaren Glastür, der mit einem roten Kreuz bedruckt ist und ziemlich prominent an der Wand aufgehängt ist. Durch die Scheibe kannst Du einige Medikamente erkennen. Leichtere Schmerzmittel, aber auch Morphium. Antibiotika und sogar Antidepressiva kannst Du erkennen. Keiner Wunder, dass der Schrank immer verschlossen ist..
+        /// </summary>
+        internal static string AMBULANCE_MEDIS {
+            get {
+                return ResourceManager.GetString("AMBULANCE_MEDIS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Die öffnest den Schrank und siehst allerlei Zeug. Skalpelle, Tupfer, Mullbinden. Auch Adapter für den Roboter. Viele Dinge kennst Du einfach nicht. Und benötigen wirst Du sie sowieso nicht..
         /// </summary>
         internal static string AMBULANCE_OP_ITEMS {
