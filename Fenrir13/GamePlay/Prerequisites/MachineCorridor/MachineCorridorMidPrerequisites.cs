@@ -18,6 +18,13 @@ internal static class MachineCorridorMidPrerequisites
             LockDescription = Descriptions.MACHINE_CORRIDOR_MID_LOCKDESCRIPTION
         };
         
+        AddSurroundings(corridor);
+        
         return corridor;
+    }
+    
+    private static void AddSurroundings(Location corridor)
+    {
+        corridor.Surroundings.Add(Keys.CEILING, Descriptions.CEILING);
     }
 }

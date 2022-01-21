@@ -20,8 +20,8 @@ public class SocialRoomPrerequisites
         return socialRoom;
     }
     
-    private static void AddSurroundings(Location gym)
+    private static void AddSurroundings(Location socialRoom)
     {
-        
+        socialRoom.Surroundings.Add(Keys.CEILING, Descriptions.CEILING);
     }
 }

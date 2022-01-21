@@ -282,4 +282,7 @@
     <data name="AMBULANCE_OP_ROBOTER" xml:space="preserve">
         <value>AMBULANCE_OP_ROBOTER</value>
     </data>
+    <data name="CEILING" xml:space="preserve">
+        <value>CEILING</value>
+    </data>
 </root>

@@ -232,6 +232,9 @@
         <value>Der OP-Tisch|OP-Tisch|OP Tisch|Tisch</value>
     </data>
     <data name="AMBULANCE_OP_ROBOTER" xml:space="preserve">
-        <value>OP-Roboter| OP Roboter|Roboter</value>
+        <value>OP-Roboter| OP Roboter|Roboter|Arm|Arme|vier Arme</value>
+    </data>
+    <data name="CEILING" xml:space="preserve">
+        <value>Die Zimmerdecke|Zimmerdecke|Decke</value>
     </data>
 </root>

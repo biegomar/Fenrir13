@@ -27,5 +27,6 @@ internal static class CorridorEastPrerequisites
         corridor.Surroundings.Add(Keys.EMPTYCREWCHAMBERONE, Descriptions.EMPTYCREWCHAMBERONE);
         corridor.Surroundings.Add(Keys.EMPTYCREWCHAMBERTWO, Descriptions.EMPTYCREWCHAMBERTWO);
         corridor.Surroundings.Add(Keys.CORRIDOR_PAINTING, Descriptions.CORRIDOR_PAINTING_EAST);
+        corridor.Surroundings.Add(Keys.CEILING, Descriptions.CEILING);
     }
 }

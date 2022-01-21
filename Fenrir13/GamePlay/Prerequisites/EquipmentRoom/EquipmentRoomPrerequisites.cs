@@ -33,6 +33,7 @@ internal static class EquipmentRoomPrerequisites
         equipmentRoom.Surroundings.Add(Keys.EQUIPMENT_ROOM_TRASHBIN, Descriptions.EQUIPMENT_ROOM_TRASHBIN);
         equipmentRoom.Surroundings.Add(Keys.EQUIPMENT_ROOM_CLOTH, Descriptions.EQUIPMENT_ROOM_CLOTH);
         equipmentRoom.Surroundings.Add(Keys.EYELET, Descriptions.EYELET);
+        equipmentRoom.Surroundings.Add(Keys.CEILING, Descriptions.CEILING);
     }
 
     private static Item GetBox(EventProvider eventProvider)

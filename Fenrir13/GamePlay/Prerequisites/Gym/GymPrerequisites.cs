@@ -34,6 +34,7 @@ internal static class GymPrerequisites
         gym.Surroundings.Add(Keys.STEPPER, Descriptions.GYM_FLOSKEL);
         gym.Surroundings.Add(Keys.FITNESSMACHINE, Descriptions.FITNESSMACHINE);
         gym.Surroundings.Add(Keys.WORKOUTS, Descriptions.WORKOUTS);
+        gym.Surroundings.Add(Keys.CEILING, Descriptions.CEILING);
     }
     
     private static Item GetDumbbellRack(EventProvider eventProvider)

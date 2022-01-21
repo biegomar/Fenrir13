@@ -15,6 +15,7 @@ internal static class CorridorMidPrerequisites
             Description = Descriptions.CORRIDOR_MID
         };
         
+        AddSurroundings(corridor);
         corridor.Items.Add(GetPortrait(eventProvider));
 
         return corridor;
@@ -30,5 +31,10 @@ internal static class CorridorMidPrerequisites
         };
 
         return portrait;
+    }
+    
+    private static void AddSurroundings(Location corridor)
+    {
+        corridor.Surroundings.Add(Keys.CEILING, Descriptions.CEILING);
     }
 }

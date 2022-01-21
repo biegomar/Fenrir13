@@ -37,6 +37,7 @@ internal static class CommandBridgePrerequisites
         location.Surroundings.Add(Keys.RANK, Descriptions.RANK);
         location.Surroundings.Add(Keys.NECESSITIES, Descriptions.NECESSITIES);
         location.Surroundings.Add(Keys.PERSONAL_SETTINGS, Descriptions.PERSONAL_SETTINGS);
+        location.Surroundings.Add(Keys.CEILING, Descriptions.CEILING);
     }
     
     private static void AddAfterLookEvents(Location bridge, EventProvider eventProvider)

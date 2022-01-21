@@ -88,7 +88,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to OP-Roboter| OP Roboter|Roboter.
+        ///   Looks up a localized string similar to OP-Roboter| OP Roboter|Roboter|Arm|Arme|vier Arme.
         /// </summary>
         internal static string AMBULANCE_OP_ROBOTER {
             get {
@@ -165,6 +165,15 @@ namespace Fenrir13.Resources {
         internal static string CARPET {
             get {
                 return ResourceManager.GetString("CARPET", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Die Zimmerdecke|Zimmerdecke|Decke.
+        /// </summary>
+        internal static string CEILING {
+            get {
+                return ResourceManager.GetString("CEILING", resourceCulture);
             }
         }
         

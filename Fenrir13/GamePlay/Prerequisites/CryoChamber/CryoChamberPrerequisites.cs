@@ -93,6 +93,7 @@ internal static class CryoChamberPrerequisites
         cryoChamber.Surroundings.Add(Keys.DISPLAY, Descriptions.DISPLAY);
         cryoChamber.Surroundings.Add(Keys.TOILET_SEAT, Descriptions.TOILET_SEAT);
         cryoChamber.Surroundings.Add(Keys.WRITING_MATERIALS, Descriptions.WRITING_MATERIALS);
+        cryoChamber.Surroundings.Add(Keys.CEILING, Descriptions.CEILING);
     }
 
     private static void AddAfterLookEvents(Location cryoChamber, EventProvider eventProvider)

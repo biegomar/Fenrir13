@@ -20,8 +20,8 @@ public class KitchenPrerequisites
         return kitchen;
     }
     
-    private static void AddSurroundings(Location gym)
+    private static void AddSurroundings(Location kitchen)
     {
-        
+        kitchen.Surroundings.Add(Keys.CEILING, Descriptions.CEILING);
     }
 }

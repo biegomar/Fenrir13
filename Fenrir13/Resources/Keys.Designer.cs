@@ -187,6 +187,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to CEILING.
+        /// </summary>
+        internal static string CEILING {
+            get {
+                return ResourceManager.GetString("CEILING", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to CHAIR.
         /// </summary>
         internal static string CHAIR {

@@ -107,7 +107,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Roboter ist in der Lage einfache Operationen selbständig durchzuführen. Bei schwierigeren Eingriffen wird er in der Regel aber als Assistenzsystem eingesetzt und durch einen Menschen geführt. .
+        ///   Looks up a localized string similar to Der Roboter ist in der Lage einfache Operationen selbständig durchzuführen. Seine vier Arme helfen ihm dabei auch schwierige Hand - oder besser - Robotergriffe zu meistern. Bei schwierigeren Eingriffen wird er in der Regel aber als Assistenzsystem eingesetzt und durch einen Menschen geführt. .
         /// </summary>
         internal static string AMBULANCE_OP_ROBOTER {
             get {
@@ -202,6 +202,15 @@ namespace Fenrir13.Resources {
         internal static string CARPET {
             get {
                 return ResourceManager.GetString("CARPET", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Jede Decke hier an Bord ist gleich. Sie ist mit einer Art Kunststoff bezogen, der in der Lage ist, wie eine riesige Leinwand beliebige Dinge zu projezieren. Wenn man wollte könnte man sich aufs Bett legen und Bilder oder Filme schauen. Einige machen das sogar manchmal, aber meistens wird sie als reine indirekte Lichtquelle genutzt, um die Wohn- und Arbeitsbereiche zu erhellen..
+        /// </summary>
+        internal static string CEILING {
+            get {
+                return ResourceManager.GetString("CEILING", resourceCulture);
             }
         }
         

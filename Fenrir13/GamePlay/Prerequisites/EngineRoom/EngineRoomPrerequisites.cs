@@ -22,6 +22,6 @@ internal class EngineRoomPrerequisites
     
     private static void AddSurroundings(Location engine)
     {
-        
+        engine.Surroundings.Add(Keys.CEILING, Descriptions.CEILING);
     }
 }
