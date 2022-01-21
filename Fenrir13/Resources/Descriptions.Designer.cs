@@ -98,6 +98,24 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Die Krankenstation ist einer der wichtigen Einrichtungen in Raumschiffen der Viking-Klasse und dient der medizinischen Grundversorgung. Sehr zentral steht ein OP-Tisch, auf dem ein spezieller OP-Roboter einfachere Eingriffe durchführen kann. Er ist unter die Decke montiert und vier Arme garantieren eine sehr flexible und variantenreiche OP-Technik. Zum Beginn der Reise kam er einmal zum Einsatz, als einer der Mechaniker eine Blinddarmentzündung hatte. Für extreme Verletzungen oder schwerwiegende OPs ist der [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string AMBULANCE {
+            get {
+                return ResourceManager.GetString("AMBULANCE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Der OP-Tisch ist ein elektrisch verstellbarer, mobiler Operationstisch, der aus Edelstahl hergestellt ist. Die segmentierte Liegefläche ist durch ein ausgeklügeltes System in der Tischplatte schnell und einfach zu wechseln, so können viele fachspezifische Eingriffe realisiert werden..
+        /// </summary>
+        internal static string AMBULANCE_OP_TABLE {
+            get {
+                return ResourceManager.GetString("AMBULANCE_OP_TABLE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Dieses sehr dünne und leichte Geschirr dient bei Spaziergängen im All zur Sicherung..
         /// </summary>
         internal static string BELT {

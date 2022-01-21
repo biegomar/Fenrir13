@@ -5,7 +5,7 @@ using Microsoft.VisualBasic;
 
 namespace Fenrir13.GamePlay.Prerequisites.CommandBridge;
 
-internal class CommandBridgePrerequisites
+internal static class CommandBridgePrerequisites
 {
     internal static Location Get(EventProvider eventProvider)
     {

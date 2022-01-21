@@ -70,6 +70,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Die Krankenstation|Krankenstation.
+        /// </summary>
+        internal static string AMBULANCE {
+            get {
+                return ResourceManager.GetString("AMBULANCE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Die Kommando-Brücke|Kommando-Brücke|Brücke.
         /// </summary>
         internal static string COMMANDBRIDGE {

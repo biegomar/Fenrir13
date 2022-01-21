@@ -228,4 +228,7 @@
     <data name="WRITING_MATERIALS" xml:space="preserve">
         <value>Die Schreibutensilien|Schreibutensilien|Utensilien|Schreibmaterial|Schreibmaterialien|Papier|Blätter|Stifte|Stift|Textmarker</value>
     </data>
+    <data name="AMBULANCE_OP_TABLE" xml:space="preserve">
+        <value>Der OP-Tisch|OP-Tisch|OP Tisch|Tisch</value>
+    </data>
 </root>

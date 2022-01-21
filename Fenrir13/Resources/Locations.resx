@@ -69,4 +69,7 @@
     <data name="EQUIPMENT_ROOM" xml:space="preserve">
         <value>Der Ausrüstungsraum|Ausrüstungsraum</value>
     </data>
+    <data name="AMBULANCE" xml:space="preserve">
+        <value>Die Krankenstation|Krankenstation</value>
+    </data>
 </root>

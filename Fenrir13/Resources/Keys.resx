@@ -273,4 +273,10 @@
     <data name="WRITING_MATERIALS" xml:space="preserve">
         <value>WRITING_MATERIALS</value>
     </data>
+    <data name="AMBULANCE" xml:space="preserve">
+        <value>AMBULANCE</value>
+    </data>
+    <data name="AMBULANCE_OP_TABLE" xml:space="preserve">
+        <value>AMBULANCE_OP_TABLE</value>
+    </data>
 </root>

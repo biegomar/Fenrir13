@@ -1,5 +1,6 @@
 using Fenrir13.Events;
 using Fenrir13.GamePlay.Prerequisites.Airlock;
+using Fenrir13.GamePlay.Prerequisites.Ambulance;
 using Fenrir13.GamePlay.Prerequisites.CommandBridge;
 using Fenrir13.GamePlay.Prerequisites.Corridor;
 using Fenrir13.GamePlay.Prerequisites.CryoChamber;
@@ -43,6 +44,7 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
         var machineCorridorMid = MachineCorridorMidPrerequisites.Get(this.eventProvider);
         var gym = GymPrerequisites.Get(this.eventProvider);
         var socialRoom = SocialRoomPrerequisites.Get(this.eventProvider);
+        var ambulance = AmbulancePrerequisites.Get(this.eventProvider);
         var kitchen = KitchenPrerequisites.Get(this.eventProvider);
         var airlock = AirlockPrerequisites.Get(this.eventProvider);
         var engineRoom = EngineRoomPrerequisites.Get(this.eventProvider);
@@ -52,12 +54,13 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
         map.Add(corridorEast, CorridorEastLocationMap(cryoChamber, corridorMidEast, emptyChamberOne, emptyChamberTwo));
         map.Add(corridorMidEast, CorridorMidEastLocationMap(corridorEast, corridorMid, socialRoom, kitchen));
         map.Add(corridorMid, CorridorMidLocationMap(corridorMidEast, corridorMidWest, bridge, machineCorridorMid));
-        map.Add(corridorMidWest, CorridorMidWestLocationMap(corridorMid, corridorWest, gym));
+        map.Add(corridorMidWest, CorridorMidWestLocationMap(corridorMid, corridorWest, gym, ambulance));
         map.Add(corridorWest, CorridorWestLocationMap(corridorMidWest));
         map.Add(bridge, BridgeLocationMap(corridorMid));
         map.Add(computerTerminal, new List<DestinationNode>());
         map.Add(machineCorridorMid, MachineCorridorMidLocationMap(corridorMid, airlock, engineRoom, equipmentRoom));
         map.Add(gym, GymLocationMap(corridorMidWest));
+        map.Add(ambulance, AmbulanceLocationMap(corridorMidWest));
         map.Add(socialRoom, SocialRoomLocationMap(corridorMidEast));
         map.Add(kitchen, KitchenLocationMap(corridorMidEast));
         map.Add(airlock, AirlockLocationMap(machineCorridorMid));
@@ -90,7 +93,7 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
         };
         return locationMap;
     }
-    
+
     private static IEnumerable<DestinationNode> AirlockLocationMap(Location machineCorridorMid)
     {
         var locationMap = new List<DestinationNode>
@@ -163,13 +166,14 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
         return locationMap;
     }
 
-    private static IEnumerable<DestinationNode> CorridorMidWestLocationMap(Location corridorMid, Location corridorWest, Location gym)
+    private static IEnumerable<DestinationNode> CorridorMidWestLocationMap(Location corridorMid, Location corridorWest, Location gym, Location ambulance)
     {
         var locationMap = new List<DestinationNode>
         {
             new() {Direction = Directions.E, Location = corridorMid, IsHidden = false, ShowInDescription = false},
             new() {Direction = Directions.W, Location = corridorWest, IsHidden = false, DestinationDescription = Descriptions.CORRIDOR_DESTINATION},
             new() {Direction = Directions.S, Location = gym, IsHidden = false},
+            new() {Direction = Directions.N, Location = ambulance, IsHidden = false},
         };
         return locationMap;
     }
@@ -179,6 +183,15 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
         var locationMap = new List<DestinationNode>
         {
             new() {Direction = Directions.N, Location = corridorMidWest, IsHidden = false},
+        };
+        return locationMap;
+    }
+    
+    private static IEnumerable<DestinationNode> AmbulanceLocationMap(Location corridorMidWest)
+    {
+        var locationMap = new List<DestinationNode>
+        {
+            new() {Direction = Directions.S, Location = corridorMidWest, IsHidden = false},
         };
         return locationMap;
     }
