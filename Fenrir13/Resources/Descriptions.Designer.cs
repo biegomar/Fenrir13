@@ -116,6 +116,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Die öffnest den Schrank und siehst allerlei Zeug. Skalpelle, Tupfer, Mullbinden. Auch Adapter für den Roboter. Viele Dinge kennst Du einfach nicht. Und benötigen wirst Du sie sowieso nicht..
+        /// </summary>
+        internal static string AMBULANCE_OP_ITEMS {
+            get {
+                return ResourceManager.GetString("AMBULANCE_OP_ITEMS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Der Roboter ist in der Lage einfache Operationen selbständig durchzuführen. Seine vier Arme helfen ihm dabei auch schwierige Hand - oder besser - Robotergriffe zu meistern. Bei schwierigeren Eingriffen wird er in der Regel aber als Assistenzsystem eingesetzt und durch einen Menschen geführt. .
         /// </summary>
         internal static string AMBULANCE_OP_ROBOTER {

@@ -288,4 +288,7 @@
     <data name="AMBULANCE_BED" xml:space="preserve">
         <value>AMBULANCE_BED</value>
     </data>
+    <data name="AMBULANCE_OP_ITEMS" xml:space="preserve">
+        <value>AMBULANCE_OP_ITEMS</value>
+    </data>
 </root>

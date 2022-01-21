@@ -97,7 +97,16 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to OP-Roboter| OP Roboter|Roboter|Arm|Arme|vier Arme.
+        ///   Looks up a localized string similar to Die OP-Schränke|OP-Schränke| OP Schränke|OP-Schrank|OP Schrank|Das Verbandszeug|Verbandszeug|Verbandszeuge|Die Instrumente|Instrumente|Instrument|OP-Besteck.
+        /// </summary>
+        internal static string AMBULANCE_OP_ITEMS {
+            get {
+                return ResourceManager.GetString("AMBULANCE_OP_ITEMS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Der OP-Roboter|OP-Roboter| OP Roboter|Roboter|Arm|Arme|vier Arme.
         /// </summary>
         internal static string AMBULANCE_OP_ROBOTER {
             get {
