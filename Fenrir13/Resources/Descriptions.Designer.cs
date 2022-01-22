@@ -152,6 +152,51 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Ja, Du hast Dich nicht getäuscht. Es handelt sich um ein Beatmungsgerät. Diverse Schläuche und Ventile ermöglichen es, die verschiedenen Gase den gewünschten Anforderungen entsprechend zu mischen. Die Schläuche werden im unteren Bereich des Geräts aus dem Korpus herausgeführt. Darin müssen also die Gase sein. Und tatsächlich erblickst Du an der Rückseite eine Art Verschlussklappe, die das Innere des Korpus zugänglich macht..
+        /// </summary>
+        internal static string AMBULANCE_RESPIRATOR {
+            get {
+                return ResourceManager.GetString("AMBULANCE_RESPIRATOR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Die Verschlussklappe ist, wie das gesamte Gerät, aus Metall und an der Rückseite zu finden. Sie scheint groß genug zu sein, um durch die entstehende Öffnung auch sperrige Dinge hindurch zu bekommen. An oberen Ende würdest Du irgendwie einen Mechanismus erwarten, um die Tür zu öffen. Aber Du siehst nur ein Loch....
+        /// </summary>
+        internal static string AMBULANCE_RESPIRATOR_FLAP {
+            get {
+                return ResourceManager.GetString("AMBULANCE_RESPIRATOR_FLAP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ja, dass könnte prinzipiell klappen, aber da Du nicht weißt, was genau an explosiven Materialien da drin ist, solltest Du das nicht versuchen..
+        /// </summary>
+        internal static string AMBULANCE_RESPIRATOR_FLAP_DUMBBELL_BAR_UNBREAKABLE {
+            get {
+                return ResourceManager.GetString("AMBULANCE_RESPIRATOR_FLAP_DUMBBELL_BAR_UNBREAKABLE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bei genauerer Betrachtung erkennst Du, dass dort eine viereckige Aussparung ist. Als könnte man einen typischen Griff mit einem Vierkantstift dort reinstecken und dann die Tür bequem öffnen. Aber so ein Griff ist hier weit und breit nicht zu sehen..
+        /// </summary>
+        internal static string AMBULANCE_RESPIRATOR_FLAP_FIRSTLOOK {
+            get {
+                return ResourceManager.GetString("AMBULANCE_RESPIRATOR_FLAP_FIRSTLOOK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Die Klappe lässt sich ohne passenden Griff oder einen griffähnlichen Gegenstand nicht öffnen..
+        /// </summary>
+        internal static string AMBULANCE_RESPIRATOR_FLAP_LOCK {
+            get {
+                return ResourceManager.GetString("AMBULANCE_RESPIRATOR_FLAP_LOCK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Dieses sehr dünne und leichte Geschirr dient bei Spaziergängen im All zur Sicherung..
         /// </summary>
         internal static string BELT {
@@ -519,7 +564,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Korridor durchzieht den gesamten &apos;Hammerkopf&apos; des Schiffs von Ost nach West. Von ihm gehen Türen in die diversen Räume ab und in der Mitte, also bei gut 50 Metern führt ein Aufgang zur Brücke und ein Abgang herunter in die Maschinenräume. An den Wänden hängen neben typischen Raum- und Evakuierungsplänen auch Bilder von ehemaligen Mitarbeitern und Crewmitgliedern der Fenrir 13. Ansonsten ist der Flur einfach und karg..
+        ///   Looks up a localized string similar to Der Korridor durchzieht den gesamten &apos;Hammerkopf&apos; des Schiffs von Ost nach West. Von ihm gehen Türen in die diversen Räume ab und in der Mitte, also bei gut 50 Metern, führt ein Aufgang zur Brücke und ein Abgang herunter in die Maschinenräume. An den Wänden hängen neben typischen Raum- und Evakuierungsplänen auch Bilder von ehemaligen Mitarbeitern und Crewmitgliedern der Fenrir 13. Ansonsten ist der Flur einfach und karg..
         /// </summary>
         internal static string CORRIDOR_WEST {
             get {
@@ -647,6 +692,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Die Kammern sind auf dieser Reise unbenutzt und daher versiegelt..
+        /// </summary>
+        internal static string EMPTYCREWCHAMBER_LOCKDESCRIPTION {
+            get {
+                return ResourceManager.GetString("EMPTYCREWCHAMBER_LOCKDESCRIPTION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Durch das runde Türfenster kannst Du einen Blick in das dunkle Zimmer erhaschen. Es ist ähnlich ausgestattet wie Dein Raum..
         /// </summary>
         internal static string EMPTYCREWCHAMBERONE {
@@ -656,20 +710,11 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sowohl südlich, als auch nördlich liegen die zwei leeren und versiegelten Crew-Quartiere..
+        ///   Looks up a localized string similar to Sowohl südlich, als auch nördlich liegen die zwei leeren Crew-Quartiere..
         /// </summary>
         internal static string EMPTYCREWCHAMBERONE_DESTINATION {
             get {
                 return ResourceManager.GetString("EMPTYCREWCHAMBERONE_DESTINATION", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Die Kammer ist auf dieser Reise unbenutzt und daher versiegelt..
-        /// </summary>
-        internal static string EMPTYCREWCHAMBERONE_LOCKDESCRIPTION {
-            get {
-                return ResourceManager.GetString("EMPTYCREWCHAMBERONE_LOCKDESCRIPTION", resourceCulture);
             }
         }
         
@@ -679,15 +724,6 @@ namespace Fenrir13.Resources {
         internal static string EMPTYCREWCHAMBERTWO {
             get {
                 return ResourceManager.GetString("EMPTYCREWCHAMBERTWO", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Die Kammer ist auf dieser Reise unbenutzt und daher versiegelt..
-        /// </summary>
-        internal static string EMPTYCREWCHAMBERTWO_LOCKDESCRIPTION {
-            get {
-                return ResourceManager.GetString("EMPTYCREWCHAMBERTWO_LOCKDESCRIPTION", resourceCulture);
             }
         }
         

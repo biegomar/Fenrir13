@@ -168,7 +168,7 @@ Du bestätigst die Meldung mit einem Fingertipp und das Display wechselt wieder 
         <value>Als Du versuchst den Raum zu verlassen schliesst sich die Tür abrupt. Gleichzeitig ertönt von dem Space-Overall ein kurzes Piepen. Scheinbar kannst Du nicht nackt durch das Raumschiff wandeln.</value>
     </data>
     <data name="CORRIDOR_WEST" xml:space="preserve">
-        <value>Der Korridor durchzieht den gesamten 'Hammerkopf' des Schiffs von Ost nach West. Von ihm gehen Türen in die diversen Räume ab und in der Mitte, also bei gut 50 Metern führt ein Aufgang zur Brücke und ein Abgang herunter in die Maschinenräume. An den Wänden hängen neben typischen Raum- und Evakuierungsplänen auch Bilder von ehemaligen Mitarbeitern und Crewmitgliedern der Fenrir 13. Ansonsten ist der Flur einfach und karg.</value>
+        <value>Der Korridor durchzieht den gesamten 'Hammerkopf' des Schiffs von Ost nach West. Von ihm gehen Türen in die diversen Räume ab und in der Mitte, also bei gut 50 Metern, führt ein Aufgang zur Brücke und ein Abgang herunter in die Maschinenräume. An den Wänden hängen neben typischen Raum- und Evakuierungsplänen auch Bilder von ehemaligen Mitarbeitern und Crewmitgliedern der Fenrir 13. Ansonsten ist der Flur einfach und karg.</value>
     </data>
     <data name="CORRIDOR_MIDEAST" xml:space="preserve">
         <value>Du befindest Dich nun auf dem halben Weg zwischen Deinem Quartier und der Brücke. Auch hier hängt wieder ein Bild an der Wand. Ansonsten ist der Flur einfach und karg.</value>
@@ -182,14 +182,11 @@ Du bestätigst die Meldung mit einem Fingertipp und das Display wechselt wieder 
     <data name="EMPTYCREWCHAMBERONE" xml:space="preserve">
         <value>Durch das runde Türfenster kannst Du einen Blick in das dunkle Zimmer erhaschen. Es ist ähnlich ausgestattet wie Dein Raum.</value>
     </data>
-    <data name="EMPTYCREWCHAMBERONE_LOCKDESCRIPTION" xml:space="preserve">
-        <value>Die Kammer ist auf dieser Reise unbenutzt und daher versiegelt.</value>
+    <data name="EMPTYCREWCHAMBER_LOCKDESCRIPTION" xml:space="preserve">
+        <value>Die Kammern sind auf dieser Reise unbenutzt und daher versiegelt.</value>
     </data>
     <data name="EMPTYCREWCHAMBERTWO" xml:space="preserve">
         <value>Durch das runde Türfenster kannst Du einen Blick in das dunkle Zimmer erhaschen. Es ist ähnlich ausgestattet wie Dein Raum.</value>
-    </data>
-    <data name="EMPTYCREWCHAMBERTWO_LOCKDESCRIPTION" xml:space="preserve">
-        <value>Die Kammer ist auf dieser Reise unbenutzt und daher versiegelt.</value>
     </data>
     <data name="CORRIDOR_WEST_LOCKDESCRIPTION" xml:space="preserve">
         <value>Der Weg nach Westen ist aktuell durch ein Schott abgeriegelt und damit gibt es auch keinen Zugang zum Rest der Crew. </value>
@@ -447,7 +444,7 @@ Die Wand mit der Tür ist frei, nur ein kleiner Papiereimer steht dort.</value>
         <value>Von hier erstreckt sich der Korridor nach Osten, sowie nach Westen.</value>
     </data>
     <data name="EMPTYCREWCHAMBERONE_DESTINATION" xml:space="preserve">
-        <value>Sowohl südlich, als auch nördlich liegen die zwei leeren und versiegelten Crew-Quartiere.</value>
+        <value>Sowohl südlich, als auch nördlich liegen die zwei leeren Crew-Quartiere.</value>
     </data>
     <data name="BRIDGE_DESTINATION" xml:space="preserve">
         <value>Eine halbrunde Treppe führt hinauf auf die Brücke und der Korridor ist nach Osten, sowie nach Westen fortgeführt.</value>
@@ -457,7 +454,7 @@ Die Wand mit der Tür ist frei, nur ein kleiner Papiereimer steht dort.</value>
     </data>
     <data name="AMBULANCE" xml:space="preserve">
         <value>Die Krankenstation ist einer der wichtigen Einrichtungen in Raumschiffen der Viking-Klasse und dient der medizinischen Grundversorgung. Sehr zentral steht ein OP-Tisch, auf dem ein spezieller OP-Roboter einfachere Eingriffe durchführen kann. Er ist unter die Decke montiert und vier Arme garantieren eine sehr flexible und variantenreiche OP-Technik. Zum Beginn der Reise kam er einmal zum Einsatz, als einer der Mechaniker eine Blinddarmentzündung hatte. Für extreme Verletzungen oder schwerwiegende OPs ist der Roboter allerdings nicht ausgelegt. 
-An einer Wand steht ein Krankenbett, um kurzfristige Genesungsaufenthalte zu gewährleisten. Im Fall des Blinddarms konnte der Mechaniker aber direkt wieder in seine Kabine und konnte dort in seinem Bett die Wunde auskurieren. An dem Bett steht offensichtlich eine Beatmungsmaschine, zumindest interpretierst Du die Aufschrift "OXYGEN" in diese Richtung.
+An einer Wand steht ein Krankenbett, um kurzfristige Genesungsaufenthalte zu gewährleisten. Im Fall des Blinddarms konnte der Mechaniker aber direkt wieder in seine Kabine und konnte dort in seinem Bett die Wunde auskurieren. An dem Bett steht offensichtlich eine Beatmungsgerät, zumindest interpretierst Du die Aufschrift "OXYGEN" in diese Richtung.
 In einigen typischen OP-Schränken sind alle relevanten Instrumente und Verbandszeuge untergebracht und in einem separaten, verschlossenen Medizinschrank lagern Medikamente, für den nur der Kapitän den passenden Schlüssel hat.</value>
     </data>
     <data name="AMBULANCE_OP_TABLE" xml:space="preserve">
@@ -477,5 +474,20 @@ In einigen typischen OP-Schränken sind alle relevanten Instrumente und Verbands
     </data>
     <data name="AMBULANCE_MEDIS" xml:space="preserve">
         <value>Ein rechteckiger Schrank mit einer abschließbaren Glastür, der mit einem roten Kreuz bedruckt ist und ziemlich prominent an der Wand aufgehängt ist. Durch die Scheibe kannst Du einige Medikamente erkennen. Leichtere Schmerzmittel, aber auch Morphium. Antibiotika und sogar Antidepressiva kannst Du erkennen. Keiner Wunder, dass der Schrank immer verschlossen ist.</value>
+    </data>
+    <data name="AMBULANCE_RESPIRATOR" xml:space="preserve">
+        <value>Ja, Du hast Dich nicht getäuscht. Es handelt sich um ein Beatmungsgerät. Diverse Schläuche und Ventile ermöglichen es, die verschiedenen Gase den gewünschten Anforderungen entsprechend zu mischen. Die Schläuche werden im unteren Bereich des Geräts aus dem Korpus herausgeführt. Darin müssen also die Gase sein. Und tatsächlich erblickst Du an der Rückseite eine Art Verschlussklappe, die das Innere des Korpus zugänglich macht.</value>
+    </data>
+    <data name="AMBULANCE_RESPIRATOR_FLAP" xml:space="preserve">
+        <value>Die Verschlussklappe ist, wie das gesamte Gerät, aus Metall und an der Rückseite zu finden. Sie scheint groß genug zu sein, um durch die entstehende Öffnung auch sperrige Dinge hindurch zu bekommen. An oberen Ende würdest Du irgendwie einen Mechanismus erwarten, um die Tür zu öffen. Aber Du siehst nur ein Loch...</value>
+    </data>
+    <data name="AMBULANCE_RESPIRATOR_FLAP_LOCK" xml:space="preserve">
+        <value>Die Klappe lässt sich ohne passenden Griff oder einen griffähnlichen Gegenstand nicht öffnen.</value>
+    </data>
+    <data name="AMBULANCE_RESPIRATOR_FLAP_FIRSTLOOK" xml:space="preserve">
+        <value>Bei genauerer Betrachtung erkennst Du, dass dort eine viereckige Aussparung ist. Als könnte man einen typischen Griff mit einem Vierkantstift dort reinstecken und dann die Tür bequem öffnen. Aber so ein Griff ist hier weit und breit nicht zu sehen.</value>
+    </data>
+    <data name="AMBULANCE_RESPIRATOR_FLAP_DUMBBELL_BAR_UNBREAKABLE" xml:space="preserve">
+        <value>Ja, dass könnte prinzipiell klappen, aber da Du nicht weißt, was genau an explosiven Materialien da drin ist, solltest Du das nicht versuchen.</value>
     </data>
 </root>

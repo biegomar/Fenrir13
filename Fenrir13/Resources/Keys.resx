@@ -294,4 +294,10 @@
     <data name="AMBULANCE_MEDIS" xml:space="preserve">
         <value>AMBULANCE_MEDIS</value>
     </data>
+    <data name="AMBULANCE_RESPIRATOR" xml:space="preserve">
+        <value>AMBULANCE_RESPIRATOR</value>
+    </data>
+    <data name="AMBULANCE_RESPIRATOR_FLAP" xml:space="preserve">
+        <value>AMBULANCE_RESPIRATOR_FLAP</value>
+    </data>
 </root>

@@ -94,6 +94,20 @@ internal partial class EventProvider
         }
     }
     
+    internal void LookAtRespirator(object sender, ContainerObjectEventArgs eventArgs)
+    {
+        if (sender is Location ambulance && ambulance.Key == Keys.AMBULANCE && eventArgs.ExternalItemKey == Keys.AMBULANCE_RESPIRATOR)
+        {
+            var respirator = this.universe.ActiveLocation.GetItemByKey(Keys.AMBULANCE_RESPIRATOR);
+            
+            if (respirator != default)
+            {
+                respirator.IsHidden = false;
+                ambulance.AfterLook -= LookAtRespirator;
+            }
+        }
+    }
+    
     internal void TryToOpenClosedDoor(object sender, ContainerObjectEventArgs eventArgs)
     {
         if (sender is Location cryoChamber && cryoChamber.Key == Keys.CRYOCHAMBER && eventArgs.ExternalItemKey == Keys.CRYOCHAMBER_DOOR)
@@ -239,6 +253,19 @@ internal partial class EventProvider
                 this.universe.Score += this.universe.ScoreBoard[nameof(this.BreakEquipmentBoxLock)];
                 equipmentRoom.Break -= BreakEquipmentBoxLock;
             }
+        }
+    }
+    
+    internal void BreakFlapWithDumbbellBar(object sender, BreakItemEventArg eventArg)
+    {
+        if (eventArg.ItemToUse == default)
+        {
+            throw new BreakException(BaseDescriptions.IMPOSSIBLE_BREAK_ITEM);
+        }
+        
+        if (sender is Item flap && flap.Key == Keys.AMBULANCE_RESPIRATOR_FLAP && eventArg.ItemToUse.Key == Keys.DUMBBELL_BAR)
+        {
+            throw new BreakException(Descriptions.AMBULANCE_RESPIRATOR_FLAP_DUMBBELL_BAR_UNBREAKABLE);
         }
     }
     

@@ -229,7 +229,7 @@
         <value>Die Schreibutensilien|Schreibutensilien|Utensilien|Schreibmaterial|Schreibmaterialien|Papier|Blätter|Stifte|Stift|Textmarker</value>
     </data>
     <data name="AMBULANCE_OP_TABLE" xml:space="preserve">
-        <value>Der OP-Tisch|OP-Tisch|OP Tisch|Tisch</value>
+        <value>Der OP-Tisch|OP-Tisch|OP Tisch|Tisch|Liegefläche|Tischplatte</value>
     </data>
     <data name="AMBULANCE_OP_ROBOTER" xml:space="preserve">
         <value>Der OP-Roboter|OP-Roboter| OP Roboter|Roboter|Arm|Arme|vier Arme</value>
@@ -245,5 +245,11 @@
     </data>
     <data name="AMBULANCE_MEDIS" xml:space="preserve">
         <value>Der Medizinschrank|Medizinschrank|Medischrank|Medikamente|Medikament|Medis</value>
+    </data>
+    <data name="AMBULANCE_RESPIRATOR" xml:space="preserve">
+        <value>Das Beatmungsgerät|Beatmungsgerät|Beatmungsmaschine|Beatmung|Beatmungsapparat|Gerät</value>
+    </data>
+    <data name="AMBULANCE_RESPIRATOR_FLAP" xml:space="preserve">
+        <value>Die Verschlussklappe|Verschlussklappe|Verschlusskappe|Klappe</value>
     </data>
 </root>

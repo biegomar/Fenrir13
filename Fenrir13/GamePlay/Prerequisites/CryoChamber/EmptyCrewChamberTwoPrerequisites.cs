@@ -13,7 +13,7 @@ internal static class EmptyCrewChamberTwoPrerequisites
             Key = Keys.EMPTYCREWCHAMBERTWO,
             Name = Locations.EMPTYCREWCHAMBERTWO,
             Description = Descriptions.EMPTYCREWCHAMBERTWO,
-            LockDescription = Descriptions.EMPTYCREWCHAMBERTWO_LOCKDESCRIPTION,
+            LockDescription = Descriptions.EMPTYCREWCHAMBER_LOCKDESCRIPTION,
             IsLocked = true
         };
 

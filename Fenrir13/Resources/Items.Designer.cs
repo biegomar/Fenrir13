@@ -124,11 +124,29 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der OP-Tisch|OP-Tisch|OP Tisch|Tisch.
+        ///   Looks up a localized string similar to Der OP-Tisch|OP-Tisch|OP Tisch|Tisch|Liegefläche|Tischplatte.
         /// </summary>
         internal static string AMBULANCE_OP_TABLE {
             get {
                 return ResourceManager.GetString("AMBULANCE_OP_TABLE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Das Beatmungsgerät|Beatmungsgerät|Beatmungsmaschine|Beatmung|Beatmungsapparat|Gerät.
+        /// </summary>
+        internal static string AMBULANCE_RESPIRATOR {
+            get {
+                return ResourceManager.GetString("AMBULANCE_RESPIRATOR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Die Verschlussklappe|Verschlussklappe|Verschlusskappe|Klappe.
+        /// </summary>
+        internal static string AMBULANCE_RESPIRATOR_FLAP {
+            get {
+                return ResourceManager.GetString("AMBULANCE_RESPIRATOR_FLAP", resourceCulture);
             }
         }
         
