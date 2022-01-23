@@ -97,7 +97,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Medizinschrank|Medizinschrank|Medischrank|Medikamente|Medikament|Medis.
+        ///   Looks up a localized string similar to Der Medizinschrank|Medizinschrank|Medischrank|Medikamente|Medikament|Medis|Schrank.
         /// </summary>
         internal static string AMBULANCE_MEDIS {
             get {

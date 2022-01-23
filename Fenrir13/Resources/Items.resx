@@ -244,7 +244,7 @@
         <value>Die OP-Schränke|OP-Schränke| OP Schränke|OP-Schrank|OP Schrank|Das Verbandszeug|Verbandszeug|Verbandszeuge|Die Instrumente|Instrumente|Instrument|OP-Besteck</value>
     </data>
     <data name="AMBULANCE_MEDIS" xml:space="preserve">
-        <value>Der Medizinschrank|Medizinschrank|Medischrank|Medikamente|Medikament|Medis</value>
+        <value>Der Medizinschrank|Medizinschrank|Medischrank|Medikamente|Medikament|Medis|Schrank</value>
     </data>
     <data name="AMBULANCE_RESPIRATOR" xml:space="preserve">
         <value>Das Beatmungsgerät|Beatmungsgerät|Beatmungsmaschine|Beatmung|Beatmungsapparat|Gerät</value>

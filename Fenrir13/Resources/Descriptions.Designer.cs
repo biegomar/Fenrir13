@@ -98,7 +98,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Krankenstation ist einer der wichtigen Einrichtungen in Raumschiffen der Viking-Klasse und dient der medizinischen Grundversorgung. Sehr zentral steht ein OP-Tisch, auf dem ein spezieller OP-Roboter einfachere Eingriffe durchführen kann. Er ist unter die Decke montiert und vier Arme garantieren eine sehr flexible und variantenreiche OP-Technik. Zum Beginn der Reise kam er einmal zum Einsatz, als einer der Mechaniker eine Blinddarmentzündung hatte. Für extreme Verletzungen oder schwerwiegende OPs ist der [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to Die Krankenstation ist eine der wichtigen Einrichtungen in Raumschiffen der Viking-Klasse und dient der medizinischen Grundversorgung. Sehr zentral steht ein OP-Tisch, auf dem ein spezieller OP-Roboter einfachere Eingriffe durchführen kann. Er ist unter die Decke montiert und vier Arme garantieren eine sehr flexible und variantenreiche OP-Technik. Zum Beginn der Reise kam er einmal zum Einsatz, als einer der Mechaniker eine Blinddarmentzündung hatte. Für extreme Verletzungen oder schwerwiegende OPs ist der  [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string AMBULANCE {
             get {
