@@ -51,6 +51,7 @@ internal static class AmbulancePrerequisites
             Description = Descriptions.AMBULANCE_RESPIRATOR_FLAP,
             FirstLookDescription = Descriptions.AMBULANCE_RESPIRATOR_FLAP_FIRSTLOOK,
             IsPickAble = false,
+            IsLockAble = true,
             IsLocked = true,
             IsCloseAble = true,
             IsClosed = true,
