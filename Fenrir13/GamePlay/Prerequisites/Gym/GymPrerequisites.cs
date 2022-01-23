@@ -45,6 +45,7 @@ internal static class GymPrerequisites
             Name = Items.DUMBBELL_RACK,
             Description = Descriptions.DUMBBELL_RACK,
             IsHidden = true,
+            IsUnveilAble = false,
             IsPickAble = false
         };
         
