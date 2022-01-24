@@ -4,7 +4,7 @@ using Heretic.InteractiveFiction.Objects;
 
 namespace Fenrir13.GamePlay.Prerequisites.Kitchen;
 
-public class KitchenPrerequisites
+internal static class KitchenPrerequisites
 {
     internal static Location Get(EventProvider eventProvider)
     {
