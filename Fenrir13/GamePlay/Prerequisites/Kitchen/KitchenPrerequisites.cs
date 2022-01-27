@@ -35,6 +35,8 @@ internal static class KitchenPrerequisites
             Key = Keys.FRIDGE, 
             Name = Items.FRIDGE, 
             Description = Descriptions.FRIDGE,
+            CloseDescription = Descriptions.FRIDGE_CLOSE,
+            OpenDescription = Descriptions.FRIDGE_OPEN,
             IsClosed = true,
             IsCloseAble = true,
         };
@@ -45,6 +47,11 @@ internal static class KitchenPrerequisites
 
         return fridge;
     }
+    
+    private static void AddOpenEvents(Item item, EventProvider eventProvider)
+    {
+        item.AfterOpen += eventProvider.OpenFridge;
+    }
 
     private static Item GetHandle(EventProvider eventProvider)
     {
@@ -53,16 +60,23 @@ internal static class KitchenPrerequisites
             Key = Keys.FRIDGE_DOOR_HANDLE,
             Name = Items.FRIDGE_DOOR_HANDLE,
             Description = Descriptions.FRIDGE_DOOR_HANDLE,
+            ContainmentDescription = Descriptions.FRIDGE_DOOR_HANDLE_CONTAINMENT,
+            UnPickAbleDescription = Descriptions.FRIDGE_DOOR_HANDLE_UNPICKABLE,
             IsUnveilAble = false,
-            IsHidden = true
+            IsHidden = true,
+            IsPickAble = false,
+            Weight = ItemWeights.FRIDGE_HANDLE
         };
 
+        AddPullEvents(handle, eventProvider);
+        
         return handle;
     }
 
-    private static void AddOpenEvents(Item item, EventProvider eventProvider)
+    private static void AddPullEvents(Item item, EventProvider eventProvider)
     {
-        item.AfterOpen += eventProvider.OpenFridge;
+        item.Pull += eventProvider.PullFridgeHandle;
+        eventProvider.ScoreBoard.Add(nameof(eventProvider.PullFridgeHandle), 1);
     }
     
     private static Item GetFoodPrinter(EventProvider eventProvider)
@@ -72,6 +86,7 @@ internal static class KitchenPrerequisites
             Key = Keys.FOOD_PRINTER, 
             Name = Items.FOOD_PRINTER, 
             Description = Descriptions.FOOD_PRINTER,
+            CloseDescription = Descriptions.FOOD_PRINTER_CLOSE,
             OpenDescription = Descriptions.FOOD_PRINTER_OPEN,
             IsClosed = true,
             IsCloseAble = true,

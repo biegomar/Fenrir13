@@ -32,6 +32,23 @@ internal partial class EventProvider
             cryoChamber.AfterLook -= LookAtPierhole;
         }
     }
+
+    internal void PullFridgeHandle(object sender, ContainerObjectEventArgs eventArgs)
+    {
+        if (sender is Item fridgeHandle && fridgeHandle.Key == Keys.FRIDGE_DOOR_HANDLE)
+        {
+            var fridge = this.universe.ActiveLocation.GetItemByKey(Keys.FRIDGE);
+            if (fridge != default)
+            {
+                fridge.IsClosed = true;
+                PrintingSubsystem.Resource(Descriptions.FRIDGE_DOOR_HANDLE_PULL);
+                fridgeHandle.IsPickAble = true;
+                this.universe.PickObject(fridgeHandle, true);
+                this.universe.Score += this.universe.ScoreBoard[nameof(this.PullFridgeHandle)];
+                fridgeHandle.Pull -= PullFridgeHandle;    
+            }
+        }
+    }
     
     internal void LookAtDisplay(object sender, ContainerObjectEventArgs eventArgs)
     {

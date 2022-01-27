@@ -497,7 +497,7 @@ In einigen typischen OP-Schränken sind alle relevanten Instrumente und Verbands
         <value>Der Food-Printer ist sicherlich eines der tollsten Geräte hier an Bord. Bestückt mit Patronen aus den verschiedensten Nahrungsgrundstoffe kann er nahezu alle bekannten Menüs zauber. Das ist der Star-Trek-Replikator par excellence!</value>
     </data>
     <data name="FOOD_PRINTER_OPEN" xml:space="preserve">
-        <value>Der Innenraum ist leer und so groß wie bei einer Mikrowelle. Also passt dort bequem einer Teller für eine zu produzierende Portion raus. Ach wenn Dir irgendwie schon das Wasser im Mund zusammenläuft, solltest Du Dich gerade besser nicht um Essen kümmern.</value>
+        <value>Der Innenraum ist leer und so groß wie bei einer Mikrowelle. Also passt dort bequem ein Teller für eine zu produzierende Portion rein. Auch, wenn Dir irgendwie schon das Wasser im Mund zusammenläuft, solltest Du Dich gerade besser nicht um Essen kümmern.</value>
     </data>
     <data name="FRIDGE_DOOR_HANDLE" xml:space="preserve">
         <value>Es handelt sich um eine einfache metallische Aparatur die dazu dient, das Objekt zu öffnen, an dem sie montiert ist.</value>
@@ -510,5 +510,17 @@ In einigen typischen OP-Schränken sind alle relevanten Instrumente und Verbands
     </data>
     <data name="FRIDGE_CLOSE" xml:space="preserve">
         <value>Er ist geschlossen.</value>
+    </data>
+    <data name="FRIDGE_DOOR_HANDLE_PULL" xml:space="preserve">
+        <value>Du schließt die Tür, um etwas mehr Widerstand zu haben und ziehst noch einmal kräftig an dem Griff. Er löst sich nun komplett und Du hast in der Hand. Ein prüfender Blick offenbart Dir, dass der Griff mit einen Vierkantstift in der Tür eingesteckt war.</value>
+    </data>
+    <data name="FRIDGE_DOOR_HANDLE_CONTAINMENT" xml:space="preserve">
+        <value>Der Griff der Kühlschranktür ist halb herausgezogen.</value>
+    </data>
+    <data name="FRIDGE_OPEN" xml:space="preserve">
+        <value>Im Kühlraum stapeln sich die einzeln verpackten Nahrungsbestandteile. Kleine wurstförmige, transparante Beutelchen aus dünnem Kunstsoff, mit denen man den Drucker nachladen kann. Tolle Sache!</value>
+    </data>
+    <data name="FRIDGE_DOOR_HANDLE_UNPICKABLE" xml:space="preserve">
+        <value>So leicht löst sich der Griff dann auch wieder nicht. Ein kräftiger Ruck würde ihn wahrscheinlich lösen.</value>
     </data>
 </root>

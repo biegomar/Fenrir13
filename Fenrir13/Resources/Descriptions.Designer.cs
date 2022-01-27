@@ -882,7 +882,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Innenraum ist leer und so groß wie bei einer Mikrowelle. Also passt dort bequem einer Teller für eine zu produzierende Portion raus. Ach wenn Dir irgendwie schon das Wasser im Mund zusammenläuft, solltest Du Dich gerade besser nicht um Essen kümmern..
+        ///   Looks up a localized string similar to Der Innenraum ist leer und so groß wie bei einer Mikrowelle. Also passt dort bequem ein Teller für eine zu produzierende Portion rein. Auch, wenn Dir irgendwie schon das Wasser im Mund zusammenläuft, solltest Du Dich gerade besser nicht um Essen kümmern..
         /// </summary>
         internal static string FOOD_PRINTER_OPEN {
             get {
@@ -918,11 +918,47 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Der Griff der Kühlschranktür ist halb herausgezogen..
+        /// </summary>
+        internal static string FRIDGE_DOOR_HANDLE_CONTAINMENT {
+            get {
+                return ResourceManager.GetString("FRIDGE_DOOR_HANDLE_CONTAINMENT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Du ergreifst den Türgriff, ziehst an ihm und öffnest die Tür. Aber der Griff scheint nicht richtig montiert zu sein. Der leichte Ruck hat ihn ein Stück aus seiner Position bewegt und er ragt nun deutlich hervor. Ein weiterer Ruck würde ihn bestimmt komplett aus der Tür ziehen..
         /// </summary>
         internal static string FRIDGE_DOOR_HANDLE_OPEN {
             get {
                 return ResourceManager.GetString("FRIDGE_DOOR_HANDLE_OPEN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Du schließt die Tür, um etwas mehr Widerstand zu haben und ziehst noch einmal kräftig an dem Griff. Er löst sich nun komplett und Du hast in der Hand. Ein prüfender Blick offenbart Dir, dass der Griff mit einen Vierkantstift in der Tür eingesteckt war..
+        /// </summary>
+        internal static string FRIDGE_DOOR_HANDLE_PULL {
+            get {
+                return ResourceManager.GetString("FRIDGE_DOOR_HANDLE_PULL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to So leicht löst sich der Griff dann auch wieder nicht. Ein kräftiger Ruck würde ihn wahrscheinlich lösen..
+        /// </summary>
+        internal static string FRIDGE_DOOR_HANDLE_UNPICKABLE {
+            get {
+                return ResourceManager.GetString("FRIDGE_DOOR_HANDLE_UNPICKABLE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Im Kühlraum stapeln sich die einzeln verpackten Nahrungsbestandteile. Kleine wurstförmige, transparante Beutelchen aus dünnem Kunstsoff, mit denen man den Drucker nachladen kann. Tolle Sache!.
+        /// </summary>
+        internal static string FRIDGE_OPEN {
+            get {
+                return ResourceManager.GetString("FRIDGE_OPEN", resourceCulture);
             }
         }
         
