@@ -466,6 +466,33 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Der Food-Printer|Food-Printer|FoodPrinter|Foot Printer|Printer|Drucker.
+        /// </summary>
+        internal static string FOOD_PRINTER {
+            get {
+                return ResourceManager.GetString("FOOD_PRINTER", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Der Kühlschrank|Kühlschrank.
+        /// </summary>
+        internal static string FRIDGE {
+            get {
+                return ResourceManager.GetString("FRIDGE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Der Türgriff|Türgriff|Griff.
+        /// </summary>
+        internal static string FRIDGE_DOOR_HANDLE {
+            get {
+                return ResourceManager.GetString("FRIDGE_DOOR_HANDLE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Frontseite|Front.
         /// </summary>
         internal static string FRONTSIDE {

@@ -864,6 +864,69 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Der Food-Printer ist sicherlich eines der tollsten Geräte hier an Bord. Bestückt mit Patronen aus den verschiedensten Nahrungsgrundstoffe kann er nahezu alle bekannten Menüs zauber. Das ist der Star-Trek-Replikator par excellence!.
+        /// </summary>
+        internal static string FOOD_PRINTER {
+            get {
+                return ResourceManager.GetString("FOOD_PRINTER", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Er ist geschlossen..
+        /// </summary>
+        internal static string FOOD_PRINTER_CLOSE {
+            get {
+                return ResourceManager.GetString("FOOD_PRINTER_CLOSE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Der Innenraum ist leer und so groß wie bei einer Mikrowelle. Also passt dort bequem einer Teller für eine zu produzierende Portion raus. Ach wenn Dir irgendwie schon das Wasser im Mund zusammenläuft, solltest Du Dich gerade besser nicht um Essen kümmern..
+        /// </summary>
+        internal static string FOOD_PRINTER_OPEN {
+            get {
+                return ResourceManager.GetString("FOOD_PRINTER_OPEN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ein schmuckloser, in Edelstahloptik gehaltener, großer Kasten. Für die Zeit, in der die Crew wach ist und arbeiten muss, bietet das Gerät ausreichend Platz für die einzelnen Nahrungsmittel-Komponenten, die für den Food-Printer erforderlich sind. Es ist auch immer genug Vorrat vorhanden, für den Fall, dass die Crew längere Zeit überbrücken muss. Böse Zungen behaupten, dass in Zeiten der Not an Bord immer zuerst die Wissenschaftler durch die Luftschleuse ins All entsorgt werden...naja, man wird sehen..
+        /// </summary>
+        internal static string FRIDGE {
+            get {
+                return ResourceManager.GetString("FRIDGE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Er ist geschlossen..
+        /// </summary>
+        internal static string FRIDGE_CLOSE {
+            get {
+                return ResourceManager.GetString("FRIDGE_CLOSE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Es handelt sich um eine einfache metallische Aparatur die dazu dient, das Objekt zu öffnen, an dem sie montiert ist..
+        /// </summary>
+        internal static string FRIDGE_DOOR_HANDLE {
+            get {
+                return ResourceManager.GetString("FRIDGE_DOOR_HANDLE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Du ergreifst den Türgriff, ziehst an ihm und öffnest die Tür. Aber der Griff scheint nicht richtig montiert zu sein. Der leichte Ruck hat ihn ein Stück aus seiner Position bewegt und er ragt nun deutlich hervor. Ein weiterer Ruck würde ihn bestimmt komplett aus der Tür ziehen..
+        /// </summary>
+        internal static string FRIDGE_DOOR_HANDLE_OPEN {
+            get {
+                return ResourceManager.GetString("FRIDGE_DOOR_HANDLE_OPEN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Naja, die Frontseite ist halt vorne. Da wo die Scheibe ist..
         /// </summary>
         internal static string FRONTSIDE {
@@ -974,7 +1037,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Für die maximal sechs Personen Besatzung ist die Küche üppig ausgestattet und sehr geräumig. Es finden sich ein Ofen für die Zubereitung der Fertiggerichte, eine Spülmaschine, ein Kühlschrank für die Speisen und Getränke, sowie einige Schränke. Wenn man essen möchte nimmt man an einem der sechs Stühle vor dem geräumigen Tisch in der Mitte des Raumes Platz. Wie überall im Schiff ist der Boden aus magnetisierbarem Metall, um auch hier das Möbiliar gegen Verrutschen zu sichern..
+        ///   Looks up a localized string similar to Für die maximal sechs Personen Besatzung ist die Küche üppig ausgestattet und sehr geräumig. Es finden sich ein Food-Printer für die Zubereitung der individuellen Gerichte, eine Spülmaschine, ein Kühlschrank für die Nahrungsbausteine des Druckers, sowie einige Schränke. Wenn man essen möchte nimmt man an einem der sechs Stühle vor dem geräumigen Tisch in der Mitte des Raumes Platz. Wie überall im Schiff ist der Boden aus magnetisierbarem Metall, um auch hier das Möbiliar gegen Verrutschen zu sichern..
         /// </summary>
         internal static string KITCHEN {
             get {

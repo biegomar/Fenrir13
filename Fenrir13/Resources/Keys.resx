@@ -300,4 +300,13 @@
     <data name="AMBULANCE_RESPIRATOR_FLAP" xml:space="preserve">
         <value>AMBULANCE_RESPIRATOR_FLAP</value>
     </data>
+    <data name="FRIDGE" xml:space="preserve">
+        <value>FRIDGE</value>
+    </data>
+    <data name="FOOD_PRINTER" xml:space="preserve">
+        <value>FOOD_PRINTER</value>
+    </data>
+    <data name="FRIDGE_DOOR_HANDLE" xml:space="preserve">
+        <value>FRIDGE_DOOR_HANDLE</value>
+    </data>
 </root>

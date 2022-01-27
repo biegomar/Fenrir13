@@ -252,4 +252,13 @@
     <data name="AMBULANCE_RESPIRATOR_FLAP" xml:space="preserve">
         <value>Die Verschlussklappe|Verschlussklappe|Verschlusskappe|Klappe</value>
     </data>
+    <data name="FRIDGE" xml:space="preserve">
+        <value>Der Kühlschrank|Kühlschrank</value>
+    </data>
+    <data name="FOOD_PRINTER" xml:space="preserve">
+        <value>Der Food-Printer|Food-Printer|FoodPrinter|Foot Printer|Printer|Drucker</value>
+    </data>
+    <data name="FRIDGE_DOOR_HANDLE" xml:space="preserve">
+        <value>Der Türgriff|Türgriff|Griff</value>
+    </data>
 </root>

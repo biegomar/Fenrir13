@@ -280,6 +280,23 @@ internal partial class EventProvider
             }
         }
     }
+
+    internal void OpenFridge(object sender, ContainerObjectEventArgs eventArgs)
+    {
+        if (sender is Item fridge && fridge.Key == Keys.FRIDGE)
+        {
+            if (!fridge.IsClosed)
+            {
+                var handle = fridge.GetItemByKey(Keys.FRIDGE_DOOR_HANDLE);
+                if (handle != default)
+                {
+                    handle.IsHidden = false;
+                    PrintingSubsystem.Resource(Descriptions.FRIDGE_DOOR_HANDLE_OPEN);
+                    fridge.AfterOpen -= OpenFridge;
+                }
+            }
+        }
+    }
     
     internal void TakeDumbbellBar(object sender, ContainerObjectEventArgs eventArg)
     {

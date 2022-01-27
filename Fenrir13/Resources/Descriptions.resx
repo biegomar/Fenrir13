@@ -325,7 +325,7 @@ Vielleicht kannst Du unten bei den Maschinenräumen mehr unternehmen als von hie
         <value>In diesem Raum lassen sich viele Dinge verwirklichen. Hier kann man gemühtlich chillen, ein wenig Zocken oder einfach nur mit den Kollegen quatschen.</value>
     </data>
     <data name="KITCHEN" xml:space="preserve">
-        <value>Für die maximal sechs Personen Besatzung ist die Küche üppig ausgestattet und sehr geräumig. Es finden sich ein Ofen für die Zubereitung der Fertiggerichte, eine Spülmaschine, ein Kühlschrank für die Speisen und Getränke, sowie einige Schränke. Wenn man essen möchte nimmt man an einem der sechs Stühle vor dem geräumigen Tisch in der Mitte des Raumes Platz. Wie überall im Schiff ist der Boden aus magnetisierbarem Metall, um auch hier das Möbiliar gegen Verrutschen zu sichern.</value>
+        <value>Für die maximal sechs Personen Besatzung ist die Küche üppig ausgestattet und sehr geräumig. Es finden sich ein Food-Printer für die Zubereitung der individuellen Gerichte, eine Spülmaschine, ein Kühlschrank für die Nahrungsbausteine des Druckers, sowie einige Schränke. Wenn man essen möchte nimmt man an einem der sechs Stühle vor dem geräumigen Tisch in der Mitte des Raumes Platz. Wie überall im Schiff ist der Boden aus magnetisierbarem Metall, um auch hier das Möbiliar gegen Verrutschen zu sichern.</value>
     </data>
     <data name="AIRLOCK" xml:space="preserve">
         <value>Die Schleuse dient als Weg nach Draußen und sobald Du komplett eingetreten bist, schließt sich die Tür hinter Dir und ein weiteres Schott wird davor heruntergelassen. Du fühlst plötzlich, dass Deine Glieder sich leichter anfühlen, Deine Bewegungen sind mühelos und Du spürst kaum noch Dein eigenes Gewicht. Klar, denn hier in der Schleuse wird bereits auf die künstliche Schwerkraft verzichtet. 
@@ -489,5 +489,26 @@ In einigen typischen OP-Schränken sind alle relevanten Instrumente und Verbands
     </data>
     <data name="AMBULANCE_RESPIRATOR_FLAP_DUMBBELL_BAR_UNBREAKABLE" xml:space="preserve">
         <value>Ja, dass könnte prinzipiell klappen, aber da Du nicht weißt, was genau an explosiven Materialien da drin ist, solltest Du das nicht versuchen.</value>
+    </data>
+    <data name="FRIDGE" xml:space="preserve">
+        <value>Ein schmuckloser, in Edelstahloptik gehaltener, großer Kasten. Für die Zeit, in der die Crew wach ist und arbeiten muss, bietet das Gerät ausreichend Platz für die einzelnen Nahrungsmittel-Komponenten, die für den Food-Printer erforderlich sind. Es ist auch immer genug Vorrat vorhanden, für den Fall, dass die Crew längere Zeit überbrücken muss. Böse Zungen behaupten, dass in Zeiten der Not an Bord immer zuerst die Wissenschaftler durch die Luftschleuse ins All entsorgt werden...naja, man wird sehen.</value>
+    </data>
+    <data name="FOOD_PRINTER" xml:space="preserve">
+        <value>Der Food-Printer ist sicherlich eines der tollsten Geräte hier an Bord. Bestückt mit Patronen aus den verschiedensten Nahrungsgrundstoffe kann er nahezu alle bekannten Menüs zauber. Das ist der Star-Trek-Replikator par excellence!</value>
+    </data>
+    <data name="FOOD_PRINTER_OPEN" xml:space="preserve">
+        <value>Der Innenraum ist leer und so groß wie bei einer Mikrowelle. Also passt dort bequem einer Teller für eine zu produzierende Portion raus. Ach wenn Dir irgendwie schon das Wasser im Mund zusammenläuft, solltest Du Dich gerade besser nicht um Essen kümmern.</value>
+    </data>
+    <data name="FRIDGE_DOOR_HANDLE" xml:space="preserve">
+        <value>Es handelt sich um eine einfache metallische Aparatur die dazu dient, das Objekt zu öffnen, an dem sie montiert ist.</value>
+    </data>
+    <data name="FRIDGE_DOOR_HANDLE_OPEN" xml:space="preserve">
+        <value>Du ergreifst den Türgriff, ziehst an ihm und öffnest die Tür. Aber der Griff scheint nicht richtig montiert zu sein. Der leichte Ruck hat ihn ein Stück aus seiner Position bewegt und er ragt nun deutlich hervor. Ein weiterer Ruck würde ihn bestimmt komplett aus der Tür ziehen.</value>
+    </data>
+    <data name="FOOD_PRINTER_CLOSE" xml:space="preserve">
+        <value>Er ist geschlossen.</value>
+    </data>
+    <data name="FRIDGE_CLOSE" xml:space="preserve">
+        <value>Er ist geschlossen.</value>
     </data>
 </root>
