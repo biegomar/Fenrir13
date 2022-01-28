@@ -954,6 +954,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Ohne den montierten Griff kann der Kühlschrank leider nicht geöffnet werden..
+        /// </summary>
+        internal static string FRIDGE_LOCKED {
+            get {
+                return ResourceManager.GetString("FRIDGE_LOCKED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Im Kühlraum stapeln sich die einzeln verpackten Nahrungsbestandteile. Kleine wurstförmige, transparante Beutelchen aus dünnem Kunstsoff, mit denen man den Drucker nachladen kann. Tolle Sache!.
         /// </summary>
         internal static string FRIDGE_OPEN {

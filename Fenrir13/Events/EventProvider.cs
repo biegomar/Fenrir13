@@ -41,6 +41,8 @@ internal partial class EventProvider
             if (fridge != default)
             {
                 fridge.IsClosed = true;
+                fridge.IsLocked = true;
+
                 PrintingSubsystem.Resource(Descriptions.FRIDGE_DOOR_HANDLE_PULL);
                 fridgeHandle.IsPickAble = true;
                 this.universe.PickObject(fridgeHandle, true);

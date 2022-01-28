@@ -523,4 +523,7 @@ In einigen typischen OP-Schränken sind alle relevanten Instrumente und Verbands
     <data name="FRIDGE_DOOR_HANDLE_UNPICKABLE" xml:space="preserve">
         <value>So leicht löst sich der Griff dann auch wieder nicht. Ein kräftiger Ruck würde ihn wahrscheinlich lösen.</value>
     </data>
+    <data name="FRIDGE_LOCKED" xml:space="preserve">
+        <value>Ohne den montierten Griff kann der Kühlschrank leider nicht geöffnet werden.</value>
+    </data>
 </root>

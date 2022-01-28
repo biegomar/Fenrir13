@@ -37,6 +37,7 @@ internal static class KitchenPrerequisites
             Description = Descriptions.FRIDGE,
             CloseDescription = Descriptions.FRIDGE_CLOSE,
             OpenDescription = Descriptions.FRIDGE_OPEN,
+            LockDescription = Descriptions.FRIDGE_LOCKED,
             IsClosed = true,
             IsCloseAble = true,
         };
