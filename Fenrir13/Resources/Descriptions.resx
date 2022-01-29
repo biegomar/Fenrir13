@@ -325,7 +325,7 @@ Vielleicht kannst Du unten bei den Maschinenräumen mehr unternehmen als von hie
         <value>In diesem Raum lassen sich viele Dinge verwirklichen. Hier kann man gemühtlich chillen, ein wenig Zocken oder einfach nur mit den Kollegen quatschen.</value>
     </data>
     <data name="KITCHEN" xml:space="preserve">
-        <value>Für die maximal sechs Personen Besatzung ist die Küche üppig ausgestattet und sehr geräumig. Es finden sich ein Food-Printer für die Zubereitung der individuellen Gerichte, eine Spülmaschine, ein Kühlschrank für die Nahrungsbausteine des Druckers, sowie einige Schränke. Wenn man essen möchte nimmt man an einem der sechs Stühle vor dem geräumigen Tisch in der Mitte des Raumes Platz. Wie überall im Schiff ist der Boden aus magnetisierbarem Metall, um auch hier das Möbiliar gegen Verrutschen zu sichern.</value>
+        <value>Für die maximal sechs Personen Besatzung ist die Küche üppig ausgestattet und sehr geräumig. Es finden sich ein Food-Printer für die Zubereitung der individuellen Gerichte, ein Reststoffverwerter, ein Kühlschrank für die Nahrungsbausteine des Druckers, sowie einige Schränke. Wenn man essen möchte nimmt man an einem der sechs Stühle vor dem geräumigen Tisch in der Mitte des Raumes Platz. Wie überall im Schiff ist der Boden aus magnetisierbarem Metall, um auch hier das Möbiliar gegen Verrutschen zu sichern.</value>
     </data>
     <data name="AIRLOCK" xml:space="preserve">
         <value>Die Schleuse dient als Weg nach Draußen und sobald Du komplett eingetreten bist, schließt sich die Tür hinter Dir und ein weiteres Schott wird davor heruntergelassen. Du fühlst plötzlich, dass Deine Glieder sich leichter anfühlen, Deine Bewegungen sind mühelos und Du spürst kaum noch Dein eigenes Gewicht. Klar, denn hier in der Schleuse wird bereits auf die künstliche Schwerkraft verzichtet. 
@@ -375,7 +375,7 @@ Die Wand mit der Tür ist frei, nur ein kleiner Papiereimer steht dort.</value>
         <value>Unter einer der Bänke liegt eine Metallkiste.</value>
     </data>
     <data name="EQUIPMENT_BOX_LOCKDESCRIPTION" xml:space="preserve">
-        <value>Sie ist durch ein Vorhängeschloß gesichert.</value>
+        <value>Sie ist durch ein Vorhängeschloss gesichert.</value>
     </data>
     <data name="HELMET" xml:space="preserve">
         <value>Der Helm schützt Dich im All und lässt Dich atmen. Im Bereich des Hinterkopf führt ein kurzer Schlauch aus dem Helm.</value>
@@ -390,10 +390,10 @@ Die Wand mit der Tür ist frei, nur ein kleiner Papiereimer steht dort.</value>
         <value>Da Dein Bio-Suit Deine Füße nicht bedeckt, dienen die Boots dazu, Dich bei einem Space-Ausflug zu schützen. Auch sind die Stiefel magnetisch, damit man an der Aussenhaut des Schiffs sicheren Halt hat.</value>
     </data>
     <data name="EQUIPMENT_BOX_LOCK" xml:space="preserve">
-        <value>Das Schloß ist sehr massiv und wird normalerweise mit einem Schlüssel geöffnet. Sicherlich ist das die Kiste eines der Mechaniker und der Schlüssel wird in seiner Kabine sein. Da kommst Du aber aufgrund der Situation nicht dran. Mist!</value>
+        <value>Das Schloss ist sehr massiv und wird normalerweise mit einem Schlüssel geöffnet. Sicherlich ist das die Kiste eines der Mechaniker und der Schlüssel wird in seiner Kabine sein. Da kommst Du aber aufgrund der Situation nicht dran. Mist!</value>
     </data>
     <data name="BREAK_EQUIPMENT_BOX_LOCK" xml:space="preserve">
-        <value>Du schaust auf das Schloß, dann auf die Stange. Wiegst sie abschätzend in Deiner Hand und stemmst sie kurzentschlossen mit aller Kraft gegen das Schloß. Das bricht krachend auseinander und die Kiste ist nun nicht mehr gesichert!</value>
+        <value>Du schaust auf das Schloss, dann auf die Stange. Wiegst sie abschätzend in Deiner Hand und stemmst sie kurzentschlossen mit aller Kraft gegen das Schloss. Das bricht krachend auseinander und die Kiste ist nun nicht mehr gesichert!</value>
     </data>
     <data name="EQUIPMENT_BOX_CLOSED" xml:space="preserve">
         <value>Die Kiste ist geschlossen.</value>
@@ -461,7 +461,7 @@ In einigen typischen OP-Schränken sind alle relevanten Instrumente und Verbands
         <value>Der OP-Tisch ist ein elektrisch verstellbarer, mobiler Operationstisch, der aus Edelstahl hergestellt ist. Die segmentierte Liegefläche ist durch ein ausgeklügeltes System in der Tischplatte schnell und einfach zu wechseln, so können viele fachspezifische Eingriffe realisiert werden.</value>
     </data>
     <data name="AMBULANCE_OP_ROBOTER" xml:space="preserve">
-        <value>Der Roboter ist in der Lage einfache Operationen selbständig durchzuführen. Seine vier Arme helfen ihm dabei auch schwierige Hand - oder besser - Robotergriffe zu meistern. Bei schwierigeren Eingriffen wird er in der Regel aber als Assistenzsystem eingesetzt und durch einen Menschen geführt. </value>
+        <value>Der Roboter ist in der Lage einfache Operationen selbständig durchzuführen. Seine vier Arme helfen ihm dabei auch schwierige Hand - oder besser - Robotergriffe zu meistern. Bei schwerwiegenden Eingriffen wird er in der Regel aber als Assistenzsystem eingesetzt und durch einen Menschen geführt. </value>
     </data>
     <data name="CEILING" xml:space="preserve">
         <value>Jede Decke hier an Bord ist gleich. Sie ist mit einer Art Kunststoff bezogen, der in der Lage ist, wie eine riesige Leinwand beliebige Dinge zu projezieren. Wenn man wollte könnte man sich aufs Bett legen und Bilder oder Filme schauen. Einige machen das sogar manchmal, aber meistens wird sie als reine indirekte Lichtquelle genutzt, um die Wohn- und Arbeitsbereiche zu erhellen.</value>
@@ -512,18 +512,30 @@ In einigen typischen OP-Schränken sind alle relevanten Instrumente und Verbands
         <value>Er ist geschlossen.</value>
     </data>
     <data name="FRIDGE_DOOR_HANDLE_PULL" xml:space="preserve">
-        <value>Du schließt die Tür, um etwas mehr Widerstand zu haben und ziehst noch einmal kräftig an dem Griff. Er löst sich nun komplett und Du hast in der Hand. Ein prüfender Blick offenbart Dir, dass der Griff mit einen Vierkantstift in der Tür eingesteckt war.</value>
+        <value>Du schließt die Tür, um etwas mehr Widerstand zu haben und ziehst noch einmal kräftig an dem Griff. Er löst sich nun komplett und Du hast in der Hand. Ein prüfender Blick offenbart Dir, dass er mit einen Vierkantstift in der Tür eingesteckt war.</value>
     </data>
     <data name="FRIDGE_DOOR_HANDLE_CONTAINMENT" xml:space="preserve">
         <value>Der Griff der Kühlschranktür ist halb herausgezogen.</value>
     </data>
     <data name="FRIDGE_OPEN" xml:space="preserve">
-        <value>Im Kühlraum stapeln sich die einzeln verpackten Nahrungsbestandteile. Kleine wurstförmige, transparante Beutelchen aus dünnem Kunstsoff, mit denen man den Drucker nachladen kann. Tolle Sache!</value>
+        <value>Im Kühlraum stapeln sich die einzeln verpackten Nahrungsbestandteile. Kleine wurstförmige, transparante Beutelchen aus dünnem Kunststoff, mit denen man den Drucker nachladen kann. Tolle Sache!</value>
     </data>
     <data name="FRIDGE_DOOR_HANDLE_UNPICKABLE" xml:space="preserve">
         <value>So leicht löst sich der Griff dann auch wieder nicht. Ein kräftiger Ruck würde ihn wahrscheinlich lösen.</value>
     </data>
     <data name="FRIDGE_LOCKED" xml:space="preserve">
         <value>Ohne den montierten Griff kann der Kühlschrank leider nicht geöffnet werden.</value>
+    </data>
+    <data name="RECYCLER" xml:space="preserve">
+        <value>Hier auf dem Schiff ist Wasser sehr wertvoll. Geschirr und Besteck wird nicht gespült, sondern anderweitig verwertet. Dieser hochmoderne Recycler ist in der Lage, die eingeworfenen Reste exakt von einander zu trennen und einer weiteren Verwertung zuzuführen. Wie das alles geht ist Dir schleierhaft. Du weißt nur, dass die Nahrungsreste wieder in ihre Grundbausteine überführt werden und dann dem Printer zur Verfügung stehen. Was mit den anderen Materialien passiert weißt Du nicht.</value>
+    </data>
+    <data name="RECYCLER_FIRSTLOOK" xml:space="preserve">
+        <value>Aufgrund der aktuellen Energiesituation ist das Gerät vollständig deaktiviert.</value>
+    </data>
+    <data name="EQUIPMENT_BOX_LOCK_CONTAINMENT" xml:space="preserve">
+        <value>Sie ist durch ein Vorhängeschloss gesichert.</value>
+    </data>
+    <data name="EQUIPMENT_BOX_LOCK_BREAK_CONTAINMENT" xml:space="preserve">
+        <value>Das zerstörte und unbrauchbare Schloss liegt auf dem Boden.</value>
     </data>
 </root>

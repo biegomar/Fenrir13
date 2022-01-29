@@ -18,15 +18,12 @@ internal static class EquipmentRoomPrerequisites
         equipmentRoom.Items.Add(GetBox(eventProvider));
 
         AddSurroundings(equipmentRoom);
-        
-        AddBreakEvents(equipmentRoom, eventProvider);
-        
+
         return equipmentRoom;
     }
     
     private static void AddSurroundings(Location equipmentRoom)
     {
-        equipmentRoom.Surroundings.Add(Keys.EQUIPMENT_BOX_LOCK, Descriptions.EQUIPMENT_BOX_LOCK);
         equipmentRoom.Surroundings.Add(Keys.CHAMBER_WALL, Descriptions.CHAMBER_WALL);
         equipmentRoom.Surroundings.Add(Keys.EQUIPMENT_ROOM_BENCH, Descriptions.EQUIPMENT_ROOM_BENCH);
         equipmentRoom.Surroundings.Add(Keys.EQUIPMENT_ROOM_NICHE, Descriptions.EQUIPMENT_ROOM_NICHE);
@@ -52,6 +49,7 @@ internal static class EquipmentRoomPrerequisites
             IsPickAble = false
         };
         
+        box.LinkedTo.Add(GetBoxLock(eventProvider));
         box.Items.Add(GetHelmet(eventProvider));
         box.Items.Add(GetGloves(eventProvider));
         box.Items.Add(GetBoots(eventProvider));
@@ -60,6 +58,24 @@ internal static class EquipmentRoomPrerequisites
         AddOpenEvents(box, eventProvider);
 
         return box;
+    }
+    
+    private static Item GetBoxLock(EventProvider eventProvider)
+    {
+        var boxLock = new Item()
+        {
+            Key = Keys.EQUIPMENT_BOX_LOCK,
+            Name = Items.EQUIPMENT_BOX_LOCK,
+            Description = Descriptions.EQUIPMENT_BOX_LOCK,
+            ContainmentDescription = Descriptions.EQUIPMENT_BOX_LOCK_CONTAINMENT,
+            IsPickAble = false,
+            IsHidden = true,
+            IsBreakable = true
+        };
+        
+        AddBreakEvents(boxLock, eventProvider);
+
+        return boxLock;
     }
     
     private static Item GetHelmet(EventProvider eventProvider)
@@ -132,9 +148,9 @@ internal static class EquipmentRoomPrerequisites
     }
     
 
-    private static void AddBreakEvents(Location equipmentRoom, EventProvider eventProvider)
+    private static void AddBreakEvents(Item box, EventProvider eventProvider)
     {
-        equipmentRoom.Break += eventProvider.BreakEquipmentBoxLock;
+        box.Break += eventProvider.BreakEquipmentBoxLock;
         eventProvider.ScoreBoard.Add(nameof(eventProvider.BreakEquipmentBoxLock), 5);
     }
     

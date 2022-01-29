@@ -134,7 +134,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Roboter ist in der Lage einfache Operationen selbständig durchzuführen. Seine vier Arme helfen ihm dabei auch schwierige Hand - oder besser - Robotergriffe zu meistern. Bei schwierigeren Eingriffen wird er in der Regel aber als Assistenzsystem eingesetzt und durch einen Menschen geführt. .
+        ///   Looks up a localized string similar to Der Roboter ist in der Lage einfache Operationen selbständig durchzuführen. Seine vier Arme helfen ihm dabei auch schwierige Hand - oder besser - Robotergriffe zu meistern. Bei schwerwiegenden Eingriffen wird er in der Regel aber als Assistenzsystem eingesetzt und durch einen Menschen geführt. .
         /// </summary>
         internal static string AMBULANCE_OP_ROBOTER {
             get {
@@ -215,7 +215,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Du schaust auf das Schloß, dann auf die Stange. Wiegst sie abschätzend in Deiner Hand und stemmst sie kurzentschlossen mit aller Kraft gegen das Schloß. Das bricht krachend auseinander und die Kiste ist nun nicht mehr gesichert!.
+        ///   Looks up a localized string similar to Du schaust auf das Schloss, dann auf die Stange. Wiegst sie abschätzend in Deiner Hand und stemmst sie kurzentschlossen mit aller Kraft gegen das Schloss. Das bricht krachend auseinander und die Kiste ist nun nicht mehr gesichert!.
         /// </summary>
         internal static string BREAK_EQUIPMENT_BOX_LOCK {
             get {
@@ -764,7 +764,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Das Schloß ist sehr massiv und wird normalerweise mit einem Schlüssel geöffnet. Sicherlich ist das die Kiste eines der Mechaniker und der Schlüssel wird in seiner Kabine sein. Da kommst Du aber aufgrund der Situation nicht dran. Mist!.
+        ///   Looks up a localized string similar to Das Schloss ist sehr massiv und wird normalerweise mit einem Schlüssel geöffnet. Sicherlich ist das die Kiste eines der Mechaniker und der Schlüssel wird in seiner Kabine sein. Da kommst Du aber aufgrund der Situation nicht dran. Mist!.
         /// </summary>
         internal static string EQUIPMENT_BOX_LOCK {
             get {
@@ -773,7 +773,25 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sie ist durch ein Vorhängeschloß gesichert..
+        ///   Looks up a localized string similar to Das zerstörte und unbrauchbare Schloss liegt auf dem Boden..
+        /// </summary>
+        internal static string EQUIPMENT_BOX_LOCK_BREAK_CONTAINMENT {
+            get {
+                return ResourceManager.GetString("EQUIPMENT_BOX_LOCK_BREAK_CONTAINMENT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sie ist durch ein Vorhängeschloss gesichert..
+        /// </summary>
+        internal static string EQUIPMENT_BOX_LOCK_CONTAINMENT {
+            get {
+                return ResourceManager.GetString("EQUIPMENT_BOX_LOCK_CONTAINMENT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sie ist durch ein Vorhängeschloss gesichert..
         /// </summary>
         internal static string EQUIPMENT_BOX_LOCKDESCRIPTION {
             get {
@@ -936,7 +954,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Du schließt die Tür, um etwas mehr Widerstand zu haben und ziehst noch einmal kräftig an dem Griff. Er löst sich nun komplett und Du hast in der Hand. Ein prüfender Blick offenbart Dir, dass der Griff mit einen Vierkantstift in der Tür eingesteckt war..
+        ///   Looks up a localized string similar to Du schließt die Tür, um etwas mehr Widerstand zu haben und ziehst noch einmal kräftig an dem Griff. Er löst sich nun komplett und Du hast in der Hand. Ein prüfender Blick offenbart Dir, dass er mit einen Vierkantstift in der Tür eingesteckt war..
         /// </summary>
         internal static string FRIDGE_DOOR_HANDLE_PULL {
             get {
@@ -963,7 +981,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Im Kühlraum stapeln sich die einzeln verpackten Nahrungsbestandteile. Kleine wurstförmige, transparante Beutelchen aus dünnem Kunstsoff, mit denen man den Drucker nachladen kann. Tolle Sache!.
+        ///   Looks up a localized string similar to Im Kühlraum stapeln sich die einzeln verpackten Nahrungsbestandteile. Kleine wurstförmige, transparante Beutelchen aus dünnem Kunststoff, mit denen man den Drucker nachladen kann. Tolle Sache!.
         /// </summary>
         internal static string FRIDGE_OPEN {
             get {
@@ -1082,7 +1100,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Für die maximal sechs Personen Besatzung ist die Küche üppig ausgestattet und sehr geräumig. Es finden sich ein Food-Printer für die Zubereitung der individuellen Gerichte, eine Spülmaschine, ein Kühlschrank für die Nahrungsbausteine des Druckers, sowie einige Schränke. Wenn man essen möchte nimmt man an einem der sechs Stühle vor dem geräumigen Tisch in der Mitte des Raumes Platz. Wie überall im Schiff ist der Boden aus magnetisierbarem Metall, um auch hier das Möbiliar gegen Verrutschen zu sichern..
+        ///   Looks up a localized string similar to Für die maximal sechs Personen Besatzung ist die Küche üppig ausgestattet und sehr geräumig. Es finden sich ein Food-Printer für die Zubereitung der individuellen Gerichte, ein Reststoffverwerter, ein Kühlschrank für die Nahrungsbausteine des Druckers, sowie einige Schränke. Wenn man essen möchte nimmt man an einem der sechs Stühle vor dem geräumigen Tisch in der Mitte des Raumes Platz. Wie überall im Schiff ist der Boden aus magnetisierbarem Metall, um auch hier das Möbiliar gegen Verrutschen zu sichern..
         /// </summary>
         internal static string KITCHEN {
             get {
@@ -1260,6 +1278,24 @@ namespace Fenrir13.Resources {
         internal static string RANK {
             get {
                 return ResourceManager.GetString("RANK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hier auf dem Schiff ist Wasser sehr wertvoll. Geschirr und Besteck wird nicht gespült, sondern anderweitig verwertet. Dieser hochmoderne Recycler ist in der Lage, die eingeworfenen Reste exakt von einander zu trennen und einer weiteren Verwertung zuzuführen. Wie das alles geht ist Dir schleierhaft. Du weißt nur, dass die Nahrungsreste wieder in ihre Grundbausteine überführt werden und dann dem Printer zur Verfügung stehen. Was mit den anderen Materialien passiert weißt Du nicht..
+        /// </summary>
+        internal static string RECYCLER {
+            get {
+                return ResourceManager.GetString("RECYCLER", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Aufgrund der aktuellen Energiesituation ist das Gerät vollständig deaktiviert..
+        /// </summary>
+        internal static string RECYCLER_FIRSTLOOK {
+            get {
+                return ResourceManager.GetString("RECYCLER_FIRSTLOOK", resourceCulture);
             }
         }
         

@@ -223,7 +223,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Stuhl.
+        ///   Looks up a localized string similar to Der Stuhl|Stuhl|Stühle.
         /// </summary>
         internal static string CHAIR {
             get {
@@ -394,7 +394,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Das Vorhängeschloß|Vorhängeschloß|Schloß|Schloss|Vorhängeschloss.
+        ///   Looks up a localized string similar to Das Vorhängeschloss|Vorhängeschloss|Schloss|Schloß.
         /// </summary>
         internal static string EQUIPMENT_BOX_LOCK {
             get {
@@ -669,6 +669,15 @@ namespace Fenrir13.Resources {
         internal static string RANK {
             get {
                 return ResourceManager.GetString("RANK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Der Reststoffverwerter|Reststoffverwerter|Verwerter|Recycler.
+        /// </summary>
+        internal static string RECYCLER {
+            get {
+                return ResourceManager.GetString("RECYCLER", resourceCulture);
             }
         }
         

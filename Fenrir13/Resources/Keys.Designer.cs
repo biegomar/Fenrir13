@@ -502,6 +502,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Das zerstörte und unbrauchbare Schloss liegt auf dem Boden..
+        /// </summary>
+        internal static string EQUIPMENT_BOX_LOCK_BREAK_CONTAINMENT {
+            get {
+                return ResourceManager.GetString("EQUIPMENT_BOX_LOCK_BREAK_CONTAINMENT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to EQUIPMENT_ROOM.
         /// </summary>
         internal static string EQUIPMENT_ROOM {
@@ -804,6 +813,15 @@ namespace Fenrir13.Resources {
         internal static string RANK {
             get {
                 return ResourceManager.GetString("RANK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to RECYCLER.
+        /// </summary>
+        internal static string RECYCLER {
+            get {
+                return ResourceManager.GetString("RECYCLER", resourceCulture);
             }
         }
         

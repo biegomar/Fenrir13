@@ -261,16 +261,24 @@ internal partial class EventProvider
         {
             throw new BreakException(BaseDescriptions.IMPOSSIBLE_BREAK_ITEM);
         }
-        
-        if (sender is Location equipmentRoom && equipmentRoom.Key == Keys.EQUIPMENT_ROOM && eventArg.ItemToUse.Key == Keys.DUMBBELL_BAR)
+
+        if (sender is Item boxLock && boxLock.Key == Keys.EQUIPMENT_BOX_LOCK)
         {
-            var box = equipmentRoom.GetItemByKey(Keys.EQUIPMENT_BOX);
+            var box = this.universe.ActiveLocation.GetItemByKey(Keys.EQUIPMENT_BOX);
             if (box != default)
             {
+                if (eventArg.ItemToUse.Key != Keys.DUMBBELL_BAR)
+                {
+                    throw new BreakException(BaseDescriptions.WRONG_BREAK_ITEM);
+                }
+
+                box.LinkedTo.Remove(boxLock);
+                this.universe.ActiveLocation.Items.Add(boxLock);
+                boxLock.ContainmentDescription = Descriptions.EQUIPMENT_BOX_LOCK_BREAK_CONTAINMENT;
                 box.IsLocked = false;
                 PrintingSubsystem.Resource(Descriptions.BREAK_EQUIPMENT_BOX_LOCK);
                 this.universe.Score += this.universe.ScoreBoard[nameof(this.BreakEquipmentBoxLock)];
-                equipmentRoom.Break -= BreakEquipmentBoxLock;
+                box.Break -= BreakEquipmentBoxLock;    
             }
         }
     }

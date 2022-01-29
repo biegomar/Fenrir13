@@ -309,4 +309,10 @@
     <data name="FRIDGE_DOOR_HANDLE" xml:space="preserve">
         <value>FRIDGE_DOOR_HANDLE</value>
     </data>
+    <data name="RECYCLER" xml:space="preserve">
+        <value>RECYCLER</value>
+    </data>
+    <data name="EQUIPMENT_BOX_LOCK_BREAK_CONTAINMENT" xml:space="preserve">
+        <value>Das zerstörte und unbrauchbare Schloss liegt auf dem Boden.</value>
+    </data>
 </root>

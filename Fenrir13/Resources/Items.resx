@@ -67,7 +67,7 @@
         <value>Tisch</value>
     </data>
     <data name="CHAIR" xml:space="preserve">
-        <value>Stuhl</value>
+        <value>Der Stuhl|Stuhl|Stühle</value>
     </data>
     <data name="PARTITION_WALL" xml:space="preserve">
         <value>Trennwand|Sichtschutz</value>
@@ -193,7 +193,7 @@
         <value>Die Stiefel|Stiefel|Moonboots|Boots</value>
     </data>
     <data name="EQUIPMENT_BOX_LOCK" xml:space="preserve">
-        <value>Das Vorhängeschloß|Vorhängeschloß|Schloß|Schloss|Vorhängeschloss</value>
+        <value>Das Vorhängeschloss|Vorhängeschloss|Schloss|Schloß</value>
     </data>
     <data name="AIRLOCK_KEYPAD" xml:space="preserve">
         <value>Das Tastenfeld|Tastenfeld|Tastatur</value>
@@ -260,5 +260,8 @@
     </data>
     <data name="FRIDGE_DOOR_HANDLE" xml:space="preserve">
         <value>Der Türgriff|Türgriff|Griff</value>
+    </data>
+    <data name="RECYCLER" xml:space="preserve">
+        <value>Der Reststoffverwerter|Reststoffverwerter|Verwerter|Recycler</value>
     </data>
 </root>
