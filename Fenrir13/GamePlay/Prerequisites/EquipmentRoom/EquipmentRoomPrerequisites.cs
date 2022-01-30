@@ -40,6 +40,7 @@ internal static class EquipmentRoomPrerequisites
             Key = Keys.EQUIPMENT_BOX,
             Name = Items.EQUIPMENT_BOX,
             Description = Descriptions.EQUIPMENT_BOX,
+            FirstLookDescription = Descriptions.EQUIPMENT_BOX_FIRSTLOOK,
             ContainmentDescription = Descriptions.EQUIPMENT_BOX_CONTAINMENT,
             LockDescription = Descriptions.EQUIPMENT_BOX_LOCKDESCRIPTION,
             CloseDescription = Descriptions.EQUIPMENT_BOX_CLOSED,
@@ -77,7 +78,7 @@ internal static class EquipmentRoomPrerequisites
 
         return boxLock;
     }
-    
+
     private static Item GetHelmet(EventProvider eventProvider)
     {
         var helmet = new Item()

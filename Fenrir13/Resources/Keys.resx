@@ -315,4 +315,7 @@
     <data name="EQUIPMENT_BOX_LOCK_BREAK_CONTAINMENT" xml:space="preserve">
         <value>Das zerstörte und unbrauchbare Schloss liegt auf dem Boden.</value>
     </data>
+    <data name="EQUIPMENT_BOX_LOCK_DESTROYED" xml:space="preserve">
+        <value>EQUIPMENT_BOX_LOCK_DESTROYED</value>
+    </data>
 </root>

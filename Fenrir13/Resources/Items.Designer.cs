@@ -142,7 +142,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Verschlussklappe|Verschlussklappe|Verschlusskappe|Klappe.
+        ///   Looks up a localized string similar to Die Verschlussklappe|Verschlussklappe|Verschlusskappe|Klappe|Kappe.
         /// </summary>
         internal static string AMBULANCE_RESPIRATOR_FLAP {
             get {
@@ -340,7 +340,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Schublade|Schubladen|Schubfach|Schubfächer.
+        ///   Looks up a localized string similar to Schublade|Schubladen|Schubfach|Schubfächer|Fächer.
         /// </summary>
         internal static string DRAWER {
             get {
@@ -403,6 +403,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Das Vorhängeschloss|Vorhängeschloss|Schloss|Schloß.
+        /// </summary>
+        internal static string EQUIPMENT_BOX_LOCK_DESTROYED {
+            get {
+                return ResourceManager.GetString("EQUIPMENT_BOX_LOCK_DESTROYED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Die Sitzbänke|Sitzbänke|Sitzbank|Bänke|Bank|Ausstattung.
         /// </summary>
         internal static string EQUIPMENT_ROOM_BENCH {
@@ -430,7 +439,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Mülleimer|Mülleimer|Papiereimer|Papierkorb|Müllkorb|Abfalleimer|Abfallkorb.
+        ///   Looks up a localized string similar to Der Mülleimer|Mülleimer|Papiereimer|Papierkorb|Müllkorb|Abfalleimer|Abfallkorb|Korb.
         /// </summary>
         internal static string EQUIPMENT_ROOM_TRASHBIN {
             get {
@@ -637,7 +646,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bullauge|Fenster|Weltraum|All|Weltall.
+        ///   Looks up a localized string similar to Bullauge|Fenster|Weltraum|All|Weltall|Auge.
         /// </summary>
         internal static string PIERHOLE {
             get {

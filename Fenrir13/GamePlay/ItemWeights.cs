@@ -2,7 +2,7 @@ namespace Fenrir13.GamePlay;
 
 public static class ItemWeights
 {
-    public static int DUMBBELL_BAR = 5000;
+    public static int DUMBBELL_BAR = 10000;
     public static int HELMET = 2500;
     public static int GLOVES = 150;
     public static int BOOTS = 500;

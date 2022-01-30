@@ -98,9 +98,6 @@ internal static class CryoChamberPrerequisites
 
     private static void AddAfterLookEvents(Location cryoChamber, EventProvider eventProvider)
     {
-        cryoChamber.AfterLook += eventProvider.LookAtPierhole;
-        eventProvider.ScoreBoard.Add(nameof(eventProvider.LookAtPierhole), 1);
-
         cryoChamber.AfterLook += eventProvider.LookAtClosedDoor;
         eventProvider.ScoreBoard.Add(nameof(eventProvider.LookAtClosedDoor), 1);
 

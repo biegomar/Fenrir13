@@ -45,6 +45,7 @@ internal static class KitchenPrerequisites
             LockDescription = Descriptions.FRIDGE_LOCKED,
             IsClosed = true,
             IsCloseAble = true,
+            IsPickAble = false
         };
         
         fridge.Items.Add(GetHandle(eventProvider));
@@ -56,7 +57,7 @@ internal static class KitchenPrerequisites
     
     private static void AddOpenEvents(Item item, EventProvider eventProvider)
     {
-        item.AfterOpen += eventProvider.OpenFridge;
+        item.BeforeOpen += eventProvider.OpenFridge;
     }
 
     private static Item GetHandle(EventProvider eventProvider)
@@ -96,6 +97,7 @@ internal static class KitchenPrerequisites
             OpenDescription = Descriptions.FOOD_PRINTER_OPEN,
             IsClosed = true,
             IsCloseAble = true,
+            IsPickAble = false
         };
         
         return oven;
@@ -108,7 +110,8 @@ internal static class KitchenPrerequisites
             Key = Keys.RECYCLER,
             Name = Items.RECYCLER,
             Description = Descriptions.RECYCLER,
-            FirstLookDescription = Descriptions.RECYCLER_FIRSTLOOK
+            FirstLookDescription = Descriptions.RECYCLER_FIRSTLOOK,
+            IsPickAble = false
         };
         
         return recycler;

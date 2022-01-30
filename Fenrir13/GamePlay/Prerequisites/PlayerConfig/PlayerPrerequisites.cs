@@ -14,7 +14,7 @@ public class PlayerPrerequisites
             Name = "",
             Description = Descriptions.PLAYER,
             FirstLookDescription = Descriptions.PLAYER_FIRSTLOOK,
-            MaxPayload = 5000,
+            MaxPayload = 10000,
         };
         
         AddSitDownEvents(player, eventProvider);

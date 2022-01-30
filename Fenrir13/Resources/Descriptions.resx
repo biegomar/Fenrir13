@@ -19,9 +19,9 @@
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
     <data name="OPENING" xml:space="preserve">
-        <value>Schwarz. Langsam fräst sich ein auf- und abschwellendes Geräusch durch Deine vernebelten Sinne. Erst scheinbar fern, kommt es pulsierend näher. Ein roter Schein erscheint in der Dunkelheit. Ganz klein und schwach. Gleichermaßen näher kommend und subtil bedrohlich. Ein Tunnel? Ein Zug? Plötzlich zerreißt ein stechender Schmerz in Deinen Lungen Deine Illusion. Adrenalin schießt durch Deinen Körper und holt Dich mit voller, unbarmherziger Härte zurück ins Bewusstsein. Du reißt Deine Augen auf und wirst zugleich von dem Licht, das zuvor ein Zug in weiter Ferne schien geblendet. Atme! Dein Zwerchfell versucht Deine Lungen zu füllen und in der Erwartung von frischer Luft erstirbt dieses Bemühen. Etwas in Deiner Lunge arbeitet gegen diesen Drang und Du spürst wie sich der Schmerz zu einem zähflüssigen Strom aus Magma entwickelt. Der Schmerz breitet sich mit der Intensität eines Buschfeuers in Deinem ganzen Körper aus. Panik keimt auf und unwillkürlich versuchst Du Dich zu bewegen. Es gelingt Dir nicht.
+        <value>Schwarz. Langsam fräst sich ein auf- und abschwellendes Geräusch durch Deine vernebelten Sinne. Erst scheinbar fern, kommt es pulsierend näher. Ein roter Schein erscheint in der Dunkelheit. Ganz klein und schwach. Gleichermaßen näher kommend und subtil bedrohlich. Ein Tunnel? Ein Zug? Plötzlich zerreißt ein stechender Schmerz in Deinen Lungen Deine Illusion. Adrenalin schießt durch Deinen Körper und holt Dich mit voller, unbarmherziger Härte zurück ins Bewusstsein. Du reißt Deine Augen auf und wirst zugleich von dem Licht, das zuvor ein Zug in weiter Ferne schien, geblendet. Atme! Dein Zwerchfell versucht Deine Lungen zu füllen und in der Erwartung von frischer Luft erstirbt dieses Bemühen. Etwas in Deiner Lunge arbeitet gegen diesen Drang und Du spürst wie sich der Schmerz zu einem zähflüssigen Strom aus Magma entwickelt. Der Schmerz breitet sich mit der Intensität eines Buschfeuers in Deinem ganzen Körper aus. Panik keimt auf und unwillkürlich versuchst Du Dich zu bewegen. Es gelingt Dir nicht.
 Plötzlich erstirbt der Widerstand in Deiner Lunge und etwas scheint Deinen Schlund entlang zu kriechen. Erst jetzt merkst Du, dass Dein Mund halb geöffnet ist und etwas scheint darin zu stecken. Mit einem Glucksen lässt dieses Gefühl nach und mit einem Mal verfliegt die Panik. Da wo vorher Schmerz war macht sich nun wohlige Wärme breit. Du bist erwacht!
-Du wirst Dich nie an die Prozedur gewöhnen, die Dich aus dem Cryo-Schlaf zurück ins Hier und Jetzt holt. Der Mix aus Hormonen und Chemikalien, der Dir zur Unterstürzung durch eine intravenöse Nabelschnur gespritzt wurde benötigt halt immer etwas Zeit, um den unangenehmen Teil auszublenden. Du musst husten, da sich noch Reste des Atemgels in Deinen Bronchien befinden. Der Hals ist ganz rau und Du weißt, dass er Dir eine Zeit lang schmerzen wird, wenn die erste Wirkung des Cocktails nachlässt.
+Du wirst Dich nie an die Prozedur gewöhnen, die Dich aus dem Cryo-Schlaf zurück ins Hier und Jetzt holt. Der Mix aus Hormonen und Chemikalien, der Dir zur Unterstützung durch eine intravenöse Nabelschnur gespritzt wurde benötigt halt immer etwas Zeit, um den unangenehmen Teil auszublenden. Du musst husten, da sich noch Reste des Atemgels in Deinen Bronchien befinden. Der Hals ist ganz rau und Du weißt, dass er Dir eine Zeit lang schmerzen wird, wenn die erste Wirkung des Cocktails nachlässt.
 Aber etwas ist anders! Das auf- und abschwellende Geräusch ist nach wie vor da. Und es klingt nach einer typischen Alarm-Sirene. Du schiebst die Kontrolleinheit, die während des Aufwachprozesses Deine Augenbewegungen überwacht haben, zur Seite und setzt Dich in Deinem Cryo-Pod auf. Noch müde und geschwächt erkennst Du nun das Alarm-Blinken, dass Deinen gesamten Raum in rotes Licht taucht. Du mühst Dich aus dem Pod und stehst nun wackelig im Raum. Was genau ist wohl passiert? Und wo ist der Rest der Crew?</value>
     </data>
     <data name="CRYOCHAMBER" xml:space="preserve">
@@ -63,10 +63,10 @@ Du schaust Dir die Maschine an und versuchst es anzuschalten. Nichts passiert! S
     <data name="PIERHOLE" xml:space="preserve">
         <value>Du geht zu dem runden Fenster in Deiner Arbeitsecke und schaust hinaus ins All. Ein atemberaubender Blick offenbart sich Dir. Am Horizont steht ein Roter Zwerg und hat auf diese Entfernung ungefähr die Größe des Mondes in einer beschaulichen Vollmond-Sommernacht. Du bist zwar kein Astrophysiker, aber Du weißt, dass es sich bei dem Stern um Proxima Centauri handeln muss. Nachdem Eure Expedition in den Bruchstücken eines Mondes des Planten Proxima Centauri b erfolgreich Erze von seltenen Metallen einsammeln konnte, sollte Euer Raumtransporter noch einmal näher an das Gestirn heranmanövrieren, um die Energie des Schiffes voll aufzuladen. Oh Nein! Wenn Ihr noch immer hier seid, hat Eure Heimreise offensichtlich noch nicht wirklich begonnen. Etwas muss also mächtig schief gegangen sein!
 
-Dein Blick löst sich und richtet sich weiter nach Westen und Du schaust nun auf das, was aus Deinen Augenwinkeln heraus schon die ganze Zeit sichtbar war - Euer Schiff in voller Pracht!
- Es ist die Fenrir-13, ein Raumtransporter der Viking-Klasse mit einer maximalen Besatzung von sechs Personen. Es ist eines der kleinen Forschungsschiffe, die für Ersterkundungen in die entlegenen Schürfregionen entsandt werden. Der charakteristische Hammerkopf, der nicht ohne Absicht an Mjölnir, dem Hammer des Thor, erinnert, bildet den Wohn- und Arbeitsbereich für die Crew. Hier finden sich neben der Brücke und den Maschinen- und Technikräumen auch die Quartiere der Besatzung. 
-Dem Hammerkopf entwächst der Cargo-Bereich, der sich bei dieser Schiffsgröße auf ca. 20.000 TEU beläuft, und bildet passend zum Bild den Hammerstil. Der Transport der Erze erfolgt auch in den üblichen Schiffs-Containern und das Schiff hat so eine Länge von gut 600 m  und eine breite von ca. 100 m, wenn man den Hammerkopf mit berechnet.
-Voller Stolz prangt der Name des Schiffs in Runen an der Steuerbordseite des Cargo-Bereichs: {0} 13 - Raumfrachter Fenrir 13.</value>
+Dein Blick löst sich und richtet sich weiter nach Westen und Du schaust nun auf das, was aus Deinen Augenwinkeln heraus schon die ganze Zeit sichtbar war - Euer Schiff in voller Pracht! 
+Es ist die Fenrir-13, ein Raumtransporter der  Viking Space Freight Ltd. mit einer maximalen Besatzung von sechs Personen. Es ist eines der kleinen Forschungsschiffe, die für Ersterkundungen in die entlegenen Schürfregionen entsandt werden. Der charakteristische Hammerkopf, der nicht ohne Absicht an Mjölnir, dem Hammer des Thor, erinnert, bildet den Wohn- und Arbeitsbereich für die Crew. Hier finden sich neben der Brücke und den Maschinen- und Technikräumen auch die Quartiere der Besatzung. 
+Dem Hammerkopf entwächst der Cargo-Bereich, der sich bei dieser Schiffsgröße auf ca. 20.000 TEU beläuft, und bildet passend zum Bild den Hammerstil. Der Transport der Erze erfolgt in Containern, die den üblichen Schiffs-Containern sehr ähnlich sind und das Schiff hat so eine Länge von gut 600 m und eine breite von ca. 100 m, wenn man den Hammerkopf mit berechnet.
+Voller Stolz prangt neben einem großen Emblem eines Wolfskopfs der Name des Schiffs in Runen an der Steuerbordseite des Cargo-Bereichs: {0} 13 - Raumfrachter Fenrir 13.</value>
     </data>
     <data name="OFFICECHAIR" xml:space="preserve">
         <value>Neuste Materialen sorgen dafür, dass sich der Stuhl perfekt an Deinem Körper ausrichtet und ihn in eine angenehme ergonomische Position bringt. Eine nahezu perfekte Klimaregulierung machen diesen Stuhl zu einem der bequemsten Plätze hier auf dem Schiff. </value>
@@ -124,7 +124,7 @@ Damit das Schiff permanent in Kontakt zu dem Crew-Mitglied ist, muss der Anzug s
         <value>Naja, es handelt sich um einen ganz schmalen Grat zwischen der Tür und der Wand.</value>
     </data>
     <data name="PEEPHOLE" xml:space="preserve">
-        <value>Die Tür hat ein kleines, tellergroßes Fenster, durch das man in beide Richtungen schauen kann, wenn man das möchte. Es ist elektronisch schaltbar und so kann man bei Bedarf die Transparenz anpassen.</value>
+        <value>Die Tür hat ein kleines, tellergroßes Fenster, durch das man in beide Richtungen schauen kann, wenn man das möchte. Es ist elektronisch schaltbar und so kann man bei Bedarf die Transparenz anpassen. Wenn Du hindurch schaust erkennst Du den menschenleeren Korridor.</value>
     </data>
     <data name="LATCH" xml:space="preserve">
         <value>Wie gesagt. Es gibt ja keine Klinke, also kann ich auch nichts darüber berichten.</value>
@@ -341,7 +341,7 @@ Am südlichen Ende der Schleuse trennt ein weiteres, massives Schott den Raum vo
         <value>Die Powerstation ist klar das Herzstück des Fitnessraums. Mit Gewichten, Hantelscheiben und den dazu passenden Hantelstangen lassen sich hier viele Übungen machen. Die fällt auf, dass alles schön auf einer Hantelablage organisiert ist.</value>
     </data>
     <data name="DUMBBELL_BAR" xml:space="preserve">
-        <value>Mit ein paar Handgriffen lässt sich diese lange Hantelstange mit Gewichten bestücken und so für viele Kraftübungen einsetzen. Sie ist aus hochwertigem Stahl gefertigt und ca. 120 cm lang.</value>
+        <value>Mit ein paar Handgriffen lässt sich diese lange Hantelstange mit Gewichten bestücken und so für viele Kraftübungen einsetzen. Sie ist aus hochwertigem Stahl gefertigt, ca. 120 cm lang und sieht sehr schwer aus.</value>
     </data>
     <data name="DUMBBELL_RACK" xml:space="preserve">
         <value>Die Ablage dient der Organisation der Gewichte, Hanteln und der entsprechenden Stangen. Die meisten Einzelteile sind vorschriftsgemäß gesichert und fest mit dem Rack verbunden.</value>
@@ -537,5 +537,11 @@ In einigen typischen OP-Schränken sind alle relevanten Instrumente und Verbands
     </data>
     <data name="EQUIPMENT_BOX_LOCK_BREAK_CONTAINMENT" xml:space="preserve">
         <value>Das zerstörte und unbrauchbare Schloss liegt auf dem Boden.</value>
+    </data>
+    <data name="EQUIPMENT_BOX_LOCK_DESTROYED" xml:space="preserve">
+        <value>Das Schloss ist durch die Einwirkung roher Gewalt total zerstört und unbrauchbar. Nun, gut für Dich. Manchmal ist Gewalt eine Lösung.</value>
+    </data>
+    <data name="EQUIPMENT_BOX_FIRSTLOOK" xml:space="preserve">
+        <value>Um sie komplett zu inspizieren ziehst Du die Box unter der Bank hervor. Dabei bemerkst Du, dass sie nicht so leicht zu öffnen sein wird.</value>
     </data>
 </root>

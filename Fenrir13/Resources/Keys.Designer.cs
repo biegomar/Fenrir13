@@ -511,6 +511,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to EQUIPMENT_BOX_LOCK_DESTROYED.
+        /// </summary>
+        internal static string EQUIPMENT_BOX_LOCK_DESTROYED {
+            get {
+                return ResourceManager.GetString("EQUIPMENT_BOX_LOCK_DESTROYED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to EQUIPMENT_ROOM.
         /// </summary>
         internal static string EQUIPMENT_ROOM {

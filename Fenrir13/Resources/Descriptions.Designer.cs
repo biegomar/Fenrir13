@@ -665,7 +665,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Mit ein paar Handgriffen lässt sich diese lange Hantelstange mit Gewichten bestücken und so für viele Kraftübungen einsetzen. Sie ist aus hochwertigem Stahl gefertigt und ca. 120 cm lang..
+        ///   Looks up a localized string similar to Mit ein paar Handgriffen lässt sich diese lange Hantelstange mit Gewichten bestücken und so für viele Kraftübungen einsetzen. Sie ist aus hochwertigem Stahl gefertigt, ca. 120 cm lang und sieht sehr schwer aus..
         /// </summary>
         internal static string DUMBBELL_BAR {
             get {
@@ -764,6 +764,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Um sie komplett zu inspizieren ziehst Du die Box unter der Bank hervor. Dabei bemerkst Du, dass sie nicht so leicht zu öffnen sein wird..
+        /// </summary>
+        internal static string EQUIPMENT_BOX_FIRSTLOOK {
+            get {
+                return ResourceManager.GetString("EQUIPMENT_BOX_FIRSTLOOK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Das Schloss ist sehr massiv und wird normalerweise mit einem Schlüssel geöffnet. Sicherlich ist das die Kiste eines der Mechaniker und der Schlüssel wird in seiner Kabine sein. Da kommst Du aber aufgrund der Situation nicht dran. Mist!.
         /// </summary>
         internal static string EQUIPMENT_BOX_LOCK {
@@ -787,6 +796,15 @@ namespace Fenrir13.Resources {
         internal static string EQUIPMENT_BOX_LOCK_CONTAINMENT {
             get {
                 return ResourceManager.GetString("EQUIPMENT_BOX_LOCK_CONTAINMENT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Das Schloss ist durch die Einwirkung roher Gewalt total zerstört und unbrauchbar. Nun, gut für Dich. Manchmal ist Gewalt eine Lösung..
+        /// </summary>
+        internal static string EQUIPMENT_BOX_LOCK_DESTROYED {
+            get {
+                return ResourceManager.GetString("EQUIPMENT_BOX_LOCK_DESTROYED", resourceCulture);
             }
         }
         
@@ -1209,7 +1227,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Tür hat ein kleines, tellergroßes Fenster, durch das man in beide Richtungen schauen kann, wenn man das möchte. Es ist elektronisch schaltbar und so kann man bei Bedarf die Transparenz anpassen..
+        ///   Looks up a localized string similar to Die Tür hat ein kleines, tellergroßes Fenster, durch das man in beide Richtungen schauen kann, wenn man das möchte. Es ist elektronisch schaltbar und so kann man bei Bedarf die Transparenz anpassen. Wenn Du hindurch schaust erkennst Du den menschenleeren Korridor..
         /// </summary>
         internal static string PEEPHOLE {
             get {

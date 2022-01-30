@@ -24,15 +24,6 @@ internal partial class EventProvider
         this.isAccessGranted = false;
     }
     
-    internal void LookAtPierhole(object sender, ContainerObjectEventArgs eventArgs)
-    {
-        if (sender is Location cryoChamber && cryoChamber.Key == Keys.CRYOCHAMBER && eventArgs.ExternalItemKey == Keys.PIERHOLE)
-        {
-            this.universe.Score += this.universe.ScoreBoard[nameof(this.LookAtPierhole)];
-            cryoChamber.AfterLook -= LookAtPierhole;
-        }
-    }
-
     internal void PullFridgeHandle(object sender, ContainerObjectEventArgs eventArgs)
     {
         if (sender is Item fridgeHandle && fridgeHandle.Key == Keys.FRIDGE_DOOR_HANDLE)
@@ -272,15 +263,30 @@ internal partial class EventProvider
                     throw new BreakException(BaseDescriptions.WRONG_BREAK_ITEM);
                 }
 
-                box.LinkedTo.Remove(boxLock);
-                this.universe.ActiveLocation.Items.Add(boxLock);
-                boxLock.ContainmentDescription = Descriptions.EQUIPMENT_BOX_LOCK_BREAK_CONTAINMENT;
                 box.IsLocked = false;
+                box.LinkedTo.Remove(boxLock);
                 PrintingSubsystem.Resource(Descriptions.BREAK_EQUIPMENT_BOX_LOCK);
+                
+                this.universe.ActiveLocation.Items.Add(this.GetDestroyedBoxLock());
+                
                 this.universe.Score += this.universe.ScoreBoard[nameof(this.BreakEquipmentBoxLock)];
-                box.Break -= BreakEquipmentBoxLock;    
+                boxLock.Break -= BreakEquipmentBoxLock;    
             }
         }
+    }
+    
+    private Item GetDestroyedBoxLock()
+    {
+        var boxLock = new Item()
+        {
+            Key = Keys.EQUIPMENT_BOX_LOCK_DESTROYED,
+            Name = Items.EQUIPMENT_BOX_LOCK,
+            Description = Descriptions.EQUIPMENT_BOX_LOCK_DESTROYED,
+            ContainmentDescription = Descriptions.EQUIPMENT_BOX_LOCK_BREAK_CONTAINMENT,
+            IsPickAble = false
+        };
+        
+        return boxLock;
     }
     
     internal void BreakFlapWithDumbbellBar(object sender, BreakItemEventArg eventArg)
@@ -312,14 +318,14 @@ internal partial class EventProvider
     {
         if (sender is Item fridge && fridge.Key == Keys.FRIDGE)
         {
-            if (!fridge.IsClosed)
+            if (fridge.IsClosed)
             {
                 var handle = fridge.GetItemByKey(Keys.FRIDGE_DOOR_HANDLE);
                 if (handle != default)
                 {
                     handle.IsHidden = false;
                     PrintingSubsystem.Resource(Descriptions.FRIDGE_DOOR_HANDLE_OPEN);
-                    fridge.AfterOpen -= OpenFridge;
+                    fridge.BeforeOpen -= OpenFridge;
                 }
             }
         }

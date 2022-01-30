@@ -37,7 +37,7 @@
         <value>Wand|Zimmerwand|Wände|Zimmerwände|Raumwand|Raumwände</value>
     </data>
     <data name="PIERHOLE" xml:space="preserve">
-        <value>Bullauge|Fenster|Weltraum|All|Weltall</value>
+        <value>Bullauge|Fenster|Weltraum|All|Weltall|Auge</value>
     </data>
     <data name="OFFICECHAIR" xml:space="preserve">
         <value>Bürostuhl|Arbeitsstuhl|Sitzgelegenheit</value>
@@ -49,7 +49,7 @@
         <value>Schrank|Kleiderschrank</value>
     </data>
     <data name="DRAWER" xml:space="preserve">
-        <value>Schublade|Schubladen|Schubfach|Schubfächer</value>
+        <value>Schublade|Schubladen|Schubfach|Schubfächer|Fächer</value>
     </data>
     <data name="CLOSET_DOOR" xml:space="preserve">
         <value>Schranktür|Kleiderschranktür</value>
@@ -211,7 +211,7 @@
         <value>Die Nische|Nische|Wandnische|Nischen|Wandnischen</value>
     </data>
     <data name="EQUIPMENT_ROOM_TRASHBIN" xml:space="preserve">
-        <value>Der Mülleimer|Mülleimer|Papiereimer|Papierkorb|Müllkorb|Abfalleimer|Abfallkorb</value>
+        <value>Der Mülleimer|Mülleimer|Papiereimer|Papierkorb|Müllkorb|Abfalleimer|Abfallkorb|Korb</value>
     </data>
     <data name="EQUIPMENT_ROOM_CLOTH" xml:space="preserve">
         <value>Die Kleidungsstücke|Kleidungsstücke|Kleidung</value>
@@ -250,7 +250,7 @@
         <value>Das Beatmungsgerät|Beatmungsgerät|Beatmungsmaschine|Beatmung|Beatmungsapparat|Gerät</value>
     </data>
     <data name="AMBULANCE_RESPIRATOR_FLAP" xml:space="preserve">
-        <value>Die Verschlussklappe|Verschlussklappe|Verschlusskappe|Klappe</value>
+        <value>Die Verschlussklappe|Verschlussklappe|Verschlusskappe|Klappe|Kappe</value>
     </data>
     <data name="FRIDGE" xml:space="preserve">
         <value>Der Kühlschrank|Kühlschrank</value>
@@ -263,5 +263,8 @@
     </data>
     <data name="RECYCLER" xml:space="preserve">
         <value>Der Reststoffverwerter|Reststoffverwerter|Verwerter|Recycler</value>
+    </data>
+    <data name="EQUIPMENT_BOX_LOCK_DESTROYED" xml:space="preserve">
+        <value>Das Vorhängeschloss|Vorhängeschloss|Schloss|Schloß</value>
     </data>
 </root>
