@@ -76,6 +76,7 @@ internal static class KitchenPrerequisites
         };
 
         AddPullEvents(handle, eventProvider);
+        AddPushEvents(handle, eventProvider);
         
         return handle;
     }
@@ -84,6 +85,12 @@ internal static class KitchenPrerequisites
     {
         item.Pull += eventProvider.PullFridgeHandle;
         eventProvider.ScoreBoard.Add(nameof(eventProvider.PullFridgeHandle), 1);
+    }
+    
+    private static void AddPushEvents(Item item, EventProvider eventProvider)
+    {
+        item.Push += eventProvider.PushDoorHandleIntoRespiratorFlap;
+        eventProvider.ScoreBoard.Add(nameof(eventProvider.PushDoorHandleIntoRespiratorFlap), 5);
     }
     
     private static Item GetFoodPrinter(EventProvider eventProvider)

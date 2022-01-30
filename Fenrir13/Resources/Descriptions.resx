@@ -544,4 +544,13 @@ In einigen typischen OP-Schränken sind alle relevanten Instrumente und Verbands
     <data name="EQUIPMENT_BOX_FIRSTLOOK" xml:space="preserve">
         <value>Um sie komplett zu inspizieren ziehst Du die Box unter der Bank hervor. Dabei bemerkst Du, dass sie nicht so leicht zu öffnen sein wird.</value>
     </data>
+    <data name="FRIDGE_DOOR_HANDLE_PUSHED" xml:space="preserve">
+        <value>Du steckst den Griff in die Aussparung der Klappe und ein typisches 'klack' signalisiert Dir, dass er eingerastet ist. Er passt perfekt!</value>
+    </data>
+    <data name="FRIDGE_DOOR_HANDLE_FLAP_CONTAINMENT" xml:space="preserve">
+        <value>Der Griff steckt fest in der Klappe und kann dazu benutzt werden, um sie zu öffnen.</value>
+    </data>
+    <data name="FRIDGE_DOOR_HANDLE_FLAP_UNPICKABLE" xml:space="preserve">
+        <value>Der Griff steckt wirklich sehr fest. Und es lohnt auch nicht, ihn wieder herauszunehmen. Er hat sein Schuldigkeit getan.</value>
+    </data>
 </root>

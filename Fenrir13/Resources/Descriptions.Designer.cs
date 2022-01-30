@@ -963,6 +963,24 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Der Griff steckt fest in der Klappe und kann dazu benutzt werden, um sie zu öffnen..
+        /// </summary>
+        internal static string FRIDGE_DOOR_HANDLE_FLAP_CONTAINMENT {
+            get {
+                return ResourceManager.GetString("FRIDGE_DOOR_HANDLE_FLAP_CONTAINMENT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Der Griff steckt wirklich sehr fest. Und es lohnt auch nicht, ihn wieder herauszunehmen. Er hat sein Schuldigkeit getan..
+        /// </summary>
+        internal static string FRIDGE_DOOR_HANDLE_FLAP_UNPICKABLE {
+            get {
+                return ResourceManager.GetString("FRIDGE_DOOR_HANDLE_FLAP_UNPICKABLE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Du ergreifst den Türgriff, ziehst an ihm und öffnest die Tür. Aber der Griff scheint nicht richtig montiert zu sein. Der leichte Ruck hat ihn ein Stück aus seiner Position bewegt und er ragt nun deutlich hervor. Ein weiterer Ruck würde ihn bestimmt komplett aus der Tür ziehen..
         /// </summary>
         internal static string FRIDGE_DOOR_HANDLE_OPEN {
@@ -977,6 +995,15 @@ namespace Fenrir13.Resources {
         internal static string FRIDGE_DOOR_HANDLE_PULL {
             get {
                 return ResourceManager.GetString("FRIDGE_DOOR_HANDLE_PULL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Du steckst den Griff in die Aussparung der Klappe und ein typisches &apos;klack&apos; signalisiert Dir, dass er eingerastet ist. Er passt perfekt!.
+        /// </summary>
+        internal static string FRIDGE_DOOR_HANDLE_PUSHED {
+            get {
+                return ResourceManager.GetString("FRIDGE_DOOR_HANDLE_PUSHED", resourceCulture);
             }
         }
         
