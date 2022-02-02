@@ -267,4 +267,10 @@
     <data name="EQUIPMENT_BOX_LOCK_DESTROYED" xml:space="preserve">
         <value>Das Vorhängeschloss|Vorhängeschloss|Schloss|Schloß</value>
     </data>
+    <data name="OXYGEN_BOTTLE" xml:space="preserve">
+        <value>Die Sauerstoffflasche|Sauerstoffflasche|Sauerstoff-Flasche|Sauerstoff|Flasche</value>
+    </data>
+    <data name="AMBULANCE_OP_ITEMS_DETAIL" xml:space="preserve">
+        <value>Das Skalpell|Skalpell|Skalpelle|Der Tupfer|Tupfer|Die Mullbinde|Mullbinde|Mullbinden|Der Adapter|Adapter</value>
+    </data>
 </root>

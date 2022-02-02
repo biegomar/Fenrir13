@@ -30,16 +30,30 @@ internal static class AmbulancePrerequisites
         var respirator = new Item
         {
             Key = Keys.AMBULANCE_RESPIRATOR,
-            Description = Descriptions.AMBULANCE_RESPIRATOR,
             Name = Items.AMBULANCE_RESPIRATOR,
+            Description = Descriptions.AMBULANCE_RESPIRATOR,
             IsPickAble = false,
             IsHidden = true,
             IsUnveilAble = false
         };
         
         respirator.Items.Add(GetFlap(eventProvider));
+        respirator.Items.Add(GetOxygenBottle(eventProvider));
         
         return respirator;
+    }
+
+    private static Item GetOxygenBottle(EventProvider eventProvider)
+    {
+        var oxygenBottle = new Item
+        {
+            Key = Keys.OXYGEN_BOTTLE,
+            Name = Items.OXYGEN_BOTTLE,
+            Description = Descriptions.OXYGEN_BOTTLE,
+            IsHidden = true,
+            IsUnveilAble = false
+        };
+        return oxygenBottle;
     }
     
     private static Item GetFlap(EventProvider eventProvider)
@@ -50,6 +64,7 @@ internal static class AmbulancePrerequisites
             Name = Items.AMBULANCE_RESPIRATOR_FLAP,
             Description = Descriptions.AMBULANCE_RESPIRATOR_FLAP,
             FirstLookDescription = Descriptions.AMBULANCE_RESPIRATOR_FLAP_FIRSTLOOK,
+            ContainmentDescription = Descriptions.AMBULANCE_RESPIRATOR_FLAP_CONTAINMENT,
             IsPickAble = false,
             IsLockAble = true,
             IsLocked = true,
@@ -72,6 +87,7 @@ internal static class AmbulancePrerequisites
         location.Surroundings.Add(Keys.CHAMBER_WALL, Descriptions.CHAMBER_WALL);
         location.Surroundings.Add(Keys.AMBULANCE_BED, Descriptions.AMBULANCE_BED);
         location.Surroundings.Add(Keys.AMBULANCE_OP_ITEMS, Descriptions.AMBULANCE_OP_ITEMS);
+        location.Surroundings.Add(Keys.AMBULANCE_OP_ITEMS_DETAIL, Descriptions.AMBULANCE_OP_ITEMS_DETAIL);
         location.Surroundings.Add(Keys.AMBULANCE_MEDIS, Descriptions.AMBULANCE_MEDIS);
         location.Surroundings.Add(Keys.AMBULANCE_RESPIRATOR, Descriptions.AMBULANCE_RESPIRATOR);
     }

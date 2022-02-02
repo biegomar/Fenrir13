@@ -1,0 +1,14 @@
+nimm overall
+l all
+l schranktür
+iss riegel
+l display
+w
+w
+n
+öffne kühlschrank
+ziehe griff
+s
+w
+w
+n

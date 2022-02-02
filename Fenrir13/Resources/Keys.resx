@@ -318,4 +318,10 @@
     <data name="EQUIPMENT_BOX_LOCK_DESTROYED" xml:space="preserve">
         <value>EQUIPMENT_BOX_LOCK_DESTROYED</value>
     </data>
+    <data name="OXYGEN_BOTTLE" xml:space="preserve">
+        <value>OXYGEN_BOTTLE</value>
+    </data>
+    <data name="AMBULANCE_OP_ITEMS_DETAIL" xml:space="preserve">
+        <value>AMBULANCE_OP_ITEMS_DETAIL</value>
+    </data>
 </root>

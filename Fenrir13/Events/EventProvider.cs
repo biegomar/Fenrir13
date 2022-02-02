@@ -46,25 +46,30 @@ internal partial class EventProvider
     
     internal void PushDoorHandleIntoRespiratorFlap(object sender, PushItemEventArgs eventArgs)
     {
-        if (sender is Item doorHandle && doorHandle.Key == Keys.FRIDGE_DOOR_HANDLE && 
-            eventArgs.ItemToUse is Item respiratorFlap && respiratorFlap.Key == Keys.AMBULANCE_RESPIRATOR_FLAP)
+        if (sender is Item doorHandle && doorHandle.Key == Keys.FRIDGE_DOOR_HANDLE)
         {
-            var respirator = this.universe.ActiveLocation.GetItemByKey(Keys.AMBULANCE_RESPIRATOR);
-            if (respirator != default)
+            if (eventArgs.ItemToUse is Item respiratorFlap && respiratorFlap.Key == Keys.AMBULANCE_RESPIRATOR_FLAP)
             {
-                respirator.IsLocked = false;
-                respiratorFlap.IsLocked = false;
-                respiratorFlap.LinkedTo.Add(doorHandle);
-                respiratorFlap.FirstLookDescription = string.Empty;
-                doorHandle.ContainmentDescription = Descriptions.FRIDGE_DOOR_HANDLE_FLAP_CONTAINMENT;
-                doorHandle.IsPickAble = false;
-                doorHandle.UnPickAbleDescription = Descriptions.FRIDGE_DOOR_HANDLE_FLAP_UNPICKABLE;
-                this.universe.ActivePlayer.Items.Remove(doorHandle);
-                PrintingSubsystem.Resource(Descriptions.FRIDGE_DOOR_HANDLE_PUSHED);
-                this.universe.Score += this.universe.ScoreBoard[nameof(this.PushDoorHandleIntoRespiratorFlap)];
-                doorHandle.Push -= PushDoorHandleIntoRespiratorFlap;    
+                var respirator = this.universe.ActiveLocation.GetItemByKey(Keys.AMBULANCE_RESPIRATOR);
+                if (respirator != default)
+                {
+                    respirator.IsLocked = false;
+                    respiratorFlap.IsLocked = false;
+                    respiratorFlap.LinkedTo.Add(doorHandle);
+                    respiratorFlap.FirstLookDescription = string.Empty;
+                    doorHandle.ContainmentDescription = Descriptions.FRIDGE_DOOR_HANDLE_FLAP_CONTAINMENT;
+                    doorHandle.IsPickAble = false;
+                    doorHandle.UnPickAbleDescription = Descriptions.FRIDGE_DOOR_HANDLE_FLAP_UNPICKABLE;
+                    this.universe.ActivePlayer.Items.Remove(doorHandle);
+                    PrintingSubsystem.Resource(Descriptions.FRIDGE_DOOR_HANDLE_PUSHED);
+                    this.universe.Score += this.universe.ScoreBoard[nameof(this.PushDoorHandleIntoRespiratorFlap)];
+                    doorHandle.Push -= PushDoorHandleIntoRespiratorFlap;
+                }
             }
-            
+            else
+            {
+                throw new PushException(BaseDescriptions.NOTHING_HAPPENS);
+            }
         }
     }
     

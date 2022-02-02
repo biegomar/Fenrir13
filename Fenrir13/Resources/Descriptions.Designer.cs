@@ -134,6 +134,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Das sind alles Dinge, die für eine Operation notwendig sind. Alles ist steril verpackt und unangetastet. Das sollte auch so bleiben..
+        /// </summary>
+        internal static string AMBULANCE_OP_ITEMS_DETAIL {
+            get {
+                return ResourceManager.GetString("AMBULANCE_OP_ITEMS_DETAIL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Der Roboter ist in der Lage einfache Operationen selbständig durchzuführen. Seine vier Arme helfen ihm dabei auch schwierige Hand - oder besser - Robotergriffe zu meistern. Bei schwerwiegenden Eingriffen wird er in der Regel aber als Assistenzsystem eingesetzt und durch einen Menschen geführt. .
         /// </summary>
         internal static string AMBULANCE_OP_ROBOTER {
@@ -161,11 +170,20 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Verschlussklappe ist, wie das gesamte Gerät, aus Metall und an der Rückseite zu finden. Sie scheint groß genug zu sein, um durch die entstehende Öffnung auch sperrige Dinge hindurch zu bekommen. An oberen Ende würdest Du irgendwie einen Mechanismus erwarten, um die Tür zu öffen. Aber Du siehst nur ein Loch....
+        ///   Looks up a localized string similar to Die Verschlussklappe ist, wie das gesamte Gerät, aus Metall und an der Rückseite zu finden. Sie scheint groß genug zu sein, um durch die entstehende Öffnung auch sperrige Dinge hindurch zu bekommen..
         /// </summary>
         internal static string AMBULANCE_RESPIRATOR_FLAP {
             get {
                 return ResourceManager.GetString("AMBULANCE_RESPIRATOR_FLAP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Eine Verschlussklappe ist von außen an dem Gerät angebracht..
+        /// </summary>
+        internal static string AMBULANCE_RESPIRATOR_FLAP_CONTAINMENT {
+            get {
+                return ResourceManager.GetString("AMBULANCE_RESPIRATOR_FLAP_CONTAINMENT", resourceCulture);
             }
         }
         
@@ -179,7 +197,8 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bei genauerer Betrachtung erkennst Du, dass dort eine viereckige Aussparung ist. Als könnte man einen typischen Griff mit einem Vierkantstift dort reinstecken und dann die Tür bequem öffnen. Aber so ein Griff ist hier weit und breit nicht zu sehen..
+        ///   Looks up a localized string similar to An oberen Ende würdest Du irgendwie einen Mechanismus erwarten, um die Tür zu öffen. Aber Du siehst nur ein Loch... 
+        ///Bei genauerer Betrachtung erkennst Du, dass dort eine viereckige Aussparung ist. Als könnte man einen typischen Griff mit einem Vierkantstift dort reinstecken und dann die Tür bequem öffnen. Aber so ein Griff ist hier weit und breit nicht zu sehen..
         /// </summary>
         internal static string AMBULANCE_RESPIRATOR_FLAP_FIRSTLOOK {
             get {
@@ -963,7 +982,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Griff steckt fest in der Klappe und kann dazu benutzt werden, um sie zu öffnen..
+        ///   Looks up a localized string similar to Der Griff steckt fest in der Klappe und kann dazu benutzt werden, sie zu öffnen..
         /// </summary>
         internal static string FRIDGE_DOOR_HANDLE_FLAP_CONTAINMENT {
             get {
@@ -1241,6 +1260,24 @@ namespace Fenrir13.Resources {
         internal static string OVOID {
             get {
                 return ResourceManager.GetString("OVOID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Es handelt sich um eine Flasche mit rund einem Liter Füllvermögen, die aus einer hochfesten Aluminiumlegierung besteht..
+        /// </summary>
+        internal static string OXYGEN_BOTTLE {
+            get {
+                return ResourceManager.GetString("OXYGEN_BOTTLE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to So wie es aussieht ist die Flasche noch unberührt und wurde als Ersatz in das Beatmungsgerät gelegt..
+        /// </summary>
+        internal static string OXYGEN_BOTTLE_FIRSTLOOK {
+            get {
+                return ResourceManager.GetString("OXYGEN_BOTTLE_FIRSTLOOK", resourceCulture);
             }
         }
         

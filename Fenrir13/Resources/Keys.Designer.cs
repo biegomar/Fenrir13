@@ -133,6 +133,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to AMBULANCE_OP_ITEMS_DETAIL.
+        /// </summary>
+        internal static string AMBULANCE_OP_ITEMS_DETAIL {
+            get {
+                return ResourceManager.GetString("AMBULANCE_OP_ITEMS_DETAIL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to AMBULANCE_OP_ROBOTER.
         /// </summary>
         internal static string AMBULANCE_OP_ROBOTER {
@@ -750,6 +759,15 @@ namespace Fenrir13.Resources {
         internal static string OVOID {
             get {
                 return ResourceManager.GetString("OVOID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OXYGEN_BOTTLE.
+        /// </summary>
+        internal static string OXYGEN_BOTTLE {
+            get {
+                return ResourceManager.GetString("OXYGEN_BOTTLE", resourceCulture);
             }
         }
         

@@ -115,6 +115,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Das Skalpell|Skalpell|Skalpelle|Der Tupfer|Tupfer|Die Mullbinde|Mullbinde|Mullbinden|Der Adapter|Adapter.
+        /// </summary>
+        internal static string AMBULANCE_OP_ITEMS_DETAIL {
+            get {
+                return ResourceManager.GetString("AMBULANCE_OP_ITEMS_DETAIL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Der OP-Roboter|OP-Roboter| OP Roboter|Roboter|Arm|Arme|vier Arme.
         /// </summary>
         internal static string AMBULANCE_OP_ROBOTER {
@@ -615,6 +624,15 @@ namespace Fenrir13.Resources {
         internal static string OVOID {
             get {
                 return ResourceManager.GetString("OVOID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Die Sauerstoffflasche|Sauerstoffflasche|Sauerstoff-Flasche|Sauerstoff|Flasche.
+        /// </summary>
+        internal static string OXYGEN_BOTTLE {
+            get {
+                return ResourceManager.GetString("OXYGEN_BOTTLE", resourceCulture);
             }
         }
         

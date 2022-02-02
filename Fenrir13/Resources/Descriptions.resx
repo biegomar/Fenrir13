@@ -479,13 +479,14 @@ In einigen typischen OP-Schränken sind alle relevanten Instrumente und Verbands
         <value>Ja, Du hast Dich nicht getäuscht. Es handelt sich um ein Beatmungsgerät. Diverse Schläuche und Ventile ermöglichen es, die verschiedenen Gase den gewünschten Anforderungen entsprechend zu mischen. Die Schläuche werden im unteren Bereich des Geräts aus dem Korpus herausgeführt. Darin müssen also die Gase sein. Und tatsächlich erblickst Du an der Rückseite eine Art Verschlussklappe, die das Innere des Korpus zugänglich macht.</value>
     </data>
     <data name="AMBULANCE_RESPIRATOR_FLAP" xml:space="preserve">
-        <value>Die Verschlussklappe ist, wie das gesamte Gerät, aus Metall und an der Rückseite zu finden. Sie scheint groß genug zu sein, um durch die entstehende Öffnung auch sperrige Dinge hindurch zu bekommen. An oberen Ende würdest Du irgendwie einen Mechanismus erwarten, um die Tür zu öffen. Aber Du siehst nur ein Loch...</value>
+        <value>Die Verschlussklappe ist, wie das gesamte Gerät, aus Metall und an der Rückseite zu finden. Sie scheint groß genug zu sein, um durch die entstehende Öffnung auch sperrige Dinge hindurch zu bekommen.</value>
     </data>
     <data name="AMBULANCE_RESPIRATOR_FLAP_LOCK" xml:space="preserve">
         <value>Die Klappe lässt sich ohne passenden Griff oder einen griffähnlichen Gegenstand nicht öffnen.</value>
     </data>
     <data name="AMBULANCE_RESPIRATOR_FLAP_FIRSTLOOK" xml:space="preserve">
-        <value>Bei genauerer Betrachtung erkennst Du, dass dort eine viereckige Aussparung ist. Als könnte man einen typischen Griff mit einem Vierkantstift dort reinstecken und dann die Tür bequem öffnen. Aber so ein Griff ist hier weit und breit nicht zu sehen.</value>
+        <value>An oberen Ende würdest Du irgendwie einen Mechanismus erwarten, um die Tür zu öffen. Aber Du siehst nur ein Loch... 
+Bei genauerer Betrachtung erkennst Du, dass dort eine viereckige Aussparung ist. Als könnte man einen typischen Griff mit einem Vierkantstift dort reinstecken und dann die Tür bequem öffnen. Aber so ein Griff ist hier weit und breit nicht zu sehen.</value>
     </data>
     <data name="AMBULANCE_RESPIRATOR_FLAP_DUMBBELL_BAR_UNBREAKABLE" xml:space="preserve">
         <value>Ja, dass könnte prinzipiell klappen, aber da Du nicht weißt, was genau an explosiven Materialien da drin ist, solltest Du das nicht versuchen.</value>
@@ -548,9 +549,21 @@ In einigen typischen OP-Schränken sind alle relevanten Instrumente und Verbands
         <value>Du steckst den Griff in die Aussparung der Klappe und ein typisches 'klack' signalisiert Dir, dass er eingerastet ist. Er passt perfekt!</value>
     </data>
     <data name="FRIDGE_DOOR_HANDLE_FLAP_CONTAINMENT" xml:space="preserve">
-        <value>Der Griff steckt fest in der Klappe und kann dazu benutzt werden, um sie zu öffnen.</value>
+        <value>Der Griff steckt fest in der Klappe und kann dazu benutzt werden, sie zu öffnen.</value>
     </data>
     <data name="FRIDGE_DOOR_HANDLE_FLAP_UNPICKABLE" xml:space="preserve">
         <value>Der Griff steckt wirklich sehr fest. Und es lohnt auch nicht, ihn wieder herauszunehmen. Er hat sein Schuldigkeit getan.</value>
+    </data>
+    <data name="OXYGEN_BOTTLE" xml:space="preserve">
+        <value>Es handelt sich um eine Flasche mit rund einem Liter Füllvermögen, die aus einer hochfesten Aluminiumlegierung besteht.</value>
+    </data>
+    <data name="OXYGEN_BOTTLE_FIRSTLOOK" xml:space="preserve">
+        <value>So wie es aussieht ist die Flasche noch unberührt und wurde als Ersatz in das Beatmungsgerät gelegt.</value>
+    </data>
+    <data name="AMBULANCE_RESPIRATOR_FLAP_CONTAINMENT" xml:space="preserve">
+        <value>Eine Verschlussklappe ist von außen an dem Gerät angebracht.</value>
+    </data>
+    <data name="AMBULANCE_OP_ITEMS_DETAIL" xml:space="preserve">
+        <value>Das sind alles Dinge, die für eine Operation notwendig sind. Alles ist steril verpackt und unangetastet. Das sollte auch so bleiben.</value>
     </data>
 </root>
