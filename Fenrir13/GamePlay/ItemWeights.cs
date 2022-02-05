@@ -8,6 +8,7 @@ public static class ItemWeights
     public static int BOOTS = 500;
     public static int BELT = 150;
     public static int FRIDGE_HANDLE = 200;
+    public static int OXYGEN_BOTTLE = 3550;
     
     public static Dictionary <string,int> WeightDictionary = new Dictionary<string, int>()
     {
@@ -16,7 +17,8 @@ public static class ItemWeights
         {nameof(GLOVES), GLOVES},
         {nameof(BOOTS), BOOTS},
         {nameof(BELT), BELT},
-        {nameof(FRIDGE_HANDLE), FRIDGE_HANDLE}
+        {nameof(FRIDGE_HANDLE), FRIDGE_HANDLE},
+        {nameof(OXYGEN_BOTTLE), OXYGEN_BOTTLE}
     };
 
 

@@ -50,6 +50,7 @@ internal static class AmbulancePrerequisites
             Key = Keys.OXYGEN_BOTTLE,
             Name = Items.OXYGEN_BOTTLE,
             Description = Descriptions.OXYGEN_BOTTLE,
+            Weight = ItemWeights.OXYGEN_BOTTLE,
             IsHidden = true,
             IsUnveilAble = false
         };
@@ -64,7 +65,7 @@ internal static class AmbulancePrerequisites
             Name = Items.AMBULANCE_RESPIRATOR_FLAP,
             Description = Descriptions.AMBULANCE_RESPIRATOR_FLAP,
             FirstLookDescription = Descriptions.AMBULANCE_RESPIRATOR_FLAP_FIRSTLOOK,
-            ContainmentDescription = Descriptions.AMBULANCE_RESPIRATOR_FLAP_CONTAINMENT,
+            //ContainmentDescription = Descriptions.AMBULANCE_RESPIRATOR_FLAP_CONTAINMENT,
             IsPickAble = false,
             IsLockAble = true,
             IsLocked = true,
@@ -75,6 +76,7 @@ internal static class AmbulancePrerequisites
         };
         
         AddBreakEvents(flap, eventProvider);
+        AddOpenCloseEvents(flap, eventProvider);
         
         return flap;
     }
@@ -100,5 +102,11 @@ internal static class AmbulancePrerequisites
     private static void AddBreakEvents(Item item, EventProvider eventProvider)
     {
         item.Break += eventProvider.BreakFlapWithDumbbellBar;
+    }
+    
+    private static void AddOpenCloseEvents(Item item, EventProvider eventProvider)
+    {
+        item.BeforeOpen += eventProvider.OpenFlap;
+        item.BeforeClose += eventProvider.CloseFlap;
     }
 }

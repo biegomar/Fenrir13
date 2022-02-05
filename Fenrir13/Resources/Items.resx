@@ -211,7 +211,7 @@
         <value>Die Nische|Nische|Wandnische|Nischen|Wandnischen</value>
     </data>
     <data name="EQUIPMENT_ROOM_TRASHBIN" xml:space="preserve">
-        <value>Der Mülleimer|Mülleimer|Papiereimer|Papierkorb|Müllkorb|Abfalleimer|Abfallkorb|Korb</value>
+        <value>Der Mülleimer|Mülleimer|Papiereimer|Papierkorb|Müllkorb|Abfalleimer|Abfallkorb|Korb|Eimer</value>
     </data>
     <data name="EQUIPMENT_ROOM_CLOTH" xml:space="preserve">
         <value>Die Kleidungsstücke|Kleidungsstücke|Kleidung</value>

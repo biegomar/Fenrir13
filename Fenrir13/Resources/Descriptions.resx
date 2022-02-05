@@ -374,9 +374,6 @@ Die Wand mit der Tür ist frei, nur ein kleiner Papiereimer steht dort.</value>
     <data name="EQUIPMENT_BOX_CONTAINMENT" xml:space="preserve">
         <value>Unter einer der Bänke liegt eine Metallkiste.</value>
     </data>
-    <data name="EQUIPMENT_BOX_LOCKDESCRIPTION" xml:space="preserve">
-        <value>Sie ist durch ein Vorhängeschloss gesichert.</value>
-    </data>
     <data name="HELMET" xml:space="preserve">
         <value>Der Helm schützt Dich im All und lässt Dich atmen. Im Bereich des Hinterkopf führt ein kurzer Schlauch aus dem Helm.</value>
     </data>
@@ -555,7 +552,7 @@ Bei genauerer Betrachtung erkennst Du, dass dort eine viereckige Aussparung ist.
         <value>Der Griff steckt wirklich sehr fest. Und es lohnt auch nicht, ihn wieder herauszunehmen. Er hat sein Schuldigkeit getan.</value>
     </data>
     <data name="OXYGEN_BOTTLE" xml:space="preserve">
-        <value>Es handelt sich um eine Flasche mit rund einem Liter Füllvermögen, die aus einer hochfesten Aluminiumlegierung besteht.</value>
+        <value>Es handelt sich um eine Flasche mit rund einem Liter Füllvermögen, die aus einer hochfesten Aluminiumlegierung gefertigt wurde.</value>
     </data>
     <data name="OXYGEN_BOTTLE_FIRSTLOOK" xml:space="preserve">
         <value>So wie es aussieht ist die Flasche noch unberührt und wurde als Ersatz in das Beatmungsgerät gelegt.</value>
@@ -565,5 +562,8 @@ Bei genauerer Betrachtung erkennst Du, dass dort eine viereckige Aussparung ist.
     </data>
     <data name="AMBULANCE_OP_ITEMS_DETAIL" xml:space="preserve">
         <value>Das sind alles Dinge, die für eine Operation notwendig sind. Alles ist steril verpackt und unangetastet. Das sollte auch so bleiben.</value>
+    </data>
+    <data name="OXYGEN_BOTTLE_FOUND" xml:space="preserve">
+        <value>Als Du die Klappe öffnest, kannst Du im Inneren des Korpus mehrere angeschlossene Gasflaschen erblicken. Aber eine, nicht angeschlossene Flasche erregt Deine Aufmerksamkeit. Es handelt sich um eine Sauerstoffflasche, die scheinbar als Ersatz hier verstaut wurde.</value>
     </data>
 </root>

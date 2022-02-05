@@ -448,7 +448,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Mülleimer|Mülleimer|Papiereimer|Papierkorb|Müllkorb|Abfalleimer|Abfallkorb|Korb.
+        ///   Looks up a localized string similar to Der Mülleimer|Mülleimer|Papiereimer|Papierkorb|Müllkorb|Abfalleimer|Abfallkorb|Korb|Eimer.
         /// </summary>
         internal static string EQUIPMENT_ROOM_TRASHBIN {
             get {

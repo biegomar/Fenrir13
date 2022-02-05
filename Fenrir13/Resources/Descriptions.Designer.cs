@@ -828,15 +828,6 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sie ist durch ein Vorhängeschloss gesichert..
-        /// </summary>
-        internal static string EQUIPMENT_BOX_LOCKDESCRIPTION {
-            get {
-                return ResourceManager.GetString("EQUIPMENT_BOX_LOCKDESCRIPTION", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to In diesem Raum bereiten sich die Mechaniker auf ihre Außeneinsätze vor. Er erinnert Dich von Aufbau und der Ausstattung fast an eine Umkleidekabine vom Schulsport. An drei Wänden stehen einfache Sitzbänke und in den Wänden sind kleine Nischen eingelassen, die dafür genutzt werden können, um Kleidung aufzuhängen. Jede Wand hat zwei Nischen, was konsequent ist, da an Bord der Fenrir 13 maximal 6 Crew-Mitglieder vorgesehen sind. 
         ///Die Wand mit der Tür ist frei, nur ein kleiner Papiereimer steht dort..
         /// </summary>
@@ -1264,7 +1255,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Es handelt sich um eine Flasche mit rund einem Liter Füllvermögen, die aus einer hochfesten Aluminiumlegierung besteht..
+        ///   Looks up a localized string similar to Es handelt sich um eine Flasche mit rund einem Liter Füllvermögen, die aus einer hochfesten Aluminiumlegierung gefertigt wurde..
         /// </summary>
         internal static string OXYGEN_BOTTLE {
             get {
@@ -1278,6 +1269,15 @@ namespace Fenrir13.Resources {
         internal static string OXYGEN_BOTTLE_FIRSTLOOK {
             get {
                 return ResourceManager.GetString("OXYGEN_BOTTLE_FIRSTLOOK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Als Du die Klappe öffnest, kannst Du im Inneren des Korpus mehrere angeschlossene Gasflaschen erblicken. Aber eine, nicht angeschlossene Flasche erregt Deine Aufmerksamkeit. Es handelt sich um eine Sauerstoffflasche, die scheinbar als Ersatz hier verstaut wurde..
+        /// </summary>
+        internal static string OXYGEN_BOTTLE_FOUND {
+            get {
+                return ResourceManager.GetString("OXYGEN_BOTTLE_FOUND", resourceCulture);
             }
         }
         

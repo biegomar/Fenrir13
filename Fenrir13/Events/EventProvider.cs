@@ -68,7 +68,7 @@ internal partial class EventProvider
             }
             else
             {
-                throw new PushException(BaseDescriptions.NOTHING_HAPPENS);
+                throw new PushException(BaseDescriptions.DOES_NOT_WORK);
             }
         }
     }
@@ -356,6 +356,37 @@ internal partial class EventProvider
                     handle.IsHidden = false;
                     PrintingSubsystem.Resource(Descriptions.FRIDGE_DOOR_HANDLE_OPEN);
                     fridge.BeforeOpen -= OpenFridge;
+                }
+            }
+        }
+    }
+    
+    internal void OpenFlap(object sender, ContainerObjectEventArgs eventArgs)
+    {
+        if (sender is Item flap && flap.Key == Keys.AMBULANCE_RESPIRATOR_FLAP)
+        {
+            if (flap.IsClosed)
+            {
+                var oxygen = this.universe.ActiveLocation.GetItemByKey(Keys.OXYGEN_BOTTLE);
+                if (oxygen != default)
+                {
+                    oxygen.IsHidden = false;
+                    PrintingSubsystem.Resource(Descriptions.OXYGEN_BOTTLE_FOUND);
+                }
+            }
+        }
+    }
+    
+    internal void CloseFlap(object sender, ContainerObjectEventArgs eventArgs)
+    {
+        if (sender is Item flap && flap.Key == Keys.AMBULANCE_RESPIRATOR_FLAP)
+        {
+            if (!flap.IsClosed)
+            {
+                var oxygen = this.universe.ActiveLocation.GetItemByKey(Keys.OXYGEN_BOTTLE);
+                if (oxygen != default)
+                {
+                    //oxygen.IsHidden = true;
                 }
             }
         }
