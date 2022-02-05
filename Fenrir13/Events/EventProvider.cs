@@ -172,7 +172,7 @@ internal partial class EventProvider
         if (sender is Item spaceSuite && spaceSuite.Key == Keys.SPACE_SUIT)
         {
             this.universe.ActivePlayer.FirstLookDescription = string.Empty;
-            this.universe.ActivePlayer.StandardClothing = Descriptions.SPACE_SUIT_FIT;
+            this.universe.ActivePlayer.Clothes.Add(spaceSuite);
             this.universe.ActivePlayer.Items.Remove(spaceSuite);
             this.universe.Score += this.universe.ScoreBoard[nameof(this.TakeSpaceSuite)];
             PrintingSubsystem.Resource(Descriptions.SPACE_SUIT_TAKEN);
