@@ -1437,6 +1437,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Das geht leider nicht. Damit das Schiff permanent in Kontakt zu dem Crew-Mitglied ist, muss der Anzug ständig getragen werden. .
+        /// </summary>
+        internal static string SPACE_SUIT_UNDROPABLE {
+            get {
+                return ResourceManager.GetString("SPACE_SUIT_UNDROPABLE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Auf dem Klebezettel steht nur ein Wort: {0}.
         /// </summary>
         internal static string STICKY_NOTE {

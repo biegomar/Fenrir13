@@ -566,4 +566,7 @@ Bei genauerer Betrachtung erkennst Du, dass dort eine viereckige Aussparung ist.
     <data name="OXYGEN_BOTTLE_FOUND" xml:space="preserve">
         <value>Als Du die Klappe öffnest, kannst Du im Inneren des Korpus mehrere angeschlossene Gasflaschen erblicken. Aber eine, nicht angeschlossene Flasche erregt Deine Aufmerksamkeit. Es handelt sich um eine Sauerstoffflasche, die scheinbar als Ersatz hier verstaut wurde.</value>
     </data>
+    <data name="SPACE_SUIT_UNDROPABLE" xml:space="preserve">
+        <value>Das geht leider nicht. Damit das Schiff permanent in Kontakt zu dem Crew-Mitglied ist, muss der Anzug ständig getragen werden. </value>
+    </data>
 </root>
