@@ -72,7 +72,7 @@ internal static class KitchenPrerequisites
             IsUnveilAble = false,
             IsHidden = true,
             IsPickAble = false,
-            Weight = ItemWeights.FRIDGE_HANDLE
+            Weight = ItemWeights.FRIDGE_DOOR_HANDLE
         };
 
         AddPullEvents(handle, eventProvider);

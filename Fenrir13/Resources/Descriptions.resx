@@ -174,7 +174,7 @@ Du bestätigst die Meldung mit einem Fingertipp und das Display wechselt wieder 
         <value>Du befindest Dich nun auf dem halben Weg zwischen Deinem Quartier und der Brücke. Auch hier hängt wieder ein Bild an der Wand. Ansonsten ist der Flur einfach und karg.</value>
     </data>
     <data name="CORRIDOR_MID" xml:space="preserve">
-        <value>Du befindest Dich nun genau in der Mitte des Korridors. An der nördlichen Seite führt eine breite Treppe auf die Brücke. An der südlichen Seite liegt der Zugang zu den Technik- und Maschinenräumen. Auch hier geht es über eine Treppe, allerdings eine Etage nach unten. An der Wand hängt nur ein Bild, aber dafür handelt es sich um ein besonders exponiertes Gemälde. Ansonsten ist der Flur einfach und karg.</value>
+        <value>Du befindest Dich nun genau in der Mitte des Korridors. An der nördlichen Seite führt eine breite Treppe auf die Brücke. An der südlichen Seite liegt der Zugang zu den Technik- und Maschinenräumen. Auch dorthin geht es über eine Treppe, allerdings eine Etage nach unten. An der Wand hängt nur ein Bild, aber dafür handelt es sich um ein besonders exponiertes Gemälde. Ansonsten ist der Flur einfach und karg.</value>
     </data>
     <data name="CORRIDOR_MIDWEST" xml:space="preserve">
         <value>Der Korridor durchzieht den gesamten 'Hammerkopf' des Schiffs von Ost nach West. Von ihm gehen Türen in die diversen Räume ab und in der Mitte, also bei gut 50 Metern führt ein Aufgang zur Brücke und ein Abgang herunter in die Maschinenräume. An den Wänden hängen neben typischen Raum- und Evakuierungsplänen auch Bilder von ehemaligen Mitarbeitern und Crewmitgliedern der Fenrir 13. Ansonsten ist der Flur einfach und karg.</value>

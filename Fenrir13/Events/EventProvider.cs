@@ -487,6 +487,7 @@ internal partial class EventProvider
         if (sender is Location airlock && airlock.Key == Keys.AIRLOCK)
         {
             ResetItemWeight(this.universe.ActivePlayer.Items);
+            ResetItemWeight(this.universe.ActivePlayer.Clothes);
             PrintingSubsystem.Resource(Descriptions.ZERO_GRAVITY);
         }
     }
@@ -497,6 +498,7 @@ internal partial class EventProvider
         {
             var isItemDropped = false;
             SetItemWeight(this.universe.ActivePlayer.Items);
+            SetItemWeight(this.universe.ActivePlayer.Clothes);
             var itemWeight = this.universe.ActivePlayer.Items.Sum(i => i.Weight);
             do
             {

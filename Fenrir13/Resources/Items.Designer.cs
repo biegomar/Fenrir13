@@ -304,7 +304,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bild|Plakat|Poster.
+        ///   Looks up a localized string similar to Bild|Bilder|Plakat|Poster.
         /// </summary>
         internal static string CORRIDOR_PAINTING {
             get {
@@ -682,7 +682,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ein Gemälde|Gemälde|Portrait|Porträt.
+        ///   Looks up a localized string similar to Ein Gemälde|Gemälde|Portrait|Porträt|Bild|Bilder.
         /// </summary>
         internal static string PORTRAIT {
             get {

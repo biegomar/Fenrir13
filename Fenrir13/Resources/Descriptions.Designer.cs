@@ -528,7 +528,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Du befindest Dich nun genau in der Mitte des Korridors. An der nördlichen Seite führt eine breite Treppe auf die Brücke. An der südlichen Seite liegt der Zugang zu den Technik- und Maschinenräumen. Auch hier geht es über eine Treppe, allerdings eine Etage nach unten. An der Wand hängt nur ein Bild, aber dafür handelt es sich um ein besonders exponiertes Gemälde. Ansonsten ist der Flur einfach und karg..
+        ///   Looks up a localized string similar to Du befindest Dich nun genau in der Mitte des Korridors. An der nördlichen Seite führt eine breite Treppe auf die Brücke. An der südlichen Seite liegt der Zugang zu den Technik- und Maschinenräumen. Auch dorthin geht es über eine Treppe, allerdings eine Etage nach unten. An der Wand hängt nur ein Bild, aber dafür handelt es sich um ein besonders exponiertes Gemälde. Ansonsten ist der Flur einfach und karg..
         /// </summary>
         internal static string CORRIDOR_MID {
             get {

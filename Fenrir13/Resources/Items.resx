@@ -115,10 +115,10 @@
         <value>Der Pilotensitz|Pilotensitz|Pilotsitz|Sitz|Pilotenstuhl|Stuhl</value>
     </data>
     <data name="CORRIDOR_PAINTING" xml:space="preserve">
-        <value>Bild|Plakat|Poster</value>
+        <value>Bild|Bilder|Plakat|Poster</value>
     </data>
     <data name="PORTRAIT" xml:space="preserve">
-        <value>Ein Gemälde|Gemälde|Portrait|Porträt</value>
+        <value>Ein Gemälde|Gemälde|Portrait|Porträt|Bild|Bilder</value>
     </data>
     <data name="STICKY_NOTE" xml:space="preserve">
         <value>Eine Haftnotiz|Haftnotiz|Klebezettel|Notiz|Zettel</value>
