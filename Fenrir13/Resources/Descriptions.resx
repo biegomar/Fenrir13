@@ -569,4 +569,10 @@ Bei genauerer Betrachtung erkennst Du, dass dort eine viereckige Aussparung ist.
     <data name="SPACE_SUIT_UNDROPABLE" xml:space="preserve">
         <value>Das geht leider nicht. Damit das Schiff permanent in Kontakt zu dem Crew-Mitglied ist, muss der Anzug ständig getragen werden. </value>
     </data>
+    <data name="PULLON_WEARABLE" xml:space="preserve">
+        <value>Du hast {0} angezogen.</value>
+    </data>
+    <data name="ALREADY_WEARING" xml:space="preserve">
+        <value>Du scheinst {0} schon zu tragen.</value>
+    </data>
 </root>

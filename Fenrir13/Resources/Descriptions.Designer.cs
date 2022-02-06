@@ -98,6 +98,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Du scheinst {0} schon zu tragen..
+        /// </summary>
+        internal static string ALREADY_WEARING {
+            get {
+                return ResourceManager.GetString("ALREADY_WEARING", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Die Krankenstation ist eine der wichtigen Einrichtungen in Raumschiffen der Viking-Klasse und dient der medizinischen Grundversorgung. Sehr zentral steht ein OP-Tisch, auf dem ein spezieller OP-Roboter einfachere Eingriffe durchführen kann. Er ist unter die Decke montiert und vier Arme garantieren eine sehr flexible und variantenreiche OP-Technik. Zum Beginn der Reise kam er einmal zum Einsatz, als einer der Mechaniker eine Blinddarmentzündung hatte. Für extreme Verletzungen oder schwerwiegende OPs ist der  [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string AMBULANCE {
@@ -1351,6 +1360,15 @@ namespace Fenrir13.Resources {
         internal static string PORTRAIT {
             get {
                 return ResourceManager.GetString("PORTRAIT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Du hast {0} angezogen..
+        /// </summary>
+        internal static string PULLON_WEARABLE {
+            get {
+                return ResourceManager.GetString("PULLON_WEARABLE", resourceCulture);
             }
         }
         

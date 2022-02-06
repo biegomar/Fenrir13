@@ -19,6 +19,7 @@ public class PlayerPrerequisites
         
         AddSitDownEvents(player, eventProvider);
         AddStandUpEvents(player, eventProvider);
+        AddPullEvents(player, eventProvider);
 
         return player;
     }
@@ -32,5 +33,11 @@ public class PlayerPrerequisites
     private static void AddSitDownEvents(Player you, EventProvider eventProvider)
     {
         you.AfterSitDown += eventProvider.AfterSitDown;
+    }
+    
+    private static void AddPullEvents(Player you, EventProvider eventProvider)
+    {
+        you.Pull += eventProvider.PullOnWearables;
+        
     }
 }
