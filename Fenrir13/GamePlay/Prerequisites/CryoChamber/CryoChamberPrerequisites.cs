@@ -100,8 +100,8 @@ internal static class CryoChamberPrerequisites
 
     private static void AddAfterLookEvents(Location cryoChamber, EventProvider eventProvider)
     {
-        cryoChamber.AfterLook += eventProvider.LookAtClosedDoor;
-        eventProvider.ScoreBoard.Add(nameof(eventProvider.LookAtClosedDoor), 1);
+        cryoChamber.AfterLook += eventProvider.LookAtClosetDoor;
+        eventProvider.ScoreBoard.Add(nameof(eventProvider.LookAtClosetDoor), 1);
 
         cryoChamber.AfterLook += eventProvider.LookAtDisplay;
         eventProvider.ScoreBoard.Add(nameof(eventProvider.LookAtDisplay), 1);
@@ -122,6 +122,7 @@ internal static class CryoChamberPrerequisites
     private static void AddAfterOpenEvents(Location room, EventProvider eventProvider)
     {
         room.AfterOpen += eventProvider.TryToOpenClosedDoor;
+        room.Open += eventProvider.OpenClosetDoor;
     }
 
     private static void AddChangeLocationEvents(Location room, EventProvider eventProvider)

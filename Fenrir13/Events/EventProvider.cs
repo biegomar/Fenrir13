@@ -118,7 +118,7 @@ internal partial class EventProvider
         return barEaten;
     }
 
-    internal void LookAtClosedDoor(object sender, ContainerObjectEventArgs eventArgs)
+    internal void LookAtClosetDoor(object sender, ContainerObjectEventArgs eventArgs)
     {
         if (sender is Location cryoChamber && cryoChamber.Key == Keys.CRYOCHAMBER && eventArgs.ExternalItemKey == Keys.CLOSET_DOOR)
         {
@@ -128,9 +128,38 @@ internal partial class EventProvider
             {
                 PrintingSubsystem.Resource(Descriptions.CLOSET_DOOR_FIRSTLOOK);
                 bar.IsHidden = false;
-                this.universe.Score += this.universe.ScoreBoard[nameof(this.LookAtClosedDoor)];
-                cryoChamber.AfterLook -= LookAtClosedDoor;
+                this.universe.Score += this.universe.ScoreBoard[nameof(this.LookAtClosetDoor)];
+                cryoChamber.AfterLook -= LookAtClosetDoor;
+                cryoChamber.Open -= OpenClosetDoor;
+                cryoChamber.Open += OpenClosetDoorAgain;
             }
+        }
+    }
+    
+    internal void OpenClosetDoor(object sender, ContainerObjectEventArgs eventArgs)
+    {
+        if (sender is Location cryoChamber && cryoChamber.Key == Keys.CRYOCHAMBER && eventArgs.ExternalItemKey == Keys.CLOSET_DOOR)
+        {
+            PrintingSubsystem.Resource(this.universe.ActiveLocation.Surroundings[eventArgs.ExternalItemKey]);
+            
+            var bar = this.universe.ActiveLocation.GetItemByKey(Keys.CHOCOLATEBAR);
+            if (bar != default)
+            {
+                PrintingSubsystem.Resource(Descriptions.CLOSET_DOOR_FIRSTLOOK);
+                bar.IsHidden = false;
+                this.universe.Score += this.universe.ScoreBoard[nameof(this.LookAtClosetDoor)];
+                cryoChamber.AfterLook -= LookAtClosetDoor;
+                cryoChamber.Open -= OpenClosetDoor;
+                cryoChamber.Open += OpenClosetDoorAgain;
+            }
+        }
+    }
+    
+    private void OpenClosetDoorAgain(object sender, ContainerObjectEventArgs eventArgs)
+    {
+        if (sender is Location cryoChamber && cryoChamber.Key == Keys.CRYOCHAMBER && eventArgs.ExternalItemKey == Keys.CLOSET_DOOR)
+        {
+            PrintingSubsystem.Resource(this.universe.ActiveLocation.Surroundings[eventArgs.ExternalItemKey]);
         }
     }
     
