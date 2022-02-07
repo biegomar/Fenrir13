@@ -499,10 +499,9 @@ internal partial class EventProvider
             var isItemDropped = false;
             SetItemWeight(this.universe.ActivePlayer.Items);
             SetItemWeight(this.universe.ActivePlayer.Clothes);
-            var itemWeight = this.universe.ActivePlayer.Items.Sum(i => i.Weight);
+            var itemWeight = this.universe.ActivePlayer.GetActualPayload();
             do
             {
-
                 if (itemWeight > this.universe.ActivePlayer.MaxPayload)
                 {
                     var heaviestItem = this.universe.ActivePlayer.Items.OrderByDescending(i => i.Weight).First();
@@ -514,7 +513,7 @@ internal partial class EventProvider
                     }
                 }
 
-                itemWeight = this.universe.ActivePlayer.Items.Sum(i => i.Weight);
+                itemWeight = this.universe.ActivePlayer.GetActualPayload();;
             } while (itemWeight > this.universe.ActivePlayer.MaxPayload);
 
             if (isItemDropped)
@@ -525,7 +524,6 @@ internal partial class EventProvider
             {
                 PrintingSubsystem.Resource(Descriptions.GRAVITY_NORMAL);    
             }
-            
         }
     }
 
