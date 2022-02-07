@@ -8,8 +8,6 @@ namespace Fenrir13.Printing;
 
 internal class ConsolePrintingSubsystem : BaseConsolePrintingSubsystem
 {
-    private const string MARINE = "\u16d7\u16a8\u16b1\u16c1\u16be\u16d6";
-    
     public ConsolePrintingSubsystem()
     {
         Console.OutputEncoding = Encoding.UTF8;
@@ -26,8 +24,8 @@ internal class ConsolePrintingSubsystem : BaseConsolePrintingSubsystem
         this.ForegroundColor = TextColor.DarkCyan;
         this.Resource(BaseDescriptions.HELP_WANTED);
         this.ResetColors();
-        Console.Write(WordWrap(BaseDescriptions.HELLO_STRANGER, Console.WindowWidth));
-        Console.Write(WordWrap(Descriptions.OPENING, Console.WindowWidth));
+        Console.Write(WordWrap(BaseDescriptions.HELLO_STRANGER, this.ConsoleWidth));
+        Console.Write(WordWrap(Descriptions.OPENING, this.ConsoleWidth));
         Console.WriteLine();
 
         return true;

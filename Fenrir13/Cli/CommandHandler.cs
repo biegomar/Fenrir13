@@ -21,6 +21,8 @@ internal class CommandHandler
     internal bool Help { get; set; }
 
     [ArgExistingFile] public string FileName { get; set; }
+    
+    public int ConsoleWidth { get; set; }
 
     public void Main()
     {
@@ -43,7 +45,7 @@ internal class CommandHandler
             });
         }).Build();
 
-        var gameLoop = ActivatorUtilities.CreateInstance<GameLoop>(host.Services, !string.IsNullOrEmpty(FileName) ? FileName : string.Empty);
+        var gameLoop = ActivatorUtilities.CreateInstance<GameLoop>(host.Services, !string.IsNullOrEmpty(FileName) ? FileName : string.Empty, ConsoleWidth);
         gameLoop.Run();
     }
 }
