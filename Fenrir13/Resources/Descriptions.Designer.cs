@@ -1192,6 +1192,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Du verbindest den Helm mit der Sauerstoffflasche. Jetzt ist der Helm für einen kurzen Ausflug ins All gerüstet..
+        /// </summary>
+        internal static string LINK_OXYGEN_BOTTLE_TO_HELMET {
+            get {
+                return ResourceManager.GetString("LINK_OXYGEN_BOTTLE_TO_HELMET", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Du befindest Dich nun auf dem Maschinendeck. Von diesem unaufregenden kleinen Vorraum erhälst Du Zugang zu der technischen Infrastruktur des Schiffs..
         /// </summary>
         internal static string MACHINE_CORRIDOR_MID {

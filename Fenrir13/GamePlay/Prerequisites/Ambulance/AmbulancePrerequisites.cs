@@ -54,6 +54,9 @@ internal static class AmbulancePrerequisites
             IsHidden = true,
             IsUnveilAble = false
         };
+        
+        AddUseEvents(oxygenBottle, eventProvider);
+
         return oxygenBottle;
     }
     
@@ -97,6 +100,11 @@ internal static class AmbulancePrerequisites
     private static void AddAfterLookEvents(Location ambulance, EventProvider eventProvider)
     {
         ambulance.AfterLook += eventProvider.LookAtRespirator;
+    }
+    
+    private static void AddUseEvents(Item item, EventProvider eventProvider)
+    {
+        item.Use += eventProvider.UseOxygenBottleWithHelmet;
     }
     
     private static void AddBreakEvents(Item item, EventProvider eventProvider)

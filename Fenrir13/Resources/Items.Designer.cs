@@ -358,7 +358,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Hantelstange|Hantelstange|Stange.
+        ///   Looks up a localized string similar to Die Hantelstange|Hantelstange|Stange|Hantel.
         /// </summary>
         internal static string DUMBBELL_BAR {
             get {

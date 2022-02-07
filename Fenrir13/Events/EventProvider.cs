@@ -349,6 +349,38 @@ internal partial class EventProvider
             }
         }
     }
+    
+    internal void UseOxygenBottleWithHelmet(object sender, UseItemEventArgs eventArgs)
+    {
+        if (sender is Item itemOne && eventArgs.ItemToUse is Item itemTwo && itemOne.Key != itemTwo.Key)
+        {
+            var itemList = new List<Item> { itemOne, itemTwo };
+            var oxygenBottle = itemList.SingleOrDefault(i => i.Key == Keys.OXYGEN_BOTTLE);
+            var helmet = itemList.SingleOrDefault(i => i.Key == Keys.HELMET);
+
+            if (oxygenBottle != default && helmet != default)
+            {
+                if (this.universe.ActivePlayer.GetUnhiddenItemByKey(Keys.OXYGEN_BOTTLE) == default)
+                {
+                    this.universe.PickObject(oxygenBottle);
+                }
+                
+                if (this.universe.ActivePlayer.GetUnhiddenItemByKey(Keys.HELMET) == default)
+                {
+                    this.universe.PickObject(helmet);
+                }
+                
+                oxygenBottle.LinkedTo.Add(helmet);
+                helmet.LinkedTo.Add(oxygenBottle);
+
+                PrintingSubsystem.Resource(Descriptions.LINK_OXYGEN_BOTTLE_TO_HELMET);
+                oxygenBottle.Use -= UseOxygenBottleWithHelmet;
+                helmet.Use -= UseOxygenBottleWithHelmet;
+
+                this.universe.Score += this.universe.ScoreBoard[nameof(UseOxygenBottleWithHelmet)];
+            }
+        }
+    }
 
     internal void BreakEquipmentBoxLock(object sender, BreakItemEventArg eventArg)
     {

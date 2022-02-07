@@ -89,6 +89,8 @@ internal static class EquipmentRoomPrerequisites
             Weight = ItemWeights.HELMET
         };
 
+        AddUseEvents(helmet, eventProvider);
+        
         return helmet;
     }
     
@@ -157,5 +159,11 @@ internal static class EquipmentRoomPrerequisites
     private static void AddOpenEvents(Item box, EventProvider eventProvider)
     {
         box.AfterOpen += eventProvider.OpenEquipmentBox;
+    }
+    
+    private static void AddUseEvents(Item item, EventProvider eventProvider)
+    {
+        item.Use += eventProvider.UseOxygenBottleWithHelmet;
+        eventProvider.ScoreBoard.Add(nameof(eventProvider.UseOxygenBottleWithHelmet), 5);
     }
 }

@@ -154,7 +154,7 @@
         <value>Die Powerstation|Powerstation|Gewichte|Gewicht</value>
     </data>
     <data name="DUMBBELL_BAR" xml:space="preserve">
-        <value>Die Hantelstange|Hantelstange|Stange</value>
+        <value>Die Hantelstange|Hantelstange|Stange|Hantel</value>
     </data>
     <data name="DUMBBELL_RACK" xml:space="preserve">
         <value>Die Hantelablage|Hantelablage|Ablage</value>

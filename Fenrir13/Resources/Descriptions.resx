@@ -575,4 +575,7 @@ Bei genauerer Betrachtung erkennst Du, dass dort eine viereckige Aussparung ist.
     <data name="ALREADY_WEARING" xml:space="preserve">
         <value>Du scheinst {0} schon zu tragen.</value>
     </data>
+    <data name="LINK_OXYGEN_BOTTLE_TO_HELMET" xml:space="preserve">
+        <value>Du verbindest den Helm mit der Sauerstoffflasche. Jetzt ist der Helm für einen kurzen Ausflug ins All gerüstet.</value>
+    </data>
 </root>
