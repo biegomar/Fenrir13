@@ -1,0 +1,51 @@
+nimm suit
+l schranktür
+iss riegel
+l display
+w
+w
+n
+öffne kühlschrank
+ziehe griff
+s
+w
+w
+n
+l gerät
+l klappe
+stecke griff in klappe
+öffne klappe
+nimm flasche
+s
+e
+hoch
+untersuche platte
+setzen
+tippe skov
+aufstehen
+runter
+runter
+s
+drop flasche
+n
+hoch
+w
+s
+l powerstation
+l ablage
+nimm stange
+n
+e
+runter
+w
+l kiste
+zerstöre schloss mit stange
+öffne kiste
+e
+s
+drop stange
+n
+w
+nimm
+e
+s

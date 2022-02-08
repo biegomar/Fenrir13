@@ -8,9 +8,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Heretic.InteractiveFiction" Version="0.5.4" />
+    <PackageReference Include="Heretic.InteractiveFiction" Version="0.5.5" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
     <PackageReference Include="PowerArgs" Version="3.6.0" />
   </ItemGroup>
 

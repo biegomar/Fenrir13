@@ -1,5 +1,4 @@
-nimm overall
-l all
+nimm suit
 l schranktür
 iss riegel
 l display

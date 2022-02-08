@@ -169,7 +169,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ein Fahrrad|Fahrrad|Rad.
+        ///   Looks up a localized string similar to Das Fahrrad|Fahrrad|Rad.
         /// </summary>
         internal static string BIKE {
             get {
@@ -214,7 +214,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Teppich|Läufer.
+        ///   Looks up a localized string similar to Der Teppich|Teppich|Läufer.
         /// </summary>
         internal static string CARPET {
             get {
@@ -241,7 +241,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Fußboden|Fussboden|Boden.
+        ///   Looks up a localized string similar to Der Fußboden|Fußboden|Fussboden|Boden.
         /// </summary>
         internal static string CHAMBER_FLOOR {
             get {
@@ -250,7 +250,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Wand|Zimmerwand|Wände|Zimmerwände|Raumwand|Raumwände.
+        ///   Looks up a localized string similar to Die Wand|Wand|Zimmerwand|Wände|Zimmerwände|Raumwand|Raumwände.
         /// </summary>
         internal static string CHAMBER_WALL {
             get {
@@ -259,7 +259,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ein Power-Riegel|Power-Riegel|Powerriegel|Schokoladen-Riegel|Schokoladenriegel|Schoko-Riegel|Schokoriegel|Riegel.
+        ///   Looks up a localized string similar to Der Power-Riegel|Power-Riegel|Powerriegel|Schokoladen-Riegel|Schokoladenriegel|Schoko-Riegel|Schokoriegel|Riegel.
         /// </summary>
         internal static string CHOCOLATEBAR {
             get {
@@ -268,7 +268,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Schrank|Kleiderschrank.
+        ///   Looks up a localized string similar to Der Schrank|Schrank|Kleiderschrank.
         /// </summary>
         internal static string CLOSET {
             get {
@@ -277,7 +277,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Schranktür|Kleiderschranktür.
+        ///   Looks up a localized string similar to Die Schranktür|Schranktür|Kleiderschranktür.
         /// </summary>
         internal static string CLOSET_DOOR {
             get {
@@ -745,7 +745,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Eine Haftnotiz|Haftnotiz|Klebezettel|Notiz|Zettel.
+        ///   Looks up a localized string similar to Die Haftnotiz|Haftnotiz|Klebezettel|Notiz|Zettel.
         /// </summary>
         internal static string STICKY_NOTE {
             get {

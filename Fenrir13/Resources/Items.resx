@@ -22,10 +22,10 @@
         <value>Cryopod|Cryo-Pod|Bett|Schlafplatz|Schlafkammer|Pod|Kokon</value>
     </data>
     <data name="CHAMBER_FLOOR" xml:space="preserve">
-        <value>Fußboden|Fussboden|Boden</value>
+        <value>Der Fußboden|Fußboden|Fussboden|Boden</value>
     </data>
     <data name="CARPET" xml:space="preserve">
-        <value>Teppich|Läufer</value>
+        <value>Der Teppich|Teppich|Läufer</value>
     </data>
     <data name="WORKBENCH" xml:space="preserve">
         <value>Arbeitsbereich|Arbeitsplatz|Schreibtisch</value>
@@ -34,7 +34,7 @@
         <value>LAPTOP|Rechner|Computer</value>
     </data>
     <data name="CHAMBER_WALL" xml:space="preserve">
-        <value>Wand|Zimmerwand|Wände|Zimmerwände|Raumwand|Raumwände</value>
+        <value>Die Wand|Wand|Zimmerwand|Wände|Zimmerwände|Raumwand|Raumwände</value>
     </data>
     <data name="PIERHOLE" xml:space="preserve">
         <value>Bullauge|Fenster|Weltraum|All|Weltall|Auge</value>
@@ -46,16 +46,16 @@
         <value>Metallrollen|Rollen|Stuhlrollen|Gummi|Gummirollen</value>
     </data>
     <data name="CLOSET" xml:space="preserve">
-        <value>Schrank|Kleiderschrank</value>
+        <value>Der Schrank|Schrank|Kleiderschrank</value>
     </data>
     <data name="DRAWER" xml:space="preserve">
         <value>Schublade|Schubladen|Schubfach|Schubfächer|Fächer</value>
     </data>
     <data name="CLOSET_DOOR" xml:space="preserve">
-        <value>Schranktür|Kleiderschranktür</value>
+        <value>Die Schranktür|Schranktür|Kleiderschranktür</value>
     </data>
     <data name="CHOCOLATEBAR" xml:space="preserve">
-        <value>Ein Power-Riegel|Power-Riegel|Powerriegel|Schokoladen-Riegel|Schokoladenriegel|Schoko-Riegel|Schokoriegel|Riegel</value>
+        <value>Der Power-Riegel|Power-Riegel|Powerriegel|Schokoladen-Riegel|Schokoladenriegel|Schoko-Riegel|Schokoriegel|Riegel</value>
     </data>
     <data name="WARDROBE" xml:space="preserve">
         <value>Die Garderobe|Garderobe</value>
@@ -121,7 +121,7 @@
         <value>Ein Gemälde|Gemälde|Portrait|Porträt|Bild|Bilder</value>
     </data>
     <data name="STICKY_NOTE" xml:space="preserve">
-        <value>Eine Haftnotiz|Haftnotiz|Klebezettel|Notiz|Zettel</value>
+        <value>Die Haftnotiz|Haftnotiz|Klebezettel|Notiz|Zettel</value>
     </data>
     <data name="CONTROL_PANEL" xml:space="preserve">
         <value>Bedienkonsole|Konsole|Steuerpult|Pult|Platte|Glasplatte|Halbrund</value>
@@ -163,7 +163,7 @@
         <value>Der Gymnastikbereich|Gymnastikbereich</value>
     </data>
     <data name="BIKE" xml:space="preserve">
-        <value>Ein Fahrrad|Fahrrad|Rad</value>
+        <value>Das Fahrrad|Fahrrad|Rad</value>
     </data>
     <data name="CROSSTRAINER" xml:space="preserve">
         <value>Ein Cross-Trainer|Cross-Trainer|Crosstrainer</value>
