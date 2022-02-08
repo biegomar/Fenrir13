@@ -329,7 +329,7 @@ Vielleicht kannst Du unten bei den Maschinenräumen mehr unternehmen als von hie
     </data>
     <data name="AIRLOCK" xml:space="preserve">
         <value>Die Schleuse dient als Weg nach Draußen und sobald Du komplett eingetreten bist, schließt sich die Tür hinter Dir und ein weiteres Schott wird davor heruntergelassen. Du fühlst plötzlich, dass Deine Glieder sich leichter anfühlen, Deine Bewegungen sind mühelos und Du spürst kaum noch Dein eigenes Gewicht. Klar, denn hier in der Schleuse wird bereits auf die künstliche Schwerkraft verzichtet. 
-Am südlichen Ende der Schleuse trennt ein weiteres, massives Schott den Raum von einem breiten Steg, der bereits vollständig ins All ragt. Das Schott scheint über ein einfaches Tastenfeld gesteuert zu werden, dass sich direkt daneben an der Wand befindet.</value>
+Am südlichen Ende der Schleuse trennt ein weiteres, massives Schott den Raum von einem breiten Steg, der bereits vollständig ins All ragt. </value>
     </data>
     <data name="ENGINE_ROOM" xml:space="preserve">
         <value>Hier ist der Maschinenraum.</value>
@@ -581,5 +581,8 @@ Bei genauerer Betrachtung erkennst Du, dass dort eine viereckige Aussparung ist.
     <data name="CRYOCHAMBER_BULKHEAD" xml:space="preserve">
         <value>Du kannst den Korridor erahnen, der in ein fast schon gespenstiges Dunkel gehüllt ist. Nur der blinkende rote Schein der Alarmbeleuchtung erhellt ihn zeitweise. 
 </value>
+    </data>
+    <data name="AIRLOCK_KEYPAD_CONTAINMENT" xml:space="preserve">
+        <value>Das Schott scheint über ein einfaches Tastenfeld gesteuert zu werden, dass sich direkt daneben an der Wand befindet.</value>
     </data>
 </root>

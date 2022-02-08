@@ -80,6 +80,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Das Schott scheint über ein einfaches Tastenfeld gesteuert zu werden, dass sich direkt daneben an der Wand befindet..
+        /// </summary>
+        internal static string AIRLOCK_KEYPAD_CONTAINMENT {
+            get {
+                return ResourceManager.GetString("AIRLOCK_KEYPAD_CONTAINMENT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Damit scheint man das massive Schott wieder verriegeln und schließen zu können..
         /// </summary>
         internal static string AIRLOCK_KEYPAD_GREEN_BUTTON {

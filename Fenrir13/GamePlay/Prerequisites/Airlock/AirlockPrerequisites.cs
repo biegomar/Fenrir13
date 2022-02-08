@@ -1,3 +1,4 @@
+using System.Runtime.CompilerServices;
 using Fenrir13.Events;
 using Fenrir13.Resources;
 using Heretic.InteractiveFiction.Objects;
@@ -14,6 +15,8 @@ internal class AirlockPrerequisites
             Name = Locations.AIRLOCK,
             Description = Descriptions.AIRLOCK
         };
+        
+        airlock.Items.Add(GetKeyPad(eventProvider));
 
         AddSurroundings(airlock);
         
@@ -21,12 +24,53 @@ internal class AirlockPrerequisites
         
         return airlock;
     }
+
+    private static Item GetKeyPad(EventProvider eventProvider)
+    {
+        var keyPad = new Item
+        {
+            Key = Keys.AIRLOCK_KEYPAD,
+            Name = Items.AIRLOCK_KEYPAD,
+            Description = Descriptions.AIRLOCK_KEYPAD,
+            ContainmentDescription = Descriptions.AIRLOCK_KEYPAD_CONTAINMENT
+            
+        };
+        
+        keyPad.Items.Add(GetGreenButton(eventProvider));
+        keyPad.Items.Add(GetRedButton(eventProvider));
+
+        return keyPad;
+    }
+    
+    private static Item GetGreenButton(EventProvider eventProvider)
+    {
+        var greenButton = new Item
+        {
+            Key = Keys.AIRLOCK_KEYPAD_GREEN_BUTTON,
+            Name = Items.AIRLOCK_KEYPAD_GREEN_BUTTON,
+            Description = Descriptions.AIRLOCK_KEYPAD_GREEN_BUTTON,
+            IsHidden = true
+        };
+
+        return greenButton;
+    }
+    
+    private static Item GetRedButton(EventProvider eventProvider)
+    {
+        var redButton = new Item
+        {
+            Key = Keys.AIRLOCK_KEYPAD_RED_BUTTON,
+            Name = Items.AIRLOCK_KEYPAD_RED_BUTTON,
+            Description = Descriptions.AIRLOCK_KEYPAD_RED_BUTTON,
+            IsHidden = true
+        };
+
+        return redButton;
+    }
     
     private static void AddSurroundings(Location airlock)
     {
         airlock.Surroundings.Add(Keys.AIRLOCK_KEYPAD, Descriptions.AIRLOCK_KEYPAD);
-        airlock.Surroundings.Add(Keys.AIRLOCK_KEYPAD_GREEN_BUTTON, Descriptions.AIRLOCK_KEYPAD_GREEN_BUTTON);
-        airlock.Surroundings.Add(Keys.AIRLOCK_KEYPAD_RED_BUTTON, Descriptions.AIRLOCK_KEYPAD_RED_BUTTON);
     }
     
     private static void AddChangeRoomEvents(Location airlock, EventProvider eventProvider)
