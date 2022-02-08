@@ -322,6 +322,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Das Sichtfenster|Sichtfenster.
+        /// </summary>
+        internal static string CRYOCHAMBER_BULKHEAD {
+            get {
+                return ResourceManager.GetString("CRYOCHAMBER_BULKHEAD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Zimmertür|Tür.
         /// </summary>
         internal static string CRYOCHAMBER_DOOR {

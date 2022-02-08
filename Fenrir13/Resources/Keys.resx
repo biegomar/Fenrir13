@@ -324,4 +324,7 @@
     <data name="AMBULANCE_OP_ITEMS_DETAIL" xml:space="preserve">
         <value>AMBULANCE_OP_ITEMS_DETAIL</value>
     </data>
+    <data name="CRYOCHAMBER_BULKHEAD" xml:space="preserve">
+        <value>CRYOCHAMBER_BULKHEAD</value>
+    </data>
 </root>

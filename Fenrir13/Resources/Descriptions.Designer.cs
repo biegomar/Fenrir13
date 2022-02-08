@@ -619,6 +619,16 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Du kannst den Korridor erahnen, der in ein fast schon gespenstiges Dunkel gehüllt ist. Nur der blinkende rote Schein der Alarmbeleuchtung erhellt ihn zeitweise. 
+        ///.
+        /// </summary>
+        internal static string CRYOCHAMBER_BULKHEAD {
+            get {
+                return ResourceManager.GetString("CRYOCHAMBER_BULKHEAD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Der Begriff Tür umschreibt es schon ganz gut. Es ist ein Vorrichtung, die dazu dient einen Durchgang zu versperren. Also ja, eine Tür..
         /// </summary>
         internal static string CRYOCHAMBER_DOOR {

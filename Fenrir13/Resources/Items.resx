@@ -273,4 +273,7 @@
     <data name="AMBULANCE_OP_ITEMS_DETAIL" xml:space="preserve">
         <value>Das Skalpell|Skalpell|Skalpelle|Der Tupfer|Tupfer|Die Mullbinde|Mullbinde|Mullbinden|Der Adapter|Adapter</value>
     </data>
+    <data name="CRYOCHAMBER_BULKHEAD" xml:space="preserve">
+        <value>Das Sichtfenster|Sichtfenster</value>
+    </data>
 </root>

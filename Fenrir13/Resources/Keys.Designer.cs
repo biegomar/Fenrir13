@@ -412,6 +412,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to CRYOCHAMBER_BULKHEAD.
+        /// </summary>
+        internal static string CRYOCHAMBER_BULKHEAD {
+            get {
+                return ResourceManager.GetString("CRYOCHAMBER_BULKHEAD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to CRYOCHAMBER_DOOR.
         /// </summary>
         internal static string CRYOCHAMBER_DOOR {

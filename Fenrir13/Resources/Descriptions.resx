@@ -578,4 +578,8 @@ Bei genauerer Betrachtung erkennst Du, dass dort eine viereckige Aussparung ist.
     <data name="LINK_OXYGEN_BOTTLE_TO_HELMET" xml:space="preserve">
         <value>Du verbindest den Helm mit der Sauerstoffflasche. Jetzt ist der Helm für einen kurzen Ausflug ins All gerüstet.</value>
     </data>
+    <data name="CRYOCHAMBER_BULKHEAD" xml:space="preserve">
+        <value>Du kannst den Korridor erahnen, der in ein fast schon gespenstiges Dunkel gehüllt ist. Nur der blinkende rote Schein der Alarmbeleuchtung erhellt ihn zeitweise. 
+</value>
+    </data>
 </root>
