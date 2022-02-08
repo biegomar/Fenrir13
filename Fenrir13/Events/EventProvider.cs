@@ -153,6 +153,10 @@ internal partial class EventProvider
                 cryoChamber.Open += OpenClosetDoorAgain;
             }
         }
+        else
+        {
+            throw new OpenException(BaseDescriptions.DOES_NOT_WORK);
+        }
     }
     
     private void OpenClosetDoorAgain(object sender, ContainerObjectEventArgs eventArgs)
