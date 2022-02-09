@@ -92,6 +92,7 @@ internal class AirlockPrerequisites
             Name = Items.AIRLOCK_ROPE,
             Description = Descriptions.AIRLOCK_ROPE,
             ContainmentDescription = Descriptions.AIRLOCK_ROPE_CONTAINMENT,
+            LinkedToDescription = Descriptions.AIRLOCK_ROPE_LINKEDTO,
             IsPickAble = false
         };
         

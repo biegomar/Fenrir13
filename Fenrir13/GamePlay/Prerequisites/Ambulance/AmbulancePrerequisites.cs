@@ -68,7 +68,7 @@ internal static class AmbulancePrerequisites
             Name = Items.AMBULANCE_RESPIRATOR_FLAP,
             Description = Descriptions.AMBULANCE_RESPIRATOR_FLAP,
             FirstLookDescription = Descriptions.AMBULANCE_RESPIRATOR_FLAP_FIRSTLOOK,
-            //ContainmentDescription = Descriptions.AMBULANCE_RESPIRATOR_FLAP_CONTAINMENT,
+            ContainmentDescription = Descriptions.AMBULANCE_RESPIRATOR_FLAP_CONTAINMENT,
             IsPickAble = false,
             IsLockAble = true,
             IsLocked = true,

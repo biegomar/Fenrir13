@@ -143,6 +143,7 @@ internal static class EquipmentRoomPrerequisites
             Name = Items.EYELET,
             Description = Descriptions.EYELET,
             ContainmentDescription = Descriptions.EYELET_CONTAINMENT,
+            LinkedToDescription = Descriptions.EYELET_LINKEDTO,
             IsPickAble = false
         };
 

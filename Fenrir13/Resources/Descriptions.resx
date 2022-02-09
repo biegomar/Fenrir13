@@ -545,7 +545,7 @@ Bei genauerer Betrachtung erkennst Du, dass dort eine viereckige Aussparung ist.
     <data name="FRIDGE_DOOR_HANDLE_PUSHED" xml:space="preserve">
         <value>Du steckst den Griff in die Aussparung der Klappe und ein typisches 'klack' signalisiert Dir, dass er eingerastet ist. Er passt perfekt!</value>
     </data>
-    <data name="FRIDGE_DOOR_HANDLE_FLAP_CONTAINMENT" xml:space="preserve">
+    <data name="FRIDGE_DOOR_HANDLE_FLAP_LINKEDTO" xml:space="preserve">
         <value>Der Griff steckt fest in der Klappe und kann dazu benutzt werden, sie zu öffnen.</value>
     </data>
     <data name="FRIDGE_DOOR_HANDLE_FLAP_UNPICKABLE" xml:space="preserve">
@@ -596,5 +596,11 @@ Bei genauerer Betrachtung erkennst Du, dass dort eine viereckige Aussparung ist.
     </data>
     <data name="AIRLOCK_ROPE_CONTAINMENT" xml:space="preserve">
         <value>Auf der Winde befindet sich ein Seil aus Graphen, dieser hauchdünnen Kohlenstoffverbindung, die sehr leicht und absolut reißfest ist.</value>
+    </data>
+    <data name="EYELET_LINKEDTO" xml:space="preserve">
+        <value>Im Moment ist die Öse des Gurtes fest mit dem Graphen-Haken verbunden.</value>
+    </data>
+    <data name="AIRLOCK_ROPE_LINKEDTO" xml:space="preserve">
+        <value>Das Graphen-Seil ist mit seinem Haken fest mit ihr verbunden.</value>
     </data>
 </root>

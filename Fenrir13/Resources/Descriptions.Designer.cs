@@ -143,6 +143,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Das Graphen-Seil ist mit seinem Haken fest mit ihr verbunden..
+        /// </summary>
+        internal static string AIRLOCK_ROPE_LINKEDTO {
+            get {
+                return ResourceManager.GetString("AIRLOCK_ROPE_LINKEDTO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Du scheinst {0} schon zu tragen..
         /// </summary>
         internal static string ALREADY_WEARING {
@@ -965,6 +974,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Im Moment ist die Öse des Gurtes fest mit dem Graphen-Haken verbunden..
+        /// </summary>
+        internal static string EYELET_LINKEDTO {
+            get {
+                return ResourceManager.GetString("EYELET_LINKEDTO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Es gibt hier drei wesentliche Fitnessmaschinen, die aber alle multifunktional sind. Das sind die Cardiostation, die Powerstation und der Gymnastikbereich..
         /// </summary>
         internal static string FITNESSMACHINE {
@@ -1039,9 +1057,9 @@ namespace Fenrir13.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Der Griff steckt fest in der Klappe und kann dazu benutzt werden, sie zu öffnen..
         /// </summary>
-        internal static string FRIDGE_DOOR_HANDLE_FLAP_CONTAINMENT {
+        internal static string FRIDGE_DOOR_HANDLE_FLAP_LINKEDTO {
             get {
-                return ResourceManager.GetString("FRIDGE_DOOR_HANDLE_FLAP_CONTAINMENT", resourceCulture);
+                return ResourceManager.GetString("FRIDGE_DOOR_HANDLE_FLAP_LINKEDTO", resourceCulture);
             }
         }
         

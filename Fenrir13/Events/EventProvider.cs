@@ -57,7 +57,7 @@ internal partial class EventProvider
                     respiratorFlap.IsLocked = false;
                     respiratorFlap.LinkedTo.Add(doorHandle);
                     respiratorFlap.FirstLookDescription = string.Empty;
-                    doorHandle.ContainmentDescription = Descriptions.FRIDGE_DOOR_HANDLE_FLAP_CONTAINMENT;
+                    doorHandle.LinkedToDescription = Descriptions.FRIDGE_DOOR_HANDLE_FLAP_LINKEDTO;
                     doorHandle.IsPickAble = false;
                     doorHandle.UnPickAbleDescription = Descriptions.FRIDGE_DOOR_HANDLE_FLAP_UNPICKABLE;
                     this.universe.ActivePlayer.Items.Remove(doorHandle);
