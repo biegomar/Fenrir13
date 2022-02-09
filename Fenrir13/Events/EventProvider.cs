@@ -383,6 +383,10 @@ internal partial class EventProvider
 
                 this.universe.Score += this.universe.ScoreBoard[nameof(UseOxygenBottleWithHelmet)];
             }
+            else
+            {
+                throw new UseException(BaseDescriptions.DOES_NOT_WORK);
+            }
         }
     }
 
@@ -410,6 +414,10 @@ internal partial class EventProvider
                 eyelet.Use -= UseAirlockRopeWithBelt;
 
                 this.universe.Score += this.universe.ScoreBoard[nameof(UseAirlockRopeWithBelt)];
+            }
+            else
+            {
+                throw new UseException(BaseDescriptions.DOES_NOT_WORK);
             }
         }
     }
