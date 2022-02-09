@@ -146,6 +146,8 @@ internal static class EquipmentRoomPrerequisites
             IsPickAble = false
         };
 
+        AddEyeletUseEvents(eyelet, eventProvider);
+        
         return eyelet;
     }
     
@@ -165,5 +167,10 @@ internal static class EquipmentRoomPrerequisites
     {
         item.Use += eventProvider.UseOxygenBottleWithHelmet;
         eventProvider.ScoreBoard.Add(nameof(eventProvider.UseOxygenBottleWithHelmet), 5);
+    }
+    
+    private static void AddEyeletUseEvents(Item item, EventProvider eventProvider)
+    {
+        item.Use += eventProvider.UseAirlockRopeWithBelt;
     }
 }

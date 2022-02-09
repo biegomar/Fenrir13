@@ -386,6 +386,33 @@ internal partial class EventProvider
         }
     }
 
+    internal void UseAirlockRopeWithBelt(object sender, UseItemEventArgs eventArgs)
+    {
+        if (sender is Item itemOne && eventArgs.ItemToUse is Item itemTwo && itemOne.Key != itemTwo.Key)
+        {
+            var itemList = new List<Item> { itemOne, itemTwo };
+            var rope = itemList.SingleOrDefault(i => i.Key == Keys.AIRLOCK_ROPE);
+            var eyelet = itemList.SingleOrDefault(i => i.Key == Keys.EYELET);
+
+            if (rope != default && eyelet != default)
+            {
+                if (this.universe.ActivePlayer.GetUnhiddenItemByKey(Keys.BELT) == default)
+                {
+                    var belt = this.universe.ActiveLocation.GetItemByKey(Keys.BELT);
+                    this.universe.PickObject(belt);
+                }
+                
+                rope.LinkedTo.Add(eyelet);
+                eyelet.LinkedTo.Add(rope);
+
+                PrintingSubsystem.Resource(Descriptions.LINK_OXYGEN_BOTTLE_TO_HELMET);
+                rope.Use -= UseAirlockRopeWithBelt;
+                eyelet.Use -= UseAirlockRopeWithBelt;
+
+                this.universe.Score += this.universe.ScoreBoard[nameof(UseAirlockRopeWithBelt)];
+            }
+        }
+    }
     internal void BreakEquipmentBoxLock(object sender, BreakItemEventArg eventArg)
     {
         if (eventArg.ItemToUse == default)

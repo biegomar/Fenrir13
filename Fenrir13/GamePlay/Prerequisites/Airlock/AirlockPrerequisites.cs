@@ -94,6 +94,8 @@ internal class AirlockPrerequisites
             ContainmentDescription = Descriptions.AIRLOCK_ROPE_CONTAINMENT,
             IsPickAble = false
         };
+        
+        AddUseEvents(airlockRope, eventProvider);
 
         return airlockRope;
     }
@@ -108,5 +110,11 @@ internal class AirlockPrerequisites
     {
         airlock.AfterChangeLocation += eventProvider.EnterAirlock;
         airlock.BeforeChangeLocation += eventProvider.LeaveAirlock;
+    }
+    
+    private static void AddUseEvents(Item item, EventProvider eventProvider)
+    {
+        item.Use += eventProvider.UseAirlockRopeWithBelt;
+        eventProvider.ScoreBoard.Add(nameof(eventProvider.UseAirlockRopeWithBelt), 1);
     }
 }

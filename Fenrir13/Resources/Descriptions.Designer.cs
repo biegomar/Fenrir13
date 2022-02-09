@@ -80,7 +80,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to An der nördlichen Wand, direkt neben der Tür, durch die Du gerade eingetreten bist, befindet sich eine Seilwinde..
+        ///   Looks up a localized string similar to An der nördlichen Wand, direkt neben der Tür, durch die Du gerade eingetreten bist, befindet sich eine Seilwinde und darauf ein Seil..
         /// </summary>
         internal static string AIRLOCK_CABLE_WINCH_CONTAINMENT {
             get {

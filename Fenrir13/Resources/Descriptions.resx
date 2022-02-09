@@ -592,7 +592,7 @@ Bei genauerer Betrachtung erkennst Du, dass dort eine viereckige Aussparung ist.
         <value>Die Winde selbst ist recht unspektakulär und funktioniert vollkommen automatisch. Da sie sehr stabil und vertrauenswürdig aussieht, brauchst Du Dich nicht weiter um sie zu kümmern.</value>
     </data>
     <data name="AIRLOCK_CABLE_WINCH_CONTAINMENT" xml:space="preserve">
-        <value>An der nördlichen Wand, direkt neben der Tür, durch die Du gerade eingetreten bist, befindet sich eine Seilwinde.</value>
+        <value>An der nördlichen Wand, direkt neben der Tür, durch die Du gerade eingetreten bist, befindet sich eine Seilwinde und darauf ein Seil.</value>
     </data>
     <data name="AIRLOCK_ROPE_CONTAINMENT" xml:space="preserve">
         <value>Auf der Winde befindet sich ein Seil aus Graphen, dieser hauchdünnen Kohlenstoffverbindung, die sehr leicht und absolut reißfest ist.</value>
