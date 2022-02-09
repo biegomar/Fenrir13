@@ -71,6 +71,24 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Die Winde selbst ist recht unspektakulär und funktioniert vollkommen automatisch. Da sie sehr stabil und vertrauenswürdig aussieht, brauchst Du Dich nicht weiter um sie zu kümmern..
+        /// </summary>
+        internal static string AIRLOCK_CABLE_WINCH {
+            get {
+                return ResourceManager.GetString("AIRLOCK_CABLE_WINCH", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to An der nördlichen Wand, direkt neben der Tür, durch die Du gerade eingetreten bist, befindet sich eine Seilwinde..
+        /// </summary>
+        internal static string AIRLOCK_CABLE_WINCH_CONTAINMENT {
+            get {
+                return ResourceManager.GetString("AIRLOCK_CABLE_WINCH_CONTAINMENT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Eigentlich sind es nur zwei große, beschriftete Tasten, die man bequem mit einer Hand auslösen kann. Eine der Tasten ist rot und mit dem Wort &apos;OPEN&apos; beschriftet und die andere Taste grün und auf ihr prangt das Wort &apos;CLOSE&apos;..
         /// </summary>
         internal static string AIRLOCK_KEYPAD {
@@ -103,6 +121,24 @@ namespace Fenrir13.Resources {
         internal static string AIRLOCK_KEYPAD_RED_BUTTON {
             get {
                 return ResourceManager.GetString("AIRLOCK_KEYPAD_RED_BUTTON", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Das Seil ist ultradünn und in das Graphen sind fluoreszierende Partikel eingebracht, damit man das Seil auch in der Dunkelheit des Alls gut erkennen kann. Da das Seil sehr dünn ist, die Winde aber sehr voll wirkt, gehst Du davon aus, dass es lang genug ist, um jeden Punkt der Schiffshaut zu erreichen. Das vordere Ende des Seils mündet in eine Hakenkonstruktion, die ebenfalls aus Graphen ist und nahtlos mit dem Seil verbunden ist. Wahrscheinlich handelt es sich sowieso um ein einziges Werkstück..
+        /// </summary>
+        internal static string AIRLOCK_ROPE {
+            get {
+                return ResourceManager.GetString("AIRLOCK_ROPE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Auf der Winde befindet sich ein Seil aus Graphen, dieser hauchdünnen Kohlenstoffverbindung, die sehr leicht und absolut reißfest ist..
+        /// </summary>
+        internal static string AIRLOCK_ROPE_CONTAINMENT {
+            get {
+                return ResourceManager.GetString("AIRLOCK_ROPE_CONTAINMENT", resourceCulture);
             }
         }
         

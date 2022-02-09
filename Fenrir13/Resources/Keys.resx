@@ -327,4 +327,10 @@
     <data name="CRYOCHAMBER_BULKHEAD" xml:space="preserve">
         <value>CRYOCHAMBER_BULKHEAD</value>
     </data>
+    <data name="AIRLOCK_ROPE" xml:space="preserve">
+        <value>AIRLOCK_ROPE</value>
+    </data>
+    <data name="AIRLOCK_CABLE_WINCH" xml:space="preserve">
+        <value>AIRLOCK_CABLE_WINCH</value>
+    </data>
 </root>

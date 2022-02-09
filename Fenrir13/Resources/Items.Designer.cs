@@ -61,6 +61,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Die Seilwinde|Seilwinde|Seil|Winde.
+        /// </summary>
+        internal static string AIRLOCK_CABLE_WINCH {
+            get {
+                return ResourceManager.GetString("AIRLOCK_CABLE_WINCH", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Das Tastenfeld|Tastenfeld|Tastatur.
         /// </summary>
         internal static string AIRLOCK_KEYPAD {
@@ -84,6 +93,15 @@ namespace Fenrir13.Resources {
         internal static string AIRLOCK_KEYPAD_RED_BUTTON {
             get {
                 return ResourceManager.GetString("AIRLOCK_KEYPAD_RED_BUTTON", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Das Graphen-Seil|Graphen-Seil|Seil.
+        /// </summary>
+        internal static string AIRLOCK_ROPE {
+            get {
+                return ResourceManager.GetString("AIRLOCK_ROPE", resourceCulture);
             }
         }
         

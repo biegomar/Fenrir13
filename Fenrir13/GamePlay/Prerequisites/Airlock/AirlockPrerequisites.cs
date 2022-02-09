@@ -16,6 +16,7 @@ internal class AirlockPrerequisites
             Description = Descriptions.AIRLOCK
         };
         
+        airlock.Items.Add(GetCableWinch(eventProvider));
         airlock.Items.Add(GetKeyPad(eventProvider));
 
         AddSurroundings(airlock);
@@ -68,9 +69,39 @@ internal class AirlockPrerequisites
         return redButton;
     }
     
+    private static Item GetCableWinch(EventProvider eventProvider)
+    {
+        var cableWinch = new Item
+        {
+            Key = Keys.AIRLOCK_CABLE_WINCH,
+            Name = Items.AIRLOCK_CABLE_WINCH,
+            Description = Descriptions.AIRLOCK_CABLE_WINCH,
+            ContainmentDescription = Descriptions.AIRLOCK_CABLE_WINCH_CONTAINMENT,
+            IsPickAble = false
+        };
+
+        cableWinch.Items.Add(GetAirlockRope(eventProvider));
+        return cableWinch;
+    }
+    
+    private static Item GetAirlockRope(EventProvider eventProvider)
+    {
+        var airlockRope = new Item
+        {
+            Key = Keys.AIRLOCK_ROPE,
+            Name = Items.AIRLOCK_ROPE,
+            Description = Descriptions.AIRLOCK_ROPE,
+            ContainmentDescription = Descriptions.AIRLOCK_ROPE_CONTAINMENT,
+            IsPickAble = false
+        };
+
+        return airlockRope;
+    }
+    
+    
     private static void AddSurroundings(Location airlock)
     {
-        airlock.Surroundings.Add(Keys.AIRLOCK_KEYPAD, Descriptions.AIRLOCK_KEYPAD);
+        //airlock.Surroundings.Add(Keys.AIRLOCK_KEYPAD, Descriptions.AIRLOCK_KEYPAD);
     }
     
     private static void AddChangeRoomEvents(Location airlock, EventProvider eventProvider)

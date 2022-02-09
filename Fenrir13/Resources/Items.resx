@@ -276,4 +276,10 @@
     <data name="CRYOCHAMBER_BULKHEAD" xml:space="preserve">
         <value>Das Sichtfenster|Sichtfenster</value>
     </data>
+    <data name="AIRLOCK_ROPE" xml:space="preserve">
+        <value>Das Graphen-Seil|Graphen-Seil|Seil</value>
+    </data>
+    <data name="AIRLOCK_CABLE_WINCH" xml:space="preserve">
+        <value>Die Seilwinde|Seilwinde|Seil|Winde</value>
+    </data>
 </root>
