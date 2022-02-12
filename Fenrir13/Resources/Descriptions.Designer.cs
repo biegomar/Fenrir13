@@ -1373,6 +1373,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Du benötigst noch Sauerstoff!.
+        /// </summary>
+        internal static string OXYGEN_NEEDED {
+            get {
+                return ResourceManager.GetString("OXYGEN_NEEDED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Die Trennwand zum Waschbereich soll sicherlich als Sichtschutz dienen, hat aber eher eine psychologische Wirkung. Niemand kann einfach so in den Raum kommen oder durch das Guckloch schauen, um zu sehen, was da wohl gerade passiert. Die Wand ist beidseitig mit einem grauen Filzstoff überzogen und man kann dort leichte Dinge, wie Bilder oder anderen Schnick-Schnack befestigen. Du hast von der Möglichkeit allerdings keinen Gebrauch gemacht..
         /// </summary>
         internal static string PARTITION_WALL {
@@ -1446,6 +1455,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Als Du die rote Taste betätigst, nimmst Du das laute Zischen wahr, dass entsteht, wenn der Sauerstoff aus dem Raum gesaugt wird. Die Beleuchtung wechselt auf ein warnendes Rot und das Schott beginnt sich behäbig zu öffnen. Nach einer gefühlten Ewigkeit erreicht es seine entgültige Position und Du blickst hinaus ins All. Nun trennt Dich nichts mehr von der Unendlichkeit!.
+        /// </summary>
+        internal static string PREPARED_FOR_SPACE_WALK {
+            get {
+                return ResourceManager.GetString("PREPARED_FOR_SPACE_WALK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Du hast {0} angezogen..
         /// </summary>
         internal static string PULLON_WEARABLE {
@@ -1496,6 +1514,15 @@ namespace Fenrir13.Resources {
         internal static string SOCIALROOM {
             get {
                 return ResourceManager.GetString("SOCIALROOM", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ohne, dass Du die entsprechende Schutzkleidung angezogen hast, kannst du nicht hinaus ins All!.
+        /// </summary>
+        internal static string SPACE_CLOTHS_NEEDED {
+            get {
+                return ResourceManager.GetString("SPACE_CLOTHS_NEEDED", resourceCulture);
             }
         }
         

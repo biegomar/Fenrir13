@@ -6,6 +6,7 @@ using Heretic.InteractiveFiction.GamePlay.EventSystem.EventArgs;
 using Heretic.InteractiveFiction.Objects;
 using Heretic.InteractiveFiction.Resources;
 using Heretic.InteractiveFiction.Subsystems;
+using PowerArgs;
 
 namespace Fenrir13.Events;
 
@@ -73,6 +74,43 @@ internal partial class EventProvider
         }
     }
     
+    internal void PushRedButton(object sender, PushItemEventArgs eventArgs)
+    {
+        if (sender is Item redButton && redButton.Key == Keys.AIRLOCK_KEYPAD_RED_BUTTON)
+        {
+            var listOfPossibleWearables = new List<string>()
+            {
+                Keys.BELT,
+                Keys.GLOVES,
+                Keys.HELMET,
+                Keys.BOOTS
+            };
+
+            var clothes = this.universe.ActivePlayer.Clothes.Select(x => x.Key).Intersect(listOfPossibleWearables).ToList();
+            var isPlayerPreparedForSpaceWalk = clothes.Count == listOfPossibleWearables.Count;
+
+            if (isPlayerPreparedForSpaceWalk)
+            {
+                var helmet = this.universe.ActivePlayer.Clothes.First(x => x.Key == Keys.HELMET);
+
+                var isHelmetLinkedToOxygen = helmet.LinkedTo.Any(x => x.Key == Keys.OXYGEN_BOTTLE);
+                if (isHelmetLinkedToOxygen)
+                {
+                    PrintingSubsystem.Resource(Descriptions.PREPARED_FOR_SPACE_WALK);
+                    this.universe.Score += this.universe.ScoreBoard[nameof(this.PushRedButton)];
+                }
+                else
+                {
+                    throw new PushException(Descriptions.OXYGEN_NEEDED);
+                }
+            }
+            else
+            {
+                throw new PushException(Descriptions.SPACE_CLOTHS_NEEDED);
+            }
+        }
+    }
+
     internal void LookAtDisplay(object sender, ContainerObjectEventArgs eventArgs)
     {
         if (sender is Location cryoChamber && cryoChamber.Key == Keys.CRYOCHAMBER && eventArgs.ExternalItemKey == Keys.DISPLAY)
@@ -376,6 +414,7 @@ internal partial class EventProvider
                 
                 oxygenBottle.LinkedTo.Add(helmet);
                 helmet.LinkedTo.Add(oxygenBottle);
+                helmet.FirstLookDescription = string.Empty;
 
                 PrintingSubsystem.Resource(Descriptions.LINK_OXYGEN_BOTTLE_TO_HELMET);
                 oxygenBottle.Use -= UseOxygenBottleWithHelmet;

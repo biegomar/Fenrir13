@@ -79,7 +79,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der grüne Knopf|Grüner Knopf|Grüne Taste.
+        ///   Looks up a localized string similar to Der grüne Knopf|Grüner Knopf|Grünen Knopf|Grüne Taste.
         /// </summary>
         internal static string AIRLOCK_KEYPAD_GREEN_BUTTON {
             get {
@@ -88,7 +88,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der rote Knopf|Roter Knopf|Rote Taste.
+        ///   Looks up a localized string similar to Der rote Knopf|Roter Knopf|Roten Knopf|Rote Taste.
         /// </summary>
         internal static string AIRLOCK_KEYPAD_RED_BUTTON {
             get {

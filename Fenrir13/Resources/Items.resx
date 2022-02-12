@@ -199,10 +199,10 @@
         <value>Das Tastenfeld|Tastenfeld|Tastatur</value>
     </data>
     <data name="AIRLOCK_KEYPAD_RED_BUTTON" xml:space="preserve">
-        <value>Der rote Knopf|Roter Knopf|Rote Taste</value>
+        <value>Der rote Knopf|Roter Knopf|Roten Knopf|Rote Taste</value>
     </data>
     <data name="AIRLOCK_KEYPAD_GREEN_BUTTON" xml:space="preserve">
-        <value>Der grüne Knopf|Grüner Knopf|Grüne Taste</value>
+        <value>Der grüne Knopf|Grüner Knopf|Grünen Knopf|Grüne Taste</value>
     </data>
     <data name="EQUIPMENT_ROOM_BENCH" xml:space="preserve">
         <value>Die Sitzbänke|Sitzbänke|Sitzbank|Bänke|Bank|Ausstattung</value>

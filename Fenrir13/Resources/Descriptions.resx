@@ -603,4 +603,13 @@ Bei genauerer Betrachtung erkennst Du, dass dort eine viereckige Aussparung ist.
     <data name="AIRLOCK_ROPE_LINKEDTO" xml:space="preserve">
         <value>Das Graphen-Seil ist mit seinem Haken fest mit ihr verbunden.</value>
     </data>
+    <data name="OXYGEN_NEEDED" xml:space="preserve">
+        <value>Du benötigst noch Sauerstoff!</value>
+    </data>
+    <data name="SPACE_CLOTHS_NEEDED" xml:space="preserve">
+        <value>Ohne, dass Du die entsprechende Schutzkleidung angezogen hast, kannst du nicht hinaus ins All!</value>
+    </data>
+    <data name="PREPARED_FOR_SPACE_WALK" xml:space="preserve">
+        <value>Als Du die rote Taste betätigst, nimmst Du das laute Zischen wahr, dass entsteht, wenn der Sauerstoff aus dem Raum gesaugt wird. Die Beleuchtung wechselt auf ein warnendes Rot und das Schott beginnt sich behäbig zu öffnen. Nach einer gefühlten Ewigkeit erreicht es seine entgültige Position und Du blickst hinaus ins All. Nun trennt Dich nichts mehr von der Unendlichkeit!</value>
+    </data>
 </root>

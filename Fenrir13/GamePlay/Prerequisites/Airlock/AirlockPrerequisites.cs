@@ -66,6 +66,8 @@ internal class AirlockPrerequisites
             IsHidden = true
         };
 
+        AddPushEvents(redButton, eventProvider);
+        
         return redButton;
     }
     
@@ -118,4 +120,9 @@ internal class AirlockPrerequisites
         item.Use += eventProvider.UseAirlockRopeWithBelt;
         eventProvider.ScoreBoard.Add(nameof(eventProvider.UseAirlockRopeWithBelt), 1);
     }
-}
+    
+    private static void AddPushEvents(Item item, EventProvider eventProvider)
+    {
+        item.Push += eventProvider.PushRedButton;
+        eventProvider.ScoreBoard.Add(nameof(eventProvider.PushRedButton), 5);
+    }}
