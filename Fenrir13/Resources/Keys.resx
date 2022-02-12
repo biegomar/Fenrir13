@@ -339,4 +339,7 @@
     <data name="AIRLOCK_SOUTHERN_WALL" xml:space="preserve">
         <value>AIRLOCK_SOUTHERN_WALL</value>
     </data>
+    <data name="SOCIALROOM_COUCH" xml:space="preserve">
+        <value>SOCIALROOM_COUCH</value>
+    </data>
 </root>

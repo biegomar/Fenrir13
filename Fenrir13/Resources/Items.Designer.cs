@@ -763,6 +763,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Die Couch|Couch|Sofa.
+        /// </summary>
+        internal static string SOCIALROOM_COUCH {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_COUCH", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Der Bio-Suit|Bio-Suit| Bio Suit|Space-Overall|Space Overall|Space-Suit|Space Suit|Overall|Anzug|Suit.
         /// </summary>
         internal static string SPACE_SUIT {

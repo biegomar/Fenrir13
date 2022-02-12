@@ -1545,11 +1545,20 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to In diesem Raum lassen sich viele Dinge verwirklichen. Hier kann man gemühtlich chillen, ein wenig Zocken oder einfach nur mit den Kollegen quatschen..
+        ///   Looks up a localized string similar to Der Raum ist wie ein großes, gemütliches Wohnzimmer aufgebaut. Eine einladend aussehende Couch ist vor einem riesigen Bildschirm platziert. Zwei weitere Sessel machen die Sitzgruppe perfekt. Vor der Couch steht ein kleiner Tisch aus Glas. An der östlichen und der westlichen Wand befinden sich Bücherregale, die anachronistisch dem Fortschritt trotzen und reale Bücher beinhalten. Ein Billiardtisch und ein kleiner Tisch mit ein paar Stühle stehen hinter der Couch und nehmen dort den restlichen Platz des Raumes [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string SOCIALROOM {
             get {
                 return ResourceManager.GetString("SOCIALROOM", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Das breite und moderne Sofa ist in einem wirklich guten Zustand und bietet gleich mehreren Personen ausreichend Platz zum sitzen oder auch mal zum liegen. Klappbare Tischchen bieten eine bequeme Ablagefläche für Knabbereien oder Getränke..
+        /// </summary>
+        internal static string SOCIALROOM_COUCH {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_COUCH", resourceCulture);
             }
         }
         

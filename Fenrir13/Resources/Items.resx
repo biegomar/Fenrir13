@@ -288,4 +288,7 @@
     <data name="AIRLOCK_SOUTHERN_WALL" xml:space="preserve">
         <value>Die südliche Wand|Südliche Wand</value>
     </data>
+    <data name="SOCIALROOM_COUCH" xml:space="preserve">
+        <value>Die Couch|Couch|Sofa</value>
+    </data>
 </root>
