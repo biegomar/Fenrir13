@@ -333,4 +333,10 @@
     <data name="AIRLOCK_CABLE_WINCH" xml:space="preserve">
         <value>AIRLOCK_CABLE_WINCH</value>
     </data>
+    <data name="AIRLOCK_NORTHERN_WALL" xml:space="preserve">
+        <value>AIRLOCK_NORTHERN_WALL</value>
+    </data>
+    <data name="AIRLOCK_SOUTHERN_WALL" xml:space="preserve">
+        <value>AIRLOCK_SOUTHERN_WALL</value>
+    </data>
 </root>

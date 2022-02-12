@@ -282,4 +282,10 @@
     <data name="AIRLOCK_CABLE_WINCH" xml:space="preserve">
         <value>Die Seilwinde|Seilwinde|Seil|Winde</value>
     </data>
+    <data name="AIRLOCK_NORTHERN_WALL" xml:space="preserve">
+        <value>Die nördliche Wand|Nördliche Wand</value>
+    </data>
+    <data name="AIRLOCK_SOUTHERN_WALL" xml:space="preserve">
+        <value>Die südliche Wand|Südliche Wand</value>
+    </data>
 </root>

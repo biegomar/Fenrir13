@@ -131,6 +131,8 @@ internal static class EquipmentRoomPrerequisites
         };
         
         belt.Items.Add(GetEyelet(eventProvider));
+        
+        AddEyeletUseEvents(belt, eventProvider);
 
         return belt;
     }
@@ -172,6 +174,6 @@ internal static class EquipmentRoomPrerequisites
     
     private static void AddEyeletUseEvents(Item item, EventProvider eventProvider)
     {
-        item.Use += eventProvider.UseAirlockRopeWithBelt;
+        item.Use += eventProvider.UseAirlockRopeWithEyeletOrBelt;
     }
 }

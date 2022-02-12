@@ -96,13 +96,25 @@ internal partial class EventProvider
                 var isHelmetLinkedToOxygen = helmet.LinkedTo.Any(x => x.Key == Keys.OXYGEN_BOTTLE);
                 if (isHelmetLinkedToOxygen)
                 {
-                    PrintingSubsystem.Resource(Descriptions.PREPARED_FOR_SPACE_WALK);
-                    this.universe.Score += this.universe.ScoreBoard[nameof(this.PushRedButton)];
+                    var belt = this.universe.ActivePlayer.Clothes.First(x => x.Key == Keys.BELT);
+                    var eyelet = belt.GetUnhiddenItemByKey(Keys.EYELET);
+                
+                    var isEyeletLinkedToRope = eyelet.LinkedTo.Any(x => x.Key == Keys.AIRLOCK_ROPE);
+                    if (isEyeletLinkedToRope)
+                    {
+                        PrintingSubsystem.Resource(Descriptions.PREPARED_FOR_SPACE_WALK);
+                        this.universe.Score += this.universe.ScoreBoard[nameof(this.PushRedButton)];
+                    }
+                    else
+                    {
+                        throw new PushException(Descriptions.SAFETY_FIRST);
+                    }
                 }
                 else
                 {
                     throw new PushException(Descriptions.OXYGEN_NEEDED);
                 }
+
             }
             else
             {
@@ -429,15 +441,25 @@ internal partial class EventProvider
         }
     }
 
-    internal void UseAirlockRopeWithBelt(object sender, UseItemEventArgs eventArgs)
+    internal void UseAirlockRopeWithEyeletOrBelt(object sender, UseItemEventArgs eventArgs)
     {
         if (sender is Item itemOne && eventArgs.ItemToUse is Item itemTwo && itemOne.Key != itemTwo.Key)
         {
             var itemList = new List<Item> { itemOne, itemTwo };
             var rope = itemList.SingleOrDefault(i => i.Key == Keys.AIRLOCK_ROPE);
-            var eyelet = itemList.SingleOrDefault(i => i.Key == Keys.EYELET);
+            var endPoint = itemList.SingleOrDefault(i => i.Key == Keys.EYELET);
 
-            if (rope != default && eyelet != default)
+            if (rope != default && endPoint == default)
+            {
+                endPoint = itemList.SingleOrDefault(i => i.Key == Keys.BELT);
+                if (endPoint != default)
+                {
+                    endPoint.Use -= UseAirlockRopeWithEyeletOrBelt;
+                    endPoint = endPoint.Items.SingleOrDefault(i => i.Key == Keys.EYELET);
+                }
+            }
+
+            if (rope != default && endPoint != default)
             {
                 if (this.universe.ActivePlayer.GetUnhiddenItemByKey(Keys.BELT) == default)
                 {
@@ -445,14 +467,14 @@ internal partial class EventProvider
                     this.universe.PickObject(belt);
                 }
                 
-                rope.LinkedTo.Add(eyelet);
-                eyelet.LinkedTo.Add(rope);
+                rope.LinkedTo.Add(endPoint);
+                endPoint.LinkedTo.Add(rope);
 
-                PrintingSubsystem.Resource(Descriptions.LINK_OXYGEN_BOTTLE_TO_HELMET);
-                rope.Use -= UseAirlockRopeWithBelt;
-                eyelet.Use -= UseAirlockRopeWithBelt;
+                PrintingSubsystem.Resource(Descriptions.LINK_ROPE_TO_EYELET);
+                rope.Use -= UseAirlockRopeWithEyeletOrBelt;
+                endPoint.Use -= UseAirlockRopeWithEyeletOrBelt;
 
-                this.universe.Score += this.universe.ScoreBoard[nameof(UseAirlockRopeWithBelt)];
+                this.universe.Score += this.universe.ScoreBoard[nameof(UseAirlockRopeWithEyeletOrBelt)];
             }
             else
             {
@@ -460,6 +482,7 @@ internal partial class EventProvider
             }
         }
     }
+    
     internal void BreakEquipmentBoxLock(object sender, BreakItemEventArg eventArg)
     {
         if (eventArg.ItemToUse == default)

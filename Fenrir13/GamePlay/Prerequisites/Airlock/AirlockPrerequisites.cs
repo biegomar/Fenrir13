@@ -104,9 +104,12 @@ internal class AirlockPrerequisites
     }
     
     
-    private static void AddSurroundings(Location airlock)
+    private static void AddSurroundings(Location location)
     {
-        //airlock.Surroundings.Add(Keys.AIRLOCK_KEYPAD, Descriptions.AIRLOCK_KEYPAD);
+        location.Surroundings.Add(Keys.CEILING, Descriptions.CEILING);
+        location.Surroundings.Add(Keys.CHAMBER_WALL, Descriptions.CHAMBER_WALL);
+        location.Surroundings.Add(Keys.AIRLOCK_NORTHERN_WALL, Descriptions.AIRLOCK_NORTHERN_WALL);
+        location.Surroundings.Add(Keys.AIRLOCK_SOUTHERN_WALL, Descriptions.AIRLOCK_SOUTHERN_WALL);
     }
     
     private static void AddChangeRoomEvents(Location airlock, EventProvider eventProvider)
@@ -117,8 +120,8 @@ internal class AirlockPrerequisites
     
     private static void AddUseEvents(Item item, EventProvider eventProvider)
     {
-        item.Use += eventProvider.UseAirlockRopeWithBelt;
-        eventProvider.ScoreBoard.Add(nameof(eventProvider.UseAirlockRopeWithBelt), 1);
+        item.Use += eventProvider.UseAirlockRopeWithEyeletOrBelt;
+        eventProvider.ScoreBoard.Add(nameof(eventProvider.UseAirlockRopeWithEyeletOrBelt), 1);
     }
     
     private static void AddPushEvents(Item item, EventProvider eventProvider)

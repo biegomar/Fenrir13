@@ -61,8 +61,8 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Schleuse dient als Weg nach Draußen und sobald Du komplett eingetreten bist, schließt sich die Tür hinter Dir und ein weiteres Schott wird davor heruntergelassen. Du fühlst plötzlich, dass Deine Glieder sich leichter anfühlen, Deine Bewegungen sind mühelos und Du spürst kaum noch Dein eigenes Gewicht. Klar, denn hier in der Schleuse wird bereits auf die künstliche Schwerkraft verzichtet. 
-        ///Am südlichen Ende der Schleuse trennt ein weiteres, massives Schott den Raum von einem breiten Steg, der bereits vo [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to Die Schleuse dient als Weg nach Draußen und sobald Du komplett eingetreten bist, schließt sich die Tür hinter Dir und ein Ansaugegeräusch gibt Dir zu verstehen, dass sie gegen ein mögliches Vakuum gerüstet ist . Du fühlst plötzlich, dass Deine Glieder sich leichter anfühlen, Deine Bewegungen sind mühelos und Du spürst kaum noch Dein eigenes Gewicht. Klar, denn hier in der Schleuse wird bereits auf die künstliche Schwerkraft verzichtet. 
+        ///Am südlichen Ende der Schleuse trennt ein weiteres, massives Schott de [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string AIRLOCK {
             get {
@@ -98,7 +98,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Das Schott scheint über ein einfaches Tastenfeld gesteuert zu werden, dass sich direkt daneben an der Wand befindet..
+        ///   Looks up a localized string similar to Das Schott scheint über ein einfaches Tastenfeld gesteuert zu werden, dass sich direkt daneben an der südlichen Wand befindet..
         /// </summary>
         internal static string AIRLOCK_KEYPAD_CONTAINMENT {
             get {
@@ -121,6 +121,15 @@ namespace Fenrir13.Resources {
         internal static string AIRLOCK_KEYPAD_RED_BUTTON {
             get {
                 return ResourceManager.GetString("AIRLOCK_KEYPAD_RED_BUTTON", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Im Prinzip sind hier auf dem Schiff ja alle Wände gleichermaßen trist. Das gilt natürlich auch für diese matte Stahlwand. Besonders ist hier nur die Tür, durch die Du gerade gekommen bist, sowie die Seilwinde, auf der das Seil aus der Kohlefaser aufgewickelt ist..
+        /// </summary>
+        internal static string AIRLOCK_NORTHERN_WALL {
+            get {
+                return ResourceManager.GetString("AIRLOCK_NORTHERN_WALL", resourceCulture);
             }
         }
         
@@ -148,6 +157,15 @@ namespace Fenrir13.Resources {
         internal static string AIRLOCK_ROPE_LINKEDTO {
             get {
                 return ResourceManager.GetString("AIRLOCK_ROPE_LINKEDTO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Die Wand wird von einem massiven Schott dominiert, dass den Weg ins All bei Bedarf freigibt. Rechts neben dem Schott ist ein einfaches Tastefeld mit seinen zwei Tasten. Sieht nicht kompliziert aus..
+        /// </summary>
+        internal static string AIRLOCK_SOUTHERN_WALL {
+            get {
+                return ResourceManager.GetString("AIRLOCK_SOUTHERN_WALL", resourceCulture);
             }
         }
         
@@ -1274,6 +1292,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Du ziehst das Seil ein Stück von der Winde und drückst den Haken gegen die Öse an dem Gurt. Ein beruhigendes &apos;klack&apos; gibt Dir die Sicherheit, dass Du nun sorglos ins All spazieren kannst..
+        /// </summary>
+        internal static string LINK_ROPE_TO_EYELET {
+            get {
+                return ResourceManager.GetString("LINK_ROPE_TO_EYELET", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Du befindest Dich nun auf dem Maschinendeck. Von diesem unaufregenden kleinen Vorraum erhälst Du Zugang zu der technischen Infrastruktur des Schiffs..
         /// </summary>
         internal static string MACHINE_CORRIDOR_MID {
@@ -1505,6 +1532,15 @@ namespace Fenrir13.Resources {
         internal static string RUBBER_ROLLS {
             get {
                 return ResourceManager.GetString("RUBBER_ROLLS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Du willst ohne eine Sicherung ganz bestimmt nicht in die unendlichen Weiten des Alls eindringen, oder?.
+        /// </summary>
+        internal static string SAFETY_FIRST {
+            get {
+                return ResourceManager.GetString("SAFETY_FIRST", resourceCulture);
             }
         }
         

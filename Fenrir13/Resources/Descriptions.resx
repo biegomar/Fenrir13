@@ -328,7 +328,7 @@ Vielleicht kannst Du unten bei den Maschinenräumen mehr unternehmen als von hie
         <value>Für die maximal sechs Personen Besatzung ist die Küche üppig ausgestattet und sehr geräumig. Es finden sich ein Food-Printer für die Zubereitung der individuellen Gerichte, ein Reststoffverwerter, ein Kühlschrank für die Nahrungsbausteine des Druckers, sowie einige Schränke. Wenn man essen möchte nimmt man an einem der sechs Stühle vor dem geräumigen Tisch in der Mitte des Raumes Platz. Wie überall im Schiff ist der Boden aus magnetisierbarem Metall, um auch hier das Möbiliar gegen Verrutschen zu sichern.</value>
     </data>
     <data name="AIRLOCK" xml:space="preserve">
-        <value>Die Schleuse dient als Weg nach Draußen und sobald Du komplett eingetreten bist, schließt sich die Tür hinter Dir und ein weiteres Schott wird davor heruntergelassen. Du fühlst plötzlich, dass Deine Glieder sich leichter anfühlen, Deine Bewegungen sind mühelos und Du spürst kaum noch Dein eigenes Gewicht. Klar, denn hier in der Schleuse wird bereits auf die künstliche Schwerkraft verzichtet. 
+        <value>Die Schleuse dient als Weg nach Draußen und sobald Du komplett eingetreten bist, schließt sich die Tür hinter Dir und ein Ansaugegeräusch gibt Dir zu verstehen, dass sie gegen ein mögliches Vakuum gerüstet ist . Du fühlst plötzlich, dass Deine Glieder sich leichter anfühlen, Deine Bewegungen sind mühelos und Du spürst kaum noch Dein eigenes Gewicht. Klar, denn hier in der Schleuse wird bereits auf die künstliche Schwerkraft verzichtet. 
 Am südlichen Ende der Schleuse trennt ein weiteres, massives Schott den Raum von einem breiten Steg, der bereits vollständig ins All ragt. </value>
     </data>
     <data name="ENGINE_ROOM" xml:space="preserve">
@@ -583,7 +583,7 @@ Bei genauerer Betrachtung erkennst Du, dass dort eine viereckige Aussparung ist.
 </value>
     </data>
     <data name="AIRLOCK_KEYPAD_CONTAINMENT" xml:space="preserve">
-        <value>Das Schott scheint über ein einfaches Tastenfeld gesteuert zu werden, dass sich direkt daneben an der Wand befindet.</value>
+        <value>Das Schott scheint über ein einfaches Tastenfeld gesteuert zu werden, dass sich direkt daneben an der südlichen Wand befindet.</value>
     </data>
     <data name="AIRLOCK_ROPE" xml:space="preserve">
         <value>Das Seil ist ultradünn und in das Graphen sind fluoreszierende Partikel eingebracht, damit man das Seil auch in der Dunkelheit des Alls gut erkennen kann. Da das Seil sehr dünn ist, die Winde aber sehr voll wirkt, gehst Du davon aus, dass es lang genug ist, um jeden Punkt der Schiffshaut zu erreichen. Das vordere Ende des Seils mündet in eine Hakenkonstruktion, die ebenfalls aus Graphen ist und nahtlos mit dem Seil verbunden ist. Wahrscheinlich handelt es sich sowieso um ein einziges Werkstück.</value>
@@ -611,5 +611,17 @@ Bei genauerer Betrachtung erkennst Du, dass dort eine viereckige Aussparung ist.
     </data>
     <data name="PREPARED_FOR_SPACE_WALK" xml:space="preserve">
         <value>Als Du die rote Taste betätigst, nimmst Du das laute Zischen wahr, dass entsteht, wenn der Sauerstoff aus dem Raum gesaugt wird. Die Beleuchtung wechselt auf ein warnendes Rot und das Schott beginnt sich behäbig zu öffnen. Nach einer gefühlten Ewigkeit erreicht es seine entgültige Position und Du blickst hinaus ins All. Nun trennt Dich nichts mehr von der Unendlichkeit!</value>
+    </data>
+    <data name="LINK_ROPE_TO_EYELET" xml:space="preserve">
+        <value>Du ziehst das Seil ein Stück von der Winde und drückst den Haken gegen die Öse an dem Gurt. Ein beruhigendes 'klack' gibt Dir die Sicherheit, dass Du nun sorglos ins All spazieren kannst.</value>
+    </data>
+    <data name="AIRLOCK_NORTHERN_WALL" xml:space="preserve">
+        <value>Im Prinzip sind hier auf dem Schiff ja alle Wände gleichermaßen trist. Das gilt natürlich auch für diese matte Stahlwand. Besonders ist hier nur die Tür, durch die Du gerade gekommen bist, sowie die Seilwinde, auf der das Seil aus der Kohlefaser aufgewickelt ist.</value>
+    </data>
+    <data name="AIRLOCK_SOUTHERN_WALL" xml:space="preserve">
+        <value>Die Wand wird von einem massiven Schott dominiert, dass den Weg ins All bei Bedarf freigibt. Rechts neben dem Schott ist ein einfaches Tastefeld mit seinen zwei Tasten. Sieht nicht kompliziert aus.</value>
+    </data>
+    <data name="SAFETY_FIRST" xml:space="preserve">
+        <value>Du willst ohne eine Sicherung ganz bestimmt nicht in die unendlichen Weiten des Alls eindringen, oder?</value>
     </data>
 </root>

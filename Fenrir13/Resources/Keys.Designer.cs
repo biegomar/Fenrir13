@@ -106,11 +106,29 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to AIRLOCK_NORTHERN_WALL.
+        /// </summary>
+        internal static string AIRLOCK_NORTHERN_WALL {
+            get {
+                return ResourceManager.GetString("AIRLOCK_NORTHERN_WALL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to AIRLOCK_ROPE.
         /// </summary>
         internal static string AIRLOCK_ROPE {
             get {
                 return ResourceManager.GetString("AIRLOCK_ROPE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AIRLOCK_SOUTHERN_WALL.
+        /// </summary>
+        internal static string AIRLOCK_SOUTHERN_WALL {
+            get {
+                return ResourceManager.GetString("AIRLOCK_SOUTHERN_WALL", resourceCulture);
             }
         }
         
