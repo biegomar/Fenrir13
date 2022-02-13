@@ -1545,11 +1545,38 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Raum ist wie ein großes, gemütliches Wohnzimmer aufgebaut. Eine einladend aussehende Couch ist vor einem riesigen Bildschirm platziert. Zwei weitere Sessel machen die Sitzgruppe perfekt. Vor der Couch steht ein kleiner Tisch aus Glas. An der östlichen und der westlichen Wand befinden sich Bücherregale, die anachronistisch dem Fortschritt trotzen und reale Bücher beinhalten. Ein Billiardtisch und ein kleiner Tisch mit ein paar Stühle stehen hinter der Couch und nehmen dort den restlichen Platz des Raumes [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to Der Raum ist wie ein großes, gemütliches Wohnzimmer aufgebaut. Eine einladend aussehende Couch ist vor einem riesigen Bildschirm platziert. Zwei weitere Sessel machen die Sitzgruppe perfekt. Vor der Couch steht ein kleiner Tisch aus Glas. An der östlichen und der westlichen Wand befinden sich Bücherregale, die anachronistisch dem Fortschritt trotzen und reale Bücher beinhalten. Ein Billiardtisch steht hinter der Couch und nimmt dort eine große Fläche des Raumes ein. An der nördlichen Wand hängt rechts neben [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string SOCIALROOM {
             get {
                 return ResourceManager.GetString("SOCIALROOM", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Die Konstruktion besteht aus zwei erkennbaren Komponenten. Das ist einerseits die Antenne selbst und andererseits Art Receivereinheit, an der sie angeschraubt ist..
+        /// </summary>
+        internal static string SOCIALROOM_ANTENNA_CONSTRUCTION {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_ANTENNA_CONSTRUCTION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Der Bildschirm scheint seine Inhalte über ein klassiches Funknetz von einem Mediaserver zu beziehen, zumindest deutet eine Antennenkonstruktion an der Decke darauf hin..
+        /// </summary>
+        internal static string SOCIALROOM_ANTENNA_CONSTRUCTION_CONTAINMENT {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_ANTENNA_CONSTRUCTION_CONTAINMENT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to An der Zimmerdecke befindet sich eine Antennenkonstruktion, die sicherlich dazu dient, die Medien auf den Bildschirm zu streamen..
+        /// </summary>
+        internal static string SOCIALROOM_CEILING {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_CEILING", resourceCulture);
             }
         }
         
@@ -1559,6 +1586,33 @@ namespace Fenrir13.Resources {
         internal static string SOCIALROOM_COUCH {
             get {
                 return ResourceManager.GetString("SOCIALROOM_COUCH", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Die Wand wird komplett durch ein Bücherregal eingenommen. Das dunkle Holz und die passive Beleuchtung geben ihm den Charm einer alten Bibliothek..
+        /// </summary>
+        internal static string SOCIALROOM_EAST_WEST_WALL {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_EAST_WEST_WALL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Der Bildschirm ist eigentlich eine dünne Folie, die mit geringem Abstand vor die komplette südliche Wand des Raums gespannt wurde. Das Ding ist super brilliant und absolut scharf. Damit macht es richtig Spaß, Serien von SpaceFlix zu schauen..
+        /// </summary>
+        internal static string SOCIALROOM_MONITOR {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_MONITOR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Die beiden Sessel sind dasselbe Fabrikat wie die Couch, nur als Einsitzer konzipiert. Gemütlich und bequem, aber ansonsten vollkommen uninteressant..
+        /// </summary>
+        internal static string SOCIALROOM_SEAT {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_SEAT", resourceCulture);
             }
         }
         

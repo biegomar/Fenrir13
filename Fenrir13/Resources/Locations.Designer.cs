@@ -214,7 +214,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Sozialraum|Sozialraum|Aufenthaltsraum.
+        ///   Looks up a localized string similar to Der Sozialraum|Sozialraum|Aufenthaltsraum|Wohnzimmer.
         /// </summary>
         internal static string SOCIALROOM {
             get {

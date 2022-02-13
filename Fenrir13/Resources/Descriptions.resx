@@ -322,7 +322,7 @@ Vielleicht kannst Du unten bei den Maschinenräumen mehr unternehmen als von hie
         <value>Dies ist ein gut ausgestatteter Fitnessraum für die Zeit der Reise, in der man aktiv und wach ist. Auch in modernen Zeiten legt man bei Viking Wert auf Handarbeit und Gewichte stemmen. Daher finden sich hier auch klassische Fitnessmaschinen mit variablen Gewichten. Du siehst die Cardiostation, die mehrere Übungen zulässt, genauso wie eine Powerstation und einen - na sagen wir mal - Gymnastikbereich, mit vielen Seilen, Sandsäcken und tragbaren Gewichten. Alle Geräte sind an ihren Plätzen verankert.</value>
     </data>
     <data name="SOCIALROOM" xml:space="preserve">
-        <value>Der Raum ist wie ein großes, gemütliches Wohnzimmer aufgebaut. Eine einladend aussehende Couch ist vor einem riesigen Bildschirm platziert. Zwei weitere Sessel machen die Sitzgruppe perfekt. Vor der Couch steht ein kleiner Tisch aus Glas. An der östlichen und der westlichen Wand befinden sich Bücherregale, die anachronistisch dem Fortschritt trotzen und reale Bücher beinhalten. Ein Billiardtisch und ein kleiner Tisch mit ein paar Stühle stehen hinter der Couch und nehmen dort den restlichen Platz des Raumes ein. An der nördlichen Wand hängt rechts neben der Eingangstür eine Dartscheibe und links davon stecken die Cues in einer passenden Wandhalterung. Der Bildschirm scheint seine Inhalte über ein klassiches Funknetz von einem Mediaserver zu beziehen, zumindest deutet eine Antennenkonstruktion an der Decke darauf hin.</value>
+        <value>Der Raum ist wie ein großes, gemütliches Wohnzimmer aufgebaut. Eine einladend aussehende Couch ist vor einem riesigen Bildschirm platziert. Zwei weitere Sessel machen die Sitzgruppe perfekt. Vor der Couch steht ein kleiner Tisch aus Glas. An der östlichen und der westlichen Wand befinden sich Bücherregale, die anachronistisch dem Fortschritt trotzen und reale Bücher beinhalten. Ein Billiardtisch steht hinter der Couch und nimmt dort eine große Fläche des Raumes ein. An der nördlichen Wand hängt rechts neben der Eingangstür eine Dartscheibe und links davon stecken die Cues in einer passenden Wandhalterung.</value>
     </data>
     <data name="KITCHEN" xml:space="preserve">
         <value>Für die maximal sechs Personen Besatzung ist die Küche üppig ausgestattet und sehr geräumig. Es finden sich ein Food-Printer für die Zubereitung der individuellen Gerichte, ein Reststoffverwerter, ein Kühlschrank für die Nahrungsbausteine des Druckers, sowie einige Schränke. Wenn man essen möchte nimmt man an einem der sechs Stühle vor dem geräumigen Tisch in der Mitte des Raumes Platz. Wie überall im Schiff ist der Boden aus magnetisierbarem Metall, um auch hier das Möbiliar gegen Verrutschen zu sichern.</value>
@@ -626,5 +626,23 @@ Bei genauerer Betrachtung erkennst Du, dass dort eine viereckige Aussparung ist.
     </data>
     <data name="SOCIALROOM_COUCH" xml:space="preserve">
         <value>Das breite und moderne Sofa ist in einem wirklich guten Zustand und bietet gleich mehreren Personen ausreichend Platz zum sitzen oder auch mal zum liegen. Klappbare Tischchen bieten eine bequeme Ablagefläche für Knabbereien oder Getränke.</value>
+    </data>
+    <data name="SOCIALROOM_MONITOR" xml:space="preserve">
+        <value>Der Bildschirm ist eigentlich eine dünne Folie, die mit geringem Abstand vor die komplette südliche Wand des Raums gespannt wurde. Das Ding ist super brilliant und absolut scharf. Damit macht es richtig Spaß, Serien von SpaceFlix zu schauen.</value>
+    </data>
+    <data name="SOCIALROOM_SEAT" xml:space="preserve">
+        <value>Die beiden Sessel sind dasselbe Fabrikat wie die Couch, nur als Einsitzer konzipiert. Gemütlich und bequem, aber ansonsten vollkommen uninteressant.</value>
+    </data>
+    <data name="SOCIALROOM_EAST_WEST_WALL" xml:space="preserve">
+        <value>Die Wand wird komplett durch ein Bücherregal eingenommen. Das dunkle Holz und die passive Beleuchtung geben ihm den Charm einer alten Bibliothek.</value>
+    </data>
+    <data name="SOCIALROOM_CEILING" xml:space="preserve">
+        <value>An der Zimmerdecke befindet sich eine Antennenkonstruktion, die sicherlich dazu dient, die Medien auf den Bildschirm zu streamen.</value>
+    </data>
+    <data name="SOCIALROOM_ANTENNA_CONSTRUCTION" xml:space="preserve">
+        <value>Die Konstruktion besteht aus zwei erkennbaren Komponenten. Das ist einerseits die Antenne selbst und andererseits Art Receivereinheit, an der sie angeschraubt ist.</value>
+    </data>
+    <data name="SOCIALROOM_ANTENNA_CONSTRUCTION_CONTAINMENT" xml:space="preserve">
+        <value>Der Bildschirm scheint seine Inhalte über ein klassiches Funknetz von einem Mediaserver zu beziehen, zumindest deutet eine Antennenkonstruktion an der Decke darauf hin.</value>
     </data>
 </root>

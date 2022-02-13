@@ -763,11 +763,65 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Die Antennenkonstruktion|Antennenkonstruktion|Konstruktion.
+        /// </summary>
+        internal static string SOCIALROOM_ANTENNA_CONSTRUCTION {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_ANTENNA_CONSTRUCTION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Die Decke|Decke|Zimmer Decke.
+        /// </summary>
+        internal static string SOCIALROOM_CEILING {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_CEILING", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Die Couch|Couch|Sofa.
         /// </summary>
         internal static string SOCIALROOM_COUCH {
             get {
                 return ResourceManager.GetString("SOCIALROOM_COUCH", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Die östliche Wand|Östliche Wand.
+        /// </summary>
+        internal static string SOCIALROOM_EAST_WALL {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_EAST_WALL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Der Bildschirm|Bildschirm|Fernseher.
+        /// </summary>
+        internal static string SOCIALROOM_MONITOR {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_MONITOR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Der Sessel|Sessel|Sitz.
+        /// </summary>
+        internal static string SOCIALROOM_SEAT {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_SEAT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Die westliche Wand|Westliche Wand.
+        /// </summary>
+        internal static string SOCIALROOM_WEST_WALL {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_WEST_WALL", resourceCulture);
             }
         }
         

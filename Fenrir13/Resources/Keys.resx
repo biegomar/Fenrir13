@@ -342,4 +342,22 @@
     <data name="SOCIALROOM_COUCH" xml:space="preserve">
         <value>SOCIALROOM_COUCH</value>
     </data>
+    <data name="SOCIALROOM_MONITOR" xml:space="preserve">
+        <value>SOCIALROOM_MONITOR</value>
+    </data>
+    <data name="SOCIALROOM_SEAT" xml:space="preserve">
+        <value>SOCIALROOM_SEAT</value>
+    </data>
+    <data name="SOCIALROOM_EAST_WALL" xml:space="preserve">
+        <value>SOCIALROOM_EAST_WALL</value>
+    </data>
+    <data name="SOCIALROOM_WEST_WALL" xml:space="preserve">
+        <value>SOCIALROOM_WEST_WALL</value>
+    </data>
+    <data name="SOCIALROOM_CEILING" xml:space="preserve">
+        <value>SOCIALROOM_CEILING</value>
+    </data>
+    <data name="SOCIALROOM_ANTENNA_CONSTRUCTION" xml:space="preserve">
+        <value>SOCIALROOM_ANTENNA_CONSTRUCTION</value>
+    </data>
 </root>

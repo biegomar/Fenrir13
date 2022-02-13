@@ -16,6 +16,7 @@ public class SocialRoomPrerequisites
         };
 
         socialRoom.Items.Add(GetCouch(eventProvider));
+        socialRoom.Items.Add(GetAntennaConstruction(eventProvider));
         
         AddSurroundings(socialRoom);
 
@@ -24,8 +25,11 @@ public class SocialRoomPrerequisites
 
     private static void AddSurroundings(Location socialRoom)
     {
-        socialRoom.Surroundings.Add(Keys.CEILING, Descriptions.CEILING);
-        socialRoom.Surroundings.Add(Keys.CHAMBER_WALL, Descriptions.CHAMBER_WALL);
+        socialRoom.Surroundings.Add(Keys.SOCIALROOM_CEILING, Descriptions.SOCIALROOM_CEILING);
+        socialRoom.Surroundings.Add(Keys.SOCIALROOM_MONITOR, Descriptions.SOCIALROOM_MONITOR);
+        socialRoom.Surroundings.Add(Keys.SOCIALROOM_SEAT, Descriptions.SOCIALROOM_SEAT);
+        socialRoom.Surroundings.Add(Keys.SOCIALROOM_EAST_WALL, Descriptions.SOCIALROOM_EAST_WEST_WALL);
+        socialRoom.Surroundings.Add(Keys.SOCIALROOM_WEST_WALL, Descriptions.SOCIALROOM_EAST_WEST_WALL);
     }
 
     private static Item GetCouch(EventProvider eventProvider)
@@ -39,5 +43,19 @@ public class SocialRoomPrerequisites
         };
 
         return couch;
+    }
+    
+    private static Item GetAntennaConstruction(EventProvider eventProvider)
+    {
+        var antennaConstruction = new Item()
+        {
+            Key = Keys.SOCIALROOM_ANTENNA_CONSTRUCTION,
+            Name = Items.SOCIALROOM_ANTENNA_CONSTRUCTION,
+            Description = Descriptions.SOCIALROOM_ANTENNA_CONSTRUCTION,
+            ContainmentDescription = Descriptions.SOCIALROOM_ANTENNA_CONSTRUCTION_CONTAINMENT,
+            IsPickAble = false,
+        };
+
+        return antennaConstruction;
     }
 }

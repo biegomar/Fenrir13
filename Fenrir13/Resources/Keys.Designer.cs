@@ -916,11 +916,65 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to SOCIALROOM_ANTENNA_CONSTRUCTION.
+        /// </summary>
+        internal static string SOCIALROOM_ANTENNA_CONSTRUCTION {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_ANTENNA_CONSTRUCTION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SOCIALROOM_CEILING.
+        /// </summary>
+        internal static string SOCIALROOM_CEILING {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_CEILING", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to SOCIALROOM_COUCH.
         /// </summary>
         internal static string SOCIALROOM_COUCH {
             get {
                 return ResourceManager.GetString("SOCIALROOM_COUCH", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SOCIALROOM_EAST_WALL.
+        /// </summary>
+        internal static string SOCIALROOM_EAST_WALL {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_EAST_WALL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SOCIALROOM_MONITOR.
+        /// </summary>
+        internal static string SOCIALROOM_MONITOR {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_MONITOR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SOCIALROOM_SEAT.
+        /// </summary>
+        internal static string SOCIALROOM_SEAT {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_SEAT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SOCIALROOM_WEST_WALL.
+        /// </summary>
+        internal static string SOCIALROOM_WEST_WALL {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_WEST_WALL", resourceCulture);
             }
         }
         

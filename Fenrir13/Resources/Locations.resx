@@ -55,7 +55,7 @@
         <value>Der Fitnessraum|Fitnessraum|Trainingsraum|Gym</value>
     </data>
     <data name="SOCIALROOM" xml:space="preserve">
-        <value>Der Sozialraum|Sozialraum|Aufenthaltsraum</value>
+        <value>Der Sozialraum|Sozialraum|Aufenthaltsraum|Wohnzimmer</value>
     </data>
     <data name="KITCHEN" xml:space="preserve">
         <value>Die Küche|Küche</value>
