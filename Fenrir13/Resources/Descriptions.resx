@@ -640,9 +640,21 @@ Bei genauerer Betrachtung erkennst Du, dass dort eine viereckige Aussparung ist.
         <value>An der Zimmerdecke befindet sich eine Antennenkonstruktion, die sicherlich dazu dient, die Medien auf den Bildschirm zu streamen.</value>
     </data>
     <data name="SOCIALROOM_ANTENNA_CONSTRUCTION" xml:space="preserve">
-        <value>Die Konstruktion besteht aus zwei erkennbaren Komponenten. Das ist einerseits die Antenne selbst und andererseits Art Receivereinheit, an der sie angeschraubt ist.</value>
+        <value>Die Konstruktion besteht aus zwei erkennbaren Komponenten. Das ist einerseits die Antenne selbst und andererseits eine Art Receivereinheit, die die Signale verarbeitet.</value>
     </data>
     <data name="SOCIALROOM_ANTENNA_CONSTRUCTION_CONTAINMENT" xml:space="preserve">
         <value>Der Bildschirm scheint seine Inhalte über ein klassiches Funknetz von einem Mediaserver zu beziehen, zumindest deutet eine Antennenkonstruktion an der Decke darauf hin.</value>
+    </data>
+    <data name="SOCIALROOM_ANTENNA" xml:space="preserve">
+        <value>Die Antenne besteht eigentlich aus zwei Antennen, die über einen flexiblen Arm verbunden sind.</value>
+    </data>
+    <data name="SOCIALROOM_ANTENNA_LINKEDTODESCRIPTION" xml:space="preserve">
+        <value>Du kannst deutlich sehen, dass die Antenne mit dem Receiver verschraubt ist.</value>
+    </data>
+    <data name="CANT_REACH_ANTENNA" xml:space="preserve">
+        <value>Du Antenne ist zuweit oben, um sie direkt zu erreichen. Vielleicht steigst Du irgendwo drauf, um das zu tun?</value>
+    </data>
+    <data name="CANT_TAKE_ANTENNA" xml:space="preserve">
+        <value>Tatsächlich ist Deine Position auf der Couch gut, um an die Antenne heranzukommen, aber leider ist sie zu fest verschraubt. Vielleicht versuchst Du, dafür irgendein Werkzeug zu benutzen?</value>
     </data>
 </root>

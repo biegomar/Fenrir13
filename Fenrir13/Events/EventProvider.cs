@@ -338,6 +338,24 @@ internal partial class EventProvider
             }
         }
     }
+
+    internal void BeforeTakeAntenna(object sender, ContainerObjectEventArgs eventArgs)
+    {
+        if (sender is Item antenna && antenna.Key == Keys.SOCIALROOM_ANTENNA)
+        {
+            if (!this.universe.ActivePlayer.HasClimbed || this.universe.ActivePlayer.ClimbedObject == default)
+            {
+                throw new TakeException(Descriptions.CANT_REACH_ANTENNA);
+            }
+            
+            if (this.universe.ActivePlayer.ClimbedObject.Key == Keys.SOCIALROOM_COUCH)
+            {
+                throw new TakeException(Descriptions.CANT_TAKE_ANTENNA);
+            }
+            
+            throw new TakeException(BaseDescriptions.NOTHING_HAPPENS);
+        }
+    }
     
     internal void AfterStandUp(object sender, ContainerObjectEventArgs eventArgs)
     {

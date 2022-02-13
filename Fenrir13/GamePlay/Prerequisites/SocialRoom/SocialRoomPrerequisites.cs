@@ -39,6 +39,7 @@ public class SocialRoomPrerequisites
             Key = Keys.SOCIALROOM_COUCH,
             Name = Items.SOCIALROOM_COUCH,
             Description = Descriptions.SOCIALROOM_COUCH,
+            IsClimbAble = true,
             IsPickAble = false,
         };
 
@@ -55,7 +56,30 @@ public class SocialRoomPrerequisites
             ContainmentDescription = Descriptions.SOCIALROOM_ANTENNA_CONSTRUCTION_CONTAINMENT,
             IsPickAble = false,
         };
+        
+        antennaConstruction.LinkedTo.Add(GetAntenna(eventProvider));
 
         return antennaConstruction;
+    }
+    
+    private static Item GetAntenna(EventProvider eventProvider)
+    {
+        var antenna = new Item()
+        {
+            Key = Keys.SOCIALROOM_ANTENNA,
+            Name = Items.SOCIALROOM_ANTENNA,
+            Description = Descriptions.SOCIALROOM_ANTENNA,
+            LinkedToDescription = Descriptions.SOCIALROOM_ANTENNA_LINKEDTODESCRIPTION,
+            IsHidden = true
+        };
+        
+        AddBeforeTakeEvents(antenna, eventProvider);
+
+        return antenna;
+    }
+    
+    private static void AddBeforeTakeEvents(Item item, EventProvider eventProvider)
+    {
+        item.BeforeTake += eventProvider.BeforeTakeAntenna;
     }
 }

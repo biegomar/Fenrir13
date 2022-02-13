@@ -360,6 +360,24 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Du Antenne ist zuweit oben, um sie direkt zu erreichen. Vielleicht steigst Du irgendwo drauf, um das zu tun?.
+        /// </summary>
+        internal static string CANT_REACH_ANTENNA {
+            get {
+                return ResourceManager.GetString("CANT_REACH_ANTENNA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tatsächlich ist Deine Position auf der Couch gut, um an die Antenne heranzukommen, aber leider ist sie zu fest verschraubt. Vielleicht versuchst Du, dafür irgendein Werkzeug zu benutzen?.
+        /// </summary>
+        internal static string CANT_TAKE_ANTENNA {
+            get {
+                return ResourceManager.GetString("CANT_TAKE_ANTENNA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Durch geschickte Anordnung von einzelnen Elementen und der Fähigkeit durch leichte Umbauten die jeweilige Funktion zu ändern, bietet dieses Gerät ein Fahrrad, ein Laufband, einen Stepper, sowie einen Crosstrainer. .
         /// </summary>
         internal static string CARDIO_STATION {
@@ -1554,7 +1572,16 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Konstruktion besteht aus zwei erkennbaren Komponenten. Das ist einerseits die Antenne selbst und andererseits Art Receivereinheit, an der sie angeschraubt ist..
+        ///   Looks up a localized string similar to Die Antenne besteht eigentlich aus zwei Antennen, die über einen flexiblen Arm verbunden sind..
+        /// </summary>
+        internal static string SOCIALROOM_ANTENNA {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_ANTENNA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Die Konstruktion besteht aus zwei erkennbaren Komponenten. Das ist einerseits die Antenne selbst und andererseits eine Art Receivereinheit, die die Signale verarbeitet..
         /// </summary>
         internal static string SOCIALROOM_ANTENNA_CONSTRUCTION {
             get {
@@ -1568,6 +1595,15 @@ namespace Fenrir13.Resources {
         internal static string SOCIALROOM_ANTENNA_CONSTRUCTION_CONTAINMENT {
             get {
                 return ResourceManager.GetString("SOCIALROOM_ANTENNA_CONSTRUCTION_CONTAINMENT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Du kannst deutlich sehen, dass die Antenne mit dem Receiver verschraubt ist..
+        /// </summary>
+        internal static string SOCIALROOM_ANTENNA_LINKEDTODESCRIPTION {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_ANTENNA_LINKEDTODESCRIPTION", resourceCulture);
             }
         }
         

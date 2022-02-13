@@ -763,7 +763,16 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Antennenkonstruktion|Antennenkonstruktion|Konstruktion.
+        ///   Looks up a localized string similar to Die Antenne|Antenne.
+        /// </summary>
+        internal static string SOCIALROOM_ANTENNA {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_ANTENNA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Die Antennenkonstruktion|Antennenkonstruktion|Konstruktion|Receiver.
         /// </summary>
         internal static string SOCIALROOM_ANTENNA_CONSTRUCTION {
             get {

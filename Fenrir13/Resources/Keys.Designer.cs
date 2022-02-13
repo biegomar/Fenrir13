@@ -916,6 +916,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to SOCIALROOM_ANTENNA.
+        /// </summary>
+        internal static string SOCIALROOM_ANTENNA {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_ANTENNA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to SOCIALROOM_ANTENNA_CONSTRUCTION.
         /// </summary>
         internal static string SOCIALROOM_ANTENNA_CONSTRUCTION {

@@ -360,4 +360,7 @@
     <data name="SOCIALROOM_ANTENNA_CONSTRUCTION" xml:space="preserve">
         <value>SOCIALROOM_ANTENNA_CONSTRUCTION</value>
     </data>
+    <data name="SOCIALROOM_ANTENNA" xml:space="preserve">
+        <value>SOCIALROOM_ANTENNA</value>
+    </data>
 </root>
