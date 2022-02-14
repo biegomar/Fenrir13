@@ -30,6 +30,15 @@ public class SocialRoomPrerequisites
         socialRoom.Surroundings.Add(Keys.SOCIALROOM_SEAT, Descriptions.SOCIALROOM_SEAT);
         socialRoom.Surroundings.Add(Keys.SOCIALROOM_EAST_WALL, Descriptions.SOCIALROOM_EAST_WEST_WALL);
         socialRoom.Surroundings.Add(Keys.SOCIALROOM_WEST_WALL, Descriptions.SOCIALROOM_EAST_WEST_WALL);
+        socialRoom.Surroundings.Add(Keys.SOCIALROOM_BOOKS, string.Format(Descriptions.SOCIALROOM_BOOKS, GetBookTitle()));
+    }
+
+    private static string GetBookTitle()
+    {
+        var bookList = new List<string> { "Winnetou", "Der Herr der Ringe", "Die Schatzinsel", "Grimms Märchen" };
+        Random rnd = new Random();
+        
+        return bookList[rnd.Next(0, bookList.Count)];
     }
 
     private static Item GetCouch(EventProvider eventProvider)

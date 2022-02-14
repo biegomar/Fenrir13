@@ -657,4 +657,7 @@ Bei genauerer Betrachtung erkennst Du, dass dort eine viereckige Aussparung ist.
     <data name="CANT_TAKE_ANTENNA" xml:space="preserve">
         <value>Tatsächlich ist Deine Position auf der Couch gut, um an die Antenne heranzukommen, aber leider ist sie zu fest verschraubt. Vielleicht versuchst Du, dafür irgendein Werkzeug zu benutzen?</value>
     </data>
+    <data name="SOCIALROOM_BOOKS" xml:space="preserve">
+        <value>Du nimmst Dir wahrlos eines der Bücher aus dem Regel. "{0}" - ein weiteres Meisterwerk der Weltliteratur. Mit einem Lächeln im Geischt steckst Du es zurück an seinen Platz.</value>
+    </data>
 </root>

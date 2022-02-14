@@ -1608,6 +1608,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Du nimmst Dir wahrlos eines der Bücher aus dem Regel. &quot;{0}&quot; - ein weiteres Meisterwerk der Weltliteratur. Mit einem Lächeln im Geischt steckst Du es zurück an seinen Platz..
+        /// </summary>
+        internal static string SOCIALROOM_BOOKS {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_BOOKS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to An der Zimmerdecke befindet sich eine Antennenkonstruktion, die sicherlich dazu dient, die Medien auf den Bildschirm zu streamen..
         /// </summary>
         internal static string SOCIALROOM_CEILING {

@@ -363,4 +363,7 @@
     <data name="SOCIALROOM_ANTENNA" xml:space="preserve">
         <value>SOCIALROOM_ANTENNA</value>
     </data>
+    <data name="SOCIALROOM_BOOKS" xml:space="preserve">
+        <value>SOCIALROOM_BOOKS</value>
+    </data>
 </root>

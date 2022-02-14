@@ -781,6 +781,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Die Bücher|Bücher|Buch.
+        /// </summary>
+        internal static string SOCIALROOM_BOOKS {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_BOOKS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Die Decke|Decke|Zimmer Decke.
         /// </summary>
         internal static string SOCIALROOM_CEILING {
