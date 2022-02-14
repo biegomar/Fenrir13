@@ -934,6 +934,69 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to SOCIALROOM_BILLARD.
+        /// </summary>
+        internal static string SOCIALROOM_BILLARD {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_BILLARD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SOCIALROOM_BILLARD_BALLS.
+        /// </summary>
+        internal static string SOCIALROOM_BILLARD_BALLS {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_BILLARD_BALLS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SOCIALROOM_BILLARD_BRUSH.
+        /// </summary>
+        internal static string SOCIALROOM_BILLARD_BRUSH {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_BILLARD_BRUSH", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SOCIALROOM_BILLARD_CHALK.
+        /// </summary>
+        internal static string SOCIALROOM_BILLARD_CHALK {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_BILLARD_CHALK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SOCIALROOM_BILLARD_CUE.
+        /// </summary>
+        internal static string SOCIALROOM_BILLARD_CUE {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_BILLARD_CUE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SOCIALROOM_BILLARD_THINGS.
+        /// </summary>
+        internal static string SOCIALROOM_BILLARD_THINGS {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_BILLARD_THINGS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SOCIALROOM_BILLARD_TRIANGLE.
+        /// </summary>
+        internal static string SOCIALROOM_BILLARD_TRIANGLE {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_BILLARD_TRIANGLE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to SOCIALROOM_BOOKS.
         /// </summary>
         internal static string SOCIALROOM_BOOKS {
@@ -961,6 +1024,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to SOCIALROOM_DARTS.
+        /// </summary>
+        internal static string SOCIALROOM_DARTS {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_DARTS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to SOCIALROOM_EAST_WALL.
         /// </summary>
         internal static string SOCIALROOM_EAST_WALL {
@@ -970,11 +1042,29 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to SOCIALROOM_GLASS_TABLE.
+        /// </summary>
+        internal static string SOCIALROOM_GLASS_TABLE {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_GLASS_TABLE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to SOCIALROOM_MONITOR.
         /// </summary>
         internal static string SOCIALROOM_MONITOR {
             get {
                 return ResourceManager.GetString("SOCIALROOM_MONITOR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SOCIALROOM_NORTH_WALL.
+        /// </summary>
+        internal static string SOCIALROOM_NORTH_WALL {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_NORTH_WALL", resourceCulture);
             }
         }
         
@@ -993,6 +1083,24 @@ namespace Fenrir13.Resources {
         internal static string SOCIALROOM_SEATGROUP {
             get {
                 return ResourceManager.GetString("SOCIALROOM_SEATGROUP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SOCIALROOM_SOUTH_WALL.
+        /// </summary>
+        internal static string SOCIALROOM_SOUTH_WALL {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_SOUTH_WALL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SOCIALROOM_WALL.
+        /// </summary>
+        internal static string SOCIALROOM_WALL {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_WALL", resourceCulture);
             }
         }
         

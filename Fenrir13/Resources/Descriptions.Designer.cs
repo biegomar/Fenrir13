@@ -1563,7 +1563,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Raum ist wie ein großes, gemütliches Wohnzimmer aufgebaut. Eine einladend aussehende Couch ist vor einem riesigen Bildschirm platziert. Zwei weitere Sessel machen die Sitzgruppe perfekt. Vor der Couch steht ein kleiner Tisch aus Glas. An der östlichen und der westlichen Wand befinden sich Bücherregale, die anachronistisch dem Fortschritt trotzen und reale Bücher beinhalten. Ein Billiardtisch steht hinter der Couch und nimmt dort eine große Fläche des Raumes ein. An der nördlichen Wand hängt rechts neben [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to Der Raum ist wie ein großes, gemütliches Wohnzimmer aufgebaut. Eine einladend aussehende Couch ist vor einem riesigen Bildschirm platziert. Zwei weitere Sessel machen die Sitzgruppe perfekt. Vor der Couch steht ein kleiner Glastisch. An der östlichen und der westlichen Wand befinden sich Bücherregale, die anachronistisch dem Fortschritt trotzen und reale Bücher beinhalten. Ein Billardtisch steht hinter der Couch und nimmt dort eine große Fläche des Raumes ein. An der nördlichen Wand hängt rechts neben der E [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string SOCIALROOM {
             get {
@@ -1604,6 +1604,69 @@ namespace Fenrir13.Resources {
         internal static string SOCIALROOM_ANTENNA_LINKEDTODESCRIPTION {
             get {
                 return ResourceManager.GetString("SOCIALROOM_ANTENNA_LINKEDTODESCRIPTION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ein echter 8 ft Premium-Billardtisch mit grünem Tuch und einem dunklen Echtholzdekor. Auf dem Tisch hast Du hier an Bord schon alle geschlagen. Pool ist Dein Ding!.
+        /// </summary>
+        internal static string SOCIALROOM_BILLARD {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_BILLARD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ganz normale Billardkugeln. Auch sie haben in diesem Spiel keine weitere Bedeutung..
+        /// </summary>
+        internal static string SOCIALROOM_BILLARD_BALLS {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_BILLARD_BALLS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Einfach eine Billard-Bürste..
+        /// </summary>
+        internal static string SOCIALROOM_BILLARD_BRUSH {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_BILLARD_BRUSH", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Einfach Billard-Kreide..
+        /// </summary>
+        internal static string SOCIALROOM_BILLARD_CHALK {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_BILLARD_CHALK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sechs Top Cues. Und ich weiß, was Du denkst... Aber nein, in diesem Spiel hast Du dafür keine Verwendung. Aber ganz bestimmt in einem Anderen. Versprochen!.
+        /// </summary>
+        internal static string SOCIALROOM_BILLARD_CUE {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_BILLARD_CUE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to In der Wandhalterung stecken sechs Cues, Kreide, eine Bürste, ein Satz Billardkugeln, sowie ein Dreieck..
+        /// </summary>
+        internal static string SOCIALROOM_BILLARD_THINGS {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_BILLARD_THINGS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Das Dreieck wird benutzt, um die Kugel auf dem Tisch geordnet aufzubauen..
+        /// </summary>
+        internal static string SOCIALROOM_BILLARD_TRIANGLE {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_BILLARD_TRIANGLE", resourceCulture);
             }
         }
         
@@ -1698,7 +1761,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Du nimmst Dir wahrlos eines der Bücher aus dem Regel. &quot;{0}&quot; - ein weiteres Meisterwerk der Weltliteratur. Mit einem Lächeln im Geischt steckst Du es zurück an seinen Platz..
+        ///   Looks up a localized string similar to Du nimmst Dir wahrlos eines der Bücher aus dem Regel. &quot;{0}&quot; - ein weiteres Meisterwerk der Weltliteratur. Mit einem Lächeln im Gesicht steckst Du es zurück an seinen Platz..
         /// </summary>
         internal static string SOCIALROOM_BOOKS {
             get {
@@ -1716,11 +1779,20 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Das breite und moderne Sofa ist in einem wirklich guten Zustand und bietet gleich mehreren Personen ausreichend Platz zum sitzen oder auch mal zum liegen. Klappbare Tischchen bieten eine bequeme Ablagefläche für Knabbereien oder Getränke..
+        ///   Looks up a localized string similar to Das breite und moderne Sofa ist in einem wirklich guten Zustand und bietet gleich mehreren Personen ausreichend Platz zum sitzen oder auch mal zum liegen..
         /// </summary>
         internal static string SOCIALROOM_COUCH {
             get {
                 return ResourceManager.GetString("SOCIALROOM_COUCH", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Eine Dartscheibe in Turnierqualität. Die Pfeile stecken alle drin. Aber Darts interessiert Dich nicht wirklich. Also beachtest Du das Gerät nicht weiter..
+        /// </summary>
+        internal static string SOCIALROOM_DARTS {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_DARTS", resourceCulture);
             }
         }
         
@@ -1734,11 +1806,29 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Ein kniehoher Glastisch, der vor der Couch ideal als Ablagefläche für Getränke oder Knabbereien genutzt werden kann..
+        /// </summary>
+        internal static string SOCIALROOM_GLASS_TABLE {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_GLASS_TABLE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Der Bildschirm ist eigentlich eine dünne Folie, die mit geringem Abstand vor die komplette südliche Wand des Raums gespannt wurde. Das Ding ist super brilliant und absolut scharf. Damit macht es richtig Spaß, Serien von SpaceFlix zu schauen..
         /// </summary>
         internal static string SOCIALROOM_MONITOR {
             get {
                 return ResourceManager.GetString("SOCIALROOM_MONITOR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Neben der Tür finden sich an der Wand noch eine Dartscheibe auf der rechten Seite und eine Wandhalterung für die Billard-Cues auf der linken Seite..
+        /// </summary>
+        internal static string SOCIALROOM_NORTH_WALL {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_NORTH_WALL", resourceCulture);
             }
         }
         
@@ -1757,6 +1847,24 @@ namespace Fenrir13.Resources {
         internal static string SOCIALROOM_SEATGROUP {
             get {
                 return ResourceManager.GetString("SOCIALROOM_SEATGROUP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Diese Wand wird vollständig durch das übergroße Folien-Display eingenommen..
+        /// </summary>
+        internal static string SOCIALROOM_SOUTH_WALL {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_SOUTH_WALL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Welche Wand? Die nördliche, südliche, östliche oder westliche Wand?.
+        /// </summary>
+        internal static string SOCIALROOM_WALL {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_WALL", resourceCulture);
             }
         }
         

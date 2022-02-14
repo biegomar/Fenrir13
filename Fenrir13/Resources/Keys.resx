@@ -369,4 +369,40 @@
     <data name="SOCIALROOM_SEATGROUP" xml:space="preserve">
         <value>SOCIALROOM_SEATGROUP</value>
     </data>
+    <data name="SOCIALROOM_WALL" xml:space="preserve">
+        <value>SOCIALROOM_WALL</value>
+    </data>
+    <data name="SOCIALROOM_SOUTH_WALL" xml:space="preserve">
+        <value>SOCIALROOM_SOUTH_WALL</value>
+    </data>
+    <data name="SOCIALROOM_NORTH_WALL" xml:space="preserve">
+        <value>SOCIALROOM_NORTH_WALL</value>
+    </data>
+    <data name="SOCIALROOM_BILLARD" xml:space="preserve">
+        <value>SOCIALROOM_BILLARD</value>
+    </data>
+    <data name="SOCIALROOM_DARTS" xml:space="preserve">
+        <value>SOCIALROOM_DARTS</value>
+    </data>
+    <data name="SOCIALROOM_BILLARD_THINGS" xml:space="preserve">
+        <value>SOCIALROOM_BILLARD_THINGS</value>
+    </data>
+    <data name="SOCIALROOM_BILLARD_CUE" xml:space="preserve">
+        <value>SOCIALROOM_BILLARD_CUE</value>
+    </data>
+    <data name="SOCIALROOM_BILLARD_CHALK" xml:space="preserve">
+        <value>SOCIALROOM_BILLARD_CHALK</value>
+    </data>
+    <data name="SOCIALROOM_BILLARD_BRUSH" xml:space="preserve">
+        <value>SOCIALROOM_BILLARD_BRUSH</value>
+    </data>
+    <data name="SOCIALROOM_BILLARD_TRIANGLE" xml:space="preserve">
+        <value>SOCIALROOM_BILLARD_TRIANGLE</value>
+    </data>
+    <data name="SOCIALROOM_BILLARD_BALLS" xml:space="preserve">
+        <value>SOCIALROOM_BILLARD_BALLS</value>
+    </data>
+    <data name="SOCIALROOM_GLASS_TABLE" xml:space="preserve">
+        <value>SOCIALROOM_GLASS_TABLE</value>
+    </data>
 </root>

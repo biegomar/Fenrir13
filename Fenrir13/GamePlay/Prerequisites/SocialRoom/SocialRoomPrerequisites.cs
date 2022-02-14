@@ -30,7 +30,19 @@ public class SocialRoomPrerequisites
         socialRoom.Surroundings.Add(Keys.SOCIALROOM_SEAT, () => Descriptions.SOCIALROOM_SEAT);
         socialRoom.Surroundings.Add(Keys.SOCIALROOM_EAST_WALL, () => Descriptions.SOCIALROOM_EAST_WEST_WALL);
         socialRoom.Surroundings.Add(Keys.SOCIALROOM_WEST_WALL, () => Descriptions.SOCIALROOM_EAST_WEST_WALL);
+        socialRoom.Surroundings.Add(Keys.SOCIALROOM_SOUTH_WALL, () => Descriptions.SOCIALROOM_SOUTH_WALL);
+        socialRoom.Surroundings.Add(Keys.SOCIALROOM_NORTH_WALL, () => Descriptions.SOCIALROOM_NORTH_WALL);
+        socialRoom.Surroundings.Add(Keys.SOCIALROOM_WALL, () => Descriptions.SOCIALROOM_WALL);
         socialRoom.Surroundings.Add(Keys.SOCIALROOM_SEATGROUP, () => Descriptions.SOCIALROOM_SEATGROUP);
+        socialRoom.Surroundings.Add(Keys.SOCIALROOM_BILLARD, () => Descriptions.SOCIALROOM_BILLARD);
+        socialRoom.Surroundings.Add(Keys.SOCIALROOM_BILLARD_CUE, () => Descriptions.SOCIALROOM_BILLARD_CUE);
+        socialRoom.Surroundings.Add(Keys.SOCIALROOM_BILLARD_BALLS, () => Descriptions.SOCIALROOM_BILLARD_BALLS);
+        socialRoom.Surroundings.Add(Keys.SOCIALROOM_BILLARD_BRUSH, () => Descriptions.SOCIALROOM_BILLARD_BRUSH);
+        socialRoom.Surroundings.Add(Keys.SOCIALROOM_BILLARD_CHALK, () => Descriptions.SOCIALROOM_BILLARD_CHALK);
+        socialRoom.Surroundings.Add(Keys.SOCIALROOM_BILLARD_THINGS, () => Descriptions.SOCIALROOM_BILLARD_THINGS);
+        socialRoom.Surroundings.Add(Keys.SOCIALROOM_BILLARD_TRIANGLE, () => Descriptions.SOCIALROOM_BILLARD_TRIANGLE);
+        socialRoom.Surroundings.Add(Keys.SOCIALROOM_DARTS, () => Descriptions.SOCIALROOM_DARTS);
+        socialRoom.Surroundings.Add(Keys.SOCIALROOM_GLASS_TABLE, () => Descriptions.SOCIALROOM_GLASS_TABLE);
         socialRoom.Surroundings.Add(Keys.SOCIALROOM_BOOKS, () => string.Format(Descriptions.SOCIALROOM_BOOKS, GetBookTitle()));
     }
 

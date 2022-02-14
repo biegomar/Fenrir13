@@ -322,7 +322,7 @@ Vielleicht kannst Du unten bei den Maschinenräumen mehr unternehmen als von hie
         <value>Dies ist ein gut ausgestatteter Fitnessraum für die Zeit der Reise, in der man aktiv und wach ist. Auch in modernen Zeiten legt man bei Viking Wert auf Handarbeit und Gewichte stemmen. Daher finden sich hier auch klassische Fitnessmaschinen mit variablen Gewichten. Du siehst die Cardiostation, die mehrere Übungen zulässt, genauso wie eine Powerstation und einen - na sagen wir mal - Gymnastikbereich, mit vielen Seilen, Sandsäcken und tragbaren Gewichten. Alle Geräte sind an ihren Plätzen verankert.</value>
     </data>
     <data name="SOCIALROOM" xml:space="preserve">
-        <value>Der Raum ist wie ein großes, gemütliches Wohnzimmer aufgebaut. Eine einladend aussehende Couch ist vor einem riesigen Bildschirm platziert. Zwei weitere Sessel machen die Sitzgruppe perfekt. Vor der Couch steht ein kleiner Tisch aus Glas. An der östlichen und der westlichen Wand befinden sich Bücherregale, die anachronistisch dem Fortschritt trotzen und reale Bücher beinhalten. Ein Billiardtisch steht hinter der Couch und nimmt dort eine große Fläche des Raumes ein. An der nördlichen Wand hängt rechts neben der Eingangstür eine Dartscheibe und links davon stecken die Cues in einer passenden Wandhalterung.</value>
+        <value>Der Raum ist wie ein großes, gemütliches Wohnzimmer aufgebaut. Eine einladend aussehende Couch ist vor einem riesigen Bildschirm platziert. Zwei weitere Sessel machen die Sitzgruppe perfekt. Vor der Couch steht ein kleiner Glastisch. An der östlichen und der westlichen Wand befinden sich Bücherregale, die anachronistisch dem Fortschritt trotzen und reale Bücher beinhalten. Ein Billardtisch steht hinter der Couch und nimmt dort eine große Fläche des Raumes ein. An der nördlichen Wand hängt rechts neben der Eingangstür eine Dartscheibe und links davon stecken die Cues in einer passenden Wandhalterung.</value>
     </data>
     <data name="KITCHEN" xml:space="preserve">
         <value>Für die maximal sechs Personen Besatzung ist die Küche üppig ausgestattet und sehr geräumig. Es finden sich ein Food-Printer für die Zubereitung der individuellen Gerichte, ein Reststoffverwerter, ein Kühlschrank für die Nahrungsbausteine des Druckers, sowie einige Schränke. Wenn man essen möchte nimmt man an einem der sechs Stühle vor dem geräumigen Tisch in der Mitte des Raumes Platz. Wie überall im Schiff ist der Boden aus magnetisierbarem Metall, um auch hier das Möbiliar gegen Verrutschen zu sichern.</value>
@@ -625,7 +625,7 @@ Bei genauerer Betrachtung erkennst Du, dass dort eine viereckige Aussparung ist.
         <value>Du willst ohne eine Sicherung ganz bestimmt nicht in die unendlichen Weiten des Alls eindringen, oder?</value>
     </data>
     <data name="SOCIALROOM_COUCH" xml:space="preserve">
-        <value>Das breite und moderne Sofa ist in einem wirklich guten Zustand und bietet gleich mehreren Personen ausreichend Platz zum sitzen oder auch mal zum liegen. Klappbare Tischchen bieten eine bequeme Ablagefläche für Knabbereien oder Getränke.</value>
+        <value>Das breite und moderne Sofa ist in einem wirklich guten Zustand und bietet gleich mehreren Personen ausreichend Platz zum sitzen oder auch mal zum liegen.</value>
     </data>
     <data name="SOCIALROOM_MONITOR" xml:space="preserve">
         <value>Der Bildschirm ist eigentlich eine dünne Folie, die mit geringem Abstand vor die komplette südliche Wand des Raums gespannt wurde. Das Ding ist super brilliant und absolut scharf. Damit macht es richtig Spaß, Serien von SpaceFlix zu schauen.</value>
@@ -658,7 +658,7 @@ Bei genauerer Betrachtung erkennst Du, dass dort eine viereckige Aussparung ist.
         <value>Tatsächlich ist Deine Position auf der Couch gut, um an die Antenne heranzukommen, aber leider ist sie zu fest verschraubt. Vielleicht versuchst Du, dafür irgendein Werkzeug zu benutzen?</value>
     </data>
     <data name="SOCIALROOM_BOOKS" xml:space="preserve">
-        <value>Du nimmst Dir wahrlos eines der Bücher aus dem Regel. "{0}" - ein weiteres Meisterwerk der Weltliteratur. Mit einem Lächeln im Geischt steckst Du es zurück an seinen Platz.</value>
+        <value>Du nimmst Dir wahrlos eines der Bücher aus dem Regel. "{0}" - ein weiteres Meisterwerk der Weltliteratur. Mit einem Lächeln im Gesicht steckst Du es zurück an seinen Platz.</value>
     </data>
     <data name="SOCIALROOM_SEATGROUP" xml:space="preserve">
         <value>Ein Arrangement von einer Couch und zwei Sesseln.</value>
@@ -692,5 +692,41 @@ Bei genauerer Betrachtung erkennst Du, dass dort eine viereckige Aussparung ist.
     </data>
     <data name="SOCIALROOM_BOOK_X" xml:space="preserve">
         <value>Die Blechtrommel</value>
+    </data>
+    <data name="SOCIALROOM_WALL" xml:space="preserve">
+        <value>Welche Wand? Die nördliche, südliche, östliche oder westliche Wand?</value>
+    </data>
+    <data name="SOCIALROOM_SOUTH_WALL" xml:space="preserve">
+        <value>Diese Wand wird vollständig durch das übergroße Folien-Display eingenommen.</value>
+    </data>
+    <data name="SOCIALROOM_NORTH_WALL" xml:space="preserve">
+        <value>Neben der Tür finden sich an der Wand noch eine Dartscheibe auf der rechten Seite und eine Wandhalterung für die Billard-Cues auf der linken Seite.</value>
+    </data>
+    <data name="SOCIALROOM_BILLARD" xml:space="preserve">
+        <value>Ein echter 8 ft Premium-Billardtisch mit grünem Tuch und einem dunklen Echtholzdekor. Auf dem Tisch hast Du hier an Bord schon alle geschlagen. Pool ist Dein Ding!</value>
+    </data>
+    <data name="SOCIALROOM_DARTS" xml:space="preserve">
+        <value>Eine Dartscheibe in Turnierqualität. Die Pfeile stecken alle drin. Aber Darts interessiert Dich nicht wirklich. Also beachtest Du das Gerät nicht weiter.</value>
+    </data>
+    <data name="SOCIALROOM_BILLARD_THINGS" xml:space="preserve">
+        <value>In der Wandhalterung stecken sechs Cues, Kreide, eine Bürste, ein Satz Billardkugeln, sowie ein Dreieck.</value>
+    </data>
+    <data name="SOCIALROOM_BILLARD_CUE" xml:space="preserve">
+        <value>Sechs Top Cues. Und ich weiß, was Du denkst... Aber nein, in diesem Spiel hast Du dafür keine Verwendung. Aber ganz bestimmt in einem Anderen. Versprochen!</value>
+    </data>
+    <data name="SOCIALROOM_BILLARD_CHALK" xml:space="preserve">
+        <value>Einfach Billard-Kreide.</value>
+    </data>
+    <data name="SOCIALROOM_BILLARD_BRUSH" xml:space="preserve">
+        <value>Einfach eine Billard-Bürste.</value>
+    </data>
+    <data name="SOCIALROOM_BILLARD_TRIANGLE" xml:space="preserve">
+        <value>Das Dreieck wird benutzt, um die Kugel auf dem Tisch geordnet aufzubauen.</value>
+    </data>
+    <data name="SOCIALROOM_BILLARD_BALLS" xml:space="preserve">
+        <value>Ganz normale Billardkugeln. Auch sie haben in diesem Spiel keine weitere Bedeutung.</value>
+    </data>
+    <data name="SOCIALROOM_GLASS_TABLE" xml:space="preserve">
+        <value>Ein kniehoher Glastisch, der vor der Couch ideal als Ablagefläche für Getränke oder Knabbereien genutzt werden kann.</value>
     </data>
 </root>
