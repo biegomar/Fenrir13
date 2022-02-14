@@ -25,18 +25,26 @@ public class SocialRoomPrerequisites
 
     private static void AddSurroundings(Location socialRoom)
     {
-        socialRoom.Surroundings.Add(Keys.SOCIALROOM_CEILING, Descriptions.SOCIALROOM_CEILING);
-        socialRoom.Surroundings.Add(Keys.SOCIALROOM_MONITOR, Descriptions.SOCIALROOM_MONITOR);
-        socialRoom.Surroundings.Add(Keys.SOCIALROOM_SEAT, Descriptions.SOCIALROOM_SEAT);
-        socialRoom.Surroundings.Add(Keys.SOCIALROOM_EAST_WALL, Descriptions.SOCIALROOM_EAST_WEST_WALL);
-        socialRoom.Surroundings.Add(Keys.SOCIALROOM_WEST_WALL, Descriptions.SOCIALROOM_EAST_WEST_WALL);
-        socialRoom.Surroundings.Add(Keys.SOCIALROOM_BOOKS, string.Format(Descriptions.SOCIALROOM_BOOKS, GetBookTitle()));
+        socialRoom.Surroundings.Add(Keys.SOCIALROOM_CEILING, () => Descriptions.SOCIALROOM_CEILING);
+        socialRoom.Surroundings.Add(Keys.SOCIALROOM_MONITOR, () => Descriptions.SOCIALROOM_MONITOR);
+        socialRoom.Surroundings.Add(Keys.SOCIALROOM_SEAT, () => Descriptions.SOCIALROOM_SEAT);
+        socialRoom.Surroundings.Add(Keys.SOCIALROOM_EAST_WALL, () => Descriptions.SOCIALROOM_EAST_WEST_WALL);
+        socialRoom.Surroundings.Add(Keys.SOCIALROOM_WEST_WALL, () => Descriptions.SOCIALROOM_EAST_WEST_WALL);
+        socialRoom.Surroundings.Add(Keys.SOCIALROOM_SEATGROUP, () => Descriptions.SOCIALROOM_SEATGROUP);
+        socialRoom.Surroundings.Add(Keys.SOCIALROOM_BOOKS, () => string.Format(Descriptions.SOCIALROOM_BOOKS, GetBookTitle()));
     }
 
     private static string GetBookTitle()
     {
-        var bookList = new List<string> { "Winnetou", "Der Herr der Ringe", "Die Schatzinsel", "Grimms Märchen" };
-        Random rnd = new Random();
+        var bookList = new List<string>
+        {
+            Descriptions.SOCIALROOM_BOOK_I, Descriptions.SOCIALROOM_BOOK_II, Descriptions.SOCIALROOM_BOOK_III,
+            Descriptions.SOCIALROOM_BOOK_IV, Descriptions.SOCIALROOM_BOOK_V,
+            Descriptions.SOCIALROOM_BOOK_VI, Descriptions.SOCIALROOM_BOOK_VII, Descriptions.SOCIALROOM_BOOK_VIII,
+            Descriptions.SOCIALROOM_BOOK_IX, Descriptions.SOCIALROOM_BOOK_X
+        }; 
+        
+        var rnd = new Random();
         
         return bookList[rnd.Next(0, bookList.Count)];
     }

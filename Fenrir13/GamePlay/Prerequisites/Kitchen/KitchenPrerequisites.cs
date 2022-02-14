@@ -26,11 +26,11 @@ internal static class KitchenPrerequisites
 
     private static void AddSurroundings(Location kitchen)
     {
-        kitchen.Surroundings.Add(Keys.CEILING, Descriptions.CEILING);
-        kitchen.Surroundings.Add(Keys.CHAMBER_FLOOR, Descriptions.CHAMBER_FLOOR);
-        kitchen.Surroundings.Add(Keys.CHAMBER_WALL, Descriptions.CHAMBER_WALL);
-        kitchen.Surroundings.Add(Keys.TABLE, Descriptions.TABLE);
-        kitchen.Surroundings.Add(Keys.CHAIR, Descriptions.CHAIR);
+        kitchen.Surroundings.Add(Keys.CEILING, () => Descriptions.CEILING);
+        kitchen.Surroundings.Add(Keys.CHAMBER_FLOOR, () => Descriptions.CHAMBER_FLOOR);
+        kitchen.Surroundings.Add(Keys.CHAMBER_WALL, () => Descriptions.CHAMBER_WALL);
+        kitchen.Surroundings.Add(Keys.TABLE, () => Descriptions.TABLE);
+        kitchen.Surroundings.Add(Keys.CHAIR, () => Descriptions.CHAIR);
     }
 
     private static Item GetFridge(EventProvider eventProvider)

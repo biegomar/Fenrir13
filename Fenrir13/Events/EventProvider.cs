@@ -190,7 +190,7 @@ internal partial class EventProvider
     {
         if (sender is Location cryoChamber && cryoChamber.Key == Keys.CRYOCHAMBER && eventArgs.ExternalItemKey == Keys.CLOSET_DOOR)
         {
-            PrintingSubsystem.Resource(this.universe.ActiveLocation.Surroundings[eventArgs.ExternalItemKey]);
+            PrintingSubsystem.Resource(this.universe.ActiveLocation.Surroundings[eventArgs.ExternalItemKey]());
             
             var bar = this.universe.ActiveLocation.GetItemByKey(Keys.CHOCOLATEBAR);
             if (bar != default)
@@ -213,7 +213,7 @@ internal partial class EventProvider
     {
         if (sender is Location cryoChamber && cryoChamber.Key == Keys.CRYOCHAMBER && eventArgs.ExternalItemKey == Keys.CLOSET_DOOR)
         {
-            PrintingSubsystem.Resource(this.universe.ActiveLocation.Surroundings[eventArgs.ExternalItemKey]);
+            PrintingSubsystem.Resource(this.universe.ActiveLocation.Surroundings[eventArgs.ExternalItemKey].ToString());
         }
     }
     

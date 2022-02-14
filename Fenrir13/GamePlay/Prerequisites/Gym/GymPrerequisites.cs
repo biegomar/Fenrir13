@@ -25,16 +25,16 @@ internal static class GymPrerequisites
     
     private static void AddSurroundings(Location gym)
     {
-        gym.Surroundings.Add(Keys.CARDIO_STATION, Descriptions.CARDIO_STATION);
-        gym.Surroundings.Add(Keys.GYM_POWERSTATION, Descriptions.GYM_POWERSTATION);
-        gym.Surroundings.Add(Keys.EXERCISE_AREA, Descriptions.EXERCISE_AREA);
-        gym.Surroundings.Add(Keys.BIKE, Descriptions.GYM_FLOSKEL);
-        gym.Surroundings.Add(Keys.CROSSTRAINER, Descriptions.GYM_FLOSKEL);
-        gym.Surroundings.Add(Keys.TREADMILL, Descriptions.GYM_FLOSKEL);
-        gym.Surroundings.Add(Keys.STEPPER, Descriptions.GYM_FLOSKEL);
-        gym.Surroundings.Add(Keys.FITNESSMACHINE, Descriptions.FITNESSMACHINE);
-        gym.Surroundings.Add(Keys.WORKOUTS, Descriptions.WORKOUTS);
-        gym.Surroundings.Add(Keys.CEILING, Descriptions.CEILING);
+        gym.Surroundings.Add(Keys.CARDIO_STATION, () => Descriptions.CARDIO_STATION);
+        gym.Surroundings.Add(Keys.GYM_POWERSTATION, () => Descriptions.GYM_POWERSTATION);
+        gym.Surroundings.Add(Keys.EXERCISE_AREA, () => Descriptions.EXERCISE_AREA);
+        gym.Surroundings.Add(Keys.BIKE, () => Descriptions.GYM_FLOSKEL);
+        gym.Surroundings.Add(Keys.CROSSTRAINER, () => Descriptions.GYM_FLOSKEL);
+        gym.Surroundings.Add(Keys.TREADMILL, () => Descriptions.GYM_FLOSKEL);
+        gym.Surroundings.Add(Keys.STEPPER, () => Descriptions.GYM_FLOSKEL);
+        gym.Surroundings.Add(Keys.FITNESSMACHINE, () => Descriptions.FITNESSMACHINE);
+        gym.Surroundings.Add(Keys.WORKOUTS, () => Descriptions.WORKOUTS);
+        gym.Surroundings.Add(Keys.CEILING, () => Descriptions.CEILING);
     }
     
     private static Item GetDumbbellRack(EventProvider eventProvider)

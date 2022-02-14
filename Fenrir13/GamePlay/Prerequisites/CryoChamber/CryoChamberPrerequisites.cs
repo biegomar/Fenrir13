@@ -69,34 +69,34 @@ internal static class CryoChamberPrerequisites
 
     private static void AddSurroundings(Location cryoChamber)
     {
-        cryoChamber.Surroundings.Add(Keys.CRYOPOD, Descriptions.CRYOPOD);
-        cryoChamber.Surroundings.Add(Keys.CHAMBER_FLOOR, Descriptions.CHAMBER_FLOOR);
-        cryoChamber.Surroundings.Add(Keys.CARPET, Descriptions.CARPET);
-        cryoChamber.Surroundings.Add(Keys.WORKBENCH, Descriptions.WORKBENCH);
-        cryoChamber.Surroundings.Add(Keys.LAPTOP, Descriptions.LAPTOP);
-        cryoChamber.Surroundings.Add(Keys.CHAMBER_WALL, Descriptions.CHAMBER_WALL);
-        cryoChamber.Surroundings.Add(Keys.PIERHOLE, string.Format(Descriptions.PIERHOLE, FENRIR13));
-        cryoChamber.Surroundings.Add(Keys.OFFICECHAIR, Descriptions.OFFICECHAIR);
-        cryoChamber.Surroundings.Add(Keys.RUBBER_ROLLS, Descriptions.RUBBER_ROLLS);
-        cryoChamber.Surroundings.Add(Keys.CLOSET, Descriptions.CLOSET);
-        cryoChamber.Surroundings.Add(Keys.DRAWER, Descriptions.DRAWER);
-        cryoChamber.Surroundings.Add(Keys.CLOSET_DOOR, Descriptions.CLOSET_DOOR);
-        cryoChamber.Surroundings.Add(Keys.WARDROBE, Descriptions.WARDROBE);
-        cryoChamber.Surroundings.Add(Keys.TABLE, Descriptions.TABLE);
-        cryoChamber.Surroundings.Add(Keys.CHAIR, Descriptions.CHAIR);
-        cryoChamber.Surroundings.Add(Keys.PARTITION_WALL, Descriptions.PARTITION_WALL);
-        cryoChamber.Surroundings.Add(Keys.WASHINGAREA, Descriptions.WASHINGAREA);
-        cryoChamber.Surroundings.Add(Keys.TOILET, Descriptions.TOILET);
-        cryoChamber.Surroundings.Add(Keys.MIRROR, Descriptions.MIRROR);
-        cryoChamber.Surroundings.Add(Keys.OUTLINES, Descriptions.OUTLINES);
-        cryoChamber.Surroundings.Add(Keys.PEEPHOLE, Descriptions.PEEPHOLE);
-        cryoChamber.Surroundings.Add(Keys.LATCH, Descriptions.LATCH);
-        cryoChamber.Surroundings.Add(Keys.CRYOCHAMBER_DOOR, Descriptions.CRYOCHAMBER_DOOR);
-        cryoChamber.Surroundings.Add(Keys.DISPLAY, Descriptions.DISPLAY);
-        cryoChamber.Surroundings.Add(Keys.TOILET_SEAT, Descriptions.TOILET_SEAT);
-        cryoChamber.Surroundings.Add(Keys.WRITING_MATERIALS, Descriptions.WRITING_MATERIALS);
-        cryoChamber.Surroundings.Add(Keys.CEILING, Descriptions.CEILING);
-        cryoChamber.Surroundings.Add(Keys.CRYOCHAMBER_BULKHEAD, Descriptions.CRYOCHAMBER_BULKHEAD);
+        cryoChamber.Surroundings.Add(Keys.CRYOPOD, () => Descriptions.CRYOPOD);
+        cryoChamber.Surroundings.Add(Keys.CHAMBER_FLOOR, () => Descriptions.CHAMBER_FLOOR);
+        cryoChamber.Surroundings.Add(Keys.CARPET, () => Descriptions.CARPET);
+        cryoChamber.Surroundings.Add(Keys.WORKBENCH, () => Descriptions.WORKBENCH);
+        cryoChamber.Surroundings.Add(Keys.LAPTOP, () => Descriptions.LAPTOP);
+        cryoChamber.Surroundings.Add(Keys.CHAMBER_WALL, () => Descriptions.CHAMBER_WALL);
+        cryoChamber.Surroundings.Add(Keys.PIERHOLE, () => string.Format(Descriptions.PIERHOLE, FENRIR13));
+        cryoChamber.Surroundings.Add(Keys.OFFICECHAIR, () => Descriptions.OFFICECHAIR);
+        cryoChamber.Surroundings.Add(Keys.RUBBER_ROLLS, () => Descriptions.RUBBER_ROLLS);
+        cryoChamber.Surroundings.Add(Keys.CLOSET, () => Descriptions.CLOSET);
+        cryoChamber.Surroundings.Add(Keys.DRAWER, () => Descriptions.DRAWER);
+        cryoChamber.Surroundings.Add(Keys.CLOSET_DOOR, () => Descriptions.CLOSET_DOOR);
+        cryoChamber.Surroundings.Add(Keys.WARDROBE, () => Descriptions.WARDROBE);
+        cryoChamber.Surroundings.Add(Keys.TABLE, () => Descriptions.TABLE);
+        cryoChamber.Surroundings.Add(Keys.CHAIR, () => Descriptions.CHAIR);
+        cryoChamber.Surroundings.Add(Keys.PARTITION_WALL, () => Descriptions.PARTITION_WALL);
+        cryoChamber.Surroundings.Add(Keys.WASHINGAREA, () => Descriptions.WASHINGAREA);
+        cryoChamber.Surroundings.Add(Keys.TOILET, () => Descriptions.TOILET);
+        cryoChamber.Surroundings.Add(Keys.MIRROR, () => Descriptions.MIRROR);
+        cryoChamber.Surroundings.Add(Keys.OUTLINES, () => Descriptions.OUTLINES);
+        cryoChamber.Surroundings.Add(Keys.PEEPHOLE, () => Descriptions.PEEPHOLE);
+        cryoChamber.Surroundings.Add(Keys.LATCH, () => Descriptions.LATCH);
+        cryoChamber.Surroundings.Add(Keys.CRYOCHAMBER_DOOR, () => Descriptions.CRYOCHAMBER_DOOR);
+        cryoChamber.Surroundings.Add(Keys.DISPLAY, () => Descriptions.DISPLAY);
+        cryoChamber.Surroundings.Add(Keys.TOILET_SEAT, () => Descriptions.TOILET_SEAT);
+        cryoChamber.Surroundings.Add(Keys.WRITING_MATERIALS, () => Descriptions.WRITING_MATERIALS);
+        cryoChamber.Surroundings.Add(Keys.CEILING, () => Descriptions.CEILING);
+        cryoChamber.Surroundings.Add(Keys.CRYOCHAMBER_BULKHEAD, () => Descriptions.CRYOCHAMBER_BULKHEAD);
     }
 
     private static void AddAfterLookEvents(Location cryoChamber, EventProvider eventProvider)

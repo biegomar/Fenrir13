@@ -86,15 +86,15 @@ internal static class AmbulancePrerequisites
     
     private static void AddSurroundings(Location location)
     {
-        location.Surroundings.Add(Keys.AMBULANCE_OP_TABLE, Descriptions.AMBULANCE_OP_TABLE);
-        location.Surroundings.Add(Keys.AMBULANCE_OP_ROBOTER, Descriptions.AMBULANCE_OP_ROBOTER);
-        location.Surroundings.Add(Keys.CEILING, Descriptions.CEILING);
-        location.Surroundings.Add(Keys.CHAMBER_WALL, Descriptions.CHAMBER_WALL);
-        location.Surroundings.Add(Keys.AMBULANCE_BED, Descriptions.AMBULANCE_BED);
-        location.Surroundings.Add(Keys.AMBULANCE_OP_ITEMS, Descriptions.AMBULANCE_OP_ITEMS);
-        location.Surroundings.Add(Keys.AMBULANCE_OP_ITEMS_DETAIL, Descriptions.AMBULANCE_OP_ITEMS_DETAIL);
-        location.Surroundings.Add(Keys.AMBULANCE_MEDIS, Descriptions.AMBULANCE_MEDIS);
-        location.Surroundings.Add(Keys.AMBULANCE_RESPIRATOR, Descriptions.AMBULANCE_RESPIRATOR);
+        location.Surroundings.Add(Keys.AMBULANCE_OP_TABLE, () => Descriptions.AMBULANCE_OP_TABLE);
+        location.Surroundings.Add(Keys.AMBULANCE_OP_ROBOTER, () => Descriptions.AMBULANCE_OP_ROBOTER);
+        location.Surroundings.Add(Keys.CEILING, () => Descriptions.CEILING);
+        location.Surroundings.Add(Keys.CHAMBER_WALL, () => Descriptions.CHAMBER_WALL);
+        location.Surroundings.Add(Keys.AMBULANCE_BED, () => Descriptions.AMBULANCE_BED);
+        location.Surroundings.Add(Keys.AMBULANCE_OP_ITEMS, () => Descriptions.AMBULANCE_OP_ITEMS);
+        location.Surroundings.Add(Keys.AMBULANCE_OP_ITEMS_DETAIL, () => Descriptions.AMBULANCE_OP_ITEMS_DETAIL);
+        location.Surroundings.Add(Keys.AMBULANCE_MEDIS, () => Descriptions.AMBULANCE_MEDIS);
+        location.Surroundings.Add(Keys.AMBULANCE_RESPIRATOR, () => Descriptions.AMBULANCE_RESPIRATOR);
     }
     
     private static void AddAfterLookEvents(Location ambulance, EventProvider eventProvider)

@@ -29,15 +29,15 @@ internal static class CommandBridgePrerequisites
     
     private static void AddSurroundings(Location location)
     {
-        location.Surroundings.Add(Keys.CONTROL_PANEL, Descriptions.CONTROL_PANEL);
-        location.Surroundings.Add(Keys.CONTROL_PANEL_CONTENT, Descriptions.CONTROL_PANEL_CONTENT);
-        location.Surroundings.Add(Keys.OVOID, Descriptions.OVOID);
-        location.Surroundings.Add(Keys.FRONTSIDE, Descriptions.FRONTSIDE);
-        location.Surroundings.Add(Keys.FRONTWINDOW, Descriptions.FRONTWINDOW);
-        location.Surroundings.Add(Keys.RANK, Descriptions.RANK);
-        location.Surroundings.Add(Keys.NECESSITIES, Descriptions.NECESSITIES);
-        location.Surroundings.Add(Keys.PERSONAL_SETTINGS, Descriptions.PERSONAL_SETTINGS);
-        location.Surroundings.Add(Keys.CEILING, Descriptions.CEILING);
+        location.Surroundings.Add(Keys.CONTROL_PANEL, () => Descriptions.CONTROL_PANEL);
+        location.Surroundings.Add(Keys.CONTROL_PANEL_CONTENT, () => Descriptions.CONTROL_PANEL_CONTENT);
+        location.Surroundings.Add(Keys.OVOID, () => Descriptions.OVOID);
+        location.Surroundings.Add(Keys.FRONTSIDE, () => Descriptions.FRONTSIDE);
+        location.Surroundings.Add(Keys.FRONTWINDOW, () => Descriptions.FRONTWINDOW);
+        location.Surroundings.Add(Keys.RANK, () => Descriptions.RANK);
+        location.Surroundings.Add(Keys.NECESSITIES, () => Descriptions.NECESSITIES);
+        location.Surroundings.Add(Keys.PERSONAL_SETTINGS, () => Descriptions.PERSONAL_SETTINGS);
+        location.Surroundings.Add(Keys.CEILING, () => Descriptions.CEILING);
     }
     
     private static void AddAfterLookEvents(Location bridge, EventProvider eventProvider)

@@ -835,6 +835,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Die Sitzgruppe|Sitzgruppe.
+        /// </summary>
+        internal static string SOCIALROOM_SEATGROUP {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_SEATGROUP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Die westliche Wand|Westliche Wand.
         /// </summary>
         internal static string SOCIALROOM_WEST_WALL {

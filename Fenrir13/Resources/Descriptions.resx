@@ -660,4 +660,37 @@ Bei genauerer Betrachtung erkennst Du, dass dort eine viereckige Aussparung ist.
     <data name="SOCIALROOM_BOOKS" xml:space="preserve">
         <value>Du nimmst Dir wahrlos eines der Bücher aus dem Regel. "{0}" - ein weiteres Meisterwerk der Weltliteratur. Mit einem Lächeln im Geischt steckst Du es zurück an seinen Platz.</value>
     </data>
+    <data name="SOCIALROOM_SEATGROUP" xml:space="preserve">
+        <value>Ein Arrangement von einer Couch und zwei Sesseln.</value>
+    </data>
+    <data name="SOCIALROOM_BOOK_I" xml:space="preserve">
+        <value>Die Schatzinsel</value>
+    </data>
+    <data name="SOCIALROOM_BOOK_II" xml:space="preserve">
+        <value>Der Herr der Ringe</value>
+    </data>
+    <data name="SOCIALROOM_BOOK_III" xml:space="preserve">
+        <value>De Profundis</value>
+    </data>
+    <data name="SOCIALROOM_BOOK_IV" xml:space="preserve">
+        <value>Der Malteser Falke</value>
+    </data>
+    <data name="SOCIALROOM_BOOK_V" xml:space="preserve">
+        <value>Krieg und Frieden</value>
+    </data>
+    <data name="SOCIALROOM_BOOK_VI" xml:space="preserve">
+        <value>Die Verwandlung</value>
+    </data>
+    <data name="SOCIALROOM_BOOK_VII" xml:space="preserve">
+        <value>Romeo &amp; Julia</value>
+    </data>
+    <data name="SOCIALROOM_BOOK_VIII" xml:space="preserve">
+        <value>Die Dreigroschenoper</value>
+    </data>
+    <data name="SOCIALROOM_BOOK_IX" xml:space="preserve">
+        <value>1984</value>
+    </data>
+    <data name="SOCIALROOM_BOOK_X" xml:space="preserve">
+        <value>Die Blechtrommel</value>
+    </data>
 </root>

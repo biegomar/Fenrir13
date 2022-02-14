@@ -988,6 +988,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to SOCIALROOM_SEATGROUP.
+        /// </summary>
+        internal static string SOCIALROOM_SEATGROUP {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_SEATGROUP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to SOCIALROOM_WEST_WALL.
         /// </summary>
         internal static string SOCIALROOM_WEST_WALL {

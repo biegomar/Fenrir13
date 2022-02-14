@@ -25,6 +25,6 @@ internal static class MachineCorridorMidPrerequisites
     
     private static void AddSurroundings(Location corridor)
     {
-        corridor.Surroundings.Add(Keys.CEILING, Descriptions.CEILING);
+        corridor.Surroundings.Add(Keys.CEILING, () => Descriptions.CEILING);
     }
 }

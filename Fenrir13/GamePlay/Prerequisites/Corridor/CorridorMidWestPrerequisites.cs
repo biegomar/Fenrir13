@@ -22,9 +22,9 @@ internal static class CorridorMidWestPrerequisites
 
     private static void AddSurroundings(Location corridor)
     {
-        corridor.Surroundings.Add(Keys.BULKHEAD, Descriptions.BULKHEAD);
-        corridor.Surroundings.Add(Keys.BULKHEAD_WINDOW, Descriptions.BULKHEAD_WINDOW);
-        corridor.Surroundings.Add(Keys.CORRIDOR_PAINTING, Descriptions.CORRIDOR_PAINTING_MIDWEST);
-        corridor.Surroundings.Add(Keys.CEILING, Descriptions.CEILING);
+        corridor.Surroundings.Add(Keys.BULKHEAD, () => Descriptions.BULKHEAD);
+        corridor.Surroundings.Add(Keys.BULKHEAD_WINDOW, () => Descriptions.BULKHEAD_WINDOW);
+        corridor.Surroundings.Add(Keys.CORRIDOR_PAINTING, () => Descriptions.CORRIDOR_PAINTING_MIDWEST);
+        corridor.Surroundings.Add(Keys.CEILING, () => Descriptions.CEILING);
     }
 }

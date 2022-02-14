@@ -1608,6 +1608,96 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Die Schatzinsel.
+        /// </summary>
+        internal static string SOCIALROOM_BOOK_I {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_BOOK_I", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Der Herr der Ringe.
+        /// </summary>
+        internal static string SOCIALROOM_BOOK_II {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_BOOK_II", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to De Profundis.
+        /// </summary>
+        internal static string SOCIALROOM_BOOK_III {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_BOOK_III", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Der Malteser Falke.
+        /// </summary>
+        internal static string SOCIALROOM_BOOK_IV {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_BOOK_IV", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 1984.
+        /// </summary>
+        internal static string SOCIALROOM_BOOK_IX {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_BOOK_IX", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Krieg und Frieden.
+        /// </summary>
+        internal static string SOCIALROOM_BOOK_V {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_BOOK_V", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Die Verwandlung.
+        /// </summary>
+        internal static string SOCIALROOM_BOOK_VI {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_BOOK_VI", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Romeo &amp; Julia.
+        /// </summary>
+        internal static string SOCIALROOM_BOOK_VII {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_BOOK_VII", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Die Dreigroschenoper.
+        /// </summary>
+        internal static string SOCIALROOM_BOOK_VIII {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_BOOK_VIII", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Die Blechtrommel.
+        /// </summary>
+        internal static string SOCIALROOM_BOOK_X {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_BOOK_X", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Du nimmst Dir wahrlos eines der Bücher aus dem Regel. &quot;{0}&quot; - ein weiteres Meisterwerk der Weltliteratur. Mit einem Lächeln im Geischt steckst Du es zurück an seinen Platz..
         /// </summary>
         internal static string SOCIALROOM_BOOKS {
@@ -1658,6 +1748,15 @@ namespace Fenrir13.Resources {
         internal static string SOCIALROOM_SEAT {
             get {
                 return ResourceManager.GetString("SOCIALROOM_SEAT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ein Arrangement von einer Couch und zwei Sesseln..
+        /// </summary>
+        internal static string SOCIALROOM_SEATGROUP {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_SEATGROUP", resourceCulture);
             }
         }
         

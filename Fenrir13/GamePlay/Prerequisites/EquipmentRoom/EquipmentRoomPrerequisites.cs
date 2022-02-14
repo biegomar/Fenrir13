@@ -24,13 +24,13 @@ internal static class EquipmentRoomPrerequisites
     
     private static void AddSurroundings(Location equipmentRoom)
     {
-        equipmentRoom.Surroundings.Add(Keys.CHAMBER_WALL, Descriptions.CHAMBER_WALL);
-        equipmentRoom.Surroundings.Add(Keys.EQUIPMENT_ROOM_BENCH, Descriptions.EQUIPMENT_ROOM_BENCH);
-        equipmentRoom.Surroundings.Add(Keys.EQUIPMENT_ROOM_NICHE, Descriptions.EQUIPMENT_ROOM_NICHE);
-        equipmentRoom.Surroundings.Add(Keys.EQUIPMENT_ROOM_TRASHBIN, Descriptions.EQUIPMENT_ROOM_TRASHBIN);
-        equipmentRoom.Surroundings.Add(Keys.EQUIPMENT_ROOM_CLOTH, Descriptions.EQUIPMENT_ROOM_CLOTH);
-        equipmentRoom.Surroundings.Add(Keys.EYELET, Descriptions.EYELET);
-        equipmentRoom.Surroundings.Add(Keys.CEILING, Descriptions.CEILING);
+        equipmentRoom.Surroundings.Add(Keys.CHAMBER_WALL, () => Descriptions.CHAMBER_WALL);
+        equipmentRoom.Surroundings.Add(Keys.EQUIPMENT_ROOM_BENCH, () => Descriptions.EQUIPMENT_ROOM_BENCH);
+        equipmentRoom.Surroundings.Add(Keys.EQUIPMENT_ROOM_NICHE, () => Descriptions.EQUIPMENT_ROOM_NICHE);
+        equipmentRoom.Surroundings.Add(Keys.EQUIPMENT_ROOM_TRASHBIN, () => Descriptions.EQUIPMENT_ROOM_TRASHBIN);
+        equipmentRoom.Surroundings.Add(Keys.EQUIPMENT_ROOM_CLOTH, () => Descriptions.EQUIPMENT_ROOM_CLOTH);
+        equipmentRoom.Surroundings.Add(Keys.EYELET, () => Descriptions.EYELET);
+        equipmentRoom.Surroundings.Add(Keys.CEILING, () => Descriptions.CEILING);
     }
 
     private static Item GetBox(EventProvider eventProvider)

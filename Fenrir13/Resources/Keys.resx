@@ -366,4 +366,7 @@
     <data name="SOCIALROOM_BOOKS" xml:space="preserve">
         <value>SOCIALROOM_BOOKS</value>
     </data>
+    <data name="SOCIALROOM_SEATGROUP" xml:space="preserve">
+        <value>SOCIALROOM_SEATGROUP</value>
+    </data>
 </root>

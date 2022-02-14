@@ -315,4 +315,7 @@
     <data name="SOCIALROOM_BOOKS" xml:space="preserve">
         <value>Die Bücher|Bücher|Buch</value>
     </data>
+    <data name="SOCIALROOM_SEATGROUP" xml:space="preserve">
+        <value>Die Sitzgruppe|Sitzgruppe</value>
+    </data>
 </root>

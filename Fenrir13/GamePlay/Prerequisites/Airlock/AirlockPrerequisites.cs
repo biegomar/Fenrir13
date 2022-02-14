@@ -106,10 +106,10 @@ internal class AirlockPrerequisites
     
     private static void AddSurroundings(Location location)
     {
-        location.Surroundings.Add(Keys.CEILING, Descriptions.CEILING);
-        location.Surroundings.Add(Keys.CHAMBER_WALL, Descriptions.CHAMBER_WALL);
-        location.Surroundings.Add(Keys.AIRLOCK_NORTHERN_WALL, Descriptions.AIRLOCK_NORTHERN_WALL);
-        location.Surroundings.Add(Keys.AIRLOCK_SOUTHERN_WALL, Descriptions.AIRLOCK_SOUTHERN_WALL);
+        location.Surroundings.Add(Keys.CEILING, () => Descriptions.CEILING);
+        location.Surroundings.Add(Keys.CHAMBER_WALL, () => Descriptions.CHAMBER_WALL);
+        location.Surroundings.Add(Keys.AIRLOCK_NORTHERN_WALL, () => Descriptions.AIRLOCK_NORTHERN_WALL);
+        location.Surroundings.Add(Keys.AIRLOCK_SOUTHERN_WALL, () => Descriptions.AIRLOCK_SOUTHERN_WALL);
     }
     
     private static void AddChangeRoomEvents(Location airlock, EventProvider eventProvider)
