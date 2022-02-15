@@ -32,15 +32,24 @@ internal partial class EventProvider
             var fridge = this.universe.ActiveLocation.GetItemByKey(Keys.FRIDGE);
             if (fridge != default)
             {
+                fridgeHandle.IsPickAble = true;
+                PrintingSubsystem.Resource(Descriptions.FRIDGE_DOOR_HANDLE_PULL);
+                var isHandlePicked = this.universe.PickObject(fridgeHandle, true);
+                if (!isHandlePicked || !this.universe.ActivePlayer.Items.Contains(fridgeHandle))
+                {
+                    fridge.Items.Remove(fridgeHandle);
+                    this.universe.ActiveLocation.Items.Add(fridgeHandle);
+                    PrintingSubsystem.Resource(Descriptions.FRIDGE_DOOR_HANDLE_DROP);
+                }
+
                 fridge.IsClosed = true;
                 fridge.IsLocked = true;
 
-                PrintingSubsystem.Resource(Descriptions.FRIDGE_DOOR_HANDLE_PULL);
-                fridgeHandle.IsPickAble = true;
                 fridgeHandle.IsHidden = false;
-                this.universe.PickObject(fridgeHandle, true);
+                fridgeHandle.ContainmentDescription = string.Empty;
+                    
                 this.universe.Score += this.universe.ScoreBoard[nameof(this.PullFridgeHandle)];
-                fridgeHandle.Pull -= PullFridgeHandle;    
+                fridgeHandle.Pull -= PullFridgeHandle;
             }
         }
     }

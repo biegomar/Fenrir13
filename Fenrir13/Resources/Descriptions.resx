@@ -729,4 +729,7 @@ Bei genauerer Betrachtung erkennst Du, dass dort eine viereckige Aussparung ist.
     <data name="SOCIALROOM_GLASS_TABLE" xml:space="preserve">
         <value>Ein kniehoher Glastisch, der vor der Couch ideal als Ablagefläche für Getränke oder Knabbereien genutzt werden kann.</value>
     </data>
+    <data name="FRIDGE_DOOR_HANDLE_DROP" xml:space="preserve">
+        <value>Da der Griff in der Kühlschranktür nicht mehr halten will, legst Du ihn einfach ab. Eventuell kannst Du ihn dann ja später hier abholen.</value>
+    </data>
 </root>

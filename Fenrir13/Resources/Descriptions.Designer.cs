@@ -1091,6 +1091,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Da der Griff in der Kühlschranktür nicht mehr halten will, legst Du ihn einfach ab. Eventuell kannst Du ihn dann ja später hier abholen..
+        /// </summary>
+        internal static string FRIDGE_DOOR_HANDLE_DROP {
+            get {
+                return ResourceManager.GetString("FRIDGE_DOOR_HANDLE_DROP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Der Griff steckt fest in der Klappe und kann dazu benutzt werden, sie zu öffnen..
         /// </summary>
         internal static string FRIDGE_DOOR_HANDLE_FLAP_LINKEDTO {
