@@ -61,8 +61,8 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Schleuse dient als Weg nach Draußen und sobald Du komplett eingetreten bist, schließt sich die Tür hinter Dir und ein Ansaugegeräusch gibt Dir zu verstehen, dass sie gegen ein mögliches Vakuum gerüstet ist . Du fühlst plötzlich, dass Deine Glieder sich leichter anfühlen, Deine Bewegungen sind mühelos und Du spürst kaum noch Dein eigenes Gewicht. Klar, denn hier in der Schleuse wird bereits auf die künstliche Schwerkraft verzichtet. 
-        ///Am südlichen Ende der Schleuse trennt ein weiteres, massives Schott de [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to Die Schleuse dient als Weg nach Draußen und sobald Du komplett eingetreten bist, schließt sich die Tür hinter Dir und ein Ansaugegeräusch gibt Dir zu verstehen, dass sie gegen ein mögliches Vakuum gesichert wird. Du fühlst plötzlich, dass Deine Glieder sich leichter anfühlen, Deine Bewegungen sind mühelos und Du spürst kaum noch Dein eigenes Gewicht. Offenkundig wird hier in der Schleuse bereits auf die künstliche Schwerkraft verzichtet. 
+        ///Am südlichen Ende der Schleuse trennt ein weiteres, massives Schott  [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string AIRLOCK {
             get {
@@ -645,7 +645,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to In diesem Abschnitt des Flures hängt das Bild eines Fluchtplans. Der Umriss dieser Etage mit den einzelnen Räumen. Ein roter Punkt markiert Deinen Standort und grüne Pfeile weisen in Richtung Mitte des Korridoren und dann nach unten in die Maschinenräume..
+        ///   Looks up a localized string similar to In diesem Abschnitt des Flures hängt das Bild eines Fluchtplans. Er zeigt den Umriss dieser Etage mit den einzelnen Räumen. Ein roter Punkt markiert Deinen Standort und grüne Pfeile weisen in Richtung Mitte des Korridoren und dann nach unten in die Maschinenräume. Gut zu wissen!.
         /// </summary>
         internal static string CORRIDOR_PAINTING_EAST {
             get {
@@ -856,11 +856,20 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Hier ist der Maschinenraum..
+        ///   Looks up a localized string similar to Beim Eintreten in den Raum erwartet Dich eine Symbiose aus hochmodernster Technik und postmoderner Kunst. Das Zentrum des Raumes wird gebildet von drei metallischen Stehlen, an deren Kopfende auf einer massiven Platte jeweils ein Würfel ruht. Die Stehlen haben eine Abstand von gut einem Meter zueinander und jeweils eine Kante der Kopfplatte, die Du als Vorne interpretierst, scheint eine Tangente an einen imaginären Kreis anzulegen, um den herum die Säulen angeordnet sind. Ein schwaches, künstliches Leuchten [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string ENGINE_ROOM {
             get {
                 return ResourceManager.GetString("ENGINE_ROOM", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Zwei einzelne rote Punkte auf der Obefläche des Holograms erregen Deine Aufmerksamkeit..
+        /// </summary>
+        internal static string ENGINE_ROOM_FIRSTLOOK {
+            get {
+                return ResourceManager.GetString("ENGINE_ROOM_FIRSTLOOK", resourceCulture);
             }
         }
         
@@ -965,7 +974,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Nischen sind raumhoch, etwas breiter als einen halben Meter und tief genug, um seine Klamotten komplett verschwinden zu lassen. Auf Brusthöhe ist eine Garderobenstange eingelassen und ermöglich es, daran Klamotten aufzuhängen. Auf Höhe der Sitzfläche kann man auf einer Ablage beispielsweise eine Tasche oder Schuhe abstellen. Alles sehr funktional..
+        ///   Looks up a localized string similar to Die Nischen sind raumhoch, etwas breiter als einen halben Meter und tief genug, um seine Klamotten komplett verschwinden zu lassen. Auf Brusthöhe ist eine Garderobenstange eingelassen und ermöglich es, daran Jacken oder Hemden aufzuhängen. Auf Höhe der Sitzfläche kann man auf einer Ablage beispielsweise eine Tasche oder Schuhe abstellen. Alles sehr funktional..
         /// </summary>
         internal static string EQUIPMENT_ROOM_NICHE {
             get {

@@ -214,7 +214,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Stiefel|Stiefel|Moonboots|Boots.
+        ///   Looks up a localized string similar to Die Stiefel|Stiefel|Moonboots|Boots|Schuhe.
         /// </summary>
         internal static string BOOTS {
             get {
@@ -844,7 +844,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Bücher|Bücher|Buch.
+        ///   Looks up a localized string similar to Die Bücher|Bücher|Buch|Bücherregal|Regal.
         /// </summary>
         internal static string SOCIALROOM_BOOKS {
             get {

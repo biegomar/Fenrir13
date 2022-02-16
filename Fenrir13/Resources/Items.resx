@@ -190,7 +190,7 @@
         <value>Die Handschuhe|Handschuhe|Handschuh</value>
     </data>
     <data name="BOOTS" xml:space="preserve">
-        <value>Die Stiefel|Stiefel|Moonboots|Boots</value>
+        <value>Die Stiefel|Stiefel|Moonboots|Boots|Schuhe</value>
     </data>
     <data name="EQUIPMENT_BOX_LOCK" xml:space="preserve">
         <value>Das Vorhängeschloss|Vorhängeschloss|Schloss|Schloß</value>
@@ -313,7 +313,7 @@
         <value>Die Antenne|Antenne</value>
     </data>
     <data name="SOCIALROOM_BOOKS" xml:space="preserve">
-        <value>Die Bücher|Bücher|Buch</value>
+        <value>Die Bücher|Bücher|Buch|Bücherregal|Regal</value>
     </data>
     <data name="SOCIALROOM_SEATGROUP" xml:space="preserve">
         <value>Die Sitzgruppe|Sitzgruppe</value>

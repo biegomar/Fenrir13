@@ -12,7 +12,8 @@ internal class EngineRoomPrerequisites
         {
             Key = Keys.ENGINE_ROOM,
             Name = Locations.ENGINE_ROOM,
-            Description = Descriptions.ENGINE_ROOM
+            Description = Descriptions.ENGINE_ROOM,
+            FirstLookDescription = Descriptions.ENGINE_ROOM_FIRSTLOOK,
         };
 
         AddSurroundings(engine);
