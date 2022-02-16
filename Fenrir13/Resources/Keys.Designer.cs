@@ -538,6 +538,24 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to ENGINE_ROOM_RED_DOTS.
+        /// </summary>
+        internal static string ENGINE_ROOM_RED_DOTS {
+            get {
+                return ResourceManager.GetString("ENGINE_ROOM_RED_DOTS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ENGINE_ROOM_SHIP_MODEL.
+        /// </summary>
+        internal static string ENGINE_ROOM_SHIP_MODEL {
+            get {
+                return ResourceManager.GetString("ENGINE_ROOM_SHIP_MODEL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to EQUIPMENT_BOX.
         /// </summary>
         internal static string EQUIPMENT_BOX {

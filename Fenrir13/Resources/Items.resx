@@ -354,4 +354,10 @@
     <data name="SOCIALROOM_GLASS_TABLE" xml:space="preserve">
         <value>Der Glastisch|Glastisch|Tisch</value>
     </data>
+    <data name="ENGINE_ROOM_SHIP_MODEL" xml:space="preserve">
+        <value>Das Hologramm|Hologramm|Hologram|Modell</value>
+    </data>
+    <data name="ENGINE_ROOM_RED_DOTS" xml:space="preserve">
+        <value>Rote Punkte|Roter Punkt|Punkte|Punkt</value>
+    </data>
 </root>

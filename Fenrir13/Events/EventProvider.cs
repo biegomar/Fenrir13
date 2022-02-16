@@ -240,6 +240,15 @@ internal partial class EventProvider
         }
     }
     
+    internal void LookAtRedDots(object sender, ContainerObjectEventArgs eventArgs)
+    {
+        if (sender is Location engineRoom && engineRoom.Key == Keys.ENGINE_ROOM && eventArgs.ExternalItemKey == Keys.ENGINE_ROOM_RED_DOTS)
+        {
+            this.universe.Score += this.universe.ScoreBoard[nameof(this.LookAtRedDots)];
+            engineRoom.AfterLook -= LookAtRedDots;
+        }
+    }
+    
     internal void TryToOpenClosedDoor(object sender, ContainerObjectEventArgs eventArgs)
     {
         if (sender is Location cryoChamber && cryoChamber.Key == Keys.CRYOCHAMBER && eventArgs.ExternalItemKey == Keys.CRYOCHAMBER_DOOR)

@@ -865,11 +865,30 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Zwei einzelne rote Punkte auf der Obefläche des Holograms erregen Deine Aufmerksamkeit..
+        ///   Looks up a localized string similar to Als Du die roten Punkte imaginär berührst erhälst Du detaillierte Informationen dazu: 
+        ///Der erste markiert den Reparatur-Droiden und er hat sein Dock auf dem Dach der Brücke. Du kannst erkennen, dass Du von der Schleuse eine einfache Sprossenleiter erklimmen musst, um ihn zu erreichen. Die Analyse der Situation durch den Cluster hat ergeben, dass offenbar derselbe Vorfall, der für das Loch im Rumpf verantwortlich ist auch die Antenne des Droiden tuschiert und abgeknickt hat. Sobald diese durch eine neue ers [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string ENGINE_ROOM_FIRSTLOOK {
+        internal static string ENGINE_ROOM_RED_DOTS {
             get {
-                return ResourceManager.GetString("ENGINE_ROOM_FIRSTLOOK", resourceCulture);
+                return ResourceManager.GetString("ENGINE_ROOM_RED_DOTS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Das Schiffsmodell wird in dem Hologramm in einer beachtlichen Detailtiefe dargestellt. Als Du Deine Hände danach ausstreckst, merkst Du, dass Du es nach Belieben um alle Achsen drehen, sowie verkleinern und vergrößern kannst..
+        /// </summary>
+        internal static string ENGINE_ROOM_SHIP_MODEL {
+            get {
+                return ResourceManager.GetString("ENGINE_ROOM_SHIP_MODEL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Zwei einzelne rote Punkte auf der Oberfläche des Hologramms erregen Deine Aufmerksamkeit..
+        /// </summary>
+        internal static string ENGINE_ROOM_SHIP_MODEL_CONTAINMENT {
+            get {
+                return ResourceManager.GetString("ENGINE_ROOM_SHIP_MODEL_CONTAINMENT", resourceCulture);
             }
         }
         
