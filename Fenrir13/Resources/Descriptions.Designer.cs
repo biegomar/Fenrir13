@@ -856,11 +856,38 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Beim Eintreten in den Raum erwartet Dich eine Symbiose aus hochmodernster Technik und postmoderner Kunst. Das Zentrum des Raumes wird gebildet von drei metallischen Stehlen, an deren Kopfende auf einer massiven Platte jeweils ein Würfel ruht. Die Stehlen haben eine Abstand von gut einem Meter zueinander und jeweils eine Kante der Kopfplatte, die Du als Vorne interpretierst, scheint eine Tangente an einen imaginären Kreis anzulegen, um den herum die Säulen angeordnet sind. Ein schwaches, künstliches Leuchten [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to Beim Eintreten in den Raum erwartet Dich eine Symbiose aus hoch modernster Technik und postmoderner Kunst. Das Zentrum des Raumes wird gebildet von drei runden metallischen Stehlen, an deren Kopfende auf einer massiven Platte jeweils ein Würfel ruht. Die Stehlen haben eine Abstand von gut einem Meter zueinander und jeweils eine Kante der Kopfplatte, die Du als Vorne interpretierst, scheint eine Tangente an einen imaginären Kreis anzulegen, um den herum die Säulen angeordnet sind. Ein schwaches, künstliches  [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string ENGINE_ROOM {
             get {
                 return ResourceManager.GetString("ENGINE_ROOM", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Mit der Kunst sind hier die leuchtenden Stehlen gemeint, die wie auf einem Halbkreis stehend ausgerichtet sind..
+        /// </summary>
+        internal static string ENGINE_ROOM_ART {
+            get {
+                return ResourceManager.GetString("ENGINE_ROOM_ART", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Du weißt nicht viel über die Funktionsweise von Quantencomputern. Aber Du weißt, dass selbst die Leistungsfähigkeit dieser Maschine an ihre Grenzen stößt, wenn sie z.B. die kürzeste Rundreise zu allen Sonnen der Milchstraße berechnen sollte. Na ja, ist halt so..
+        /// </summary>
+        internal static string ENGINE_ROOM_COMPUTER {
+            get {
+                return ResourceManager.GetString("ENGINE_ROOM_COMPUTER", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Die Platte besteht aus dem selben Metal wie die Stehlen und ist gut einen Zentimeter dick. Sie überragt die Fläche der Stehlen um Einiges und bietet somit genug Platz für die Würfel..
+        /// </summary>
+        internal static string ENGINE_ROOM_HEAD {
+            get {
+                return ResourceManager.GetString("ENGINE_ROOM_HEAD", resourceCulture);
             }
         }
         
@@ -889,6 +916,33 @@ namespace Fenrir13.Resources {
         internal static string ENGINE_ROOM_SHIP_MODEL_CONTAINMENT {
             get {
                 return ResourceManager.GetString("ENGINE_ROOM_SHIP_MODEL_CONTAINMENT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Die Stehlen haben eine Abstand von gut einem Meter zueinander und jeweils eine Kante der Kopfplatte, die Du als Vorne interpretierst, scheint eine Tangente an einen imaginären Kreis anzulegen, um den herum die Säulen angeordnet sind. Ein schwaches, künstliches Leuchten scheint den Stehlen zu entstammen und taucht den Halbkreis den sie bilden in ein futuristisches Licht..
+        /// </summary>
+        internal static string ENGINE_ROOM_STEALING {
+            get {
+                return ResourceManager.GetString("ENGINE_ROOM_STEALING", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Das sagt Wikipedia: Eine Tangente (von lateinisch: tangere ‚berühren‘) ist in der Geometrie eine Gerade, die eine gegebene Kurve in einem bestimmten Punkt berührt..
+        /// </summary>
+        internal static string ENGINE_ROOM_TANGENT {
+            get {
+                return ResourceManager.GetString("ENGINE_ROOM_TANGENT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Mit der Technik ist der aus drei einzelnen Rechenwürfeln bestehende Quantencluster gemeint..
+        /// </summary>
+        internal static string ENGINE_ROOM_TECHNIC {
+            get {
+                return ResourceManager.GetString("ENGINE_ROOM_TECHNIC", resourceCulture);
             }
         }
         

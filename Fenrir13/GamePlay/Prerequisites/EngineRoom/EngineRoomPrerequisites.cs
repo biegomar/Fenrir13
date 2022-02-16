@@ -41,6 +41,12 @@ internal class EngineRoomPrerequisites
     {
         engine.Surroundings.Add(Keys.CEILING, () => Descriptions.CEILING);
         engine.Surroundings.Add(Keys.ENGINE_ROOM_RED_DOTS, () => Descriptions.ENGINE_ROOM_RED_DOTS);
+        engine.Surroundings.Add(Keys.ENGINE_ROOM_ART, () => Descriptions.ENGINE_ROOM_ART);
+        engine.Surroundings.Add(Keys.ENGINE_ROOM_TECHNIC, () => Descriptions.ENGINE_ROOM_TECHNIC);
+        engine.Surroundings.Add(Keys.ENGINE_ROOM_STEALING, () => Descriptions.ENGINE_ROOM_STEALING);
+        engine.Surroundings.Add(Keys.ENGINE_ROOM_HEAD, () => Descriptions.ENGINE_ROOM_HEAD);
+        engine.Surroundings.Add(Keys.ENGINE_ROOM_TANGENT, () => Descriptions.ENGINE_ROOM_TANGENT);
+        engine.Surroundings.Add(Keys.ENGINE_ROOM_COMPUTER, () => Descriptions.ENGINE_ROOM_COMPUTER);
     }
     
     private static void AddAfterLookEvents(Location item, EventProvider eventProvider)

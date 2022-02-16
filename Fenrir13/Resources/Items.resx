@@ -360,4 +360,22 @@
     <data name="ENGINE_ROOM_RED_DOTS" xml:space="preserve">
         <value>Rote Punkte|Roter Punkt|Punkte|Punkt</value>
     </data>
+    <data name="ENGINE_ROOM_ART" xml:space="preserve">
+        <value>Die Kunst|Kunst|Halbkreis|Licht|Korona</value>
+    </data>
+    <data name="ENGINE_ROOM_TECHNIC" xml:space="preserve">
+        <value>Die Technik|Technik</value>
+    </data>
+    <data name="ENGINE_ROOM_STEALING" xml:space="preserve">
+        <value>Die Stehlen|Stehlen|Stehle|Säulen|Säule</value>
+    </data>
+    <data name="ENGINE_ROOM_HEAD" xml:space="preserve">
+        <value>Das Kopfende|Kopfende|Platte|Kopfplatte|Kante</value>
+    </data>
+    <data name="ENGINE_ROOM_TANGENT" xml:space="preserve">
+        <value>Die Tangente|Tangente</value>
+    </data>
+    <data name="ENGINE_ROOM_COMPUTER" xml:space="preserve">
+        <value>Der Quantencluster|Quantencluster|Quantencomputer|Computer|Recheneinheit</value>
+    </data>
 </root>

@@ -439,6 +439,33 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Die Kunst|Kunst|Halbkreis|Licht|Korona.
+        /// </summary>
+        internal static string ENGINE_ROOM_ART {
+            get {
+                return ResourceManager.GetString("ENGINE_ROOM_ART", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Der Quantencluster|Quantencluster|Quantencomputer|Computer|Recheneinheit.
+        /// </summary>
+        internal static string ENGINE_ROOM_COMPUTER {
+            get {
+                return ResourceManager.GetString("ENGINE_ROOM_COMPUTER", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Das Kopfende|Kopfende|Platte|Kopfplatte|Kante.
+        /// </summary>
+        internal static string ENGINE_ROOM_HEAD {
+            get {
+                return ResourceManager.GetString("ENGINE_ROOM_HEAD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Rote Punkte|Roter Punkt|Punkte|Punkt.
         /// </summary>
         internal static string ENGINE_ROOM_RED_DOTS {
@@ -453,6 +480,33 @@ namespace Fenrir13.Resources {
         internal static string ENGINE_ROOM_SHIP_MODEL {
             get {
                 return ResourceManager.GetString("ENGINE_ROOM_SHIP_MODEL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Die Stehlen|Stehlen|Stehle|Säulen|Säule.
+        /// </summary>
+        internal static string ENGINE_ROOM_STEALING {
+            get {
+                return ResourceManager.GetString("ENGINE_ROOM_STEALING", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Die Tangente|Tangente.
+        /// </summary>
+        internal static string ENGINE_ROOM_TANGENT {
+            get {
+                return ResourceManager.GetString("ENGINE_ROOM_TANGENT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Die Technik|Technik.
+        /// </summary>
+        internal static string ENGINE_ROOM_TECHNIC {
+            get {
+                return ResourceManager.GetString("ENGINE_ROOM_TECHNIC", resourceCulture);
             }
         }
         

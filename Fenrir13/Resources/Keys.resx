@@ -411,4 +411,22 @@
     <data name="ENGINE_ROOM_RED_DOTS" xml:space="preserve">
         <value>ENGINE_ROOM_RED_DOTS</value>
     </data>
+    <data name="ENGINE_ROOM_ART" xml:space="preserve">
+        <value>ENGINE_ROOM_ART</value>
+    </data>
+    <data name="ENGINE_ROOM_TECHNIC" xml:space="preserve">
+        <value>ENGINE_ROOM_TECHNIC</value>
+    </data>
+    <data name="ENGINE_ROOM_STEALING" xml:space="preserve">
+        <value>ENGINE_ROOM_STEALING</value>
+    </data>
+    <data name="ENGINE_ROOM_HEAD" xml:space="preserve">
+        <value>ENGINE_ROOM_HEAD</value>
+    </data>
+    <data name="ENGINE_ROOM_TANGENT" xml:space="preserve">
+        <value>ENGINE_ROOM_TANGENT</value>
+    </data>
+    <data name="ENGINE_ROOM_COMPUTER" xml:space="preserve">
+        <value>ENGINE_ROOM_COMPUTER</value>
+    </data>
 </root>
