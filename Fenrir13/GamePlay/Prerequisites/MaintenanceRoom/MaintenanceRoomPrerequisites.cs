@@ -57,7 +57,7 @@ internal static class MaintenanceRoomPrerequisites
     
     private static Item GetTool(EventProvider eventProvider)
     {
-        return new()
+        var result = new Item()
         {
             Key = Keys.MAINTENANCE_ROOM_TOOL,
             Name = Items.MAINTENANCE_ROOM_TOOL,
@@ -66,5 +66,16 @@ internal static class MaintenanceRoomPrerequisites
             IsHidden = true,
             Weight = 100
         };
+        
+        AddTakeEvents(result, eventProvider);
+
+        return result;
     }
+    
+    private static void AddTakeEvents(Item item, EventProvider eventProvider)
+    {
+        item.AfterTake += eventProvider.TakeTool;
+        eventProvider.ScoreBoard.Add(nameof(eventProvider.TakeTool), 1);
+    }
+    
 }

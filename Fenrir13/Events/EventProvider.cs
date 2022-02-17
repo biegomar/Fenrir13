@@ -10,7 +10,7 @@ using PowerArgs;
 
 namespace Fenrir13.Events;
 
-internal partial class EventProvider
+internal class EventProvider
 {
     private readonly Universe universe;
     private readonly IPrintingSubsystem PrintingSubsystem;
@@ -641,6 +641,15 @@ internal partial class EventProvider
         {
             this.universe.Score += this.universe.ScoreBoard[nameof(this.TakeDumbbellBar)];
             bar.AfterTake -= TakeDumbbellBar;
+        }
+    }
+    
+    internal void TakeTool(object sender, ContainerObjectEventArgs eventArg)
+    {
+        if (sender is Item tool && tool.Key == Keys.MAINTENANCE_ROOM_TOOL)
+        {
+            this.universe.Score += this.universe.ScoreBoard[nameof(this.TakeTool)];
+            tool.AfterTake -= TakeTool;
         }
     }
     
