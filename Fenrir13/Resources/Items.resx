@@ -378,4 +378,13 @@
     <data name="ENGINE_ROOM_COMPUTER" xml:space="preserve">
         <value>Der Quantencluster|Quantencluster|Quantencomputer|Computer|Recheneinheit</value>
     </data>
+    <data name="MAINTENANCE_ROOM_DRAWER" xml:space="preserve">
+        <value>Die Schublade|Schublade|Schubladen|Schubfach|Schubfächer|Fächer</value>
+    </data>
+    <data name="MAINTENANCE_ROOM_TOOL" xml:space="preserve">
+        <value>Das Multifunktionswerkzeug|Multifunktionswerkzeug|Werkzeug|Gerät</value>
+    </data>
+    <data name="MAINTENANCE_ROOM_WORKBENCH" xml:space="preserve">
+        <value>Die Werkbank|Werkbank</value>
+    </data>
 </root>

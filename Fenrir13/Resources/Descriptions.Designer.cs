@@ -1428,11 +1428,74 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Für Alles, was an mechnischen Arbeiten oder Reparaturen ansteht gibt es diese kleine Werkstatt. An der östlichen Wand steht dafür eine breite Werkbank zur Verfügung. Die große Arbeitsplatte ist sehr aufgeräumt und es befinden sich keine Gegenstände auf ihr. Schubladen unterhalb der Platte bieten Platz, um den Bereich gut zu organisieren. Über der Werkbank ist ein Regal angebracht, an dem allerlei Werkzeug befestigt ist..
+        ///   Looks up a localized string similar to Für Alles, was an mechnischen Arbeiten oder Reparaturen ansteht gibt es diese kleine Werkstatt. An der östlichen Wand steht dafür eine breite Werkbank zur Verfügung. Die große Arbeitsplatte ist sehr aufgeräumt und es befinden sich keine Gegenstände auf ihr. Eine Schublade unterhalb der Platte bieten Platz, um den Bereich gut zu organisieren. Über der Werkbank ist ein Regal angebracht, an dem allerlei Werkzeug befestigt ist..
         /// </summary>
         internal static string MAINTENANCE_ROOM {
             get {
                 return ResourceManager.GetString("MAINTENANCE_ROOM", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Eine breite Schublade, die man an zwei Griffen öffnen kann..
+        /// </summary>
+        internal static string MAINTENANCE_ROOM_DRAWER {
+            get {
+                return ResourceManager.GetString("MAINTENANCE_ROOM_DRAWER", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Im Moment ist sie geschlossen..
+        /// </summary>
+        internal static string MAINTENANCE_ROOM_DRAWER_CLOSE {
+            get {
+                return ResourceManager.GetString("MAINTENANCE_ROOM_DRAWER_CLOSE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Im Moment ist sie aufgeräumt und leer und nur eine Schublade an der Unterseite der Arbeitsplatte erweckt Deine Aufmerksamkeit..
+        /// </summary>
+        internal static string MAINTENANCE_ROOM_DRAWER_CONTAINMENT {
+            get {
+                return ResourceManager.GetString("MAINTENANCE_ROOM_DRAWER_CONTAINMENT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Im Moment ist sie geöffnet..
+        /// </summary>
+        internal static string MAINTENANCE_ROOM_DRAWER_OPEN {
+            get {
+                return ResourceManager.GetString("MAINTENANCE_ROOM_DRAWER_OPEN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ein sehr handliches Werkzeug, das gut geeignet scheint, um Dinge anzuschrauben..
+        /// </summary>
+        internal static string MAINTENANCE_ROOM_TOOL {
+            get {
+                return ResourceManager.GetString("MAINTENANCE_ROOM_TOOL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Neben etwas Krims-Krams ist hier ein handliches Multifunktionswerkzeug. Das scheint ein Gerät zu sein, mit dem auch Du zurecht kommst..
+        /// </summary>
+        internal static string MAINTENANCE_ROOM_TOOL_CONTAINMENT {
+            get {
+                return ResourceManager.GetString("MAINTENANCE_ROOM_TOOL_CONTAINMENT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Genug Platz für einfache handwerkliche Tätigkeiten..
+        /// </summary>
+        internal static string MAINTENANCE_ROOM_WORKBENCH {
+            get {
+                return ResourceManager.GetString("MAINTENANCE_ROOM_WORKBENCH", resourceCulture);
             }
         }
         

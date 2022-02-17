@@ -763,6 +763,27 @@ Der Zweite Punkt verweist auf die mechanische Vorrichtung, um die Solarpanele au
         <value>Du weißt nicht viel über die Funktionsweise von Quantencomputern. Aber Du weißt, dass selbst die Leistungsfähigkeit dieser Maschine an ihre Grenzen stößt, wenn sie z.B. die kürzeste Rundreise zu allen Sonnen der Milchstraße berechnen sollte. Na ja, ist halt so.</value>
     </data>
     <data name="MAINTENANCE_ROOM" xml:space="preserve">
-        <value>Für Alles, was an mechnischen Arbeiten oder Reparaturen ansteht gibt es diese kleine Werkstatt. An der östlichen Wand steht dafür eine breite Werkbank zur Verfügung. Die große Arbeitsplatte ist sehr aufgeräumt und es befinden sich keine Gegenstände auf ihr. Schubladen unterhalb der Platte bieten Platz, um den Bereich gut zu organisieren. Über der Werkbank ist ein Regal angebracht, an dem allerlei Werkzeug befestigt ist.</value>
+        <value>Für Alles, was an mechnischen Arbeiten oder Reparaturen ansteht gibt es diese kleine Werkstatt. An der östlichen Wand steht dafür eine breite Werkbank zur Verfügung. Die große Arbeitsplatte ist sehr aufgeräumt und es befinden sich keine Gegenstände auf ihr. Eine Schublade unterhalb der Platte bieten Platz, um den Bereich gut zu organisieren. Über der Werkbank ist ein Regal angebracht, an dem allerlei Werkzeug befestigt ist.</value>
+    </data>
+    <data name="MAINTENANCE_ROOM_DRAWER" xml:space="preserve">
+        <value>Eine breite Schublade, die man an zwei Griffen öffnen kann.</value>
+    </data>
+    <data name="MAINTENANCE_ROOM_TOOL" xml:space="preserve">
+        <value>Ein sehr handliches Werkzeug, das gut geeignet scheint, um Dinge anzuschrauben.</value>
+    </data>
+    <data name="MAINTENANCE_ROOM_WORKBENCH" xml:space="preserve">
+        <value>Genug Platz für einfache handwerkliche Tätigkeiten.</value>
+    </data>
+    <data name="MAINTENANCE_ROOM_DRAWER_CONTAINMENT" xml:space="preserve">
+        <value>Im Moment ist sie aufgeräumt und leer und nur eine Schublade an der Unterseite der Arbeitsplatte erweckt Deine Aufmerksamkeit.</value>
+    </data>
+    <data name="MAINTENANCE_ROOM_TOOL_CONTAINMENT" xml:space="preserve">
+        <value>Neben etwas Krims-Krams ist hier ein handliches Multifunktionswerkzeug. Das scheint ein Gerät zu sein, mit dem auch Du zurecht kommst.</value>
+    </data>
+    <data name="MAINTENANCE_ROOM_DRAWER_CLOSE" xml:space="preserve">
+        <value>Im Moment ist sie geschlossen.</value>
+    </data>
+    <data name="MAINTENANCE_ROOM_DRAWER_OPEN" xml:space="preserve">
+        <value>Im Moment ist sie geöffnet.</value>
     </data>
 </root>

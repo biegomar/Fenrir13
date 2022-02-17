@@ -432,4 +432,13 @@
     <data name="MAINTENANCE_ROOM" xml:space="preserve">
         <value>MAINTENANCE_ROOM</value>
     </data>
+    <data name="MAINTENANCE_ROOM_DRAWER" xml:space="preserve">
+        <value>MAINTENANCE_ROOM_DRAWER</value>
+    </data>
+    <data name="MAINTENANCE_ROOM_TOOL" xml:space="preserve">
+        <value>MAINTENANCE_ROOM_TOOL</value>
+    </data>
+    <data name="MAINTENANCE_ROOM_WORKBENCH" xml:space="preserve">
+        <value>MAINTENANCE_ROOM_WORKBENCH</value>
+    </data>
 </root>

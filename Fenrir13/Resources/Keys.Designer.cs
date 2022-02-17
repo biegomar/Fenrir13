@@ -844,6 +844,33 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to MAINTENANCE_ROOM_DRAWER.
+        /// </summary>
+        internal static string MAINTENANCE_ROOM_DRAWER {
+            get {
+                return ResourceManager.GetString("MAINTENANCE_ROOM_DRAWER", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MAINTENANCE_ROOM_TOOL.
+        /// </summary>
+        internal static string MAINTENANCE_ROOM_TOOL {
+            get {
+                return ResourceManager.GetString("MAINTENANCE_ROOM_TOOL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MAINTENANCE_ROOM_WORKBENCH.
+        /// </summary>
+        internal static string MAINTENANCE_ROOM_WORKBENCH {
+            get {
+                return ResourceManager.GetString("MAINTENANCE_ROOM_WORKBENCH", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to MIRROR.
         /// </summary>
         internal static string MIRROR {

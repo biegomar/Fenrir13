@@ -700,6 +700,33 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Die Schublade|Schublade|Schubladen|Schubfach|Schubfächer|Fächer.
+        /// </summary>
+        internal static string MAINTENANCE_ROOM_DRAWER {
+            get {
+                return ResourceManager.GetString("MAINTENANCE_ROOM_DRAWER", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Das Multifunktionswerkzeug|Multifunktionswerkzeug|Werkzeug|Gerät.
+        /// </summary>
+        internal static string MAINTENANCE_ROOM_TOOL {
+            get {
+                return ResourceManager.GetString("MAINTENANCE_ROOM_TOOL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Die Werkbank|Werkbank.
+        /// </summary>
+        internal static string MAINTENANCE_ROOM_WORKBENCH {
+            get {
+                return ResourceManager.GetString("MAINTENANCE_ROOM_WORKBENCH", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Spiegel.
         /// </summary>
         internal static string MIRROR {
