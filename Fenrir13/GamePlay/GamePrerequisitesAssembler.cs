@@ -9,6 +9,7 @@ using Fenrir13.GamePlay.Prerequisites.EquipmentRoom;
 using Fenrir13.GamePlay.Prerequisites.Gym;
 using Fenrir13.GamePlay.Prerequisites.Kitchen;
 using Fenrir13.GamePlay.Prerequisites.MachineCorridor;
+using Fenrir13.GamePlay.Prerequisites.MaintenanceRoom;
 using Fenrir13.GamePlay.Prerequisites.PlayerConfig;
 using Fenrir13.GamePlay.Prerequisites.SocialRoom;
 using Fenrir13.Resources;
@@ -49,6 +50,7 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
         var airlock = AirlockPrerequisites.Get(this.eventProvider);
         var engineRoom = EngineRoomPrerequisites.Get(this.eventProvider);
         var equipmentRoom = EquipmentRoomPrerequisites.Get(this.eventProvider);
+        var maintenanceRoom = MaintenanceRoomPrerequisites.Get(this.eventProvider);
         
         map.Add(cryoChamber, CryoChamberLocationMap(corridorEast));
         map.Add(corridorEast, CorridorEastLocationMap(cryoChamber, corridorMidEast, emptyChamberOne, emptyChamberTwo));
@@ -58,7 +60,7 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
         map.Add(corridorWest, CorridorWestLocationMap(corridorMidWest));
         map.Add(bridge, BridgeLocationMap(corridorMid));
         map.Add(computerTerminal, new List<DestinationNode>());
-        map.Add(machineCorridorMid, MachineCorridorMidLocationMap(corridorMid, airlock, engineRoom, equipmentRoom));
+        map.Add(machineCorridorMid, MachineCorridorMidLocationMap(corridorMid, airlock, engineRoom, equipmentRoom, maintenanceRoom));
         map.Add(gym, GymLocationMap(corridorMidWest));
         map.Add(ambulance, AmbulanceLocationMap(corridorMidWest));
         map.Add(socialRoom, SocialRoomLocationMap(corridorMidEast));
@@ -66,6 +68,7 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
         map.Add(airlock, AirlockLocationMap(machineCorridorMid));
         map.Add(engineRoom, EngineRoomLocationMap(machineCorridorMid));
         map.Add(equipmentRoom, EquipmentRoomLocationMap(machineCorridorMid));
+        map.Add(maintenanceRoom, MaintenanceRoomLocationMap(machineCorridorMid));
 
         var activeLocation = cryoChamber;
         var activePlayer = PlayerPrerequisites.Get(this.eventProvider);
@@ -73,7 +76,7 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
         return (map, activeLocation, activePlayer);
     }
 
-    private static IEnumerable<DestinationNode> MachineCorridorMidLocationMap(Location corridorMid, Location airlock, Location engineRoom, Location equipmentRoom)
+    private static IEnumerable<DestinationNode> MachineCorridorMidLocationMap(Location corridorMid, Location airlock, Location engineRoom, Location equipmentRoom, Location maintenanceRoom)
     {
         var locationMap = new List<DestinationNode>
         {
@@ -81,6 +84,8 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
             new() {Direction = Directions.S, Location = airlock, IsHidden = false},
             new() {Direction = Directions.N, Location = engineRoom, IsHidden = false},
             new() {Direction = Directions.W, Location = equipmentRoom, IsHidden = false},
+            new() {Direction = Directions.E, Location = maintenanceRoom, IsHidden = false},
+            
         };
         return locationMap;  
     }
@@ -90,6 +95,15 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
         var locationMap = new List<DestinationNode>
         {
             new() {Direction = Directions.E, Location = machineCorridorMid, IsHidden = false},
+        };
+        return locationMap;
+    }
+    
+    private static IEnumerable<DestinationNode> MaintenanceRoomLocationMap(Location machineCorridorMid)
+    {
+        var locationMap = new List<DestinationNode>
+        {
+            new() {Direction = Directions.W, Location = machineCorridorMid, IsHidden = false},
         };
         return locationMap;
     }

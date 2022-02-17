@@ -762,4 +762,7 @@ Der Zweite Punkt verweist auf die mechanische Vorrichtung, um die Solarpanele au
     <data name="ENGINE_ROOM_COMPUTER" xml:space="preserve">
         <value>Du weißt nicht viel über die Funktionsweise von Quantencomputern. Aber Du weißt, dass selbst die Leistungsfähigkeit dieser Maschine an ihre Grenzen stößt, wenn sie z.B. die kürzeste Rundreise zu allen Sonnen der Milchstraße berechnen sollte. Na ja, ist halt so.</value>
     </data>
+    <data name="MAINTENANCE_ROOM" xml:space="preserve">
+        <value>Für Alles, was an mechnischen Arbeiten oder Reparaturen ansteht gibt es diese kleine Werkstatt. An der östlichen Wand steht dafür eine breite Werkbank zur Verfügung. Die große Arbeitsplatte ist sehr aufgeräumt und es befinden sich keine Gegenstände auf ihr. Schubladen unterhalb der Platte bieten Platz, um den Bereich gut zu organisieren. Über der Werkbank ist ein Regal angebracht, an dem allerlei Werkzeug befestigt ist.</value>
+    </data>
 </root>

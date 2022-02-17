@@ -72,4 +72,7 @@
     <data name="AMBULANCE" xml:space="preserve">
         <value>Die Krankenstation|Krankenstation</value>
     </data>
+    <data name="MAINTENANCE_ROOM" xml:space="preserve">
+        <value>Die kleine Werkstatt|Werkstatt|kleine Werkstatt</value>
+    </data>
 </root>

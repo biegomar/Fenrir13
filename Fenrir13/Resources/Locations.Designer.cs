@@ -214,6 +214,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Die kleine Werkstatt|Werkstatt|kleine Werkstatt.
+        /// </summary>
+        internal static string MAINTENANCE_ROOM {
+            get {
+                return ResourceManager.GetString("MAINTENANCE_ROOM", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Der Sozialraum|Sozialraum|Aufenthaltsraum|Wohnzimmer.
         /// </summary>
         internal static string SOCIALROOM {

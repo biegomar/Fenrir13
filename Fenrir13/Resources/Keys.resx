@@ -429,4 +429,7 @@
     <data name="ENGINE_ROOM_COMPUTER" xml:space="preserve">
         <value>ENGINE_ROOM_COMPUTER</value>
     </data>
+    <data name="MAINTENANCE_ROOM" xml:space="preserve">
+        <value>MAINTENANCE_ROOM</value>
+    </data>
 </root>

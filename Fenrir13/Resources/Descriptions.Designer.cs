@@ -1428,6 +1428,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Für Alles, was an mechnischen Arbeiten oder Reparaturen ansteht gibt es diese kleine Werkstatt. An der östlichen Wand steht dafür eine breite Werkbank zur Verfügung. Die große Arbeitsplatte ist sehr aufgeräumt und es befinden sich keine Gegenstände auf ihr. Schubladen unterhalb der Platte bieten Platz, um den Bereich gut zu organisieren. Über der Werkbank ist ein Regal angebracht, an dem allerlei Werkzeug befestigt ist..
+        /// </summary>
+        internal static string MAINTENANCE_ROOM {
+            get {
+                return ResourceManager.GetString("MAINTENANCE_ROOM", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Den Spiegel schätzt Du so auf 90x120 cm und er ist kristallklar. Wenn Du längere Zeit eine der Ecken mit Deinen Augen fukossierst erscheint ein zusätzliches Display auf der Fläche und präsentiert Dir Deine gängigen Gesundheitsdaten. Als Du diesmal die Daten checkst erschrickst Du. Die letzte Messung ist über 5 Jahre her!.
         /// </summary>
         internal static string MIRROR {
