@@ -786,4 +786,10 @@ Der Zweite Punkt verweist auf die mechanische Vorrichtung, um die Solarpanele au
     <data name="MAINTENANCE_ROOM_DRAWER_OPEN" xml:space="preserve">
         <value>Im Moment ist sie geöffnet.</value>
     </data>
+    <data name="GET_ANTENNA" xml:space="preserve">
+        <value>Auf der Couch stehend nimmst Du das Werkzeug, löst die Verschraubung und nimmst die Antenne an Dich. Das hat funktioniert!</value>
+    </data>
+    <data name="SOCIALROOM_ANTENNA_CONSTRUCTION_WITHOUT_ANTENNA" xml:space="preserve">
+        <value>Einsam und allein hängt der Receiver unter der Decke. Ohne die Antenne wird er wohl kein Signal verarbeiten können.</value>
+    </data>
 </root>

@@ -64,10 +64,11 @@ internal static class MaintenanceRoomPrerequisites
             Description = Descriptions.MAINTENANCE_ROOM_TOOL,
             ContainmentDescription = Descriptions.MAINTENANCE_ROOM_TOOL_CONTAINMENT,
             IsHidden = true,
-            Weight = 100
+            Weight = ItemWeights.MAINTENANCE_ROOM_TOOL
         };
         
         AddTakeEvents(result, eventProvider);
+        AddUseEvents(result, eventProvider);
 
         return result;
     }
@@ -78,4 +79,9 @@ internal static class MaintenanceRoomPrerequisites
         eventProvider.ScoreBoard.Add(nameof(eventProvider.TakeTool), 1);
     }
     
+    private static void AddUseEvents(Item item, EventProvider eventProvider)
+    {
+        item.Use += eventProvider.UseToolWithAntenna;
+        eventProvider.ScoreBoard.Add(nameof(eventProvider.UseToolWithAntenna), 5);
+    }
 }

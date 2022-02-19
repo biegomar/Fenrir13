@@ -1272,6 +1272,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Auf der Couch stehend nimmst Du das Werkzeug, löst die Verschraubung und nimmst die Antenne an Dich. Das hat funktioniert!.
+        /// </summary>
+        internal static string GET_ANTENNA {
+            get {
+                return ResourceManager.GetString("GET_ANTENNA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Da Dein Bio-Suit nicht die Hände bedeckt, sind diese Handschuhe erforderlich, um bei einem Einsatz im Weltraum auch die Hände zu schützen..
         /// </summary>
         internal static string GLOVES {
@@ -1758,6 +1767,15 @@ namespace Fenrir13.Resources {
         internal static string SOCIALROOM_ANTENNA_CONSTRUCTION_CONTAINMENT {
             get {
                 return ResourceManager.GetString("SOCIALROOM_ANTENNA_CONSTRUCTION_CONTAINMENT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Einsam und allein hängt der Receiver unter der Decke. Ohne die Antenne wird er wohl kein Signal verarbeiten können..
+        /// </summary>
+        internal static string SOCIALROOM_ANTENNA_CONSTRUCTION_WITHOUT_ANTENNA {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_ANTENNA_CONSTRUCTION_WITHOUT_ANTENNA", resourceCulture);
             }
         }
         

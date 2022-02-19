@@ -99,10 +99,12 @@ public class SocialRoomPrerequisites
             Name = Items.SOCIALROOM_ANTENNA,
             Description = Descriptions.SOCIALROOM_ANTENNA,
             LinkedToDescription = Descriptions.SOCIALROOM_ANTENNA_LINKEDTODESCRIPTION,
-            IsHidden = true
+            IsHidden = true,
+            Weight = ItemWeights.SOCIALROOM_ANTENNA
         };
         
         AddBeforeTakeEvents(antenna, eventProvider);
+        AddUseEvents(antenna, eventProvider);
 
         return antenna;
     }
@@ -110,5 +112,10 @@ public class SocialRoomPrerequisites
     private static void AddBeforeTakeEvents(Item item, EventProvider eventProvider)
     {
         item.BeforeTake += eventProvider.BeforeTakeAntenna;
+    }
+    
+    private static void AddUseEvents(Item item, EventProvider eventProvider)
+    {
+        item.Use += eventProvider.UseToolWithAntenna;
     }
 }

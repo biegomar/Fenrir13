@@ -303,7 +303,7 @@ internal class EventProvider
         {
             this.universe.ActivePlayer.Items.Remove(item);
             this.universe.ActivePlayer.Clothes.Add(item);
-            PrintingSubsystem.FormattedResource(Descriptions.PULLON_WEARABLE, item.Name);
+            PrintingSubsystem.FormattedResource(Descriptions.PULLON_WEARABLE, item.Name, true);
         }
 
         var listOfPossibleWearables = new List<string>()
@@ -440,6 +440,50 @@ internal class EventProvider
         }
     }
     
+    internal void UseToolWithAntenna(object sender, UseItemEventArgs eventArgs)
+    {
+        if (sender is Item itemOne && eventArgs.ItemToUse is Item itemTwo && itemOne.Key != itemTwo.Key)
+        {
+            var itemList = new List<Item> { itemOne, itemTwo };
+            var tool = itemList.SingleOrDefault(i => i.Key == Keys.MAINTENANCE_ROOM_TOOL);
+            var antenna = itemList.SingleOrDefault(i => i.Key == Keys.SOCIALROOM_ANTENNA);
+
+            if (tool != default && antenna != default)
+            {
+                if (!this.universe.ActivePlayer.HasClimbed || this.universe.ActivePlayer.ClimbedObject == default)
+                {
+                    throw new UseException(Descriptions.CANT_REACH_ANTENNA);
+                }
+
+                if (this.universe.ActivePlayer.GetUnhiddenItemByKey(Keys.MAINTENANCE_ROOM_TOOL) == default)
+                {
+                    this.universe.PickObject(tool);
+                }
+                
+                if (this.universe.ActivePlayer.GetUnhiddenItemByKey(Keys.SOCIALROOM_ANTENNA) == default)
+                {
+                    var receiver = this.universe.GetObjectFromWorldByKey(Keys.SOCIALROOM_ANTENNA_CONSTRUCTION);
+                    if (receiver != default)
+                    {
+                        this.universe.ActivePlayer.Items.Add(antenna);
+                        receiver.LinkedTo.Remove(antenna);
+                        receiver.Description = Descriptions.SOCIALROOM_ANTENNA_CONSTRUCTION_WITHOUT_ANTENNA;
+                    }
+                }
+
+                PrintingSubsystem.Resource(Descriptions.GET_ANTENNA);
+                tool.Use -= UseToolWithAntenna;
+                antenna.Use -= UseToolWithAntenna;
+
+                this.universe.Score += this.universe.ScoreBoard[nameof(UseToolWithAntenna)];
+            }
+            else
+            {
+                throw new UseException(BaseDescriptions.DOES_NOT_WORK);
+            }
+        }
+    }
+
     internal void UseOxygenBottleWithHelmet(object sender, UseItemEventArgs eventArgs)
     {
         if (sender is Item itemOne && eventArgs.ItemToUse is Item itemTwo && itemOne.Key != itemTwo.Key)
