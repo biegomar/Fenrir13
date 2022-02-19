@@ -90,6 +90,7 @@ internal static class EquipmentRoomPrerequisites
         };
 
         AddUseEvents(helmet, eventProvider);
+        AddBeforeDropEvents(helmet, eventProvider);
         
         return helmet;
     }
@@ -104,6 +105,8 @@ internal static class EquipmentRoomPrerequisites
             Weight = ItemWeights.GLOVES
         };
 
+        AddBeforeDropEvents(gloves, eventProvider);
+        
         return gloves;
     }
     
@@ -117,6 +120,8 @@ internal static class EquipmentRoomPrerequisites
             Weight = ItemWeights.BOOTS
         };
 
+        AddBeforeDropEvents(boots, eventProvider);
+        
         return boots;
     }
     
@@ -133,6 +138,8 @@ internal static class EquipmentRoomPrerequisites
         belt.Items.Add(GetEyelet(eventProvider));
         
         AddEyeletUseEvents(belt, eventProvider);
+        
+        AddBeforeDropEvents(belt, eventProvider);
 
         return belt;
     }
@@ -175,5 +182,10 @@ internal static class EquipmentRoomPrerequisites
     private static void AddEyeletUseEvents(Item item, EventProvider eventProvider)
     {
         item.Use += eventProvider.UseAirlockRopeWithEyeletOrBelt;
+    }
+    
+    private static void AddBeforeDropEvents(Item item, EventProvider eventProvider)
+    {
+        item.BeforeDrop += eventProvider.DropClothsWithOpenAirlock;
     }
 }

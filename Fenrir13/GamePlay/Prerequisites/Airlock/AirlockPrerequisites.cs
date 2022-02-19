@@ -52,6 +52,8 @@ internal class AirlockPrerequisites
             Description = Descriptions.AIRLOCK_KEYPAD_GREEN_BUTTON,
             IsHidden = true
         };
+        
+        AddPushGreenButtonEvents(greenButton, eventProvider);
 
         return greenButton;
     }
@@ -66,7 +68,7 @@ internal class AirlockPrerequisites
             IsHidden = true
         };
 
-        AddPushEvents(redButton, eventProvider);
+        AddPushRedButtonEvents(redButton, eventProvider);
         
         return redButton;
     }
@@ -115,6 +117,8 @@ internal class AirlockPrerequisites
     private static void AddChangeRoomEvents(Location airlock, EventProvider eventProvider)
     {
         airlock.AfterChangeLocation += eventProvider.EnterAirlock;
+        airlock.BeforeChangeLocation += eventProvider.CantLeaveWithOpenBulkHeadOrTiedRope;
+        airlock.BeforeChangeLocation += eventProvider.CantLeaveWithoutOpenBulkHead;
         airlock.BeforeChangeLocation += eventProvider.LeaveAirlock;
     }
     
@@ -124,8 +128,14 @@ internal class AirlockPrerequisites
         eventProvider.ScoreBoard.Add(nameof(eventProvider.UseAirlockRopeWithEyeletOrBelt), 1);
     }
     
-    private static void AddPushEvents(Item item, EventProvider eventProvider)
+    private static void AddPushRedButtonEvents(Item item, EventProvider eventProvider)
     {
         item.Push += eventProvider.PushRedButton;
         eventProvider.ScoreBoard.Add(nameof(eventProvider.PushRedButton), 5);
-    }}
+    }
+    
+    private static void AddPushGreenButtonEvents(Item item, EventProvider eventProvider)
+    {
+        item.Push += eventProvider.PushGreenButton;
+    }
+}

@@ -15,6 +15,7 @@ internal class EventProvider
     private readonly Universe universe;
     private readonly IPrintingSubsystem PrintingSubsystem;
     private bool isAccessGranted;
+    private bool isAirlockOpen;
 
     internal IDictionary<string, int> ScoreBoard => this.universe.ScoreBoard;
 
@@ -23,6 +24,7 @@ internal class EventProvider
         this.PrintingSubsystem = printingSubsystem;
         this.universe = universe;
         this.isAccessGranted = false;
+        this.isAirlockOpen = false;
     }
     
     internal void PullFridgeHandle(object sender, ContainerObjectEventArgs eventArgs)
@@ -82,11 +84,33 @@ internal class EventProvider
             }
         }
     }
+
+    internal void PushGreenButton(object sender, PushItemEventArgs eventArgs)
+    {
+        if (sender is Item greenButton && greenButton.Key == Keys.AIRLOCK_KEYPAD_GREEN_BUTTON)
+        {
+            if (this.isAirlockOpen)
+            {
+                this.isAirlockOpen = false;
+                PrintingSubsystem.Resource(Descriptions.PRESS_GREEN_BUTTON);
+            }
+            else
+            {
+                PrintingSubsystem.Resource(BaseDescriptions.NOTHING_HAPPENS);
+            }
+        }
+    }
     
     internal void PushRedButton(object sender, PushItemEventArgs eventArgs)
     {
         if (sender is Item redButton && redButton.Key == Keys.AIRLOCK_KEYPAD_RED_BUTTON)
         {
+            if (this.isAirlockOpen)
+            {
+                PrintingSubsystem.Resource(BaseDescriptions.NOTHING_HAPPENS);
+                return;
+            }
+            
             var listOfPossibleWearables = new List<string>()
             {
                 Keys.BELT,
@@ -111,6 +135,7 @@ internal class EventProvider
                     var isEyeletLinkedToRope = eyelet.LinkedTo.Any(x => x.Key == Keys.AIRLOCK_ROPE);
                     if (isEyeletLinkedToRope)
                     {
+                        this.isAirlockOpen = true;
                         PrintingSubsystem.Resource(Descriptions.PREPARED_FOR_SPACE_WALK);
                         this.universe.Score += this.universe.ScoreBoard[nameof(this.PushRedButton)];
                     }
@@ -293,6 +318,38 @@ internal class EventProvider
                 {
                     throw new BeforeChangeLocationException(Descriptions.CANT_LEAVE_CHAMBER);
                 }   
+            }
+        }
+    }
+    
+    internal void CantLeaveWithoutOpenBulkHead(object sender, ChangeLocationEventArgs eventArgs)
+    {
+        if (sender is Location airlock && airlock.Key == Keys.AIRLOCK
+                                       && eventArgs.NewDestinationNode.Location.Key == Keys.JETTY)
+        {
+            if (!isAirlockOpen)
+            {
+                throw new BeforeChangeLocationException(Descriptions.CANT_LEAVE_AIRLOCK);
+            }
+        }
+    }
+    
+    internal void CantLeaveWithOpenBulkHeadOrTiedRope(object sender, ChangeLocationEventArgs eventArgs)
+    {
+        if (sender is Location airlock && airlock.Key == Keys.AIRLOCK
+                                       && eventArgs.NewDestinationNode.Location.Key == Keys.MACHINE_CORRIDOR_MID)
+        {
+            if (isAirlockOpen)
+            {
+                throw new BeforeChangeLocationException(Descriptions.CANT_LEAVE_OPEN_AIRLOCK);
+            }
+            
+            var belt = this.universe.ActivePlayer.Clothes.FirstOrDefault(x => x.Key == Keys.BELT);
+            var eyelet = belt?.GetItemByKey(Keys.EYELET);
+            
+            if (belt != null && eyelet != default && eyelet.LinkedTo.Count > 0)
+            {
+                throw new BeforeChangeLocationException(Descriptions.CANT_LEAVE_WITH_TIED_EYELET);
             }
         }
     }
@@ -732,6 +789,22 @@ internal class EventProvider
             }
         }
     }
+
+    internal void DropClothsWithOpenAirlock(object sender, ContainerObjectEventArgs eventArgs)
+    {
+        var listOfPossibleWearables = new List<string>()
+        {
+            Keys.BELT,
+            Keys.GLOVES,
+            Keys.HELMET,
+            Keys.BOOTS
+        };
+
+        if (sender is Item cloth && listOfPossibleWearables.Contains(cloth.Key) && this.isAirlockOpen)
+        {
+            throw new BeforeDropException(Descriptions.AIRLOCK_OPEN_DROP_CLOTHES);
+        }
+    }
     
     internal void EnterAirlock(object sender, ChangeLocationEventArgs eventArgs)
     {
@@ -745,7 +818,9 @@ internal class EventProvider
     
     internal void LeaveAirlock(object sender, ChangeLocationEventArgs eventArgs)
     {
-        if (sender is Location airlock && airlock.Key == Keys.AIRLOCK && eventArgs.NewDestinationNode.Location.Key == Keys.MACHINE_CORRIDOR_MID)
+        if (sender is Location airlock && airlock.Key == Keys.AIRLOCK 
+                                       && eventArgs.NewDestinationNode.Location.Key == Keys.MACHINE_CORRIDOR_MID 
+                                       && !this.isAirlockOpen)
         {
             var isItemDropped = false;
             SetItemWeight(this.universe.ActivePlayer.Items);

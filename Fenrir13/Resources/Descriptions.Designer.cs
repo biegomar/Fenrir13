@@ -134,6 +134,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Das geht nicht! Du würdest hier im All sofort sterben!.
+        /// </summary>
+        internal static string AIRLOCK_OPEN_DROP_CLOTHES {
+            get {
+                return ResourceManager.GetString("AIRLOCK_OPEN_DROP_CLOTHES", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Das Seil ist ultradünn und in das Graphen sind fluoreszierende Partikel eingebracht, damit man das Seil auch in der Dunkelheit des Alls gut erkennen kann. Da das Seil sehr dünn ist, die Winde aber sehr voll wirkt, gehst Du davon aus, dass es lang genug ist, um jeden Punkt der Schiffshaut zu erreichen. Das vordere Ende des Seils mündet in eine Hakenkonstruktion, die ebenfalls aus Graphen ist und nahtlos mit dem Seil verbunden ist. Wahrscheinlich handelt es sich sowieso um ein einziges Werkstück..
         /// </summary>
         internal static string AIRLOCK_ROPE {
@@ -351,11 +360,38 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Solange das Schott noch geschlossen ist, kannst Du nicht hinaus auf den Steg..
+        /// </summary>
+        internal static string CANT_LEAVE_AIRLOCK {
+            get {
+                return ResourceManager.GetString("CANT_LEAVE_AIRLOCK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Als Du versuchst den Raum zu verlassen schliesst sich die Tür abrupt. Gleichzeitig ertönt von dem Space-Overall ein kurzes Piepen. Scheinbar kannst Du nicht nackt durch das Raumschiff wandeln..
         /// </summary>
         internal static string CANT_LEAVE_CHAMBER {
             get {
                 return ResourceManager.GetString("CANT_LEAVE_CHAMBER", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Die Tür bleibt verschlossen, solange das Schott noch geöffnet ist. Du willst ja auch nicht riskieren, dass der gesamte Sauerstoff ins All gesogen wird..
+        /// </summary>
+        internal static string CANT_LEAVE_OPEN_AIRLOCK {
+            get {
+                return ResourceManager.GetString("CANT_LEAVE_OPEN_AIRLOCK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Solange das Seil noch mit dem Gurt verbunden ist, kannst Du nicht aus dem Raum gehen..
+        /// </summary>
+        internal static string CANT_LEAVE_WITH_TIED_EYELET {
+            get {
+                return ResourceManager.GetString("CANT_LEAVE_WITH_TIED_EYELET", resourceCulture);
             }
         }
         
@@ -1687,6 +1723,15 @@ namespace Fenrir13.Resources {
         internal static string PREPARED_FOR_SPACE_WALK {
             get {
                 return ResourceManager.GetString("PREPARED_FOR_SPACE_WALK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Genau so behäbig, wie es sich geöffnet hat schließt sich nun das Schott wieder. Du nimmst nun das Geräusch einströmenden Sauerstoffs wahr. Du bist nun wieder vollständig in der sicheren Obhut der Fenrir 13..
+        /// </summary>
+        internal static string PRESS_GREEN_BUTTON {
+            get {
+                return ResourceManager.GetString("PRESS_GREEN_BUTTON", resourceCulture);
             }
         }
         

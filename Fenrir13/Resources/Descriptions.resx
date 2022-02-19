@@ -796,4 +796,19 @@ Der Zweite Punkt verweist auf die mechanische Vorrichtung, um die Solarpanele au
         <value>Voller Demut und Ehrfurcht stehst Du auf dem breiten Steg und blickst in die schwarze Tiefe des Alls. Noch nie zuvor hast Du es gewagt, Dich dieser Herausforderung zu stellen. Wenn es die Situation nicht erfordern würde, hättest Du es auch jetzt noch nicht. Aber es nützt nichts. Du wirst Deine Angst überwinden müssen.
 Der Steg ragt weit ins All hinaus und an seiner äußeren Kante steht man vollkommen im All, ohne die schützende Hülle des Schiffs. Du lässt Deinen Blick schweifen und kannst überall nur den für Dich unbekannten Sternenhimmel des Alpha Centauri Systems erblicken. Wenn Du einen Blick über Deine Schultern wirfst, siehst Du die Fenrir 13 und ihre mächtigen Ionen-Strahlentriebwerke, sowie die Rückseite des Hammerkopfes.</value>
     </data>
+    <data name="CANT_LEAVE_AIRLOCK" xml:space="preserve">
+        <value>Solange das Schott noch geschlossen ist, kannst Du nicht hinaus auf den Steg.</value>
+    </data>
+    <data name="CANT_LEAVE_OPEN_AIRLOCK" xml:space="preserve">
+        <value>Die Tür bleibt verschlossen, solange das Schott noch geöffnet ist. Du willst ja auch nicht riskieren, dass der gesamte Sauerstoff ins All gesogen wird.</value>
+    </data>
+    <data name="PRESS_GREEN_BUTTON" xml:space="preserve">
+        <value>Genau so behäbig, wie es sich geöffnet hat schließt sich nun das Schott wieder. Du nimmst nun das Geräusch einströmenden Sauerstoffs wahr. Du bist nun wieder vollständig in der sicheren Obhut der Fenrir 13.</value>
+    </data>
+    <data name="CANT_LEAVE_WITH_TIED_EYELET" xml:space="preserve">
+        <value>Solange das Seil noch mit dem Gurt verbunden ist, kannst Du nicht aus dem Raum gehen.</value>
+    </data>
+    <data name="AIRLOCK_OPEN_DROP_CLOTHES" xml:space="preserve">
+        <value>Das geht nicht! Du würdest hier im All sofort sterben!</value>
+    </data>
 </root>
