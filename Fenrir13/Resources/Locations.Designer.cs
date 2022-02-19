@@ -196,6 +196,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Der Steg|Steg.
+        /// </summary>
+        internal static string JETTY {
+            get {
+                return ResourceManager.GetString("JETTY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Die Küche|Küche.
         /// </summary>
         internal static string KITCHEN {

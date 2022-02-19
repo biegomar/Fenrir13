@@ -1,3 +1,4 @@
+mein name ist Marc
 nimm suit
 l schranktür
 iss riegel
@@ -48,4 +49,29 @@ n
 w
 nimm
 e
+e
+öffne schublade
+nimm werkzeug
+w
+n
+untersuche rote punkte
 s
+hoch
+e
+s
+l receiver
+steige auf couch
+benutze werkzeug mit antenne
+absteigen
+n
+w
+runter
+s
+verbinde flasche mit helm
+ziehe mir boots an
+ziehe mir gurt an
+ziehe mir handschuhe an
+ziehe mir helm an
+verbinde seil mit gurt
+l tastenfeld
+drücke open

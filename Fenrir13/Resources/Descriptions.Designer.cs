@@ -306,7 +306,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Da Dein Bio-Suit Deine Füße nicht bedeckt, dienen die Boots dazu, Dich bei einem Space-Ausflug zu schützen. Auch sind die Stiefel magnetisch, damit man an der Aussenhaut des Schiffs sicheren Halt hat..
+        ///   Looks up a localized string similar to Da Dein Bio-Suit Deine Füße nicht bedeckt, dienen die Boots dazu, Dich bei einem Space-Ausflug zu schützen. Auch sind die Stiefel magnetisch, damit man an der Aussenhaut des Schiffs sicheren Halt findet..
         /// </summary>
         internal static string BOOTS {
             get {
@@ -1369,6 +1369,16 @@ namespace Fenrir13.Resources {
         internal static string INTERVENTION_REQUIRED_INTERPRETATION {
             get {
                 return ResourceManager.GetString("INTERVENTION_REQUIRED_INTERPRETATION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Voller Demut und Ehrfurcht stehst Du auf dem breiten Steg und blickst in die schwarze Tiefe des Alls. Noch nie zuvor hast Du es gewagt, Dich dieser Herausforderung zu stellen. Wenn es die Situation nicht erfordern würde, hättest Du es auch jetzt noch nicht. Aber es nützt nichts. Du wirst Deine Angst überwinden müssen.
+        ///Der Steg ragt weit ins All hinaus und an seiner äußeren Kante steht man vollkommen im All, ohne die schützende Hülle des Schiffs. Du lässt Deinen Blick schweifen und kannst überall nur den fü [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string JETTY {
+            get {
+                return ResourceManager.GetString("JETTY", resourceCulture);
             }
         }
         

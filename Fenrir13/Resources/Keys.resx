@@ -441,4 +441,7 @@
     <data name="MAINTENANCE_ROOM_WORKBENCH" xml:space="preserve">
         <value>MAINTENANCE_ROOM_WORKBENCH</value>
     </data>
+    <data name="JETTY" xml:space="preserve">
+        <value>JETTY</value>
+    </data>
 </root>

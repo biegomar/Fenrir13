@@ -385,7 +385,7 @@ Die Wand mit der Tür ist frei, nur ein kleiner Papiereimer steht dort.</value>
         <value>Da Dein Bio-Suit nicht die Hände bedeckt, sind diese Handschuhe erforderlich, um bei einem Einsatz im Weltraum auch die Hände zu schützen.</value>
     </data>
     <data name="BOOTS" xml:space="preserve">
-        <value>Da Dein Bio-Suit Deine Füße nicht bedeckt, dienen die Boots dazu, Dich bei einem Space-Ausflug zu schützen. Auch sind die Stiefel magnetisch, damit man an der Aussenhaut des Schiffs sicheren Halt hat.</value>
+        <value>Da Dein Bio-Suit Deine Füße nicht bedeckt, dienen die Boots dazu, Dich bei einem Space-Ausflug zu schützen. Auch sind die Stiefel magnetisch, damit man an der Aussenhaut des Schiffs sicheren Halt findet.</value>
     </data>
     <data name="EQUIPMENT_BOX_LOCK" xml:space="preserve">
         <value>Das Schloss ist sehr massiv und wird normalerweise mit einem Schlüssel geöffnet. Sicherlich ist das die Kiste eines der Mechaniker und der Schlüssel wird in seiner Kabine sein. Da kommst Du aber aufgrund der Situation nicht dran. Mist!</value>
@@ -791,5 +791,9 @@ Der Zweite Punkt verweist auf die mechanische Vorrichtung, um die Solarpanele au
     </data>
     <data name="SOCIALROOM_ANTENNA_CONSTRUCTION_WITHOUT_ANTENNA" xml:space="preserve">
         <value>Einsam und allein hängt der Receiver unter der Decke. Ohne die Antenne wird er wohl kein Signal verarbeiten können.</value>
+    </data>
+    <data name="JETTY" xml:space="preserve">
+        <value>Voller Demut und Ehrfurcht stehst Du auf dem breiten Steg und blickst in die schwarze Tiefe des Alls. Noch nie zuvor hast Du es gewagt, Dich dieser Herausforderung zu stellen. Wenn es die Situation nicht erfordern würde, hättest Du es auch jetzt noch nicht. Aber es nützt nichts. Du wirst Deine Angst überwinden müssen.
+Der Steg ragt weit ins All hinaus und an seiner äußeren Kante steht man vollkommen im All, ohne die schützende Hülle des Schiffs. Du lässt Deinen Blick schweifen und kannst überall nur den für Dich unbekannten Sternenhimmel des Alpha Centauri Systems erblicken. Wenn Du einen Blick über Deine Schultern wirfst, siehst Du die Fenrir 13 und ihre mächtigen Ionen-Strahlentriebwerke, sowie die Rückseite des Hammerkopfes.</value>
     </data>
 </root>

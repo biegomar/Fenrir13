@@ -75,4 +75,7 @@
     <data name="MAINTENANCE_ROOM" xml:space="preserve">
         <value>Die kleine Werkstatt|Werkstatt|kleine Werkstatt</value>
     </data>
+    <data name="JETTY" xml:space="preserve">
+        <value>Der Steg|Steg</value>
+    </data>
 </root>

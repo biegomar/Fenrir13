@@ -7,6 +7,7 @@ using Fenrir13.GamePlay.Prerequisites.CryoChamber;
 using Fenrir13.GamePlay.Prerequisites.EngineRoom;
 using Fenrir13.GamePlay.Prerequisites.EquipmentRoom;
 using Fenrir13.GamePlay.Prerequisites.Gym;
+using Fenrir13.GamePlay.Prerequisites.Jetty;
 using Fenrir13.GamePlay.Prerequisites.Kitchen;
 using Fenrir13.GamePlay.Prerequisites.MachineCorridor;
 using Fenrir13.GamePlay.Prerequisites.MaintenanceRoom;
@@ -51,6 +52,7 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
         var engineRoom = EngineRoomPrerequisites.Get(this.eventProvider);
         var equipmentRoom = EquipmentRoomPrerequisites.Get(this.eventProvider);
         var maintenanceRoom = MaintenanceRoomPrerequisites.Get(this.eventProvider);
+        var jetty = JettyPrerequisites.Get(this.eventProvider);
         
         map.Add(cryoChamber, CryoChamberLocationMap(corridorEast));
         map.Add(corridorEast, CorridorEastLocationMap(cryoChamber, corridorMidEast, emptyChamberOne, emptyChamberTwo));
@@ -65,7 +67,8 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
         map.Add(ambulance, AmbulanceLocationMap(corridorMidWest));
         map.Add(socialRoom, SocialRoomLocationMap(corridorMidEast));
         map.Add(kitchen, KitchenLocationMap(corridorMidEast));
-        map.Add(airlock, AirlockLocationMap(machineCorridorMid));
+        map.Add(airlock, AirlockLocationMap(machineCorridorMid, jetty));
+        map.Add(jetty, JettyLocationMap(airlock));
         map.Add(engineRoom, EngineRoomLocationMap(machineCorridorMid));
         map.Add(equipmentRoom, EquipmentRoomLocationMap(machineCorridorMid));
         map.Add(maintenanceRoom, MaintenanceRoomLocationMap(machineCorridorMid));
@@ -108,11 +111,21 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
         return locationMap;
     }
 
-    private static IEnumerable<DestinationNode> AirlockLocationMap(Location machineCorridorMid)
+    private static IEnumerable<DestinationNode> AirlockLocationMap(Location machineCorridorMid, Location jetty)
     {
         var locationMap = new List<DestinationNode>
         {
-            new() {Direction = Directions.N, Location = machineCorridorMid, IsHidden = false}
+            new() {Direction = Directions.N, Location = machineCorridorMid, IsHidden = false},
+            new() {Direction = Directions.S, Location = jetty, IsHidden = false},
+        };
+        return locationMap;
+    }
+    
+    private static IEnumerable<DestinationNode> JettyLocationMap(Location airlock)
+    {
+        var locationMap = new List<DestinationNode>
+        {
+            new() {Direction = Directions.N, Location = airlock, IsHidden = false}
         };
         return locationMap;
     }
