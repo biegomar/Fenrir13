@@ -81,4 +81,7 @@
     <data name="ROOF_TOP" xml:space="preserve">
         <value>Das Dach der Brücke|Dach der Brücke|Brückendach|Dach</value>
     </data>
+    <data name="PANEL_TOP" xml:space="preserve">
+        <value>Die Panelsteuerung|Panelsteuerung|Panel-Steuerung|Steuerung</value>
+    </data>
 </root>

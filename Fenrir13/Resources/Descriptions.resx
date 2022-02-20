@@ -836,4 +836,27 @@ Da Du überhaupt keine Anzeichen von blinkenden Lichtern oder Kontrollanzeigen e
     <data name="MAINTENANCE_ROOM_TOOL_NOT_PRESENT" xml:space="preserve">
         <value>Das ist zwar eine gute Idee, aber ohne das passende Werkzeug wird Dir das nicht gelingen.</value>
     </data>
+    <data name="PANEL_TOP" xml:space="preserve">
+        <value>Du bist nun da angekommen, wo Du die manuelle Steuerung der Solarkollektoren erwartest.</value>
+    </data>
+    <data name="PANEL_TOP_LEVER" xml:space="preserve">
+        <value>Der Handgriff ist recht breit und kann gut mit zwei Händen bedient werden. Er liegt etwas vertieft in der Oberfläche des Schiffs und ist so etwas geschützter vor äußeren Einflüssen. Durch die Vertiefung ist es aber auch möglich, einen Hebel anzusetzen.</value>
+    </data>
+    <data name="PANEL_TOP_LEVER_CONTAINMENT" xml:space="preserve">
+        <value>Und tatsächlich erkennst Du einen breiten Griff, den man bequem mit zwei Händen ziehen kann.</value>
+    </data>
+    <data name="PANEL_TOP_LEVER_PULL" xml:space="preserve">
+        <value>Mit der potentiellen Lösung aller Probleme vor Augen packst Du beherzt zu und versuchst den Griff zu ziehen. Meine Güte! Ist das Ding schwer. Vielleicht würden es die beiden grobschlächtigen Mechaniker hier an Bord hinbekommen. Du aber sicherlich nicht. Da musst Du Dir etwas anderes einfallen lassen.</value>
+    </data>
+    <data name="PANEL_TOP_LEVER_DUMBBELL_BAR" xml:space="preserve">
+        <value>Dank der Vertiefung kannst Du die Hantelstange prima als Hebel benutzen. Du setzt an und drückst den Griff damit hoch. Du blickst über den Cargo-Bereich und erkennst, dass sich die Schutzverkleidungen über den Solarkollektoren minimal bewegt haben! Du musst also diesen Griff mehrfach betätigen...
+Du lässt Dich nicht aufhalten und pumpst mit dem Hebel und dem Griff Zug um Zug und die Panele öffnen sich immer weiter. Nach mehreren Minuten schweißtreibender Plackerei ist es geschafft! Die Panel sind frei!
+Der Erfolg lässt nicht lange aus sich warten. An immer mehr Stellen am Schiff fangen Lampen an zu blinken, durch einige Fenster siehst Du, dass die Raumbeleuchtung angeschaltet wird. Voller Stolz über Deine vollbrachte Leistung geniesst Du es, als plötzlich der Wolfskopf an der Steuerbordseite des Cargo-Bereichs der Fenrir 13 in vollem Licht stehen! Gut gemacht!</value>
+    </data>
+    <data name="PANEL_TOP_LEVER_REDDOTS_CONTAINMENT" xml:space="preserve">
+        <value>Und tatsächlich erkennst Du einen breiten Griff, den man bequem mit zwei Händen ziehen kann. Aber die Analyse des Quanten-Clusters hatte ja darauf hingewiesen, dass Du besser einen Hebel dafür einsetzten solltest.</value>
+    </data>
+    <data name="DROID_ENERGY_CONTAINMENT" xml:space="preserve">
+        <value>Der Service-Roboter, der hier in seinem Dock auf seinen Einsatz wartet, wird auch bereits mit Energie versorgt. Das ist deutlich an seinen blinkenden Kontrollleuchten zu erkennen.</value>
+    </data>
 </root>

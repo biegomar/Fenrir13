@@ -85,6 +85,6 @@ internal static class MaintenanceRoomPrerequisites
         eventProvider.ScoreBoard.Add(nameof(eventProvider.UseToolWithAntennaInSocialRoom), 5);
         
         item.Use += eventProvider.MountAntennaToDroid;
-        eventProvider.ScoreBoard.Add(nameof(eventProvider.MountAntennaToDroid), 5);
+        eventProvider.ScoreBoard.Add(nameof(eventProvider.MountAntennaToDroid), 10);
     }
 }

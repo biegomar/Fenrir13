@@ -865,6 +865,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Der Service-Roboter, der hier in seinem Dock auf seinen Einsatz wartet, wird auch bereits mit Energie versorgt. Das ist deutlich an seinen blinkenden Kontrollleuchten zu erkennen..
+        /// </summary>
+        internal static string DROID_ENERGY_CONTAINMENT {
+            get {
+                return ResourceManager.GetString("DROID_ENERGY_CONTAINMENT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Im Moment verharrt er in seinem Ladedock und Du erkennst deutlich die Stelle, an der eigentlich eine Antenne sein sollte. Da muss eines der kleinen, interstellaren Geschosse ganze Arbeit geleistet haben. Aber so wie es aussieht, lässt sich dort eine andere Antenne mit einem guten Werkzeug wieder anbringen. 
         ///Da Du überhaupt keine Anzeichen von blinkenden Lichtern oder Kontrollanzeigen erkennst, gehst Du davon aus, dass er im Moment auch nicht genug Energie besitzt, um seiner Tätigkeit nachzukommen..
         /// </summary>
@@ -1696,6 +1705,62 @@ namespace Fenrir13.Resources {
         internal static string OXYGEN_NEEDED {
             get {
                 return ResourceManager.GetString("OXYGEN_NEEDED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Du bist nun da angekommen, wo Du die manuelle Steuerung der Solarkollektoren erwartest..
+        /// </summary>
+        internal static string PANEL_TOP {
+            get {
+                return ResourceManager.GetString("PANEL_TOP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Der Handgriff ist recht breit und kann gut mit zwei Händen bedient werden. Er liegt etwas vertieft in der Oberfläche des Schiffs und ist so etwas geschützter vor äußeren Einflüssen. Durch die Vertiefung ist es aber auch möglich, einen Hebel anzusetzen..
+        /// </summary>
+        internal static string PANEL_TOP_LEVER {
+            get {
+                return ResourceManager.GetString("PANEL_TOP_LEVER", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Und tatsächlich erkennst Du einen breiten Griff, den man bequem mit zwei Händen ziehen kann..
+        /// </summary>
+        internal static string PANEL_TOP_LEVER_CONTAINMENT {
+            get {
+                return ResourceManager.GetString("PANEL_TOP_LEVER_CONTAINMENT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dank der Vertiefung kannst Du die Hantelstange prima als Hebel benutzen. Du setzt an und drückst den Griff damit hoch. Du blickst über den Cargo-Bereich und erkennst, dass sich die Schutzverkleidungen über den Solarkollektoren minimal bewegt haben! Du musst also diesen Griff mehrfach betätigen...
+        ///Du lässt Dich nicht aufhalten und pumpst mit dem Hebel und dem Griff Zug um Zug und die Panele öffnen sich immer weiter. Nach mehreren Minuten schweißtreibender Plackerei ist es geschafft! Die Panel sind frei!
+        ///De [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string PANEL_TOP_LEVER_DUMBBELL_BAR {
+            get {
+                return ResourceManager.GetString("PANEL_TOP_LEVER_DUMBBELL_BAR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Mit der potentiellen Lösung aller Probleme vor Augen packst Du beherzt zu und versuchst den Griff zu ziehen. Meine Güte! Ist das Ding schwer. Vielleicht würden es die beiden grobschlächtigen Mechaniker hier an Bord hinbekommen. Du aber sicherlich nicht. Da musst Du Dir etwas anderes einfallen lassen..
+        /// </summary>
+        internal static string PANEL_TOP_LEVER_PULL {
+            get {
+                return ResourceManager.GetString("PANEL_TOP_LEVER_PULL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Und tatsächlich erkennst Du einen breiten Griff, den man bequem mit zwei Händen ziehen kann. Aber die Analyse des Quanten-Clusters hatte ja darauf hingewiesen, dass Du besser einen Hebel dafür einsetzten solltest..
+        /// </summary>
+        internal static string PANEL_TOP_LEVER_REDDOTS_CONTAINMENT {
+            get {
+                return ResourceManager.GetString("PANEL_TOP_LEVER_REDDOTS_CONTAINMENT", resourceCulture);
             }
         }
         

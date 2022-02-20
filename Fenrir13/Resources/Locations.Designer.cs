@@ -232,6 +232,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Die Panelsteuerung|Panelsteuerung|Panel-Steuerung|Steuerung.
+        /// </summary>
+        internal static string PANEL_TOP {
+            get {
+                return ResourceManager.GetString("PANEL_TOP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Das Dach der Brücke|Dach der Brücke|Brückendach|Dach.
         /// </summary>
         internal static string ROOF_TOP {

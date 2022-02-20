@@ -943,6 +943,24 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to PANEL_TOP.
+        /// </summary>
+        internal static string PANEL_TOP {
+            get {
+                return ResourceManager.GetString("PANEL_TOP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PANEL_TOP_LEVER.
+        /// </summary>
+        internal static string PANEL_TOP_LEVER {
+            get {
+                return ResourceManager.GetString("PANEL_TOP_LEVER", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to PARTITION_WALL.
         /// </summary>
         internal static string PARTITION_WALL {

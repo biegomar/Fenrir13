@@ -75,3 +75,9 @@ ziehe mir helm an
 verbinde seil mit gurt
 l tastenfeld
 drücke open
+nimm stange
+s
+hoch
+verbinde antenne mit roboter
+runter
+runter

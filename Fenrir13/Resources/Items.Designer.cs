@@ -403,7 +403,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Wartungsroboter|Wartungsroboter|Roboter|Droid.
+        ///   Looks up a localized string similar to Der Service-Roboter|Service-Roboter|Serviceroboter|Wartungsroboter|Roboter|Droid.
         /// </summary>
         internal static string DROID {
             get {
@@ -786,6 +786,15 @@ namespace Fenrir13.Resources {
         internal static string OXYGEN_BOTTLE {
             get {
                 return ResourceManager.GetString("OXYGEN_BOTTLE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Der Handgriff|Handgriff|Hebel|Griff.
+        /// </summary>
+        internal static string PANEL_TOP_LEVER {
+            get {
+                return ResourceManager.GetString("PANEL_TOP_LEVER", resourceCulture);
             }
         }
         

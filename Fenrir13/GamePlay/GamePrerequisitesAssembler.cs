@@ -11,6 +11,7 @@ using Fenrir13.GamePlay.Prerequisites.Jetty;
 using Fenrir13.GamePlay.Prerequisites.Kitchen;
 using Fenrir13.GamePlay.Prerequisites.MachineCorridor;
 using Fenrir13.GamePlay.Prerequisites.MaintenanceRoom;
+using Fenrir13.GamePlay.Prerequisites.PanelTop;
 using Fenrir13.GamePlay.Prerequisites.PlayerConfig;
 using Fenrir13.GamePlay.Prerequisites.RoofTop;
 using Fenrir13.GamePlay.Prerequisites.SocialRoom;
@@ -55,6 +56,7 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
         var maintenanceRoom = MaintenanceRoomPrerequisites.Get(this.eventProvider);
         var jetty = JettyPrerequisites.Get(this.eventProvider);
         var roofTop = RoofTopPrerequisites.Get(this.eventProvider);
+        var panelTop = PanelTopPrerequisites.Get(this.eventProvider);
         
         map.Add(cryoChamber, CryoChamberLocationMap(corridorEast));
         map.Add(corridorEast, CorridorEastLocationMap(cryoChamber, corridorMidEast, emptyChamberOne, emptyChamberTwo));
@@ -70,8 +72,9 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
         map.Add(socialRoom, SocialRoomLocationMap(corridorMidEast));
         map.Add(kitchen, KitchenLocationMap(corridorMidEast));
         map.Add(airlock, AirlockLocationMap(machineCorridorMid, jetty));
-        map.Add(jetty, JettyLocationMap(airlock, roofTop));
+        map.Add(jetty, JettyLocationMap(airlock, roofTop, panelTop));
         map.Add(roofTop, RoofTopLocationMap(jetty));
+        map.Add(panelTop, PanelTopLocationMap(jetty));
         map.Add(engineRoom, EngineRoomLocationMap(machineCorridorMid));
         map.Add(equipmentRoom, EquipmentRoomLocationMap(machineCorridorMid));
         map.Add(maintenanceRoom, MaintenanceRoomLocationMap(machineCorridorMid));
@@ -124,12 +127,13 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
         return locationMap;
     }
     
-    private static IEnumerable<DestinationNode> JettyLocationMap(Location airlock, Location roofTop)
+    private static IEnumerable<DestinationNode> JettyLocationMap(Location airlock, Location roofTop, Location panelTop)
     {
         var locationMap = new List<DestinationNode>
         {
             new() {Direction = Directions.N, Location = airlock},
             new() {Direction = Directions.UP, Location = roofTop, DestinationDescription = Descriptions.ROOF_TOP_DESTINATION},
+            new() {Direction = Directions.DOWN, Location = panelTop, ShowInDescription = false},
         };
         return locationMap;
     }
@@ -139,6 +143,15 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
         var locationMap = new List<DestinationNode>
         {
             new() {Direction = Directions.DOWN, Location = jetty}
+        };
+        return locationMap;
+    }
+    
+    private static IEnumerable<DestinationNode> PanelTopLocationMap(Location jetty)
+    {
+        var locationMap = new List<DestinationNode>
+        {
+            new() {Direction = Directions.UP, Location = jetty}
         };
         return locationMap;
     }

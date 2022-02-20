@@ -14,6 +14,7 @@ internal class EventProvider
 {
     private readonly Universe universe;
     private readonly IPrintingSubsystem PrintingSubsystem;
+    private bool isPowerBarEaten;
     private bool isAccessGranted;
     private bool isAirlockOpen;
 
@@ -23,8 +24,17 @@ internal class EventProvider
     {
         this.PrintingSubsystem = printingSubsystem;
         this.universe = universe;
+        this.isPowerBarEaten = false;
         this.isAccessGranted = false;
         this.isAirlockOpen = false;
+    }
+
+    internal void PullLever(object sender, ContainerObjectEventArgs eventArgs)
+    {
+        if (sender is Item lever && lever.Key == Keys.PANEL_TOP_LEVER)
+        {
+            throw new PullException(Descriptions.PANEL_TOP_LEVER_PULL);
+        }
     }
     
     internal void PullFridgeHandle(object sender, ContainerObjectEventArgs eventArgs)
@@ -161,7 +171,7 @@ internal class EventProvider
     {
         if (sender is Location cryoChamber && cryoChamber.Key == Keys.CRYOCHAMBER && eventArgs.ExternalItemKey == Keys.DISPLAY)
         {
-            if (IsPowerBarEaten())
+            if (this.isPowerBarEaten)
             {
                 PrintingSubsystem.Resource(Descriptions.DISPLAY_BAR_EATEN);
                 PrintingSubsystem.ForegroundColor = TextColor.Red;
@@ -183,23 +193,6 @@ internal class EventProvider
                 PrintingSubsystem.Resource(Descriptions.DISPLAY_BAR_NOT_EATEN);
             }
         }
-    }
-
-    private bool IsPowerBarEaten()
-    {
-        var barEaten = false;
-        var bar = this.universe.ActiveLocation.GetItemByKey(Keys.CHOCOLATEBAR);
-        if (bar == default)
-        {
-            bar = this.universe.ActivePlayer.GetItemByKey(Keys.CHOCOLATEBAR);
-
-            if (bar == default)
-            {
-                barEaten = true;
-            }
-        }
-
-        return barEaten;
     }
 
     internal void LookAtClosetDoor(object sender, ContainerObjectEventArgs eventArgs)
@@ -269,6 +262,12 @@ internal class EventProvider
     {
         if (sender is Location engineRoom && engineRoom.Key == Keys.ENGINE_ROOM && eventArgs.ExternalItemKey == Keys.ENGINE_ROOM_RED_DOTS)
         {
+            var lever = this.universe.GetObjectFromWorldByKey(Keys.PANEL_TOP_LEVER);
+            if (lever != default)
+            {
+                lever.ContainmentDescription = Descriptions.PANEL_TOP_LEVER_REDDOTS_CONTAINMENT;
+            }
+            
             this.universe.Score += this.universe.ScoreBoard[nameof(this.LookAtRedDots)];
             engineRoom.AfterLook -= LookAtRedDots;
         }
@@ -290,6 +289,7 @@ internal class EventProvider
             powerBar.AfterEat -= EatChocolateBar;
             PrintingSubsystem.Resource(Descriptions.CHOCOLATEBAR_EATEN);
             this.universe.ActivePlayer.Items.Remove(powerBar);
+            this.isPowerBarEaten = true;
         }
     }
     
@@ -311,7 +311,7 @@ internal class EventProvider
         if (sender is Location chamber && chamber.Key == Keys.CRYOCHAMBER
             && eventArgs.NewDestinationNode.Location.Key == Keys.CORRIDOR_EAST)
         {
-            if (IsPowerBarEaten())
+            if (this.isPowerBarEaten)
             {
                 var suite = this.universe.ActiveLocation.GetItemByKey(Keys.SPACE_SUIT);
                 if (suite != default)
@@ -613,9 +613,11 @@ internal class EventProvider
                 {
                     this.universe.ActivePlayer.Items.Remove(antenna);
                     droid.LinkedTo.Add(antenna);
+                    droid.FirstLookDescription = string.Empty;
+                    
                     antenna.LinkedTo.Add(droid);
                     antenna.LinkedToDescription = Descriptions.DROID_ANTENNA_LINKDESCRIPTION;
-                    
+
                     PrintingSubsystem.Resource(Descriptions.DROID_ANTENNA_MOUNTED);
                     tool.Use -= MountAntennaToDroid;
                     antenna.Use -= MountAntennaToDroid;
@@ -666,6 +668,8 @@ internal class EventProvider
                 
                 this.universe.ActivePlayer.Items.Remove(antenna);
                 droid.LinkedTo.Add(antenna);
+                droid.FirstLookDescription = string.Empty;
+                
                 antenna.LinkedTo.Add(droid);
                 antenna.LinkedToDescription = Descriptions.DROID_ANTENNA_LINKDESCRIPTION;
 
@@ -713,6 +717,41 @@ internal class EventProvider
                 helmet.Use -= UseOxygenBottleWithHelmet;
 
                 this.universe.Score += this.universe.ScoreBoard[nameof(UseOxygenBottleWithHelmet)];
+            }
+            else
+            {
+                throw new UseException(BaseDescriptions.DOES_NOT_WORK);
+            }
+        }
+    }
+
+    internal void UseDumbbellBarWithLever(object sender, UseItemEventArgs eventArgs)
+    {
+        if (sender is Item itemOne && eventArgs.ItemToUse is Item itemTwo && itemOne.Key != itemTwo.Key)
+        {
+            var itemList = new List<Item> { itemOne, itemTwo };
+            var dumbbellBar = itemList.SingleOrDefault(i => i.Key == Keys.DUMBBELL_BAR);
+            var lever = itemList.SingleOrDefault(i => i.Key == Keys.PANEL_TOP_LEVER);
+            
+            if (dumbbellBar != default && lever != default)
+            {
+                if (this.universe.ActivePlayer.GetUnhiddenItemByKey(Keys.DUMBBELL_BAR) == default)
+                {
+                    this.universe.PickObject(dumbbellBar);
+                }
+                
+                PrintingSubsystem.Resource(Descriptions.PANEL_TOP_LEVER_DUMBBELL_BAR);
+                dumbbellBar.Use -= UseDumbbellBarWithLever;
+                lever.Use -= UseDumbbellBarWithLever;
+
+                var droid = this.universe.GetObjectFromWorldByKey(Keys.DROID);
+                if (droid != default)
+                {
+                    droid.ContainmentDescription = Descriptions.DROID_ENERGY_CONTAINMENT;
+                }
+                
+
+                this.universe.Score += this.universe.ScoreBoard[nameof(UseDumbbellBarWithLever)];
             }
             else
             {

@@ -388,6 +388,9 @@
         <value>Die Werkbank|Werkbank</value>
     </data>
     <data name="DROID" xml:space="preserve">
-        <value>Der Wartungsroboter|Wartungsroboter|Roboter|Droid</value>
+        <value>Der Service-Roboter|Service-Roboter|Serviceroboter|Wartungsroboter|Roboter|Droid</value>
+    </data>
+    <data name="PANEL_TOP_LEVER" xml:space="preserve">
+        <value>Der Handgriff|Handgriff|Hebel|Griff</value>
     </data>
 </root>

@@ -67,18 +67,26 @@ internal static class GymPrerequisites
         };
         
         AddAfterTakeEvents(item, eventProvider);
+        AddUseEvents(item, eventProvider);
+        
         
         return item;
     }
     
-    private static void AddAfterLookEvents(Location gym, EventProvider eventProvider)
+    private static void AddAfterLookEvents(AContainerObject gym, EventProvider eventProvider)
     {
         gym.AfterLook += eventProvider.LookAtPowerStation;
     }
     
-    private static void AddAfterTakeEvents(Item bar, EventProvider eventProvider)
+    private static void AddAfterTakeEvents(AContainerObject bar, EventProvider eventProvider)
     {
         bar.AfterTake += eventProvider.TakeDumbbellBar;
         eventProvider.ScoreBoard.Add(nameof(eventProvider.TakeDumbbellBar), 1);
+    }
+    
+    private static void AddUseEvents(AContainerObject item, EventProvider eventProvider)
+    {
+        item.Use += eventProvider.UseDumbbellBarWithLever;
+        eventProvider.ScoreBoard.Add(nameof(eventProvider.UseDumbbellBarWithLever), 10);
     }
 }
