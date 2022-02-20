@@ -78,4 +78,7 @@
     <data name="JETTY" xml:space="preserve">
         <value>Der Steg|Steg</value>
     </data>
+    <data name="ROOF_TOP" xml:space="preserve">
+        <value>Das Dach der Brücke|Dach der Brücke|Brückendach|Dach</value>
+    </data>
 </root>

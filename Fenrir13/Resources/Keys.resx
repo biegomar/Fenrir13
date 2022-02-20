@@ -444,4 +444,10 @@
     <data name="JETTY" xml:space="preserve">
         <value>JETTY</value>
     </data>
+    <data name="ROOF_TOP" xml:space="preserve">
+        <value>ROOF_TOP</value>
+    </data>
+    <data name="DROID" xml:space="preserve">
+        <value>DROID</value>
+    </data>
 </root>

@@ -12,6 +12,7 @@ using Fenrir13.GamePlay.Prerequisites.Kitchen;
 using Fenrir13.GamePlay.Prerequisites.MachineCorridor;
 using Fenrir13.GamePlay.Prerequisites.MaintenanceRoom;
 using Fenrir13.GamePlay.Prerequisites.PlayerConfig;
+using Fenrir13.GamePlay.Prerequisites.RoofTop;
 using Fenrir13.GamePlay.Prerequisites.SocialRoom;
 using Fenrir13.Resources;
 using Heretic.InteractiveFiction.Comparer;
@@ -53,6 +54,7 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
         var equipmentRoom = EquipmentRoomPrerequisites.Get(this.eventProvider);
         var maintenanceRoom = MaintenanceRoomPrerequisites.Get(this.eventProvider);
         var jetty = JettyPrerequisites.Get(this.eventProvider);
+        var roofTop = RoofTopPrerequisites.Get(this.eventProvider);
         
         map.Add(cryoChamber, CryoChamberLocationMap(corridorEast));
         map.Add(corridorEast, CorridorEastLocationMap(cryoChamber, corridorMidEast, emptyChamberOne, emptyChamberTwo));
@@ -68,7 +70,8 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
         map.Add(socialRoom, SocialRoomLocationMap(corridorMidEast));
         map.Add(kitchen, KitchenLocationMap(corridorMidEast));
         map.Add(airlock, AirlockLocationMap(machineCorridorMid, jetty));
-        map.Add(jetty, JettyLocationMap(airlock));
+        map.Add(jetty, JettyLocationMap(airlock, roofTop));
+        map.Add(roofTop, RoofTopLocationMap(jetty));
         map.Add(engineRoom, EngineRoomLocationMap(machineCorridorMid));
         map.Add(equipmentRoom, EquipmentRoomLocationMap(machineCorridorMid));
         map.Add(maintenanceRoom, MaintenanceRoomLocationMap(machineCorridorMid));
@@ -83,11 +86,11 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
     {
         var locationMap = new List<DestinationNode>
         {
-            new() {Direction = Directions.UP, Location = corridorMid, IsHidden = false},
-            new() {Direction = Directions.S, Location = airlock, IsHidden = false},
-            new() {Direction = Directions.N, Location = engineRoom, IsHidden = false},
-            new() {Direction = Directions.W, Location = equipmentRoom, IsHidden = false},
-            new() {Direction = Directions.E, Location = maintenanceRoom, IsHidden = false},
+            new() {Direction = Directions.UP, Location = corridorMid},
+            new() {Direction = Directions.S, Location = airlock},
+            new() {Direction = Directions.N, Location = engineRoom},
+            new() {Direction = Directions.W, Location = equipmentRoom},
+            new() {Direction = Directions.E, Location = maintenanceRoom},
             
         };
         return locationMap;  
@@ -97,7 +100,7 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
     {
         var locationMap = new List<DestinationNode>
         {
-            new() {Direction = Directions.E, Location = machineCorridorMid, IsHidden = false},
+            new() {Direction = Directions.E, Location = machineCorridorMid},
         };
         return locationMap;
     }
@@ -106,7 +109,7 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
     {
         var locationMap = new List<DestinationNode>
         {
-            new() {Direction = Directions.W, Location = machineCorridorMid, IsHidden = false},
+            new() {Direction = Directions.W, Location = machineCorridorMid},
         };
         return locationMap;
     }
@@ -115,17 +118,27 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
     {
         var locationMap = new List<DestinationNode>
         {
-            new() {Direction = Directions.N, Location = machineCorridorMid, IsHidden = false},
-            new() {Direction = Directions.S, Location = jetty, IsHidden = false},
+            new() {Direction = Directions.N, Location = machineCorridorMid},
+            new() {Direction = Directions.S, Location = jetty},
         };
         return locationMap;
     }
     
-    private static IEnumerable<DestinationNode> JettyLocationMap(Location airlock)
+    private static IEnumerable<DestinationNode> JettyLocationMap(Location airlock, Location roofTop)
     {
         var locationMap = new List<DestinationNode>
         {
-            new() {Direction = Directions.N, Location = airlock, IsHidden = false}
+            new() {Direction = Directions.N, Location = airlock},
+            new() {Direction = Directions.UP, Location = roofTop, DestinationDescription = Descriptions.ROOF_TOP_DESTINATION},
+        };
+        return locationMap;
+    }
+    
+    private static IEnumerable<DestinationNode> RoofTopLocationMap(Location jetty)
+    {
+        var locationMap = new List<DestinationNode>
+        {
+            new() {Direction = Directions.DOWN, Location = jetty}
         };
         return locationMap;
     }
@@ -134,7 +147,7 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
     {
         var locationMap = new List<DestinationNode>
         {
-            new() {Direction = Directions.S, Location = machineCorridorMid, IsHidden = false}
+            new() {Direction = Directions.S, Location = machineCorridorMid}
         };
         return locationMap;
     }
@@ -143,7 +156,7 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
     {
         var locationMap = new List<DestinationNode>
         {
-            new() {Direction = Directions.W, Location = corridorEast, IsHidden = false},
+            new() {Direction = Directions.W, Location = corridorEast},
         };
         return locationMap;
     }
@@ -152,10 +165,10 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
     {
         var locationMap = new List<DestinationNode>
         {
-            new() {Direction = Directions.E, Location = cryoChamber, IsHidden = false},
-            new() {Direction = Directions.W, Location = corridorMidEast, IsHidden = false},
-            new() {Direction = Directions.S, Location = emptyChamberOne, IsHidden = false, DestinationDescription = Descriptions.EMPTYCREWCHAMBERONE_DESTINATION,},
-            new() {Direction = Directions.N, Location = emptyChamberTwo, IsHidden = false, ShowInDescription = false},
+            new() {Direction = Directions.E, Location = cryoChamber},
+            new() {Direction = Directions.W, Location = corridorMidEast},
+            new() {Direction = Directions.S, Location = emptyChamberOne, DestinationDescription = Descriptions.EMPTYCREWCHAMBERONE_DESTINATION,},
+            new() {Direction = Directions.N, Location = emptyChamberTwo, ShowInDescription = false},
         };
         return locationMap;
     }
@@ -164,10 +177,10 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
     {
         var locationMap = new List<DestinationNode>
         {
-            new() {Direction = Directions.E, Location = corridorEast, IsHidden = false, ShowInDescription = false},
-            new() {Direction = Directions.W, Location = corridorMid, IsHidden = false, DestinationDescription = Descriptions.CORRIDOR_DESTINATION},
-            new() {Direction = Directions.S, Location = socialRoom, IsHidden = false},
-            new() {Direction = Directions.N, Location = kitchen, IsHidden = false},
+            new() {Direction = Directions.E, Location = corridorEast, ShowInDescription = false},
+            new() {Direction = Directions.W, Location = corridorMid, DestinationDescription = Descriptions.CORRIDOR_DESTINATION},
+            new() {Direction = Directions.S, Location = socialRoom},
+            new() {Direction = Directions.N, Location = kitchen},
         };
         return locationMap;
     }
@@ -176,10 +189,10 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
     {
         var locationMap = new List<DestinationNode>
         {
-            new() {Direction = Directions.E, Location = corridorMidEast, IsHidden = false, ShowInDescription = false},
-            new() {Direction = Directions.W, Location = corridorMidWest, IsHidden = false, ShowInDescription = false},
-            new() {Direction = Directions.UP, Location = bridge, IsHidden = false, DestinationDescription = Descriptions.BRIDGE_DESTINATION},
-            new() {Direction = Directions.DOWN, Location = machineCorridorMid, IsHidden = false},
+            new() {Direction = Directions.E, Location = corridorMidEast, ShowInDescription = false},
+            new() {Direction = Directions.W, Location = corridorMidWest, ShowInDescription = false},
+            new() {Direction = Directions.UP, Location = bridge, DestinationDescription = Descriptions.BRIDGE_DESTINATION},
+            new() {Direction = Directions.DOWN, Location = machineCorridorMid},
         };
         return locationMap;
     }
@@ -188,7 +201,7 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
     {
         var locationMap = new List<DestinationNode>
         {
-            new() {Direction = Directions.DOWN, Location = corridorMid, IsHidden = false, DestinationDescription = Descriptions.COMMANDBRIDGE_TO_CORRIDOR_DESTINATION},
+            new() {Direction = Directions.DOWN, Location = corridorMid, DestinationDescription = Descriptions.COMMANDBRIDGE_TO_CORRIDOR_DESTINATION},
         };
         return locationMap;
     }
@@ -197,10 +210,10 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
     {
         var locationMap = new List<DestinationNode>
         {
-            new() {Direction = Directions.E, Location = corridorMid, IsHidden = false, ShowInDescription = false},
-            new() {Direction = Directions.W, Location = corridorWest, IsHidden = false, DestinationDescription = Descriptions.CORRIDOR_DESTINATION},
-            new() {Direction = Directions.S, Location = gym, IsHidden = false},
-            new() {Direction = Directions.N, Location = ambulance, IsHidden = false},
+            new() {Direction = Directions.E, Location = corridorMid, ShowInDescription = false},
+            new() {Direction = Directions.W, Location = corridorWest, DestinationDescription = Descriptions.CORRIDOR_DESTINATION},
+            new() {Direction = Directions.S, Location = gym},
+            new() {Direction = Directions.N, Location = ambulance},
         };
         return locationMap;
     }
@@ -209,7 +222,7 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
     {
         var locationMap = new List<DestinationNode>
         {
-            new() {Direction = Directions.N, Location = corridorMidWest, IsHidden = false},
+            new() {Direction = Directions.N, Location = corridorMidWest},
         };
         return locationMap;
     }
@@ -218,7 +231,7 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
     {
         var locationMap = new List<DestinationNode>
         {
-            new() {Direction = Directions.S, Location = corridorMidWest, IsHidden = false},
+            new() {Direction = Directions.S, Location = corridorMidWest},
         };
         return locationMap;
     }
@@ -227,7 +240,7 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
     {
         var locationMap = new List<DestinationNode>
         {
-            new() {Direction = Directions.N, Location = corridorMidEast, IsHidden = false},
+            new() {Direction = Directions.N, Location = corridorMidEast},
         };
         return locationMap;
     }
@@ -236,7 +249,7 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
     {
         var locationMap = new List<DestinationNode>
         {
-            new() {Direction = Directions.S, Location = corridorMidEast, IsHidden = false},
+            new() {Direction = Directions.S, Location = corridorMidEast},
         };
         return locationMap;
     }
@@ -245,7 +258,7 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
     {
         var locationMap = new List<DestinationNode>
         {
-            new() {Direction = Directions.E, Location = corridorMidWest, IsHidden = false},
+            new() {Direction = Directions.E, Location = corridorMidWest},
         };
         return locationMap;
     }

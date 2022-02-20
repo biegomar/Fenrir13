@@ -493,6 +493,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to DROID.
+        /// </summary>
+        internal static string DROID {
+            get {
+                return ResourceManager.GetString("DROID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to DUMBBELL_BAR.
         /// </summary>
         internal static string DUMBBELL_BAR {
@@ -1011,6 +1020,15 @@ namespace Fenrir13.Resources {
         internal static string RECYCLER {
             get {
                 return ResourceManager.GetString("RECYCLER", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ROOF_TOP.
+        /// </summary>
+        internal static string ROOF_TOP {
+            get {
+                return ResourceManager.GetString("ROOF_TOP", resourceCulture);
             }
         }
         

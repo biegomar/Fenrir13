@@ -33,8 +33,8 @@ internal class AirlockPrerequisites
             Key = Keys.AIRLOCK_KEYPAD,
             Name = Items.AIRLOCK_KEYPAD,
             Description = Descriptions.AIRLOCK_KEYPAD,
-            ContainmentDescription = Descriptions.AIRLOCK_KEYPAD_CONTAINMENT
-            
+            ContainmentDescription = Descriptions.AIRLOCK_KEYPAD_CONTAINMENT,
+            IsPickAble = false
         };
         
         keyPad.Items.Add(GetGreenButton(eventProvider));
@@ -50,7 +50,8 @@ internal class AirlockPrerequisites
             Key = Keys.AIRLOCK_KEYPAD_GREEN_BUTTON,
             Name = Items.AIRLOCK_KEYPAD_GREEN_BUTTON,
             Description = Descriptions.AIRLOCK_KEYPAD_GREEN_BUTTON,
-            IsHidden = true
+            IsHidden = true,
+            IsPickAble = false
         };
         
         AddPushGreenButtonEvents(greenButton, eventProvider);
@@ -65,7 +66,8 @@ internal class AirlockPrerequisites
             Key = Keys.AIRLOCK_KEYPAD_RED_BUTTON,
             Name = Items.AIRLOCK_KEYPAD_RED_BUTTON,
             Description = Descriptions.AIRLOCK_KEYPAD_RED_BUTTON,
-            IsHidden = true
+            IsHidden = true,
+            IsPickAble = false
         };
 
         AddPushRedButtonEvents(redButton, eventProvider);

@@ -829,6 +829,52 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Der Wartungsroboter wirkt wie ein überdimensionierter Saugroboter. Eine nicht ganz so flache Scheibe mit vielen aktuell verborgenen Werkzeugen..
+        /// </summary>
+        internal static string DROID {
+            get {
+                return ResourceManager.GetString("DROID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Du kannst deutlich sehen, dass die Antenne mit dem Roboter verschraubt ist..
+        /// </summary>
+        internal static string DROID_ANTENNA_LINKDESCRIPTION {
+            get {
+                return ResourceManager.GetString("DROID_ANTENNA_LINKDESCRIPTION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Vorsichtig schraubst Du die Halterung an dem Roboter auf und entfernst die Reste der zerstörten Antenne. Tatsächlich sieht hier noch alles in Ordnung aus. Du nimmst Deine Antenne und fixierst sie gut. Jetzt sollte er wieder ein Signal bekommen!.
+        /// </summary>
+        internal static string DROID_ANTENNA_MOUNTED {
+            get {
+                return ResourceManager.GetString("DROID_ANTENNA_MOUNTED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Die Antenne scheint nun genau dort zu sein, wo sie für Deine Aufgabe richtig ist. Du solltest sie also an Ort und Stelle belassen..
+        /// </summary>
+        internal static string DROID_ANTENNE_UNPICKABLE {
+            get {
+                return ResourceManager.GetString("DROID_ANTENNE_UNPICKABLE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Im Moment verharrt er in seinem Ladedock und Du erkennst deutlich die Stelle, an der eigentlich eine Antenne sein sollte. Da muss eines der kleinen, interstellaren Geschosse ganze Arbeit geleistet haben. Aber so wie es aussieht, lässt sich dort eine andere Antenne mit einem guten Werkzeug wieder anbringen. 
+        ///Da Du überhaupt keine Anzeichen von blinkenden Lichtern oder Kontrollanzeigen erkennst, gehst Du davon aus, dass er im Moment auch nicht genug Energie besitzt, um seiner Tätigkeit nachzukommen..
+        /// </summary>
+        internal static string DROID_FIRSTLOOK {
+            get {
+                return ResourceManager.GetString("DROID_FIRSTLOOK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Mit ein paar Handgriffen lässt sich diese lange Hantelstange mit Gewichten bestücken und so für viele Kraftübungen einsetzen. Sie ist aus hochwertigem Stahl gefertigt, ca. 120 cm lang und sieht sehr schwer aus..
         /// </summary>
         internal static string DUMBBELL_BAR {
@@ -1546,6 +1592,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Das ist zwar eine gute Idee, aber ohne das passende Werkzeug wird Dir das nicht gelingen..
+        /// </summary>
+        internal static string MAINTENANCE_ROOM_TOOL_NOT_PRESENT {
+            get {
+                return ResourceManager.GetString("MAINTENANCE_ROOM_TOOL_NOT_PRESENT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Genug Platz für einfache handwerkliche Tätigkeiten..
         /// </summary>
         internal static string MAINTENANCE_ROOM_WORKBENCH {
@@ -1768,6 +1823,24 @@ namespace Fenrir13.Resources {
         internal static string RECYCLER_FIRSTLOOK {
             get {
                 return ResourceManager.GetString("RECYCLER_FIRSTLOOK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Du bist auf dem Dach des Wohn- und Arbeitsbereiches angekommen. Und Du vermutest, dass sich unterhalb von Dir die Brücke befindet. Von hier hast Du einen unverstellten, atemberaubenden Blick über die gesamte Szenerie. Proxima Centauri steht glutrot am Firmament. .
+        /// </summary>
+        internal static string ROOF_TOP {
+            get {
+                return ResourceManager.GetString("ROOF_TOP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to An der Rückseite des Schiffs kannst Du eine Leiter erkennen, die sowohl nach oben, auf das Dach des Wohnbereichs, als auch nach Unten an die Unterseite des Schiffs reicht..
+        /// </summary>
+        internal static string ROOF_TOP_DESTINATION {
+            get {
+                return ResourceManager.GetString("ROOF_TOP_DESTINATION", resourceCulture);
             }
         }
         

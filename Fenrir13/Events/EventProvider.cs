@@ -418,17 +418,25 @@ internal class EventProvider
     {
         if (sender is Item antenna && antenna.Key == Keys.SOCIALROOM_ANTENNA)
         {
-            if (!this.universe.ActivePlayer.HasClimbed || this.universe.ActivePlayer.ClimbedObject == default)
+            if (this.universe.ActiveLocation.Key == Keys.SOCIALROOM)
             {
-                throw new TakeException(Descriptions.CANT_REACH_ANTENNA);
-            }
+                if (!this.universe.ActivePlayer.HasClimbed || this.universe.ActivePlayer.ClimbedObject == default)
+                {
+                    throw new TakeException(Descriptions.CANT_REACH_ANTENNA);
+                }
             
-            if (this.universe.ActivePlayer.ClimbedObject.Key == Keys.SOCIALROOM_COUCH)
+                if (this.universe.ActivePlayer.ClimbedObject.Key == Keys.SOCIALROOM_COUCH)
+                {
+                    throw new TakeException(Descriptions.CANT_TAKE_ANTENNA);
+                }
+            
+                throw new TakeException(BaseDescriptions.NOTHING_HAPPENS);    
+            }
+
+            if (this.universe.ActiveLocation.Key == Keys.ROOF_TOP && antenna.LinkedTo.Count > 0)
             {
-                throw new TakeException(Descriptions.CANT_TAKE_ANTENNA);
+                throw new TakeException(Descriptions.DROID_ANTENNE_UNPICKABLE);
             }
-            
-            throw new TakeException(BaseDescriptions.NOTHING_HAPPENS);
         }
     }
     
@@ -497,9 +505,12 @@ internal class EventProvider
         }
     }
     
-    internal void UseToolWithAntenna(object sender, UseItemEventArgs eventArgs)
+    internal void UseToolWithAntennaInSocialRoom(object sender, UseItemEventArgs eventArgs)
     {
-        if (sender is Item itemOne && eventArgs.ItemToUse is Item itemTwo && itemOne.Key != itemTwo.Key)
+        if (sender is Item itemOne 
+            && eventArgs.ItemToUse is Item itemTwo 
+            && itemOne.Key != itemTwo.Key
+            && this.universe.ActiveLocation.Key == Keys.SOCIALROOM)
         {
             var itemList = new List<Item> { itemOne, itemTwo };
             var tool = itemList.SingleOrDefault(i => i.Key == Keys.MAINTENANCE_ROOM_TOOL);
@@ -529,10 +540,10 @@ internal class EventProvider
                 }
 
                 PrintingSubsystem.Resource(Descriptions.GET_ANTENNA);
-                tool.Use -= UseToolWithAntenna;
-                antenna.Use -= UseToolWithAntenna;
+                tool.Use -= UseToolWithAntennaInSocialRoom;
+                antenna.Use -= UseToolWithAntennaInSocialRoom;
 
-                this.universe.Score += this.universe.ScoreBoard[nameof(UseToolWithAntenna)];
+                this.universe.Score += this.universe.ScoreBoard[nameof(UseToolWithAntennaInSocialRoom)];
             }
             else
             {
@@ -541,6 +552,138 @@ internal class EventProvider
         }
     }
 
+    
+
+    internal void MountAntennaToDroid(object sender, UseItemEventArgs eventArgs)
+    {
+        if (sender is Item itemOne
+            && eventArgs.ItemToUse is Item itemTwo
+            && itemOne.Key != itemTwo.Key
+            && this.universe.ActiveLocation.Key == Keys.ROOF_TOP)
+        {
+            var itemList = new List<Item> { itemOne, itemTwo };
+            var tool = itemList.SingleOrDefault(i => i.Key == Keys.MAINTENANCE_ROOM_TOOL);
+
+            if (tool != default)
+            {
+                this.UseToolWithAntennaOnRoofTop(sender, eventArgs);
+            }
+            else
+            {
+                this.UseAntennaOnDroid(sender, eventArgs);
+            }
+        }
+    }
+    
+    private void UseToolWithAntennaOnRoofTop(object sender, UseItemEventArgs eventArgs)
+    {
+        if (sender is Item itemOne 
+            && eventArgs.ItemToUse is Item itemTwo 
+            && itemOne.Key != itemTwo.Key
+            && this.universe.ActiveLocation.Key == Keys.ROOF_TOP)
+        {
+            var itemList = new List<Item> { itemOne, itemTwo };
+            var tool = itemList.SingleOrDefault(i => i.Key == Keys.MAINTENANCE_ROOM_TOOL);
+            var secondItem = itemList.SingleOrDefault(i => i.Key == Keys.SOCIALROOM_ANTENNA);
+            Item antenna = secondItem;
+
+            if (tool != default && secondItem == default)
+            {
+                secondItem = itemList.SingleOrDefault(i => i.Key == Keys.DROID);
+                if (secondItem != default)
+                {
+                    antenna = this.universe.ActivePlayer.Items.SingleOrDefault(i => i.Key == Keys.SOCIALROOM_ANTENNA);
+                }
+            }
+            
+            if (tool != default && antenna != default)
+            {
+                if (this.universe.ActivePlayer.GetUnhiddenItemByKey(Keys.MAINTENANCE_ROOM_TOOL) == default)
+                {
+                    this.universe.PickObject(tool);
+                }
+                
+                if (this.universe.ActivePlayer.GetUnhiddenItemByKey(Keys.SOCIALROOM_ANTENNA) == default)
+                {
+                    this.universe.PickObject(antenna);
+                }
+                
+                var droid = this.universe.ActiveLocation.GetItemByKey(Keys.DROID);
+                if (droid != default)
+                {
+                    this.universe.ActivePlayer.Items.Remove(antenna);
+                    droid.LinkedTo.Add(antenna);
+                    antenna.LinkedTo.Add(droid);
+                    antenna.LinkedToDescription = Descriptions.DROID_ANTENNA_LINKDESCRIPTION;
+                    
+                    PrintingSubsystem.Resource(Descriptions.DROID_ANTENNA_MOUNTED);
+                    tool.Use -= MountAntennaToDroid;
+                    antenna.Use -= MountAntennaToDroid;
+                    droid.Use -= MountAntennaToDroid;
+
+                    this.universe.Score += this.universe.ScoreBoard[nameof(MountAntennaToDroid)];
+                }
+                else
+                {
+                    throw new UseException(BaseDescriptions.DOES_NOT_WORK);
+                }
+            }
+            else
+            {
+                throw new UseException(BaseDescriptions.DOES_NOT_WORK);
+            }
+        }
+    }
+    
+    private void UseAntennaOnDroid(object sender, UseItemEventArgs eventArgs)
+    {
+        if (sender is Item itemOne && eventArgs.ItemToUse is Item itemTwo && itemOne.Key != itemTwo.Key)
+        {
+            var itemList = new List<Item> { itemOne, itemTwo };
+            var antenna = itemList.SingleOrDefault(i => i.Key == Keys.SOCIALROOM_ANTENNA);
+            var droid = itemList.SingleOrDefault(i => i.Key == Keys.DROID);
+            
+            if (antenna != default && droid != default)
+            {
+                var tool = this.universe.GetObjectFromWorldByKey(Keys.MAINTENANCE_ROOM_TOOL) as Item;
+                if (tool == default)
+                {
+                    throw new UseException(Descriptions.MAINTENANCE_ROOM_TOOL_NOT_PRESENT); 
+                }
+                
+                if (this.universe.ActivePlayer.GetUnhiddenItemByKey(Keys.MAINTENANCE_ROOM_TOOL) == default)
+                {
+                    if (!this.universe.PickObject(tool))
+                    {
+                        throw new UseException(Descriptions.MAINTENANCE_ROOM_TOOL_NOT_PRESENT);
+                    }
+                }
+                
+                if (this.universe.ActivePlayer.GetUnhiddenItemByKey(Keys.SOCIALROOM_ANTENNA) == default)
+                {
+                    this.universe.PickObject(antenna);
+                }
+                
+                this.universe.ActivePlayer.Items.Remove(antenna);
+                droid.LinkedTo.Add(antenna);
+                antenna.LinkedTo.Add(droid);
+                antenna.LinkedToDescription = Descriptions.DROID_ANTENNA_LINKDESCRIPTION;
+
+                PrintingSubsystem.Resource(Descriptions.DROID_ANTENNA_MOUNTED);
+                
+                tool.Use -= MountAntennaToDroid;
+                antenna.Use -= MountAntennaToDroid;
+                droid.Use -= MountAntennaToDroid;
+
+                this.universe.Score += this.universe.ScoreBoard[nameof(MountAntennaToDroid)];
+            }
+            else
+            {
+                throw new UseException(BaseDescriptions.DOES_NOT_WORK);
+            }
+        }    
+    }
+    
     internal void UseOxygenBottleWithHelmet(object sender, UseItemEventArgs eventArgs)
     {
         if (sender is Item itemOne && eventArgs.ItemToUse is Item itemTwo && itemOne.Key != itemTwo.Key)

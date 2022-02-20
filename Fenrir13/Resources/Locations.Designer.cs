@@ -232,6 +232,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Das Dach der Brücke|Dach der Brücke|Brückendach|Dach.
+        /// </summary>
+        internal static string ROOF_TOP {
+            get {
+                return ResourceManager.GetString("ROOF_TOP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Der Sozialraum|Sozialraum|Aufenthaltsraum|Wohnzimmer.
         /// </summary>
         internal static string SOCIALROOM {

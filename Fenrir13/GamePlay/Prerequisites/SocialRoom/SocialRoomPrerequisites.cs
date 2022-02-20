@@ -116,6 +116,7 @@ public class SocialRoomPrerequisites
     
     private static void AddUseEvents(Item item, EventProvider eventProvider)
     {
-        item.Use += eventProvider.UseToolWithAntenna;
+        item.Use += eventProvider.UseToolWithAntennaInSocialRoom;
+        item.Use += eventProvider.MountAntennaToDroid;
     }
 }

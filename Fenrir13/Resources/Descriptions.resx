@@ -794,7 +794,7 @@ Der Zweite Punkt verweist auf die mechanische Vorrichtung, um die Solarpanele au
     </data>
     <data name="JETTY" xml:space="preserve">
         <value>Voller Demut und Ehrfurcht stehst Du auf dem breiten Steg und blickst in die schwarze Tiefe des Alls. Noch nie zuvor hast Du es gewagt, Dich dieser Herausforderung zu stellen. Wenn es die Situation nicht erfordern würde, hättest Du es auch jetzt noch nicht. Aber es nützt nichts. Du wirst Deine Angst überwinden müssen.
-Der Steg ragt weit ins All hinaus und an seiner äußeren Kante steht man vollkommen im All, ohne die schützende Hülle des Schiffs. Du lässt Deinen Blick schweifen und kannst überall nur den für Dich unbekannten Sternenhimmel des Alpha Centauri Systems erblicken. Wenn Du einen Blick über Deine Schultern wirfst, siehst Du die Fenrir 13 und ihre mächtigen Ionen-Strahlentriebwerke, sowie die Rückseite des Hammerkopfes.</value>
+Der Steg ragt weit ins All hinaus und an seiner äußeren Kante steht man vollkommen im All, ohne die schützende Hülle des Schiffs. Du lässt Deinen Blick schweifen und kannst überall nur den für Dich unbekannten Sternenhimmel des Alpha Centauri Systems erblicken. Wenn Du einen Blick über Deine Schultern wirfst, siehst Du die Fenrir 13 und ihre mächtigen Ionen-Strahlentriebwerke, sowie ihre Rückseite.</value>
     </data>
     <data name="CANT_LEAVE_AIRLOCK" xml:space="preserve">
         <value>Solange das Schott noch geschlossen ist, kannst Du nicht hinaus auf den Steg.</value>
@@ -810,5 +810,30 @@ Der Steg ragt weit ins All hinaus und an seiner äußeren Kante steht man vollko
     </data>
     <data name="AIRLOCK_OPEN_DROP_CLOTHES" xml:space="preserve">
         <value>Das geht nicht! Du würdest hier im All sofort sterben!</value>
+    </data>
+    <data name="ROOF_TOP" xml:space="preserve">
+        <value>Du bist auf dem Dach des Wohn- und Arbeitsbereiches angekommen. Und Du vermutest, dass sich unterhalb von Dir die Brücke befindet. Von hier hast Du einen unverstellten, atemberaubenden Blick über die gesamte Szenerie. Proxima Centauri steht glutrot am Firmament. </value>
+    </data>
+    <data name="ROOF_TOP_DESTINATION" xml:space="preserve">
+        <value>An der Rückseite des Schiffs kannst Du eine Leiter erkennen, die sowohl nach oben, auf das Dach des Wohnbereichs, als auch nach Unten an die Unterseite des Schiffs reicht.</value>
+    </data>
+    <data name="DROID" xml:space="preserve">
+        <value>Der Wartungsroboter wirkt wie ein überdimensionierter Saugroboter. Eine nicht ganz so flache Scheibe mit vielen aktuell verborgenen Werkzeugen.</value>
+    </data>
+    <data name="DROID_FIRSTLOOK" xml:space="preserve">
+        <value>Im Moment verharrt er in seinem Ladedock und Du erkennst deutlich die Stelle, an der eigentlich eine Antenne sein sollte. Da muss eines der kleinen, interstellaren Geschosse ganze Arbeit geleistet haben. Aber so wie es aussieht, lässt sich dort eine andere Antenne mit einem guten Werkzeug wieder anbringen. 
+Da Du überhaupt keine Anzeichen von blinkenden Lichtern oder Kontrollanzeigen erkennst, gehst Du davon aus, dass er im Moment auch nicht genug Energie besitzt, um seiner Tätigkeit nachzukommen.</value>
+    </data>
+    <data name="DROID_ANTENNA_LINKDESCRIPTION" xml:space="preserve">
+        <value>Du kannst deutlich sehen, dass die Antenne mit dem Roboter verschraubt ist.</value>
+    </data>
+    <data name="DROID_ANTENNE_UNPICKABLE" xml:space="preserve">
+        <value>Die Antenne scheint nun genau dort zu sein, wo sie für Deine Aufgabe richtig ist. Du solltest sie also an Ort und Stelle belassen.</value>
+    </data>
+    <data name="DROID_ANTENNA_MOUNTED" xml:space="preserve">
+        <value>Vorsichtig schraubst Du die Halterung an dem Roboter auf und entfernst die Reste der zerstörten Antenne. Tatsächlich sieht hier noch alles in Ordnung aus. Du nimmst Deine Antenne und fixierst sie gut. Jetzt sollte er wieder ein Signal bekommen!</value>
+    </data>
+    <data name="MAINTENANCE_ROOM_TOOL_NOT_PRESENT" xml:space="preserve">
+        <value>Das ist zwar eine gute Idee, aber ohne das passende Werkzeug wird Dir das nicht gelingen.</value>
     </data>
 </root>

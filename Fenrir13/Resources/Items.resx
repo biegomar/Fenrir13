@@ -387,4 +387,7 @@
     <data name="MAINTENANCE_ROOM_WORKBENCH" xml:space="preserve">
         <value>Die Werkbank|Werkbank</value>
     </data>
+    <data name="DROID" xml:space="preserve">
+        <value>Der Wartungsroboter|Wartungsroboter|Roboter|Droid</value>
+    </data>
 </root>

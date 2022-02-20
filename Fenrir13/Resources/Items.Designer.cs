@@ -403,6 +403,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Der Wartungsroboter|Wartungsroboter|Roboter|Droid.
+        /// </summary>
+        internal static string DROID {
+            get {
+                return ResourceManager.GetString("DROID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Die Hantelstange|Hantelstange|Stange|Hantel.
         /// </summary>
         internal static string DUMBBELL_BAR {
