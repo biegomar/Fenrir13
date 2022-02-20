@@ -102,7 +102,79 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to v0.7.17.
+        ///   Looks up a localized string similar to Öffne Deine Zimmertür.
+        /// </summary>
+        internal static string QUEST_I {
+            get {
+                return ResourceManager.GetString("QUEST_I", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hack Dich ins System.
+        /// </summary>
+        internal static string QUEST_II {
+            get {
+                return ResourceManager.GetString("QUEST_II", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Öffne das Sicherheitsschloss.
+        /// </summary>
+        internal static string QUEST_III {
+            get {
+                return ResourceManager.GetString("QUEST_III", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bekomme die Antenne.
+        /// </summary>
+        internal static string QUEST_IV {
+            get {
+                return ResourceManager.GetString("QUEST_IV", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Verbinde den Sauerstoff mit der Flasche.
+        /// </summary>
+        internal static string QUEST_V {
+            get {
+                return ResourceManager.GetString("QUEST_V", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Das All.
+        /// </summary>
+        internal static string QUEST_VI {
+            get {
+                return ResourceManager.GetString("QUEST_VI", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Repariere den Roboter.
+        /// </summary>
+        internal static string QUEST_VII {
+            get {
+                return ResourceManager.GetString("QUEST_VII", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Stelle die Energieversorgung wieder her.
+        /// </summary>
+        internal static string QUEST_VIII {
+            get {
+                return ResourceManager.GetString("QUEST_VIII", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to v0.8.18.
         /// </summary>
         internal static string VERSION {
             get {

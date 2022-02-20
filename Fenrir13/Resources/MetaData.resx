@@ -28,7 +28,7 @@
         <value>Fenrir 13 - An Interactive Fiction</value>
     </data>
     <data name="VERSION" xml:space="preserve">
-        <value>v0.7.17</value>
+        <value>v0.8.18</value>
     </data>
     <data name="ASCII_TITLE" xml:space="preserve">
         <value> ________ _______   ________   ________  ___  ________           _____  ________     
@@ -39,5 +39,29 @@
    \ \__\   \ \_______\ \__\\ \__\ \__\\ _\\ \__\ \__\\ _\           \ \__\|\_______\
     \|__|    \|_______|\|__| \|__|\|__|\|__|\|__|\|__|\|__|           \|__|\|_______|
 </value>
+    </data>
+    <data name="QUEST_I" xml:space="preserve">
+        <value>Öffne Deine Zimmertür</value>
+    </data>
+    <data name="QUEST_II" xml:space="preserve">
+        <value>Hack Dich ins System</value>
+    </data>
+    <data name="QUEST_III" xml:space="preserve">
+        <value>Öffne das Sicherheitsschloss</value>
+    </data>
+    <data name="QUEST_IV" xml:space="preserve">
+        <value>Bekomme die Antenne</value>
+    </data>
+    <data name="QUEST_V" xml:space="preserve">
+        <value>Verbinde den Sauerstoff mit der Flasche</value>
+    </data>
+    <data name="QUEST_VI" xml:space="preserve">
+        <value>Das All</value>
+    </data>
+    <data name="QUEST_VII" xml:space="preserve">
+        <value>Repariere den Roboter</value>
+    </data>
+    <data name="QUEST_VIII" xml:space="preserve">
+        <value>Stelle die Energieversorgung wieder her</value>
     </data>
 </root>

@@ -148,6 +148,7 @@ internal class EventProvider
                         this.isAirlockOpen = true;
                         PrintingSubsystem.Resource(Descriptions.PREPARED_FOR_SPACE_WALK);
                         this.universe.Score += this.universe.ScoreBoard[nameof(this.PushRedButton)];
+                        this.universe.SolveQuest(MetaData.QUEST_VI);
                     }
                     else
                     {
@@ -186,6 +187,7 @@ internal class EventProvider
                     corridor.IsLocked = false;
                     this.universe.Score += this.universe.ScoreBoard[nameof(this.LookAtDisplay)];
                     cryoChamber.AfterLook -= LookAtDisplay;
+                    this.universe.SolveQuest(MetaData.QUEST_I);
                 }
             }
             else
@@ -544,6 +546,7 @@ internal class EventProvider
                 antenna.Use -= UseToolWithAntennaInSocialRoom;
 
                 this.universe.Score += this.universe.ScoreBoard[nameof(UseToolWithAntennaInSocialRoom)];
+                this.universe.SolveQuest(MetaData.QUEST_IV);
             }
             else
             {
@@ -624,6 +627,7 @@ internal class EventProvider
                     droid.Use -= MountAntennaToDroid;
 
                     this.universe.Score += this.universe.ScoreBoard[nameof(MountAntennaToDroid)];
+                    this.universe.SolveQuest(MetaData.QUEST_VII);
                 }
                 else
                 {
@@ -680,6 +684,7 @@ internal class EventProvider
                 droid.Use -= MountAntennaToDroid;
 
                 this.universe.Score += this.universe.ScoreBoard[nameof(MountAntennaToDroid)];
+                this.universe.SolveQuest(MetaData.QUEST_VII);
             }
             else
             {
@@ -717,6 +722,7 @@ internal class EventProvider
                 helmet.Use -= UseOxygenBottleWithHelmet;
 
                 this.universe.Score += this.universe.ScoreBoard[nameof(UseOxygenBottleWithHelmet)];
+                this.universe.SolveQuest(MetaData.QUEST_V);
             }
             else
             {
@@ -752,6 +758,7 @@ internal class EventProvider
                 
 
                 this.universe.Score += this.universe.ScoreBoard[nameof(UseDumbbellBarWithLever)];
+                this.universe.SolveQuest(MetaData.QUEST_VIII);
             }
             else
             {
@@ -827,6 +834,7 @@ internal class EventProvider
                 
                 this.universe.Score += this.universe.ScoreBoard[nameof(this.BreakEquipmentBoxLock)];
                 boxLock.Break -= BreakEquipmentBoxLock;    
+                this.universe.SolveQuest(MetaData.QUEST_III);
             }
         }
     }
@@ -953,6 +961,7 @@ internal class EventProvider
                     }
                     this.isAccessGranted = true;
                     this.universe.Score += this.universe.ScoreBoard[nameof(this.WriteTextToComputerTerminal)];
+                    this.universe.SolveQuest(MetaData.QUEST_II);
                 }
                 else if (eventArgs.Text.ToLower() == Descriptions.TERMINAL_PASSWORD_HINT.ToLower())
                 {
