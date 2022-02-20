@@ -859,4 +859,14 @@ Der Erfolg lässt nicht lange aus sich warten. An immer mehr Stellen am Schiff f
     <data name="DROID_ENERGY_CONTAINMENT" xml:space="preserve">
         <value>Der Service-Roboter, der hier in seinem Dock auf seinen Einsatz wartet, wird auch bereits mit Energie versorgt. Das ist deutlich an seinen blinkenden Kontrollleuchten zu erkennen.</value>
     </data>
+    <data name="GOODBYE" xml:space="preserve">
+        <value>Vielen Dank, dass Du 'Fenrir 13' gespielt hast. Ich hoffe, dass es Dir ebenso viel Spaß gemacht hat wie mir, das Spiel zu schreiben. Über Feedback würde ich mich sehr freuen!</value>
+    </data>
+    <data name="CLOSING" xml:space="preserve">
+        <value>Wow! Geschaft! Der Roboter hat nun wieder Energie und kann mit dem System kommunizieren. Als er den Befehl bekommt löst er sich aus seinem Dock und fährt zur beschädigten Außenwand. 
+
+Vollkommen erschöpft und erleichtert kehrst Du ins Innere des Schiffs zurück und kontrollierst auf der Brücke nochmals das Terminal. Alle Systeme laufen wieder und die Crew wird nun geweckt um alles weitere zu übernehmen. 
+
+Am Tag nach Deiner erfolgreichen Intervention sitzt Du mit der gesamten Crew zusammen im Aufenthaltsraum. Nachdem der Roboter mit ausreichender Energie und funktionierender Kommunikation in der Lage war, das Loch im Rumpf der Fenrir 13 zu flicken konnte das System die Aufwachphase aller Mitglieder einleiten. Tatsächlich ist niemand verletzt und alle sind glücklich, nicht im Cryoschlaf ums Leben gekommen zu sein. Die nächste Zeit wird dafür genutzt, das Schiff auf Herz und Nieren zu prüfen und dann die Heimreise anzutreten. Aufgrund der großen Entfernung zur Erde ist davon auszugehen, dass die Fenrir 13 noch nicht als vermisst gilt oder sogar bereits ein Suchtrupp unterwegs gewesen wäre. Der Kapitän hat nun den gesamten Sachverhalt an das Flottenkommande überstellt und mehr bleibt nicht zu tun. Natürlich bleibt Deine Rolle bei dieser Rettungsaktion nicht unerwähnt und Dich erwartet bei Deiner Heimkehr sicherlich eine gebührende Auszeichnung...nach weiteren 20 Jahren Cryoschlaf!</value>
+    </data>
 </root>

@@ -513,6 +513,19 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Wow! Geschaft! Der Roboter hat nun wieder Energie und kann mit dem System kommunizieren. Als er den Befehl bekommt löst er sich aus seinem Dock und fährt zur beschädigten Außenwand. 
+        ///
+        ///Vollkommen erschöpft und erleichtert kehrst Du ins Innere des Schiffs zurück und kontrollierst auf der Brücke nochmals das Terminal. Alle Systeme laufen wieder und die Crew wird nun geweckt um alles weitere zu übernehmen. 
+        ///
+        ///Am Tag nach Deiner erfolgreichen Intervention sitzt Du mit der gesamten Crew zusammen im Aufenthalts [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string CLOSING {
+            get {
+                return ResourceManager.GetString("CLOSING", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Die Brücke ist ein nur wenige Quadratmeter großer Ovoid, der an der Frontseite durch eine überdimensionale Sichtscheibe dominiert wird. Sie spannt sich fast 180 Grad um den zentralen Pilotensitz und umfasst somit das gesamte Gesichtsfeld eines Menschen. Durch die erhöhte Position der Brücke ist das Schiff vollständig zu überblicken und in der Regel durch nur eine Person gut zu steuern. Der Eingriff ist allerdings nur erforderlich, wenn der Autopilot nicht aktiv ist.
         ///Der Pilotensitz wird von einer perfekt e [rest of string was truncated]&quot;;.
         /// </summary>
@@ -1377,6 +1390,15 @@ namespace Fenrir13.Resources {
         internal static string GLOVES {
             get {
                 return ResourceManager.GetString("GLOVES", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Vielen Dank, dass Du &apos;Fenrir 13&apos; gespielt hast. Ich hoffe, dass es Dir ebenso viel Spaß gemacht hat wie mir, das Spiel zu schreiben. Über Feedback würde ich mich sehr freuen!.
+        /// </summary>
+        internal static string GOODBYE {
+            get {
+                return ResourceManager.GetString("GOODBYE", resourceCulture);
             }
         }
         

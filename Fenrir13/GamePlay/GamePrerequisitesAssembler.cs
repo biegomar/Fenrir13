@@ -31,7 +31,7 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
         this.eventProvider = eventProvider;
     }
 
-    public (LocationMap map, Location activeLocation, Player activePlayer) AssembleGame()
+    public Universe AssembleGame(Universe universe)
     {
         var map = new LocationMap(new LocationComparer());
 
@@ -81,8 +81,31 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
 
         var activeLocation = cryoChamber;
         var activePlayer = PlayerPrerequisites.Get(this.eventProvider);
+        var actualQuests = GetQuests();
         
-        return (map, activeLocation, activePlayer);
+        universe.LocationMap = map;
+        universe.ActiveLocation = activeLocation;
+        universe.ActivePlayer = activePlayer;
+        universe.Quests = actualQuests;
+        
+        return universe;
+    }
+
+    private static ICollection<string> GetQuests()
+    {
+        var result = new List<string>
+        {
+            MetaData.QUEST_I, 
+            MetaData.QUEST_II, 
+            MetaData.QUEST_III,
+            MetaData.QUEST_IV,
+            MetaData.QUEST_V,
+            MetaData.QUEST_VI,
+            MetaData.QUEST_VII,
+            MetaData.QUEST_VIII
+        };
+
+        return result;
     }
 
     private static IEnumerable<DestinationNode> MachineCorridorMidLocationMap(Location corridorMid, Location airlock, Location engineRoom, Location equipmentRoom, Location maintenanceRoom)

@@ -30,6 +30,16 @@ internal class ConsolePrintingSubsystem : BaseConsolePrintingSubsystem
 
         return true;
     }
+    
+    public override bool Closing()
+    {
+        Console.Write(WordWrap(Descriptions.CLOSING, this.ConsoleWidth));
+        Console.WriteLine();
+        this.ForegroundColor = TextColor.DarkCyan;
+        Console.WriteLine(WordWrap(Descriptions.GOODBYE, this.ConsoleWidth));
+        this.ResetColors();
+        return true;
+    }
 
     public override bool TitleAndScore(int score, int maxScore)
     {

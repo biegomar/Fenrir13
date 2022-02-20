@@ -20,7 +20,7 @@ internal class CommandHandler
     [ArgDescription("Shows this help")]
     internal bool Help { get; set; }
 
-    [ArgExistingFile] public string FileName { get; set; }
+    public string FileName { get; set; }
     
     public int ConsoleWidth { get; set; }
 
