@@ -423,7 +423,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ein einfacher Teppich. Er soll den Raum ein wenig wohnlicher machen. Ansonsten aber nichts besonderes..
+        ///   Looks up a localized string similar to Ein einfacher Teppich. Er soll den Raum ein wenig wohnlicher machen. Ansonsten aber nichts Besonderes..
         /// </summary>
         internal static string CARPET {
             get {
@@ -731,6 +731,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to An den Wänden hängen Bilder von typischen Raum- und Evakuierungsplänen, sowie von ehemaligen Mitarbeitern und Crewmitgliedern der Fenrir 13..
+        /// </summary>
+        internal static string CORRIDOR_WALLS {
+            get {
+                return ResourceManager.GetString("CORRIDOR_WALLS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Der Korridor durchzieht den gesamten &apos;Hammerkopf&apos; des Schiffs von Ost nach West. Von ihm gehen Türen in die diversen Räume ab und in der Mitte, also bei gut 50 Metern, führt ein Aufgang zur Brücke und ein Abgang herunter in die Maschinenräume. An den Wänden hängen neben typischen Raum- und Evakuierungsplänen auch Bilder von ehemaligen Mitarbeitern und Crewmitgliedern der Fenrir 13. Ansonsten ist der Flur einfach und karg..
         /// </summary>
         internal static string CORRIDOR_WEST {
@@ -768,6 +777,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Auch wenn der Space-Suit eigentlich als Kleidung ausreicht, hat jeder irgendwelche eigenen Sachen dabei, um auch mal eine persönliche Note ins Spiel zu bringen. Oder einfach, weil man doch noch mal eine Strickjacke anziehen möchte..
+        /// </summary>
+        internal static string CRYOCHAMBER_CLOTHS {
+            get {
+                return ResourceManager.GetString("CRYOCHAMBER_CLOTHS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Der Begriff Tür umschreibt es schon ganz gut. Es ist ein Vorrichtung, die dazu dient einen Durchgang zu versperren. Also ja, eine Tür..
         /// </summary>
         internal static string CRYOCHAMBER_DOOR {
@@ -792,6 +810,15 @@ namespace Fenrir13.Resources {
         internal static string CRYOCHAMBER_FIRSTLOOK {
             get {
                 return ResourceManager.GetString("CRYOCHAMBER_FIRSTLOOK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ein wirklich stylische Schreibtischlampe mit zwei Teleskopstangen als Halterung für die eine Glühbirne in ihrer Fassung..
+        /// </summary>
+        internal static string CRYOCHAMBER_LAMP {
+            get {
+                return ResourceManager.GetString("CRYOCHAMBER_LAMP", resourceCulture);
             }
         }
         
@@ -1874,6 +1901,15 @@ namespace Fenrir13.Resources {
         internal static string PRESS_GREEN_BUTTON {
             get {
                 return ResourceManager.GetString("PRESS_GREEN_BUTTON", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Was sagt Wikipedia: Proxima Centauri ist mit einer Entfernung von etwa 4,247 Lichtjahren der der Sonne nächstgelegene bekannte Stern..
+        /// </summary>
+        internal static string PROXIMA_CENTAURI {
+            get {
+                return ResourceManager.GetString("PROXIMA_CENTAURI", resourceCulture);
             }
         }
         

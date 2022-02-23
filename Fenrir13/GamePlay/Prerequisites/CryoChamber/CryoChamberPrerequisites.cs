@@ -97,6 +97,9 @@ internal static class CryoChamberPrerequisites
         cryoChamber.Surroundings.Add(Keys.WRITING_MATERIALS, () => Descriptions.WRITING_MATERIALS);
         cryoChamber.Surroundings.Add(Keys.CEILING, () => Descriptions.CEILING);
         cryoChamber.Surroundings.Add(Keys.CRYOCHAMBER_BULKHEAD, () => Descriptions.CRYOCHAMBER_BULKHEAD);
+        cryoChamber.Surroundings.Add(Keys.CRYOCHAMBER_LAMP, () => Descriptions.CRYOCHAMBER_LAMP);
+        cryoChamber.Surroundings.Add(Keys.CRYOCHAMBER_CLOTHS, () => Descriptions.CRYOCHAMBER_CLOTHS);
+        cryoChamber.Surroundings.Add(Keys.PROXIMA_CENTAURI, () => Descriptions.PROXIMA_CENTAURI);
     }
 
     private static void AddAfterLookEvents(Location cryoChamber, EventProvider eventProvider)

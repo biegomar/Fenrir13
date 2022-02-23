@@ -26,5 +26,6 @@ internal static class CorridorMidWestPrerequisites
         corridor.Surroundings.Add(Keys.BULKHEAD_WINDOW, () => Descriptions.BULKHEAD_WINDOW);
         corridor.Surroundings.Add(Keys.CORRIDOR_PAINTING, () => Descriptions.CORRIDOR_PAINTING_MIDWEST);
         corridor.Surroundings.Add(Keys.CEILING, () => Descriptions.CEILING);
+        corridor.Surroundings.Add(Keys.CORRIDOR_WALLS, () => Descriptions.CORRIDOR_WALLS);
     }
 }

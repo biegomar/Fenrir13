@@ -349,6 +349,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Die Wände|Wände|Wand.
+        /// </summary>
+        internal static string CORRIDOR_WALLS {
+            get {
+                return ResourceManager.GetString("CORRIDOR_WALLS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Ein Cross-Trainer|Cross-Trainer|Crosstrainer.
         /// </summary>
         internal static string CROSSTRAINER {
@@ -367,11 +376,29 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Die Klamotten|Klamotten|Kleidung|Strickjacke.
+        /// </summary>
+        internal static string CRYOCHAMBER_CLOTHS {
+            get {
+                return ResourceManager.GetString("CRYOCHAMBER_CLOTHS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Zimmertür|Tür.
         /// </summary>
         internal static string CRYOCHAMBER_DOOR {
             get {
                 return ResourceManager.GetString("CRYOCHAMBER_DOOR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Die Schreibtischlampe|Schreibtischlampe|Lampe|Glühbirne|Fassung|Teleskopstange|Teleskopstangen|Halterung|Beleuchtung.
+        /// </summary>
+        internal static string CRYOCHAMBER_LAMP {
+            get {
+                return ResourceManager.GetString("CRYOCHAMBER_LAMP", resourceCulture);
             }
         }
         
@@ -826,7 +853,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bullauge|Fenster|Weltraum|All|Weltall|Auge.
+        ///   Looks up a localized string similar to Bullauge|Fenster|Weltraum|All|Weltall|Auge|Schiff|Raumschiff.
         /// </summary>
         internal static string PIERHOLE {
             get {
@@ -849,6 +876,15 @@ namespace Fenrir13.Resources {
         internal static string PORTRAIT {
             get {
                 return ResourceManager.GetString("PORTRAIT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Proxima Centauri.
+        /// </summary>
+        internal static string PROXIMA_CENTAURI {
+            get {
+                return ResourceManager.GetString("PROXIMA_CENTAURI", resourceCulture);
             }
         }
         
@@ -1159,7 +1195,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Arbeitsbereich|Arbeitsplatz|Schreibtisch.
+        ///   Looks up a localized string similar to Arbeitsbereich|Arbeitsplatz|Schreibtisch|Arbeitsplatte.
         /// </summary>
         internal static string WORKBENCH {
             get {

@@ -421,6 +421,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to CORRIDOR_WALLS.
+        /// </summary>
+        internal static string CORRIDOR_WALLS {
+            get {
+                return ResourceManager.GetString("CORRIDOR_WALLS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to CORRIDOR_WEST.
         /// </summary>
         internal static string CORRIDOR_WEST {
@@ -457,11 +466,29 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to CRYOCHAMBER_CLOTHS.
+        /// </summary>
+        internal static string CRYOCHAMBER_CLOTHS {
+            get {
+                return ResourceManager.GetString("CRYOCHAMBER_CLOTHS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to CRYOCHAMBER_DOOR.
         /// </summary>
         internal static string CRYOCHAMBER_DOOR {
             get {
                 return ResourceManager.GetString("CRYOCHAMBER_DOOR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CRYOCHAMBER_LAMP.
+        /// </summary>
+        internal static string CRYOCHAMBER_LAMP {
+            get {
+                return ResourceManager.GetString("CRYOCHAMBER_LAMP", resourceCulture);
             }
         }
         
@@ -1020,6 +1047,15 @@ namespace Fenrir13.Resources {
         internal static string PORTRAIT {
             get {
                 return ResourceManager.GetString("PORTRAIT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PROXIMA_CENTAURI.
+        /// </summary>
+        internal static string PROXIMA_CENTAURI {
+            get {
+                return ResourceManager.GetString("PROXIMA_CENTAURI", resourceCulture);
             }
         }
         

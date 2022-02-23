@@ -27,5 +27,6 @@ internal static class CorridorWestPrerequisites
     {
         corridor.Surroundings.Add(Keys.CORRIDOR_PAINTING, () => Descriptions.CORRIDOR_PAINTING_WEST);
         corridor.Surroundings.Add(Keys.CEILING, () => Descriptions.CEILING);
+        corridor.Surroundings.Add(Keys.CORRIDOR_WALLS, () => Descriptions.CORRIDOR_WALLS);
     }
 }

@@ -456,4 +456,16 @@
     <data name="PANEL_TOP_LEVER" xml:space="preserve">
         <value>PANEL_TOP_LEVER</value>
     </data>
+    <data name="CRYOCHAMBER_LAMP" xml:space="preserve">
+        <value>CRYOCHAMBER_LAMP</value>
+    </data>
+    <data name="CRYOCHAMBER_CLOTHS" xml:space="preserve">
+        <value>CRYOCHAMBER_CLOTHS</value>
+    </data>
+    <data name="PROXIMA_CENTAURI" xml:space="preserve">
+        <value>PROXIMA_CENTAURI</value>
+    </data>
+    <data name="CORRIDOR_WALLS" xml:space="preserve">
+        <value>CORRIDOR_WALLS</value>
+    </data>
 </root>

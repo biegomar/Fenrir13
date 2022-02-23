@@ -28,7 +28,7 @@
         <value>Der Teppich|Teppich|Läufer</value>
     </data>
     <data name="WORKBENCH" xml:space="preserve">
-        <value>Arbeitsbereich|Arbeitsplatz|Schreibtisch</value>
+        <value>Arbeitsbereich|Arbeitsplatz|Schreibtisch|Arbeitsplatte</value>
     </data>
     <data name="LAPTOP" xml:space="preserve">
         <value>LAPTOP|Rechner|Computer</value>
@@ -37,7 +37,7 @@
         <value>Die Wand|Wand|Zimmerwand|Wände|Zimmerwände|Raumwand|Raumwände</value>
     </data>
     <data name="PIERHOLE" xml:space="preserve">
-        <value>Bullauge|Fenster|Weltraum|All|Weltall|Auge</value>
+        <value>Bullauge|Fenster|Weltraum|All|Weltall|Auge|Schiff|Raumschiff</value>
     </data>
     <data name="OFFICECHAIR" xml:space="preserve">
         <value>Bürostuhl|Arbeitsstuhl|Sitzgelegenheit</value>
@@ -392,5 +392,17 @@
     </data>
     <data name="PANEL_TOP_LEVER" xml:space="preserve">
         <value>Der Handgriff|Handgriff|Hebel|Griff</value>
+    </data>
+    <data name="CRYOCHAMBER_LAMP" xml:space="preserve">
+        <value>Die Schreibtischlampe|Schreibtischlampe|Lampe|Glühbirne|Fassung|Teleskopstange|Teleskopstangen|Halterung|Beleuchtung</value>
+    </data>
+    <data name="CRYOCHAMBER_CLOTHS" xml:space="preserve">
+        <value>Die Klamotten|Klamotten|Kleidung|Strickjacke</value>
+    </data>
+    <data name="PROXIMA_CENTAURI" xml:space="preserve">
+        <value>Proxima Centauri</value>
+    </data>
+    <data name="CORRIDOR_WALLS" xml:space="preserve">
+        <value>Die Wände|Wände|Wand</value>
     </data>
 </root>

@@ -48,7 +48,7 @@ Auch das Display blinkt rot und bedeutet Dir, alsbald einen Blick darauf zu werf
         <value>Der Fußboden ist metallisch, fühlt sich angenehm warm an Deinen Füßen an und kann magnetisiert werden. Ansonsten halt ein normaler Fußboden.</value>
     </data>
     <data name="CARPET" xml:space="preserve">
-        <value>Ein einfacher Teppich. Er soll den Raum ein wenig wohnlicher machen. Ansonsten aber nichts besonderes.</value>
+        <value>Ein einfacher Teppich. Er soll den Raum ein wenig wohnlicher machen. Ansonsten aber nichts Besonderes.</value>
     </data>
     <data name="WORKBENCH" xml:space="preserve">
         <value>Dein Arbeitsbereich gliedert sich in eine Arbeitsplatte, die bei Bedarf auch eingeklappt werden kann, einigen Ablagefächern, die Du mit gewöhnlichen Schreibutensilien bestückt hast und einer Beleuchtung, die Dir ausreichend Licht für die Arbeit spendet. Auf der Arbeitsplatte steht Dein Laptop und vor der Arbeitsplatte ein entsprechender Bürostuhl.</value>
@@ -868,5 +868,17 @@ Der Erfolg lässt nicht lange aus sich warten. An immer mehr Stellen am Schiff f
 Vollkommen erschöpft und erleichtert kehrst Du ins Innere des Schiffs zurück und kontrollierst auf der Brücke nochmals das Terminal. Alle Systeme laufen wieder und die Crew wird nun geweckt um alles weitere zu übernehmen. 
 
 Am Tag nach Deiner erfolgreichen Intervention sitzt Du mit der gesamten Crew zusammen im Aufenthaltsraum. Nachdem der Roboter mit ausreichender Energie und funktionierender Kommunikation in der Lage war, das Loch im Rumpf der Fenrir 13 zu flicken konnte das System die Aufwachphase aller Mitglieder einleiten. Tatsächlich ist niemand verletzt und alle sind glücklich, nicht im Cryoschlaf ums Leben gekommen zu sein. Die nächste Zeit wird dafür genutzt, das Schiff auf Herz und Nieren zu prüfen und dann die Heimreise anzutreten. Aufgrund der großen Entfernung zur Erde ist davon auszugehen, dass die Fenrir 13 noch nicht als vermisst gilt oder sogar bereits ein Suchtrupp unterwegs gewesen wäre. Der Kapitän hat nun den gesamten Sachverhalt an das Flottenkommande überstellt und mehr bleibt nicht zu tun. Natürlich bleibt Deine Rolle bei dieser Rettungsaktion nicht unerwähnt und Dich erwartet bei Deiner Heimkehr sicherlich eine gebührende Auszeichnung...nach weiteren 20 Jahren Cryoschlaf!</value>
+    </data>
+    <data name="CRYOCHAMBER_LAMP" xml:space="preserve">
+        <value>Ein wirklich stylische Schreibtischlampe mit zwei Teleskopstangen als Halterung für die eine Glühbirne in ihrer Fassung.</value>
+    </data>
+    <data name="CRYOCHAMBER_CLOTHS" xml:space="preserve">
+        <value>Auch wenn der Space-Suit eigentlich als Kleidung ausreicht, hat jeder irgendwelche eigenen Sachen dabei, um auch mal eine persönliche Note ins Spiel zu bringen. Oder einfach, weil man doch noch mal eine Strickjacke anziehen möchte.</value>
+    </data>
+    <data name="PROXIMA_CENTAURI" xml:space="preserve">
+        <value>Was sagt Wikipedia: Proxima Centauri ist mit einer Entfernung von etwa 4,247 Lichtjahren der der Sonne nächstgelegene bekannte Stern.</value>
+    </data>
+    <data name="CORRIDOR_WALLS" xml:space="preserve">
+        <value>An den Wänden hängen Bilder von typischen Raum- und Evakuierungsplänen, sowie von ehemaligen Mitarbeitern und Crewmitgliedern der Fenrir 13.</value>
     </data>
 </root>
