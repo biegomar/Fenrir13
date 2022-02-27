@@ -178,7 +178,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Das Beatmungsgerät|Beatmungsgerät|Beatmungsmaschine|Beatmung|Beatmungsapparat|Gerät.
+        ///   Looks up a localized string similar to Das Beatmungsgerät|Beatmungsgerät|Beatmungsmaschine|Beatmung|Beatmungsapparat|Gerät|Oxygen.
         /// </summary>
         internal static string AMBULANCE_RESPIRATOR {
             get {
@@ -376,7 +376,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Klamotten|Klamotten|Kleidung|Strickjacke.
+        ///   Looks up a localized string similar to Die Klamotten|Klamotten|Kleidung|Strickjacke|Kleidungsstücke|Kleidungsstück.
         /// </summary>
         internal static string CRYOCHAMBER_CLOTHS {
             get {
@@ -448,7 +448,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Hantelablage|Hantelablage|Ablage.
+        ///   Looks up a localized string similar to Die Hantelablage|Hantelablage|Ablage|Rack.
         /// </summary>
         internal static string DUMBBELL_RACK {
             get {
@@ -691,11 +691,47 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Die Halterung|Halterung|Haken|Wandhaken.
+        /// </summary>
+        internal static string GYM_BRACKET {
+            get {
+                return ResourceManager.GetString("GYM_BRACKET", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Die Schlaufen|Schlaufen|Schlaufe|Griff|Griffe.
+        /// </summary>
+        internal static string GYM_LOOP {
+            get {
+                return ResourceManager.GetString("GYM_LOOP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Die Powerstation|Powerstation|Gewichte|Gewicht.
         /// </summary>
         internal static string GYM_POWERSTATION {
             get {
                 return ResourceManager.GetString("GYM_POWERSTATION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Das Fitness-Tau|Fitness-Tau|Seile|Seil|Fitnesstau|Tau.
+        /// </summary>
+        internal static string GYM_ROPES {
+            get {
+                return ResourceManager.GetString("GYM_ROPES", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Die Sandsäcke|Sandsäcke|Sandsack|Sack|Power Bag.
+        /// </summary>
+        internal static string GYM_SANDBAG {
+            get {
+                return ResourceManager.GetString("GYM_SANDBAG", resourceCulture);
             }
         }
         
@@ -826,6 +862,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Das Papier|Papier|Papierblätter|Blätter|Blatt|Papiere.
+        /// </summary>
+        internal static string PAPER {
+            get {
+                return ResourceManager.GetString("PAPER", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Trennwand|Sichtschutz.
         /// </summary>
         internal static string PARTITION_WALL {
@@ -840,6 +885,33 @@ namespace Fenrir13.Resources {
         internal static string PEEPHOLE {
             get {
                 return ResourceManager.GetString("PEEPHOLE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ein Kugelschreiber|Kugelschreiber|Kuli.
+        /// </summary>
+        internal static string PENCIL_I {
+            get {
+                return ResourceManager.GetString("PENCIL_I", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Der Bleistift|Bleistift.
+        /// </summary>
+        internal static string PENCIL_II {
+            get {
+                return ResourceManager.GetString("PENCIL_II", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Die Stifte|Stifte|Stift.
+        /// </summary>
+        internal static string PENCILS {
+            get {
+                return ResourceManager.GetString("PENCILS", resourceCulture);
             }
         }
         
@@ -880,7 +952,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Proxima Centauri.
+        ///   Looks up a localized string similar to Proxima Centauri|Roter Zwerg.
         /// </summary>
         internal static string PROXIMA_CENTAURI {
             get {
@@ -1150,6 +1222,51 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Die Textmarker|Textmarker.
+        /// </summary>
+        internal static string TEXTMARKER {
+            get {
+                return ResourceManager.GetString("TEXTMARKER", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Der blaue Textmarker|blauer Textmarker.
+        /// </summary>
+        internal static string TEXTMARKER_BLUE {
+            get {
+                return ResourceManager.GetString("TEXTMARKER_BLUE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Der grüne Textmarker|Grüner Textmarker.
+        /// </summary>
+        internal static string TEXTMARKER_GREEN {
+            get {
+                return ResourceManager.GetString("TEXTMARKER_GREEN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Der rote Textmarker|Roter Textmarker.
+        /// </summary>
+        internal static string TEXTMARKER_RED {
+            get {
+                return ResourceManager.GetString("TEXTMARKER_RED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Der gelbe Textmarker|Gelber Textmarker.
+        /// </summary>
+        internal static string TEXTMARKER_YELLOW {
+            get {
+                return ResourceManager.GetString("TEXTMARKER_YELLOW", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Toilette|Klo|Pott|Thron.
         /// </summary>
         internal static string TOILET {
@@ -1195,6 +1312,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Die Hantelscheiben|Hantelscheiben|Hantelscheibe|Hantel.
+        /// </summary>
+        internal static string WEIGHT_PLATES {
+            get {
+                return ResourceManager.GetString("WEIGHT_PLATES", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Arbeitsbereich|Arbeitsplatz|Schreibtisch|Arbeitsplatte.
         /// </summary>
         internal static string WORKBENCH {
@@ -1204,7 +1330,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Übungen|Übung|Handarbeit.
+        ///   Looks up a localized string similar to Übungen|Übung|Ertüchtigung.
         /// </summary>
         internal static string WORKOUTS {
             get {
@@ -1213,7 +1339,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Schreibutensilien|Schreibutensilien|Utensilien|Schreibmaterial|Schreibmaterialien|Papier|Blätter|Stifte|Stift|Textmarker.
+        ///   Looks up a localized string similar to Die Schreibutensilien|Schreibutensilien|Utensilien|Schreibmaterial|Schreibmaterialien|Ablagefächer|Ablagefach.
         /// </summary>
         internal static string WRITING_MATERIALS {
             get {

@@ -53,6 +53,7 @@ internal static class CommandBridgePrerequisites
             Key = Keys.PILOT_SEAT,
             Name = Items.PILOT_SEAT,
             Description = Descriptions.PILOT_SEAT,
+            IsPickAble = false,
             IsSeatAble = true
         };
         

@@ -19,6 +19,7 @@ internal static class GymPrerequisites
         
         AddSurroundings(gym);
         AddAfterLookEvents(gym, eventProvider);
+        AddTakeEvents(gym, eventProvider);
         
         return gym;
     }
@@ -35,6 +36,11 @@ internal static class GymPrerequisites
         gym.Surroundings.Add(Keys.FITNESSMACHINE, () => Descriptions.FITNESSMACHINE);
         gym.Surroundings.Add(Keys.WORKOUTS, () => Descriptions.WORKOUTS);
         gym.Surroundings.Add(Keys.CEILING, () => Descriptions.CEILING);
+        gym.Surroundings.Add(Keys.WEIGHT_PLATES, () => Descriptions.WEIGHT_PLATES);
+        gym.Surroundings.Add(Keys.GYM_ROPES, () => Descriptions.GYM_ROPES);
+        gym.Surroundings.Add(Keys.GYM_BRACKET, () => Descriptions.GYM_BRACKET);
+        gym.Surroundings.Add(Keys.GYM_SANDBAG, () => Descriptions.GYM_SANDBAG);
+        gym.Surroundings.Add(Keys.GYM_LOOP, () => Descriptions.GYM_LOOP);
     }
     
     private static Item GetDumbbellRack(EventProvider eventProvider)
@@ -88,5 +94,10 @@ internal static class GymPrerequisites
     {
         item.Use += eventProvider.UseDumbbellBarWithLever;
         eventProvider.ScoreBoard.Add(nameof(eventProvider.UseDumbbellBarWithLever), 10);
+    }
+    
+    private static void AddTakeEvents(AContainerObject item, EventProvider eventProvider)
+    {
+        item.Take += eventProvider.TryToTakeThingsFromGym;
     }
 }

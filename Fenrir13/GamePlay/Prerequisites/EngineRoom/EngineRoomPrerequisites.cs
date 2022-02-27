@@ -31,7 +31,8 @@ internal class EngineRoomPrerequisites
             Key = Keys.ENGINE_ROOM_SHIP_MODEL, 
             Name = Items.ENGINE_ROOM_SHIP_MODEL, 
             Description = Descriptions.ENGINE_ROOM_SHIP_MODEL,
-            ContainmentDescription = Descriptions.ENGINE_ROOM_SHIP_MODEL_CONTAINMENT
+            ContainmentDescription = Descriptions.ENGINE_ROOM_SHIP_MODEL_CONTAINMENT,
+            IsPickAble = false
         };
 
         return shipModel;
@@ -40,6 +41,7 @@ internal class EngineRoomPrerequisites
     private static void AddSurroundings(Location engine)
     {
         engine.Surroundings.Add(Keys.CEILING, () => Descriptions.CEILING);
+        engine.Surroundings.Add(Keys.CHAMBER_WALL, () => Descriptions.CHAMBER_WALL);
         engine.Surroundings.Add(Keys.ENGINE_ROOM_RED_DOTS, () => Descriptions.ENGINE_ROOM_RED_DOTS);
         engine.Surroundings.Add(Keys.ENGINE_ROOM_ART, () => Descriptions.ENGINE_ROOM_ART);
         engine.Surroundings.Add(Keys.ENGINE_ROOM_TECHNIC, () => Descriptions.ENGINE_ROOM_TECHNIC);

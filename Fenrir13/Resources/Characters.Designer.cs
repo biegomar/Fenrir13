@@ -61,7 +61,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Das bist Du.|Ich|Mich|Player|Spieler|Mir.
+        ///   Looks up a localized string similar to Das bist Du.|Ich|Mich|Player|Spieler|Mir|Dich|Dir.
         /// </summary>
         internal static string PLAYER {
             get {

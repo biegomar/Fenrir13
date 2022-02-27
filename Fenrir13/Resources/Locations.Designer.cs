@@ -97,7 +97,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Korridor|Korridor|Korridor (ost).
+        ///   Looks up a localized string similar to Der Korridor (Ost)|Korridor (Ost).
         /// </summary>
         internal static string CORRIDOR_EAST {
             get {
@@ -106,7 +106,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Korridor|Korridor|Korridor (mitte).
+        ///   Looks up a localized string similar to Der Korridor (Mitte)|Korridor (Mitte).
         /// </summary>
         internal static string CORRIDOR_MID {
             get {
@@ -115,7 +115,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Korridor|Korridor|Korridor (mitte-ost).
+        ///   Looks up a localized string similar to Der Korridor (Mitte-Ost)|Korridor (Mitte-Ost).
         /// </summary>
         internal static string CORRIDOR_MIDEAST {
             get {
@@ -124,7 +124,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Korridor|Korridor|Korridor (mitte-west).
+        ///   Looks up a localized string similar to Der Korridor (Mitte-West)|Korridor (Mitte-West).
         /// </summary>
         internal static string CORRIDOR_MIDWEST {
             get {
@@ -133,7 +133,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Korridor|Korridor|Korridor (west).
+        ///   Looks up a localized string similar to Der Korridor (West)|Korridor (West).
         /// </summary>
         internal static string CORRIDOR_WEST {
             get {

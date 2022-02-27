@@ -157,7 +157,7 @@
         <value>Die Hantelstange|Hantelstange|Stange|Hantel</value>
     </data>
     <data name="DUMBBELL_RACK" xml:space="preserve">
-        <value>Die Hantelablage|Hantelablage|Ablage</value>
+        <value>Die Hantelablage|Hantelablage|Ablage|Rack</value>
     </data>
     <data name="EXERCISE_AREA" xml:space="preserve">
         <value>Der Gymnastikbereich|Gymnastikbereich</value>
@@ -178,7 +178,7 @@
         <value>Die Fitnessmaschinen|Fitnessmaschinen|Fitnessmaschine|Geräte|Plätze|Plätzen</value>
     </data>
     <data name="WORKOUTS" xml:space="preserve">
-        <value>Übungen|Übung|Handarbeit</value>
+        <value>Übungen|Übung|Ertüchtigung</value>
     </data>
     <data name="EQUIPMENT_BOX" xml:space="preserve">
         <value>Die Metallkiste|Metallkiste|Ausrüstungsbox|Ausrüstungsbox|Box|Kiste</value>
@@ -226,7 +226,7 @@
         <value>Schrank|Schränke</value>
     </data>
     <data name="WRITING_MATERIALS" xml:space="preserve">
-        <value>Die Schreibutensilien|Schreibutensilien|Utensilien|Schreibmaterial|Schreibmaterialien|Papier|Blätter|Stifte|Stift|Textmarker</value>
+        <value>Die Schreibutensilien|Schreibutensilien|Utensilien|Schreibmaterial|Schreibmaterialien|Ablagefächer|Ablagefach</value>
     </data>
     <data name="AMBULANCE_OP_TABLE" xml:space="preserve">
         <value>Der OP-Tisch|OP-Tisch|OP Tisch|Tisch|Liegefläche|Tischplatte</value>
@@ -247,7 +247,7 @@
         <value>Der Medizinschrank|Medizinschrank|Medischrank|Medikamente|Medikament|Medis|Schrank</value>
     </data>
     <data name="AMBULANCE_RESPIRATOR" xml:space="preserve">
-        <value>Das Beatmungsgerät|Beatmungsgerät|Beatmungsmaschine|Beatmung|Beatmungsapparat|Gerät</value>
+        <value>Das Beatmungsgerät|Beatmungsgerät|Beatmungsmaschine|Beatmung|Beatmungsapparat|Gerät|Oxygen</value>
     </data>
     <data name="AMBULANCE_RESPIRATOR_FLAP" xml:space="preserve">
         <value>Die Verschlussklappe|Verschlussklappe|Verschlusskappe|Klappe|Kappe</value>
@@ -397,12 +397,54 @@
         <value>Die Schreibtischlampe|Schreibtischlampe|Lampe|Glühbirne|Fassung|Teleskopstange|Teleskopstangen|Halterung|Beleuchtung</value>
     </data>
     <data name="CRYOCHAMBER_CLOTHS" xml:space="preserve">
-        <value>Die Klamotten|Klamotten|Kleidung|Strickjacke</value>
+        <value>Die Klamotten|Klamotten|Kleidung|Strickjacke|Kleidungsstücke|Kleidungsstück</value>
     </data>
     <data name="PROXIMA_CENTAURI" xml:space="preserve">
-        <value>Proxima Centauri</value>
+        <value>Proxima Centauri|Roter Zwerg</value>
     </data>
     <data name="CORRIDOR_WALLS" xml:space="preserve">
         <value>Die Wände|Wände|Wand</value>
+    </data>
+    <data name="PAPER" xml:space="preserve">
+        <value>Das Papier|Papier|Papierblätter|Blätter|Blatt|Papiere</value>
+    </data>
+    <data name="TEXTMARKER" xml:space="preserve">
+        <value>Die Textmarker|Textmarker</value>
+    </data>
+    <data name="PENCILS" xml:space="preserve">
+        <value>Die Stifte|Stifte|Stift</value>
+    </data>
+    <data name="PENCIL_I" xml:space="preserve">
+        <value>Ein Kugelschreiber|Kugelschreiber|Kuli</value>
+    </data>
+    <data name="PENCIL_II" xml:space="preserve">
+        <value>Der Bleistift|Bleistift</value>
+    </data>
+    <data name="TEXTMARKER_BLUE" xml:space="preserve">
+        <value>Der blaue Textmarker|blauer Textmarker</value>
+    </data>
+    <data name="TEXTMARKER_GREEN" xml:space="preserve">
+        <value>Der grüne Textmarker|Grüner Textmarker</value>
+    </data>
+    <data name="TEXTMARKER_YELLOW" xml:space="preserve">
+        <value>Der gelbe Textmarker|Gelber Textmarker</value>
+    </data>
+    <data name="TEXTMARKER_RED" xml:space="preserve">
+        <value>Der rote Textmarker|Roter Textmarker</value>
+    </data>
+    <data name="WEIGHT_PLATES" xml:space="preserve">
+        <value>Die Hantelscheiben|Hantelscheiben|Hantelscheibe|Hantel</value>
+    </data>
+    <data name="GYM_ROPES" xml:space="preserve">
+        <value>Das Fitness-Tau|Fitness-Tau|Seile|Seil|Fitnesstau|Tau</value>
+    </data>
+    <data name="GYM_BRACKET" xml:space="preserve">
+        <value>Die Halterung|Halterung|Haken|Wandhaken</value>
+    </data>
+    <data name="GYM_SANDBAG" xml:space="preserve">
+        <value>Die Sandsäcke|Sandsäcke|Sandsack|Sack|Power Bag</value>
+    </data>
+    <data name="GYM_LOOP" xml:space="preserve">
+        <value>Die Schlaufen|Schlaufen|Schlaufe|Griff|Griffe</value>
     </data>
 </root>

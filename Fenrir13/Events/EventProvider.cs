@@ -110,6 +110,60 @@ internal class EventProvider
             }
         }
     }
+
+    internal void SitDownOnChairInCryoChamber(object sender, SitDownEventArgs eventArgs)
+    {
+        if (sender is Location activeLocation && activeLocation.Key == Keys.CRYOCHAMBER)
+        {
+            if (string.IsNullOrEmpty(eventArgs.ExternalItemKey))
+            {
+                throw new SitDownException(Descriptions.WHERE_TO_SIT);
+            }
+
+            if (eventArgs.ExternalItemKey == Keys.CHAIR)
+            {
+                throw new SitDownException(Descriptions.TRY_TO_SIT_ON_CHAIR);
+            }
+
+            if (eventArgs.ExternalItemKey == Keys.OFFICECHAIR)
+            {
+                throw new SitDownException(Descriptions.TRY_TO_SIT_ON_OFFICECHAIR);
+            }
+
+            throw new SitDownException(BaseDescriptions.NO_SEAT);
+        }
+    }
+
+    internal void TryToTakeThingsFromCryoChamber(object sender, ContainerObjectEventArgs eventArgs)
+    {
+        if (sender is Location activeLocation && activeLocation.Key == Keys.CRYOCHAMBER)
+        {
+            if (eventArgs.ExternalItemKey == Keys.LAPTOP)
+            {
+                throw new TakeException(Descriptions.TRY_TO_TAKE_LAPTOP);
+            }
+            
+            throw new TakeException(this.GetRandomPhrase(BaseDescriptions.IMPOSSIBLE_PICKUP));
+        }
+    }
+    
+    internal void TryToTakeThingsFromGym(object sender, ContainerObjectEventArgs eventArgs)
+    {
+        if (sender is Location activeLocation && activeLocation.Key == Keys.GYM)
+        {
+            if (eventArgs.ExternalItemKey == Keys.GYM_ROPES)
+            {
+                throw new TakeException(Descriptions.GYM_ROPES_NO_PICKUP);
+            }
+            
+            if (eventArgs.ExternalItemKey == Keys.GYM_SANDBAG)
+            {
+                throw new TakeException(Descriptions.GYM_SANDBAG_NO_PICKUP);
+            }
+            
+            throw new TakeException(this.GetRandomPhrase(BaseDescriptions.IMPOSSIBLE_PICKUP));
+        }
+    }
     
     internal void PushRedButton(object sender, PushItemEventArgs eventArgs)
     {
@@ -1094,6 +1148,16 @@ internal class EventProvider
         var splitList = resource.Split('|').ToList();
         var lowerList = splitList.Select(x => x.ToLower()).ToList();
         return lowerList.Contains(text.ToLower());
+    }
+    
+    private string GetRandomPhrase(string message)
+    {
+        var phrases = message.Split("|");
+
+        var rand = new Random();
+        var index = rand.Next(phrases.Length);
+
+        return phrases[index];
     }
     
     private void PrintMenu(string text)

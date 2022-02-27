@@ -29,6 +29,10 @@ internal static class CryoChamberPrerequisites
         AddChangeLocationEvents(cryoChamber, eventProvider);
 
         AddAfterOpenEvents(cryoChamber, eventProvider);
+        
+        AddSitDownEvents(cryoChamber, eventProvider);
+        
+        AddTakeEvents(cryoChamber, eventProvider);
 
         return cryoChamber;
     }
@@ -100,6 +104,15 @@ internal static class CryoChamberPrerequisites
         cryoChamber.Surroundings.Add(Keys.CRYOCHAMBER_LAMP, () => Descriptions.CRYOCHAMBER_LAMP);
         cryoChamber.Surroundings.Add(Keys.CRYOCHAMBER_CLOTHS, () => Descriptions.CRYOCHAMBER_CLOTHS);
         cryoChamber.Surroundings.Add(Keys.PROXIMA_CENTAURI, () => Descriptions.PROXIMA_CENTAURI);
+        cryoChamber.Surroundings.Add(Keys.PAPER, () => Descriptions.PAPER);
+        cryoChamber.Surroundings.Add(Keys.TEXTMARKER, () => Descriptions.TEXTMARKER);
+        cryoChamber.Surroundings.Add(Keys.TEXTMARKER_RED, () => Descriptions.TEXTMARKER_RED);
+        cryoChamber.Surroundings.Add(Keys.TEXTMARKER_BLUE, () => Descriptions.TEXTMARKER_BLUE);
+        cryoChamber.Surroundings.Add(Keys.TEXTMARKER_YELLOW, () => Descriptions.TEXTMARKER_YELLOW);
+        cryoChamber.Surroundings.Add(Keys.TEXTMARKER_GREEN, () => Descriptions.TEXTMARKER_GREEN);
+        cryoChamber.Surroundings.Add(Keys.PENCILS, () => Descriptions.PENCILS);
+        cryoChamber.Surroundings.Add(Keys.PENCIL_I, () => Descriptions.PENCIL_I);
+        cryoChamber.Surroundings.Add(Keys.PENCIL_II, () => Descriptions.PENCIL_II);
     }
 
     private static void AddAfterLookEvents(Location cryoChamber, EventProvider eventProvider)
@@ -127,6 +140,16 @@ internal static class CryoChamberPrerequisites
     {
         room.AfterOpen += eventProvider.TryToOpenClosedDoor;
         room.Open += eventProvider.OpenClosetDoor;
+    }
+    
+    private static void AddSitDownEvents(Location room, EventProvider eventProvider)
+    {
+        room.SitDown += eventProvider.SitDownOnChairInCryoChamber;
+    }
+    
+    private static void AddTakeEvents(Location room, EventProvider eventProvider)
+    {
+        room.Take += eventProvider.TryToTakeThingsFromCryoChamber;
     }
 
     private static void AddChangeLocationEvents(Location room, EventProvider eventProvider)

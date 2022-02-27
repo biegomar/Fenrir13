@@ -188,7 +188,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Krankenstation ist eine der wichtigen Einrichtungen in Raumschiffen der Viking-Klasse und dient der medizinischen Grundversorgung. Sehr zentral steht ein OP-Tisch, auf dem ein spezieller OP-Roboter einfachere Eingriffe durchführen kann. Er ist unter die Decke montiert und vier Arme garantieren eine sehr flexible und variantenreiche OP-Technik. Zum Beginn der Reise kam er einmal zum Einsatz, als einer der Mechaniker eine Blinddarmentzündung hatte. Für extreme Verletzungen oder schwerwiegende OPs ist der  [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to Die Krankenstation ist eine der wichtigsten Einrichtungen in Raumschiffen der Viking-Klasse und dient der medizinischen Grundversorgung. Sehr zentral steht ein OP-Tisch, auf dem ein spezieller OP-Roboter einfachere Eingriffe durchführen kann. Er ist unter die Decke montiert und vier Arme garantieren eine sehr flexible und variantenreiche OP-Technik. Zum Beginn der Reise kam er einmal zum Einsatz, als einer der Mechaniker eine Blinddarmentzündung hatte. Für extreme Verletzungen oder schwerwiegende OPs ist de [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string AMBULANCE {
             get {
@@ -197,7 +197,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Das Bett ermöglicht sowohl eine kurzzeitige Erholung, als auch eine langwierige Rekonvaleszens. Elektronisch verstellbar, top Pflegematraze...alles was ein modernes Pflegebett benötigt..
+        ///   Looks up a localized string similar to Das Bett ermöglicht sowohl eine kurzzeitige Erholung, als auch eine langwierige Rekonvaleszens. Elektronisch verstellbar, top Pflegematratze...alles was ein modernes Pflegebett benötigt..
         /// </summary>
         internal static string AMBULANCE_BED {
             get {
@@ -215,7 +215,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die öffnest den Schrank und siehst allerlei Zeug. Skalpelle, Tupfer, Mullbinden. Auch Adapter für den Roboter. Viele Dinge kennst Du einfach nicht. Und benötigen wirst Du sie sowieso nicht..
+        ///   Looks up a localized string similar to Du öffnest den Schrank und siehst allerlei Zeug. Skalpelle, Tupfer, Mullbinden. Auch Adapter für den Roboter. Viele Dinge kennst Du einfach nicht. Und benötigen wirst Du sie sowieso nicht..
         /// </summary>
         internal static string AMBULANCE_OP_ITEMS {
             get {
@@ -351,7 +351,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Durch das Sichtfenster erhälst Du einen guten Blick in den abgesperrten Bereich. Oh nein! Du kannst deutlich erkennen, dass irgendetwas die Bordwand durchschlagen und ein ca. faustgroßes Loch gerissen hat. Du siehst auch die Türen zu den drei restlichen Crew-Kammern. Diese sind scheinbar unversehrt. Du kannst für den Rest der Besatzung nur hoffen, dass das den Tatsachen entspricht. Aber jetzt wird Dir klar, warum Du geweckt wurdest. Von dort sind die anderen Crew-Mitglieder machtlos und in den geschützen un [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to Durch das Sichtfenster erhältst Du einen guten Blick in den abgesperrten Bereich. Oh nein! Du kannst deutlich erkennen, dass irgendetwas die Bordwand durchschlagen und ein ca. faustgroßes Loch gerissen hat. Du siehst auch die Türen zu den drei restlichen Crew-Kammern. Diese sind scheinbar unversehrt. Du kannst für den Rest der Besatzung nur hoffen, dass das den Tatsachen entspricht. Aber jetzt wird Dir klar, warum Du geweckt wurdest. Von dort sind die anderen Crew-Mitglieder machtlos und in den geschützten  [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string BULKHEAD_WINDOW {
             get {
@@ -649,7 +649,9 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Korridor durchzieht den gesamten &apos;Hammerkopf&apos; des Schiffs von Ost nach West. Von ihm gehen Türen in die diversen Räume ab und in der Mitte, also bei gut 50 Metern führt ein Aufgang zur Brücke und ein Abgang herunter in die Maschinenräume. An den Wänden hängen Bilder von typischen Raum- und Evakuierungsplänen, sowie von ehemaligen Mitarbeitern und Crewmitgliedern der Fenrir 13. Ansonsten ist der Flur einfach und karg. In diesem Abschnitt des Korridors liegt die erste Hälfte der sechs Crew-Quartiere. Alle [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to Durch den Energiemangel wirft nur eine indirekte Notbeleuchtung ein spärliches Licht in den Gang. Eine gespenstische Stille liegt über der Szenerie und ein Gefühl von Unbehagen macht sich in Dir breit.
+        ///Du bist gerade im östlichen Teil des Korridors, der in mehrere Abschnitte aufgeteilt ist und den gesamten &apos;Hammerkopf&apos; des Schiffs von Ost nach West durchzieht.
+        ///An den Wänden des gesamten Korridors hängen verteilt Bilder von typischen Raum- und Evakuierungsplänen, sowie von ehemaligen Mitarbeitern und Crewm [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string CORRIDOR_EAST {
             get {
@@ -694,7 +696,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to In diesem Abschnitt des Flures hängt das Bild eines Fluchtplans. Er zeigt den Umriss dieser Etage mit den einzelnen Räumen. Ein roter Punkt markiert Deinen Standort und grüne Pfeile weisen in Richtung Mitte des Korridoren und dann nach unten in die Maschinenräume. Gut zu wissen!.
+        ///   Looks up a localized string similar to In diesem Abschnitt des Flures hängt das Bild eines Fluchtplans. Er zeigt den Umriss dieser Etage mit den einzelnen Räumen. Ein roter Punkt markiert Deinen Standort und grüne Pfeile weisen in Richtung Mitte des Korridors und dann nach unten in die Maschinenräume. Gut zu wissen!.
         /// </summary>
         internal static string CORRIDOR_PAINTING_EAST {
             get {
@@ -703,8 +705,8 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Hier hängt ein erstes Portrait eines ehemalige Crew-Mitglieds. Es handelt sich um den dänischen Kapitän Eldar Rasmussen. Du kannst auf einem kleinen Schild unterhalb des Bildes lesen, dass er der erste Kapitän der Viking Space Freight Ltd. war und die Fenrir 13 auf ihrem Jungfernflug im Jahr 2174 begleitet hat.
-        ///Das Bild zeigt ihn mit einem wilden Rauschebart und einem verwegenen Blick, der die Abenteuerlust und Kühnheit diese Pioniere der industriellen Raumfracht erahnen lässt..
+        ///   Looks up a localized string similar to Hier hängt ein erstes Portrait eines ehemaligen Crew-Mitglieds. Es handelt sich um den dänischen Kapitän Eldar Rasmussen. Du kannst auf einem kleinen Schild unterhalb des Bildes lesen, dass er der erste Kapitän der Viking Space Freight Ltd. war und die Fenrir 13 auf ihrem Jungfernflug im Jahr 2174 begleitet hat.
+        ///Das Bild zeigt ihn mit einem wilden Rauschebart und einem verwegenen Blick, der die Abenteuerlust und Kühnheit dieser Pioniere der industriellen Raumfracht erahnen lässt..
         /// </summary>
         internal static string CORRIDOR_PAINTING_MIDEAST {
             get {
@@ -713,7 +715,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Hier hängt ein erstes Portrait eines ehemalige Crew-Mitglieds. Klaus Neumann, ein deutscher Ingenieur und erster Maschinist auf der Fenrir 13. Seinem Einsatz und seiner Expertise sind viele Errungenschaften des Space-Minings zu verdanken, die auch heute noch Bestand haben..
+        ///   Looks up a localized string similar to Hier hängt ein weiteres Portrait eines ehemaligen Crew-Mitglieds. Klaus Neumann, ein deutscher Ingenieur und erster Maschinist auf der Fenrir 13. Seinem Einsatz und seiner Expertise sind viele Errungenschaften des Space-Minings zu verdanken, die auch heute noch Bestand haben..
         /// </summary>
         internal static string CORRIDOR_PAINTING_MIDWEST {
             get {
@@ -758,7 +760,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Du befindest Dich in Deinem persönlichen Raum des Schiffs. Er ist sehr funktional und spartanisch eingerichtet, wirkt dabei aber dennoch wohnlich. Der Cryo-Pod, in dem Du gerade noch gelegen hast, hat seine Kokon-Form, die dem Passagier während der langen Schlafphase einer Raumreise Schutz und Versorgung bietet, in eine offene Bettform gewandelt. Der Fußboden ist metallisch und nur vor Deinem Bett befindet sich ein kleiner Teppich. Du weißt aus der Erfahrung, das der Fußboden angenehm beheizt ist und magnet [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to Du befindest Dich in Deinem persönlichen Raum des Schiffs. Er ist sehr funktional und spartanisch eingerichtet, wirkt dabei aber dennoch wohnlich. Der Cryo-Pod, in dem Du gerade noch gelegen hast, hat seine Kokon-Form, die dem Passagier während der langen Schlafphase einer Raumreise Schutz und Versorgung bietet, in eine offene Bettform gewandelt. Der Fußboden ist metallisch und nur vor Deinem Bett befindet sich ein kleiner Teppich. Du weißt aus der Erfahrung, dass der Fußboden angenehm beheizt ist und magne [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string CRYOCHAMBER {
             get {
@@ -804,7 +806,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Normalerweise kann man das Sichtfenster zum Schutz verschließen, doch aktuell ist er nicht aktiviert und es dringt der blinkende rote Schein der Alarmbeleuchtung durch das Glas und taucht Dein ansonsten halbdunkles Zimmer in einen gespenstigen Schimmer.
+        ///   Looks up a localized string similar to Normalerweise kann man das Sichtfenster verschließen, doch aktuell ist der Sichtschutz nicht aktiviert und es dringt der blinkende rote Schein der Alarmbeleuchtung durch das Glas und taucht Dein ansonsten halbdunkles Zimmer in einen gespenstigen Schimmer.
         ///Auch das Display blinkt rot und bedeutet Dir, alsbald einen Blick darauf zu werfen. Aber im Moment fühlst Du Dich noch zu schwach und ausgepowert, desorientiert und ausserdem bist Du nackt..
         /// </summary>
         internal static string CRYOCHAMBER_FIRSTLOOK {
@@ -1448,11 +1450,21 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Dies ist ein gut ausgestatteter Fitnessraum für die Zeit der Reise, in der man aktiv und wach ist. Auch in modernen Zeiten legt man bei Viking Wert auf Handarbeit und Gewichte stemmen. Daher finden sich hier auch klassische Fitnessmaschinen mit variablen Gewichten. Du siehst die Cardiostation, die mehrere Übungen zulässt, genauso wie eine Powerstation und einen - na sagen wir mal - Gymnastikbereich, mit vielen Seilen, Sandsäcken und tragbaren Gewichten. Alle Geräte sind an ihren Plätzen verankert..
+        ///   Looks up a localized string similar to Zugegebenermaßen ist das hier nicht Dein Lieblingsraum. Du hast es halt nicht so mit den Muskeln. Ganz anders die beiden Mechaniker hier an Bord. Die verbringen fast ihre komplette Freizeit damit, ihre Körper weiter zu stählen. Du hast es aber dennoch einmal ausprobiert und es sofort wieder gelassen, nachdem die beiden Typen in Deinem Beisein ziemlich über Dich gelästert haben. „Hänfling“ und „Stock“ waren da noch die netten Begrifflichkeiten, die sie benutzt haben.
+        ///Dennoch ist dies ein gut ausgestatteter  [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string GYM {
             get {
                 return ResourceManager.GetString("GYM", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tatsächlich siehst Du den Haken an der Wand. Das Tau ist daran befestigt..
+        /// </summary>
+        internal static string GYM_BRACKET {
+            get {
+                return ResourceManager.GetString("GYM_BRACKET", resourceCulture);
             }
         }
         
@@ -1466,11 +1478,56 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Die Schlaufen sind mit dem Sack vernäht und geben dem Trainierenden die Möglichkeit einen ordentlichen Halt an dem Gerät zu haben..
+        /// </summary>
+        internal static string GYM_LOOP {
+            get {
+                return ResourceManager.GetString("GYM_LOOP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Die Powerstation ist klar das Herzstück des Fitnessraums. Mit Gewichten, Hantelscheiben und den dazu passenden Hantelstangen lassen sich hier viele Übungen machen. Die fällt auf, dass alles schön auf einer Hantelablage organisiert ist..
         /// </summary>
         internal static string GYM_POWERSTATION {
             get {
                 return ResourceManager.GetString("GYM_POWERSTATION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Das Fitness-Tau ist ein schwergewichtiges Seil, das sich für modernes und funktionelles Training eignet. Es lässt sich mit einer speziellen Halterung an der Wand befestigen oder einfach mit einem Gewicht fixieren..
+        /// </summary>
+        internal static string GYM_ROPES {
+            get {
+                return ResourceManager.GetString("GYM_ROPES", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ach komm schon. Das Tau ist was für starkte Männer. Es ist 4 cm dick, 25 Meter lang und wiegt wohl so rund 16 Kilo. Das willst Du wirklich mitnehmen?.
+        /// </summary>
+        internal static string GYM_ROPES_NO_PICKUP {
+            get {
+                return ResourceManager.GetString("GYM_ROPES_NO_PICKUP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Die Sandsäcke sind typische Power-Bags mit vielen angebrachten Schlaufen und Griffen, um sie vielseitig nutzen zu können. Sie sind sehr schwer, bestimmt über 30 Kilo und somit für Dich in jeglicher Hinsicht uninteressant..
+        /// </summary>
+        internal static string GYM_SANDBAG {
+            get {
+                return ResourceManager.GetString("GYM_SANDBAG", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Du würdest Dir einen Bruch heben. Lass das!.
+        /// </summary>
+        internal static string GYM_SANDBAG_NO_PICKUP {
+            get {
+                return ResourceManager.GetString("GYM_SANDBAG_NO_PICKUP", resourceCulture);
             }
         }
         
@@ -1686,7 +1743,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Neuste Materialen sorgen dafür, dass sich der Stuhl perfekt an Deinem Körper ausrichtet und ihn in eine angenehme ergonomische Position bringt. Eine nahezu perfekte Klimaregulierung machen diesen Stuhl zu einem der bequemsten Plätze hier auf dem Schiff. .
+        ///   Looks up a localized string similar to Neuste Materialen sorgen dafür, dass sich der Stuhl perfekt an Deinem Körper ausrichtet und ihn in eine angenehme ergonomische Position bringt. Eine nahezu perfekte Klimaregulierung macht diesen Stuhl zu einem der bequemsten Plätze hier auf dem Schiff. .
         /// </summary>
         internal static string OFFICECHAIR {
             get {
@@ -1695,7 +1752,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Schwarz. Langsam fräst sich ein auf- und abschwellendes Geräusch durch Deine vernebelten Sinne. Erst scheinbar fern, kommt es pulsierend näher. Ein roter Schein erscheint in der Dunkelheit. Ganz klein und schwach. Gleichermaßen näher kommend und subtil bedrohlich. Ein Tunnel? Ein Zug? Plötzlich zerreißt ein stechender Schmerz in Deinen Lungen Deine Illusion. Adrenalin schießt durch Deinen Körper und holt Dich mit voller, unbarmherziger Härte zurück ins Bewusstsein. Du reißt Deine Augen auf und wirst zugleic [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to schwarz. Langsam fräst sich ein auf- und abschwellendes Geräusch durch Deine vernebelten Sinne. Erst scheinbar fern, kommt es pulsierend näher. Ein roter Schein erscheint in der Dunkelheit. Ganz klein und schwach. Gleichermaßen näher kommend und subtil bedrohlich. Ein Tunnel? Ein Zug? Plötzlich zerreißt ein stechender Schmerz in Deinen Lungen Deine Illusion. Adrenalin schießt durch Deinen Körper und holt Dich mit voller, unbarmherziger Härte zurück ins Bewusstsein. Du reißt Deine Augen auf und wirst zugleic [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string OPENING {
             get {
@@ -1814,6 +1871,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Auch wenn Du für ein dänisches Unternehmen arbeitest, willst Du nicht auf die jahrhundertealten deutschen Industriestandards verzichten. Du siehst dort also einfache weiße Blätter in DIN A4..
+        /// </summary>
+        internal static string PAPER {
+            get {
+                return ResourceManager.GetString("PAPER", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Die Trennwand zum Waschbereich soll sicherlich als Sichtschutz dienen, hat aber eher eine psychologische Wirkung. Niemand kann einfach so in den Raum kommen oder durch das Guckloch schauen, um zu sehen, was da wohl gerade passiert. Die Wand ist beidseitig mit einem grauen Filzstoff überzogen und man kann dort leichte Dinge, wie Bilder oder anderen Schnick-Schnack befestigen. Du hast von der Möglichkeit allerdings keinen Gebrauch gemacht..
         /// </summary>
         internal static string PARTITION_WALL {
@@ -1828,6 +1894,33 @@ namespace Fenrir13.Resources {
         internal static string PEEPHOLE {
             get {
                 return ResourceManager.GetString("PEEPHOLE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nun, was soll ich sagen. Ein wirklich sehr einfacher Kugelschreiber mit einer sehr geringen Relevanz für den Ausgang des Spiels. Also quasi keiner Relevanz..
+        /// </summary>
+        internal static string PENCIL_I {
+            get {
+                return ResourceManager.GetString("PENCIL_I", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ein Druckbleistift. Ansonsten nicht wichtig..
+        /// </summary>
+        internal static string PENCIL_II {
+            get {
+                return ResourceManager.GetString("PENCIL_II", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ein einfacher Kugelschreiber und ein Bleistift..
+        /// </summary>
+        internal static string PENCILS {
+            get {
+                return ResourceManager.GetString("PENCILS", resourceCulture);
             }
         }
         
@@ -2310,8 +2403,8 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Einteiler ist einer dieser aktuellen Bio-Suits und ist wie eine zweite Haut konzipiert. Er wärmt, kühlt, schützt und überwacht den Körper und seine Funktion. Er ist auch dafür ausgelegt, als Raumanzug die Arbeitseinsätze ausserhalb des Schiffs durchzuführen. Dafür ist er in der Lage auch den benötigten Druck auf den Körper auszuüben. Nur die Sauerstoffversorgung geschieht über einen zusätzlichen Helm. 
-        ///Damit das Schiff permanent in Kontakt zu dem Crew-Mitglied ist, muss der Anzug ständig getragen werde [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to Der Einteiler ist einer dieser aktuellen Bio-Suits und ist wie eine zweite Haut konzipiert. Er wärmt, kühlt, schützt und überwacht den Körper und seine Funktionen. Er ist auch dafür ausgelegt, als Raumanzug die Arbeitseinsätze ausserhalb des Schiffs durchzuführen. Dafür ist er in der Lage auch den benötigten Druck auf den Körper auszuüben. Nur die Sauerstoffversorgung geschieht über einen zusätzlichen Helm. 
+        ///Damit das Schiff permanent in Kontakt zu dem Crew-Mitglied ist, muss der Anzug ständig getragen wer [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string SPACE_SUIT {
             get {
@@ -2446,6 +2539,51 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Vier Textmarker in blau, rot, gelb und grün..
+        /// </summary>
+        internal static string TEXTMARKER {
+            get {
+                return ResourceManager.GetString("TEXTMARKER", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Der Textmarker ist blau und hat Dir in der Vergangenheit schon gute Dienste erwiesen..
+        /// </summary>
+        internal static string TEXTMARKER_BLUE {
+            get {
+                return ResourceManager.GetString("TEXTMARKER_BLUE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Grün ist nicht Deine Lieblingsfarbe, daher ist er fast unbenutzt..
+        /// </summary>
+        internal static string TEXTMARKER_GREEN {
+            get {
+                return ResourceManager.GetString("TEXTMARKER_GREEN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Von Dir häufig verwendet, aber nicht relevant für das Spiel. Wie alle Textmarker hier..
+        /// </summary>
+        internal static string TEXTMARKER_RED {
+            get {
+                return ResourceManager.GetString("TEXTMARKER_RED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Simple. Einfach. Gelb..
+        /// </summary>
+        internal static string TEXTMARKER_YELLOW {
+            get {
+                return ResourceManager.GetString("TEXTMARKER_YELLOW", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Absolut unscheinbar dieser Thron, bestehend aus einem Metallkorpus und einem Toilettensitz aus beheiztem Kunststoff. Doch er ist, neben Deinem Bio-Suit, die zentrale Überwachungsstation Deiner Gesundheit. Jede Ausscheidung wird akribisch analysiert und Dir im Display des Spiegels angezeigt. Viele der Werte sagen Dir noch nicht einmal etwas. Egal. Für Dich ist nur wichtig, dass Du gut umsorgt wirst und jeder erkannte Mangel über Zusätze in der Nahrung beseitigt werden..
         /// </summary>
         internal static string TOILET {
@@ -2464,7 +2602,34 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ein typischer Kleiderständer der es ermöglicht, schnell Kleidungsstücke aufzuhängen und ebenso schnell wieder herunterzunehmen..
+        ///   Looks up a localized string similar to Du setzt Dich kurz auf den Stuhl, wippst ein wenig vor uns zurück und denkst Dir dann, dass es gerade unangemessen ist, dich zu setzen..
+        /// </summary>
+        internal static string TRY_TO_SIT_ON_CHAIR {
+            get {
+                return ResourceManager.GetString("TRY_TO_SIT_ON_CHAIR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total bequem, aber Du hast hier eine Aufgabe zu lösen und solltest Dich nicht ausruhen..
+        /// </summary>
+        internal static string TRY_TO_SIT_ON_OFFICECHAIR {
+            get {
+                return ResourceManager.GetString("TRY_TO_SIT_ON_OFFICECHAIR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Das Gerät ist im Moment nicht einsatzfähig. Es macht also keinen Sinn es mitzunehmen..
+        /// </summary>
+        internal static string TRY_TO_TAKE_LAPTOP {
+            get {
+                return ResourceManager.GetString("TRY_TO_TAKE_LAPTOP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ein typischer Kleiderständer, der es ermöglicht, schnell Kleidungsstücke aufzuhängen und ebenso schnell wieder herunterzunehmen..
         /// </summary>
         internal static string WARDROBE {
             get {
@@ -2478,6 +2643,24 @@ namespace Fenrir13.Resources {
         internal static string WASHINGAREA {
             get {
                 return ResourceManager.GetString("WASHINGAREA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Die Hantelscheiben gibt es hier in unterschiedlichen Größen und Gewichten. Alle können, durch das Loch in ihrer Mitte, auf Hantelstangen gezogen werden..
+        /// </summary>
+        internal static string WEIGHT_PLATES {
+            get {
+                return ResourceManager.GetString("WEIGHT_PLATES", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sag mir doch bitte, worauf ich mich setzen soll..
+        /// </summary>
+        internal static string WHERE_TO_SIT {
+            get {
+                return ResourceManager.GetString("WHERE_TO_SIT", resourceCulture);
             }
         }
         

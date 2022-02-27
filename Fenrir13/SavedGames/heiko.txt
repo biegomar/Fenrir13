@@ -1,0 +1,948 @@
+schmecke
+rieche
+x kontrolleinheit
+hilfe
+u kontrolleinheit
+x pod
+u pod
+u bio-suit
+ überwacht den Körper und seine Funktion. ->  überwacht den Körper und seine Funktionen.
+nimm suit
+u glas
+x display
+u display
+u fußboden
+u arbeitsbereich
+u arbeitsplatte
+u ablagefächer
+u schreibutensilien
+nimm alles
+nimm stifte
+nimm textmarker
+etwas generische Antwort auf Stifte
+u bullauge
+ ???????????? ?????? 13 - Raumfrachter Fenrir 13. -> Schrift wird nicht korrekt dargestellt.
+x frachter
+u frachter
+Sorry, ich muss mich erst wieder an deutsche Befehle gewöhnen.
+u roter zwerg
+u mond
+u bürostuhl
+Eine nahezu perfekte Klimaregulierung machen -> Eine nahezu perfekte Klimaregulierung macht
+u rollen
+setze dich
+Doch!
+u schrank
+öffne schrank
+l
+u schubfächer
+u schubfaecher
+ok. keine umlaut-Umschreibung.
+u kleidungsstücke
+Doch.
+u schranktür
+nimm riegel
+Iss riegel
+ok. Zurück zum Display!
+u display
+Ich finde es sehr schön, dass mir als Spieler quasi ein konkretes Ziel "gehe zur Bridge" gegeben wurde.
+ Als Du das letzte Mal auf der Erde von einer Person gehört hast,
+die dieses Level hatte, hat er wirre Verschwörungstheorien in die Welt gesetzt. -> wer hat die Therien in die Welt gesetzt? Die Person, von der du das hörtest oder die, die davon berichtete?
+ok. Normalerweise würde ich jetzt losziehen, aber ich will noch etwas als Beta-Tester mir alles anschauen.
+u garderobe
+Ein typischer Kleiderständer der es ermöglicht -> Ein typischer Kleiderständer, der es ermöglicht
+u tisch
+u metallrahmen
+u tisch
+steige auf tisch
+u stuhl
+sitze auf stuhl
+setz dich auf stuhl
+hm.
+hilge
+hilfe
+mein name ist Heiko
+u selbst
+u dich
+schaue mich an
+u trennwand
+u filzstoff
+u waschmöglichkeit
+drücke starttaste
+u armatur
+u display
+u vitaldaten
+u toilette
+u zimmertür
+u guckloch
+schließe tür
+schließe zimmertür
+u wand
+u alarmbeleuchtung
+u glas
+u bio-suit
+hist
+l
+u laptop
+schalte laptop ein
+u akku
+nimm laptop
+Ein Laptop schon. Ein PC eher nicht.
+w
+n
+öffne kammer
+öffne siegel
+w
+Korridore heißen alle gleich, was etwas verwirrend ist, aber absolut ok.
+e
+x bilder
+u bulder
+u bilder
+grüne Pfeile weisen in Richtung Mitte des Korridoren -> grüne Pfeile weisen in Richtung Mitte des Korridors
+u mitarbeiter
+w
+u bild
+Hier hängt ein erstes Portrait eines ehemalige Crew-Mitglieds. -> Hier hängt ein erstes Portrait eines ehemaligen Crew-Mitglieds.
+ der die Abenteuerlust und Kühnheit diese
+->  der die Abenteuerlust und Kühnheit diese
+sorry: Kühnheit diese Pioniere -> Kühnheit dieser Pioniere
+w
+Der Text ist etwas gedoppelt mit seinen Beschreibungen (Gemälde, weitere Wege).
+Der Vorraum liegt in Richtung Runter. -> "Richtung Runter" klingt etwas merkwürdig.
+e
+e
+Ich dachte beim ersten Lesen des östlichen Korridors, dass ich hier hoch zur Brücke gehen könnte, bzw. runter in den Maschinenraum.
+r
+runter
+w
+w
+Das wird erst hier klar, dass der Text im östlichsten Korridor den gesamten Korridor beschreibt und nicht nur diesen Abschnitt.
+u gemälde
+schaue hinter gemälde
+w
+u schott
+u sichtfenster
+Durch das Sichtfenster erhälst Du -> Durch das Sichtfenster erhältst Du
+und in den geschützen -> und in den geschützten
+u loch
+u bordwand
+u crewkammern
+n
+Die Krankenstation ist eine der wichtigen Einrichtungen -> wichtigsten?
+ Im Fall des Blinddarms
+konnte der Mechaniker aber direkt wieder in seine Kabine und konnte -> vielleicht zweites "konnte" weg.
+ sind alle relevanten Instrumente und Verbandszeuge -> ich bin mir nicht sicher, ob Verbandszeug einen Plural hat.
+u oxygen
+u beatmungsgerät
+öffne klappe
+u roboter
+u insturmente
+u instrumente
+Die öffnest den Schrank -> Du öffnest den Schrank
+l
+u bett
+ top Pflegematraze ->  top Pflegematratze
+schlafe+
+witzig!
+gehe in bett
+lege dich in bett
+steige auf bet
+steige auf bett
+s
+s
+Was ist mit Handarbeit gemeint??
+u seile
+u sandsäcke
+u gewichte
+Die fällt auf, dass alles schön auf einer Hantelablage
+organisiert ist. -> Dir fällt auf ...
+u hantelablage
+nimm stange
+u stange
+ lang und sieht sehr schwer aus. ->  lang und sie sieht sehr schwer aus.
+Ich sollte wissen, ob sie schwer ist, wenn ich sie schon genommen habe.
+l
+u cardiostationen
+u cardiostation
+Stepper, sowie einen Crosstrainer -> ich glaube, dass Komma kann hier weg, da "sowie" wie ein "und" behandelt wird.
+fahre fahrrad
+trainiere
+springe
+u powerstation
+u scheiben
+u hantelscheiben
+n
+e
+e
+n
+i
+inventar
+u stange
+die Stange scheint genau 10 kg zu wiegen. Ich scheine recht schwach zu sein.
+l
+Wenn man essen möchte nimmt man -> Wenn man essen möchte, nimmt man
+u food-printer
+aus den verschiedensten
+Nahrungsgrundstoffe -> aus den verschiedensten
+Nahrungsgrundstoffen
+Menüs zauber. -> Menüs zaubern.
+öffne printer
+u printer
+Auch, wenn Dir -> Auch wenn Dir
+l
+u kühlschrank
+öffne kühlschrank
+nimm griff
+ziehe an griff
+Ah. Inventar-Limit
+u kühlschrank
+l
+u reststoffverwerter
+Wie das alles geht ist -> Wie das alles geht, ist
+Materialien passiert weißt Du nicht. -> Materialien passiert, weißt Du nicht.
+s
+e
+w
+w
+runter
+n
+hoch
+Ich musste "ovoid" nachschlagen. :-)
+sowie nautischer Notwendigkeiten und ... -> könnte auch heißen: sowie gemäß nautischer Notwendigkeiten ....
+Das du überhaupt ... -> Dass du überhaupt ...
+projeziert -> projiziert
+gelangen konntest verwundert Dich. -> gelangen konntest, verwundert Dich.
+und der Sichtschreibe -> und der Sichtscheibe
+Bei Bedarf werden weitere Daten direkt aufr die Sichtscheiben projiziert. -> ich dachte, es wäre nur eine Sichtscheibe.
+Durch die erhöhte Position der Brücke ist das Schiff vollständig zu überblicken... -> kann das ganze Schiff überblickt werden? Oder ist etwas anderes gemeint. Ist mir nicht ganz klar an der Stelle.
+setze dich
+Daher nimmt Du einfach auf der ... -> Daher nimmSt Du einfach auf deM...
+Sofort als Du Dich setzt wird -> Sofort als Du Dich setzt, wird...
+tippe 1234
+ok. Das muss ich wohl besser recherchieren. :-)
+Nochmal zurück zu dem Gas
+s
+h
+r
+runter
+stehe auf
+l
+aufstehen
+r
+runter
+w
+n
+öffne klappe mit stange
+u klappe
+lege stange ab
+s
+e
+w
+e
+lege stange auf boden
+drop stange
+u stange
+lege stange hin
+lege stange auf boden
+hilfe
+leg stange hin
+lege stange hin
+leg stange
+inventar
+l
+ok. BIn mir nicht sicher, welcher Befehl funktioniert hat.
+w
+e
+w
+e
+e
+s
+nimm griff
+nimm cues
+Doch?
+u cues
+ok.
+u dart
+Ich dachte, die Pfeile wären in der Halterung.
+Sorry. Ich verwechsle gerade die Cues mit den Pfeilen.
+nimm pfeile
+schade.
+u glastisch
+u couch
+u sofa
+-> sitzen und liegen hier jeweils groß: zum Sitzen oder auch mal zum Liegen.
+lege dich auf couch
+schalfe
+schlafe
+l
+u bildschirm
+lies bildschirm
+l
+u bücherregal
+wahrlos -> wahllos
+nimm buch
+u bücherregal
+u bücherregal
+u bücherregal
+u bücherregal
+u bücherregal
+u bücherregal
+l
+u sitzgruppe
+u sessel
+u billardtisch
+l
+exits
+ausgänge
+n
+n
+nimm türgriff
+s
+w
+w
+n
+öffne kappe mit griff
+öffne klappe mit griff
+u klappe
+befestige griff an klappe
+öffne klappe
+öffne klappe mit griff
+hebel klappe mit griff auf
+hm.
+inventar
+Der Türgriff trägst du bei Dir. -> Einen/Den Türgriff trägst Du bei Dir.
+ok. Bis hierhin. Habe jetzt erstmal alles untersucht und kartographiert. Gehe nächstes Mal an die Rätsel.
+info
+l
+(darin befinden sich: die Verschlussklappe) -> eigentlich Singualr: (darin befindet sich: die Verschlussklappe)
+s
+e
+e
+s
+x antenne
+u antenne
+u konstruktion
+u receiver
+nimm konstruktion
+nimm receiver
+nimm
+l
+schraube antenne aus receiver
+u bildschirm
+berühre bildschirm
+u tisch
+u billard
+u billardtisch
+öffne billardtisch
+u couch
+n
+n
+s
+e
+w
+w
+n
+s
+h
+r
+hoch
+runter
+e
+e
+w
+u bild
+w
+u bild
+hoch
+setze dich
+rasmussen
+tippe rasmussen
+tippe eldar rasmussen
+tippe eldar
+tippe 2174
+tippe 2152
+tippe paul
+tippe skob
+tippe skov
+1
+tippe 1
+Als du den Menüpunkt auswählst erfährst -> Als du den Menüpunkt auswählst, erfährst
+Aber Deine Aufgabe scheint klar zu sein. Den Roboter -> Aber Deine Aufgabe scheint klar zu sein: Den Roboter...
+tippe 2
+kritisch wird wurdest Du geweckt -> lritisch wird, wurdest Du geweckt
+sstehe
+stehe auf
+l
+aufstehen
+runter
+runter
+info
+l
+"Richtung Hoch" klingt merkwürdig.
+u luftschleuse
+s
+nach Draußen -> nach draußen
+gesteuert zu werden, dass sich direkt -> gesteuert zu werden, das sich direkt
+inventar
+0,000 kg -> hätte ich nicht erwartet. :-)
+u seil
+u haken
+u hakenkonstruktion
+u seilwinde
+l
+u tastenfeld
+"Der grüne Knopf und der rote Knopf sind hier." -> klingt etwas merkwürdig, ist aber klar, was gemeint ist.
+u tasten
+u schott
+l
+u steg
+drücke rot
+drücke roten knopf
+Ok, das Spiel scheint mich nicht töten zu wollen.
+n
+Alle Gegenstände, die Du mit Dir führst erhalten -> Alle Gegenstände, die Du mit Dir führst, erhalten d
+inventar
+w
+u papiereimer
+nimm
+u helm
+ok. also doch die Flasche aus der Klinik holen.
+u handschuge
+u handschuhe
+u stiefel
+u gurt
+l
+u sitzbänke
+Die einfachen aber stabilen -> Die einfachen, aber stabilen
+l
+u nischen
+und ermöglich es -> ind ermöglicht es
+u metallbox
+u metallkiste
+Um sie komplett zu inspizieren ziehst Du -> Um sie komplett zu inspizieren, ziehst Du
+u schloss
+Sicherlich ist das die Kistes eines der Mechaniker... -> vielleicht besser: ... von einem der Mechaniker
+trage helm
+ziehe helm an
+inventar
+Hm. Wahrscheinlich geht das in der richtigen Situation wieder automatisch, wie beim Bio-Suit.
+w
+l
+e
+e
+Bin mir nicht sicher, aber ich meine es müsste heißen: "Für alles, was ..."
+oder Reparaturen ansteht gibt es -> oder Reparaturen ansteht, gibt es
+Eine Schublade unterhalb der Platte bieten Platz -> Eine Schublade unterhalb der Platte bietet Platz,
+u werkbank
+öffne schublade
+u schublade
+u griffe
+u griff
+u krims-krams
+nimm
+u werkzeug
+l
+u werkzeug
+u allerlei werkzeug
+u arbeitsplatte
+u wand
+w
+up
+hoch
+w
+n
+öffne klappe mit werkzeug
+u klappe
+öffne klappe mit griff
+hilfe
+Oh. Sehe gerade, dass Benutzen ein erlaubtes Verb ist.
+benutze griff mit klappe
+befestige griff an klappe
+verbinde klappe mit griff
+u klappe
+öffne klappe
+öffne klappe mit griff
+befestige griff an klappe mit werkzeug
+befestige griff an klappe
+u griff
+metallische Aparatur die dazu dient, -> metallische Aparatur, die dazu dient,
+montiere griff an klappe
+l
+montiere griff an verschlußklappe
+u verschlußklappe
+doch.
+nimm 
+u beatmungsgerät
+öffne klappe
+öffne beatmungsgerät
+info
+hm. Bin mir nicht sicher gerade, ob ich auf einer falschen Spur bin oder ein "Guess the right word"-Puzzle habe. Der Griff und die Beschreibung der Klappe passen eigentlich zu gut zusammen.
+s
+w
+e
+runter
+s
+drücke rot
+drücke roten knopf
+i
+inventar
+trage helm
+ziehe helm an
+ziehe helm auf
+hilfe
+benutze helm
+hier kam jetzt keine Reaktion vom Parser.
+i
+inventar
+ziehe helm auf kopf
+befestige öse an drah
+befestige öse an draht
+l
+befestige öse an seil
+n
+inventar
+Theoretisch ziehe ich nun ein Seil aus der Luftschleuse hinter mir her.
+s
+drücke roten knopf
+ziehe schutzkleidung an
+ziehe stiefel an
+trage stiefel
+i
+inventar
+anziehen helm
+helm anziehen
+ok. Jetzt hänge ich etwas. Ich gehe im Moment davon aus, dass ich noch die Sauerstoffflasche aus der Klinik brauche und dann die Weltraumsachen anziehen muss. Dann sollte ich irgendwas im Weltraum (den Bot?) reparieren können.
+Ich denke nochmal drüber nach. Ansonsten würde ich doch in die Lösung schauen.
+Außerdem frage ich mich gerade, wo eigentlich der Maschinenraum ist, der auf der Brücke erwähnt wurde.
+w
+n
+Ah. Norden. Habe ich übersehen.
+n
+"hoch modernster Technik" klingt etwas doppel-gemoppelt imho. "hochmoderner Technik" oder "modernster Technik".
+Allerdings ist das Spiel mit den Adjektiven "hoch modernster" und "post morderner" ganz schön.
+Die Stehlen haben eine Abstand von -> Die Stehlen haben einen Abstand von
+Die Stelen ... -> Der Satz braucht etwas, bis man ihn geparsed hat :-)
+Summen schwebt im Raum, dass -> Summen schwebt im Raum, das...
+meint "redundant", dass es einen weiteren Quantencluster irgendwo gibt, oder dass die Systeme in dem Cluster doppelt angelegt sind? Oder sind die Würfel alle identisch in ihrer Funktion und daher untereinander redundant?
+Die Recheneinheit betreibt wohl das Schiff ("davon betrieben wird). -> Es klingt etwas, als wäre dies der Antrieb, aber scheint mir eher die Kontrolleinheit zu sein.
+x hologramm
+x hologram
+u fenrir 132
+u fenrir 13
+u bild
+u abbild
+u stehlen
+und taucht den Halbkreis den sie bilden in ein -> und taucht den Halbkreis, den sie bilden, in ein
+Kommas sind aber in dem Satz optional meines Wissens.
+u licht
+u kunst
+u würfel
+u recheneinheit
+Oh, das Traveling Salesman-Problem. NP=P scheint noch nicht gelöst worden zu sein. :-)
+l
+luasche
+lausche
+u summen
+u punkte
+Als Du die roten Punkte imaginär berührst erhälst -> Als Du die roten Punkte imaginär berührst, erhälst
+"imaginär berühren" klingt etwas merkwürdig, aber wüsste jetzt auch nicht, wie man es besser sagen kann.
+Der erste markiert -> Der Erste markiert...
+und er hat sein Dock auf dem Dach der Brücke. -> vielleicht besser: Reparatur-Droiden, welcher sein Dock...
+verantwortlich ist auch die Antenne -> verantwortlich ist, auch die Antenne
+Bin mir nicht sicher: Sobald diese durch eine neue -> Sobald diese durch eine Neue...
+Der Zweite Punkt -> Der zweite Punkt
+Ok. Ich denke, ich brauche die Antenne aus dem Sozialraum für den Roboter und die Hantelstange aus dem Gym als Hebel. Allerdings wird das etwas umständlich, diese mit 10kg zur Schleuse erst zu schaffen.
+l
+u platte
+nimm
+Das hätte ich jetzt nicht erwartet.
+u hologramm
+inventar
+drehe hologramm
+s
+u hologramm
+inventar
+u rote punkte
+u punkte
+Vielleicht ein Bug mit dem takeable Hologramm.
+l
+inventar
+u helm
+u schlauch
+n
+s
+hoch
+w
+n
+u klappe
+verbinde griff mit klappe
+u griff
+metallische Aparatur -> metallische Apparatur
+Apparatur die dazu dient -> Apparatur 
+Apparatur die dazu dient -> Apparatur, die dazu dient
+l
+öffne medizinschrank
+nimm
+u gerät
+nimm klappe
+öffne klappe
+befestige griff an klappe
+öffne klappe mit griff
+hilfe
+montiere griff an klappe
+s
+e
+e
+s
+nimm
+nimm antenne
+zuweit -> zu weit
+l
+klettere auf tisch
+klettere auf glastisch
+klettere auf billardtisch
+steige auf glastisch
+betrete glastisch
+hilfe
+u tisch
+klettere glastisch
+kletter glastisch
+kletter tisch
+klettere tisch
+Hm. Man kann ihn aber untersuchen.
+l
+klettere auf couch
+ah.
+nimm antenne
+drehe antenne mit werkzeug
+nimm antenne mit werkzeug
+u werkzeug
+benutze werkzeug mit antenne
+inventar
+steige von couch
+hilfe
+steige couch
+klettere runter
+klettere von couch
+klettere von couch runter
+l
+inventar
+s
+n
+verlasse couch
+steige von couch ab
+springe von couch
+springe
+spring
+spring runter
+verlasse couch
+Hier wären ein paar Synonyme hilfreich.
+verlasse couch
+hilfe
+herabsteigen
+ah.
+kletter
+s
+n
+w
+w
+n
+nimm schlauch
+benutze griff mit klappe
+ziehe klappe mit griff
+drücke klappe mit griff
+s
+e
+runter
+s
+u tastenfeld
+drücke roten knopf
+Ohne, dass Du ... -> Ohne dass du...
+lege helm an
+hilfe
+benutze helm
+Kam leider keine Antwort
+inventar
+ziehe helm auf
+anzieh helm
+benutze stiefel
+ziehe stiefel an
+u stiefel
+trage stiefel
+ok. Ich komme hier nicht weiter. Ich schau doch einmal in die Lösung. Sorry.
+ok. habe die Stelle gefunden.
+n
+hoch
+w
+n
+stecke griff in klappe
+Vielleicht hier weitere Befehle zulassen.
+öffne klappe
+Aber eine, nicht angeschlossene Flasche erregt -> Entweder: Aber eine, nicht angeschlossene, Flasche erregt / Aber eine nicht angeschlossene Flasche erregt
+nimm flasche
+u flasche
+scheint sehr handlich zu sein mit einem Liter.
+s
+w
+e
+runter
+s
+drücke roten knopf
+verbinde flasche mit helm
+drücke roten knopf
+Ich muss jetzt nochmal nach dem richtigen Befehl schauen.
+ziehe mir boots an
+vielleicht sollte man auch erlauben: "Ziehe Boots an" oder "lege boots an". Das "mir" ist nicht so ganz intuitiv.
+Ziehe mir Helm an
+inventar
+ziehe mir handschuhe an
+ziehe mir gurt an
+verbinde öse mit seil
+u seil
+Ah, hatte ich schon vorher gemacht.
+drücke roten knopf
+u all
+u schott
+l
+l
+info
+l
+Bin mir nicht sicher: nach Draußen -> nach draußen
+s
+Aber es nützt nichts. Du wirst Deine Angst überwinden müssen. -> Aber es nützt nichts: Du wirst Deine Angst überwinden müssen.
+spring
+s
+runter
+"in Richtung Hoch" klingt immer etwas komisch.
+h
+h
+hoch
+hoch
+u proxima centauri
+u szenerie
+u roboter
+Der Wartungsroboter wirkt wie ein überdimensionierter Saugroboter. Eine nicht ganz -> hier würde ich einen Doppelpunkt hinsetzen zwischen "Saugroboter" und "Eine" statt dem Punkt, da der zweite Satz nur eine Satzellipse ist.
+grüße bot
+rede mit roboter
+u roboter
+frage roboter
+befestige ANTENNE an roboter
+warte
+u roboter
+rede mit roboter
+hilfe
+frag roboter
+nenne roboter Marvin
+hilfe
+alias
+roboter alias floyd
+alias roboter
+Ah. Praktisch.
+l
+runter
+rein
+n
+n
+drücke grün
+drücke grünen knopf
+drücke knopf
+drücke knöpfe
+n
+Ah. Jetzt geht es.
+lege alles ab
+drop 
+drop alles
+i
+inventar
+löse haken von öse
+löse seil von öse
+löse seil von gurt
+entferne seil von gurt
+entbinde seil von gurt
+lege gurt ab
+drop gurt
+ok. Zur Not halt so.
+n
+s
+n
+n
+s
+up
+hoch
+nimm stange
+runter
+s
+lege helm ab
+lass helm fallen
+hilfe
+leg helm
+inventar
+lege hologramm ab
+lege hologramm
+leg hologramm
+leg werkzeug ab
+alias lege
+alias leg
+leg stiefel 
+leg alles
+inventar
+leg handschuh
+n
+inventar
+Die Sauerstoffflasche ist noch verbunden mit dem Helm, obwohl der Helm woanders ist.
+s
+lege flasche ab
+lege flasche ab
+leg flasche ab
+inventar
+n
+hoch 
+nimm hantel
+runter
+s
+nimm
+leg alles an
+leg
+leg gurt an
+leg helm an
+leg werkzeug an
+leg stiefel an
+leg handschuhe an
+inventar
+nimm
+trag gurt
+trage gurt
+zieh gurt an
+hilfe
+zieh dir gurt an
+zieh mir gurt an
+Ah. So war es.
+i
+inventar
+l
+zieh mir helm an
+inventar
+zieh mit stiefel an
+zieh mir stiefel an
+zieh mir handschuh
+drücke roten knopf
+s
+runter
+u griff
+hebel griff mit stange auf
+hebel griff mit stange
+benutze stange mit griff
+Im Text ist einmal "Panele" und einmal "Panel" als Plural für "Panel".
+an zu blinken, durch einige Fenster -> könnte auch ein Punkt kommen: an zu blinken. Durch einige Fenster
+geniesst -> genießt
+als plötzlich der Wolfskopf an der Steuerbordseite ...  stehen! -> als plötzlich der Wolfskopf ... steht!
+statt "als plötzlich der Wolfskopf" könnte es auch heißen "bis schließlich auch der Wolfskopf". Das "plötzlich" gibt einem erst den Eindruck, etwas stimme nicht.
+Es wird erwähnt, dass die Raumbeleuchtung anginge. Allerdings war im Spiel die Dunkelheit in den Räumen kein Thema. Ich bin davon ausgegangen, dass die Beleuchtung ginge (war aber vielleicht nur die Notbeleuchtung).
+schau
+u solarkollektoren
+u panelsteuerung
+hoch
+hoch
+rede mit roboter
+frag roboter 
+runter
+n
+drücke grün
+drücke grünen knopf
+inventar
+n
+lege gurt ab
+lege gurt
+drop gurt
+n
+inventar
+Mist. Ich habe nicht geschaut, was passiert, wenn ich die Hantelstange auch noch trage und dann erstmal die schwerelose Schleuse wieder gen Norden verlasse, also mit Übergewicht.
+hoch
+runter
+n
+u punkte
+Hier müsste sich jetzt eigentlich etwas geändert haben.
+s
+hoch
+hoch
+sitz
+sitz auf sitz
+steige sitz
+steig sitz
+u sitz
+alias sitz
+betrete sitz
+steige auf sitz
+setze dich
+1
+tippe 1
+tippe 2
+Das könnte sich auch jetzt geändert haben.
+s
+steh auf
+raus
+hoch
+verlasse sitz
+hilfe
+wege
+aufstehen
+wege
+Ausgänge
+Die "Wege"-Funktion ist toll. Vielleicht kann man noch als Synonyme für den Befehl "exits" und "ausgänge" nehmen, da in Inform-Spielen es oft die Funktion mit "exits" und in deutschen Inform-Spielen die Funktion mit "AG" oder "Ausgänge" gibt.
+l
+s
+runter
+w
+w
+x schott
+u schott
+u fenster
+u sichtfenster
+Hm. Bin mir gerade nicht sicher, was ich als Nächstes machen muss. Ich gehe nochmal zurück zum Roboter.
+Oder auch mal zu meinem Laptop. Strom ist ja jetzt wieder da.
+e
+e
+e
+e
+u laptop
+w
+w
+runter
+w
+runter
+s
+drücke roten knopf
+inventar
+lege dir gurt an
+lege mir gurt an
+nimm gurt
+lege dir gurt an
+lege mir gurt an
+leg gurt an
+leg dir gurt an
+nimm gurt
+drop gurt
+leg mir gurt an
+nimm gurt
+lege mir gurt an
+leg mir gurt an
+zieh mir gurt an
+drop gurt
+zieh mir gurt an
+s
+drücke roten knopf
+s
+hoch
+u roboter
+wege
+rede mit roboter
+Doch.
+hilfe
+frage roboter nach hilfe
+runter
+wege
+runter
+u griff
+l
+hoch
+Ok. Jetzt hänge ich. Ich muss mal überlegen, wo es weiter gehen könnte

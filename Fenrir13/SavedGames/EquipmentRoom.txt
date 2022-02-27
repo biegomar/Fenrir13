@@ -21,6 +21,3 @@ n
 e
 runter
 w
-l kiste
-zerstöre schloss mit stange
-öffne kiste

@@ -22,19 +22,19 @@
         <value>Deine Cryo-Kammer|Cryo-Kammer|Cryokammer|Kammer</value>
     </data>
     <data name="CORRIDOR_EAST" xml:space="preserve">
-        <value>Der Korridor|Korridor|Korridor (ost)</value>
+        <value>Der Korridor (Ost)|Korridor (Ost)</value>
     </data>
     <data name="CORRIDOR_WEST" xml:space="preserve">
-        <value>Der Korridor|Korridor|Korridor (west)</value>
+        <value>Der Korridor (West)|Korridor (West)</value>
     </data>
     <data name="CORRIDOR_MIDEAST" xml:space="preserve">
-        <value>Der Korridor|Korridor|Korridor (mitte-ost)</value>
+        <value>Der Korridor (Mitte-Ost)|Korridor (Mitte-Ost)</value>
     </data>
     <data name="CORRIDOR_MID" xml:space="preserve">
-        <value>Der Korridor|Korridor|Korridor (mitte)</value>
+        <value>Der Korridor (Mitte)|Korridor (Mitte)</value>
     </data>
     <data name="CORRIDOR_MIDWEST" xml:space="preserve">
-        <value>Der Korridor|Korridor|Korridor (mitte-west)</value>
+        <value>Der Korridor (Mitte-West)|Korridor (Mitte-West)</value>
     </data>
     <data name="EMPTYCREWCHAMBERONE" xml:space="preserve">
         <value>Crew-Kammer-1</value>

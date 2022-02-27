@@ -86,6 +86,7 @@ internal static class EquipmentRoomPrerequisites
             Name = Items.HELMET,
             Description = Descriptions.HELMET,
             FirstLookDescription = Descriptions.HELMET_FIRSTLOOK,
+            IsHidden = true,
             Weight = ItemWeights.HELMET
         };
 
@@ -102,6 +103,7 @@ internal static class EquipmentRoomPrerequisites
             Key = Keys.GLOVES,
             Name = Items.GLOVES,
             Description = Descriptions.GLOVES,
+            IsHidden = true,
             Weight = ItemWeights.GLOVES
         };
 
@@ -117,6 +119,7 @@ internal static class EquipmentRoomPrerequisites
             Key = Keys.BOOTS,
             Name = Items.BOOTS,
             Description = Descriptions.BOOTS,
+            IsHidden = true,
             Weight = ItemWeights.BOOTS
         };
 
@@ -132,6 +135,7 @@ internal static class EquipmentRoomPrerequisites
             Key = Keys.BELT,
             Name = Items.BELT,
             Description = Descriptions.BELT,
+            IsHidden = true,
             Weight = ItemWeights.BELT
         };
         
@@ -153,6 +157,8 @@ internal static class EquipmentRoomPrerequisites
             Description = Descriptions.EYELET,
             ContainmentDescription = Descriptions.EYELET_CONTAINMENT,
             LinkedToDescription = Descriptions.EYELET_LINKEDTO,
+            IsHidden = true,
+            IsUnveilAble = false,
             IsPickAble = false
         };
 

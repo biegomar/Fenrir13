@@ -27,7 +27,8 @@ internal static class CorridorMidPrerequisites
         {
             Key = Keys.PORTRAIT,
             Name = Items.PORTRAIT,
-            Description = Descriptions.PORTRAIT
+            Description = Descriptions.PORTRAIT,
+            IsPickAble = false
         };
 
         return portrait;

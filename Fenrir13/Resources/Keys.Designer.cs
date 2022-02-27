@@ -817,11 +817,47 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to GYM_BRACKET.
+        /// </summary>
+        internal static string GYM_BRACKET {
+            get {
+                return ResourceManager.GetString("GYM_BRACKET", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GYM_LOOP.
+        /// </summary>
+        internal static string GYM_LOOP {
+            get {
+                return ResourceManager.GetString("GYM_LOOP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to GYM_POWERSTATION.
         /// </summary>
         internal static string GYM_POWERSTATION {
             get {
                 return ResourceManager.GetString("GYM_POWERSTATION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GYM_ROPES.
+        /// </summary>
+        internal static string GYM_ROPES {
+            get {
+                return ResourceManager.GetString("GYM_ROPES", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GYM_SANDBAG.
+        /// </summary>
+        internal static string GYM_SANDBAG {
+            get {
+                return ResourceManager.GetString("GYM_SANDBAG", resourceCulture);
             }
         }
         
@@ -988,6 +1024,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to PAPER.
+        /// </summary>
+        internal static string PAPER {
+            get {
+                return ResourceManager.GetString("PAPER", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to PARTITION_WALL.
         /// </summary>
         internal static string PARTITION_WALL {
@@ -1002,6 +1047,33 @@ namespace Fenrir13.Resources {
         internal static string PEEPHOLE {
             get {
                 return ResourceManager.GetString("PEEPHOLE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PENCIL_I.
+        /// </summary>
+        internal static string PENCIL_I {
+            get {
+                return ResourceManager.GetString("PENCIL_I", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PENCIL_II.
+        /// </summary>
+        internal static string PENCIL_II {
+            get {
+                return ResourceManager.GetString("PENCIL_II", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PENCILS.
+        /// </summary>
+        internal static string PENCILS {
+            get {
+                return ResourceManager.GetString("PENCILS", resourceCulture);
             }
         }
         
@@ -1339,6 +1411,51 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to TEXTMARKER.
+        /// </summary>
+        internal static string TEXTMARKER {
+            get {
+                return ResourceManager.GetString("TEXTMARKER", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TEXTMARKER_BLUE.
+        /// </summary>
+        internal static string TEXTMARKER_BLUE {
+            get {
+                return ResourceManager.GetString("TEXTMARKER_BLUE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TEXTMARKER_GREEN.
+        /// </summary>
+        internal static string TEXTMARKER_GREEN {
+            get {
+                return ResourceManager.GetString("TEXTMARKER_GREEN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TEXTMARKER_RED.
+        /// </summary>
+        internal static string TEXTMARKER_RED {
+            get {
+                return ResourceManager.GetString("TEXTMARKER_RED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TEXTMARKER_YELLOW.
+        /// </summary>
+        internal static string TEXTMARKER_YELLOW {
+            get {
+                return ResourceManager.GetString("TEXTMARKER_YELLOW", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to TOILET.
         /// </summary>
         internal static string TOILET {
@@ -1380,6 +1497,15 @@ namespace Fenrir13.Resources {
         internal static string WASHINGAREA {
             get {
                 return ResourceManager.GetString("WASHINGAREA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to WEIGHT_PLATES.
+        /// </summary>
+        internal static string WEIGHT_PLATES {
+            get {
+                return ResourceManager.GetString("WEIGHT_PLATES", resourceCulture);
             }
         }
         

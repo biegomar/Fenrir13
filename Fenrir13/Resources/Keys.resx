@@ -468,4 +468,46 @@
     <data name="CORRIDOR_WALLS" xml:space="preserve">
         <value>CORRIDOR_WALLS</value>
     </data>
+    <data name="PAPER" xml:space="preserve">
+        <value>PAPER</value>
+    </data>
+    <data name="TEXTMARKER" xml:space="preserve">
+        <value>TEXTMARKER</value>
+    </data>
+    <data name="PENCILS" xml:space="preserve">
+        <value>PENCILS</value>
+    </data>
+    <data name="PENCIL_I" xml:space="preserve">
+        <value>PENCIL_I</value>
+    </data>
+    <data name="PENCIL_II" xml:space="preserve">
+        <value>PENCIL_II</value>
+    </data>
+    <data name="TEXTMARKER_BLUE" xml:space="preserve">
+        <value>TEXTMARKER_BLUE</value>
+    </data>
+    <data name="TEXTMARKER_GREEN" xml:space="preserve">
+        <value>TEXTMARKER_GREEN</value>
+    </data>
+    <data name="TEXTMARKER_YELLOW" xml:space="preserve">
+        <value>TEXTMARKER_YELLOW</value>
+    </data>
+    <data name="TEXTMARKER_RED" xml:space="preserve">
+        <value>TEXTMARKER_RED</value>
+    </data>
+    <data name="WEIGHT_PLATES" xml:space="preserve">
+        <value>WEIGHT_PLATES</value>
+    </data>
+    <data name="GYM_ROPES" xml:space="preserve">
+        <value>GYM_ROPES</value>
+    </data>
+    <data name="GYM_BRACKET" xml:space="preserve">
+        <value>GYM_BRACKET</value>
+    </data>
+    <data name="GYM_SANDBAG" xml:space="preserve">
+        <value>GYM_SANDBAG</value>
+    </data>
+    <data name="GYM_LOOP" xml:space="preserve">
+        <value>GYM_LOOP</value>
+    </data>
 </root>
