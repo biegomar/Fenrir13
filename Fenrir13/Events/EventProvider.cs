@@ -401,6 +401,11 @@ internal class EventProvider
             }
             
             var belt = this.universe.ActivePlayer.Clothes.FirstOrDefault(x => x.Key == Keys.BELT);
+            if (belt == default)
+            {
+                belt = this.universe.ActivePlayer.Items.FirstOrDefault(x => x.Key == Keys.BELT);
+            }
+            
             var eyelet = belt?.GetItemByKey(Keys.EYELET);
             
             if (belt != null && eyelet != default && eyelet.LinkedTo.Count > 0)
