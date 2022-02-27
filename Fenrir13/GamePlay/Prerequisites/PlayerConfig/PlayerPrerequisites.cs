@@ -37,7 +37,7 @@ public class PlayerPrerequisites
     
     private static void AddPullEvents(Player you, EventProvider eventProvider)
     {
-        you.Pull += eventProvider.PullOnWearables;
+        you.Pull += eventProvider.PullOnWearablesOnPlayer;
         
     }
 }

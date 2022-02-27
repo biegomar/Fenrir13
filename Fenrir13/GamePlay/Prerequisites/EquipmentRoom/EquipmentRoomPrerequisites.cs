@@ -90,6 +90,7 @@ internal static class EquipmentRoomPrerequisites
             Weight = ItemWeights.HELMET
         };
 
+        AddPullOnEvents(helmet, eventProvider);
         AddUseEvents(helmet, eventProvider);
         AddBeforeDropEvents(helmet, eventProvider);
         
@@ -107,6 +108,7 @@ internal static class EquipmentRoomPrerequisites
             Weight = ItemWeights.GLOVES
         };
 
+        AddPullOnEvents(gloves, eventProvider);
         AddBeforeDropEvents(gloves, eventProvider);
         
         return gloves;
@@ -123,6 +125,7 @@ internal static class EquipmentRoomPrerequisites
             Weight = ItemWeights.BOOTS
         };
 
+        AddPullOnEvents(boots, eventProvider);
         AddBeforeDropEvents(boots, eventProvider);
         
         return boots;
@@ -142,7 +145,7 @@ internal static class EquipmentRoomPrerequisites
         belt.Items.Add(GetEyelet(eventProvider));
         
         AddEyeletUseEvents(belt, eventProvider);
-        
+        AddPullOnEvents(belt, eventProvider);
         AddBeforeDropEvents(belt, eventProvider);
 
         return belt;
@@ -193,5 +196,10 @@ internal static class EquipmentRoomPrerequisites
     private static void AddBeforeDropEvents(Item item, EventProvider eventProvider)
     {
         item.BeforeDrop += eventProvider.DropClothsWithOpenAirlock;
+    }
+    
+    private static void AddPullOnEvents(Item item, EventProvider eventProvider)
+    {
+        item.Pull += eventProvider.PullOnWearables;
     }
 }

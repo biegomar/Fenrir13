@@ -410,7 +410,7 @@ internal class EventProvider
         }
     }
     
-    internal void PullOnWearables(object sender, PullItemEventArgs eventArgs)
+    internal void PullOnWearablesOnPlayer(object sender, PullItemEventArgs eventArgs)
     {
         void SwapItem(Item item)
         {
@@ -428,6 +428,51 @@ internal class EventProvider
         };
         
         if (sender is Player player && player.Key == Keys.PLAYER && eventArgs.ItemToUse is Item wearable && listOfPossibleWearables.Contains(wearable.Key))
+        {
+            if (!this.universe.ActivePlayer.Clothes.Contains(wearable))
+            {
+                if (this.universe.ActivePlayer.Items.Contains(wearable))
+                {
+                    SwapItem(wearable);
+                }
+                else
+                {
+                    this.universe.PickObject(wearable, true);
+                    if (this.universe.ActivePlayer.Items.Contains(wearable))
+                    {
+                        SwapItem(wearable);    
+                    }
+                }
+            }
+            else
+            {
+                PrintingSubsystem.Resource(Descriptions.ALREADY_WEARING);
+            }
+        }
+        else
+        {
+            throw new PullException(BaseDescriptions.NOTHING_HAPPENS);
+        }
+    }
+    
+    internal void PullOnWearables(object sender, PullItemEventArgs eventArgs)
+    {
+        void SwapItem(Item item)
+        {
+            this.universe.ActivePlayer.Items.Remove(item);
+            this.universe.ActivePlayer.Clothes.Add(item);
+            PrintingSubsystem.FormattedResource(Descriptions.PULLON_WEARABLE, item.Name, true);
+        }
+
+        var listOfPossibleWearables = new List<string>()
+        {
+            Keys.BELT,
+            Keys.GLOVES,
+            Keys.HELMET,
+            Keys.BOOTS
+        };
+        
+        if (sender is Item wearable && listOfPossibleWearables.Contains(wearable.Key))
         {
             if (!this.universe.ActivePlayer.Clothes.Contains(wearable))
             {
