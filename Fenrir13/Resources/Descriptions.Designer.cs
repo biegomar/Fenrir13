@@ -1234,6 +1234,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Ein grauer Filzstoff, der über die Trennwand gespannt ist. .
+        /// </summary>
+        internal static string FELT {
+            get {
+                return ResourceManager.GetString("FELT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Es gibt hier drei wesentliche Fitnessmaschinen, die aber alle multifunktional sind. Das sind die Cardiostation, die Powerstation und der Gymnastikbereich..
         /// </summary>
         internal static string FITNESSMACHINE {
@@ -1998,7 +2007,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Was sagt Wikipedia: Proxima Centauri ist mit einer Entfernung von etwa 4,247 Lichtjahren der der Sonne nächstgelegene bekannte Stern..
+        ///   Looks up a localized string similar to Das sagt Wikipedia: Proxima Centauri ist mit einer Entfernung von etwa 4,247 Lichtjahren der der Sonne nächstgelegene bekannte Stern..
         /// </summary>
         internal static string PROXIMA_CENTAURI {
             get {

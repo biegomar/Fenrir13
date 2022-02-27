@@ -510,4 +510,7 @@
     <data name="GYM_LOOP" xml:space="preserve">
         <value>GYM_LOOP</value>
     </data>
+    <data name="FELT" xml:space="preserve">
+        <value>FELT</value>
+    </data>
 </root>

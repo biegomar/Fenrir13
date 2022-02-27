@@ -66,7 +66,7 @@ Du schaust Dir die Maschine an und versuchst es anzuschalten. Nichts passiert! S
 Dein Blick löst sich und richtet sich weiter nach Westen und Du schaust nun auf das, was aus Deinen Augenwinkeln heraus schon die ganze Zeit sichtbar war - Euer Schiff in voller Pracht! 
 Es ist die Fenrir-13, ein Raumtransporter der Viking Space Freight Ltd. mit einer maximalen Besatzung von sechs Personen. Es ist eines der kleinen Forschungsschiffe, die für Ersterkundungen in die entlegenen Schürfregionen entsandt werden. Der charakteristische Hammerkopf, der nicht ohne Absicht an Mjölnir, dem Hammer des Thor, erinnert, bildet den Wohn- und Arbeitsbereich für die Crew. Hier finden sich neben der Brücke und den Maschinen- und Technikräumen auch die Quartiere der Besatzung. 
 Dem Hammerkopf entwächst der Cargo-Bereich, der sich bei dieser Schiffsgröße auf ca. 20.000 TEU beläuft, und bildet passend zum Bild den Hammerstil. Der Transport der Erze erfolgt in Containern, die den üblichen Schiffs-Containern sehr ähnlich sind und das Schiff hat so eine Länge von gut 600 m und eine breite von ca. 100 m, wenn man den Hammerkopf mit berechnet.
-Voller Stolz prangt neben einem großen Emblem eines Wolfskopfs der Name des Schiffs in Runen an der Steuerbordseite des Cargo-Bereichs: {0} 13 - Raumfrachter Fenrir 13.</value>
+Voller Stolz prangt neben einem großen Emblem eines Wolfskopfs der Name des Schiffs in Runen an der Steuerbordseite des Cargo-Bereichs: Raumfrachter Fenrir 13.</value>
     </data>
     <data name="OFFICECHAIR" xml:space="preserve">
         <value>Neuste Materialen sorgen dafür, dass sich der Stuhl perfekt an Deinem Körper ausrichtet und ihn in eine angenehme ergonomische Position bringt. Eine nahezu perfekte Klimaregulierung macht diesen Stuhl zu einem der bequemsten Plätze hier auf dem Schiff. </value>
@@ -155,7 +155,7 @@ Your safety status has been upgraded from Level Z to Level Q. Please proceed to 
     </data>
     <data name="INTERVENTION_REQUIRED_INTERPRETATION" xml:space="preserve">
         <value>Ok. Also gibt es offensichtlich einen Hüllenbruch irgendwo im Schiff. Energie und Sauerstoff sind wohl auch knapp. Verständlich, dass nun irgendjemand eingreifen muss. Verdammt! Aber warum ausgerechnet Du? Als Geologe hast Du doch überhaupt keine Ahnung von dem Schiff. Aber scheinbar scheint niemand sonst von der Crew verfügbar zu sein. Warum sonst hätte man Deinen Security-Level erhöhen sollen? Ob sie tot sind? Hoffentlich nicht und alles entpuppt sich nur als dummer Fehlalarm. Aber es nutzt wohl nichts. Du solltest den Anweisungen folgen und auf die Brücke gehen... 
-"Security Level Q", geistert es Dir durch den Kopf. Als Du das letzte Mal auf der Erde von einer Person gehört hast, die dieses Level hatte, hat er wirre Verschwörungstheorien in die Welt gesetzt. Aber der Gedanke verfliegt und Du bist wieder voll da.
+"Security Level Q", geistert es Dir durch den Kopf. Hm? Die letzte Person mit diesem Level, von der Du gehört hast, hat damals wirre Verschwörungstheorien in die Welt gesetzt. Aber der Gedanke verfliegt und Du bist wieder voll da.
 Du bestätigst die Meldung mit einem Fingertipp und das Display wechselt wieder in den Normalzustand und der gesamte Schiffsalarm erstirbt. Gut! Wenigstens hast Du jetzt Ruhe, um Dich zu konzentrieren. Offensichtlich wurde auch der automatische Türöffnungsmodus aktiviert, denn die Tür öffnet sich und gibt den Weg frei zum Korridor.</value>
     </data>
     <data name="CORRIDOR_EAST" xml:space="preserve">
@@ -882,7 +882,7 @@ Am Tag nach Deiner erfolgreichen Intervention sitzt Du mit der gesamten Crew zus
         <value>Auch wenn der Space-Suit eigentlich als Kleidung ausreicht, hat jeder irgendwelche eigenen Sachen dabei, um auch mal eine persönliche Note ins Spiel zu bringen. Oder einfach, weil man doch noch mal eine Strickjacke anziehen möchte.</value>
     </data>
     <data name="PROXIMA_CENTAURI" xml:space="preserve">
-        <value>Was sagt Wikipedia: Proxima Centauri ist mit einer Entfernung von etwa 4,247 Lichtjahren der der Sonne nächstgelegene bekannte Stern.</value>
+        <value>Das sagt Wikipedia: Proxima Centauri ist mit einer Entfernung von etwa 4,247 Lichtjahren der der Sonne nächstgelegene bekannte Stern.</value>
     </data>
     <data name="CORRIDOR_WALLS" xml:space="preserve">
         <value>An den Wänden hängen Bilder von typischen Raum- und Evakuierungsplänen, sowie von ehemaligen Mitarbeitern und Crewmitgliedern der Fenrir 13.</value>
@@ -946,5 +946,8 @@ Am Tag nach Deiner erfolgreichen Intervention sitzt Du mit der gesamten Crew zus
     </data>
     <data name="GYM_LOOP" xml:space="preserve">
         <value>Die Schlaufen sind mit dem Sack vernäht und geben dem Trainierenden die Möglichkeit einen ordentlichen Halt an dem Gerät zu haben.</value>
+    </data>
+    <data name="FELT" xml:space="preserve">
+        <value>Ein grauer Filzstoff, der über die Trennwand gespannt ist. </value>
     </data>
 </root>

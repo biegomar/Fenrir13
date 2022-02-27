@@ -109,7 +109,7 @@
         <value>Das Schott|Schott|Abriegelung</value>
     </data>
     <data name="BULKHEAD_WINDOW" xml:space="preserve">
-        <value>Das Sichtfenster|Sichtfenster</value>
+        <value>Das Sichtfenster|Sichtfenster|Glas</value>
     </data>
     <data name="PILOT_SEAT" xml:space="preserve">
         <value>Der Pilotensitz|Pilotensitz|Pilotsitz|Sitz|Pilotenstuhl|Stuhl</value>
@@ -274,7 +274,7 @@
         <value>Das Skalpell|Skalpell|Skalpelle|Der Tupfer|Tupfer|Die Mullbinde|Mullbinde|Mullbinden|Der Adapter|Adapter</value>
     </data>
     <data name="CRYOCHAMBER_BULKHEAD" xml:space="preserve">
-        <value>Das Sichtfenster|Sichtfenster</value>
+        <value>Das Sichtfenster|Sichtfenster|Glas</value>
     </data>
     <data name="AIRLOCK_ROPE" xml:space="preserve">
         <value>Das Graphen-Seil|Graphen-Seil|Seil</value>
@@ -446,5 +446,8 @@
     </data>
     <data name="GYM_LOOP" xml:space="preserve">
         <value>Die Schlaufen|Schlaufen|Schlaufe|Griff|Griffe</value>
+    </data>
+    <data name="FELT" xml:space="preserve">
+        <value>Der Filzstoff|Filzstoff|Filz</value>
     </data>
 </root>

@@ -232,7 +232,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Das Sichtfenster|Sichtfenster.
+        ///   Looks up a localized string similar to Das Sichtfenster|Sichtfenster|Glas.
         /// </summary>
         internal static string BULKHEAD_WINDOW {
             get {
@@ -367,7 +367,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Das Sichtfenster|Sichtfenster.
+        ///   Looks up a localized string similar to Das Sichtfenster|Sichtfenster|Glas.
         /// </summary>
         internal static string CRYOCHAMBER_BULKHEAD {
             get {
@@ -624,6 +624,15 @@ namespace Fenrir13.Resources {
         internal static string EYELET {
             get {
                 return ResourceManager.GetString("EYELET", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Der Filzstoff|Filzstoff|Filz.
+        /// </summary>
+        internal static string FELT {
+            get {
+                return ResourceManager.GetString("FELT", resourceCulture);
             }
         }
         

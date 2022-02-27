@@ -745,6 +745,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to FELT.
+        /// </summary>
+        internal static string FELT {
+            get {
+                return ResourceManager.GetString("FELT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to FITNESSMACHINE.
         /// </summary>
         internal static string FITNESSMACHINE {

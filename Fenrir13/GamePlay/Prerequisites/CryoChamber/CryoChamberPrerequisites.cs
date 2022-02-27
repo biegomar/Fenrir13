@@ -7,8 +7,6 @@ namespace Fenrir13.GamePlay.Prerequisites.CryoChamber;
 
 internal static class CryoChamberPrerequisites
 {
-    private const string FENRIR13 = "\u16b1\u16a8\u16a2\u16d7\u16a0\u16b1\u16a8\u16b2\u16bb\u16cf\u16d6\u16b1 \u16a0\u16d6\u16be\u16b1\u16c1\u16b1";
-
     internal static Location Get(EventProvider eventProvider)
     {
         var cryoChamber = new Location()
@@ -79,7 +77,7 @@ internal static class CryoChamberPrerequisites
         cryoChamber.Surroundings.Add(Keys.WORKBENCH, () => Descriptions.WORKBENCH);
         cryoChamber.Surroundings.Add(Keys.LAPTOP, () => Descriptions.LAPTOP);
         cryoChamber.Surroundings.Add(Keys.CHAMBER_WALL, () => Descriptions.CHAMBER_WALL);
-        cryoChamber.Surroundings.Add(Keys.PIERHOLE, () => string.Format(Descriptions.PIERHOLE, FENRIR13));
+        cryoChamber.Surroundings.Add(Keys.PIERHOLE, () => Descriptions.PIERHOLE);
         cryoChamber.Surroundings.Add(Keys.OFFICECHAIR, () => Descriptions.OFFICECHAIR);
         cryoChamber.Surroundings.Add(Keys.RUBBER_ROLLS, () => Descriptions.RUBBER_ROLLS);
         cryoChamber.Surroundings.Add(Keys.CLOSET, () => Descriptions.CLOSET);
@@ -113,6 +111,7 @@ internal static class CryoChamberPrerequisites
         cryoChamber.Surroundings.Add(Keys.PENCILS, () => Descriptions.PENCILS);
         cryoChamber.Surroundings.Add(Keys.PENCIL_I, () => Descriptions.PENCIL_I);
         cryoChamber.Surroundings.Add(Keys.PENCIL_II, () => Descriptions.PENCIL_II);
+        cryoChamber.Surroundings.Add(Keys.FELT, () => Descriptions.FELT);
     }
 
     private static void AddAfterLookEvents(Location cryoChamber, EventProvider eventProvider)
