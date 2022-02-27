@@ -72,26 +72,47 @@ internal class EventProvider
         {
             if (eventArgs.ItemToUse is Item respiratorFlap && respiratorFlap.Key == Keys.AMBULANCE_RESPIRATOR_FLAP)
             {
-                var respirator = this.universe.ActiveLocation.GetItemByKey(Keys.AMBULANCE_RESPIRATOR);
-                if (respirator != default)
-                {
-                    respirator.IsLocked = false;
-                    respiratorFlap.IsLocked = false;
-                    respiratorFlap.LinkedTo.Add(doorHandle);
-                    respiratorFlap.FirstLookDescription = string.Empty;
-                    doorHandle.LinkedToDescription = Descriptions.FRIDGE_DOOR_HANDLE_FLAP_LINKEDTO;
-                    doorHandle.IsPickAble = false;
-                    doorHandle.UnPickAbleDescription = Descriptions.FRIDGE_DOOR_HANDLE_FLAP_UNPICKABLE;
-                    this.universe.ActivePlayer.Items.Remove(doorHandle);
-                    PrintingSubsystem.Resource(Descriptions.FRIDGE_DOOR_HANDLE_PUSHED);
-                    this.universe.Score += this.universe.ScoreBoard[nameof(this.PushDoorHandleIntoRespiratorFlap)];
-                    doorHandle.Push -= PushDoorHandleIntoRespiratorFlap;
-                }
+                UseHandleOnFlap(respiratorFlap, doorHandle);
             }
             else
             {
                 throw new PushException(BaseDescriptions.DOES_NOT_WORK);
             }
+        }
+    }
+
+    internal void UseDoorHandleWithRespiratorFlap(object sender, UseItemEventArgs eventArgs)
+    {
+        if (sender is Item doorHandle && doorHandle.Key == Keys.FRIDGE_DOOR_HANDLE)
+        {
+            if (eventArgs.ItemToUse is Item respiratorFlap && respiratorFlap.Key == Keys.AMBULANCE_RESPIRATOR_FLAP)
+            {
+                UseHandleOnFlap(respiratorFlap, doorHandle);
+            }
+            else
+            {
+                throw new UseException(BaseDescriptions.DOES_NOT_WORK);
+            }
+        }
+    }
+    
+    private void UseHandleOnFlap(Item respiratorFlap, Item doorHandle)
+    {
+        var respirator = this.universe.ActiveLocation.GetItemByKey(Keys.AMBULANCE_RESPIRATOR);
+        if (respirator != default)
+        {
+            respirator.IsLocked = false;
+            respiratorFlap.IsLocked = false;
+            respiratorFlap.LinkedTo.Add(doorHandle);
+            respiratorFlap.FirstLookDescription = string.Empty;
+            doorHandle.LinkedToDescription = Descriptions.FRIDGE_DOOR_HANDLE_FLAP_LINKEDTO;
+            doorHandle.IsPickAble = false;
+            doorHandle.UnPickAbleDescription = Descriptions.FRIDGE_DOOR_HANDLE_FLAP_UNPICKABLE;
+            this.universe.ActivePlayer.Items.Remove(doorHandle);
+            PrintingSubsystem.Resource(Descriptions.FRIDGE_DOOR_HANDLE_PUSHED);
+            this.universe.Score += this.universe.ScoreBoard[nameof(this.PushDoorHandleIntoRespiratorFlap)];
+            doorHandle.Push -= PushDoorHandleIntoRespiratorFlap;
+            doorHandle.Use -= UseDoorHandleWithRespiratorFlap;
         }
     }
 

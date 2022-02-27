@@ -536,7 +536,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Das Du überhaupt in den Raum gelangen konntest verwundert Dich. Normalerweise ist Dir hier der Zutritt verwehrt. Aber scheinbar hat Deine &quot;Beförderung&quot; auf Security Level Q seine Wirkung nicht verfehlt..
+        ///   Looks up a localized string similar to Dass Du überhaupt in den Raum gelangen konntest, verwundert Dich. Normalerweise ist Dir hier der Zutritt verwehrt. Aber scheinbar hat Deine &quot;Beförderung&quot; auf Security Level Q seine Wirkung nicht verfehlt..
         /// </summary>
         internal static string COMMANDBRIDGE_FIRSTLOOK {
             get {
@@ -622,7 +622,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Bedienkonsole ist ein Halbrund, das aus einer abgetönten Glasplatte besteht. Es kann beliebige grafische Objekte, wie auch textliche Beschreibungen direkt projeziert. Sei es als zweidimensionale Abbildung auf der Platte selbst, oder als dreidimensionale holografische Projektion. Die jeweiligen Objekten können dann durch die Personen beliebig bearbeitet, verschoben, verändert oder auch gelöscht werden. Ziemlich cool..
+        ///   Looks up a localized string similar to Die Bedienkonsole ist ein Halbrund, das aus einer abgetönten Glasplatte besteht. Es kann beliebige grafische Objekte, wie auch textliche Beschreibungen direkt projiziert. Sei es als zweidimensionale Abbildung auf der Platte selbst, oder als dreidimensionale holografische Projektion. Die jeweiligen Objekten können dann durch die Personen beliebig bearbeitet, verschoben, verändert oder auch gelöscht werden. Ziemlich cool..
         /// </summary>
         internal static string CONTROL_PANEL {
             get {
@@ -756,6 +756,15 @@ namespace Fenrir13.Resources {
         internal static string CORRIDOR_WEST_LOCKDESCRIPTION {
             get {
                 return ResourceManager.GetString("CORRIDOR_WEST_LOCKDESCRIPTION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Die Kabinen sind nur als wage Ahnung am Ende des Korridors wahrzunehmen..
+        /// </summary>
+        internal static string CREWCHAMBERS {
+            get {
+                return ResourceManager.GetString("CREWCHAMBERS", resourceCulture);
             }
         }
         
@@ -926,7 +935,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Mit ein paar Handgriffen lässt sich diese lange Hantelstange mit Gewichten bestücken und so für viele Kraftübungen einsetzen. Sie ist aus hochwertigem Stahl gefertigt, ca. 120 cm lang und sieht sehr schwer aus..
+        ///   Looks up a localized string similar to Mit ein paar Handgriffen lässt sich diese lange Hantelstange mit Gewichten bestücken und so für viele Kraftübungen einsetzen. Sie ist aus hochwertigem Stahl gefertigt, ca. 120 cm lang und sie sieht sehr schwer aus..
         /// </summary>
         internal static string DUMBBELL_BAR {
             get {
@@ -1252,7 +1261,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Food-Printer ist sicherlich eines der tollsten Geräte hier an Bord. Bestückt mit Patronen aus den verschiedensten Nahrungsgrundstoffe kann er nahezu alle bekannten Menüs zauber. Das ist der Star-Trek-Replikator par excellence!.
+        ///   Looks up a localized string similar to Der Food-Printer ist sicherlich eines der tollsten Geräte hier an Bord. Bestückt mit Patronen aus den verschiedensten Nahrungsgrundstoffen kann er nahezu alle bekannten Menüs zaubern. Das ist der Star-Trek-Replikator par excellence!.
         /// </summary>
         internal static string FOOD_PRINTER {
             get {
@@ -1270,7 +1279,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Innenraum ist leer und so groß wie bei einer Mikrowelle. Also passt dort bequem ein Teller für eine zu produzierende Portion rein. Auch, wenn Dir irgendwie schon das Wasser im Mund zusammenläuft, solltest Du Dich gerade besser nicht um Essen kümmern..
+        ///   Looks up a localized string similar to Der Innenraum ist leer und so groß wie bei einer Mikrowelle. Also passt dort bequem ein Teller für eine zu produzierende Portion rein. Auch wenn Dir irgendwie schon das Wasser im Mund zusammenläuft, solltest Du Dich gerade besser nicht um Essen kümmern..
         /// </summary>
         internal static string FOOD_PRINTER_OPEN {
             get {
@@ -1559,6 +1568,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Das Loch in der Bordwand ist ungefähr faustgroß. Leider kannst Du in dem dämmrigen Licht keine genaueren Details erkennen..
+        /// </summary>
+        internal static string HOLE {
+            get {
+                return ResourceManager.GetString("HOLE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Intervention required
         ///Hull breach detected, structural integrity compromised. Low energy. Low oxygen level.
         ///Your safety status has been upgraded from Level Z to Level Q. Please proceed to the control bridge..
@@ -1589,7 +1607,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Für die maximal sechs Personen Besatzung ist die Küche üppig ausgestattet und sehr geräumig. Es finden sich ein Food-Printer für die Zubereitung der individuellen Gerichte, ein Reststoffverwerter, ein Kühlschrank für die Nahrungsbausteine des Druckers, sowie einige Schränke. Wenn man essen möchte nimmt man an einem der sechs Stühle vor dem geräumigen Tisch in der Mitte des Raumes Platz. Wie überall im Schiff ist der Boden aus magnetisierbarem Metall, um auch hier das Möbiliar gegen Verrutschen zu sichern..
+        ///   Looks up a localized string similar to Für die maximal sechs Personen Besatzung ist die Küche üppig ausgestattet und sehr geräumig. Es finden sich ein Food-Printer für die Zubereitung der individuellen Gerichte, ein Reststoffverwerter, ein Kühlschrank für die Nahrungsbausteine des Druckers, sowie einige Schränke. Wenn man essen möchte, nimmt man an einem der sechs Stühle vor dem geräumigen Tisch in der Mitte des Raumes Platz. Wie überall im Schiff ist der Boden aus magnetisierbarem Metall, um auch hier das Möbiliar gegen Verrutschen zu sichern..
         /// </summary>
         internal static string KITCHEN {
             get {
@@ -1599,7 +1617,7 @@ namespace Fenrir13.Resources {
         
         /// <summary>
         ///   Looks up a localized string similar to Dein Laptop ist ein Relikt aus der informationstechnischen Steinzeit. Auch zu Beginn der Reise war das schon so. Normalerweise arbeitet niemand mehr mit solchen Geräten, aber Du magst das irgendwie. Und, es ist Dein Eigenes!
-        ///Du schaust Dir die Maschine an und versuchst es anzuschalten. Nichts passiert! Scheinbar ist der Akku leer. Das ist komisch, da das Gerät die gesamte Zeit an der Stromversorgnung hing..
+        ///Du schaust Dir die Maschine an und versuchst sie anzuschalten. Nichts passiert! Scheinbar ist der Akku leer. Das ist komisch, da das Gerät die gesamte Zeit an der Stromversorgnung hing..
         /// </summary>
         internal static string LAPTOP {
             get {
@@ -2034,7 +2052,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Hier auf dem Schiff ist Wasser sehr wertvoll. Geschirr und Besteck wird nicht gespült, sondern anderweitig verwertet. Dieser hochmoderne Recycler ist in der Lage, die eingeworfenen Reste exakt von einander zu trennen und einer weiteren Verwertung zuzuführen. Wie das alles geht ist Dir schleierhaft. Du weißt nur, dass die Nahrungsreste wieder in ihre Grundbausteine überführt werden und dann dem Printer zur Verfügung stehen. Was mit den anderen Materialien passiert weißt Du nicht..
+        ///   Looks up a localized string similar to Hier auf dem Schiff ist Wasser sehr wertvoll. Geschirr und Besteck wird nicht gespült, sondern anderweitig verwertet. Dieser hochmoderne Recycler ist in der Lage, die eingeworfenen Reste exakt von einander zu trennen und einer weiteren Verwertung zuzuführen. Wie das alles geht, ist Dir schleierhaft. Du weißt nur, dass die Nahrungsreste wieder in ihre Grundbausteine überführt werden und dann dem Printer zur Verfügung stehen. Was mit den anderen Materialien passiert, weißt Du nicht..
         /// </summary>
         internal static string RECYCLER {
             get {
@@ -2084,6 +2102,15 @@ namespace Fenrir13.Resources {
         internal static string SAFETY_FIRST {
             get {
                 return ResourceManager.GetString("SAFETY_FIRST", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Die Boardwand ist eindeutig beschädigt. Das Loch ist nicht zu übersehen. Aber weitere Details sind bei dem dämmerigen List nicht auszumachen..
+        /// </summary>
+        internal static string SIDEWALL {
+            get {
+                return ResourceManager.GetString("SIDEWALL", resourceCulture);
             }
         }
         
@@ -2295,7 +2322,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Du nimmst Dir wahrlos eines der Bücher aus dem Regel. &quot;{0}&quot; - ein weiteres Meisterwerk der Weltliteratur. Mit einem Lächeln im Gesicht steckst Du es zurück an seinen Platz..
+        ///   Looks up a localized string similar to Du nimmst Dir wahllos eines der Bücher aus dem Regel. &quot;{0}&quot; - ein weiteres Meisterwerk der Weltliteratur. Mit einem Lächeln im Gesicht steckst Du es zurück an seinen Platz..
         /// </summary>
         internal static string SOCIALROOM_BOOKS {
             get {
@@ -2313,7 +2340,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Das breite und moderne Sofa ist in einem wirklich guten Zustand und bietet gleich mehreren Personen ausreichend Platz zum sitzen oder auch mal zum liegen..
+        ///   Looks up a localized string similar to Das breite und moderne Sofa ist in einem wirklich guten Zustand und bietet gleich mehreren Personen ausreichend Platz zum Sitzen oder auch mal zum Liegen..
         /// </summary>
         internal static string SOCIALROOM_COUCH {
             get {

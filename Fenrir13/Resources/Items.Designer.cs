@@ -232,7 +232,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Das Sichtfenster|Sichtfenster|Glas.
+        ///   Looks up a localized string similar to Das Sichtfenster|Sichtfenster|Glas|Fenster.
         /// </summary>
         internal static string BULKHEAD_WINDOW {
             get {
@@ -241,7 +241,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Cardiostation|Cardiostation|Cardio.
+        ///   Looks up a localized string similar to Die Cardiostation|Cardiostation|Cardiostationen|Cardio.
         /// </summary>
         internal static string CARDIO_STATION {
             get {
@@ -354,6 +354,15 @@ namespace Fenrir13.Resources {
         internal static string CORRIDOR_WALLS {
             get {
                 return ResourceManager.GetString("CORRIDOR_WALLS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Die Crewkammern|Crewkammern|Crewkammer|Kammer|Kabinen|Kabine.
+        /// </summary>
+        internal static string CREWCHAMBERS {
+            get {
+                return ResourceManager.GetString("CREWCHAMBERS", resourceCulture);
             }
         }
         
@@ -754,6 +763,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Das Loch|Loch.
+        /// </summary>
+        internal static string HOLE {
+            get {
+                return ResourceManager.GetString("HOLE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Schrank|Schränke.
         /// </summary>
         internal static string KITCHEN_CLOSETS {
@@ -993,6 +1011,15 @@ namespace Fenrir13.Resources {
         internal static string RUBBER_ROLLS {
             get {
                 return ResourceManager.GetString("RUBBER_ROLLS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Die Boardwand|Boardwand.
+        /// </summary>
+        internal static string SIDEWALL {
+            get {
+                return ResourceManager.GetString("SIDEWALL", resourceCulture);
             }
         }
         

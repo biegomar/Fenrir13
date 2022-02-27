@@ -439,6 +439,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to CREWCHAMBERS.
+        /// </summary>
+        internal static string CREWCHAMBERS {
+            get {
+                return ResourceManager.GetString("CREWCHAMBERS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to CROSSTRAINER.
         /// </summary>
         internal static string CROSSTRAINER {
@@ -880,6 +889,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to HOLE.
+        /// </summary>
+        internal static string HOLE {
+            get {
+                return ResourceManager.GetString("HOLE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to JETTY.
         /// </summary>
         internal static string JETTY {
@@ -1173,6 +1191,15 @@ namespace Fenrir13.Resources {
         internal static string RUBBER_ROLLS {
             get {
                 return ResourceManager.GetString("RUBBER_ROLLS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SIDEWALL.
+        /// </summary>
+        internal static string SIDEWALL {
+            get {
+                return ResourceManager.GetString("SIDEWALL", resourceCulture);
             }
         }
         

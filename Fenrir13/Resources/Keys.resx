@@ -513,4 +513,13 @@
     <data name="FELT" xml:space="preserve">
         <value>FELT</value>
     </data>
+    <data name="HOLE" xml:space="preserve">
+        <value>HOLE</value>
+    </data>
+    <data name="SIDEWALL" xml:space="preserve">
+        <value>SIDEWALL</value>
+    </data>
+    <data name="CREWCHAMBERS" xml:space="preserve">
+        <value>CREWCHAMBERS</value>
+    </data>
 </root>

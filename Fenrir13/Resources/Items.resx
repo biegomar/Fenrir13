@@ -109,7 +109,7 @@
         <value>Das Schott|Schott|Abriegelung</value>
     </data>
     <data name="BULKHEAD_WINDOW" xml:space="preserve">
-        <value>Das Sichtfenster|Sichtfenster|Glas</value>
+        <value>Das Sichtfenster|Sichtfenster|Glas|Fenster</value>
     </data>
     <data name="PILOT_SEAT" xml:space="preserve">
         <value>Der Pilotensitz|Pilotensitz|Pilotsitz|Sitz|Pilotenstuhl|Stuhl</value>
@@ -148,7 +148,7 @@
         <value>Einstellungen|Einstellung|persönliche Einstellungen|persönliche Einstellung</value>
     </data>
     <data name="CARDIO_STATION" xml:space="preserve">
-        <value>Die Cardiostation|Cardiostation|Cardio</value>
+        <value>Die Cardiostation|Cardiostation|Cardiostationen|Cardio</value>
     </data>
     <data name="GYM_POWERSTATION" xml:space="preserve">
         <value>Die Powerstation|Powerstation|Gewichte|Gewicht</value>
@@ -449,5 +449,14 @@
     </data>
     <data name="FELT" xml:space="preserve">
         <value>Der Filzstoff|Filzstoff|Filz</value>
+    </data>
+    <data name="HOLE" xml:space="preserve">
+        <value>Das Loch|Loch</value>
+    </data>
+    <data name="SIDEWALL" xml:space="preserve">
+        <value>Die Boardwand|Boardwand</value>
+    </data>
+    <data name="CREWCHAMBERS" xml:space="preserve">
+        <value>Die Crewkammern|Crewkammern|Crewkammer|Kammer|Kabinen|Kabine</value>
     </data>
 </root>

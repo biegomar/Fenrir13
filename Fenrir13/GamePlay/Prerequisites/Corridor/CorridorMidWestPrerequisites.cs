@@ -27,5 +27,8 @@ internal static class CorridorMidWestPrerequisites
         corridor.Surroundings.Add(Keys.CORRIDOR_PAINTING, () => Descriptions.CORRIDOR_PAINTING_MIDWEST);
         corridor.Surroundings.Add(Keys.CEILING, () => Descriptions.CEILING);
         corridor.Surroundings.Add(Keys.CORRIDOR_WALLS, () => Descriptions.CORRIDOR_WALLS);
+        corridor.Surroundings.Add(Keys.HOLE, () => Descriptions.HOLE);
+        corridor.Surroundings.Add(Keys.SIDEWALL, () => Descriptions.SIDEWALL);
+        corridor.Surroundings.Add(Keys.CREWCHAMBERS, () => Descriptions.CREWCHAMBERS);
     }
 }

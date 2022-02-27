@@ -90,6 +90,7 @@ internal static class KitchenPrerequisites
     private static void AddPushEvents(Item item, EventProvider eventProvider)
     {
         item.Push += eventProvider.PushDoorHandleIntoRespiratorFlap;
+        item.Use += eventProvider.UseDoorHandleWithRespiratorFlap;
         eventProvider.ScoreBoard.Add(nameof(eventProvider.PushDoorHandleIntoRespiratorFlap), 5);
     }
     

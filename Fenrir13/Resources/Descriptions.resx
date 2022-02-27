@@ -55,7 +55,7 @@ Auch das Display blinkt rot und bedeutet Dir, alsbald einen Blick darauf zu werf
     </data>
     <data name="LAPTOP" xml:space="preserve">
         <value>Dein Laptop ist ein Relikt aus der informationstechnischen Steinzeit. Auch zu Beginn der Reise war das schon so. Normalerweise arbeitet niemand mehr mit solchen Geräten, aber Du magst das irgendwie. Und, es ist Dein Eigenes!
-Du schaust Dir die Maschine an und versuchst es anzuschalten. Nichts passiert! Scheinbar ist der Akku leer. Das ist komisch, da das Gerät die gesamte Zeit an der Stromversorgnung hing.</value>
+Du schaust Dir die Maschine an und versuchst sie anzuschalten. Nichts passiert! Scheinbar ist der Akku leer. Das ist komisch, da das Gerät die gesamte Zeit an der Stromversorgnung hing.</value>
     </data>
     <data name="CHAMBER_WALL" xml:space="preserve">
         <value>Die Wand ist ebenfalls metallisch, schmucklos und spartanisch.</value>
@@ -206,11 +206,11 @@ In diesem Abschnitt des Korridors liegt die erste Hälfte der sechs Crew-Quartie
     </data>
     <data name="COMMANDBRIDGE" xml:space="preserve">
         <value>Die Brücke ist ein nur wenige Quadratmeter großer Ovoid, der an der Frontseite durch eine überdimensionale Sichtscheibe dominiert wird. Sie spannt sich fast 180 Grad um den zentralen Pilotensitz und umfasst somit das gesamte Gesichtsfeld eines Menschen. Durch die erhöhte Position der Brücke ist das Schiff vollständig zu überblicken und in der Regel durch nur eine Person gut zu steuern. Der Eingriff ist allerdings nur erforderlich, wenn der Autopilot nicht aktiv ist.
-Der Pilotensitz wird von einer perfekt eingepassten Bedienkonsole umschlossen, die sich wie ein Halbrund zwischen der sitzenden Person und der Sichtschreibe befindet. Sie besteht aus einer abgetönten Glasplatte und Du weißt, dass sie verschiedene Instrumente, Bilder und Informationstexte sowohl 2-dimensional, als auch 3-dimensional darstellen kann. Bei Bedarf werden weitere Daten direkt auf die Sichtscheiben projeziert. Mechanische Apparaturen gibt es hingegen nicht.
-Sobald eine Person in dem Pilotensitz platzt nimmt, wird die Konsole entsprechend des Rangs, sowie nautischer Notwendigkeiten und persönlicher Einstellungen aktiviert. </value>
+Der Pilotensitz wird von einer perfekt eingepassten Bedienkonsole umschlossen, die sich wie ein Halbrund zwischen der sitzenden Person und der Sichtscheibe befindet. Sie besteht aus einer abgetönten Glasplatte und Du weißt, dass sie verschiedene Instrumente, Bilder und Informationstexte sowohl 2-dimensional, als auch 3-dimensional darstellen kann. Bei Bedarf werden weitere Daten direkt auf die Sichtscheiben projiziert. Mechanische Apparaturen gibt es hingegen nicht.
+Sobald eine Person in dem Pilotensitz platzt nimmt, wird die Konsole entsprechend des Rangs, sowie gemäß nautischer Notwendigkeiten und persönlicher Einstellungen aktiviert. </value>
     </data>
     <data name="COMMANDBRIDGE_FIRSTLOOK" xml:space="preserve">
-        <value>Das Du überhaupt in den Raum gelangen konntest verwundert Dich. Normalerweise ist Dir hier der Zutritt verwehrt. Aber scheinbar hat Deine "Beförderung" auf Security Level Q seine Wirkung nicht verfehlt.</value>
+        <value>Dass Du überhaupt in den Raum gelangen konntest, verwundert Dich. Normalerweise ist Dir hier der Zutritt verwehrt. Aber scheinbar hat Deine "Beförderung" auf Security Level Q seine Wirkung nicht verfehlt.</value>
     </data>
     <data name="CRYOCHAMBER_DOOR_TRY_OPEN" xml:space="preserve">
         <value>Diese Tür hat ja keine Klinke und wird sich, wenn sie entsperrt ist, automatisch für Dich öffnen.</value>
@@ -242,7 +242,7 @@ Du weißt, dass jedes Schiff der Flotte eins dieser Portraits an Bord hat. Man l
         <value>Auf dem Klebezettel steht nur ein Wort: {0}</value>
     </data>
     <data name="CONTROL_PANEL" xml:space="preserve">
-        <value>Die Bedienkonsole ist ein Halbrund, das aus einer abgetönten Glasplatte besteht. Es kann beliebige grafische Objekte, wie auch textliche Beschreibungen direkt projeziert. Sei es als zweidimensionale Abbildung auf der Platte selbst, oder als dreidimensionale holografische Projektion. Die jeweiligen Objekten können dann durch die Personen beliebig bearbeitet, verschoben, verändert oder auch gelöscht werden. Ziemlich cool.</value>
+        <value>Die Bedienkonsole ist ein Halbrund, das aus einer abgetönten Glasplatte besteht. Es kann beliebige grafische Objekte, wie auch textliche Beschreibungen direkt projiziert. Sei es als zweidimensionale Abbildung auf der Platte selbst, oder als dreidimensionale holografische Projektion. Die jeweiligen Objekten können dann durch die Personen beliebig bearbeitet, verschoben, verändert oder auch gelöscht werden. Ziemlich cool.</value>
     </data>
     <data name="STICKY_NOTE_FOUND" xml:space="preserve">
         <value>Unter dem Pult klebt offensichtlich etwas. Du schaust genauer, fühlst an der Unterseite der Platte entlang und spürst eine Art Zettel. Die knibbelst ihn ab und hast nun eine Haftnotiz in der Hand.</value>
@@ -331,7 +331,7 @@ Du erkennst eine Cardiostation, die für mehrere Arten von Ausdauertraining ausg
         <value>Der Raum ist wie ein großes, gemütliches Wohnzimmer aufgebaut. Eine einladend aussehende Couch ist vor einem riesigen Bildschirm platziert. Zwei weitere Sessel machen die Sitzgruppe perfekt. Vor der Couch steht ein kleiner Glastisch. An der östlichen und der westlichen Wand befinden sich Bücherregale, die anachronistisch dem Fortschritt trotzen und reale Bücher beinhalten. Ein Billardtisch steht hinter der Couch und nimmt dort eine große Fläche des Raumes ein. An der nördlichen Wand hängt rechts neben der Eingangstür eine Dartscheibe und links davon stecken die Cues in einer passenden Wandhalterung.</value>
     </data>
     <data name="KITCHEN" xml:space="preserve">
-        <value>Für die maximal sechs Personen Besatzung ist die Küche üppig ausgestattet und sehr geräumig. Es finden sich ein Food-Printer für die Zubereitung der individuellen Gerichte, ein Reststoffverwerter, ein Kühlschrank für die Nahrungsbausteine des Druckers, sowie einige Schränke. Wenn man essen möchte nimmt man an einem der sechs Stühle vor dem geräumigen Tisch in der Mitte des Raumes Platz. Wie überall im Schiff ist der Boden aus magnetisierbarem Metall, um auch hier das Möbiliar gegen Verrutschen zu sichern.</value>
+        <value>Für die maximal sechs Personen Besatzung ist die Küche üppig ausgestattet und sehr geräumig. Es finden sich ein Food-Printer für die Zubereitung der individuellen Gerichte, ein Reststoffverwerter, ein Kühlschrank für die Nahrungsbausteine des Druckers, sowie einige Schränke. Wenn man essen möchte, nimmt man an einem der sechs Stühle vor dem geräumigen Tisch in der Mitte des Raumes Platz. Wie überall im Schiff ist der Boden aus magnetisierbarem Metall, um auch hier das Möbiliar gegen Verrutschen zu sichern.</value>
     </data>
     <data name="AIRLOCK" xml:space="preserve">
         <value>Die Schleuse dient als Weg nach Draußen und sobald Du komplett eingetreten bist, schließt sich die Tür hinter Dir und ein Ansaugegeräusch gibt Dir zu verstehen, dass sie gegen ein mögliches Vakuum gesichert wird. Du fühlst plötzlich, dass Deine Glieder sich leichter anfühlen, Deine Bewegungen sind mühelos und Du spürst kaum noch Dein eigenes Gewicht. Offenkundig wird hier in der Schleuse bereits auf die künstliche Schwerkraft verzichtet. 
@@ -348,7 +348,7 @@ Du weißt, dass die Würfel einen redundanten Quantencluster bilden, eine Rechen
         <value>Die Powerstation ist klar das Herzstück des Fitnessraums. Mit Gewichten, Hantelscheiben und den dazu passenden Hantelstangen lassen sich hier viele Übungen machen. Die fällt auf, dass alles schön auf einer Hantelablage organisiert ist.</value>
     </data>
     <data name="DUMBBELL_BAR" xml:space="preserve">
-        <value>Mit ein paar Handgriffen lässt sich diese lange Hantelstange mit Gewichten bestücken und so für viele Kraftübungen einsetzen. Sie ist aus hochwertigem Stahl gefertigt, ca. 120 cm lang und sieht sehr schwer aus.</value>
+        <value>Mit ein paar Handgriffen lässt sich diese lange Hantelstange mit Gewichten bestücken und so für viele Kraftübungen einsetzen. Sie ist aus hochwertigem Stahl gefertigt, ca. 120 cm lang und sie sieht sehr schwer aus.</value>
     </data>
     <data name="DUMBBELL_RACK" xml:space="preserve">
         <value>Die Ablage dient der Organisation der Gewichte, Hanteln und der entsprechenden Stangen. Die meisten Einzelteile sind vorschriftsgemäß gesichert und fest mit dem Rack verbunden.</value>
@@ -499,10 +499,10 @@ Bei genauerer Betrachtung erkennst Du, dass dort eine viereckige Aussparung ist.
         <value>Ein schmuckloser, in Edelstahloptik gehaltener, großer Kasten. Für die Zeit, in der die Crew wach ist und arbeiten muss, bietet das Gerät ausreichend Platz für die einzelnen Nahrungsmittel-Komponenten, die für den Food-Printer erforderlich sind. Es ist auch immer genug Vorrat vorhanden, für den Fall, dass die Crew längere Zeit überbrücken muss. Böse Zungen behaupten, dass in Zeiten der Not an Bord immer zuerst die Wissenschaftler durch die Luftschleuse ins All entsorgt werden...naja, man wird sehen.</value>
     </data>
     <data name="FOOD_PRINTER" xml:space="preserve">
-        <value>Der Food-Printer ist sicherlich eines der tollsten Geräte hier an Bord. Bestückt mit Patronen aus den verschiedensten Nahrungsgrundstoffe kann er nahezu alle bekannten Menüs zauber. Das ist der Star-Trek-Replikator par excellence!</value>
+        <value>Der Food-Printer ist sicherlich eines der tollsten Geräte hier an Bord. Bestückt mit Patronen aus den verschiedensten Nahrungsgrundstoffen kann er nahezu alle bekannten Menüs zaubern. Das ist der Star-Trek-Replikator par excellence!</value>
     </data>
     <data name="FOOD_PRINTER_OPEN" xml:space="preserve">
-        <value>Der Innenraum ist leer und so groß wie bei einer Mikrowelle. Also passt dort bequem ein Teller für eine zu produzierende Portion rein. Auch, wenn Dir irgendwie schon das Wasser im Mund zusammenläuft, solltest Du Dich gerade besser nicht um Essen kümmern.</value>
+        <value>Der Innenraum ist leer und so groß wie bei einer Mikrowelle. Also passt dort bequem ein Teller für eine zu produzierende Portion rein. Auch wenn Dir irgendwie schon das Wasser im Mund zusammenläuft, solltest Du Dich gerade besser nicht um Essen kümmern.</value>
     </data>
     <data name="FRIDGE_DOOR_HANDLE" xml:space="preserve">
         <value>Es handelt sich um eine einfache metallische Aparatur die dazu dient, das Objekt zu öffnen, an dem sie montiert ist.</value>
@@ -532,7 +532,7 @@ Bei genauerer Betrachtung erkennst Du, dass dort eine viereckige Aussparung ist.
         <value>Ohne den montierten Griff kann der Kühlschrank leider nicht geöffnet werden.</value>
     </data>
     <data name="RECYCLER" xml:space="preserve">
-        <value>Hier auf dem Schiff ist Wasser sehr wertvoll. Geschirr und Besteck wird nicht gespült, sondern anderweitig verwertet. Dieser hochmoderne Recycler ist in der Lage, die eingeworfenen Reste exakt von einander zu trennen und einer weiteren Verwertung zuzuführen. Wie das alles geht ist Dir schleierhaft. Du weißt nur, dass die Nahrungsreste wieder in ihre Grundbausteine überführt werden und dann dem Printer zur Verfügung stehen. Was mit den anderen Materialien passiert weißt Du nicht.</value>
+        <value>Hier auf dem Schiff ist Wasser sehr wertvoll. Geschirr und Besteck wird nicht gespült, sondern anderweitig verwertet. Dieser hochmoderne Recycler ist in der Lage, die eingeworfenen Reste exakt von einander zu trennen und einer weiteren Verwertung zuzuführen. Wie das alles geht, ist Dir schleierhaft. Du weißt nur, dass die Nahrungsreste wieder in ihre Grundbausteine überführt werden und dann dem Printer zur Verfügung stehen. Was mit den anderen Materialien passiert, weißt Du nicht.</value>
     </data>
     <data name="RECYCLER_FIRSTLOOK" xml:space="preserve">
         <value>Aufgrund der aktuellen Energiesituation ist das Gerät vollständig deaktiviert.</value>
@@ -632,7 +632,7 @@ Bei genauerer Betrachtung erkennst Du, dass dort eine viereckige Aussparung ist.
         <value>Du willst ohne eine Sicherung ganz bestimmt nicht in die unendlichen Weiten des Alls eindringen, oder?</value>
     </data>
     <data name="SOCIALROOM_COUCH" xml:space="preserve">
-        <value>Das breite und moderne Sofa ist in einem wirklich guten Zustand und bietet gleich mehreren Personen ausreichend Platz zum sitzen oder auch mal zum liegen.</value>
+        <value>Das breite und moderne Sofa ist in einem wirklich guten Zustand und bietet gleich mehreren Personen ausreichend Platz zum Sitzen oder auch mal zum Liegen.</value>
     </data>
     <data name="SOCIALROOM_MONITOR" xml:space="preserve">
         <value>Der Bildschirm ist eigentlich eine dünne Folie, die mit geringem Abstand vor die komplette südliche Wand des Raums gespannt wurde. Das Ding ist super brilliant und absolut scharf. Damit macht es richtig Spaß, Serien von SpaceFlix zu schauen.</value>
@@ -665,7 +665,7 @@ Bei genauerer Betrachtung erkennst Du, dass dort eine viereckige Aussparung ist.
         <value>Tatsächlich ist Deine Position auf der Couch gut, um an die Antenne heranzukommen, aber leider ist sie zu fest verschraubt. Vielleicht versuchst Du, dafür irgendein Werkzeug zu benutzen?</value>
     </data>
     <data name="SOCIALROOM_BOOKS" xml:space="preserve">
-        <value>Du nimmst Dir wahrlos eines der Bücher aus dem Regel. "{0}" - ein weiteres Meisterwerk der Weltliteratur. Mit einem Lächeln im Gesicht steckst Du es zurück an seinen Platz.</value>
+        <value>Du nimmst Dir wahllos eines der Bücher aus dem Regel. "{0}" - ein weiteres Meisterwerk der Weltliteratur. Mit einem Lächeln im Gesicht steckst Du es zurück an seinen Platz.</value>
     </data>
     <data name="SOCIALROOM_SEATGROUP" xml:space="preserve">
         <value>Ein Arrangement von einer Couch und zwei Sesseln.</value>
@@ -949,5 +949,14 @@ Am Tag nach Deiner erfolgreichen Intervention sitzt Du mit der gesamten Crew zus
     </data>
     <data name="FELT" xml:space="preserve">
         <value>Ein grauer Filzstoff, der über die Trennwand gespannt ist. </value>
+    </data>
+    <data name="HOLE" xml:space="preserve">
+        <value>Das Loch in der Bordwand ist ungefähr faustgroß. Leider kannst Du in dem dämmrigen Licht keine genaueren Details erkennen.</value>
+    </data>
+    <data name="SIDEWALL" xml:space="preserve">
+        <value>Die Boardwand ist eindeutig beschädigt. Das Loch ist nicht zu übersehen. Aber weitere Details sind bei dem dämmerigen List nicht auszumachen.</value>
+    </data>
+    <data name="CREWCHAMBERS" xml:space="preserve">
+        <value>Die Kabinen sind nur als wage Ahnung am Ende des Korridors wahrzunehmen.</value>
     </data>
 </root>
