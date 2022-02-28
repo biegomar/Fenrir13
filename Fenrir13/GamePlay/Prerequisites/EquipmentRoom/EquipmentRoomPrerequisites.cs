@@ -161,7 +161,6 @@ internal static class EquipmentRoomPrerequisites
             ContainmentDescription = Descriptions.EYELET_CONTAINMENT,
             LinkedToDescription = Descriptions.EYELET_LINKEDTO,
             IsHidden = true,
-            IsUnveilAble = false,
             IsPickAble = false
         };
 

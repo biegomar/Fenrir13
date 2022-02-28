@@ -22,7 +22,7 @@ internal class ConsolePrintingSubsystem : BaseConsolePrintingSubsystem
         var (version, productName) = GetMetaInfo();
         Console.WriteLine($@"{productName} - {version}");
         this.ForegroundColor = TextColor.DarkCyan;
-        this.Resource(BaseDescriptions.HELP_WANTED);
+        this.Resource(BaseDescriptions.CHANGE_NAME);
         this.ResetColors();
         Console.Write(WordWrap(BaseDescriptions.HELLO_STRANGER, this.ConsoleWidth));
         Console.Write(WordWrap(Descriptions.OPENING, this.ConsoleWidth));

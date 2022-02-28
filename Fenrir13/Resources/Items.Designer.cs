@@ -871,7 +871,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Sauerstoffflasche|Sauerstoffflasche|Sauerstoff-Flasche|Sauerstoff|Flasche.
+        ///   Looks up a localized string similar to Die Sauerstoffflasche|Sauerstoffflasche|Sauerstoff-Flasche|Sauerstoff|Flasche|Gas.
         /// </summary>
         internal static string OXYGEN_BOTTLE {
             get {

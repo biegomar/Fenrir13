@@ -1,0 +1,287 @@
+REM Das "Hallo Fremder (oder...)," wirkt etwas wie ein Fremdkörper vor dem Wort "schwarz", welches dann den Eingangstext auch von der Stimmung her eröffnet. Ich könnte mir vorstellen, dass das "Hallo Fremder (oder...) erst nach dem Intro vor der Überschrift "Deine Cryo-Kammer) oder so kommen könnte (ist aber nur meine Meinung. Ich will mich nicht in das stilistische Einmischen).
+hilfe
+rem Möglichkeit zu geben dort
+rem "Möglichkeit zu geben dort" -> "Möglichkeit zu geben dort
+rem "Möglichkeit zu geben dort" -> "Möglichkeiot zu geben, dort"
+rem Möglichkeit zu geben dort
+rem Irgendwie drückt nun das Pasten von Text immer automatisch auf Enter.
+nimm
+trage bio-suit
+ziehe bio-suit aus
+i
+inventar
+öffne schrank
+l
+öffne schranktür
+nimm
+iss riegel
+rem Evtl. kann man das "Dir" in "schlingst Du Dir gierig" weglassen.
+u tür
+öffne tür
+rem Keine Antwort
+u pad
+u display
+w
+rem Ah, sehe gerade, dass die Notbeleuchtung an ist, was dann später Sinn ergibt, wenn gegen Ende im ganzen Schiff wieder die Lichter angehen.
+n
+öffne kammer
+w
+s
+sitze auf couch
+Könnte auch etwas kommen wie "Du hast keine Zeit..."
+n
+n
+öffne kühlschrank
+u kühlschrank
+nimm griff
+ziehe an griff
+u griff
+inventar
+s
+w
+u bild
+hoch
+sitz
+setze dich auf sitz
+tippe skov
+tipp 1
+rem "Als du den Menüpunkt auswählst erfährst..." -> "Als du den Menüpunkt auswählst, erfährst ..."
+tipppe 2
+tipppe 2
+tippe 2
+stehe auf
+aufstehen
+runter
+runter
+hoch
+w
+rem "also bei gut 50 Metern führt" -> "also bei gut 50 Metern, führt ..."
+u bild
+n
+öffne medizinschrank
+x gerät
+öffne klappe
+u klappe
+stecke griff in klappe
+Danke. :-)
+u klappe
+öffne klappe
+nimm flasche
+s
+lass flasche fallen
+lass flasche liegen
+hilfe
+leg flasche hin
+s
+steige auf cardiostation
+renne
+u gewidchte
+u gewichte
+rem "Die fällt auf,..." -> "Dir fällt auf,..."
+u ablag
+u ablage
+nimm stange
+n
+e
+runter
+s
+lege stange ab
+"weiteres, massives Schott" -> ginge auch ohne Komma -> "weiteres massives Schott"
+rem "... Tastenfeld gesteuert zu werden, dass sich" -> "... Tastenfeld gesteuert zu werden, das sich..."
+rem ", die du bei Dir trägst sind nun" -> ", die du bei Dir trägst, sind nun"
+n
+hoch
+nimm
+w
+nimm
+e
+runter
+w
+nimm
+u kiste
+u schloss
+Ah, da bin ich drüber hinweg gegangen.
+rem "Ist verbunden mit: das Vorhängeschloss" -> "Die Kiste ist verbunden mit: ..."
+e
+s
+nimm
+n
+w
+hebel kiste mit stange auf
+hebel schloss mit stange auf
+schlag mit stange auf schloss
+zerstöre schloss mit stange
+hilfe
+zerbrich schloss mit stange
+zerbrich schloss
+zerbrich schloss mit stange
+e
+s
+drop stange
+inventar
+nimm stange
+n
+Ah. Das hatte ich überlesen. 
+s
+drop gas
+drop flasche
+nimm stange
+n
+w
+zerbrich schloss mit stange
+Ah. Jetzt.
+nimm
+l
+nimm schloss
+öffne kiste
+u ksite
+kiste
+u kiste
+nimmm
+nimm
+w
+s
+e
+s
+drop stange
+n
+w
+nimm
+w
+e
+n
+rem Evtl.: "den Halbkreis den sie bilden in ein..." -> "den Halbkreis, den sie bilden, in ein ..."
+rem "schwingt im Raum, dass von" -> "schwingt im Raum, das von"
+u recheneinhat
+u recheneinheit
+u pukte
+u punkte
+rem "berührst erhältst Du" -> "berührst, erhältst Du"
+rem "Der erste markiert" -> ich meine, es müsste sein: "Der Erste markiert"
+rem "Sobald diese durch eine neue" -> wäre dann auch: "Sobald diese durch eine Neue"
+rem "Der Zweite Punkt" -> "Der zweite Punkt"
+nimm
+nimm hologramm
+:-)
+s
+e
+w
+o
+öffne schublade
+Doch!
+ziehe schublade
+u schublade
+u platee
+u platte
+u werkbank
+u schublade
+rem Die Schublade wurde schon in der Raumbeschreibung genannt, weswegen es komisch ist, dass man erst die Werkbank untersuchen muss um sie zu entdecken.
+öffne schublade
+u schublade
+nimm 
+w
+huch
+hoch
+w
+e
+e
+s
+kletter auf couch
+u antenne
+u mediaserver
+u konstrutkion
+u konstruktion
+u receiver
+rem Auch hier wird Receiver und Antenne schon in der Raumbeschreibung genannt.
+Schraube antenne ab
+NImm antenne mit werkzeug
+inventar
+nimm antenne
+schraube antenne mit werkzeug ab
+nimm antenne mit werkzeug
+drehe antenne mit werkzeug
+dreh antenne
+dreh antenne mit werkzeug
+benutze werkzeug mit antenne
+rem Zweimal "nimmst" in einem Satz.
+sc ore
+score
+Halftime
+w
+n
+nimm
+inventar
+n
+kletter runter
+n
+verlasse couch
+steige ab
+runter
+klettere nach unten
+kletter von couch
+info
+l
+n
+kletter runter
+verlasse couch
+runter
+springe runter
+gehe von couch
+verlasse
+hilfe
+exits
+gehe runter
+kletter
+hinab
+rem Hier wären weitere Synonyme für "kletter von couch" o.ä. hilfreich.
+steige ab
+kletter runter
+kletter
+verlasse
+verlasse couch
+stehe auf
+absteigen
+rem Ich habe jetzt doch in die Lösung geschaut.
+hilfe
+rem Sehe gerade, dass der Befehl auch in der Hilfe war. Hatte ich eben überlesen.
+n
+w
+runter
+s
+ziehe alles an
+nimm alles
+verbinde flasche mit helm
+drücke roten knopf
+u tastenfeld
+drücke roten knopf
+rem "Ohne, dass du" -> "Ohne dass du"
+u all
+u fenster
+l
+u steg
+x schott
+trage helm
+ziehe helm an
+ziehe gurt an
+ziehe stiefel an
+ziehe handschuge an
+ziehe handschuhe an
+inventar
+drücke roten knopf
+rem Das scheint ein Bug zu sein.
+l
+u tastenfedl
+u tastenfeld
+drücke roten knopf
+drücke grünen knopf
+u roten knopf
+presse roten knopf
+drücke roten knopf
+u helm
+u gurt
+u geschirr
+u seil
+verbinde seil mit gurt
+drücke roten knopf
+drücke open
+rem Ok, der Spielstand scheint irgendwie zerschossen zu sein.

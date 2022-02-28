@@ -215,15 +215,18 @@ internal class EventProvider
                 if (isHelmetLinkedToOxygen)
                 {
                     var belt = this.universe.ActivePlayer.Clothes.First(x => x.Key == Keys.BELT);
-                    var eyelet = belt.GetUnhiddenItemByKey(Keys.EYELET);
+                    var eyelet = belt.Items.First(x => x.Key == Keys.EYELET);
                 
                     var isEyeletLinkedToRope = eyelet.LinkedTo.Any(x => x.Key == Keys.AIRLOCK_ROPE);
                     if (isEyeletLinkedToRope)
                     {
                         this.isAirlockOpen = true;
                         PrintingSubsystem.Resource(Descriptions.PREPARED_FOR_SPACE_WALK);
-                        this.universe.Score += this.universe.ScoreBoard[nameof(this.PushRedButton)];
-                        this.universe.SolveQuest(MetaData.QUEST_VI);
+                        if (!this.universe.IsQuestSolved(MetaData.QUEST_VI))
+                        {
+                            this.universe.Score += this.universe.ScoreBoard[nameof(this.PushRedButton)];
+                            this.universe.SolveQuest(MetaData.QUEST_VI);
+                        }
                     }
                     else
                     {
@@ -234,7 +237,6 @@ internal class EventProvider
                 {
                     throw new PushException(Descriptions.OXYGEN_NEEDED);
                 }
-
             }
             else
             {
@@ -309,7 +311,7 @@ internal class EventProvider
         }
         else
         {
-            throw new OpenException(BaseDescriptions.DOES_NOT_WORK);
+            throw new OpenException(BaseDescriptions.IMPOSSIBLE_OPEN);
         }
     }
     
@@ -317,7 +319,12 @@ internal class EventProvider
     {
         if (sender is Location cryoChamber && cryoChamber.Key == Keys.CRYOCHAMBER && eventArgs.ExternalItemKey == Keys.CLOSET_DOOR)
         {
-            PrintingSubsystem.Resource(this.universe.ActiveLocation.Surroundings[eventArgs.ExternalItemKey].ToString());
+            var closetDoorDescription = this.universe.ActiveLocation.Surroundings[eventArgs.ExternalItemKey]();
+            PrintingSubsystem.Resource(closetDoorDescription);
+        }
+        else
+        {
+            throw new OpenException(BaseDescriptions.IMPOSSIBLE_OPEN);
         }
     }
     
@@ -1160,7 +1167,9 @@ internal class EventProvider
 
             if (isItemDropped)
             {
+                PrintingSubsystem.ForegroundColor = TextColor.Magenta;
                 PrintingSubsystem.Resource(Descriptions.GRAVITY_ITEM_DROP);
+                PrintingSubsystem.ResetColors();
             }
             else
             {

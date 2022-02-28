@@ -62,7 +62,7 @@ namespace Fenrir13.Resources {
         
         /// <summary>
         ///   Looks up a localized string similar to Die Schleuse dient als Weg nach Draußen und sobald Du komplett eingetreten bist, schließt sich die Tür hinter Dir und ein Ansaugegeräusch gibt Dir zu verstehen, dass sie gegen ein mögliches Vakuum gesichert wird. Du fühlst plötzlich, dass Deine Glieder sich leichter anfühlen, Deine Bewegungen sind mühelos und Du spürst kaum noch Dein eigenes Gewicht. Offenkundig wird hier in der Schleuse bereits auf die künstliche Schwerkraft verzichtet. 
-        ///Am südlichen Ende der Schleuse trennt ein weiteres, massives Schott  [rest of string was truncated]&quot;;.
+        ///Am südlichen Ende der Schleuse trennt ein weiteres massives Schott d [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string AIRLOCK {
             get {
@@ -98,7 +98,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Das Schott scheint über ein einfaches Tastenfeld gesteuert zu werden, dass sich direkt daneben an der südlichen Wand befindet..
+        ///   Looks up a localized string similar to Das Schott scheint über ein einfaches Tastenfeld gesteuert zu werden, das sich direkt daneben an der südlichen Wand befindet..
         /// </summary>
         internal static string AIRLOCK_KEYPAD_CONTAINMENT {
             get {
@@ -432,7 +432,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Jede Decke hier an Bord ist gleich. Sie ist mit einer Art Kunststoff bezogen, der in der Lage ist, wie eine riesige Leinwand beliebige Dinge zu projezieren. Wenn man wollte könnte man sich aufs Bett legen und Bilder oder Filme schauen. Einige machen das sogar manchmal, aber meistens wird sie als reine indirekte Lichtquelle genutzt, um die Wohn- und Arbeitsbereiche zu erhellen..
+        ///   Looks up a localized string similar to Jede Decke hier an Bord ist gleich. Sie ist mit einer Art Kunststoff bezogen, der in der Lage ist, wie eine riesige Leinwand beliebige Dinge zu projezieren. Wenn man wollte, könnte man sich aufs Bett legen und Bilder oder Filme schauen. Einige machen das sogar manchmal, aber meistens wird sie als reine indirekte Lichtquelle genutzt, um die Wohn- und Arbeitsbereiche zu erhellen..
         /// </summary>
         internal static string CEILING {
             get {
@@ -477,7 +477,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to So ausgepowert wie Du bist, schlingst Du Dir gierig den Power-Riegel herunter. Dieses Wunderzeug erweckt Dich fast augenblicklich wieder zum Leben und Du spürst, wie Dein Körper die Energie förmlich aufsaugt. Jetzt bist Du fit für die Aufgaben, die vor Dir liegen..
+        ///   Looks up a localized string similar to So ausgepowert wie Du bist, schlingst Du gierig den Power-Riegel herunter. Dieses Wunderzeug erweckt Dich fast augenblicklich wieder zum Leben und Du spürst, wie Dein Körper die Energie förmlich aufsaugt. Jetzt bist Du fit für die Aufgaben, die vor Dir liegen..
         /// </summary>
         internal static string CHOCOLATEBAR_EATEN {
             get {
@@ -687,7 +687,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Korridor durchzieht den gesamten &apos;Hammerkopf&apos; des Schiffs von Ost nach West. Von ihm gehen Türen in die diversen Räume ab und in der Mitte, also bei gut 50 Metern führt ein Aufgang zur Brücke und ein Abgang herunter in die Maschinenräume. An den Wänden hängen neben typischen Raum- und Evakuierungsplänen auch Bilder von ehemaligen Mitarbeitern und Crewmitgliedern der Fenrir 13. Ansonsten ist der Flur einfach und karg..
+        ///   Looks up a localized string similar to Der Korridor durchzieht den gesamten &apos;Hammerkopf&apos; des Schiffs von Ost nach West. Von ihm gehen Türen in die diversen Räume ab und in der Mitte, also bei gut 50 Metern, führt ein Aufgang zur Brücke und ein Abgang herunter in die Maschinenräume. An den Wänden hängen neben typischen Raum- und Evakuierungsplänen auch Bilder von ehemaligen Mitarbeitern und Crewmitgliedern der Fenrir 13. Ansonsten ist der Flur einfach und karg..
         /// </summary>
         internal static string CORRIDOR_MIDWEST {
             get {
@@ -1396,7 +1396,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Im Kühlraum stapeln sich die einzeln verpackten Nahrungsbestandteile. Kleine wurstförmige, transparante Beutelchen aus dünnem Kunststoff, mit denen man den Drucker nachladen kann. Tolle Sache!.
+        ///   Looks up a localized string similar to Im Kühlraum stapeln sich die einzeln verpackten Nahrungsbestandteile. Kleine wurstförmige, transparente Beutelchen aus dünnem Kunststoff, mit denen man den Drucker nachladen kann. Tolle Sache!.
         /// </summary>
         internal static string FRIDGE_OPEN {
             get {
@@ -1441,7 +1441,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Vielen Dank, dass Du &apos;Fenrir 13&apos; gespielt hast. Ich hoffe, dass es Dir ebenso viel Spaß gemacht hat wie mir, das Spiel zu schreiben. Über Feedback würde ich mich sehr freuen!.
+        ///   Looks up a localized string similar to Vielen Dank, dass Du &apos;Fenrir 13&apos; gespielt hast. Ich hoffe, es hat Spaß gemach! Über Feedback würde ich mich sehr freuen!.
         /// </summary>
         internal static string GOODBYE {
             get {
@@ -1505,7 +1505,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Powerstation ist klar das Herzstück des Fitnessraums. Mit Gewichten, Hantelscheiben und den dazu passenden Hantelstangen lassen sich hier viele Übungen machen. Die fällt auf, dass alles schön auf einer Hantelablage organisiert ist..
+        ///   Looks up a localized string similar to Die Powerstation ist klar das Herzstück des Fitnessraums. Mit Gewichten, Hantelscheiben und den dazu passenden Hantelstangen lassen sich hier viele Übungen machen. Dir fällt auf, dass alles schön auf einer Hantelablage organisiert ist..
         /// </summary>
         internal static string GYM_POWERSTATION {
             get {
@@ -2142,7 +2142,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Bildschirm scheint seine Inhalte über ein klassiches Funknetz von einem Mediaserver zu beziehen, zumindest deutet eine Antennenkonstruktion an der Decke darauf hin..
+        ///   Looks up a localized string similar to Der Bildschirm scheint seine Inhalte über ein klassiches Funknetz von einem Mediaserver zu beziehen, zumindest deutet eine Antennenkonstruktion an der Decke über der Couch darauf hin..
         /// </summary>
         internal static string SOCIALROOM_ANTENNA_CONSTRUCTION_CONTAINMENT {
             get {
@@ -2728,7 +2728,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Alle Gegenstände, die Du bei Dir trägst sind nun schwerelos und scheinen kein Gewicht mehr zu haben..
+        ///   Looks up a localized string similar to Alle Gegenstände, die Du bei Dir trägst, sind nun schwerelos und scheinen kein Gewicht mehr zu haben..
         /// </summary>
         internal static string ZERO_GRAVITY {
             get {

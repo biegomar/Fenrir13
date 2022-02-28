@@ -27,7 +27,7 @@ Aber etwas ist anders! Das auf- und abschwellende Geräusch ist nach wie vor da.
     <data name="CRYOCHAMBER" xml:space="preserve">
         <value>Du befindest Dich in Deinem persönlichen Raum des Schiffs. Er ist sehr funktional und spartanisch eingerichtet, wirkt dabei aber dennoch wohnlich. Der Cryo-Pod, in dem Du gerade noch gelegen hast, hat seine Kokon-Form, die dem Passagier während der langen Schlafphase einer Raumreise Schutz und Versorgung bietet, in eine offene Bettform gewandelt. Der Fußboden ist metallisch und nur vor Deinem Bett befindet sich ein kleiner Teppich. Du weißt aus der Erfahrung, dass der Fußboden angenehm beheizt ist und magnetisiert werden kann, damit im Falle von Turbulenzen die größeren Gegenstände gegen Verrutschen gesichert sind. Na ja, zumindest rudimentär. Ein kleiner Arbeitsbereich mit Deinem persönlichen Laptop ist in der rechten Ecke der Wand direkt vor Dir platziert und wenn Du dort sitzt, gibt Dir ein Bullauge den Blick in den Weltraum preis. Ein hochwertiger Bürostuhl ermöglicht ein bequemes Arbeiten und durch die mit Gummi überzogenen Metallrollen kann man erkennen, dass dieser Sitz auch magnetisch befestigt werden kann. 
 Der Rest der Wand wird von einem massiven Schrank mit diversen Schubfächern, einer Schranktür und einer offenen Garderobe dominiert. 
-In der Mitte des Raums befindet sich ein kleiner Tisch, gerade groß genug, um zwei Personen die Möglichkeit zu geben dort gemeinsam zu essen. Da es aber nur einen passenden Stuhl zum Tisch gibt, scheint diese Möglichkeit gar nicht vorgesehen zu sein. 
+In der Mitte des Raums befindet sich ein kleiner Tisch, gerade groß genug, um zwei Personen die Möglichkeit zu geben, dort gemeinsam zu essen. Da es aber nur einen passenden Stuhl zum Tisch gibt, scheint diese Möglichkeit gar nicht vorgesehen zu sein. 
 Zu Deiner Rechten, an der Fußseite des Cryo-Pods, befindet sich eine kleine Trennwand und Du kannst dahinter eine bescheidene Waschmöglichkeit und eine Toilette entdecken. 
 Zu Deiner Linken befindet sich die Zimmertür. Auch sie ist aus Metall und als solche eigentlich nur an ihren Umrissen und dem tellergroßen Guckloch in Kopfhöhe zu erkennen. Die Tür ist perfekt in die Wand eingelassen und rechts von ihr befindet sich ein kleines Display. Vermutlich dient es der Bedienung der Tür, denn eine erkennbare Klinke gibt es nicht.</value>
     </data>
@@ -87,7 +87,7 @@ Voller Stolz prangt neben einem großen Emblem eines Wolfskopfs der Name des Sch
         <value>Dieser Power-Riegel ist genau das Richtige, um nach dem auslaugenden Cryo-Schlaf wieder zu Kräften zu kommen.</value>
     </data>
     <data name="CHOCOLATEBAR_EATEN" xml:space="preserve">
-        <value>So ausgepowert wie Du bist, schlingst Du Dir gierig den Power-Riegel herunter. Dieses Wunderzeug erweckt Dich fast augenblicklich wieder zum Leben und Du spürst, wie Dein Körper die Energie förmlich aufsaugt. Jetzt bist Du fit für die Aufgaben, die vor Dir liegen.</value>
+        <value>So ausgepowert wie Du bist, schlingst Du gierig den Power-Riegel herunter. Dieses Wunderzeug erweckt Dich fast augenblicklich wieder zum Leben und Du spürst, wie Dein Körper die Energie förmlich aufsaugt. Jetzt bist Du fit für die Aufgaben, die vor Dir liegen.</value>
     </data>
     <data name="WARDROBE" xml:space="preserve">
         <value>Ein typischer Kleiderständer, der es ermöglicht, schnell Kleidungsstücke aufzuhängen und ebenso schnell wieder herunterzunehmen.</value>
@@ -181,7 +181,7 @@ In diesem Abschnitt des Korridors liegt die erste Hälfte der sechs Crew-Quartie
         <value>Du befindest Dich nun genau in der Mitte des Korridors. An der nördlichen Seite führt eine breite Treppe auf die Brücke. An der südlichen Seite liegt der Zugang zu den Technik- und Maschinenräumen. Auch dorthin geht es über eine Treppe, allerdings eine Etage nach unten. An der Wand hängt nur ein Bild, aber dafür handelt es sich um ein besonders exponiertes Gemälde. Ansonsten ist der Flur einfach und karg.</value>
     </data>
     <data name="CORRIDOR_MIDWEST" xml:space="preserve">
-        <value>Der Korridor durchzieht den gesamten 'Hammerkopf' des Schiffs von Ost nach West. Von ihm gehen Türen in die diversen Räume ab und in der Mitte, also bei gut 50 Metern führt ein Aufgang zur Brücke und ein Abgang herunter in die Maschinenräume. An den Wänden hängen neben typischen Raum- und Evakuierungsplänen auch Bilder von ehemaligen Mitarbeitern und Crewmitgliedern der Fenrir 13. Ansonsten ist der Flur einfach und karg.</value>
+        <value>Der Korridor durchzieht den gesamten 'Hammerkopf' des Schiffs von Ost nach West. Von ihm gehen Türen in die diversen Räume ab und in der Mitte, also bei gut 50 Metern, führt ein Aufgang zur Brücke und ein Abgang herunter in die Maschinenräume. An den Wänden hängen neben typischen Raum- und Evakuierungsplänen auch Bilder von ehemaligen Mitarbeitern und Crewmitgliedern der Fenrir 13. Ansonsten ist der Flur einfach und karg.</value>
     </data>
     <data name="EMPTYCREWCHAMBERONE" xml:space="preserve">
         <value>Durch das runde Türfenster kannst Du einen Blick in das dunkle Zimmer erhaschen. Es ist ähnlich ausgestattet wie Dein Raum.</value>
@@ -206,7 +206,7 @@ In diesem Abschnitt des Korridors liegt die erste Hälfte der sechs Crew-Quartie
     </data>
     <data name="COMMANDBRIDGE" xml:space="preserve">
         <value>Die Brücke ist ein nur wenige Quadratmeter großer Ovoid, der an der Frontseite durch eine überdimensionale Sichtscheibe dominiert wird. Sie spannt sich fast 180 Grad um den zentralen Pilotensitz und umfasst somit das gesamte Gesichtsfeld eines Menschen. Durch die erhöhte Position der Brücke ist das Schiff vollständig zu überblicken und in der Regel durch nur eine Person gut zu steuern. Der Eingriff ist allerdings nur erforderlich, wenn der Autopilot nicht aktiv ist.
-Der Pilotensitz wird von einer perfekt eingepassten Bedienkonsole umschlossen, die sich wie ein Halbrund zwischen der sitzenden Person und der Sichtscheibe befindet. Sie besteht aus einer abgetönten Glasplatte und Du weißt, dass sie verschiedene Instrumente, Bilder und Informationstexte sowohl 2-dimensional, als auch 3-dimensional darstellen kann. Bei Bedarf werden weitere Daten direkt auf die Sichtscheiben projiziert. Mechanische Apparaturen gibt es hingegen nicht.
+Der Pilotensitz wird von einer perfekt eingepassten Bedienkonsole umschlossen, die sich wie ein Halbrund zwischen der sitzenden Person und der Sichtscheibe befindet. Sie besteht aus einer abgetönten Glasplatte und Du weißt, dass sie verschiedene Instrumente, Bilder und Informationstexte sowohl 2-dimensional, als auch 3-dimensional darstellen kann. Bei Bedarf werden weitere Daten direkt auf die Sichtscheibe projiziert. Mechanische Apparaturen gibt es hingegen nicht.
 Sobald eine Person in dem Pilotensitz platzt nimmt, wird die Konsole entsprechend des Rangs, sowie gemäß nautischer Notwendigkeiten und persönlicher Einstellungen aktiviert. </value>
     </data>
     <data name="COMMANDBRIDGE_FIRSTLOOK" xml:space="preserve">
@@ -335,7 +335,7 @@ Du erkennst eine Cardiostation, die für mehrere Arten von Ausdauertraining ausg
     </data>
     <data name="AIRLOCK" xml:space="preserve">
         <value>Die Schleuse dient als Weg nach Draußen und sobald Du komplett eingetreten bist, schließt sich die Tür hinter Dir und ein Ansaugegeräusch gibt Dir zu verstehen, dass sie gegen ein mögliches Vakuum gesichert wird. Du fühlst plötzlich, dass Deine Glieder sich leichter anfühlen, Deine Bewegungen sind mühelos und Du spürst kaum noch Dein eigenes Gewicht. Offenkundig wird hier in der Schleuse bereits auf die künstliche Schwerkraft verzichtet. 
-Am südlichen Ende der Schleuse trennt ein weiteres, massives Schott den Raum von einem breiten Steg, der bereits vollständig ins All ragt. </value>
+Am südlichen Ende der Schleuse trennt ein weiteres massives Schott den Raum von einem breiten Steg, der bereits vollständig ins All ragt. </value>
     </data>
     <data name="ENGINE_ROOM" xml:space="preserve">
         <value>Beim Eintreten in den Raum erwartet Dich eine Symbiose aus hoch modernster Technik und postmoderner Kunst. Das Zentrum des Raumes wird gebildet von drei runden metallischen Stehlen, an deren Kopfende auf einer massiven Platte jeweils ein Würfel ruht. Die Stehlen haben eine Abstand von gut einem Meter zueinander und jeweils eine Kante der Kopfplatte, die Du als Vorne interpretierst, scheint eine Tangente an einen imaginären Kreis anzulegen, um den herum die Säulen angeordnet sind. Ein schwaches, künstliches Leuchten scheint den Stehlen zu entstammen und taucht den Halbkreis den sie bilden in ein futuristisches Licht. Eine Korona aus ebendiesem Licht umfängt die drei Würfel und gibt der Szenerie eine mystische Aura. Ein kaum hörbares Summen schwingt im Raum, dass von den drei Würfeln auszugehen scheint. Als Du einen Schritt weiter in den Raum hinein gehst, hebt sich, wie aus dem Nichts, leichtgängig und geräuschlos eine weitere Stehle aus dem Boden vor Dir. Über ihrer Kopfplatte schwebt ein bläuliches, dreidimensionales Hologramm der Fenrir 13.
@@ -345,7 +345,7 @@ Du weißt, dass die Würfel einen redundanten Quantencluster bilden, eine Rechen
         <value>Durch geschickte Anordnung von einzelnen Elementen und der Fähigkeit durch leichte Umbauten die jeweilige Funktion zu ändern, bietet dieses Gerät ein Fahrrad, ein Laufband, einen Stepper, sowie einen Crosstrainer. </value>
     </data>
     <data name="GYM_POWERSTATION" xml:space="preserve">
-        <value>Die Powerstation ist klar das Herzstück des Fitnessraums. Mit Gewichten, Hantelscheiben und den dazu passenden Hantelstangen lassen sich hier viele Übungen machen. Die fällt auf, dass alles schön auf einer Hantelablage organisiert ist.</value>
+        <value>Die Powerstation ist klar das Herzstück des Fitnessraums. Mit Gewichten, Hantelscheiben und den dazu passenden Hantelstangen lassen sich hier viele Übungen machen. Dir fällt auf, dass alles schön auf einer Hantelablage organisiert ist.</value>
     </data>
     <data name="DUMBBELL_BAR" xml:space="preserve">
         <value>Mit ein paar Handgriffen lässt sich diese lange Hantelstange mit Gewichten bestücken und so für viele Kraftübungen einsetzen. Sie ist aus hochwertigem Stahl gefertigt, ca. 120 cm lang und sie sieht sehr schwer aus.</value>
@@ -424,7 +424,7 @@ Die Wand mit der Tür ist frei, nur ein kleiner Papiereimer steht dort.</value>
         <value>Im Moment ist keine Kleidung zu sehen. Die Nischen sind leer und auf den Bänken liegt auch nichts.</value>
     </data>
     <data name="ZERO_GRAVITY" xml:space="preserve">
-        <value>Alle Gegenstände, die Du bei Dir trägst sind nun schwerelos und scheinen kein Gewicht mehr zu haben.</value>
+        <value>Alle Gegenstände, die Du bei Dir trägst, sind nun schwerelos und scheinen kein Gewicht mehr zu haben.</value>
     </data>
     <data name="GRAVITY_NORMAL" xml:space="preserve">
         <value>Alle Gegenstände, die Du mit Dir führst, erhalten durch die einsetzende künstliche Schwerkraft wieder ihr gefühltes Normalgewicht.</value>
@@ -468,7 +468,7 @@ In einigen typischen OP-Schränken sind alle relevanten Instrumente und Verbands
         <value>Der Roboter ist in der Lage einfache Operationen selbständig durchzuführen. Seine vier Arme helfen ihm dabei auch schwierige Hand - oder besser - Robotergriffe zu meistern. Bei schwerwiegenden Eingriffen wird er in der Regel aber als Assistenzsystem eingesetzt und durch einen Menschen geführt. </value>
     </data>
     <data name="CEILING" xml:space="preserve">
-        <value>Jede Decke hier an Bord ist gleich. Sie ist mit einer Art Kunststoff bezogen, der in der Lage ist, wie eine riesige Leinwand beliebige Dinge zu projezieren. Wenn man wollte könnte man sich aufs Bett legen und Bilder oder Filme schauen. Einige machen das sogar manchmal, aber meistens wird sie als reine indirekte Lichtquelle genutzt, um die Wohn- und Arbeitsbereiche zu erhellen.</value>
+        <value>Jede Decke hier an Bord ist gleich. Sie ist mit einer Art Kunststoff bezogen, der in der Lage ist, wie eine riesige Leinwand beliebige Dinge zu projezieren. Wenn man wollte, könnte man sich aufs Bett legen und Bilder oder Filme schauen. Einige machen das sogar manchmal, aber meistens wird sie als reine indirekte Lichtquelle genutzt, um die Wohn- und Arbeitsbereiche zu erhellen.</value>
     </data>
     <data name="AMBULANCE_BED" xml:space="preserve">
         <value>Das Bett ermöglicht sowohl eine kurzzeitige Erholung, als auch eine langwierige Rekonvaleszens. Elektronisch verstellbar, top Pflegematratze...alles was ein modernes Pflegebett benötigt.</value>
@@ -523,7 +523,7 @@ Bei genauerer Betrachtung erkennst Du, dass dort eine viereckige Aussparung ist.
         <value>Der Griff der Kühlschranktür ist halb herausgezogen.</value>
     </data>
     <data name="FRIDGE_OPEN" xml:space="preserve">
-        <value>Im Kühlraum stapeln sich die einzeln verpackten Nahrungsbestandteile. Kleine wurstförmige, transparante Beutelchen aus dünnem Kunststoff, mit denen man den Drucker nachladen kann. Tolle Sache!</value>
+        <value>Im Kühlraum stapeln sich die einzeln verpackten Nahrungsbestandteile. Kleine wurstförmige, transparente Beutelchen aus dünnem Kunststoff, mit denen man den Drucker nachladen kann. Tolle Sache!</value>
     </data>
     <data name="FRIDGE_DOOR_HANDLE_UNPICKABLE" xml:space="preserve">
         <value>So leicht löst sich der Griff dann auch wieder nicht. Ein kräftiger Ruck würde ihn wahrscheinlich lösen.</value>
@@ -590,7 +590,7 @@ Bei genauerer Betrachtung erkennst Du, dass dort eine viereckige Aussparung ist.
 </value>
     </data>
     <data name="AIRLOCK_KEYPAD_CONTAINMENT" xml:space="preserve">
-        <value>Das Schott scheint über ein einfaches Tastenfeld gesteuert zu werden, dass sich direkt daneben an der südlichen Wand befindet.</value>
+        <value>Das Schott scheint über ein einfaches Tastenfeld gesteuert zu werden, das sich direkt daneben an der südlichen Wand befindet.</value>
     </data>
     <data name="AIRLOCK_ROPE" xml:space="preserve">
         <value>Das Seil ist ultradünn und in das Graphen sind fluoreszierende Partikel eingebracht, damit man das Seil auch in der Dunkelheit des Alls gut erkennen kann. Da das Seil sehr dünn ist, die Winde aber sehr voll wirkt, gehst Du davon aus, dass es lang genug ist, um jeden Punkt der Schiffshaut zu erreichen. Das vordere Ende des Seils mündet in eine Hakenkonstruktion, die ebenfalls aus Graphen ist und nahtlos mit dem Seil verbunden ist. Wahrscheinlich handelt es sich sowieso um ein einziges Werkstück.</value>
@@ -650,7 +650,7 @@ Bei genauerer Betrachtung erkennst Du, dass dort eine viereckige Aussparung ist.
         <value>Die Konstruktion besteht aus zwei erkennbaren Komponenten. Das ist einerseits die Antenne selbst und andererseits eine Art Receivereinheit, die die Signale verarbeitet.</value>
     </data>
     <data name="SOCIALROOM_ANTENNA_CONSTRUCTION_CONTAINMENT" xml:space="preserve">
-        <value>Der Bildschirm scheint seine Inhalte über ein klassiches Funknetz von einem Mediaserver zu beziehen, zumindest deutet eine Antennenkonstruktion an der Decke darauf hin.</value>
+        <value>Der Bildschirm scheint seine Inhalte über ein klassiches Funknetz von einem Mediaserver zu beziehen, zumindest deutet eine Antennenkonstruktion an der Decke über der Couch darauf hin.</value>
     </data>
     <data name="SOCIALROOM_ANTENNA" xml:space="preserve">
         <value>Die Antenne besteht eigentlich aus zwei Antennen, die über einen flexiblen Arm verbunden sind.</value>
@@ -866,7 +866,7 @@ Der Erfolg lässt nicht lange aus sich warten. An immer mehr Stellen am Schiff f
         <value>Der Service-Roboter, der hier in seinem Dock auf seinen Einsatz wartet, wird auch bereits mit Energie versorgt. Das ist deutlich an seinen blinkenden Kontrollleuchten zu erkennen.</value>
     </data>
     <data name="GOODBYE" xml:space="preserve">
-        <value>Vielen Dank, dass Du 'Fenrir 13' gespielt hast. Ich hoffe, dass es Dir ebenso viel Spaß gemacht hat wie mir, das Spiel zu schreiben. Über Feedback würde ich mich sehr freuen!</value>
+        <value>Vielen Dank, dass Du 'Fenrir 13' gespielt hast. Ich hoffe, es hat Spaß gemach! Über Feedback würde ich mich sehr freuen!</value>
     </data>
     <data name="CLOSING" xml:space="preserve">
         <value>Wow! Geschaft! Der Roboter hat nun wieder Energie und kann mit dem System kommunizieren. Als er den Befehl bekommt löst er sich aus seinem Dock und fährt zur beschädigten Außenwand. 

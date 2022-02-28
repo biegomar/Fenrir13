@@ -45,7 +45,6 @@ internal static class MaintenanceRoomPrerequisites
             ContainmentDescription = Descriptions.MAINTENANCE_ROOM_DRAWER_CONTAINMENT,
             CloseDescription = Descriptions.MAINTENANCE_ROOM_DRAWER_CLOSE,
             OpenDescription = Descriptions.MAINTENANCE_ROOM_DRAWER_OPEN,
-            IsHidden = true,
             IsPickAble = false,
             IsCloseAble = true,
             IsClosed = true
