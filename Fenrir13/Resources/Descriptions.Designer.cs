@@ -603,8 +603,8 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Detailbericht sagt aus, dass einfach kaum noch Energie vorhanden ist. Nur die Notsysteme - wie die Cryo-Pods - laufen noch. Da es langsam kritisch wird wurdest Du geweckt, um zu handeln.
-        ///Trotzdem ist Dir nicht klar, was eigentlich das Problem ist. Das Schiff verfügt über eine riesige Anzahl an Solarkollektoren, die die gesamte Fläche des Cargo-Bereichs bedecken können. Aber scheinbar sind die nicht ausgefahren worden, sonst wäre genug Energie vorhanden. Weiterhin erfährst Du, dass die Solarpanele über  [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to Der Detailbericht sagt aus, dass einfach kaum noch Energie vorhanden ist. Nur die Notsysteme - wie die Cryo-Pods - laufen noch. Da es langsam kritisch wird, wurdest Du geweckt, um zu handeln.
+        ///Trotzdem ist Dir nicht klar, was eigentlich das Problem ist. Das Schiff verfügt über eine riesige Anzahl an Solarkollektoren, die die gesamte Fläche des Cargo-Bereichs bedecken können. Aber scheinbar sind die nicht ausgefahren worden, sonst wäre genug Energie vorhanden. Weiterhin erfährst Du, dass die Solarpanele über [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string COMPUTER_TERMINAL_DISPLAY_REPORT_2 {
             get {
@@ -880,7 +880,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Wartungsroboter wirkt wie ein überdimensionierter Saugroboter. Eine nicht ganz so flache Scheibe mit vielen aktuell verborgenen Werkzeugen..
+        ///   Looks up a localized string similar to Der Wartungsroboter wirkt wie ein überdimensionierter Saugroboter: eine nicht ganz so flache Scheibe mit vielen aktuell verborgenen Werkzeugen..
         /// </summary>
         internal static string DROID {
             get {
@@ -1116,7 +1116,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Um sie komplett zu inspizieren ziehst Du die Box unter der Bank hervor. Dabei bemerkst Du, dass sie nicht so leicht zu öffnen sein wird..
+        ///   Looks up a localized string similar to Um sie komplett zu inspizieren, ziehst Du die Box unter der Bank hervor. Dabei bemerkst Du, dass sie nicht so leicht zu öffnen sein wird..
         /// </summary>
         internal static string EQUIPMENT_BOX_FIRSTLOOK {
             get {
@@ -1125,7 +1125,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Das Schloss ist sehr massiv und wird normalerweise mit einem Schlüssel geöffnet. Sicherlich ist das die Kiste eines der Mechaniker und der Schlüssel wird in seiner Kabine sein. Da kommst Du aber aufgrund der Situation nicht dran. Mist!.
+        ///   Looks up a localized string similar to Das Schloss ist sehr massiv und wird normalerweise mit einem Schlüssel geöffnet. Sicherlich ist das die Kiste von einem der Mechaniker und der Schlüssel wird in seiner Kabine sein. Da kommst Du aber aufgrund der Situation nicht dran. Mist!.
         /// </summary>
         internal static string EQUIPMENT_BOX_LOCK {
             get {
@@ -1171,7 +1171,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die einfachen aber stabilen Sitzbänke geben mit ihrer Turnbankform dem Raum den schon beschriebenen Charakter einer Umkleidekabine. Sie nehmen ungefähr die Hälfte der Raumbreite ein, vielleicht so 2 Meter, sind etwas höher als die Metallbox und bieten eine nur recht schmale Sitzfläche. Das Gestell scheint aus Metall, wahrscheinlich Stahl zu sein und die Sitzfläche wird durch drei Holzpanele gebildet, die mit einem geringen Abstand nebeneinander verschraubt sind..
+        ///   Looks up a localized string similar to Die einfachen, aber stabilen Sitzbänke geben mit ihrer Turnbankform dem Raum den schon beschriebenen Charakter einer Umkleidekabine. Sie nehmen ungefähr die Hälfte der Raumbreite ein, vielleicht so 2 Meter, sind etwas höher als die Metallbox und bieten eine nur recht schmale Sitzfläche. Das Gestell scheint aus Metall, wahrscheinlich Stahl zu sein und die Sitzfläche wird durch drei Holzpanele gebildet, die mit einem geringen Abstand nebeneinander verschraubt sind..
         /// </summary>
         internal static string EQUIPMENT_ROOM_BENCH {
             get {
@@ -1306,7 +1306,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Es handelt sich um eine einfache metallische Aparatur die dazu dient, das Objekt zu öffnen, an dem sie montiert ist..
+        ///   Looks up a localized string similar to Es handelt sich um eine einfache metallische Aparatur, die dazu dient, das Objekt zu öffnen, an dem sie montiert ist..
         /// </summary>
         internal static string FRIDGE_DOOR_HANDLE {
             get {
@@ -1459,7 +1459,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Alle Gegenstände, die Du mit Dir führst erhalten durch die einsetzende künstliche Schwerkraft wieder ihr gefühltes Normalgewicht..
+        ///   Looks up a localized string similar to Alle Gegenstände, die Du mit Dir führst, erhalten durch die einsetzende künstliche Schwerkraft wieder ihr gefühltes Normalgewicht..
         /// </summary>
         internal static string GRAVITY_NORMAL {
             get {
@@ -1597,7 +1597,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Voller Demut und Ehrfurcht stehst Du auf dem breiten Steg und blickst in die schwarze Tiefe des Alls. Noch nie zuvor hast Du es gewagt, Dich dieser Herausforderung zu stellen. Wenn es die Situation nicht erfordern würde, hättest Du es auch jetzt noch nicht. Aber es nützt nichts. Du wirst Deine Angst überwinden müssen.
+        ///   Looks up a localized string similar to Voller Demut und Ehrfurcht stehst Du auf dem breiten Steg und blickst in die schwarze Tiefe des Alls. Noch nie zuvor hast Du es gewagt, Dich dieser Herausforderung zu stellen. Wenn es die Situation nicht erfordern würde, hättest Du es auch jetzt noch nicht. Aber es nützt nichts: Du wirst Deine Angst überwinden müssen.
         ///Der Steg ragt weit ins All hinaus und an seiner äußeren Kante steht man vollkommen im All, ohne die schützende Hülle des Schiffs. Du lässt Deinen Blick schweifen und kannst überall nur den fü [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string JETTY {
@@ -1671,7 +1671,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Für Alles, was an mechnischen Arbeiten oder Reparaturen ansteht gibt es diese kleine Werkstatt. An der östlichen Wand steht dafür eine breite Werkbank zur Verfügung. Die große Arbeitsplatte ist sehr aufgeräumt und es befinden sich keine Gegenstände auf ihr. Eine Schublade unterhalb der Platte bieten Platz, um den Bereich gut zu organisieren. Über der Werkbank ist ein Regal angebracht, an dem allerlei Werkzeug befestigt ist..
+        ///   Looks up a localized string similar to Für alles, was an mechnischen Arbeiten oder Reparaturen ansteht, gibt es diese kleine Werkstatt. An der östlichen Wand steht dafür eine breite Werkbank zur Verfügung. Die große Arbeitsplatte ist sehr aufgeräumt und es befinden sich keine Gegenstände auf ihr. Eine Schublade unterhalb der Platte bietet Platz, um den Bereich gut zu organisieren. Über der Werkbank ist ein Regal angebracht, an dem allerlei Werkzeug befestigt ist..
         /// </summary>
         internal static string MAINTENANCE_ROOM {
             get {
@@ -1824,7 +1824,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Als Du die Klappe öffnest, kannst Du im Inneren des Korpus mehrere angeschlossene Gasflaschen erblicken. Aber eine, nicht angeschlossene Flasche erregt Deine Aufmerksamkeit. Es handelt sich um eine Sauerstoffflasche, die scheinbar als Ersatz hier verstaut wurde..
+        ///   Looks up a localized string similar to Als Du die Klappe öffnest, kannst Du im Inneren des Korpus mehrere angeschlossene Gasflaschen erblicken. Aber eine nicht angeschlossene Flasche erregt Deine Aufmerksamkeit. Es handelt sich um eine Sauerstoffflasche, die scheinbar als Ersatz hier verstaut wurde..
         /// </summary>
         internal static string OXYGEN_BOTTLE_FOUND {
             get {
