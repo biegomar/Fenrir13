@@ -1360,7 +1360,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Du schließt die Tür, um etwas mehr Widerstand zu haben und ziehst noch einmal kräftig an dem Griff. Er löst sich nun komplett und Du hast in der Hand. Ein prüfender Blick offenbart Dir, dass er mit einen Vierkantstift in der Tür eingesteckt war..
+        ///   Looks up a localized string similar to Du schließt die Tür, um etwas mehr Widerstand zu haben und ziehst noch einmal kräftig an dem Griff. Er löst sich nun komplett und Du hast ihn in der Hand. Ein prüfender Blick offenbart Dir, dass er mit einen Vierkantstift in der Tür eingesteckt war..
         /// </summary>
         internal static string FRIDGE_DOOR_HANDLE_PULL {
             get {

@@ -517,7 +517,7 @@ Bei genauerer Betrachtung erkennst Du, dass dort eine viereckige Aussparung ist.
         <value>Er ist geschlossen.</value>
     </data>
     <data name="FRIDGE_DOOR_HANDLE_PULL" xml:space="preserve">
-        <value>Du schließt die Tür, um etwas mehr Widerstand zu haben und ziehst noch einmal kräftig an dem Griff. Er löst sich nun komplett und Du hast in der Hand. Ein prüfender Blick offenbart Dir, dass er mit einen Vierkantstift in der Tür eingesteckt war.</value>
+        <value>Du schließt die Tür, um etwas mehr Widerstand zu haben und ziehst noch einmal kräftig an dem Griff. Er löst sich nun komplett und Du hast ihn in der Hand. Ein prüfender Blick offenbart Dir, dass er mit einen Vierkantstift in der Tür eingesteckt war.</value>
     </data>
     <data name="FRIDGE_DOOR_HANDLE_CONTAINMENT" xml:space="preserve">
         <value>Der Griff der Kühlschranktür ist halb herausgezogen.</value>
