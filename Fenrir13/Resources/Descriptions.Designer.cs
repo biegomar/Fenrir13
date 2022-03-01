@@ -513,11 +513,11 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Wow! Geschaft! Der Roboter hat nun wieder Energie und kann mit dem System kommunizieren. Als er den Befehl bekommt löst er sich aus seinem Dock und fährt zur beschädigten Außenwand. 
+        ///   Looks up a localized string similar to Wow! Geschafft! Der Roboter hat nun wieder Energie und kann mit dem System kommunizieren. Als er den Befehl bekommt, löst er sich aus seinem Dock und fährt zur beschädigten Außenwand. 
         ///
-        ///Vollkommen erschöpft und erleichtert kehrst Du ins Innere des Schiffs zurück und kontrollierst auf der Brücke nochmals das Terminal. Alle Systeme laufen wieder und die Crew wird nun geweckt um alles weitere zu übernehmen. 
+        ///Vollkommen erschöpft und erleichtert kehrst Du ins Innere des Schiffs zurück und kontrollierst auf der Brücke nochmals das Terminal. Alle Systeme laufen wieder und die Crew wird nun geweckt, um alles Weitere zu übernehmen. 
         ///
-        ///Am Tag nach Deiner erfolgreichen Intervention sitzt Du mit der gesamten Crew zusammen im Aufenthalts [rest of string was truncated]&quot;;.
+        ///Am Tag nach Deiner erfolgreichen Intervention sitzt Du mit der gesamten Crew zusammen im Aufentha [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string CLOSING {
             get {
