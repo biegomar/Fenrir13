@@ -65,4 +65,15 @@ internal class ConsolePrintingSubsystem : BaseConsolePrintingSubsystem
 
         return true;
     }
+    
+    public override bool Help(IDictionary<string, IEnumerable<string>> verbResource)
+    {
+        GeneralHelp();
+        VerbGroupDirections(verbResource);
+        VerbInteractItems(verbResource);
+        VerbContainers(verbResource);
+        VerbMetaInfos(verbResource);
+        
+        return true;
+    }
 }
