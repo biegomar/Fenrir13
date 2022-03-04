@@ -1441,7 +1441,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Vielen Dank, dass Du &apos;Fenrir 13&apos; gespielt hast. Ich hoffe, es hat Spaß gemach! Über Feedback würde ich mich sehr freuen!.
+        ///   Looks up a localized string similar to Vielen Dank, dass Du &apos;Fenrir 13&apos; gespielt hast. Ich hoffe, es hat Spaß gemacht! Über Feedback würde ich mich sehr freuen!.
         /// </summary>
         internal static string GOODBYE {
             get {
