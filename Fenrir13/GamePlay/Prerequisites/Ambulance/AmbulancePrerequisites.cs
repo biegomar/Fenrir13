@@ -34,7 +34,8 @@ internal static class AmbulancePrerequisites
             Description = Descriptions.AMBULANCE_RESPIRATOR,
             IsPickAble = false,
             IsHidden = true,
-            IsUnveilAble = false
+            IsUnveilAble = false,
+            Grammar = new Grammars(Genders.Neutrum)
         };
         
         respirator.Items.Add(GetFlap(eventProvider));

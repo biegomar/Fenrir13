@@ -22,10 +22,10 @@
         <value>Cryopod|Cryo-Pod|Bett|Schlafplatz|Schlafkammer|Pod|Kokon</value>
     </data>
     <data name="CHAMBER_FLOOR" xml:space="preserve">
-        <value>Der Fußboden|Fußboden|Fussboden|Boden</value>
+        <value>Fußboden|Fussboden|Boden</value>
     </data>
     <data name="CARPET" xml:space="preserve">
-        <value>Der Teppich|Teppich|Läufer</value>
+        <value>Teppich|Läufer</value>
     </data>
     <data name="WORKBENCH" xml:space="preserve">
         <value>Arbeitsbereich|Arbeitsplatz|Schreibtisch|Arbeitsplatte</value>
@@ -34,7 +34,7 @@
         <value>LAPTOP|Rechner|Computer</value>
     </data>
     <data name="CHAMBER_WALL" xml:space="preserve">
-        <value>Die Wand|Wand|Zimmerwand|Wände|Zimmerwände|Raumwand|Raumwände</value>
+        <value>Wand|Zimmerwand|Wände|Zimmerwände|Raumwand|Raumwände</value>
     </data>
     <data name="PIERHOLE" xml:space="preserve">
         <value>Bullauge|Fenster|Weltraum|All|Weltall|Auge|Schiff|Raumschiff</value>
@@ -46,28 +46,28 @@
         <value>Metallrollen|Rollen|Stuhlrollen|Gummi|Gummirollen</value>
     </data>
     <data name="CLOSET" xml:space="preserve">
-        <value>Der Schrank|Schrank|Kleiderschrank</value>
+        <value>Schrank|Kleiderschrank</value>
     </data>
     <data name="DRAWER" xml:space="preserve">
         <value>Schublade|Schubladen|Schubfach|Schubfächer|Fächer</value>
     </data>
     <data name="CLOSET_DOOR" xml:space="preserve">
-        <value>Die Schranktür|Schranktür|Kleiderschranktür</value>
+        <value>Schranktür|Kleiderschranktür</value>
     </data>
     <data name="CHOCOLATEBAR" xml:space="preserve">
-        <value>Der Power-Riegel|Power-Riegel|Powerriegel|Schokoladen-Riegel|Schokoladenriegel|Schoko-Riegel|Schokoriegel|Riegel</value>
+        <value>Power-Riegel|Powerriegel|Schokoladen-Riegel|Schokoladenriegel|Schoko-Riegel|Schokoriegel|Riegel</value>
     </data>
     <data name="WARDROBE" xml:space="preserve">
-        <value>Die Garderobe|Garderobe</value>
+        <value>Garderobe</value>
     </data>
     <data name="SPACE_SUIT" xml:space="preserve">
-        <value>Der Bio-Suit|Bio-Suit| Bio Suit|Space-Overall|Space Overall|Space-Suit|Space Suit|Overall|Anzug|Suit</value>
+        <value>Bio-Suit| Bio Suit|Space-Overall|Space Overall|Space-Suit|Space Suit|Overall|Anzug|Suit</value>
     </data>
     <data name="TABLE" xml:space="preserve">
         <value>Tisch</value>
     </data>
     <data name="CHAIR" xml:space="preserve">
-        <value>Der Stuhl|Stuhl|Stühle</value>
+        <value>Stuhl|Stühle</value>
     </data>
     <data name="PARTITION_WALL" xml:space="preserve">
         <value>Trennwand|Sichtschutz</value>
@@ -106,22 +106,22 @@
         <value>Crew-Kammer-2|Crew-Kammer2|Kammer-2|Kammer2|Crew-Raum 2|Crew-Raum2|Raum-2|Raum2</value>
     </data>
     <data name="BULKHEAD" xml:space="preserve">
-        <value>Das Schott|Schott|Abriegelung</value>
+        <value>Schott|Abriegelung</value>
     </data>
     <data name="BULKHEAD_WINDOW" xml:space="preserve">
-        <value>Das Sichtfenster|Sichtfenster|Glas|Fenster</value>
+        <value>Sichtfenster|Glas|Fenster</value>
     </data>
     <data name="PILOT_SEAT" xml:space="preserve">
-        <value>Der Pilotensitz|Pilotensitz|Pilotsitz|Sitz|Pilotenstuhl|Stuhl</value>
+        <value>Pilotensitz|Pilotsitz|Sitz|Pilotenstuhl|Stuhl</value>
     </data>
     <data name="CORRIDOR_PAINTING" xml:space="preserve">
         <value>Bild|Bilder|Plakat|Poster</value>
     </data>
     <data name="PORTRAIT" xml:space="preserve">
-        <value>Ein Gemälde|Gemälde|Portrait|Porträt|Bild|Bilder</value>
+        <value>Gemälde|Portrait|Porträt|Bild|Bilder</value>
     </data>
     <data name="STICKY_NOTE" xml:space="preserve">
-        <value>Die Haftnotiz|Haftnotiz|Klebezettel|Notiz|Zettel</value>
+        <value>Haftnotiz|Klebezettel|Notiz|Zettel</value>
     </data>
     <data name="CONTROL_PANEL" xml:space="preserve">
         <value>Bedienkonsole|Konsole|Steuerpult|Pult|Platte|Glasplatte|Halbrund</value>
@@ -148,315 +148,315 @@
         <value>Einstellungen|Einstellung|persönliche Einstellungen|persönliche Einstellung</value>
     </data>
     <data name="CARDIO_STATION" xml:space="preserve">
-        <value>Die Cardiostation|Cardiostation|Cardiostationen|Cardio</value>
+        <value>Cardiostation|Cardiostationen|Cardio</value>
     </data>
     <data name="GYM_POWERSTATION" xml:space="preserve">
-        <value>Die Powerstation|Powerstation|Gewichte|Gewicht</value>
+        <value>Powerstation|Power|Gewichte|Gewicht</value>
     </data>
     <data name="DUMBBELL_BAR" xml:space="preserve">
-        <value>Die Hantelstange|Hantelstange|Stange|Hantel</value>
+        <value>Hantelstange|Stange|Hantel</value>
     </data>
     <data name="DUMBBELL_RACK" xml:space="preserve">
-        <value>Die Hantelablage|Hantelablage|Ablage|Rack</value>
+        <value>Hantelablage|Ablage|Rack</value>
     </data>
     <data name="EXERCISE_AREA" xml:space="preserve">
-        <value>Der Gymnastikbereich|Gymnastikbereich</value>
+        <value>Gymnastikbereich</value>
     </data>
     <data name="BIKE" xml:space="preserve">
-        <value>Das Fahrrad|Fahrrad|Rad</value>
+        <value>Fahrrad|Rad</value>
     </data>
     <data name="CROSSTRAINER" xml:space="preserve">
-        <value>Ein Cross-Trainer|Cross-Trainer|Crosstrainer</value>
+        <value>Cross-Trainer|Crosstrainer</value>
     </data>
     <data name="TREADMILL" xml:space="preserve">
-        <value>Das Laufband|Laufband</value>
+        <value>Laufband</value>
     </data>
     <data name="STEPPER" xml:space="preserve">
-        <value>Der Stepper|Stepper</value>
+        <value>Stepper</value>
     </data>
     <data name="FITNESSMACHINE" xml:space="preserve">
-        <value>Die Fitnessmaschinen|Fitnessmaschinen|Fitnessmaschine|Geräte|Plätze|Plätzen</value>
+        <value>Fitnessmaschinen|Fitnessmaschine|Geräte|Plätze|Plätzen</value>
     </data>
     <data name="WORKOUTS" xml:space="preserve">
         <value>Übungen|Übung|Ertüchtigung</value>
     </data>
     <data name="EQUIPMENT_BOX" xml:space="preserve">
-        <value>Die Metallkiste|Metallkiste|Ausrüstungsbox|Ausrüstungsbox|Box|Kiste</value>
+        <value>Metallkiste|Ausrüstungsbox|Ausrüstungsbox|Box|Kiste</value>
     </data>
     <data name="HELMET" xml:space="preserve">
-        <value>Der Weltraumhelm|Weltraumhelm|Helm</value>
+        <value>Weltraumhelm|Helm</value>
     </data>
     <data name="GLOVES" xml:space="preserve">
-        <value>Die Handschuhe|Handschuhe|Handschuh</value>
+        <value>Handschuhe|Handschuh</value>
     </data>
     <data name="BOOTS" xml:space="preserve">
-        <value>Die Stiefel|Stiefel|Moonboots|Boots|Schuhe</value>
+        <value>Stiefel|Moonboots|Boots|Schuhe</value>
     </data>
     <data name="EQUIPMENT_BOX_LOCK" xml:space="preserve">
-        <value>Das Vorhängeschloss|Vorhängeschloss|Schloss|Schloß</value>
+        <value>Vorhängeschloss|Schloss|Schloß</value>
     </data>
     <data name="AIRLOCK_KEYPAD" xml:space="preserve">
-        <value>Das Tastenfeld|Tastenfeld|Tastatur</value>
+        <value>Tastenfeld|Tastatur</value>
     </data>
     <data name="AIRLOCK_KEYPAD_RED_BUTTON" xml:space="preserve">
-        <value>Der rote Knopf|Roter Knopf|Roten Knopf|Rote Taste|OPEN</value>
+        <value>Rote Knopf|Roter Knopf|Roten Knopf|Rote Taste|OPEN</value>
     </data>
     <data name="AIRLOCK_KEYPAD_GREEN_BUTTON" xml:space="preserve">
-        <value>Der grüne Knopf|Grüner Knopf|Grünen Knopf|Grüne Taste|CLOSE</value>
+        <value>Grüne Knopf|Grüner Knopf|Grünen Knopf|Grüne Taste|CLOSE</value>
     </data>
     <data name="EQUIPMENT_ROOM_BENCH" xml:space="preserve">
-        <value>Die Sitzbänke|Sitzbänke|Sitzbank|Bänke|Bank|Ausstattung</value>
+        <value>Sitzbänke|Sitzbank|Bänke|Bank|Ausstattung</value>
     </data>
     <data name="EQUIPMENT_ROOM_NICHE" xml:space="preserve">
-        <value>Die Nische|Nische|Wandnische|Nischen|Wandnischen</value>
+        <value>Nische|Wandnische|Nischen|Wandnischen</value>
     </data>
     <data name="EQUIPMENT_ROOM_TRASHBIN" xml:space="preserve">
-        <value>Der Mülleimer|Mülleimer|Papiereimer|Papierkorb|Müllkorb|Abfalleimer|Abfallkorb|Korb|Eimer</value>
+        <value>Mülleimer|Papiereimer|Papierkorb|Müllkorb|Abfalleimer|Abfallkorb|Korb|Eimer</value>
     </data>
     <data name="EQUIPMENT_ROOM_CLOTH" xml:space="preserve">
-        <value>Die Kleidungsstücke|Kleidungsstücke|Kleidung</value>
+        <value>Kleidungsstücke|Kleidung</value>
     </data>
     <data name="BELT" xml:space="preserve">
-        <value>Der Sicherungsgurt|Sicherungsgurt|Gurt|Geschirr|Sicherungsgeschirr</value>
+        <value>Sicherungsgurt|Gurt|Geschirr|Sicherungsgeschirr</value>
     </data>
     <data name="EYELET" xml:space="preserve">
-        <value>Die Öse|Öse</value>
+        <value>Öse</value>
     </data>
     <data name="KITCHEN_CLOSETS" xml:space="preserve">
         <value>Schrank|Schränke</value>
     </data>
     <data name="WRITING_MATERIALS" xml:space="preserve">
-        <value>Die Schreibutensilien|Schreibutensilien|Utensilien|Schreibmaterial|Schreibmaterialien|Ablagefächer|Ablagefach</value>
+        <value>Schreibutensilien|Utensilien|Schreibmaterial|Schreibmaterialien|Ablagefächer|Ablagefach</value>
     </data>
     <data name="AMBULANCE_OP_TABLE" xml:space="preserve">
-        <value>Der OP-Tisch|OP-Tisch|OP Tisch|Tisch|Liegefläche|Tischplatte</value>
+        <value>OP-Tisch|OP Tisch|Tisch|Liegefläche|Tischplatte</value>
     </data>
     <data name="AMBULANCE_OP_ROBOTER" xml:space="preserve">
-        <value>Der OP-Roboter|OP-Roboter| OP Roboter|Roboter|Arm|Arme|vier Arme</value>
+        <value>OP-Roboter| OP Roboter|Roboter|Arm|Arme|vier Arme</value>
     </data>
     <data name="CEILING" xml:space="preserve">
-        <value>Die Zimmerdecke|Zimmerdecke|Decke</value>
+        <value>Zimmerdecke|Decke</value>
     </data>
     <data name="AMBULANCE_BED" xml:space="preserve">
-        <value>Das Krankenbett|Krankenbett|Krankenhausbett|Bett|Pflegebett</value>
+        <value>Krankenbett|Krankenhausbett|Bett|Pflegebett</value>
     </data>
     <data name="AMBULANCE_OP_ITEMS" xml:space="preserve">
-        <value>Die OP-Schränke|OP-Schränke| OP Schränke|OP-Schrank|OP Schrank|Das Verbandszeug|Verbandszeug|Verbandszeuge|Die Instrumente|Instrumente|Instrument|OP-Besteck</value>
+        <value>OP-Schränke| OP Schränke|OP-Schrank|OP Schrank|Das Verbandszeug|Verbandszeug|Verbandszeuge|Die Instrumente|Instrumente|Instrument|OP-Besteck</value>
     </data>
     <data name="AMBULANCE_MEDIS" xml:space="preserve">
-        <value>Der Medizinschrank|Medizinschrank|Medischrank|Medikamente|Medikament|Medis|Schrank</value>
+        <value>Medizinschrank|Medischrank|Medikamente|Medikament|Medis|Schrank</value>
     </data>
     <data name="AMBULANCE_RESPIRATOR" xml:space="preserve">
-        <value>Das Beatmungsgerät|Beatmungsgerät|Beatmungsmaschine|Beatmung|Beatmungsapparat|Gerät|Oxygen</value>
+        <value>Beatmungsgerät|Beatmungsmaschine|Beatmung|Beatmungsapparat|Gerät|Oxygen</value>
     </data>
     <data name="AMBULANCE_RESPIRATOR_FLAP" xml:space="preserve">
-        <value>Die Verschlussklappe|Verschlussklappe|Verschlusskappe|Klappe|Kappe</value>
+        <value>Verschlussklappe|Verschlusskappe|Klappe|Kappe</value>
     </data>
     <data name="FRIDGE" xml:space="preserve">
-        <value>Der Kühlschrank|Kühlschrank</value>
+        <value>Kühlschrank</value>
     </data>
     <data name="FOOD_PRINTER" xml:space="preserve">
-        <value>Der Food-Printer|Food-Printer|FoodPrinter|Foot Printer|Printer|Drucker</value>
+        <value>Food-Printer|FoodPrinter|Foot Printer|Printer|Drucker</value>
     </data>
     <data name="FRIDGE_DOOR_HANDLE" xml:space="preserve">
-        <value>Der Türgriff|Türgriff|Griff</value>
+        <value>Türgriff|Griff</value>
     </data>
     <data name="RECYCLER" xml:space="preserve">
-        <value>Der Reststoffverwerter|Reststoffverwerter|Verwerter|Recycler</value>
+        <value>Reststoffverwerter|Verwerter|Recycler</value>
     </data>
     <data name="EQUIPMENT_BOX_LOCK_DESTROYED" xml:space="preserve">
-        <value>Das Vorhängeschloss|Vorhängeschloss|Schloss|Schloß</value>
+        <value>Vorhängeschloss|Schloss|Schloß</value>
     </data>
     <data name="OXYGEN_BOTTLE" xml:space="preserve">
-        <value>Die Sauerstoffflasche|Sauerstoffflasche|Sauerstoff-Flasche|Sauerstoff|Flasche|Gas</value>
+        <value>Sauerstoffflasche|Sauerstoff-Flasche|Sauerstoff|Flasche|Gas</value>
     </data>
     <data name="AMBULANCE_OP_ITEMS_DETAIL" xml:space="preserve">
-        <value>Das Skalpell|Skalpell|Skalpelle|Der Tupfer|Tupfer|Die Mullbinde|Mullbinde|Mullbinden|Der Adapter|Adapter</value>
+        <value>Skalpell|Skalpelle|Der Tupfer|Tupfer|Die Mullbinde|Mullbinde|Mullbinden|Der Adapter|Adapter</value>
     </data>
     <data name="CRYOCHAMBER_BULKHEAD" xml:space="preserve">
-        <value>Das Sichtfenster|Sichtfenster|Glas</value>
+        <value>Sichtfenster|Glas</value>
     </data>
     <data name="AIRLOCK_ROPE" xml:space="preserve">
-        <value>Das Graphen-Seil|Graphen-Seil|Seil</value>
+        <value>Graphen-Seil|Seil</value>
     </data>
     <data name="AIRLOCK_CABLE_WINCH" xml:space="preserve">
-        <value>Die Seilwinde|Seilwinde|Seil|Winde</value>
+        <value>Seilwinde|Seil|Winde</value>
     </data>
     <data name="AIRLOCK_NORTHERN_WALL" xml:space="preserve">
-        <value>Die nördliche Wand|Nördliche Wand</value>
+        <value>Nördliche Wand</value>
     </data>
     <data name="AIRLOCK_SOUTHERN_WALL" xml:space="preserve">
-        <value>Die südliche Wand|Südliche Wand</value>
+        <value>Südliche Wand</value>
     </data>
     <data name="SOCIALROOM_COUCH" xml:space="preserve">
-        <value>Die Couch|Couch|Sofa</value>
+        <value>Couch|Sofa</value>
     </data>
     <data name="SOCIALROOM_MONITOR" xml:space="preserve">
-        <value>Der Bildschirm|Bildschirm|Fernseher</value>
+        <value>Bildschirm|Fernseher</value>
     </data>
     <data name="SOCIALROOM_SEAT" xml:space="preserve">
-        <value>Der Sessel|Sessel|Sitz</value>
+        <value>Sessel|Sitz</value>
     </data>
     <data name="SOCIALROOM_EAST_WALL" xml:space="preserve">
-        <value>Die östliche Wand|Östliche Wand</value>
+        <value>Östliche Wand</value>
     </data>
     <data name="SOCIALROOM_WEST_WALL" xml:space="preserve">
-        <value>Die westliche Wand|Westliche Wand</value>
+        <value>Westliche Wand</value>
     </data>
     <data name="SOCIALROOM_CEILING" xml:space="preserve">
-        <value>Die Decke|Decke|Zimmer Decke</value>
+        <value>Decke|Zimmer Decke</value>
     </data>
     <data name="SOCIALROOM_ANTENNA_CONSTRUCTION" xml:space="preserve">
-        <value>Der Receiver|Receiver|Antennenkonstruktion|Konstruktion|</value>
+        <value>Receiver|Antennenkonstruktion|Konstruktion|</value>
     </data>
     <data name="SOCIALROOM_ANTENNA" xml:space="preserve">
-        <value>Die Antenne|Antenne</value>
+        <value>Antenne</value>
     </data>
     <data name="SOCIALROOM_BOOKS" xml:space="preserve">
-        <value>Die Bücher|Bücher|Buch|Bücherregal|Regal</value>
+        <value>Bücher|Buch|Bücherregal|Regal</value>
     </data>
     <data name="SOCIALROOM_SEATGROUP" xml:space="preserve">
-        <value>Die Sitzgruppe|Sitzgruppe</value>
+        <value>Sitzgruppe</value>
     </data>
     <data name="SOCIALROOM_WALL" xml:space="preserve">
-        <value>Die Wand|Wand</value>
+        <value>Wand</value>
     </data>
     <data name="SOCIALROOM_SOUTH_WALL" xml:space="preserve">
-        <value>Die südliche Wand|südliche Wand</value>
+        <value>Südliche Wand</value>
     </data>
     <data name="SOCIALROOM_NORTH_WALL" xml:space="preserve">
-        <value>Die nördliche Wand|Nördliche Wand</value>
+        <value>Nördliche Wand</value>
     </data>
     <data name="SOCIALROOM_BILLARD" xml:space="preserve">
-        <value>Der Billardtisch|Billardtisch</value>
+        <value>Billardtisch</value>
     </data>
     <data name="SOCIALROOM_DARTS" xml:space="preserve">
-        <value>Die Dartscheibe|Dartscheibe|Darts|Dart|Pfeile|Pfeil</value>
+        <value>Dartscheibe|Darts|Dart|Pfeile|Pfeil</value>
     </data>
     <data name="SOCIALROOM_BILLARD_THINGS" xml:space="preserve">
-        <value>Die Wandhalterung|Wandhalterung</value>
+        <value>Wandhalterung</value>
     </data>
     <data name="SOCIALROOM_BILLARD_CUE" xml:space="preserve">
-        <value>Der Cue|Cue|Queue|Cues</value>
+        <value>Cue|Queue|Cues</value>
     </data>
     <data name="SOCIALROOM_BILLARD_CHALK" xml:space="preserve">
-        <value>Die Kreide|Kreide</value>
+        <value>Kreide</value>
     </data>
     <data name="SOCIALROOM_BILLARD_BRUSH" xml:space="preserve">
-        <value>Die Bürste|Bürste</value>
+        <value>Bürste</value>
     </data>
     <data name="SOCIALROOM_BILLARD_TRIANGLE" xml:space="preserve">
-        <value>Das Dreieck|Dreieck</value>
+        <value>Dreieck</value>
     </data>
     <data name="SOCIALROOM_BILLARD_BALLS" xml:space="preserve">
-        <value>Die Kugeln|Kugeln|Kugel</value>
+        <value>Kugeln|Kugel</value>
     </data>
     <data name="SOCIALROOM_GLASS_TABLE" xml:space="preserve">
-        <value>Der Glastisch|Glastisch|Tisch</value>
+        <value>Glastisch|Tisch</value>
     </data>
     <data name="ENGINE_ROOM_SHIP_MODEL" xml:space="preserve">
-        <value>Das Hologramm|Hologramm|Hologram|Modell</value>
+        <value>Hologramm|Hologram|Modell</value>
     </data>
     <data name="ENGINE_ROOM_RED_DOTS" xml:space="preserve">
         <value>Rote Punkte|Roter Punkt|Punkte|Punkt</value>
     </data>
     <data name="ENGINE_ROOM_ART" xml:space="preserve">
-        <value>Die Kunst|Kunst|Halbkreis|Licht|Korona</value>
+        <value>Kunst|Halbkreis|Licht|Korona</value>
     </data>
     <data name="ENGINE_ROOM_TECHNIC" xml:space="preserve">
-        <value>Die Technik|Technik</value>
+        <value>Technik</value>
     </data>
     <data name="ENGINE_ROOM_STEALING" xml:space="preserve">
-        <value>Die Stehlen|Stehlen|Stehle|Säulen|Säule</value>
+        <value>Stehlen|Stehle|Säulen|Säule</value>
     </data>
     <data name="ENGINE_ROOM_HEAD" xml:space="preserve">
-        <value>Das Kopfende|Kopfende|Platte|Kopfplatte|Kante</value>
+        <value>Kopfende|Platte|Kopfplatte|Kante</value>
     </data>
     <data name="ENGINE_ROOM_TANGENT" xml:space="preserve">
-        <value>Die Tangente|Tangente</value>
+        <value>Tangente</value>
     </data>
     <data name="ENGINE_ROOM_COMPUTER" xml:space="preserve">
-        <value>Der Quantencluster|Quantencluster|Quantencomputer|Computer|Recheneinheit</value>
+        <value>Quantencluster|Quantencomputer|Computer|Recheneinheit</value>
     </data>
     <data name="MAINTENANCE_ROOM_DRAWER" xml:space="preserve">
-        <value>Die Schublade|Schublade|Schubladen|Schubfach|Schubfächer|Fächer</value>
+        <value>Schublade|Schubladen|Schubfach|Schubfächer|Fächer</value>
     </data>
     <data name="MAINTENANCE_ROOM_TOOL" xml:space="preserve">
-        <value>Das Multifunktionswerkzeug|Multifunktionswerkzeug|Werkzeug|Gerät</value>
+        <value>Multifunktionswerkzeug|Werkzeug|Gerät</value>
     </data>
     <data name="MAINTENANCE_ROOM_WORKBENCH" xml:space="preserve">
-        <value>Die Werkbank|Werkbank</value>
+        <value>Werkbank</value>
     </data>
     <data name="DROID" xml:space="preserve">
-        <value>Der Service-Roboter|Service-Roboter|Serviceroboter|Wartungsroboter|Roboter|Droid</value>
+        <value>Service-Roboter|Serviceroboter|Wartungsroboter|Roboter|Droid</value>
     </data>
     <data name="PANEL_TOP_LEVER" xml:space="preserve">
-        <value>Der Handgriff|Handgriff|Hebel|Griff</value>
+        <value>Handgriff|Hebel|Griff</value>
     </data>
     <data name="CRYOCHAMBER_LAMP" xml:space="preserve">
-        <value>Die Schreibtischlampe|Schreibtischlampe|Lampe|Glühbirne|Fassung|Teleskopstange|Teleskopstangen|Halterung|Beleuchtung</value>
+        <value>Schreibtischlampe|Lampe|Glühbirne|Fassung|Teleskopstange|Teleskopstangen|Halterung|Beleuchtung</value>
     </data>
     <data name="CRYOCHAMBER_CLOTHS" xml:space="preserve">
-        <value>Die Klamotten|Klamotten|Kleidung|Strickjacke|Kleidungsstücke|Kleidungsstück</value>
+        <value>Klamotten|Kleidung|Strickjacke|Kleidungsstücke|Kleidungsstück</value>
     </data>
     <data name="PROXIMA_CENTAURI" xml:space="preserve">
         <value>Proxima Centauri|Roter Zwerg</value>
     </data>
     <data name="CORRIDOR_WALLS" xml:space="preserve">
-        <value>Die Wände|Wände|Wand</value>
+        <value>Wände|Wand</value>
     </data>
     <data name="PAPER" xml:space="preserve">
-        <value>Das Papier|Papier|Papierblätter|Blätter|Blatt|Papiere</value>
+        <value>Papier|Papierblätter|Blätter|Blatt|Papiere</value>
     </data>
     <data name="TEXTMARKER" xml:space="preserve">
-        <value>Die Textmarker|Textmarker</value>
+        <value>Textmarker</value>
     </data>
     <data name="PENCILS" xml:space="preserve">
-        <value>Die Stifte|Stifte|Stift</value>
+        <value>Stifte|Stift</value>
     </data>
     <data name="PENCIL_I" xml:space="preserve">
-        <value>Ein Kugelschreiber|Kugelschreiber|Kuli</value>
+        <value>Kugelschreiber|Kuli</value>
     </data>
     <data name="PENCIL_II" xml:space="preserve">
-        <value>Der Bleistift|Bleistift</value>
+        <value>Bleistift</value>
     </data>
     <data name="TEXTMARKER_BLUE" xml:space="preserve">
-        <value>Der blaue Textmarker|blauer Textmarker</value>
+        <value>blaue Textmarker|blauer Textmarker</value>
     </data>
     <data name="TEXTMARKER_GREEN" xml:space="preserve">
-        <value>Der grüne Textmarker|Grüner Textmarker</value>
+        <value>grüne Textmarker|Grüner Textmarker</value>
     </data>
     <data name="TEXTMARKER_YELLOW" xml:space="preserve">
-        <value>Der gelbe Textmarker|Gelber Textmarker</value>
+        <value>gelbe Textmarker|Gelber Textmarker</value>
     </data>
     <data name="TEXTMARKER_RED" xml:space="preserve">
-        <value>Der rote Textmarker|Roter Textmarker</value>
+        <value>rote Textmarker|Roter Textmarker</value>
     </data>
     <data name="WEIGHT_PLATES" xml:space="preserve">
-        <value>Die Hantelscheiben|Hantelscheiben|Hantelscheibe|Hantel</value>
+        <value>Hantelscheiben|Hantelscheibe|Hantel</value>
     </data>
     <data name="GYM_ROPES" xml:space="preserve">
-        <value>Das Fitness-Tau|Fitness-Tau|Seile|Seil|Fitnesstau|Tau</value>
+        <value>Fitness-Tau|Seile|Seil|Fitnesstau|Tau</value>
     </data>
     <data name="GYM_BRACKET" xml:space="preserve">
-        <value>Die Halterung|Halterung|Haken|Wandhaken</value>
+        <value>Halterung|Haken|Wandhaken</value>
     </data>
     <data name="GYM_SANDBAG" xml:space="preserve">
-        <value>Die Sandsäcke|Sandsäcke|Sandsack|Sack|Power Bag</value>
+        <value>Sandsäcke|Sandsack|Sack|Power Bag</value>
     </data>
     <data name="GYM_LOOP" xml:space="preserve">
-        <value>Die Schlaufen|Schlaufen|Schlaufe|Griff|Griffe</value>
+        <value>Schlaufen|Schlaufe|Griff|Griffe</value>
     </data>
     <data name="FELT" xml:space="preserve">
-        <value>Der Filzstoff|Filzstoff|Filz</value>
+        <value>Filzstoff|Filz</value>
     </data>
     <data name="HOLE" xml:space="preserve">
-        <value>Das Loch|Loch</value>
+        <value>Loch</value>
     </data>
     <data name="SIDEWALL" xml:space="preserve">
-        <value>Die Boardwand|Boardwand</value>
+        <value>Boardwand</value>
     </data>
     <data name="CREWCHAMBERS" xml:space="preserve">
-        <value>Die Crewkammern|Crewkammern|Crewkammer|Kammer|Kabinen|Kabine</value>
+        <value>Crewkammern|Crewkammer|Kammer|Kabinen|Kabine</value>
     </data>
 </root>

@@ -12,7 +12,8 @@ internal static class RoofTopPrerequisites
         {
             Key = Keys.ROOF_TOP,
             Name = Locations.ROOF_TOP,
-            Description = Descriptions.ROOF_TOP
+            Description = Descriptions.ROOF_TOP,
+            Grammar = new Grammars(Genders.Neutrum)
         };
         
         room.Items.Add(GetDroid(eventProvider));
@@ -28,7 +29,8 @@ internal static class RoofTopPrerequisites
             Name = Items.DROID,
             Description = Descriptions.DROID,
             FirstLookDescription = Descriptions.DROID_FIRSTLOOK,
-            IsPickAble = false
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Male)
         };
         
         AddUseEvents(droid, eventProvider);

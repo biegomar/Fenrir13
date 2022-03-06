@@ -13,7 +13,8 @@ internal static class ComputerTerminalPrerequisites
             Key = Keys.COMPUTER_TERMINAL,
             Name = Locations.COMPUTER_TERMINAL,
             Description = Descriptions.COMPUTER_TERMINAL,
-            FirstLookDescription = Descriptions.COMPUTER_TERMINAL_FIRSTLOOK
+            FirstLookDescription = Descriptions.COMPUTER_TERMINAL_FIRSTLOOK,
+            Grammar = new Grammars(Genders.Neutrum)
         };
         
         AddWriteEvents(terminal, eventProvider);

@@ -12,7 +12,8 @@ public class SocialRoomPrerequisites
         {
             Key = Keys.SOCIALROOM,
             Name = Locations.SOCIALROOM,
-            Description = Descriptions.SOCIALROOM
+            Description = Descriptions.SOCIALROOM,
+            Grammar = new Grammars(Genders.Male)
         };
 
         socialRoom.Items.Add(GetCouch(eventProvider));

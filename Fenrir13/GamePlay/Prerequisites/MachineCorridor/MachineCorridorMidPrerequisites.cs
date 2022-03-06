@@ -15,7 +15,8 @@ internal static class MachineCorridorMidPrerequisites
             Name = Locations.MACHINE_CORRIDOR_MID,
             Description = Descriptions.MACHINE_CORRIDOR_MID,
             IsLocked = true,
-            LockDescription = Descriptions.MACHINE_CORRIDOR_MID_LOCKDESCRIPTION
+            LockDescription = Descriptions.MACHINE_CORRIDOR_MID_LOCKDESCRIPTION,
+            Grammar = new Grammars(Genders.Male)
         };
         
         AddSurroundings(corridor);

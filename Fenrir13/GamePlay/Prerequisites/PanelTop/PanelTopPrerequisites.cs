@@ -27,7 +27,8 @@ internal static class PanelTopPrerequisites
             Name = Items.PANEL_TOP_LEVER,
             Description = Descriptions.PANEL_TOP_LEVER,
             ContainmentDescription = Descriptions.PANEL_TOP_LEVER_CONTAINMENT,
-            IsPickAble = false
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Male)
         };
 
         AddPullEvents(lever, eventProvider);

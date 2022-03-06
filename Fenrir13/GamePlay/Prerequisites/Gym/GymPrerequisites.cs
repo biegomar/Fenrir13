@@ -12,7 +12,8 @@ internal static class GymPrerequisites
         {
             Key = Keys.GYM,
             Name = Locations.GYM,
-            Description = Descriptions.GYM
+            Description = Descriptions.GYM,
+            Grammar = new Grammars(Genders.Male)
         };
 
         gym.Items.Add(GetDumbbellRack(eventProvider));

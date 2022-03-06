@@ -45,7 +45,8 @@ internal static class KitchenPrerequisites
             LockDescription = Descriptions.FRIDGE_LOCKED,
             IsClosed = true,
             IsCloseAble = true,
-            IsPickAble = false
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Male)
         };
         
         fridge.Items.Add(GetHandle(eventProvider));
@@ -72,7 +73,8 @@ internal static class KitchenPrerequisites
             IsUnveilAble = false,
             IsHidden = true,
             IsPickAble = false,
-            Weight = ItemWeights.FRIDGE_DOOR_HANDLE
+            Weight = ItemWeights.FRIDGE_DOOR_HANDLE,
+            Grammar = new Grammars(Genders.Male)
         };
 
         AddPullEvents(handle, eventProvider);
@@ -105,7 +107,8 @@ internal static class KitchenPrerequisites
             OpenDescription = Descriptions.FOOD_PRINTER_OPEN,
             IsClosed = true,
             IsCloseAble = true,
-            IsPickAble = false
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Male)
         };
         
         return oven;
@@ -119,7 +122,8 @@ internal static class KitchenPrerequisites
             Name = Items.RECYCLER,
             Description = Descriptions.RECYCLER,
             FirstLookDescription = Descriptions.RECYCLER_FIRSTLOOK,
-            IsPickAble = false
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Male)
         };
         
         return recycler;

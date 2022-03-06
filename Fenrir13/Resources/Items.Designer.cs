@@ -61,7 +61,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Seilwinde|Seilwinde|Seil|Winde.
+        ///   Looks up a localized string similar to Seilwinde|Seil|Winde.
         /// </summary>
         internal static string AIRLOCK_CABLE_WINCH {
             get {
@@ -70,7 +70,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Das Tastenfeld|Tastenfeld|Tastatur.
+        ///   Looks up a localized string similar to Tastenfeld|Tastatur.
         /// </summary>
         internal static string AIRLOCK_KEYPAD {
             get {
@@ -79,7 +79,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der grüne Knopf|Grüner Knopf|Grünen Knopf|Grüne Taste|CLOSE.
+        ///   Looks up a localized string similar to Grüne Knopf|Grüner Knopf|Grünen Knopf|Grüne Taste|CLOSE.
         /// </summary>
         internal static string AIRLOCK_KEYPAD_GREEN_BUTTON {
             get {
@@ -88,7 +88,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der rote Knopf|Roter Knopf|Roten Knopf|Rote Taste|OPEN.
+        ///   Looks up a localized string similar to Rote Knopf|Roter Knopf|Roten Knopf|Rote Taste|OPEN.
         /// </summary>
         internal static string AIRLOCK_KEYPAD_RED_BUTTON {
             get {
@@ -97,7 +97,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die nördliche Wand|Nördliche Wand.
+        ///   Looks up a localized string similar to Nördliche Wand.
         /// </summary>
         internal static string AIRLOCK_NORTHERN_WALL {
             get {
@@ -106,7 +106,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Das Graphen-Seil|Graphen-Seil|Seil.
+        ///   Looks up a localized string similar to Graphen-Seil|Seil.
         /// </summary>
         internal static string AIRLOCK_ROPE {
             get {
@@ -115,7 +115,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die südliche Wand|Südliche Wand.
+        ///   Looks up a localized string similar to Südliche Wand.
         /// </summary>
         internal static string AIRLOCK_SOUTHERN_WALL {
             get {
@@ -124,7 +124,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Das Krankenbett|Krankenbett|Krankenhausbett|Bett|Pflegebett.
+        ///   Looks up a localized string similar to Krankenbett|Krankenhausbett|Bett|Pflegebett.
         /// </summary>
         internal static string AMBULANCE_BED {
             get {
@@ -133,7 +133,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Medizinschrank|Medizinschrank|Medischrank|Medikamente|Medikament|Medis|Schrank.
+        ///   Looks up a localized string similar to Medizinschrank|Medischrank|Medikamente|Medikament|Medis|Schrank.
         /// </summary>
         internal static string AMBULANCE_MEDIS {
             get {
@@ -142,7 +142,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die OP-Schränke|OP-Schränke| OP Schränke|OP-Schrank|OP Schrank|Das Verbandszeug|Verbandszeug|Verbandszeuge|Die Instrumente|Instrumente|Instrument|OP-Besteck.
+        ///   Looks up a localized string similar to OP-Schränke| OP Schränke|OP-Schrank|OP Schrank|Das Verbandszeug|Verbandszeug|Verbandszeuge|Die Instrumente|Instrumente|Instrument|OP-Besteck.
         /// </summary>
         internal static string AMBULANCE_OP_ITEMS {
             get {
@@ -151,7 +151,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Das Skalpell|Skalpell|Skalpelle|Der Tupfer|Tupfer|Die Mullbinde|Mullbinde|Mullbinden|Der Adapter|Adapter.
+        ///   Looks up a localized string similar to Skalpell|Skalpelle|Der Tupfer|Tupfer|Die Mullbinde|Mullbinde|Mullbinden|Der Adapter|Adapter.
         /// </summary>
         internal static string AMBULANCE_OP_ITEMS_DETAIL {
             get {
@@ -160,7 +160,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der OP-Roboter|OP-Roboter| OP Roboter|Roboter|Arm|Arme|vier Arme.
+        ///   Looks up a localized string similar to OP-Roboter| OP Roboter|Roboter|Arm|Arme|vier Arme.
         /// </summary>
         internal static string AMBULANCE_OP_ROBOTER {
             get {
@@ -169,7 +169,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der OP-Tisch|OP-Tisch|OP Tisch|Tisch|Liegefläche|Tischplatte.
+        ///   Looks up a localized string similar to OP-Tisch|OP Tisch|Tisch|Liegefläche|Tischplatte.
         /// </summary>
         internal static string AMBULANCE_OP_TABLE {
             get {
@@ -178,7 +178,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Das Beatmungsgerät|Beatmungsgerät|Beatmungsmaschine|Beatmung|Beatmungsapparat|Gerät|Oxygen.
+        ///   Looks up a localized string similar to Beatmungsgerät|Beatmungsmaschine|Beatmung|Beatmungsapparat|Gerät|Oxygen.
         /// </summary>
         internal static string AMBULANCE_RESPIRATOR {
             get {
@@ -187,7 +187,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Verschlussklappe|Verschlussklappe|Verschlusskappe|Klappe|Kappe.
+        ///   Looks up a localized string similar to Verschlussklappe|Verschlusskappe|Klappe|Kappe.
         /// </summary>
         internal static string AMBULANCE_RESPIRATOR_FLAP {
             get {
@@ -196,7 +196,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Sicherungsgurt|Sicherungsgurt|Gurt|Geschirr|Sicherungsgeschirr.
+        ///   Looks up a localized string similar to Sicherungsgurt|Gurt|Geschirr|Sicherungsgeschirr.
         /// </summary>
         internal static string BELT {
             get {
@@ -205,7 +205,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Das Fahrrad|Fahrrad|Rad.
+        ///   Looks up a localized string similar to Fahrrad|Rad.
         /// </summary>
         internal static string BIKE {
             get {
@@ -214,7 +214,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Stiefel|Stiefel|Moonboots|Boots|Schuhe.
+        ///   Looks up a localized string similar to Stiefel|Moonboots|Boots|Schuhe.
         /// </summary>
         internal static string BOOTS {
             get {
@@ -223,7 +223,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Das Schott|Schott|Abriegelung.
+        ///   Looks up a localized string similar to Schott|Abriegelung.
         /// </summary>
         internal static string BULKHEAD {
             get {
@@ -232,7 +232,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Das Sichtfenster|Sichtfenster|Glas|Fenster.
+        ///   Looks up a localized string similar to Sichtfenster|Glas|Fenster.
         /// </summary>
         internal static string BULKHEAD_WINDOW {
             get {
@@ -241,7 +241,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Cardiostation|Cardiostation|Cardiostationen|Cardio.
+        ///   Looks up a localized string similar to Cardiostation|Cardiostationen|Cardio.
         /// </summary>
         internal static string CARDIO_STATION {
             get {
@@ -250,7 +250,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Teppich|Teppich|Läufer.
+        ///   Looks up a localized string similar to Teppich|Läufer.
         /// </summary>
         internal static string CARPET {
             get {
@@ -259,7 +259,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Zimmerdecke|Zimmerdecke|Decke.
+        ///   Looks up a localized string similar to Zimmerdecke|Decke.
         /// </summary>
         internal static string CEILING {
             get {
@@ -268,7 +268,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Stuhl|Stuhl|Stühle.
+        ///   Looks up a localized string similar to Stuhl|Stühle.
         /// </summary>
         internal static string CHAIR {
             get {
@@ -277,7 +277,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Fußboden|Fußboden|Fussboden|Boden.
+        ///   Looks up a localized string similar to Fußboden|Fussboden|Boden.
         /// </summary>
         internal static string CHAMBER_FLOOR {
             get {
@@ -286,7 +286,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Wand|Wand|Zimmerwand|Wände|Zimmerwände|Raumwand|Raumwände.
+        ///   Looks up a localized string similar to Wand|Zimmerwand|Wände|Zimmerwände|Raumwand|Raumwände.
         /// </summary>
         internal static string CHAMBER_WALL {
             get {
@@ -295,7 +295,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Power-Riegel|Power-Riegel|Powerriegel|Schokoladen-Riegel|Schokoladenriegel|Schoko-Riegel|Schokoriegel|Riegel.
+        ///   Looks up a localized string similar to Power-Riegel|Powerriegel|Schokoladen-Riegel|Schokoladenriegel|Schoko-Riegel|Schokoriegel|Riegel.
         /// </summary>
         internal static string CHOCOLATEBAR {
             get {
@@ -304,7 +304,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Schrank|Schrank|Kleiderschrank.
+        ///   Looks up a localized string similar to Schrank|Kleiderschrank.
         /// </summary>
         internal static string CLOSET {
             get {
@@ -313,7 +313,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Schranktür|Schranktür|Kleiderschranktür.
+        ///   Looks up a localized string similar to Schranktür|Kleiderschranktür.
         /// </summary>
         internal static string CLOSET_DOOR {
             get {
@@ -349,7 +349,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Wände|Wände|Wand.
+        ///   Looks up a localized string similar to Wände|Wand.
         /// </summary>
         internal static string CORRIDOR_WALLS {
             get {
@@ -358,7 +358,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Crewkammern|Crewkammern|Crewkammer|Kammer|Kabinen|Kabine.
+        ///   Looks up a localized string similar to Crewkammern|Crewkammer|Kammer|Kabinen|Kabine.
         /// </summary>
         internal static string CREWCHAMBERS {
             get {
@@ -367,7 +367,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ein Cross-Trainer|Cross-Trainer|Crosstrainer.
+        ///   Looks up a localized string similar to Cross-Trainer|Crosstrainer.
         /// </summary>
         internal static string CROSSTRAINER {
             get {
@@ -376,7 +376,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Das Sichtfenster|Sichtfenster|Glas.
+        ///   Looks up a localized string similar to Sichtfenster|Glas.
         /// </summary>
         internal static string CRYOCHAMBER_BULKHEAD {
             get {
@@ -385,7 +385,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Klamotten|Klamotten|Kleidung|Strickjacke|Kleidungsstücke|Kleidungsstück.
+        ///   Looks up a localized string similar to Klamotten|Kleidung|Strickjacke|Kleidungsstücke|Kleidungsstück.
         /// </summary>
         internal static string CRYOCHAMBER_CLOTHS {
             get {
@@ -403,7 +403,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Schreibtischlampe|Schreibtischlampe|Lampe|Glühbirne|Fassung|Teleskopstange|Teleskopstangen|Halterung|Beleuchtung.
+        ///   Looks up a localized string similar to Schreibtischlampe|Lampe|Glühbirne|Fassung|Teleskopstange|Teleskopstangen|Halterung|Beleuchtung.
         /// </summary>
         internal static string CRYOCHAMBER_LAMP {
             get {
@@ -439,7 +439,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Service-Roboter|Service-Roboter|Serviceroboter|Wartungsroboter|Roboter|Droid.
+        ///   Looks up a localized string similar to Service-Roboter|Serviceroboter|Wartungsroboter|Roboter|Droid.
         /// </summary>
         internal static string DROID {
             get {
@@ -448,7 +448,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Hantelstange|Hantelstange|Stange|Hantel.
+        ///   Looks up a localized string similar to Hantelstange|Stange|Hantel.
         /// </summary>
         internal static string DUMBBELL_BAR {
             get {
@@ -457,7 +457,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Hantelablage|Hantelablage|Ablage|Rack.
+        ///   Looks up a localized string similar to Hantelablage|Ablage|Rack.
         /// </summary>
         internal static string DUMBBELL_RACK {
             get {
@@ -484,7 +484,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Kunst|Kunst|Halbkreis|Licht|Korona.
+        ///   Looks up a localized string similar to Kunst|Halbkreis|Licht|Korona.
         /// </summary>
         internal static string ENGINE_ROOM_ART {
             get {
@@ -493,7 +493,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Quantencluster|Quantencluster|Quantencomputer|Computer|Recheneinheit.
+        ///   Looks up a localized string similar to Quantencluster|Quantencomputer|Computer|Recheneinheit.
         /// </summary>
         internal static string ENGINE_ROOM_COMPUTER {
             get {
@@ -502,7 +502,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Das Kopfende|Kopfende|Platte|Kopfplatte|Kante.
+        ///   Looks up a localized string similar to Kopfende|Platte|Kopfplatte|Kante.
         /// </summary>
         internal static string ENGINE_ROOM_HEAD {
             get {
@@ -520,7 +520,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Das Hologramm|Hologramm|Hologram|Modell.
+        ///   Looks up a localized string similar to Hologramm|Hologram|Modell.
         /// </summary>
         internal static string ENGINE_ROOM_SHIP_MODEL {
             get {
@@ -529,7 +529,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Stehlen|Stehlen|Stehle|Säulen|Säule.
+        ///   Looks up a localized string similar to Stehlen|Stehle|Säulen|Säule.
         /// </summary>
         internal static string ENGINE_ROOM_STEALING {
             get {
@@ -538,7 +538,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Tangente|Tangente.
+        ///   Looks up a localized string similar to Tangente.
         /// </summary>
         internal static string ENGINE_ROOM_TANGENT {
             get {
@@ -547,7 +547,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Technik|Technik.
+        ///   Looks up a localized string similar to Technik.
         /// </summary>
         internal static string ENGINE_ROOM_TECHNIC {
             get {
@@ -556,7 +556,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Metallkiste|Metallkiste|Ausrüstungsbox|Ausrüstungsbox|Box|Kiste.
+        ///   Looks up a localized string similar to Metallkiste|Ausrüstungsbox|Ausrüstungsbox|Box|Kiste.
         /// </summary>
         internal static string EQUIPMENT_BOX {
             get {
@@ -565,7 +565,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Das Vorhängeschloss|Vorhängeschloss|Schloss|Schloß.
+        ///   Looks up a localized string similar to Vorhängeschloss|Schloss|Schloß.
         /// </summary>
         internal static string EQUIPMENT_BOX_LOCK {
             get {
@@ -574,7 +574,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Das Vorhängeschloss|Vorhängeschloss|Schloss|Schloß.
+        ///   Looks up a localized string similar to Vorhängeschloss|Schloss|Schloß.
         /// </summary>
         internal static string EQUIPMENT_BOX_LOCK_DESTROYED {
             get {
@@ -583,7 +583,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Sitzbänke|Sitzbänke|Sitzbank|Bänke|Bank|Ausstattung.
+        ///   Looks up a localized string similar to Sitzbänke|Sitzbank|Bänke|Bank|Ausstattung.
         /// </summary>
         internal static string EQUIPMENT_ROOM_BENCH {
             get {
@@ -592,7 +592,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Kleidungsstücke|Kleidungsstücke|Kleidung.
+        ///   Looks up a localized string similar to Kleidungsstücke|Kleidung.
         /// </summary>
         internal static string EQUIPMENT_ROOM_CLOTH {
             get {
@@ -601,7 +601,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Nische|Nische|Wandnische|Nischen|Wandnischen.
+        ///   Looks up a localized string similar to Nische|Wandnische|Nischen|Wandnischen.
         /// </summary>
         internal static string EQUIPMENT_ROOM_NICHE {
             get {
@@ -610,7 +610,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Mülleimer|Mülleimer|Papiereimer|Papierkorb|Müllkorb|Abfalleimer|Abfallkorb|Korb|Eimer.
+        ///   Looks up a localized string similar to Mülleimer|Papiereimer|Papierkorb|Müllkorb|Abfalleimer|Abfallkorb|Korb|Eimer.
         /// </summary>
         internal static string EQUIPMENT_ROOM_TRASHBIN {
             get {
@@ -619,7 +619,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Gymnastikbereich|Gymnastikbereich.
+        ///   Looks up a localized string similar to Gymnastikbereich.
         /// </summary>
         internal static string EXERCISE_AREA {
             get {
@@ -628,7 +628,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Öse|Öse.
+        ///   Looks up a localized string similar to Öse.
         /// </summary>
         internal static string EYELET {
             get {
@@ -637,7 +637,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Filzstoff|Filzstoff|Filz.
+        ///   Looks up a localized string similar to Filzstoff|Filz.
         /// </summary>
         internal static string FELT {
             get {
@@ -646,7 +646,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Fitnessmaschinen|Fitnessmaschinen|Fitnessmaschine|Geräte|Plätze|Plätzen.
+        ///   Looks up a localized string similar to Fitnessmaschinen|Fitnessmaschine|Geräte|Plätze|Plätzen.
         /// </summary>
         internal static string FITNESSMACHINE {
             get {
@@ -655,7 +655,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Food-Printer|Food-Printer|FoodPrinter|Foot Printer|Printer|Drucker.
+        ///   Looks up a localized string similar to Food-Printer|FoodPrinter|Foot Printer|Printer|Drucker.
         /// </summary>
         internal static string FOOD_PRINTER {
             get {
@@ -664,7 +664,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Kühlschrank|Kühlschrank.
+        ///   Looks up a localized string similar to Kühlschrank.
         /// </summary>
         internal static string FRIDGE {
             get {
@@ -673,7 +673,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Türgriff|Türgriff|Griff.
+        ///   Looks up a localized string similar to Türgriff|Griff.
         /// </summary>
         internal static string FRIDGE_DOOR_HANDLE {
             get {
@@ -700,7 +700,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Handschuhe|Handschuhe|Handschuh.
+        ///   Looks up a localized string similar to Handschuhe|Handschuh.
         /// </summary>
         internal static string GLOVES {
             get {
@@ -709,7 +709,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Halterung|Halterung|Haken|Wandhaken.
+        ///   Looks up a localized string similar to Halterung|Haken|Wandhaken.
         /// </summary>
         internal static string GYM_BRACKET {
             get {
@@ -718,7 +718,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Schlaufen|Schlaufen|Schlaufe|Griff|Griffe.
+        ///   Looks up a localized string similar to Schlaufen|Schlaufe|Griff|Griffe.
         /// </summary>
         internal static string GYM_LOOP {
             get {
@@ -727,7 +727,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Powerstation|Powerstation|Gewichte|Gewicht.
+        ///   Looks up a localized string similar to Powerstation|Power|Gewichte|Gewicht.
         /// </summary>
         internal static string GYM_POWERSTATION {
             get {
@@ -736,7 +736,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Das Fitness-Tau|Fitness-Tau|Seile|Seil|Fitnesstau|Tau.
+        ///   Looks up a localized string similar to Fitness-Tau|Seile|Seil|Fitnesstau|Tau.
         /// </summary>
         internal static string GYM_ROPES {
             get {
@@ -745,7 +745,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Sandsäcke|Sandsäcke|Sandsack|Sack|Power Bag.
+        ///   Looks up a localized string similar to Sandsäcke|Sandsack|Sack|Power Bag.
         /// </summary>
         internal static string GYM_SANDBAG {
             get {
@@ -754,7 +754,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Weltraumhelm|Weltraumhelm|Helm.
+        ///   Looks up a localized string similar to Weltraumhelm|Helm.
         /// </summary>
         internal static string HELMET {
             get {
@@ -763,7 +763,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Das Loch|Loch.
+        ///   Looks up a localized string similar to Loch.
         /// </summary>
         internal static string HOLE {
             get {
@@ -799,7 +799,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Schublade|Schublade|Schubladen|Schubfach|Schubfächer|Fächer.
+        ///   Looks up a localized string similar to Schublade|Schubladen|Schubfach|Schubfächer|Fächer.
         /// </summary>
         internal static string MAINTENANCE_ROOM_DRAWER {
             get {
@@ -808,7 +808,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Das Multifunktionswerkzeug|Multifunktionswerkzeug|Werkzeug|Gerät.
+        ///   Looks up a localized string similar to Multifunktionswerkzeug|Werkzeug|Gerät.
         /// </summary>
         internal static string MAINTENANCE_ROOM_TOOL {
             get {
@@ -817,7 +817,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Werkbank|Werkbank.
+        ///   Looks up a localized string similar to Werkbank.
         /// </summary>
         internal static string MAINTENANCE_ROOM_WORKBENCH {
             get {
@@ -871,7 +871,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Sauerstoffflasche|Sauerstoffflasche|Sauerstoff-Flasche|Sauerstoff|Flasche|Gas.
+        ///   Looks up a localized string similar to Sauerstoffflasche|Sauerstoff-Flasche|Sauerstoff|Flasche|Gas.
         /// </summary>
         internal static string OXYGEN_BOTTLE {
             get {
@@ -880,7 +880,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Handgriff|Handgriff|Hebel|Griff.
+        ///   Looks up a localized string similar to Handgriff|Hebel|Griff.
         /// </summary>
         internal static string PANEL_TOP_LEVER {
             get {
@@ -889,7 +889,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Das Papier|Papier|Papierblätter|Blätter|Blatt|Papiere.
+        ///   Looks up a localized string similar to Papier|Papierblätter|Blätter|Blatt|Papiere.
         /// </summary>
         internal static string PAPER {
             get {
@@ -916,7 +916,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ein Kugelschreiber|Kugelschreiber|Kuli.
+        ///   Looks up a localized string similar to Kugelschreiber|Kuli.
         /// </summary>
         internal static string PENCIL_I {
             get {
@@ -925,7 +925,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Bleistift|Bleistift.
+        ///   Looks up a localized string similar to Bleistift.
         /// </summary>
         internal static string PENCIL_II {
             get {
@@ -934,7 +934,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Stifte|Stifte|Stift.
+        ///   Looks up a localized string similar to Stifte|Stift.
         /// </summary>
         internal static string PENCILS {
             get {
@@ -961,7 +961,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Pilotensitz|Pilotensitz|Pilotsitz|Sitz|Pilotenstuhl|Stuhl.
+        ///   Looks up a localized string similar to Pilotensitz|Pilotsitz|Sitz|Pilotenstuhl|Stuhl.
         /// </summary>
         internal static string PILOT_SEAT {
             get {
@@ -970,7 +970,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ein Gemälde|Gemälde|Portrait|Porträt|Bild|Bilder.
+        ///   Looks up a localized string similar to Gemälde|Portrait|Porträt|Bild|Bilder.
         /// </summary>
         internal static string PORTRAIT {
             get {
@@ -997,7 +997,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Reststoffverwerter|Reststoffverwerter|Verwerter|Recycler.
+        ///   Looks up a localized string similar to Reststoffverwerter|Verwerter|Recycler.
         /// </summary>
         internal static string RECYCLER {
             get {
@@ -1015,7 +1015,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Boardwand|Boardwand.
+        ///   Looks up a localized string similar to Boardwand.
         /// </summary>
         internal static string SIDEWALL {
             get {
@@ -1024,7 +1024,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Antenne|Antenne.
+        ///   Looks up a localized string similar to Antenne.
         /// </summary>
         internal static string SOCIALROOM_ANTENNA {
             get {
@@ -1033,7 +1033,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Receiver|Receiver|Antennenkonstruktion|Konstruktion|.
+        ///   Looks up a localized string similar to Receiver|Antennenkonstruktion|Konstruktion|.
         /// </summary>
         internal static string SOCIALROOM_ANTENNA_CONSTRUCTION {
             get {
@@ -1042,7 +1042,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Billardtisch|Billardtisch.
+        ///   Looks up a localized string similar to Billardtisch.
         /// </summary>
         internal static string SOCIALROOM_BILLARD {
             get {
@@ -1051,7 +1051,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Kugeln|Kugeln|Kugel.
+        ///   Looks up a localized string similar to Kugeln|Kugel.
         /// </summary>
         internal static string SOCIALROOM_BILLARD_BALLS {
             get {
@@ -1060,7 +1060,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Bürste|Bürste.
+        ///   Looks up a localized string similar to Bürste.
         /// </summary>
         internal static string SOCIALROOM_BILLARD_BRUSH {
             get {
@@ -1069,7 +1069,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Kreide|Kreide.
+        ///   Looks up a localized string similar to Kreide.
         /// </summary>
         internal static string SOCIALROOM_BILLARD_CHALK {
             get {
@@ -1078,7 +1078,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Cue|Cue|Queue|Cues.
+        ///   Looks up a localized string similar to Cue|Queue|Cues.
         /// </summary>
         internal static string SOCIALROOM_BILLARD_CUE {
             get {
@@ -1087,7 +1087,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Wandhalterung|Wandhalterung.
+        ///   Looks up a localized string similar to Wandhalterung.
         /// </summary>
         internal static string SOCIALROOM_BILLARD_THINGS {
             get {
@@ -1096,7 +1096,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Das Dreieck|Dreieck.
+        ///   Looks up a localized string similar to Dreieck.
         /// </summary>
         internal static string SOCIALROOM_BILLARD_TRIANGLE {
             get {
@@ -1105,7 +1105,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Bücher|Bücher|Buch|Bücherregal|Regal.
+        ///   Looks up a localized string similar to Bücher|Buch|Bücherregal|Regal.
         /// </summary>
         internal static string SOCIALROOM_BOOKS {
             get {
@@ -1114,7 +1114,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Decke|Decke|Zimmer Decke.
+        ///   Looks up a localized string similar to Decke|Zimmer Decke.
         /// </summary>
         internal static string SOCIALROOM_CEILING {
             get {
@@ -1123,7 +1123,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Couch|Couch|Sofa.
+        ///   Looks up a localized string similar to Couch|Sofa.
         /// </summary>
         internal static string SOCIALROOM_COUCH {
             get {
@@ -1132,7 +1132,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Dartscheibe|Dartscheibe|Darts|Dart|Pfeile|Pfeil.
+        ///   Looks up a localized string similar to Dartscheibe|Darts|Dart|Pfeile|Pfeil.
         /// </summary>
         internal static string SOCIALROOM_DARTS {
             get {
@@ -1141,7 +1141,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die östliche Wand|Östliche Wand.
+        ///   Looks up a localized string similar to Östliche Wand.
         /// </summary>
         internal static string SOCIALROOM_EAST_WALL {
             get {
@@ -1150,7 +1150,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Glastisch|Glastisch|Tisch.
+        ///   Looks up a localized string similar to Glastisch|Tisch.
         /// </summary>
         internal static string SOCIALROOM_GLASS_TABLE {
             get {
@@ -1159,7 +1159,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Bildschirm|Bildschirm|Fernseher.
+        ///   Looks up a localized string similar to Bildschirm|Fernseher.
         /// </summary>
         internal static string SOCIALROOM_MONITOR {
             get {
@@ -1168,7 +1168,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die nördliche Wand|Nördliche Wand.
+        ///   Looks up a localized string similar to Nördliche Wand.
         /// </summary>
         internal static string SOCIALROOM_NORTH_WALL {
             get {
@@ -1177,7 +1177,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Sessel|Sessel|Sitz.
+        ///   Looks up a localized string similar to Sessel|Sitz.
         /// </summary>
         internal static string SOCIALROOM_SEAT {
             get {
@@ -1186,7 +1186,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Sitzgruppe|Sitzgruppe.
+        ///   Looks up a localized string similar to Sitzgruppe.
         /// </summary>
         internal static string SOCIALROOM_SEATGROUP {
             get {
@@ -1195,7 +1195,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die südliche Wand|südliche Wand.
+        ///   Looks up a localized string similar to Südliche Wand.
         /// </summary>
         internal static string SOCIALROOM_SOUTH_WALL {
             get {
@@ -1204,7 +1204,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Wand|Wand.
+        ///   Looks up a localized string similar to Wand.
         /// </summary>
         internal static string SOCIALROOM_WALL {
             get {
@@ -1213,7 +1213,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die westliche Wand|Westliche Wand.
+        ///   Looks up a localized string similar to Westliche Wand.
         /// </summary>
         internal static string SOCIALROOM_WEST_WALL {
             get {
@@ -1222,7 +1222,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Bio-Suit|Bio-Suit| Bio Suit|Space-Overall|Space Overall|Space-Suit|Space Suit|Overall|Anzug|Suit.
+        ///   Looks up a localized string similar to Bio-Suit| Bio Suit|Space-Overall|Space Overall|Space-Suit|Space Suit|Overall|Anzug|Suit.
         /// </summary>
         internal static string SPACE_SUIT {
             get {
@@ -1231,7 +1231,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Stepper|Stepper.
+        ///   Looks up a localized string similar to Stepper.
         /// </summary>
         internal static string STEPPER {
             get {
@@ -1240,7 +1240,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Haftnotiz|Haftnotiz|Klebezettel|Notiz|Zettel.
+        ///   Looks up a localized string similar to Haftnotiz|Klebezettel|Notiz|Zettel.
         /// </summary>
         internal static string STICKY_NOTE {
             get {
@@ -1258,7 +1258,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Textmarker|Textmarker.
+        ///   Looks up a localized string similar to Textmarker.
         /// </summary>
         internal static string TEXTMARKER {
             get {
@@ -1267,7 +1267,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der blaue Textmarker|blauer Textmarker.
+        ///   Looks up a localized string similar to blaue Textmarker|blauer Textmarker.
         /// </summary>
         internal static string TEXTMARKER_BLUE {
             get {
@@ -1276,7 +1276,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der grüne Textmarker|Grüner Textmarker.
+        ///   Looks up a localized string similar to grüne Textmarker|Grüner Textmarker.
         /// </summary>
         internal static string TEXTMARKER_GREEN {
             get {
@@ -1285,7 +1285,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der rote Textmarker|Roter Textmarker.
+        ///   Looks up a localized string similar to rote Textmarker|Roter Textmarker.
         /// </summary>
         internal static string TEXTMARKER_RED {
             get {
@@ -1294,7 +1294,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der gelbe Textmarker|Gelber Textmarker.
+        ///   Looks up a localized string similar to gelbe Textmarker|Gelber Textmarker.
         /// </summary>
         internal static string TEXTMARKER_YELLOW {
             get {
@@ -1321,7 +1321,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Das Laufband|Laufband.
+        ///   Looks up a localized string similar to Laufband.
         /// </summary>
         internal static string TREADMILL {
             get {
@@ -1330,7 +1330,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Garderobe|Garderobe.
+        ///   Looks up a localized string similar to Garderobe.
         /// </summary>
         internal static string WARDROBE {
             get {
@@ -1348,7 +1348,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Hantelscheiben|Hantelscheiben|Hantelscheibe|Hantel.
+        ///   Looks up a localized string similar to Hantelscheiben|Hantelscheibe|Hantel.
         /// </summary>
         internal static string WEIGHT_PLATES {
             get {
@@ -1375,7 +1375,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Schreibutensilien|Schreibutensilien|Utensilien|Schreibmaterial|Schreibmaterialien|Ablagefächer|Ablagefach.
+        ///   Looks up a localized string similar to Schreibutensilien|Utensilien|Schreibmaterial|Schreibmaterialien|Ablagefächer|Ablagefach.
         /// </summary>
         internal static string WRITING_MATERIALS {
             get {

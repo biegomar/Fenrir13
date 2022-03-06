@@ -12,7 +12,8 @@ internal class EngineRoomPrerequisites
         {
             Key = Keys.ENGINE_ROOM,
             Name = Locations.ENGINE_ROOM,
-            Description = Descriptions.ENGINE_ROOM
+            Description = Descriptions.ENGINE_ROOM,
+            Grammar = new Grammars(Genders.Male)
         };
 
         engine.Items.Add(GetShipModel(eventProvider));
@@ -32,7 +33,8 @@ internal class EngineRoomPrerequisites
             Name = Items.ENGINE_ROOM_SHIP_MODEL, 
             Description = Descriptions.ENGINE_ROOM_SHIP_MODEL,
             ContainmentDescription = Descriptions.ENGINE_ROOM_SHIP_MODEL_CONTAINMENT,
-            IsPickAble = false
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Neutrum)
         };
 
         return shipModel;

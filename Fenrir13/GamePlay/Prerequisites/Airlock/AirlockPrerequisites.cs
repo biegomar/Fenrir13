@@ -34,7 +34,8 @@ internal class AirlockPrerequisites
             Name = Items.AIRLOCK_KEYPAD,
             Description = Descriptions.AIRLOCK_KEYPAD,
             ContainmentDescription = Descriptions.AIRLOCK_KEYPAD_CONTAINMENT,
-            IsPickAble = false
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Neutrum)
         };
         
         keyPad.Items.Add(GetGreenButton(eventProvider));
@@ -51,7 +52,8 @@ internal class AirlockPrerequisites
             Name = Items.AIRLOCK_KEYPAD_GREEN_BUTTON,
             Description = Descriptions.AIRLOCK_KEYPAD_GREEN_BUTTON,
             IsHidden = true,
-            IsPickAble = false
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Male)
         };
         
         AddPushGreenButtonEvents(greenButton, eventProvider);
@@ -67,7 +69,8 @@ internal class AirlockPrerequisites
             Name = Items.AIRLOCK_KEYPAD_RED_BUTTON,
             Description = Descriptions.AIRLOCK_KEYPAD_RED_BUTTON,
             IsHidden = true,
-            IsPickAble = false
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Male)
         };
 
         AddPushRedButtonEvents(redButton, eventProvider);
@@ -99,7 +102,8 @@ internal class AirlockPrerequisites
             Description = Descriptions.AIRLOCK_ROPE,
             ContainmentDescription = Descriptions.AIRLOCK_ROPE_CONTAINMENT,
             LinkedToDescription = Descriptions.AIRLOCK_ROPE_LINKEDTO,
-            IsPickAble = false
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Neutrum)
         };
         
         AddUseEvents(airlockRope, eventProvider);

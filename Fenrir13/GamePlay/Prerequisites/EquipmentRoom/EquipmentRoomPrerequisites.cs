@@ -12,7 +12,8 @@ internal static class EquipmentRoomPrerequisites
         {
             Key = Keys.EQUIPMENT_ROOM,
             Name = Locations.EQUIPMENT_ROOM,
-            Description = Descriptions.EQUIPMENT_ROOM
+            Description = Descriptions.EQUIPMENT_ROOM,
+            Grammar = new Grammars(Genders.Male)
         };
         
         equipmentRoom.Items.Add(GetBox(eventProvider));
@@ -70,7 +71,8 @@ internal static class EquipmentRoomPrerequisites
             ContainmentDescription = Descriptions.EQUIPMENT_BOX_LOCK_CONTAINMENT,
             IsPickAble = false,
             IsHidden = true,
-            IsBreakable = true
+            IsBreakable = true,
+            Grammar = new Grammars(Genders.Neutrum)
         };
         
         AddBreakEvents(boxLock, eventProvider);
@@ -87,7 +89,8 @@ internal static class EquipmentRoomPrerequisites
             Description = Descriptions.HELMET,
             FirstLookDescription = Descriptions.HELMET_FIRSTLOOK,
             IsHidden = true,
-            Weight = ItemWeights.HELMET
+            Weight = ItemWeights.HELMET,
+            Grammar = new Grammars(Genders.Male)
         };
 
         AddPullOnEvents(helmet, eventProvider);
@@ -105,7 +108,8 @@ internal static class EquipmentRoomPrerequisites
             Name = Items.GLOVES,
             Description = Descriptions.GLOVES,
             IsHidden = true,
-            Weight = ItemWeights.GLOVES
+            Weight = ItemWeights.GLOVES,
+            Grammar = new Grammars(Genders.Male, false)
         };
 
         AddPullOnEvents(gloves, eventProvider);
@@ -122,7 +126,8 @@ internal static class EquipmentRoomPrerequisites
             Name = Items.BOOTS,
             Description = Descriptions.BOOTS,
             IsHidden = true,
-            Weight = ItemWeights.BOOTS
+            Weight = ItemWeights.BOOTS,
+            Grammar = new Grammars(Genders.Male, false)
         };
 
         AddPullOnEvents(boots, eventProvider);
@@ -139,7 +144,8 @@ internal static class EquipmentRoomPrerequisites
             Name = Items.BELT,
             Description = Descriptions.BELT,
             IsHidden = true,
-            Weight = ItemWeights.BELT
+            Weight = ItemWeights.BELT,
+            Grammar = new Grammars(Genders.Male)
         };
         
         belt.Items.Add(GetEyelet(eventProvider));

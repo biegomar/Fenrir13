@@ -44,7 +44,8 @@ internal static class CryoChamberPrerequisites
             Name = Items.CHOCOLATEBAR,
             IsEatable = true,
             IsHidden = true,
-            IsUnveilAble = false
+            IsUnveilAble = false,
+            Grammar = new Grammars(Genders.Male)
         };
 
         AddAfterEatEvents(bar, eventProvider);
@@ -61,7 +62,8 @@ internal static class CryoChamberPrerequisites
             Name = Items.SPACE_SUIT,
             IsDropAble = false,
             ContainmentDescription = Descriptions.SPACE_SUIT_CONTAINMENT,
-            UnDropAbleDescription = Descriptions.SPACE_SUIT_UNDROPABLE
+            UnDropAbleDescription = Descriptions.SPACE_SUIT_UNDROPABLE,
+            Grammar = new Grammars(Genders.Male)
         };
 
         AddAfterTakeEvents(spaceSuite, eventProvider);

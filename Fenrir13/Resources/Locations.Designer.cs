@@ -61,7 +61,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Luftschleuse|Luftschleuse|Schleuse.
+        ///   Looks up a localized string similar to Luftschleuse|Schleuse.
         /// </summary>
         internal static string AIRLOCK {
             get {
@@ -70,7 +70,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Krankenstation|Krankenstation.
+        ///   Looks up a localized string similar to Krankenstation.
         /// </summary>
         internal static string AMBULANCE {
             get {
@@ -79,7 +79,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Kommando-Brücke|Kommando-Brücke|Brücke.
+        ///   Looks up a localized string similar to Kommando-Brücke|Brücke.
         /// </summary>
         internal static string COMMANDBRIDGE {
             get {
@@ -88,7 +88,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Das Computer-Terminal|Computer-Terminal|Computer|Terminal.
+        ///   Looks up a localized string similar to Computer-Terminal|Computer|Terminal.
         /// </summary>
         internal static string COMPUTER_TERMINAL {
             get {
@@ -97,7 +97,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Korridor (Ost)|Korridor (Ost).
+        ///   Looks up a localized string similar to Korridor (Ost).
         /// </summary>
         internal static string CORRIDOR_EAST {
             get {
@@ -106,7 +106,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Korridor (Mitte)|Korridor (Mitte).
+        ///   Looks up a localized string similar to Korridor (Mitte).
         /// </summary>
         internal static string CORRIDOR_MID {
             get {
@@ -115,7 +115,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Korridor (Mitte-Ost)|Korridor (Mitte-Ost).
+        ///   Looks up a localized string similar to Korridor (Mitte-Ost).
         /// </summary>
         internal static string CORRIDOR_MIDEAST {
             get {
@@ -124,7 +124,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Korridor (Mitte-West)|Korridor (Mitte-West).
+        ///   Looks up a localized string similar to Korridor (Mitte-West).
         /// </summary>
         internal static string CORRIDOR_MIDWEST {
             get {
@@ -133,7 +133,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Korridor (West)|Korridor (West).
+        ///   Looks up a localized string similar to Korridor (West).
         /// </summary>
         internal static string CORRIDOR_WEST {
             get {
@@ -142,7 +142,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Deine Cryo-Kammer|Cryo-Kammer|Cryokammer|Kammer.
+        ///   Looks up a localized string similar to Cryo-Kammer|Cryokammer|Kammer.
         /// </summary>
         internal static string CRYOCHAMBER {
             get {
@@ -169,7 +169,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Maschinenraum|Maschinenraum.
+        ///   Looks up a localized string similar to Maschinenraum.
         /// </summary>
         internal static string ENGINE_ROOM {
             get {
@@ -178,7 +178,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Ausrüstungsraum|Ausrüstungsraum.
+        ///   Looks up a localized string similar to Ausrüstungsraum.
         /// </summary>
         internal static string EQUIPMENT_ROOM {
             get {
@@ -187,7 +187,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Fitnessraum|Fitnessraum|Trainingsraum|Gym.
+        ///   Looks up a localized string similar to Fitnessraum|Trainingsraum|Gym.
         /// </summary>
         internal static string GYM {
             get {
@@ -196,7 +196,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Steg|Steg.
+        ///   Looks up a localized string similar to Steg.
         /// </summary>
         internal static string JETTY {
             get {
@@ -205,7 +205,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Küche|Küche.
+        ///   Looks up a localized string similar to Küche.
         /// </summary>
         internal static string KITCHEN {
             get {
@@ -214,7 +214,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Vorraum|Vorraum|Korridor.
+        ///   Looks up a localized string similar to Vorraum|Korridor.
         /// </summary>
         internal static string MACHINE_CORRIDOR_MID {
             get {
@@ -223,7 +223,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die kleine Werkstatt|Werkstatt|kleine Werkstatt.
+        ///   Looks up a localized string similar to kleine Werkstatt|Werkstatt.
         /// </summary>
         internal static string MAINTENANCE_ROOM {
             get {
@@ -232,7 +232,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Panelsteuerung|Panelsteuerung|Panel-Steuerung|Steuerung.
+        ///   Looks up a localized string similar to Panelsteuerung|Panel-Steuerung|Steuerung.
         /// </summary>
         internal static string PANEL_TOP {
             get {
@@ -241,7 +241,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Das Dach der Brücke|Dach der Brücke|Brückendach|Dach.
+        ///   Looks up a localized string similar to Dach der Brücke|Brückendach|Dach.
         /// </summary>
         internal static string ROOF_TOP {
             get {
@@ -250,7 +250,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Sozialraum|Sozialraum|Aufenthaltsraum|Wohnzimmer.
+        ///   Looks up a localized string similar to Sozialraum|Aufenthaltsraum|Wohnzimmer.
         /// </summary>
         internal static string SOCIALROOM {
             get {

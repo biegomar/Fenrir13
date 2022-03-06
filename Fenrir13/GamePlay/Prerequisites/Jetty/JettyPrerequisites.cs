@@ -12,7 +12,8 @@ internal static class JettyPrerequisites
         {
             Key = Keys.JETTY,
             Name = Locations.JETTY,
-            Description = Descriptions.JETTY
+            Description = Descriptions.JETTY,
+            Grammar = new Grammars(Genders.Male)
         };
 
         return jetty;

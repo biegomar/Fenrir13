@@ -12,7 +12,8 @@ internal static class CorridorMidEastPrerequisites
         {
             Key = Keys.CORRIDOR_MIDEAST,
             Name = Locations.CORRIDOR_MIDEAST,
-            Description = Descriptions.CORRIDOR_MIDEAST
+            Description = Descriptions.CORRIDOR_MIDEAST,
+            Grammar = new Grammars(Genders.Male)
         };
         
         AddSurroundings(corridor);

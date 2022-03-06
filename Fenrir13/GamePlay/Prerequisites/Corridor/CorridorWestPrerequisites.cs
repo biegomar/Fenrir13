@@ -14,8 +14,8 @@ internal static class CorridorWestPrerequisites
             Name = Locations.CORRIDOR_WEST,
             Description = Descriptions.CORRIDOR_WEST,
             IsLocked = true,
-            LockDescription = Descriptions.CORRIDOR_WEST_LOCKDESCRIPTION
-            
+            LockDescription = Descriptions.CORRIDOR_WEST_LOCKDESCRIPTION,
+            Grammar = new Grammars(Genders.Male)
         };
 
         AddSurroundings(corridor);

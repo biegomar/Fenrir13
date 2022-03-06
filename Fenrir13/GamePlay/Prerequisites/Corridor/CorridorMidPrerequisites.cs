@@ -12,7 +12,8 @@ internal static class CorridorMidPrerequisites
         {
             Key = Keys.CORRIDOR_MID,
             Name = Locations.CORRIDOR_MID,
-            Description = Descriptions.CORRIDOR_MID
+            Description = Descriptions.CORRIDOR_MID,
+            Grammar = new Grammars(Genders.Male)
         };
         
         AddSurroundings(corridor);
@@ -28,7 +29,8 @@ internal static class CorridorMidPrerequisites
             Key = Keys.PORTRAIT,
             Name = Items.PORTRAIT,
             Description = Descriptions.PORTRAIT,
-            IsPickAble = false
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Neutrum)
         };
 
         return portrait;

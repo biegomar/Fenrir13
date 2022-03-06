@@ -54,7 +54,8 @@ internal static class CommandBridgePrerequisites
             Name = Items.PILOT_SEAT,
             Description = Descriptions.PILOT_SEAT,
             IsPickAble = false,
-            IsSeatAble = true
+            IsSeatAble = true,
+            Grammar = new Grammars(Genders.Male)
         };
         
         return pilotSeat;

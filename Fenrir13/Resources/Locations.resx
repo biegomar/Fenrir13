@@ -19,22 +19,22 @@
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
     <data name="CRYOCHAMBER" xml:space="preserve">
-        <value>Deine Cryo-Kammer|Cryo-Kammer|Cryokammer|Kammer</value>
+        <value>Cryo-Kammer|Cryokammer|Kammer</value>
     </data>
     <data name="CORRIDOR_EAST" xml:space="preserve">
-        <value>Der Korridor (Ost)|Korridor (Ost)</value>
+        <value>Korridor (Ost)</value>
     </data>
     <data name="CORRIDOR_WEST" xml:space="preserve">
-        <value>Der Korridor (West)|Korridor (West)</value>
+        <value>Korridor (West)</value>
     </data>
     <data name="CORRIDOR_MIDEAST" xml:space="preserve">
-        <value>Der Korridor (Mitte-Ost)|Korridor (Mitte-Ost)</value>
+        <value>Korridor (Mitte-Ost)</value>
     </data>
     <data name="CORRIDOR_MID" xml:space="preserve">
-        <value>Der Korridor (Mitte)|Korridor (Mitte)</value>
+        <value>Korridor (Mitte)</value>
     </data>
     <data name="CORRIDOR_MIDWEST" xml:space="preserve">
-        <value>Der Korridor (Mitte-West)|Korridor (Mitte-West)</value>
+        <value>Korridor (Mitte-West)</value>
     </data>
     <data name="EMPTYCREWCHAMBERONE" xml:space="preserve">
         <value>Crew-Kammer-1</value>
@@ -43,45 +43,45 @@
         <value>Crew-Kammer-2</value>
     </data>
     <data name="COMMANDBRIDGE" xml:space="preserve">
-        <value>Die Kommando-Brücke|Kommando-Brücke|Brücke</value>
+        <value>Kommando-Brücke|Brücke</value>
     </data>
     <data name="COMPUTER_TERMINAL" xml:space="preserve">
-        <value>Das Computer-Terminal|Computer-Terminal|Computer|Terminal</value>
+        <value>Computer-Terminal|Computer|Terminal</value>
     </data>
     <data name="MACHINE_CORRIDOR_MID" xml:space="preserve">
-        <value>Der Vorraum|Vorraum|Korridor</value>
+        <value>Vorraum|Korridor</value>
     </data>
     <data name="GYM" xml:space="preserve">
-        <value>Der Fitnessraum|Fitnessraum|Trainingsraum|Gym</value>
+        <value>Fitnessraum|Trainingsraum|Gym</value>
     </data>
     <data name="SOCIALROOM" xml:space="preserve">
-        <value>Der Sozialraum|Sozialraum|Aufenthaltsraum|Wohnzimmer</value>
+        <value>Sozialraum|Aufenthaltsraum|Wohnzimmer</value>
     </data>
     <data name="KITCHEN" xml:space="preserve">
-        <value>Die Küche|Küche</value>
+        <value>Küche</value>
     </data>
     <data name="AIRLOCK" xml:space="preserve">
-        <value>Die Luftschleuse|Luftschleuse|Schleuse</value>
+        <value>Luftschleuse|Schleuse</value>
     </data>
     <data name="ENGINE_ROOM" xml:space="preserve">
-        <value>Der Maschinenraum|Maschinenraum</value>
+        <value>Maschinenraum</value>
     </data>
     <data name="EQUIPMENT_ROOM" xml:space="preserve">
-        <value>Der Ausrüstungsraum|Ausrüstungsraum</value>
+        <value>Ausrüstungsraum</value>
     </data>
     <data name="AMBULANCE" xml:space="preserve">
-        <value>Die Krankenstation|Krankenstation</value>
+        <value>Krankenstation</value>
     </data>
     <data name="MAINTENANCE_ROOM" xml:space="preserve">
-        <value>Die kleine Werkstatt|Werkstatt|kleine Werkstatt</value>
+        <value>kleine Werkstatt|Werkstatt</value>
     </data>
     <data name="JETTY" xml:space="preserve">
-        <value>Der Steg|Steg</value>
+        <value>Steg</value>
     </data>
     <data name="ROOF_TOP" xml:space="preserve">
-        <value>Das Dach der Brücke|Dach der Brücke|Brückendach|Dach</value>
+        <value>Dach der Brücke|Brückendach|Dach</value>
     </data>
     <data name="PANEL_TOP" xml:space="preserve">
-        <value>Die Panelsteuerung|Panelsteuerung|Panel-Steuerung|Steuerung</value>
+        <value>Panelsteuerung|Panel-Steuerung|Steuerung</value>
     </data>
 </root>

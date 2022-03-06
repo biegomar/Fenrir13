@@ -12,7 +12,8 @@ internal static class MaintenanceRoomPrerequisites
         {
             Key = Keys.MAINTENANCE_ROOM,
             Name = Locations.MAINTENANCE_ROOM,
-            Description = Descriptions.MAINTENANCE_ROOM
+            Description = Descriptions.MAINTENANCE_ROOM,
+            Grammar = new Grammars(Genders.Male)
         };
 
         room.Items.Add(GetWorkbench(eventProvider));
@@ -64,7 +65,8 @@ internal static class MaintenanceRoomPrerequisites
             Description = Descriptions.MAINTENANCE_ROOM_TOOL,
             ContainmentDescription = Descriptions.MAINTENANCE_ROOM_TOOL_CONTAINMENT,
             IsHidden = true,
-            Weight = ItemWeights.MAINTENANCE_ROOM_TOOL
+            Weight = ItemWeights.MAINTENANCE_ROOM_TOOL,
+            Grammar = new Grammars(Genders.Neutrum)
         };
         
         AddTakeEvents(result, eventProvider);
