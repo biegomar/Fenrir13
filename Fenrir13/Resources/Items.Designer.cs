@@ -1033,7 +1033,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Antennenkonstruktion|Antennenkonstruktion|Konstruktion|Receiver.
+        ///   Looks up a localized string similar to Der Receiver|Receiver|Antennenkonstruktion|Konstruktion|.
         /// </summary>
         internal static string SOCIALROOM_ANTENNA_CONSTRUCTION {
             get {

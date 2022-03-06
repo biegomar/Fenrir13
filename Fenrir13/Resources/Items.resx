@@ -307,7 +307,7 @@
         <value>Die Decke|Decke|Zimmer Decke</value>
     </data>
     <data name="SOCIALROOM_ANTENNA_CONSTRUCTION" xml:space="preserve">
-        <value>Die Antennenkonstruktion|Antennenkonstruktion|Konstruktion|Receiver</value>
+        <value>Der Receiver|Receiver|Antennenkonstruktion|Konstruktion|</value>
     </data>
     <data name="SOCIALROOM_ANTENNA" xml:space="preserve">
         <value>Die Antenne|Antenne</value>

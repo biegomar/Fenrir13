@@ -412,7 +412,7 @@ Die Wand mit der Tür ist frei, nur ein kleiner Papiereimer steht dort.</value>
         <value>Damit scheint man das massive Schott wieder verriegeln und schließen zu können.</value>
     </data>
     <data name="EQUIPMENT_ROOM_BENCH" xml:space="preserve">
-        <value>Die einfachen, aber stabilen Sitzbänke geben mit ihrer Turnbankform dem Raum den schon beschriebenen Charakter einer Umkleidekabine. Sie nehmen ungefähr die Hälfte der Raumbreite ein, vielleicht so 2 Meter, sind etwas höher als die Metallbox und bieten eine nur recht schmale Sitzfläche. Das Gestell scheint aus Metall, wahrscheinlich Stahl zu sein und die Sitzfläche wird durch drei Holzpanele gebildet, die mit einem geringen Abstand nebeneinander verschraubt sind.</value>
+        <value>Die einfachen, aber stabilen Sitzbänke geben mit ihrer Turnbankform dem Raum den schon beschriebenen Charakter einer Umkleidekabine. Sie nehmen ungefähr die Hälfte der Raumbreite ein, vielleicht so 2 Meter, sind etwas höher als die Metallbox und bieten eine nur recht schmale Sitzfläche. Das Gestell scheint aus Metall, wahrscheinlich Stahl, zu sein und die Sitzfläche wird durch drei Holzpanele gebildet, die mit einem geringen Abstand nebeneinander verschraubt sind.</value>
     </data>
     <data name="EQUIPMENT_ROOM_NICHE" xml:space="preserve">
         <value>Die Nischen sind raumhoch, etwas breiter als einen halben Meter und tief genug, um seine Klamotten komplett verschwinden zu lassen. Auf Brusthöhe ist eine Garderobenstange eingelassen und ermöglich es, daran Jacken oder Hemden aufzuhängen. Auf Höhe der Sitzfläche kann man auf einer Ablage beispielsweise eine Tasche oder Schuhe abstellen. Alles sehr funktional.</value>
@@ -644,7 +644,7 @@ Bei genauerer Betrachtung erkennst Du, dass dort eine viereckige Aussparung ist.
         <value>Die Wand wird komplett durch ein Bücherregal eingenommen. Das dunkle Holz und die passive Beleuchtung geben ihm den Charm einer alten Bibliothek.</value>
     </data>
     <data name="SOCIALROOM_CEILING" xml:space="preserve">
-        <value>An der Zimmerdecke befindet sich eine Antennenkonstruktion, die sicherlich dazu dient, die Medien auf den Bildschirm zu streamen.</value>
+        <value>An der Zimmerdecke befindet sich eine Art Receiver, der sicherlich dazu dient, die Medien auf den Bildschirm zu streamen.</value>
     </data>
     <data name="SOCIALROOM_ANTENNA_CONSTRUCTION" xml:space="preserve">
         <value>Die Konstruktion besteht aus zwei erkennbaren Komponenten. Das ist einerseits die Antenne selbst und andererseits eine Art Receivereinheit, die die Signale verarbeitet.</value>

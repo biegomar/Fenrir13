@@ -1171,7 +1171,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die einfachen, aber stabilen Sitzbänke geben mit ihrer Turnbankform dem Raum den schon beschriebenen Charakter einer Umkleidekabine. Sie nehmen ungefähr die Hälfte der Raumbreite ein, vielleicht so 2 Meter, sind etwas höher als die Metallbox und bieten eine nur recht schmale Sitzfläche. Das Gestell scheint aus Metall, wahrscheinlich Stahl zu sein und die Sitzfläche wird durch drei Holzpanele gebildet, die mit einem geringen Abstand nebeneinander verschraubt sind..
+        ///   Looks up a localized string similar to Die einfachen, aber stabilen Sitzbänke geben mit ihrer Turnbankform dem Raum den schon beschriebenen Charakter einer Umkleidekabine. Sie nehmen ungefähr die Hälfte der Raumbreite ein, vielleicht so 2 Meter, sind etwas höher als die Metallbox und bieten eine nur recht schmale Sitzfläche. Das Gestell scheint aus Metall, wahrscheinlich Stahl, zu sein und die Sitzfläche wird durch drei Holzpanele gebildet, die mit einem geringen Abstand nebeneinander verschraubt sind..
         /// </summary>
         internal static string EQUIPMENT_ROOM_BENCH {
             get {
@@ -2331,7 +2331,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to An der Zimmerdecke befindet sich eine Antennenkonstruktion, die sicherlich dazu dient, die Medien auf den Bildschirm zu streamen..
+        ///   Looks up a localized string similar to An der Zimmerdecke befindet sich eine Art Receiver, der sicherlich dazu dient, die Medien auf den Bildschirm zu streamen..
         /// </summary>
         internal static string SOCIALROOM_CEILING {
             get {

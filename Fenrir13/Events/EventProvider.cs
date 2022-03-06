@@ -846,6 +846,9 @@ internal class EventProvider
                 }
                 
                 oxygenBottle.LinkedTo.Add(helmet);
+
+                this.universe.ActivePlayer.Items.Remove(oxygenBottle);
+                
                 helmet.LinkedTo.Add(oxygenBottle);
                 helmet.FirstLookDescription = string.Empty;
 

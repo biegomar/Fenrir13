@@ -73,13 +73,6 @@ ziehe mir gurt an
 ziehe mir handschuhe an
 ziehe mir helm an
 verbinde seil mit gurt
+nimm stange
 l tastenfeld
 drücke open
-nimm stange
-s
-hoch
-verbinde antenne mit roboter
-runter
-runter
-l griff
-benutze stange mit griff
