@@ -537,4 +537,7 @@
     <data name="CREW_DOORS" xml:space="preserve">
         <value>CREW_DOORS</value>
     </data>
+    <data name="ROOM_DOOR" xml:space="preserve">
+        <value>ROOM_DOOR</value>
+    </data>
 </root>

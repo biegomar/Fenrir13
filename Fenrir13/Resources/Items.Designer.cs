@@ -601,7 +601,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sitzbänke|Sitzbank|Bänke|Bank|Ausstattung.
+        ///   Looks up a localized string similar to Sitzbänke|Sitzbank|Turnbänke|Turnbank|Bänke|Bank|Ausstattung.
         /// </summary>
         internal static string EQUIPMENT_ROOM_BENCH {
             get {
@@ -1047,6 +1047,15 @@ namespace Fenrir13.Resources {
         internal static string RED_DOT {
             get {
                 return ResourceManager.GetString("RED_DOT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Zimmertür|Tür.
+        /// </summary>
+        internal static string ROOM_DOOR {
+            get {
+                return ResourceManager.GetString("ROOM_DOOR", resourceCulture);
             }
         }
         

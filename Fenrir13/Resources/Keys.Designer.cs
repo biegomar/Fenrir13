@@ -1231,6 +1231,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to ROOM_DOOR.
+        /// </summary>
+        internal static string ROOM_DOOR {
+            get {
+                return ResourceManager.GetString("ROOM_DOOR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to RUBBER_ROLLS.
         /// </summary>
         internal static string RUBBER_ROLLS {

@@ -538,7 +538,7 @@ Bei genauerer Betrachtung erkennst Du, dass dort eine viereckige Aussparung ist.
         <value>Aufgrund der aktuellen Energiesituation ist das Gerät vollständig deaktiviert.</value>
     </data>
     <data name="EQUIPMENT_BOX_LOCK_CONTAINMENT" xml:space="preserve">
-        <value>Sie ist durch ein Vorhängeschloss gesichert.</value>
+        <value>Sie wird durch ein Vorhängeschloss gesichert.</value>
     </data>
     <data name="EQUIPMENT_BOX_LOCK_BREAK_CONTAINMENT" xml:space="preserve">
         <value>Das zerstörte und unbrauchbare Schloss liegt auf dem Boden.</value>
@@ -976,5 +976,8 @@ Am Tag nach Deiner erfolgreichen Intervention sitzt Du mit der gesamten Crew zus
     </data>
     <data name="CREW_DOORS" xml:space="preserve">
         <value>Soweit Du es durch das Sichtfenster und das schwache Licht beurteilen kannst, sind die Türen der Crew-Kabinen unversehrt und fest verschlossen.</value>
+    </data>
+    <data name="ROOM_DOOR" xml:space="preserve">
+        <value>Die Türen hier sind ziemlich gleich in ihrem Aufbau und ihrer Funktionsweise. Sie sind fast nahtlos in die Wand eingelassen und öffnen sich in aller Regel bei Annäherung.</value>
     </data>
 </root>

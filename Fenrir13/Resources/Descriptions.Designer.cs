@@ -1161,7 +1161,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sie ist durch ein Vorhängeschloss gesichert..
+        ///   Looks up a localized string similar to Sie wird durch ein Vorhängeschloss gesichert..
         /// </summary>
         internal static string EQUIPMENT_BOX_LOCK_CONTAINMENT {
             get {
@@ -2138,6 +2138,15 @@ namespace Fenrir13.Resources {
         internal static string ROOF_TOP_DESTINATION {
             get {
                 return ResourceManager.GetString("ROOF_TOP_DESTINATION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Die Türen hier sind ziemlich gleich in ihrem Aufbau und ihrer Funktionsweise. Sie sind fast nahtlos in die Wand eingelassen und öffnen sich in aller Regel bei Annäherung..
+        /// </summary>
+        internal static string ROOM_DOOR {
+            get {
+                return ResourceManager.GetString("ROOM_DOOR", resourceCulture);
             }
         }
         

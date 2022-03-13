@@ -205,7 +205,7 @@
         <value>Grüne Knopf|Grüner Knopf|Grünen Knopf|Grüne Taste|CLOSE</value>
     </data>
     <data name="EQUIPMENT_ROOM_BENCH" xml:space="preserve">
-        <value>Sitzbänke|Sitzbank|Bänke|Bank|Ausstattung</value>
+        <value>Sitzbänke|Sitzbank|Turnbänke|Turnbank|Bänke|Bank|Ausstattung</value>
     </data>
     <data name="EQUIPMENT_ROOM_NICHE" xml:space="preserve">
         <value>Nische|Wandnische|Nischen|Wandnischen</value>
@@ -473,5 +473,8 @@
     </data>
     <data name="CREW_DOORS" xml:space="preserve">
         <value>Tür|Türen|Kammertür|Kammertüren|Crew-Kammern|Crew-Kammer|Crew Kammern|Crew Kammer|Kammern|Kammer|Crew-Kabinen|Crew-Kabine|Crewkabinen|Crewkabine|Kabinen|Kabine</value>
+    </data>
+    <data name="ROOM_DOOR" xml:space="preserve">
+        <value>Zimmertür|Tür</value>
     </data>
 </root>

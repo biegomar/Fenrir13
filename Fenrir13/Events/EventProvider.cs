@@ -990,7 +990,8 @@ internal class EventProvider
             Name = Items.EQUIPMENT_BOX_LOCK,
             Description = Descriptions.EQUIPMENT_BOX_LOCK_DESTROYED,
             ContainmentDescription = Descriptions.EQUIPMENT_BOX_LOCK_BREAK_CONTAINMENT,
-            IsPickAble = false
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Neutrum)
         };
         
         return boxLock;

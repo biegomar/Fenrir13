@@ -32,6 +32,7 @@ internal static class EquipmentRoomPrerequisites
         equipmentRoom.Surroundings.Add(Keys.EQUIPMENT_ROOM_CLOTH, () => Descriptions.EQUIPMENT_ROOM_CLOTH);
         equipmentRoom.Surroundings.Add(Keys.EYELET, () => Descriptions.EYELET);
         equipmentRoom.Surroundings.Add(Keys.CEILING, () => Descriptions.CEILING);
+        equipmentRoom.Surroundings.Add(Keys.ROOM_DOOR, () => Descriptions.ROOM_DOOR);
     }
 
     private static Item GetBox(EventProvider eventProvider)
@@ -68,7 +69,7 @@ internal static class EquipmentRoomPrerequisites
             Key = Keys.EQUIPMENT_BOX_LOCK,
             Name = Items.EQUIPMENT_BOX_LOCK,
             Description = Descriptions.EQUIPMENT_BOX_LOCK,
-            ContainmentDescription = Descriptions.EQUIPMENT_BOX_LOCK_CONTAINMENT,
+            LinkedToDescription = Descriptions.EQUIPMENT_BOX_LOCK_CONTAINMENT,
             IsPickAble = false,
             IsHidden = true,
             IsBreakable = true,
