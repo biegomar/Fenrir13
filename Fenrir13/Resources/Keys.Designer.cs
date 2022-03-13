@@ -439,6 +439,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to CREW_DOORS.
+        /// </summary>
+        internal static string CREW_DOORS {
+            get {
+                return ResourceManager.GetString("CREW_DOORS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to CREWCHAMBERS.
         /// </summary>
         internal static string CREWCHAMBERS {

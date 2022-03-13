@@ -534,4 +534,7 @@
     <data name="EMERGENCY_LIGHT" xml:space="preserve">
         <value>EMERGENCY_LIGHT</value>
     </data>
+    <data name="CREW_DOORS" xml:space="preserve">
+        <value>CREW_DOORS</value>
+    </data>
 </root>

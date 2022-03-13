@@ -760,6 +760,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Soweit Du es durch das Sichtfenster und das schwache Licht beurteilen kannst, sind die Türen der Crew-Kabinen unversehrt und fest verschlossen..
+        /// </summary>
+        internal static string CREW_DOORS {
+            get {
+                return ResourceManager.GetString("CREW_DOORS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Die Kabinen sind nur als wage Ahnung am Ende des Korridors wahrzunehmen..
         /// </summary>
         internal static string CREWCHAMBERS {

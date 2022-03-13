@@ -471,4 +471,7 @@
     <data name="EMERGENCY_LIGHT" xml:space="preserve">
         <value>Notbeleuchtung|Notlicht|Beleuchtung|Licht</value>
     </data>
+    <data name="CREW_DOORS" xml:space="preserve">
+        <value>Tür|Türen|Kammertür|Kammertüren|Crew-Kammern|Crew-Kammer|Crew Kammern|Crew Kammer|Kammern|Kammer|Crew-Kabinen|Crew-Kabine|Crewkabinen|Crewkabine|Kabinen|Kabine</value>
+    </data>
 </root>

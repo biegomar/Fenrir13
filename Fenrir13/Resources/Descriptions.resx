@@ -974,4 +974,7 @@ Am Tag nach Deiner erfolgreichen Intervention sitzt Du mit der gesamten Crew zus
     <data name="EMERGENCY_LIGHT" xml:space="preserve">
         <value>Die Notbeleuchtung wird über die Projektionsfläche der Decke erzeugt und taucht den Bereich in ein gedimmtes Licht, dass es gerade noch ermöglicht, alle Details der Umgebung zu erkennen.</value>
     </data>
+    <data name="CREW_DOORS" xml:space="preserve">
+        <value>Soweit Du es durch das Sichtfenster und das schwache Licht beurteilen kannst, sind die Türen der Crew-Kabinen unversehrt und fest verschlossen.</value>
+    </data>
 </root>

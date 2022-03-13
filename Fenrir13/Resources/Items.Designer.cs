@@ -358,6 +358,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Tür|Türen|Kammertür|Kammertüren|Crew-Kammern|Crew-Kammer|Crew Kammern|Crew Kammer|Kammern|Kammer|Crew-Kabinen|Crew-Kabine|Crewkabinen|Crewkabine|Kabinen|Kabine.
+        /// </summary>
+        internal static string CREW_DOORS {
+            get {
+                return ResourceManager.GetString("CREW_DOORS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Crewkammern|Crewkammer|Kammer|Kabinen|Kabine.
         /// </summary>
         internal static string CREWCHAMBERS {
