@@ -540,4 +540,10 @@
     <data name="ROOM_DOOR" xml:space="preserve">
         <value>ROOM_DOOR</value>
     </data>
+    <data name="ROUND_STAIRS" xml:space="preserve">
+        <value>ROUND_STAIRS</value>
+    </data>
+    <data name="STAIRS" xml:space="preserve">
+        <value>STAIRS</value>
+    </data>
 </root>

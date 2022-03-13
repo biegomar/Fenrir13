@@ -228,7 +228,7 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
             new() {Direction = Directions.E, Location = corridorMidEast, ShowInDescription = false},
             new() {Direction = Directions.W, Location = corridorMidWest, ShowInDescription = false},
             new() {Direction = Directions.UP, Location = bridge, DestinationDescription = Descriptions.BRIDGE_DESTINATION},
-            new() {Direction = Directions.DOWN, Location = machineCorridorMid},
+            new() {Direction = Directions.DOWN, Location = machineCorridorMid, DestinationDescription = Descriptions.MACHINE_DESTINATION},
         };
         return locationMap;
     }

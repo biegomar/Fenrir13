@@ -40,5 +40,8 @@ internal static class CorridorMidPrerequisites
     {
         corridor.Surroundings.Add(Keys.CEILING, () => Descriptions.CEILING);
         corridor.Surroundings.Add(Keys.CORRIDOR_WALLS, () => Descriptions.CORRIDOR_WALLS);
+        corridor.Surroundings.Add(Keys.ROOM_DOOR, () => Descriptions.ROOM_DOOR);
+        corridor.Surroundings.Add(Keys.ROUND_STAIRS, () => Descriptions.ROUND_STAIRS);
+        corridor.Surroundings.Add(Keys.STAIRS, () => Descriptions.STAIRS);
     }
 }

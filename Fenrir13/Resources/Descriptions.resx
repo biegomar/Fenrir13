@@ -314,7 +314,7 @@ Vielleicht kannst Du unten bei den Maschinenräumen mehr unternehmen als von hie
         <value>Du befindest Dich nun auf dem Maschinendeck. Von diesem unaufregenden kleinen Vorraum erhälst Du Zugang zu der technischen Infrastruktur des Schiffs.</value>
     </data>
     <data name="MACHINE_CORRIDOR_MID_LOCKDESCRIPTION" xml:space="preserve">
-        <value>Der Zugang zur Treppe in den Bereich ist durch eine Tür gesichert. Sie scheint ähnlich zu funktionieren wie die von Deinem Zimmer. Allerdings öffnet sie sich nicht automatisch. Hm? Wahrscheinlich hast Du einfach keinen Zugang nach Unten.</value>
+        <value>Der Zugang zur Treppe in den Bereich ist aber durch eine Tür gesichert. Sie scheint ähnlich zu funktionieren wie die von Deinem Zimmer. Allerdings öffnet sie sich nicht automatisch. Hm? Wahrscheinlich hast Du einfach keinen Zugang nach Unten. Was übrigens das Konzept eines Fluchtweges ad absurdum führt - aber was soll's.</value>
     </data>
     <data name="CORRIDOR_PAINTING_WEST" xml:space="preserve">
         <value>In diesem Abschnitt des Flures hängt das Bild eines Fluchtplans. Der Umriss dieser Etage mit den einzelnen Räumen. Ein roter Punkt markiert Deinen Standort und grüne Pfeile weisen in Richtung Mitte des Korridoren und dann nach unten in die Maschinenräume.</value>
@@ -451,7 +451,7 @@ Die Wand mit der Tür ist frei, nur ein kleiner Papiereimer steht dort.</value>
         <value>Sowohl südlich, als auch nördlich liegen die zwei leeren Crew-Quartiere.</value>
     </data>
     <data name="BRIDGE_DESTINATION" xml:space="preserve">
-        <value>Eine halbrunde Treppe führt hinauf auf die Brücke und der Korridor ist nach Osten, sowie nach Westen fortgeführt.</value>
+        <value>Eine halbrunde Treppe führt hinauf auf die Brücke und der Korridor wird nach Osten, sowie Westen fortgeführt.</value>
     </data>
     <data name="COMMANDBRIDGE_TO_CORRIDOR_DESTINATION" xml:space="preserve">
         <value>Die Treppe führt wieder hinunter in den Korridor.</value>
@@ -979,5 +979,14 @@ Am Tag nach Deiner erfolgreichen Intervention sitzt Du mit der gesamten Crew zus
     </data>
     <data name="ROOM_DOOR" xml:space="preserve">
         <value>Die Türen hier sind ziemlich gleich in ihrem Aufbau und ihrer Funktionsweise. Sie sind fast nahtlos in die Wand eingelassen und öffnen sich in aller Regel bei Annäherung.</value>
+    </data>
+    <data name="ROUND_STAIRS" xml:space="preserve">
+        <value>Diese halbrunde Treppe besteht aus drei einzelnen Trittstufen, die ohne direkte Verbindung zueinander zu schweben scheinen. Dieser hochwertige Zugang gibt der Brücke eindeutig die Bedeutsamkeit, die sie zweifelsohne schon besitzt.</value>
+    </data>
+    <data name="STAIRS" xml:space="preserve">
+        <value>Die Treppe führt hinunter ins Maschinendeck.</value>
+    </data>
+    <data name="MACHINE_DESTINATION" xml:space="preserve">
+        <value>Zum Maschinendeck geht es nach unten.</value>
     </data>
 </root>

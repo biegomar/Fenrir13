@@ -333,7 +333,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Eine halbrunde Treppe führt hinauf auf die Brücke und der Korridor ist nach Osten, sowie nach Westen fortgeführt..
+        ///   Looks up a localized string similar to Eine halbrunde Treppe führt hinauf auf die Brücke und der Korridor wird nach Osten, sowie Westen fortgeführt..
         /// </summary>
         internal static string BRIDGE_DESTINATION {
             get {
@@ -1707,11 +1707,20 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Zugang zur Treppe in den Bereich ist durch eine Tür gesichert. Sie scheint ähnlich zu funktionieren wie die von Deinem Zimmer. Allerdings öffnet sie sich nicht automatisch. Hm? Wahrscheinlich hast Du einfach keinen Zugang nach Unten..
+        ///   Looks up a localized string similar to Der Zugang zur Treppe in den Bereich ist aber durch eine Tür gesichert. Sie scheint ähnlich zu funktionieren wie die von Deinem Zimmer. Allerdings öffnet sie sich nicht automatisch. Hm? Wahrscheinlich hast Du einfach keinen Zugang nach Unten. Was übrigens das Konzept eines Fluchtweges ad absurdum führt - aber was soll&apos;s..
         /// </summary>
         internal static string MACHINE_CORRIDOR_MID_LOCKDESCRIPTION {
             get {
                 return ResourceManager.GetString("MACHINE_CORRIDOR_MID_LOCKDESCRIPTION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Zum Maschinendeck geht es nach unten..
+        /// </summary>
+        internal static string MACHINE_DESTINATION {
+            get {
+                return ResourceManager.GetString("MACHINE_DESTINATION", resourceCulture);
             }
         }
         
@@ -2151,6 +2160,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Diese halbrunde Treppe besteht aus drei einzelnen Trittstufen, die ohne direkte Verbindung zueinander zu schweben scheinen. Dieser hochwertige Zugang gibt der Brücke eindeutig die Bedeutsamkeit, die sie zweifelsohne schon besitzt..
+        /// </summary>
+        internal static string ROUND_STAIRS {
+            get {
+                return ResourceManager.GetString("ROUND_STAIRS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Nun, auf diesen durch Gummi lärmreduzierten Rollen kannst Du Dich mit Deinem Bürostuhl frei im Raum bewegen..
         /// </summary>
         internal static string RUBBER_ROLLS {
@@ -2544,6 +2562,15 @@ namespace Fenrir13.Resources {
         internal static string SPACE_SUIT_UNDROPABLE {
             get {
                 return ResourceManager.GetString("SPACE_SUIT_UNDROPABLE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Die Treppe führt hinunter ins Maschinendeck..
+        /// </summary>
+        internal static string STAIRS {
+            get {
+                return ResourceManager.GetString("STAIRS", resourceCulture);
             }
         }
         

@@ -1240,6 +1240,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to ROUND_STAIRS.
+        /// </summary>
+        internal static string ROUND_STAIRS {
+            get {
+                return ResourceManager.GetString("ROUND_STAIRS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to RUBBER_ROLLS.
         /// </summary>
         internal static string RUBBER_ROLLS {
@@ -1470,6 +1479,15 @@ namespace Fenrir13.Resources {
         internal static string SPACE_SUIT {
             get {
                 return ResourceManager.GetString("SPACE_SUIT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to STAIRS.
+        /// </summary>
+        internal static string STAIRS {
+            get {
+                return ResourceManager.GetString("STAIRS", resourceCulture);
             }
         }
         

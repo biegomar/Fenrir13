@@ -477,4 +477,10 @@
     <data name="ROOM_DOOR" xml:space="preserve">
         <value>Zimmertür|Tür</value>
     </data>
+    <data name="ROUND_STAIRS" xml:space="preserve">
+        <value>Halbrunde Treppe|Runde Treppe|Breite Treppe</value>
+    </data>
+    <data name="STAIRS" xml:space="preserve">
+        <value>Treppe</value>
+    </data>
 </root>

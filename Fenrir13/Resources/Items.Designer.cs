@@ -1060,6 +1060,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Halbrunde Treppe|Runde Treppe|Breite Treppe.
+        /// </summary>
+        internal static string ROUND_STAIRS {
+            get {
+                return ResourceManager.GetString("ROUND_STAIRS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Metallrollen|Rollen|Stuhlrollen|Gummi|Gummirollen.
         /// </summary>
         internal static string RUBBER_ROLLS {
@@ -1281,6 +1290,15 @@ namespace Fenrir13.Resources {
         internal static string SPACE_SUIT {
             get {
                 return ResourceManager.GetString("SPACE_SUIT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Treppe.
+        /// </summary>
+        internal static string STAIRS {
+            get {
+                return ResourceManager.GetString("STAIRS", resourceCulture);
             }
         }
         
