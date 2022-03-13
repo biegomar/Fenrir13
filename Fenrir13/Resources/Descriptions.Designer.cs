@@ -89,6 +89,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Südlich ermöglicht die Luftschleuse den Zugang ins All. Passend dazu findet sich westlich der Ausrüstraum, in dem sich die Personen für den Ausstieg in die unendlichen Weiten umziehen können..
+        /// </summary>
+        internal static string AIRLOCK_DESTINATION {
+            get {
+                return ResourceManager.GetString("AIRLOCK_DESTINATION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Eigentlich sind es nur zwei große, beschriftete Tasten, die man bequem mit einer Hand auslösen kann. Eine der Tasten ist rot und mit dem Wort &apos;OPEN&apos; beschriftet und die andere Taste grün und auf ihr prangt das Wort &apos;CLOSE&apos;..
         /// </summary>
         internal static string AIRLOCK_KEYPAD {
@@ -678,6 +687,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Von hier führt eine Treppe wieder hinauf in den Korridor vor der Brücke..
+        /// </summary>
+        internal static string CORRIDOR_MID_DESTINATION {
+            get {
+                return ResourceManager.GetString("CORRIDOR_MID_DESTINATION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Du befindest Dich nun auf dem halben Weg zwischen Deinem Quartier und der Brücke. Auch hier hängt wieder ein Bild an der Wand. Ansonsten ist der Flur einfach und karg..
         /// </summary>
         internal static string CORRIDOR_MIDEAST {
@@ -1039,6 +1057,15 @@ namespace Fenrir13.Resources {
         internal static string ENGINE_ROOM_COMPUTER {
             get {
                 return ResourceManager.GetString("ENGINE_ROOM_COMPUTER", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Den Maschinenraum erblickst Du nördlich von hier und schlussendlich führt der Weg Richtung Osten in eine kleine Werkstatt..
+        /// </summary>
+        internal static string ENGINE_ROOM_DESTINATION {
+            get {
+                return ResourceManager.GetString("ENGINE_ROOM_DESTINATION", resourceCulture);
             }
         }
         

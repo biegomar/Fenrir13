@@ -989,4 +989,13 @@ Am Tag nach Deiner erfolgreichen Intervention sitzt Du mit der gesamten Crew zus
     <data name="MACHINE_DESTINATION" xml:space="preserve">
         <value>Zum Maschinendeck geht es nach unten.</value>
     </data>
+    <data name="CORRIDOR_MID_DESTINATION" xml:space="preserve">
+        <value>Von hier führt eine Treppe wieder hinauf in den Korridor vor der Brücke.</value>
+    </data>
+    <data name="AIRLOCK_DESTINATION" xml:space="preserve">
+        <value>Südlich ermöglicht die Luftschleuse den Zugang ins All. Passend dazu findet sich westlich der Ausrüstraum, in dem sich die Personen für den Ausstieg in die unendlichen Weiten umziehen können.</value>
+    </data>
+    <data name="ENGINE_ROOM_DESTINATION" xml:space="preserve">
+        <value>Den Maschinenraum erblickst Du nördlich von hier und schlussendlich führt der Weg Richtung Osten in eine kleine Werkstatt.</value>
+    </data>
 </root>

@@ -112,11 +112,11 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
     {
         var locationMap = new List<DestinationNode>
         {
-            new() {Direction = Directions.UP, Location = corridorMid},
-            new() {Direction = Directions.S, Location = airlock},
-            new() {Direction = Directions.N, Location = engineRoom},
-            new() {Direction = Directions.W, Location = equipmentRoom},
-            new() {Direction = Directions.E, Location = maintenanceRoom},
+            new() {Direction = Directions.UP, Location = corridorMid, DestinationDescription = Descriptions.CORRIDOR_MID_DESTINATION},
+            new() {Direction = Directions.S, Location = airlock, DestinationDescription = Descriptions.AIRLOCK_DESTINATION},
+            new() {Direction = Directions.N, Location = engineRoom, DestinationDescription = Descriptions.ENGINE_ROOM_DESTINATION},
+            new() {Direction = Directions.W, Location = equipmentRoom, ShowInDescription = false},
+            new() {Direction = Directions.E, Location = maintenanceRoom, ShowInDescription = false}
             
         };
         return locationMap;  
