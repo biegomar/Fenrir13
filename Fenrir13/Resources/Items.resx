@@ -483,4 +483,16 @@
     <data name="STAIRS" xml:space="preserve">
         <value>Treppe</value>
     </data>
+    <data name="MAINTENANCE_ROOM_EAST_WALL" xml:space="preserve">
+        <value>Östliche Wand|Ost Wand</value>
+    </data>
+    <data name="MAINTENANCE_ROOM_SHELF" xml:space="preserve">
+        <value>Regal|Utensilien</value>
+    </data>
+    <data name="MAINTENANCE_ROOM_PLATE" xml:space="preserve">
+        <value>Platte|Arbeitsplatte</value>
+    </data>
+    <data name="SIGNS_OF_USE" xml:space="preserve">
+        <value>Gebrauchsspuren|Spuren|Schnitte|Macken|Kerben|Gebrauchsspur|Spur|Macke|Kerbe</value>
+    </data>
 </root>

@@ -1752,7 +1752,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Für alles, was an mechnischen Arbeiten oder Reparaturen ansteht, gibt es diese kleine Werkstatt. An der östlichen Wand steht dafür eine breite Werkbank zur Verfügung. Die große Arbeitsplatte ist sehr aufgeräumt und es befinden sich keine Gegenstände auf ihr. Eine Schublade unterhalb der Platte bietet Platz, um den Bereich gut zu organisieren. Über der Werkbank ist ein Regal angebracht, an dem allerlei Werkzeug befestigt ist..
+        ///   Looks up a localized string similar to Für alles, was an mechnischen Arbeiten oder Reparaturen ansteht, gibt es diese kleine Werkstatt. An der östlichen Wand steht dafür eine breite Werkbank zur Verfügung. Die große Arbeitsplatte ist sehr aufgeräumt und es befinden sich keine Gegenstände auf ihr. Eine Schublade unterhalb der Platte bietet Platz, um den Bereich gut zu organisieren. Über der Werkbank ist ein Regal angebracht, an dem allerlei Utensilien befestigt sind..
         /// </summary>
         internal static string MAINTENANCE_ROOM {
             get {
@@ -1793,6 +1793,33 @@ namespace Fenrir13.Resources {
         internal static string MAINTENANCE_ROOM_DRAWER_OPEN {
             get {
                 return ResourceManager.GetString("MAINTENANCE_ROOM_DRAWER_OPEN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dort steht die Werkbank und es hängt dort ebenfalls das Regal mit vielen Utensilien, die Du leider überhaupt nicht kennst. Geschweige denn benutzen könntest..
+        /// </summary>
+        internal static string MAINTENANCE_ROOM_EAST_WALL {
+            get {
+                return ResourceManager.GetString("MAINTENANCE_ROOM_EAST_WALL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Das diese Arbeitsplatte schon einige Male genutzt wurde, lässt sich gut erkennen. Sie besteht aus einer dicken Massivholzplatte, die Gebrauchsspuren aufweist, aber ansonsten in gutem Zustand ist..
+        /// </summary>
+        internal static string MAINTENANCE_ROOM_PLATE {
+            get {
+                return ResourceManager.GetString("MAINTENANCE_ROOM_PLATE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Oh man, echt keine Ahnung, welche Funktion diese Dinge alle haben..
+        /// </summary>
+        internal static string MAINTENANCE_ROOM_SHELF {
+            get {
+                return ResourceManager.GetString("MAINTENANCE_ROOM_SHELF", resourceCulture);
             }
         }
         
@@ -2219,6 +2246,15 @@ namespace Fenrir13.Resources {
         internal static string SIDEWALL {
             get {
                 return ResourceManager.GetString("SIDEWALL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Kleinere Schnitte, Macken und Kerben finden sich vereinzelt auf der Oberfläche wieder. Gebrauchsspuren halt..
+        /// </summary>
+        internal static string SIGNS_OF_USE {
+            get {
+                return ResourceManager.GetString("SIGNS_OF_USE", resourceCulture);
             }
         }
         

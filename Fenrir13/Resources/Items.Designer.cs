@@ -844,6 +844,33 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Östliche Wand|Ost Wand.
+        /// </summary>
+        internal static string MAINTENANCE_ROOM_EAST_WALL {
+            get {
+                return ResourceManager.GetString("MAINTENANCE_ROOM_EAST_WALL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Platte|Arbeitsplatte.
+        /// </summary>
+        internal static string MAINTENANCE_ROOM_PLATE {
+            get {
+                return ResourceManager.GetString("MAINTENANCE_ROOM_PLATE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Regal|Utensilien.
+        /// </summary>
+        internal static string MAINTENANCE_ROOM_SHELF {
+            get {
+                return ResourceManager.GetString("MAINTENANCE_ROOM_SHELF", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Multifunktionswerkzeug|Werkzeug|Gerät.
         /// </summary>
         internal static string MAINTENANCE_ROOM_TOOL {
@@ -1083,6 +1110,15 @@ namespace Fenrir13.Resources {
         internal static string SIDEWALL {
             get {
                 return ResourceManager.GetString("SIDEWALL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Gebrauchsspuren|Spuren|Schnitte|Macken|Kerben|Gebrauchsspur|Spur|Macke|Kerbe.
+        /// </summary>
+        internal static string SIGNS_OF_USE {
+            get {
+                return ResourceManager.GetString("SIGNS_OF_USE", resourceCulture);
             }
         }
         

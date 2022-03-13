@@ -997,6 +997,33 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to MAINTENANCE_ROOM_EAST_WALL.
+        /// </summary>
+        internal static string MAINTENANCE_ROOM_EAST_WALL {
+            get {
+                return ResourceManager.GetString("MAINTENANCE_ROOM_EAST_WALL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MAINTENANCE_ROOM_PLATE.
+        /// </summary>
+        internal static string MAINTENANCE_ROOM_PLATE {
+            get {
+                return ResourceManager.GetString("MAINTENANCE_ROOM_PLATE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MAINTENANCE_ROOM_SHELF.
+        /// </summary>
+        internal static string MAINTENANCE_ROOM_SHELF {
+            get {
+                return ResourceManager.GetString("MAINTENANCE_ROOM_SHELF", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to MAINTENANCE_ROOM_TOOL.
         /// </summary>
         internal static string MAINTENANCE_ROOM_TOOL {
@@ -1263,6 +1290,15 @@ namespace Fenrir13.Resources {
         internal static string SIDEWALL {
             get {
                 return ResourceManager.GetString("SIDEWALL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SIGNS_OF_USE.
+        /// </summary>
+        internal static string SIGNS_OF_USE {
+            get {
+                return ResourceManager.GetString("SIGNS_OF_USE", resourceCulture);
             }
         }
         

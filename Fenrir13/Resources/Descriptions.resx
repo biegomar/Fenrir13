@@ -769,7 +769,7 @@ Der Zweite Punkt verweist auf die mechanische Vorrichtung, um die Solarpanele au
         <value>Du weißt nicht viel über die Funktionsweise von Quantencomputern. Aber Du weißt, dass selbst die Leistungsfähigkeit dieser Maschine an ihre Grenzen stößt, wenn sie z.B. die kürzeste Rundreise zu allen Sonnen der Milchstraße berechnen sollte. Na ja, ist halt so.</value>
     </data>
     <data name="MAINTENANCE_ROOM" xml:space="preserve">
-        <value>Für alles, was an mechnischen Arbeiten oder Reparaturen ansteht, gibt es diese kleine Werkstatt. An der östlichen Wand steht dafür eine breite Werkbank zur Verfügung. Die große Arbeitsplatte ist sehr aufgeräumt und es befinden sich keine Gegenstände auf ihr. Eine Schublade unterhalb der Platte bietet Platz, um den Bereich gut zu organisieren. Über der Werkbank ist ein Regal angebracht, an dem allerlei Werkzeug befestigt ist.</value>
+        <value>Für alles, was an mechnischen Arbeiten oder Reparaturen ansteht, gibt es diese kleine Werkstatt. An der östlichen Wand steht dafür eine breite Werkbank zur Verfügung. Die große Arbeitsplatte ist sehr aufgeräumt und es befinden sich keine Gegenstände auf ihr. Eine Schublade unterhalb der Platte bietet Platz, um den Bereich gut zu organisieren. Über der Werkbank ist ein Regal angebracht, an dem allerlei Utensilien befestigt sind.</value>
     </data>
     <data name="MAINTENANCE_ROOM_DRAWER" xml:space="preserve">
         <value>Eine breite Schublade, die man an zwei Griffen öffnen kann.</value>
@@ -997,5 +997,17 @@ Am Tag nach Deiner erfolgreichen Intervention sitzt Du mit der gesamten Crew zus
     </data>
     <data name="ENGINE_ROOM_DESTINATION" xml:space="preserve">
         <value>Den Maschinenraum erblickst Du nördlich von hier und schlussendlich führt der Weg Richtung Osten in eine kleine Werkstatt.</value>
+    </data>
+    <data name="MAINTENANCE_ROOM_EAST_WALL" xml:space="preserve">
+        <value>Dort steht die Werkbank und es hängt dort ebenfalls das Regal mit vielen Utensilien, die Du leider überhaupt nicht kennst. Geschweige denn benutzen könntest.</value>
+    </data>
+    <data name="MAINTENANCE_ROOM_SHELF" xml:space="preserve">
+        <value>Oh man, echt keine Ahnung, welche Funktion diese Dinge alle haben.</value>
+    </data>
+    <data name="MAINTENANCE_ROOM_PLATE" xml:space="preserve">
+        <value>Das diese Arbeitsplatte schon einige Male genutzt wurde, lässt sich gut erkennen. Sie besteht aus einer dicken Massivholzplatte, die Gebrauchsspuren aufweist, aber ansonsten in gutem Zustand ist.</value>
+    </data>
+    <data name="SIGNS_OF_USE" xml:space="preserve">
+        <value>Kleinere Schnitte, Macken und Kerben finden sich vereinzelt auf der Oberfläche wieder. Gebrauchsspuren halt.</value>
     </data>
 </root>

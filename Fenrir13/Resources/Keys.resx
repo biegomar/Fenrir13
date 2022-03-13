@@ -546,4 +546,16 @@
     <data name="STAIRS" xml:space="preserve">
         <value>STAIRS</value>
     </data>
+    <data name="MAINTENANCE_ROOM_EAST_WALL" xml:space="preserve">
+        <value>MAINTENANCE_ROOM_EAST_WALL</value>
+    </data>
+    <data name="MAINTENANCE_ROOM_SHELF" xml:space="preserve">
+        <value>MAINTENANCE_ROOM_SHELF</value>
+    </data>
+    <data name="MAINTENANCE_ROOM_PLATE" xml:space="preserve">
+        <value>MAINTENANCE_ROOM_PLATE</value>
+    </data>
+    <data name="SIGNS_OF_USE" xml:space="preserve">
+        <value>SIGNS_OF_USE</value>
+    </data>
 </root>

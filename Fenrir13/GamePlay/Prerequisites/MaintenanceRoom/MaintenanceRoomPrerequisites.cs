@@ -17,7 +17,19 @@ internal static class MaintenanceRoomPrerequisites
 
         room.Items.Add(GetWorkbench(eventProvider));
         
+        AddSurroundings(room);
+        
         return room;
+    }
+    
+    private static void AddSurroundings(Location room)
+    {
+        room.Surroundings.Add(Keys.CEILING, () => Descriptions.CEILING);
+        room.Surroundings.Add(Keys.CHAMBER_WALL, () => Descriptions.CHAMBER_WALL);
+        room.Surroundings.Add(Keys.MAINTENANCE_ROOM_EAST_WALL, () => Descriptions.MAINTENANCE_ROOM_EAST_WALL);
+        room.Surroundings.Add(Keys.MAINTENANCE_ROOM_SHELF, () => Descriptions.MAINTENANCE_ROOM_SHELF);
+        room.Surroundings.Add(Keys.MAINTENANCE_ROOM_PLATE, () => Descriptions.MAINTENANCE_ROOM_PLATE);
+        room.Surroundings.Add(Keys.SIGNS_OF_USE, () => Descriptions.SIGNS_OF_USE);
     }
     
     private static Item GetWorkbench(EventProvider eventProvider)
