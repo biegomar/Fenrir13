@@ -962,6 +962,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Die Notbeleuchtung wird über die Projektionsfläche der Decke erzeugt und taucht den Bereich in ein gedimmtes Licht, dass es gerade noch ermöglicht, alle Details der Umgebung zu erkennen..
+        /// </summary>
+        internal static string EMERGENCY_LIGHT {
+            get {
+                return ResourceManager.GetString("EMERGENCY_LIGHT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Die Kammern sind auf dieser Reise unbenutzt und daher versiegelt..
         /// </summary>
         internal static string EMPTYCREWCHAMBER_LOCKDESCRIPTION {
@@ -1468,6 +1477,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Die Pfeile weisen etwas altmodisch den Fluchtweg, der offensichtlich eine Etage nach unten führt. Wäre das Ganze eine tolle Projektion, wären die Pfeile bestimmt animiert..
+        /// </summary>
+        internal static string GREEN_ARROWS {
+            get {
+                return ResourceManager.GetString("GREEN_ARROWS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Zugegebenermaßen ist das hier nicht Dein Lieblingsraum. Du hast es halt nicht so mit den Muskeln. Ganz anders die beiden Mechaniker hier an Bord. Die verbringen fast ihre komplette Freizeit damit, ihre Körper weiter zu stählen. Du hast es aber dennoch einmal ausprobiert und es sofort wieder gelassen, nachdem die beiden Typen in Deinem Beisein ziemlich über Dich gelästert haben. „Hänfling“ und „Stock“ waren da noch die netten Begrifflichkeiten, die sie benutzt haben.
         ///Dennoch ist dies ein gut ausgestatteter  [rest of string was truncated]&quot;;.
         /// </summary>
@@ -1658,6 +1676,15 @@ namespace Fenrir13.Resources {
         internal static string LINK_ROPE_TO_EYELET {
             get {
                 return ResourceManager.GetString("LINK_ROPE_TO_EYELET", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dein aktueller Standort ist offensichtlich der Korridor, genau vor Deiner Zimmertür..
+        /// </summary>
+        internal static string LOCATION {
+            get {
+                return ResourceManager.GetString("LOCATION", resourceCulture);
             }
         }
         

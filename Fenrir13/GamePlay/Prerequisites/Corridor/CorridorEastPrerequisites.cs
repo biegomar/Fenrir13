@@ -28,8 +28,12 @@ internal static class CorridorEastPrerequisites
         corridor.Surroundings.Add(Keys.EMPTYCREWCHAMBERONE, () => Descriptions.EMPTYCREWCHAMBERONE);
         corridor.Surroundings.Add(Keys.EMPTYCREWCHAMBERTWO, () => Descriptions.EMPTYCREWCHAMBERTWO);
         corridor.Surroundings.Add(Keys.CORRIDOR_PAINTING, () => Descriptions.CORRIDOR_PAINTING_EAST);
+        corridor.Surroundings.Add(Keys.OUTLINES, () => Descriptions.CORRIDOR_PAINTING_EAST);
         corridor.Surroundings.Add(Keys.CEILING, () => Descriptions.CEILING);
         corridor.Surroundings.Add(Keys.CORRIDOR_WALLS, () => Descriptions.CORRIDOR_WALLS);
         corridor.Surroundings.Add(Keys.RED_DOT, () => Descriptions.RED_DOT);
+        corridor.Surroundings.Add(Keys.LOCATION, () => Descriptions.LOCATION);
+        corridor.Surroundings.Add(Keys.GREEN_ARROWS, () => Descriptions.GREEN_ARROWS);
+        corridor.Surroundings.Add(Keys.EMERGENCY_LIGHT, () => Descriptions.EMERGENCY_LIGHT);
     }
 }

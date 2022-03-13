@@ -466,6 +466,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Notbeleuchtung|Notlicht|Beleuchtung|Licht.
+        /// </summary>
+        internal static string EMERGENCY_LIGHT {
+            get {
+                return ResourceManager.GetString("EMERGENCY_LIGHT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Crew-Kammer-1|Crew-Kammer1|Kammer-1|Kammer1|Crew-Raum 1|Crew-Raum1|Raum-1|Raum1.
         /// </summary>
         internal static string EMPTYCREWCHAMBERONE {
@@ -709,6 +718,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Grüne Pfeile|Grüner Pfeil.
+        /// </summary>
+        internal static string GREEN_ARROWS {
+            get {
+                return ResourceManager.GetString("GREEN_ARROWS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Halterung|Haken|Wandhaken.
         /// </summary>
         internal static string GYM_BRACKET {
@@ -795,6 +813,15 @@ namespace Fenrir13.Resources {
         internal static string LATCH {
             get {
                 return ResourceManager.GetString("LATCH", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Standort.
+        /// </summary>
+        internal static string LOCATION {
+            get {
+                return ResourceManager.GetString("LOCATION", resourceCulture);
             }
         }
         

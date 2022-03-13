@@ -965,4 +965,13 @@ Am Tag nach Deiner erfolgreichen Intervention sitzt Du mit der gesamten Crew zus
     <data name="RED_DOT" xml:space="preserve">
         <value>Der rote Punkt zeigt Dir einfach nur an, wo Du Dich gerade in diesem Schaubild befindest.</value>
     </data>
+    <data name="LOCATION" xml:space="preserve">
+        <value>Dein aktueller Standort ist offensichtlich der Korridor, genau vor Deiner Zimmertür.</value>
+    </data>
+    <data name="GREEN_ARROWS" xml:space="preserve">
+        <value>Die Pfeile weisen etwas altmodisch den Fluchtweg, der offensichtlich eine Etage nach unten führt. Wäre das Ganze eine tolle Projektion, wären die Pfeile bestimmt animiert.</value>
+    </data>
+    <data name="EMERGENCY_LIGHT" xml:space="preserve">
+        <value>Die Notbeleuchtung wird über die Projektionsfläche der Decke erzeugt und taucht den Bereich in ein gedimmtes Licht, dass es gerade noch ermöglicht, alle Details der Umgebung zu erkennen.</value>
+    </data>
 </root>

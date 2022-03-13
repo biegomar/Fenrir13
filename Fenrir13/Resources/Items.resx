@@ -462,4 +462,13 @@
     <data name="RED_DOT" xml:space="preserve">
         <value>Roter Punkt|Punkt</value>
     </data>
+    <data name="LOCATION" xml:space="preserve">
+        <value>Standort</value>
+    </data>
+    <data name="GREEN_ARROWS" xml:space="preserve">
+        <value>Grüne Pfeile|Grüner Pfeil</value>
+    </data>
+    <data name="EMERGENCY_LIGHT" xml:space="preserve">
+        <value>Notbeleuchtung|Notlicht|Beleuchtung|Licht</value>
+    </data>
 </root>

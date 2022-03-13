@@ -556,6 +556,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to EMERGENCY_LIGHT.
+        /// </summary>
+        internal static string EMERGENCY_LIGHT {
+            get {
+                return ResourceManager.GetString("EMERGENCY_LIGHT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to EMPTYCREWCHAMBERONE.
         /// </summary>
         internal static string EMPTYCREWCHAMBERONE {
@@ -826,6 +835,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to GREEN_ARROWS.
+        /// </summary>
+        internal static string GREEN_ARROWS {
+            get {
+                return ResourceManager.GetString("GREEN_ARROWS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to GYM.
         /// </summary>
         internal static string GYM {
@@ -930,6 +948,15 @@ namespace Fenrir13.Resources {
         internal static string LATCH {
             get {
                 return ResourceManager.GetString("LATCH", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LOCATION.
+        /// </summary>
+        internal static string LOCATION {
+            get {
+                return ResourceManager.GetString("LOCATION", resourceCulture);
             }
         }
         
