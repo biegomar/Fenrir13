@@ -494,7 +494,7 @@ internal class EventProvider
         {
             this.universe.ActivePlayer.Items.Remove(item);
             this.universe.ActivePlayer.Clothes.Add(item);
-            PrintingSubsystem.FormattedResource(Descriptions.PULLON_WEARABLE, item.Name, true);
+            PrintingSubsystem.FormattedResource(Descriptions.PULLON_WEARABLE, item.AccusativeArticleName, true);
         }
 
         var listOfPossibleWearables = new List<string>()
@@ -852,7 +852,15 @@ internal class EventProvider
                 helmet.LinkedTo.Add(oxygenBottle);
                 helmet.FirstLookDescription = string.Empty;
 
-                PrintingSubsystem.Resource(Descriptions.LINK_OXYGEN_BOTTLE_TO_HELMET);
+                if (this.universe.ActivePlayer.Clothes.Contains(helmet))
+                {
+                    PrintingSubsystem.FormattedResource(Descriptions.LINK_OXYGEN_BOTTLE_TO_HELMET_WITH_HELMET_ON,
+                        Descriptions.LINK_OXYGEN_BOTTLE_TO_HELMET);
+                }
+                else
+                {
+                    PrintingSubsystem.Resource(Descriptions.LINK_OXYGEN_BOTTLE_TO_HELMET);    
+                }
                 oxygenBottle.Use -= UseOxygenBottleWithHelmet;
                 helmet.Use -= UseOxygenBottleWithHelmet;
 

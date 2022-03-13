@@ -1006,6 +1006,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Roter Punkt|Punkt.
+        /// </summary>
+        internal static string RED_DOT {
+            get {
+                return ResourceManager.GetString("RED_DOT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Metallrollen|Rollen|Stuhlrollen|Gummi|Gummirollen.
         /// </summary>
         internal static string RUBBER_ROLLS {

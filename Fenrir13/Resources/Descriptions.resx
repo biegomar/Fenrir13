@@ -583,7 +583,7 @@ Bei genauerer Betrachtung erkennst Du, dass dort eine viereckige Aussparung ist.
         <value>Du scheinst {0} schon zu tragen.</value>
     </data>
     <data name="LINK_OXYGEN_BOTTLE_TO_HELMET" xml:space="preserve">
-        <value>Du verbindest den Helm mit der Sauerstoffflasche. Jetzt ist der Helm für einen kurzen Ausflug ins All gerüstet.</value>
+        <value>Du verschraubst den Schlauch des Helms mit der Sauerstoffflasche. Kurz darauf siehst Du, wie sich das Gewebe des Helms verändert und sich spinnennetzartig um die Sauerstoffflasche legt und sie am Ende vollständig umhüllt. Beide bilden nun eine Einheit und ermöglichen Dir einen kurzen Ausflug ins All.</value>
     </data>
     <data name="CRYOCHAMBER_BULKHEAD" xml:space="preserve">
         <value>Du kannst den Korridor erahnen, der in ein fast schon gespenstiges Dunkel gehüllt ist. Nur der blinkende rote Schein der Alarmbeleuchtung erhellt ihn zeitweise. 
@@ -809,7 +809,7 @@ Der Steg ragt weit ins All hinaus und an seiner äußeren Kante steht man vollko
         <value>Die Tür bleibt verschlossen, solange das Schott noch geöffnet ist. Du willst ja auch nicht riskieren, dass der gesamte Sauerstoff ins All gesogen wird.</value>
     </data>
     <data name="PRESS_GREEN_BUTTON" xml:space="preserve">
-        <value>Genau so behäbig, wie es sich geöffnet hat schließt sich nun das Schott wieder. Du nimmst nun das Geräusch einströmenden Sauerstoffs wahr. Du bist nun wieder vollständig in der sicheren Obhut der Fenrir 13.</value>
+        <value>Genauso behäbig, wie es sich geöffnet hat schließt sich nun das Schott wieder. Du nimmst nun das Geräusch einströmenden Sauerstoffs wahr. Du bist nun wieder vollständig in der sicheren Obhut der Fenrir 13.</value>
     </data>
     <data name="CANT_LEAVE_WITH_TIED_EYELET" xml:space="preserve">
         <value>Solange das Seil noch mit dem Gurt verbunden ist, kannst Du nicht aus dem Raum gehen.</value>
@@ -958,5 +958,11 @@ Am Tag nach Deiner erfolgreichen Intervention sitzt Du mit der gesamten Crew zus
     </data>
     <data name="CREWCHAMBERS" xml:space="preserve">
         <value>Die Kabinen sind nur als wage Ahnung am Ende des Korridors wahrzunehmen.</value>
+    </data>
+    <data name="LINK_OXYGEN_BOTTLE_TO_HELMET_WITH_HELMET_ON" xml:space="preserve">
+        <value>Da Du den Helm bereits aufgesetzt hast, nimmst Du ihn kurz ab. {0} Schlussendlich setzt Du Dir den Helm wieder auf.</value>
+    </data>
+    <data name="RED_DOT" xml:space="preserve">
+        <value>Der rote Punkt zeigt Dir einfach nur an, wo Du Dich gerade in diesem Schaubild befindest.</value>
     </data>
 </root>

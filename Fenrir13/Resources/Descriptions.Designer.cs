@@ -1635,11 +1635,20 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Du verbindest den Helm mit der Sauerstoffflasche. Jetzt ist der Helm für einen kurzen Ausflug ins All gerüstet..
+        ///   Looks up a localized string similar to Du verschraubst den Schlauch des Helms mit der Sauerstoffflasche. Kurz darauf siehst Du, wie sich das Gewebe des Helms verändert und sich spinnennetzartig um die Sauerstoffflasche legt und sie am Ende vollständig umhüllt. Beide bilden nun eine Einheit und ermöglichen Dir einen kurzen Ausflug ins All..
         /// </summary>
         internal static string LINK_OXYGEN_BOTTLE_TO_HELMET {
             get {
                 return ResourceManager.GetString("LINK_OXYGEN_BOTTLE_TO_HELMET", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Da Du den Helm bereits aufgesetzt hast, nimmst Du ihn kurz ab. {0} Schlussendlich setzt Du Dir den Helm wieder auf..
+        /// </summary>
+        internal static string LINK_OXYGEN_BOTTLE_TO_HELMET_WITH_HELMET_ON {
+            get {
+                return ResourceManager.GetString("LINK_OXYGEN_BOTTLE_TO_HELMET_WITH_HELMET_ON", resourceCulture);
             }
         }
         
@@ -2016,7 +2025,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Genau so behäbig, wie es sich geöffnet hat schließt sich nun das Schott wieder. Du nimmst nun das Geräusch einströmenden Sauerstoffs wahr. Du bist nun wieder vollständig in der sicheren Obhut der Fenrir 13..
+        ///   Looks up a localized string similar to Genauso behäbig, wie es sich geöffnet hat schließt sich nun das Schott wieder. Du nimmst nun das Geräusch einströmenden Sauerstoffs wahr. Du bist nun wieder vollständig in der sicheren Obhut der Fenrir 13..
         /// </summary>
         internal static string PRESS_GREEN_BUTTON {
             get {
@@ -2066,6 +2075,15 @@ namespace Fenrir13.Resources {
         internal static string RECYCLER_FIRSTLOOK {
             get {
                 return ResourceManager.GetString("RECYCLER_FIRSTLOOK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Der rote Punkt zeigt Dir einfach nur an, wo Du Dich gerade in diesem Schaubild befindest..
+        /// </summary>
+        internal static string RED_DOT {
+            get {
+                return ResourceManager.GetString("RED_DOT", resourceCulture);
             }
         }
         

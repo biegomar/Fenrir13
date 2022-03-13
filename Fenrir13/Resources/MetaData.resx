@@ -53,7 +53,7 @@
         <value>Bekomme die Antenne</value>
     </data>
     <data name="QUEST_V" xml:space="preserve">
-        <value>Verbinde den Sauerstoff mit der Flasche</value>
+        <value>Verbinde den Helm mit dem Sauerstoff</value>
     </data>
     <data name="QUEST_VI" xml:space="preserve">
         <value>Das All</value>

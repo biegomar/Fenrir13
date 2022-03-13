@@ -1177,6 +1177,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to RED_DOT.
+        /// </summary>
+        internal static string RED_DOT {
+            get {
+                return ResourceManager.GetString("RED_DOT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to ROOF_TOP.
         /// </summary>
         internal static string ROOF_TOP {

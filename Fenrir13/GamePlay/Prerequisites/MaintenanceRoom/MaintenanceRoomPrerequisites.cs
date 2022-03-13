@@ -12,8 +12,7 @@ internal static class MaintenanceRoomPrerequisites
         {
             Key = Keys.MAINTENANCE_ROOM,
             Name = Locations.MAINTENANCE_ROOM,
-            Description = Descriptions.MAINTENANCE_ROOM,
-            Grammar = new Grammars(Genders.Male)
+            Description = Descriptions.MAINTENANCE_ROOM
         };
 
         room.Items.Add(GetWorkbench(eventProvider));

@@ -30,5 +30,6 @@ internal static class CorridorEastPrerequisites
         corridor.Surroundings.Add(Keys.CORRIDOR_PAINTING, () => Descriptions.CORRIDOR_PAINTING_EAST);
         corridor.Surroundings.Add(Keys.CEILING, () => Descriptions.CEILING);
         corridor.Surroundings.Add(Keys.CORRIDOR_WALLS, () => Descriptions.CORRIDOR_WALLS);
+        corridor.Surroundings.Add(Keys.RED_DOT, () => Descriptions.RED_DOT);
     }
 }

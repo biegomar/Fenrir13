@@ -522,4 +522,7 @@
     <data name="CREWCHAMBERS" xml:space="preserve">
         <value>CREWCHAMBERS</value>
     </data>
+    <data name="RED_DOT" xml:space="preserve">
+        <value>RED_DOT</value>
+    </data>
 </root>

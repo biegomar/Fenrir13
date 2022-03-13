@@ -459,4 +459,7 @@
     <data name="CREWCHAMBERS" xml:space="preserve">
         <value>Crewkammern|Crewkammer|Kammer|Kabinen|Kabine</value>
     </data>
+    <data name="RED_DOT" xml:space="preserve">
+        <value>Roter Punkt|Punkt</value>
+    </data>
 </root>

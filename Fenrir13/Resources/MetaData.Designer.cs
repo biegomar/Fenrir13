@@ -138,7 +138,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Verbinde den Sauerstoff mit der Flasche.
+        ///   Looks up a localized string similar to Verbinde den Helm mit dem Sauerstoff.
         /// </summary>
         internal static string QUEST_V {
             get {
