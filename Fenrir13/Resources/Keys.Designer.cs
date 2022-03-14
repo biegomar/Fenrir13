@@ -997,6 +997,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to MAINTENANCE_ROOM_DRAWER_HANDLE.
+        /// </summary>
+        internal static string MAINTENANCE_ROOM_DRAWER_HANDLE {
+            get {
+                return ResourceManager.GetString("MAINTENANCE_ROOM_DRAWER_HANDLE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to MAINTENANCE_ROOM_EAST_WALL.
         /// </summary>
         internal static string MAINTENANCE_ROOM_EAST_WALL {

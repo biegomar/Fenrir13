@@ -1010,4 +1010,7 @@ Am Tag nach Deiner erfolgreichen Intervention sitzt Du mit der gesamten Crew zus
     <data name="SIGNS_OF_USE" xml:space="preserve">
         <value>Kleinere Schnitte, Macken und Kerben finden sich vereinzelt auf der Oberfläche wieder. Gebrauchsspuren halt.</value>
     </data>
+    <data name="MAINTENANCE_ROOM_DRAWER_HANDLE" xml:space="preserve">
+        <value>Die messingfarbigen Griffe scheinen aus Metall gefertigt zu sein.</value>
+    </data>
 </root>

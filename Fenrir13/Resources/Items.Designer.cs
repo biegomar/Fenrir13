@@ -844,6 +844,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Griffe|Griff.
+        /// </summary>
+        internal static string MAINTENANCE_ROOM_DRAWER_HANDLE {
+            get {
+                return ResourceManager.GetString("MAINTENANCE_ROOM_DRAWER_HANDLE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Östliche Wand|Ost Wand.
         /// </summary>
         internal static string MAINTENANCE_ROOM_EAST_WALL {

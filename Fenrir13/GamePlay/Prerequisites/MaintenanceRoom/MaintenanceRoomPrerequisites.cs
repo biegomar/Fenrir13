@@ -30,6 +30,7 @@ internal static class MaintenanceRoomPrerequisites
         room.Surroundings.Add(Keys.MAINTENANCE_ROOM_SHELF, () => Descriptions.MAINTENANCE_ROOM_SHELF);
         room.Surroundings.Add(Keys.MAINTENANCE_ROOM_PLATE, () => Descriptions.MAINTENANCE_ROOM_PLATE);
         room.Surroundings.Add(Keys.SIGNS_OF_USE, () => Descriptions.SIGNS_OF_USE);
+        room.Surroundings.Add(Keys.MAINTENANCE_ROOM_DRAWER_HANDLE, () => Descriptions.MAINTENANCE_ROOM_DRAWER_HANDLE);
     }
     
     private static Item GetWorkbench(EventProvider eventProvider)
