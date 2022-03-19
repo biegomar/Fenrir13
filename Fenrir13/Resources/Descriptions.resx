@@ -746,7 +746,7 @@ Bei genauerer Betrachtung erkennst Du, dass dort eine viereckige Aussparung ist.
         <value>Das Schiffsmodell wird in dem Hologramm in einer beachtlichen Detailtiefe dargestellt. Als Du Deine Hände danach ausstreckst, merkst Du, dass Du es nach Belieben um alle Achsen drehen, sowie verkleinern und vergrößern kannst.</value>
     </data>
     <data name="ENGINE_ROOM_RED_DOTS" xml:space="preserve">
-        <value>Als Du die roten Punkte imaginär berührst erhälst Du detaillierte Informationen dazu: 
+        <value>Als Du in das Hologramm greifst, um die roten Punkte zu berühren, erhälst Du detaillierte Informationen dazu: 
 Der erste markiert den Reparatur-Droiden und er hat sein Dock auf dem Dach der Brücke. Du kannst erkennen, dass Du von der Schleuse eine einfache Sprossenleiter erklimmen musst, um ihn zu erreichen. Die Analyse der Situation durch den Cluster hat ergeben, dass offenbar derselbe Vorfall, der für das Loch im Rumpf verantwortlich ist auch die Antenne des Droiden tuschiert und abgeknickt hat. Sobald diese durch eine neue ersetzt wird, wird die Kommunikation mit dem Roboter wieder hergestellt und das Loch im Rumpf durch ihn repariert.
 Der Zweite Punkt verweist auf die mechanische Vorrichtung, um die Solarpanele auszufahren. Sie befindet sich unterhalb des Schiffs und kann über dieselbe Treppe erreicht werden. Der Handbetrieb ist zwar prinzipiell möglich, aber für eine untrainierte Person unwahrscheinlich. Daher wird in der Information darauf hingewiesen, einen belastbaren Hebel zu benutzen.</value>
     </data>
@@ -1012,5 +1012,16 @@ Am Tag nach Deiner erfolgreichen Intervention sitzt Du mit der gesamten Crew zus
     </data>
     <data name="MAINTENANCE_ROOM_DRAWER_HANDLE" xml:space="preserve">
         <value>Die messingfarbigen Griffe scheinen aus Metall gefertigt zu sein.</value>
+    </data>
+    <data name="ENGINE_ROOM_SHIP_MODEL_CONTAINMENT_II" xml:space="preserve">
+        <value>Ein einzelner roter Punkt auf der Oberfläche des Hologramms erregen Deine Aufmerksamkeit.</value>
+    </data>
+    <data name="ENGINE_ROOM_RED_DOTS_NO_ROBOT" xml:space="preserve">
+        <value>Als Du in das Hologramm greifst, um den roten Punkt zu berühren, erhälst Du detaillierte Informationen dazu: 
+Der Punkt verweist auf die mechanische Vorrichtung, um die Solarpanele auszufahren. Sie befindet sich unterhalb des Schiffs und kann über die Leiter erreicht werden. Der Handbetrieb ist zwar prinzipiell möglich, aber für eine untrainierte Person unwahrscheinlich. Daher wird in der Information darauf hingewiesen, einen belastbaren Hebel zu benutzen.</value>
+    </data>
+    <data name="ENGINE_ROOM_RED_DOTS_NO_SOLAR" xml:space="preserve">
+        <value>Als Du in das Hologramm greifst, um den roten Punkt zu berühren, erhälst Du detaillierte Informationen dazu: 
+Der Punkt markiert den Reparatur-Droiden und er hat sein Dock auf dem Dach der Brücke. Du kannst erkennen, dass Du von der Schleuse eine einfache Sprossenleiter erklimmen musst, um ihn zu erreichen. Die Analyse der Situation durch den Cluster hat ergeben, dass offenbar derselbe Vorfall, der für das Loch im Rumpf verantwortlich ist auch die Antenne des Droiden tuschiert und abgeknickt hat. Sobald diese durch eine neue ersetzt wird, wird die Kommunikation mit dem Roboter wieder hergestellt und das Loch im Rumpf durch ihn repariert.</value>
     </data>
 </root>

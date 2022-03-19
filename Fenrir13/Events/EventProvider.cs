@@ -754,12 +754,15 @@ internal class EventProvider
                     antenna.LinkedToDescription = Descriptions.DROID_ANTENNA_LINKDESCRIPTION;
 
                     PrintingSubsystem.Resource(Descriptions.DROID_ANTENNA_MOUNTED);
+
+                    ChangeShipModelContainment();
+                        
                     tool.Use -= MountAntennaToDroid;
                     antenna.Use -= MountAntennaToDroid;
                     droid.Use -= MountAntennaToDroid;
 
                     this.universe.Score += this.universe.ScoreBoard[nameof(MountAntennaToDroid)];
-                    this.universe.SolveQuest(MetaData.QUEST_VII);
+                    this.RobotQuestReady();
                 }
                 else
                 {
@@ -810,19 +813,44 @@ internal class EventProvider
                 antenna.LinkedToDescription = Descriptions.DROID_ANTENNA_LINKDESCRIPTION;
 
                 PrintingSubsystem.Resource(Descriptions.DROID_ANTENNA_MOUNTED);
-                
+
+                ChangeShipModelContainment();
+                    
                 tool.Use -= MountAntennaToDroid;
                 antenna.Use -= MountAntennaToDroid;
                 droid.Use -= MountAntennaToDroid;
 
                 this.universe.Score += this.universe.ScoreBoard[nameof(MountAntennaToDroid)];
-                this.universe.SolveQuest(MetaData.QUEST_VII);
+                this.RobotQuestReady();
             }
             else
             {
                 throw new UseException(BaseDescriptions.DOES_NOT_WORK);
             }
         }    
+    }
+
+    private void ChangeShipModelContainment()
+    {
+        var shipModel = this.universe.GetObjectFromWorldByKey(Keys.ENGINE_ROOM_SHIP_MODEL) as Item;
+
+        if (shipModel != null && shipModel.ContainmentDescription == Descriptions.ENGINE_ROOM_SHIP_MODEL_CONTAINMENT)
+        {
+            shipModel.ContainmentDescription = Descriptions.ENGINE_ROOM_SHIP_MODEL_CONTAINMENT_II;
+        }
+        
+    }
+
+    private void RobotQuestReady()
+    {
+        var engineRoom = this.universe.GetLocationByKey(Keys.ENGINE_ROOM);
+
+        if (engineRoom != default)
+        {
+            engineRoom.Surroundings[Keys.ENGINE_ROOM_RED_DOTS] = () => Descriptions.ENGINE_ROOM_RED_DOTS_NO_ROBOT;
+        }
+        
+        this.universe.SolveQuest(MetaData.QUEST_VII);
     }
     
     internal void UseOxygenBottleWithHelmet(object sender, UseItemEventArgs eventArgs)

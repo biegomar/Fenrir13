@@ -1249,7 +1249,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Östliche Wand.
+        ///   Looks up a localized string similar to Östliche Wand|Ost Wand.
         /// </summary>
         internal static string SOCIALROOM_EAST_WALL {
             get {
@@ -1276,7 +1276,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Nördliche Wand.
+        ///   Looks up a localized string similar to Nördliche Wand| Nord Wand.
         /// </summary>
         internal static string SOCIALROOM_NORTH_WALL {
             get {
@@ -1303,7 +1303,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Südliche Wand.
+        ///   Looks up a localized string similar to Südliche Wand|Süd Wand.
         /// </summary>
         internal static string SOCIALROOM_SOUTH_WALL {
             get {
@@ -1321,7 +1321,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Westliche Wand.
+        ///   Looks up a localized string similar to Westliche Wand|West Wand.
         /// </summary>
         internal static string SOCIALROOM_WEST_WALL {
             get {

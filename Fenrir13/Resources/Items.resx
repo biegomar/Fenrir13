@@ -298,10 +298,10 @@
         <value>Sessel|Sitz</value>
     </data>
     <data name="SOCIALROOM_EAST_WALL" xml:space="preserve">
-        <value>Östliche Wand</value>
+        <value>Östliche Wand|Ost Wand</value>
     </data>
     <data name="SOCIALROOM_WEST_WALL" xml:space="preserve">
-        <value>Westliche Wand</value>
+        <value>Westliche Wand|West Wand</value>
     </data>
     <data name="SOCIALROOM_CEILING" xml:space="preserve">
         <value>Decke|Zimmer Decke</value>
@@ -322,10 +322,10 @@
         <value>Wand</value>
     </data>
     <data name="SOCIALROOM_SOUTH_WALL" xml:space="preserve">
-        <value>Südliche Wand</value>
+        <value>Südliche Wand|Süd Wand</value>
     </data>
     <data name="SOCIALROOM_NORTH_WALL" xml:space="preserve">
-        <value>Nördliche Wand</value>
+        <value>Nördliche Wand| Nord Wand</value>
     </data>
     <data name="SOCIALROOM_BILLARD" xml:space="preserve">
         <value>Billardtisch</value>

@@ -1079,12 +1079,32 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Als Du die roten Punkte imaginär berührst erhälst Du detaillierte Informationen dazu: 
-        ///Der erste markiert den Reparatur-Droiden und er hat sein Dock auf dem Dach der Brücke. Du kannst erkennen, dass Du von der Schleuse eine einfache Sprossenleiter erklimmen musst, um ihn zu erreichen. Die Analyse der Situation durch den Cluster hat ergeben, dass offenbar derselbe Vorfall, der für das Loch im Rumpf verantwortlich ist auch die Antenne des Droiden tuschiert und abgeknickt hat. Sobald diese durch eine neue ers [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to Als Du in das Hologramm greifst, um die roten Punkte zu berühren, erhälst Du detaillierte Informationen dazu: 
+        ///Der erste markiert den Reparatur-Droiden und er hat sein Dock auf dem Dach der Brücke. Du kannst erkennen, dass Du von der Schleuse eine einfache Sprossenleiter erklimmen musst, um ihn zu erreichen. Die Analyse der Situation durch den Cluster hat ergeben, dass offenbar derselbe Vorfall, der für das Loch im Rumpf verantwortlich ist auch die Antenne des Droiden tuschiert und abgeknickt hat. Sobald d [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string ENGINE_ROOM_RED_DOTS {
             get {
                 return ResourceManager.GetString("ENGINE_ROOM_RED_DOTS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Als Du in das Hologramm greifst, um den roten Punkt zu berühren, erhälst Du detaillierte Informationen dazu: 
+        ///Der Punkt verweist auf die mechanische Vorrichtung, um die Solarpanele auszufahren. Sie befindet sich unterhalb des Schiffs und kann über die Leiter erreicht werden. Der Handbetrieb ist zwar prinzipiell möglich, aber für eine untrainierte Person unwahrscheinlich. Daher wird in der Information darauf hingewiesen, einen belastbaren Hebel zu benutzen..
+        /// </summary>
+        internal static string ENGINE_ROOM_RED_DOTS_NO_ROBOT {
+            get {
+                return ResourceManager.GetString("ENGINE_ROOM_RED_DOTS_NO_ROBOT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Als Du in das Hologramm greifst, um den roten Punkt zu berühren, erhälst Du detaillierte Informationen dazu: 
+        ///Der Punkt markiert den Reparatur-Droiden und er hat sein Dock auf dem Dach der Brücke. Du kannst erkennen, dass Du von der Schleuse eine einfache Sprossenleiter erklimmen musst, um ihn zu erreichen. Die Analyse der Situation durch den Cluster hat ergeben, dass offenbar derselbe Vorfall, der für das Loch im Rumpf verantwortlich ist auch die Antenne des Droiden tuschiert und abgeknickt hat. Sobald di [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string ENGINE_ROOM_RED_DOTS_NO_SOLAR {
+            get {
+                return ResourceManager.GetString("ENGINE_ROOM_RED_DOTS_NO_SOLAR", resourceCulture);
             }
         }
         
@@ -1103,6 +1123,15 @@ namespace Fenrir13.Resources {
         internal static string ENGINE_ROOM_SHIP_MODEL_CONTAINMENT {
             get {
                 return ResourceManager.GetString("ENGINE_ROOM_SHIP_MODEL_CONTAINMENT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ein einzelner roter Punkt auf der Oberfläche des Hologramms erregen Deine Aufmerksamkeit..
+        /// </summary>
+        internal static string ENGINE_ROOM_SHIP_MODEL_CONTAINMENT_II {
+            get {
+                return ResourceManager.GetString("ENGINE_ROOM_SHIP_MODEL_CONTAINMENT_II", resourceCulture);
             }
         }
         
