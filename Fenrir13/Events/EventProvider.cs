@@ -762,7 +762,7 @@ internal class EventProvider
                     droid.Use -= MountAntennaToDroid;
 
                     this.universe.Score += this.universe.ScoreBoard[nameof(MountAntennaToDroid)];
-                    this.RobotQuestReady();
+                    this.SolveRobotQuest();
                 }
                 else
                 {
@@ -821,7 +821,7 @@ internal class EventProvider
                 droid.Use -= MountAntennaToDroid;
 
                 this.universe.Score += this.universe.ScoreBoard[nameof(MountAntennaToDroid)];
-                this.RobotQuestReady();
+                this.SolveRobotQuest();
             }
             else
             {
@@ -834,23 +834,56 @@ internal class EventProvider
     {
         var shipModel = this.universe.GetObjectFromWorldByKey(Keys.ENGINE_ROOM_SHIP_MODEL) as Item;
 
-        if (shipModel != null && shipModel.ContainmentDescription == Descriptions.ENGINE_ROOM_SHIP_MODEL_CONTAINMENT)
+        if (shipModel != null)
         {
-            shipModel.ContainmentDescription = Descriptions.ENGINE_ROOM_SHIP_MODEL_CONTAINMENT_II;
+            if (shipModel.ContainmentDescription == Descriptions.ENGINE_ROOM_SHIP_MODEL_CONTAINMENT)
+            {
+                shipModel.ContainmentDescription = Descriptions.ENGINE_ROOM_SHIP_MODEL_CONTAINMENT_II;
+            }
+            else if (shipModel.ContainmentDescription == Descriptions.ENGINE_ROOM_SHIP_MODEL_CONTAINMENT_II)
+            {
+                shipModel.ContainmentDescription = string.Empty;
+            }
         }
-        
     }
 
-    private void RobotQuestReady()
+    private void SolveRobotQuest()
     {
         var engineRoom = this.universe.GetLocationByKey(Keys.ENGINE_ROOM);
 
         if (engineRoom != default)
         {
-            engineRoom.Surroundings[Keys.ENGINE_ROOM_RED_DOTS] = () => Descriptions.ENGINE_ROOM_RED_DOTS_NO_ROBOT;
+            if (!this.universe.IsQuestSolved(MetaData.QUEST_VIII))
+            {
+                engineRoom.Surroundings[Keys.ENGINE_ROOM_RED_DOTS] = () => Descriptions.ENGINE_ROOM_RED_DOTS_NO_ROBOT;    
+            }
+            else
+            {
+                engineRoom.Surroundings.Remove(Keys.ENGINE_ROOM_RED_DOTS);
+            }
         }
         
         this.universe.SolveQuest(MetaData.QUEST_VII);
+    }
+    
+    private void SolveEnergyQuest()
+    {
+        var engineRoom = this.universe.GetLocationByKey(Keys.ENGINE_ROOM);
+
+        if (engineRoom != default)
+        {
+            if (!this.universe.IsQuestSolved(MetaData.QUEST_VII))
+            {
+                engineRoom.Surroundings[Keys.ENGINE_ROOM_RED_DOTS] = () => Descriptions.ENGINE_ROOM_RED_DOTS_NO_SOLAR;    
+            }
+            else
+            {
+                engineRoom.Surroundings.Remove(Keys.ENGINE_ROOM_RED_DOTS);
+            }
+            
+        }
+        
+        this.universe.SolveQuest(MetaData.QUEST_VIII);
     }
     
     internal void UseOxygenBottleWithHelmet(object sender, UseItemEventArgs eventArgs)
@@ -918,6 +951,9 @@ internal class EventProvider
                 }
                 
                 PrintingSubsystem.Resource(Descriptions.PANEL_TOP_LEVER_DUMBBELL_BAR);
+
+                ChangeShipModelContainment();
+                    
                 dumbbellBar.Use -= UseDumbbellBarWithLever;
                 lever.Use -= UseDumbbellBarWithLever;
 
@@ -926,10 +962,9 @@ internal class EventProvider
                 {
                     droid.ContainmentDescription = Descriptions.DROID_ENERGY_CONTAINMENT;
                 }
-                
 
                 this.universe.Score += this.universe.ScoreBoard[nameof(UseDumbbellBarWithLever)];
-                this.universe.SolveQuest(MetaData.QUEST_VIII);
+                this.SolveEnergyQuest();
             }
             else
             {
