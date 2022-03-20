@@ -570,4 +570,46 @@
     <data name="CORRIDOR_WEST_BULLEYE" xml:space="preserve">
         <value>CORRIDOR_WEST_BULLEYE</value>
     </data>
+    <data name="SOCIALROOM_MEDIASERVER" xml:space="preserve">
+        <value>SOCIALROOM_MEDIASERVER</value>
+    </data>
+    <data name="KITCHEN_CABINET" xml:space="preserve">
+        <value>KITCHEN_CABINET</value>
+    </data>
+    <data name="PANEL_TOP_SUPPLYLINES" xml:space="preserve">
+        <value>PANEL_TOP_SUPPLYLINES</value>
+    </data>
+    <data name="PANEL_TOP_WOLF" xml:space="preserve">
+        <value>PANEL_TOP_WOLF</value>
+    </data>
+    <data name="PANEL_TOP_LAMPS" xml:space="preserve">
+        <value>PANEL_TOP_LAMPS</value>
+    </data>
+    <data name="PANEL_TOP_WINDOWS" xml:space="preserve">
+        <value>PANEL_TOP_WINDOWS</value>
+    </data>
+    <data name="PANEL_TOP_PANELS" xml:space="preserve">
+        <value>PANEL_TOP_PANELS</value>
+    </data>
+    <data name="SPACE_LADDER" xml:space="preserve">
+        <value>SPACE_LADDER</value>
+    </data>
+    <data name="JETTY_HULL" xml:space="preserve">
+        <value>JETTY_HULL</value>
+    </data>
+    <data name="JETTY_SPACE" xml:space="preserve">
+        <value>JETTY_SPACE</value>
+    </data>
+    <data name="JETTY_ENGINE" xml:space="preserve">
+        <value>JETTY_ENGINE</value>
+    </data>
+    <data name="AIRLOCK_BULKHEAD" xml:space="preserve">
+        <value>AIRLOCK_BULKHEAD</value>
+    </data>
+    <data name="ROOF_TOP_DOCK" xml:space="preserve">
+        <value>ROOF_TOP_DOCK</value>
+    </data>
+    <data name="ROOF_TOP_CLAW" xml:space="preserve">
+        <value>ROOF_TOP_CLAW</value>
+    </data>
 </root>

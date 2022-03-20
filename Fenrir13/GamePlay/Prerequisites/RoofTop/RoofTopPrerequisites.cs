@@ -16,6 +16,8 @@ internal static class RoofTopPrerequisites
             Grammar = new Grammars(Genders.Neutrum)
         };
         
+        AddSurroundings(room);
+        
         room.Items.Add(GetDroid(eventProvider));
 
         return room;
@@ -36,6 +38,15 @@ internal static class RoofTopPrerequisites
         AddUseEvents(droid, eventProvider);
 
         return droid;
+    }
+    
+    private static void AddSurroundings(Location room)
+    {
+        room.Surroundings.Add(Keys.SPACE_LADDER, () => Descriptions.SPACE_LADDER);
+        room.Surroundings.Add(Keys.JETTY_SPACE, () => Descriptions.JETTY_SPACE);
+        room.Surroundings.Add(Keys.PROXIMA_CENTAURI, () => Descriptions.PROXIMA_CENTAURI);
+        room.Surroundings.Add(Keys.ROOF_TOP_CLAW, () => Descriptions.ROOF_TOP_CLAW);
+        room.Surroundings.Add(Keys.ROOF_TOP_DOCK, () => Descriptions.ROOF_TOP_DOCK);
     }
     
     private static void AddUseEvents(Item item, EventProvider eventProvider)

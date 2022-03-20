@@ -15,6 +15,8 @@ internal static class PanelTopPrerequisites
             Description = Descriptions.PANEL_TOP
         };
 
+        AddSurroundings(panelTop);
+        
         panelTop.Items.Add(GetLever(eventProvider));
         return panelTop;
     }
@@ -35,6 +37,17 @@ internal static class PanelTopPrerequisites
         AddUseEvents(lever, eventProvider);
         
         return lever;
+    }
+    
+    private static void AddSurroundings(Location panelTop)
+    {
+        panelTop.Surroundings.Add(Keys.PANEL_TOP_SUPPLYLINES, () => Descriptions.PANEL_TOP_SUPPLYLINES);
+        panelTop.Surroundings.Add(Keys.PANEL_TOP_WOLF, () => Descriptions.PANEL_TOP_WOLF);
+        panelTop.Surroundings.Add(Keys.PANEL_TOP_LAMPS, () => Descriptions.PANEL_TOP_LAMPS);
+        panelTop.Surroundings.Add(Keys.PANEL_TOP_WINDOWS, () => Descriptions.PANEL_TOP_WINDOWS);
+        panelTop.Surroundings.Add(Keys.PANEL_TOP_PANELS, () => Descriptions.PANEL_TOP_PANELS);
+        panelTop.Surroundings.Add(Keys.SPACE_LADDER, () => Descriptions.SPACE_LADDER);
+        panelTop.Surroundings.Add(Keys.JETTY_SPACE, () => Descriptions.JETTY_SPACE);
     }
     
     private static void AddPullEvents(AContainerObject item, EventProvider eventProvider)

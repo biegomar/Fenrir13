@@ -20,6 +20,8 @@ public class SocialRoomPrerequisites
         socialRoom.Items.Add(GetAntennaConstruction(eventProvider));
         
         AddSurroundings(socialRoom);
+        
+        AddSitDownEvents(socialRoom, eventProvider);
 
         return socialRoom;
     }
@@ -44,6 +46,7 @@ public class SocialRoomPrerequisites
         socialRoom.Surroundings.Add(Keys.SOCIALROOM_BILLARD_TRIANGLE, () => Descriptions.SOCIALROOM_BILLARD_TRIANGLE);
         socialRoom.Surroundings.Add(Keys.SOCIALROOM_DARTS, () => Descriptions.SOCIALROOM_DARTS);
         socialRoom.Surroundings.Add(Keys.SOCIALROOM_GLASS_TABLE, () => Descriptions.SOCIALROOM_GLASS_TABLE);
+        socialRoom.Surroundings.Add(Keys.SOCIALROOM_MEDIASERVER, () => Descriptions.SOCIALROOM_MEDIASERVER);
         socialRoom.Surroundings.Add(Keys.SOCIALROOM_BOOKS, () => string.Format(Descriptions.SOCIALROOM_BOOKS, GetBookTitle()));
     }
 
@@ -70,9 +73,10 @@ public class SocialRoomPrerequisites
             Name = Items.SOCIALROOM_COUCH,
             Description = Descriptions.SOCIALROOM_COUCH,
             IsClimbAble = true,
-            IsPickAble = false,
+            IsSeatAble = true,
+            IsPickAble = false
         };
-
+        
         return couch;
     }
     
@@ -85,6 +89,7 @@ public class SocialRoomPrerequisites
             Description = Descriptions.SOCIALROOM_ANTENNA_CONSTRUCTION,
             ContainmentDescription = Descriptions.SOCIALROOM_ANTENNA_CONSTRUCTION_CONTAINMENT,
             IsPickAble = false,
+            Grammar = new Grammars(Genders.Male)
         };
         
         antennaConstruction.LinkedTo.Add(GetAntenna(eventProvider));
@@ -119,5 +124,10 @@ public class SocialRoomPrerequisites
     {
         item.Use += eventProvider.UseToolWithAntennaInSocialRoom;
         item.Use += eventProvider.MountAntennaToDroid;
+    }
+    
+    private static void AddSitDownEvents(Location room, EventProvider eventProvider)
+    {
+        room.SitDown += eventProvider.SitDownOnCouchInSocialRoom;
     }
 }

@@ -71,6 +71,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Ein sehr massives Schott, dass Dich davor bewahren soll, ins All gesaugt zu werden..
+        /// </summary>
+        internal static string AIRLOCK_BULKHEAD {
+            get {
+                return ResourceManager.GetString("AIRLOCK_BULKHEAD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Die Winde selbst ist recht unspektakulär und funktioniert vollkommen automatisch. Da sie sehr stabil und vertrauenswürdig aussieht, brauchst Du Dich nicht weiter um sie zu kümmern..
         /// </summary>
         internal static string AIRLOCK_CABLE_WINCH {
@@ -998,6 +1007,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Im Moment verharrt er in seinem Ladedock und Du erkennst deutlich die Stelle, an der eigentlich eine Antenne sein sollte. Da muss eines der kleinen, interstellaren Geschosse ganze Arbeit geleistet haben. Aber so wie es aussieht, lässt sich dort eine andere Antenne mit einem guten Werkzeug wieder anbringen. .
+        /// </summary>
+        internal static string DROID_FIRSTLOOK_II {
+            get {
+                return ResourceManager.GetString("DROID_FIRSTLOOK_II", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Mit ein paar Handgriffen lässt sich diese lange Hantelstange mit Gewichten bestücken und so für viele Kraftübungen einsetzen. Sie ist aus hochwertigem Stahl gefertigt, ca. 120 cm lang und sie sieht sehr schwer aus..
         /// </summary>
         internal static string DUMBBELL_BAR {
@@ -1163,7 +1181,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ein einzelner roter Punkt auf der Oberfläche des Hologramms erregen Deine Aufmerksamkeit..
+        ///   Looks up a localized string similar to Ein einzelner roter Punkt auf der Oberfläche des Hologramms erregt Deine Aufmerksamkeit..
         /// </summary>
         internal static string ENGINE_ROOM_SHIP_MODEL_CONTAINMENT_II {
             get {
@@ -1726,11 +1744,47 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Die riesigen Treibwerke sind ein Wunder der Technik ansich. Du hast überhaupt keine Ahnung, wie sie funktionieren..
+        /// </summary>
+        internal static string JETTY_ENGINE {
+            get {
+                return ResourceManager.GetString("JETTY_ENGINE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Die Hülle, und somit auch die Rückseite, besteht aus einer neuartigen Graphen-Stahl-Verbindung und ist ultrafest und dabei hauchdünn und leicht. Die Frage, wie das Geschoss aus dem All es geschafft hat, sie zu durchschlagen, blitzt kurz in Deinen Gedanken auf. Und ist auch schon wieder verschwunden....
+        /// </summary>
+        internal static string JETTY_HULL {
+            get {
+                return ResourceManager.GetString("JETTY_HULL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Der Blick ist gleichermaßen faszinierend und befremdlich. Keine der Konstellationen kommt Dir bekannt vor. Doch die Klarheit des Blicks lässt Dich das strahlende Band der Milchstraße erkennen, in der wir und natürlich noch immer befinden..
+        /// </summary>
+        internal static string JETTY_SPACE {
+            get {
+                return ResourceManager.GetString("JETTY_SPACE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Für die maximal sechs Personen Besatzung ist die Küche üppig ausgestattet und sehr geräumig. Es finden sich ein Food-Printer für die Zubereitung der individuellen Gerichte, ein Reststoffverwerter, ein Kühlschrank für die Nahrungsbausteine des Druckers, sowie einige Schränke. Wenn man essen möchte, nimmt man an einem der sechs Stühle vor dem geräumigen Tisch in der Mitte des Raumes Platz. Wie überall im Schiff ist der Boden aus magnetisierbarem Metall, um auch hier das Möbiliar gegen Verrutschen zu sichern..
         /// </summary>
         internal static string KITCHEN {
             get {
                 return ResourceManager.GetString("KITCHEN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Du wirfst eine kurzen Blick in die Schränke. Dort ist nichts von Bedeutung..
+        /// </summary>
+        internal static string KITCHEN_CABINET {
+            get {
+                return ResourceManager.GetString("KITCHEN_CABINET", resourceCulture);
             }
         }
         
@@ -2024,11 +2078,20 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Du bist nun da angekommen, wo Du die manuelle Steuerung der Solarkollektoren erwartest..
+        ///   Looks up a localized string similar to Dies ist eher eine schmale Plattform, auf deren Boden sich metallummantelte Versorgungsleitungen dicht gedrängt ihren Weg zu ihren eigentlichen Bestimmungsorten bahnen. Eine gerade mal zwei, drei Fuß breite Schneise zwischen den Leitungen ermöglicht Dir ein Vorankommen. Deine magnetischen Stiefel und die Sicherungsleine geben Dir hier draußen aber genug Selbstvertrauen. Irgendwo hier muss nun die Vorrichtung für die Solar-Panele sein..
         /// </summary>
         internal static string PANEL_TOP {
             get {
                 return ResourceManager.GetString("PANEL_TOP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Einfache Kontrollleuchten, die überall auf dem Schiff angebracht sind, um den Status diverses Geräte anzuzeigen..
+        /// </summary>
+        internal static string PANEL_TOP_LAMPS {
+            get {
+                return ResourceManager.GetString("PANEL_TOP_LAMPS", resourceCulture);
             }
         }
         
@@ -2052,8 +2115,8 @@ namespace Fenrir13.Resources {
         
         /// <summary>
         ///   Looks up a localized string similar to Dank der Vertiefung kannst Du die Hantelstange prima als Hebel benutzen. Du setzt an und drückst den Griff damit hoch. Du blickst über den Cargo-Bereich und erkennst, dass sich die Schutzverkleidungen über den Solarkollektoren minimal bewegt haben! Du musst also diesen Griff mehrfach betätigen...
-        ///Du lässt Dich nicht aufhalten und pumpst mit dem Hebel und dem Griff Zug um Zug und die Panele öffnen sich immer weiter. Nach mehreren Minuten schweißtreibender Plackerei ist es geschafft! Die Panel sind frei!
-        ///De [rest of string was truncated]&quot;;.
+        ///Du lässt Dich nicht aufhalten und pumpst mit dem Hebel und dem Griff Zug um Zug und die Panele öffnen sich immer weiter. Nach mehreren Minuten schweißtreibender Plackerei ist es geschafft! Die Panels sind frei!
+        ///D [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string PANEL_TOP_LEVER_DUMBBELL_BAR {
             get {
@@ -2076,6 +2139,51 @@ namespace Fenrir13.Resources {
         internal static string PANEL_TOP_LEVER_REDDOTS_CONTAINMENT {
             get {
                 return ResourceManager.GetString("PANEL_TOP_LEVER_REDDOTS_CONTAINMENT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Eine sehr effiziente Variante von Kollektoren, die das gesamte Schiff direkt mit Strom versorgen können und darüber hinaus auch die überschüssige Energie für den Weiterflug in riesigen Batterien speichert..
+        /// </summary>
+        internal static string PANEL_TOP_PANELS {
+            get {
+                return ResourceManager.GetString("PANEL_TOP_PANELS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Keine Ahnung, was sich innerhalb der Leitungen befindet. Aber das Metall schützt sie hervorragend..
+        /// </summary>
+        internal static string PANEL_TOP_SUPPLYLINES {
+            get {
+                return ResourceManager.GetString("PANEL_TOP_SUPPLYLINES", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Über die Leiter führt der Weg wieder hinauf zum Steg..
+        /// </summary>
+        internal static string PANEL_TOP_WAY_TO_JETTY {
+            get {
+                return ResourceManager.GetString("PANEL_TOP_WAY_TO_JETTY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Je mehr und stabiler die Panels Strom liefern, umso mehr Lichter gehen auch innerhalb des Schiffs wieder an. Die Notbeleuchtung wird nach und nach durch die normale Beleuchtung ersetzt..
+        /// </summary>
+        internal static string PANEL_TOP_WINDOWS {
+            get {
+                return ResourceManager.GetString("PANEL_TOP_WINDOWS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bei dem Tier an der Steuerbordseite des Cargo-Bereichs handelt es sich ganz klar um den Wolf Fenrir aus der nordischen Mythologie und Namensgeber einer kleinen Flotte von Raumtransportern, zu denen auch die Fenrir 13 gehört..
+        /// </summary>
+        internal static string PANEL_TOP_WOLF {
+            get {
+                return ResourceManager.GetString("PANEL_TOP_WOLF", resourceCulture);
             }
         }
         
@@ -2288,11 +2396,38 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Die Krallen greifen in entsprechende Vertiefungen des Roboters und sichern ihn so davor, vom Schiff geschleudert zu werden. .
+        /// </summary>
+        internal static string ROOF_TOP_CLAW {
+            get {
+                return ResourceManager.GetString("ROOF_TOP_CLAW", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to An der Rückseite des Schiffs kannst Du eine Leiter erkennen, die sowohl nach oben, auf das Dach des Wohnbereichs, als auch nach Unten an die Unterseite des Schiffs reicht..
         /// </summary>
         internal static string ROOF_TOP_DESTINATION {
             get {
                 return ResourceManager.GetString("ROOF_TOP_DESTINATION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Über das Dock wird der Droide sowohl mit Energie versorgt, als auch während seiner Ruhephasen vor Verlust gesichert. Die Ladungssicherung wird über drei Krallen realisiert, die sich automatisch zurückziehen, sobald der Roboter seine Tätigkeiten aufnimmt..
+        /// </summary>
+        internal static string ROOF_TOP_DOCK {
+            get {
+                return ResourceManager.GetString("ROOF_TOP_DOCK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Über die Leiter führt der Weg wieder hinunter zum Steg..
+        /// </summary>
+        internal static string ROOF_TOP_WAY_TO_JETTY {
+            get {
+                return ResourceManager.GetString("ROOF_TOP_WAY_TO_JETTY", resourceCulture);
             }
         }
         
@@ -2378,7 +2513,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Bildschirm scheint seine Inhalte über ein klassiches Funknetz von einem Mediaserver zu beziehen, zumindest deutet eine Antennenkonstruktion an der Decke über der Couch darauf hin..
+        ///   Looks up a localized string similar to Der Bildschirm scheint seine Inhalte über ein klassiches Funknetz von einem Mediaserver zu beziehen, zumindest deutet ein Receiver an der Decke über der Couch darauf hin..
         /// </summary>
         internal static string SOCIALROOM_ANTENNA_CONSTRUCTION_CONTAINMENT {
             get {
@@ -2612,6 +2747,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Irgendwo hier auf dem Schiff ist auf irgendeinem Rechner auch ein Mediaserver installiert. Gespeichert sind darauf alle erdenklichen Filme und Serien, seitdem es Bewegtbilder gibt..
+        /// </summary>
+        internal static string SOCIALROOM_MEDIASERVER {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_MEDIASERVER", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Der Bildschirm ist eigentlich eine dünne Folie, die mit geringem Abstand vor die komplette südliche Wand des Raums gespannt wurde. Das Ding ist super brilliant und absolut scharf. Damit macht es richtig Spaß, Serien von SpaceFlix zu schauen..
         /// </summary>
         internal static string SOCIALROOM_MONITOR {
@@ -2671,6 +2815,15 @@ namespace Fenrir13.Resources {
         internal static string SPACE_CLOTHS_NEEDED {
             get {
                 return ResourceManager.GetString("SPACE_CLOTHS_NEEDED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Die Leiter ist nicht viel mehr, als eine Aneinanderreihung einzelner Sprossen, die über zwei seitliche Schienen zusammengehalten werden..
+        /// </summary>
+        internal static string SPACE_LADDER {
+            get {
+                return ResourceManager.GetString("SPACE_LADDER", resourceCulture);
             }
         }
         
@@ -2883,11 +3036,20 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Du setzt Dich kurz auf den Stuhl, wippst ein wenig vor uns zurück und denkst Dir dann, dass es gerade unangemessen ist, dich zu setzen..
+        ///   Looks up a localized string similar to Du setzt Dich kurz auf einen der Stühle, wippst ein wenig vor uns zurück und denkst Dir dann, dass es gerade unangemessen ist, Dich zu setzen..
         /// </summary>
         internal static string TRY_TO_SIT_ON_CHAIR {
             get {
                 return ResourceManager.GetString("TRY_TO_SIT_ON_CHAIR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Du setzt Dich kurz auf das total bequeme Sofa und bekommst sofort Lust auf Chips und Cola. Aber irgendwie hälst Du es für nicht richtig, jetzt zu chillen. Du stehst wieder auf..
+        /// </summary>
+        internal static string TRY_TO_SIT_ON_COUCH {
+            get {
+                return ResourceManager.GetString("TRY_TO_SIT_ON_COUCH", resourceCulture);
             }
         }
         
@@ -2897,6 +3059,15 @@ namespace Fenrir13.Resources {
         internal static string TRY_TO_SIT_ON_OFFICECHAIR {
             get {
                 return ResourceManager.GetString("TRY_TO_SIT_ON_OFFICECHAIR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Du setzt Dich kurz auf einen der total bequemen Sessel und bekommst sofort Lust auf Chips und Cola. Aber irgendwie hälst Du es für nicht richtig, jetzt zu chillen. Du stehst wieder auf..
+        /// </summary>
+        internal static string TRY_TO_SIT_ON_SEAT {
+            get {
+                return ResourceManager.GetString("TRY_TO_SIT_ON_SEAT", resourceCulture);
             }
         }
         

@@ -16,6 +16,16 @@ internal static class JettyPrerequisites
             Grammar = new Grammars(Genders.Male)
         };
 
+        AddSurroundings(jetty);
+        
         return jetty;
+    }
+    
+    private static void AddSurroundings(Location jetty)
+    {
+        jetty.Surroundings.Add(Keys.SPACE_LADDER, () => Descriptions.SPACE_LADDER);
+        jetty.Surroundings.Add(Keys.JETTY_HULL, () => Descriptions.JETTY_HULL);
+        jetty.Surroundings.Add(Keys.JETTY_SPACE, () => Descriptions.JETTY_SPACE);
+        jetty.Surroundings.Add(Keys.JETTY_ENGINE, () => Descriptions.JETTY_ENGINE);
     }
 }

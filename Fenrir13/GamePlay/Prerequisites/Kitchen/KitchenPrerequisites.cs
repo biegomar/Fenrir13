@@ -21,6 +21,8 @@ internal static class KitchenPrerequisites
 
         AddSurroundings(kitchen);
         
+        AddSitDownEvents(kitchen, eventProvider);
+        
         return kitchen;
     }
 
@@ -31,6 +33,7 @@ internal static class KitchenPrerequisites
         kitchen.Surroundings.Add(Keys.CHAMBER_WALL, () => Descriptions.CHAMBER_WALL);
         kitchen.Surroundings.Add(Keys.TABLE, () => Descriptions.TABLE);
         kitchen.Surroundings.Add(Keys.CHAIR, () => Descriptions.CHAIR);
+        kitchen.Surroundings.Add(Keys.KITCHEN_CABINET, () => Descriptions.KITCHEN_CABINET);
     }
 
     private static Item GetFridge(EventProvider eventProvider)
@@ -94,6 +97,11 @@ internal static class KitchenPrerequisites
         item.Push += eventProvider.PushDoorHandleIntoRespiratorFlap;
         item.Use += eventProvider.UseDoorHandleWithRespiratorFlap;
         eventProvider.ScoreBoard.Add(nameof(eventProvider.PushDoorHandleIntoRespiratorFlap), 5);
+    }
+    
+    private static void AddSitDownEvents(Location room, EventProvider eventProvider)
+    {
+        room.SitDown += eventProvider.SitDownOnChairInKitchen;
     }
     
     private static Item GetFoodPrinter(EventProvider eventProvider)

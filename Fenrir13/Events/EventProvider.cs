@@ -154,6 +154,32 @@ internal class EventProvider
             throw new SitDownException(BaseDescriptions.NO_SEAT);
         }
     }
+    
+    internal void SitDownOnCouchInSocialRoom(object sender, SitDownEventArgs eventArgs)
+    {
+        if (sender is Location activeLocation && activeLocation.Key == Keys.SOCIALROOM)
+        {
+            if (string.IsNullOrEmpty(eventArgs.ExternalItemKey))
+            {
+                throw new SitDownException(Descriptions.WHERE_TO_SIT);
+            }
+
+            if (eventArgs.ExternalItemKey == Keys.SOCIALROOM_SEAT)
+            {
+                throw new SitDownException(Descriptions.TRY_TO_SIT_ON_SEAT);
+            }
+
+            throw new SitDownException(BaseDescriptions.NO_SEAT);
+        }
+    }
+    
+    internal void SitDownOnChairInKitchen(object sender, SitDownEventArgs eventArgs)
+    {
+        if (sender is Location activeLocation && activeLocation.Key == Keys.KITCHEN)
+        {
+            throw new SitDownException(Descriptions.TRY_TO_SIT_ON_CHAIR);
+        }
+    }
 
     internal void TryToTakeThingsFromCryoChamber(object sender, ContainerObjectEventArgs eventArgs)
     {
@@ -585,7 +611,7 @@ internal class EventProvider
         }
     }
     
-    internal void AfterSitDown(object sender, ContainerObjectEventArgs eventArgs)
+    internal void AfterSitDown(object sender, SitDownEventArgs eventArgs)
     {
         if (sender is Player you && you.Key == Keys.PLAYER)
         {
@@ -610,7 +636,7 @@ internal class EventProvider
         }
     }
     
-    internal void AfterSitDownOnQuestsSolved(object sender, ContainerObjectEventArgs eventArgs)
+    internal void AfterSitDownOnQuestsSolved(object sender, SitDownEventArgs eventArgs)
     {
         if (this.universe.IsQuestSolved(MetaData.QUEST_VII) && this.universe.IsQuestSolved(MetaData.QUEST_VIII))
         {
@@ -626,6 +652,18 @@ internal class EventProvider
                         this.universe.SolveQuest(MetaData.QUEST_IX);
                     }
                 }
+            }
+        }
+    }
+    
+    internal void AfterSitDownOnCouch(object sender, SitDownEventArgs eventArgs)
+    {
+        if (sender is Player you && you.Key == Keys.PLAYER)
+        {
+            if (you.IsSitting && eventArgs.ItemToSitOn.Key == Keys.SOCIALROOM_COUCH)
+            {
+                PrintingSubsystem.Resource(Descriptions.TRY_TO_SIT_ON_COUCH);
+                you.StandUp();
             }
         }
     }
@@ -852,9 +890,7 @@ internal class EventProvider
 
     private void ChangeShipModelContainment()
     {
-        var shipModel = this.universe.GetObjectFromWorldByKey(Keys.ENGINE_ROOM_SHIP_MODEL) as Item;
-
-        if (shipModel != null)
+        if (this.universe.GetObjectFromWorldByKey(Keys.ENGINE_ROOM_SHIP_MODEL) is Item shipModel)
         {
             if (shipModel.ContainmentDescription == Descriptions.ENGINE_ROOM_SHIP_MODEL_CONTAINMENT)
             {
@@ -878,6 +914,13 @@ internal class EventProvider
             else
             {
                 PrintingSubsystem.Resource(Descriptions.ROBOT_FIXING_WALL);
+                
+                var droid = this.universe.ActiveLocation.Items.SingleOrDefault(x => x.Key == Keys.DROID);
+                if (droid != default)
+                {
+                    this.universe.ActiveLocation.Items.Remove(droid);
+                }
+                
                 engineRoom.Surroundings.Remove(Keys.ENGINE_ROOM_RED_DOTS);
             }
         }
@@ -907,6 +950,14 @@ internal class EventProvider
             else
             {
                 PrintingSubsystem.Resource(Descriptions.ROBOT_FIXING_WALL);
+
+                var roof = this.universe.GetLocationByKey(Keys.ROOF_TOP);
+                var droid = roof.Items.SingleOrDefault(x => x.Key == Keys.DROID);
+                if (droid != default)
+                {
+                    roof.Items.Remove(droid);
+                }
+                
                 engineRoom.Surroundings.Remove(Keys.ENGINE_ROOM_RED_DOTS);
             }
             
@@ -1005,6 +1056,10 @@ internal class EventProvider
                 if (droid != default)
                 {
                     droid.ContainmentDescription = Descriptions.DROID_ENERGY_CONTAINMENT;
+                    if (!string.IsNullOrEmpty(droid.FirstLookDescription))
+                    {
+                        droid.FirstLookDescription = Descriptions.DROID_FIRSTLOOK_II;
+                    }
                 }
 
                 this.universe.Score += this.universe.ScoreBoard[nameof(UseDumbbellBarWithLever)];

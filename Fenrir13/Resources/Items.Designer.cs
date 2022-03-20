@@ -61,6 +61,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Schott.
+        /// </summary>
+        internal static string AIRLOCK_BULKHEAD {
+            get {
+                return ResourceManager.GetString("AIRLOCK_BULKHEAD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Seilwinde|Seil|Winde.
         /// </summary>
         internal static string AIRLOCK_CABLE_WINCH {
@@ -106,7 +115,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Graphen-Seil|Seil.
+        ///   Looks up a localized string similar to Graphen-Seil|Seil|Sicherungsseil|Sicherungsleine|Leine.
         /// </summary>
         internal static string AIRLOCK_ROPE {
             get {
@@ -826,11 +835,38 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Ionen-Strahlentriebwerke|Ionen Strahlentriebwerke|Strahlentriebwerke|Triebwerke|Ionen-Strahlentriebwerk|Ionen Strahlentriebwerk|Strahlentriebwerk|Triebwerk.
+        /// </summary>
+        internal static string JETTY_ENGINE {
+            get {
+                return ResourceManager.GetString("JETTY_ENGINE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hülle|Rückseite.
+        /// </summary>
+        internal static string JETTY_HULL {
+            get {
+                return ResourceManager.GetString("JETTY_HULL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to All|Sternenhimmel|Sterne|Himmel|Alpha Centauri.
+        /// </summary>
+        internal static string JETTY_SPACE {
+            get {
+                return ResourceManager.GetString("JETTY_SPACE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Schrank|Schränke.
         /// </summary>
-        internal static string KITCHEN_CLOSETS {
+        internal static string KITCHEN_CABINET {
             get {
-                return ResourceManager.GetString("KITCHEN_CLOSETS", resourceCulture);
+                return ResourceManager.GetString("KITCHEN_CABINET", resourceCulture);
             }
         }
         
@@ -979,11 +1015,56 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Handgriff|Hebel|Griff.
+        ///   Looks up a localized string similar to Lampen|Lampe|Kontrollleuchten|Kontrollleuchte.
+        /// </summary>
+        internal static string PANEL_TOP_LAMPS {
+            get {
+                return ResourceManager.GetString("PANEL_TOP_LAMPS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Handgriff|Hebel|Griff|Vorrichtung.
         /// </summary>
         internal static string PANEL_TOP_LEVER {
             get {
                 return ResourceManager.GetString("PANEL_TOP_LEVER", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Panele|Panels|Kollektoren.
+        /// </summary>
+        internal static string PANEL_TOP_PANELS {
+            get {
+                return ResourceManager.GetString("PANEL_TOP_PANELS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Metallummantelte Versorgungsleitung|Ummantelte Versorgungsleitung|Versorgungsleitung|Metallummantelte Leitung|Ummantelte Leitung|Leitung|Metallummantelte Versorgungsleitungen|Ummantelte Versorgungsleitungen|Versorgungsleitungen|Metallummantelte Leitungen|Ummantelte Leitungen|Leitungen.
+        /// </summary>
+        internal static string PANEL_TOP_SUPPLYLINES {
+            get {
+                return ResourceManager.GetString("PANEL_TOP_SUPPLYLINES", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fenster|Raumbeleuchtung|Beleuchtung.
+        /// </summary>
+        internal static string PANEL_TOP_WINDOWS {
+            get {
+                return ResourceManager.GetString("PANEL_TOP_WINDOWS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Wolfskopf|Wolf|Kopf|Steuerbordseite|Cargo-Bereich.
+        /// </summary>
+        internal static string PANEL_TOP_WOLF {
+            get {
+                return ResourceManager.GetString("PANEL_TOP_WOLF", resourceCulture);
             }
         }
         
@@ -1078,7 +1159,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Proxima Centauri|Roter Zwerg.
+        ///   Looks up a localized string similar to Proxima Centauri|Roter Zwerg|Proxima|Centauri.
         /// </summary>
         internal static string PROXIMA_CENTAURI {
             get {
@@ -1110,6 +1191,24 @@ namespace Fenrir13.Resources {
         internal static string RED_DOT {
             get {
                 return ResourceManager.GetString("RED_DOT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Krallen|Kralle.
+        /// </summary>
+        internal static string ROOF_TOP_CLAW {
+            get {
+                return ResourceManager.GetString("ROOF_TOP_CLAW", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dock|Ladedock.
+        /// </summary>
+        internal static string ROOF_TOP_DOCK {
+            get {
+                return ResourceManager.GetString("ROOF_TOP_DOCK", resourceCulture);
             }
         }
         
@@ -1168,7 +1267,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Receiver|Antennenkonstruktion|Konstruktion|.
+        ///   Looks up a localized string similar to Receiver|Antennenkonstruktion|Konstruktion|Funknetz.
         /// </summary>
         internal static string SOCIALROOM_ANTENNA_CONSTRUCTION {
             get {
@@ -1294,6 +1393,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Mediaserver.
+        /// </summary>
+        internal static string SOCIALROOM_MEDIASERVER {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_MEDIASERVER", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Bildschirm|Fernseher.
         /// </summary>
         internal static string SOCIALROOM_MONITOR {
@@ -1353,6 +1461,15 @@ namespace Fenrir13.Resources {
         internal static string SOCIALROOM_WEST_WALL {
             get {
                 return ResourceManager.GetString("SOCIALROOM_WEST_WALL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Leiter|Sprossen|Sprosse|Schienen|Schiene.
+        /// </summary>
+        internal static string SPACE_LADDER {
+            get {
+                return ResourceManager.GetString("SPACE_LADDER", resourceCulture);
             }
         }
         

@@ -650,7 +650,7 @@ Bei genauerer Betrachtung erkennst Du, dass dort eine viereckige Aussparung ist.
         <value>Die Konstruktion besteht aus zwei erkennbaren Komponenten. Das ist einerseits die Antenne selbst und andererseits eine Art Receivereinheit, die die Signale verarbeitet.</value>
     </data>
     <data name="SOCIALROOM_ANTENNA_CONSTRUCTION_CONTAINMENT" xml:space="preserve">
-        <value>Der Bildschirm scheint seine Inhalte über ein klassiches Funknetz von einem Mediaserver zu beziehen, zumindest deutet eine Antennenkonstruktion an der Decke über der Couch darauf hin.</value>
+        <value>Der Bildschirm scheint seine Inhalte über ein klassiches Funknetz von einem Mediaserver zu beziehen, zumindest deutet ein Receiver an der Decke über der Couch darauf hin.</value>
     </data>
     <data name="SOCIALROOM_ANTENNA" xml:space="preserve">
         <value>Die Antenne besteht eigentlich aus zwei Antennen, die über einen flexiblen Arm verbunden sind.</value>
@@ -843,7 +843,7 @@ Da Du überhaupt keine Anzeichen von blinkenden Lichtern oder Kontrollanzeigen e
         <value>Das ist zwar eine gute Idee, aber ohne das passende Werkzeug wird Dir das nicht gelingen.</value>
     </data>
     <data name="PANEL_TOP" xml:space="preserve">
-        <value>Du bist nun da angekommen, wo Du die manuelle Steuerung der Solarkollektoren erwartest.</value>
+        <value>Dies ist eher eine schmale Plattform, auf deren Boden sich metallummantelte Versorgungsleitungen dicht gedrängt ihren Weg zu ihren eigentlichen Bestimmungsorten bahnen. Eine gerade mal zwei, drei Fuß breite Schneise zwischen den Leitungen ermöglicht Dir ein Vorankommen. Deine magnetischen Stiefel und die Sicherungsleine geben Dir hier draußen aber genug Selbstvertrauen. Irgendwo hier muss nun die Vorrichtung für die Solar-Panele sein.</value>
     </data>
     <data name="PANEL_TOP_LEVER" xml:space="preserve">
         <value>Der Handgriff ist recht breit und kann gut mit zwei Händen bedient werden. Er liegt etwas vertieft in der Oberfläche des Schiffs und ist so etwas geschützter vor äußeren Einflüssen. Durch die Vertiefung ist es aber auch möglich, einen Hebel anzusetzen.</value>
@@ -856,7 +856,7 @@ Da Du überhaupt keine Anzeichen von blinkenden Lichtern oder Kontrollanzeigen e
     </data>
     <data name="PANEL_TOP_LEVER_DUMBBELL_BAR" xml:space="preserve">
         <value>Dank der Vertiefung kannst Du die Hantelstange prima als Hebel benutzen. Du setzt an und drückst den Griff damit hoch. Du blickst über den Cargo-Bereich und erkennst, dass sich die Schutzverkleidungen über den Solarkollektoren minimal bewegt haben! Du musst also diesen Griff mehrfach betätigen...
-Du lässt Dich nicht aufhalten und pumpst mit dem Hebel und dem Griff Zug um Zug und die Panele öffnen sich immer weiter. Nach mehreren Minuten schweißtreibender Plackerei ist es geschafft! Die Panel sind frei!
+Du lässt Dich nicht aufhalten und pumpst mit dem Hebel und dem Griff Zug um Zug und die Panele öffnen sich immer weiter. Nach mehreren Minuten schweißtreibender Plackerei ist es geschafft! Die Panels sind frei!
 Der Erfolg lässt nicht lange aus sich warten. An immer mehr Stellen am Schiff fangen Lampen an zu blinken, durch einige Fenster siehst Du, dass die Raumbeleuchtung angeschaltet wird. Voller Stolz über Deine vollbrachte Leistung genießt Du es, bis schließlich auch der Wolfskopf an der Steuerbordseite des Cargo-Bereichs der Fenrir 13 in vollem Licht steht! Gut gemacht!</value>
     </data>
     <data name="PANEL_TOP_LEVER_REDDOTS_CONTAINMENT" xml:space="preserve">
@@ -918,7 +918,7 @@ Am Tag nach Deiner erfolgreichen Intervention sitzt Du mit der gesamten Crew zus
         <value>Sag mir doch bitte, worauf ich mich setzen soll.</value>
     </data>
     <data name="TRY_TO_SIT_ON_CHAIR" xml:space="preserve">
-        <value>Du setzt Dich kurz auf den Stuhl, wippst ein wenig vor uns zurück und denkst Dir dann, dass es gerade unangemessen ist, dich zu setzen.</value>
+        <value>Du setzt Dich kurz auf einen der Stühle, wippst ein wenig vor uns zurück und denkst Dir dann, dass es gerade unangemessen ist, Dich zu setzen.</value>
     </data>
     <data name="TRY_TO_SIT_ON_OFFICECHAIR" xml:space="preserve">
         <value>Total bequem, aber Du hast hier eine Aufgabe zu lösen und solltest Dich nicht ausruhen.</value>
@@ -1014,7 +1014,7 @@ Am Tag nach Deiner erfolgreichen Intervention sitzt Du mit der gesamten Crew zus
         <value>Die messingfarbigen Griffe scheinen aus Metall gefertigt zu sein.</value>
     </data>
     <data name="ENGINE_ROOM_SHIP_MODEL_CONTAINMENT_II" xml:space="preserve">
-        <value>Ein einzelner roter Punkt auf der Oberfläche des Hologramms erregen Deine Aufmerksamkeit.</value>
+        <value>Ein einzelner roter Punkt auf der Oberfläche des Hologramms erregt Deine Aufmerksamkeit.</value>
     </data>
     <data name="ENGINE_ROOM_RED_DOTS_NO_ROBOT" xml:space="preserve">
         <value>Als Du in das Hologramm greifst, um den roten Punkt zu berühren, erhälst Du detaillierte Informationen dazu: 
@@ -1041,5 +1041,62 @@ Der Punkt markiert den Reparatur-Droiden und er hat sein Dock auf dem Dach der B
     </data>
     <data name="ROBOT_FIXING_WALL" xml:space="preserve">
         <value>Der Roboter hat nun wieder Energie und kann mit dem System kommunizieren. Als er den Befehl bekommt, löst er sich aus seinem Dock und fährt zur beschädigten Außenwand.</value>
+    </data>
+    <data name="TRY_TO_SIT_ON_COUCH" xml:space="preserve">
+        <value>Du setzt Dich kurz auf das total bequeme Sofa und bekommst sofort Lust auf Chips und Cola. Aber irgendwie hälst Du es für nicht richtig, jetzt zu chillen. Du stehst wieder auf.</value>
+    </data>
+    <data name="TRY_TO_SIT_ON_SEAT" xml:space="preserve">
+        <value>Du setzt Dich kurz auf einen der total bequemen Sessel und bekommst sofort Lust auf Chips und Cola. Aber irgendwie hälst Du es für nicht richtig, jetzt zu chillen. Du stehst wieder auf.</value>
+    </data>
+    <data name="SOCIALROOM_MEDIASERVER" xml:space="preserve">
+        <value>Irgendwo hier auf dem Schiff ist auf irgendeinem Rechner auch ein Mediaserver installiert. Gespeichert sind darauf alle erdenklichen Filme und Serien, seitdem es Bewegtbilder gibt.</value>
+    </data>
+    <data name="KITCHEN_CABINET" xml:space="preserve">
+        <value>Du wirfst eine kurzen Blick in die Schränke. Dort ist nichts von Bedeutung.</value>
+    </data>
+    <data name="PANEL_TOP_SUPPLYLINES" xml:space="preserve">
+        <value>Keine Ahnung, was sich innerhalb der Leitungen befindet. Aber das Metall schützt sie hervorragend.</value>
+    </data>
+    <data name="PANEL_TOP_WOLF" xml:space="preserve">
+        <value>Bei dem Tier an der Steuerbordseite des Cargo-Bereichs handelt es sich ganz klar um den Wolf Fenrir aus der nordischen Mythologie und Namensgeber einer kleinen Flotte von Raumtransportern, zu denen auch die Fenrir 13 gehört.</value>
+    </data>
+    <data name="PANEL_TOP_LAMPS" xml:space="preserve">
+        <value>Einfache Kontrollleuchten, die überall auf dem Schiff angebracht sind, um den Status diverses Geräte anzuzeigen.</value>
+    </data>
+    <data name="PANEL_TOP_WINDOWS" xml:space="preserve">
+        <value>Je mehr und stabiler die Panels Strom liefern, umso mehr Lichter gehen auch innerhalb des Schiffs wieder an. Die Notbeleuchtung wird nach und nach durch die normale Beleuchtung ersetzt.</value>
+    </data>
+    <data name="PANEL_TOP_PANELS" xml:space="preserve">
+        <value>Eine sehr effiziente Variante von Kollektoren, die das gesamte Schiff direkt mit Strom versorgen können und darüber hinaus auch die überschüssige Energie für den Weiterflug in riesigen Batterien speichert.</value>
+    </data>
+    <data name="PANEL_TOP_WAY_TO_JETTY" xml:space="preserve">
+        <value>Über die Leiter führt der Weg wieder hinauf zum Steg.</value>
+    </data>
+    <data name="SPACE_LADDER" xml:space="preserve">
+        <value>Die Leiter ist nicht viel mehr, als eine Aneinanderreihung einzelner Sprossen, die über zwei seitliche Schienen zusammengehalten werden.</value>
+    </data>
+    <data name="ROOF_TOP_WAY_TO_JETTY" xml:space="preserve">
+        <value>Über die Leiter führt der Weg wieder hinunter zum Steg.</value>
+    </data>
+    <data name="JETTY_HULL" xml:space="preserve">
+        <value>Die Hülle, und somit auch die Rückseite, besteht aus einer neuartigen Graphen-Stahl-Verbindung und ist ultrafest und dabei hauchdünn und leicht. Die Frage, wie das Geschoss aus dem All es geschafft hat, sie zu durchschlagen, blitzt kurz in Deinen Gedanken auf. Und ist auch schon wieder verschwunden...</value>
+    </data>
+    <data name="JETTY_SPACE" xml:space="preserve">
+        <value>Der Blick ist gleichermaßen faszinierend und befremdlich. Keine der Konstellationen kommt Dir bekannt vor. Doch die Klarheit des Blicks lässt Dich das strahlende Band der Milchstraße erkennen, in der wir und natürlich noch immer befinden.</value>
+    </data>
+    <data name="JETTY_ENGINE" xml:space="preserve">
+        <value>Die riesigen Treibwerke sind ein Wunder der Technik ansich. Du hast überhaupt keine Ahnung, wie sie funktionieren.</value>
+    </data>
+    <data name="AIRLOCK_BULKHEAD" xml:space="preserve">
+        <value>Ein sehr massives Schott, dass Dich davor bewahren soll, ins All gesaugt zu werden.</value>
+    </data>
+    <data name="DROID_FIRSTLOOK_II" xml:space="preserve">
+        <value>Im Moment verharrt er in seinem Ladedock und Du erkennst deutlich die Stelle, an der eigentlich eine Antenne sein sollte. Da muss eines der kleinen, interstellaren Geschosse ganze Arbeit geleistet haben. Aber so wie es aussieht, lässt sich dort eine andere Antenne mit einem guten Werkzeug wieder anbringen. </value>
+    </data>
+    <data name="ROOF_TOP_DOCK" xml:space="preserve">
+        <value>Über das Dock wird der Droide sowohl mit Energie versorgt, als auch während seiner Ruhephasen vor Verlust gesichert. Die Ladungssicherung wird über drei Krallen realisiert, die sich automatisch zurückziehen, sobald der Roboter seine Tätigkeiten aufnimmt.</value>
+    </data>
+    <data name="ROOF_TOP_CLAW" xml:space="preserve">
+        <value>Die Krallen greifen in entsprechende Vertiefungen des Roboters und sichern ihn so davor, vom Schiff geschleudert zu werden. </value>
     </data>
 </root>

@@ -166,7 +166,7 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
     {
         var locationMap = new List<DestinationNode>
         {
-            new() {Direction = Directions.DOWN, Location = jetty}
+            new() {Direction = Directions.DOWN, Location = jetty, DestinationDescription = Descriptions.ROOF_TOP_WAY_TO_JETTY}
         };
         return locationMap;
     }
@@ -175,7 +175,7 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
     {
         var locationMap = new List<DestinationNode>
         {
-            new() {Direction = Directions.UP, Location = jetty}
+            new() {Direction = Directions.UP, Location = jetty, DestinationDescription = Descriptions.PANEL_TOP_WAY_TO_JETTY}
         };
         return locationMap;
     }

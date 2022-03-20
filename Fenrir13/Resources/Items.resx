@@ -222,7 +222,7 @@
     <data name="EYELET" xml:space="preserve">
         <value>Öse</value>
     </data>
-    <data name="KITCHEN_CLOSETS" xml:space="preserve">
+    <data name="KITCHEN_CABINET" xml:space="preserve">
         <value>Schrank|Schränke</value>
     </data>
     <data name="WRITING_MATERIALS" xml:space="preserve">
@@ -277,7 +277,7 @@
         <value>Sichtfenster|Glas</value>
     </data>
     <data name="AIRLOCK_ROPE" xml:space="preserve">
-        <value>Graphen-Seil|Seil</value>
+        <value>Graphen-Seil|Seil|Sicherungsseil|Sicherungsleine|Leine</value>
     </data>
     <data name="AIRLOCK_CABLE_WINCH" xml:space="preserve">
         <value>Seilwinde|Seil|Winde</value>
@@ -307,7 +307,7 @@
         <value>Decke|Zimmer Decke</value>
     </data>
     <data name="SOCIALROOM_ANTENNA_CONSTRUCTION" xml:space="preserve">
-        <value>Receiver|Antennenkonstruktion|Konstruktion|</value>
+        <value>Receiver|Antennenkonstruktion|Konstruktion|Funknetz</value>
     </data>
     <data name="SOCIALROOM_ANTENNA" xml:space="preserve">
         <value>Antenne</value>
@@ -391,7 +391,7 @@
         <value>Service-Roboter|Serviceroboter|Wartungsroboter|Roboter|Droid</value>
     </data>
     <data name="PANEL_TOP_LEVER" xml:space="preserve">
-        <value>Handgriff|Hebel|Griff</value>
+        <value>Handgriff|Hebel|Griff|Vorrichtung</value>
     </data>
     <data name="CRYOCHAMBER_LAMP" xml:space="preserve">
         <value>Schreibtischlampe|Lampe|Glühbirne|Fassung|Teleskopstange|Teleskopstangen|Halterung|Beleuchtung</value>
@@ -400,7 +400,7 @@
         <value>Klamotten|Kleidung|Strickjacke|Kleidungsstücke|Kleidungsstück</value>
     </data>
     <data name="PROXIMA_CENTAURI" xml:space="preserve">
-        <value>Proxima Centauri|Roter Zwerg</value>
+        <value>Proxima Centauri|Roter Zwerg|Proxima|Centauri</value>
     </data>
     <data name="CORRIDOR_WALLS" xml:space="preserve">
         <value>Wände|Wand</value>
@@ -506,5 +506,44 @@
     </data>
     <data name="CORRIDOR_WEST_BULLEYE" xml:space="preserve">
         <value>Bullaugen|Bullauge|Geöffnetes Bullauge</value>
+    </data>
+    <data name="SOCIALROOM_MEDIASERVER" xml:space="preserve">
+        <value>Mediaserver</value>
+    </data>
+    <data name="PANEL_TOP_SUPPLYLINES" xml:space="preserve">
+        <value>Metallummantelte Versorgungsleitung|Ummantelte Versorgungsleitung|Versorgungsleitung|Metallummantelte Leitung|Ummantelte Leitung|Leitung|Metallummantelte Versorgungsleitungen|Ummantelte Versorgungsleitungen|Versorgungsleitungen|Metallummantelte Leitungen|Ummantelte Leitungen|Leitungen</value>
+    </data>
+    <data name="PANEL_TOP_WOLF" xml:space="preserve">
+        <value>Wolfskopf|Wolf|Kopf|Steuerbordseite|Cargo-Bereich</value>
+    </data>
+    <data name="PANEL_TOP_LAMPS" xml:space="preserve">
+        <value>Lampen|Lampe|Kontrollleuchten|Kontrollleuchte</value>
+    </data>
+    <data name="PANEL_TOP_WINDOWS" xml:space="preserve">
+        <value>Fenster|Raumbeleuchtung|Beleuchtung</value>
+    </data>
+    <data name="PANEL_TOP_PANELS" xml:space="preserve">
+        <value>Panele|Panels|Kollektoren</value>
+    </data>
+    <data name="SPACE_LADDER" xml:space="preserve">
+        <value>Leiter|Sprossen|Sprosse|Schienen|Schiene</value>
+    </data>
+    <data name="JETTY_HULL" xml:space="preserve">
+        <value>Hülle|Rückseite</value>
+    </data>
+    <data name="JETTY_SPACE" xml:space="preserve">
+        <value>All|Sternenhimmel|Sterne|Himmel|Alpha Centauri</value>
+    </data>
+    <data name="JETTY_ENGINE" xml:space="preserve">
+        <value>Ionen-Strahlentriebwerke|Ionen Strahlentriebwerke|Strahlentriebwerke|Triebwerke|Ionen-Strahlentriebwerk|Ionen Strahlentriebwerk|Strahlentriebwerk|Triebwerk</value>
+    </data>
+    <data name="AIRLOCK_BULKHEAD" xml:space="preserve">
+        <value>Schott</value>
+    </data>
+    <data name="ROOF_TOP_DOCK" xml:space="preserve">
+        <value>Dock|Ladedock</value>
+    </data>
+    <data name="ROOF_TOP_CLAW" xml:space="preserve">
+        <value>Krallen|Kralle</value>
     </data>
 </root>
