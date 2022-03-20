@@ -102,7 +102,8 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
             MetaData.QUEST_V,
             MetaData.QUEST_VI,
             MetaData.QUEST_VII,
-            MetaData.QUEST_VIII
+            MetaData.QUEST_VIII,
+            MetaData.QUEST_IX
         };
 
         return result;

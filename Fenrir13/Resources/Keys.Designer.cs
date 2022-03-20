@@ -439,6 +439,33 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to CORRIDOR_WEST_BULLEYE.
+        /// </summary>
+        internal static string CORRIDOR_WEST_BULLEYE {
+            get {
+                return ResourceManager.GetString("CORRIDOR_WEST_BULLEYE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CORRIDOR_WEST_HOLE.
+        /// </summary>
+        internal static string CORRIDOR_WEST_HOLE {
+            get {
+                return ResourceManager.GetString("CORRIDOR_WEST_HOLE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CORRIDOR_WEST_WELD_SEAM.
+        /// </summary>
+        internal static string CORRIDOR_WEST_WELD_SEAM {
+            get {
+                return ResourceManager.GetString("CORRIDOR_WEST_WELD_SEAM", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to CREW_DOORS.
         /// </summary>
         internal static string CREW_DOORS {

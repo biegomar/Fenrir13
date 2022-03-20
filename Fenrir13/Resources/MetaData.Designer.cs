@@ -138,6 +138,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Kehre zur Brücke zurück.
+        /// </summary>
+        internal static string QUEST_IX {
+            get {
+                return ResourceManager.GetString("QUEST_IX", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Verbinde den Helm mit dem Sauerstoff.
         /// </summary>
         internal static string QUEST_V {

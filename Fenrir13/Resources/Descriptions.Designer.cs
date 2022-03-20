@@ -522,11 +522,11 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Wow! Geschafft! Der Roboter hat nun wieder Energie und kann mit dem System kommunizieren. Als er den Befehl bekommt, löst er sich aus seinem Dock und fährt zur beschädigten Außenwand. 
+        ///   Looks up a localized string similar to Wow! Geschafft! 
         ///
         ///Vollkommen erschöpft und erleichtert kehrst Du ins Innere des Schiffs zurück und kontrollierst auf der Brücke nochmals das Terminal. Alle Systeme laufen wieder und die Crew wird nun geweckt, um alles Weitere zu übernehmen. 
         ///
-        ///Am Tag nach Deiner erfolgreichen Intervention sitzt Du mit der gesamten Crew zusammen im Aufentha [rest of string was truncated]&quot;;.
+        ///Am Tag nach Deiner erfolgreichen Intervention sitzt Du mit der gesamten Crew zusammen im Aufenthaltsraum. Nachdem der Roboter mit ausreichender Energie und funktionierender Kommunikation in der Lage war, das Loch im Rumpf der Fenrir 13 zu flicken, konnte das System [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string CLOSING {
             get {
@@ -760,11 +760,38 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Korridor durchzieht den gesamten &apos;Hammerkopf&apos; des Schiffs von Ost nach West. Von ihm gehen Türen in die diversen Räume ab und in der Mitte, also bei gut 50 Metern, führt ein Aufgang zur Brücke und ein Abgang herunter in die Maschinenräume. An den Wänden hängen neben typischen Raum- und Evakuierungsplänen auch Bilder von ehemaligen Mitarbeitern und Crewmitgliedern der Fenrir 13. Ansonsten ist der Flur einfach und karg..
+        ///   Looks up a localized string similar to Hier am westlichen Ende des Korridors befinden sich die restlichen drei Kabinen der Crew. Ebenso wie im östlichen Teil haben die Türen Bullaugen, wobei nur eines davon geöffnet ist. An der Wand hängt auch hier ein typischer Raum- und Evakuierungsplan. Ansonsten ist der Flur einfach und karg..
         /// </summary>
         internal static string CORRIDOR_WEST {
             get {
                 return ResourceManager.GetString("CORRIDOR_WEST", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Du schaust durch das eine geöffnete Bullauge und kannst deutlich erkennen, dass der Cryo-Pod die Aufwachphase dieses Crew-Mitglieds eingeleitet hat. Es handelt sich um den Kapitän der Fenrir 13 und scheinbar geht es ihm gut. Es wird wohl noch einige Zeit brauchen, bis die Aufwachprozedur in ihre Endphase eintritt und der Kapitän ähnliche Empfindungen durchmachen wird wie Du..
+        /// </summary>
+        internal static string CORRIDOR_WEST_BULLEYE {
+            get {
+                return ResourceManager.GetString("CORRIDOR_WEST_BULLEYE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nachdem der Roboter ganze Arbeit geleistet hat und das Loch geschlossen ist, hat sich das Schott geöffnet und gibt Dir nun den Weg zu den restlichen Kabinen frei..
+        /// </summary>
+        internal static string CORRIDOR_WEST_FIRSTLOOK {
+            get {
+                return ResourceManager.GetString("CORRIDOR_WEST_FIRSTLOOK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Das Loch ist geschlossen und nur eine deutliche Schweißnaht ist erkennbar..
+        /// </summary>
+        internal static string CORRIDOR_WEST_HOLE {
+            get {
+                return ResourceManager.GetString("CORRIDOR_WEST_HOLE", resourceCulture);
             }
         }
         
@@ -774,6 +801,15 @@ namespace Fenrir13.Resources {
         internal static string CORRIDOR_WEST_LOCKDESCRIPTION {
             get {
                 return ResourceManager.GetString("CORRIDOR_WEST_LOCKDESCRIPTION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Der deutliche Saum deutet darauf hin, dass der Roboter von Außen seine Arbeit gut verrichtet hat..
+        /// </summary>
+        internal static string CORRIDOR_WEST_WELD_SEAM {
+            get {
+                return ResourceManager.GetString("CORRIDOR_WEST_WELD_SEAM", resourceCulture);
             }
         }
         
@@ -925,7 +961,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Vorsichtig schraubst Du die Halterung an dem Roboter auf und entfernst die Reste der zerstörten Antenne. Tatsächlich sieht hier noch alles in Ordnung aus. Du nimmst Deine Antenne und fixierst sie gut. Jetzt sollte er wieder ein Signal bekommen!.
+        ///   Looks up a localized string similar to Vorsichtig schraubst Du die Halterung an dem Roboter mit Deinem Werkzeug auf und entfernst die Reste der zerstörten Antenne. Tatsächlich sieht hier noch alles in Ordnung aus. Du nimmst Deine Antenne und fixierst sie gut. Jetzt sollte er wieder ein Signal bekommen!.
         /// </summary>
         internal static string DROID_ANTENNA_MOUNTED {
             get {
@@ -2221,6 +2257,24 @@ namespace Fenrir13.Resources {
         internal static string RED_DOT {
             get {
                 return ResourceManager.GetString("RED_DOT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;&lt; Hervorragend! Du hast alle Dinge wieder ins Lot gebracht. Am besten kehrst Du jetzt zur Brücke zurück und schaust auf dem Terminal nach, ob es neue Informationen für Dich gibt. &gt;&gt;.
+        /// </summary>
+        internal static string RETURN_TO_BRIDGE {
+            get {
+                return ResourceManager.GetString("RETURN_TO_BRIDGE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Der Roboter hat nun wieder Energie und kann mit dem System kommunizieren. Als er den Befehl bekommt, löst er sich aus seinem Dock und fährt zur beschädigten Außenwand..
+        /// </summary>
+        internal static string ROBOT_FIXING_WALL {
+            get {
+                return ResourceManager.GetString("ROBOT_FIXING_WALL", resourceCulture);
             }
         }
         

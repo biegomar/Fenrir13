@@ -15,6 +15,7 @@ internal static class CorridorWestPrerequisites
             Description = Descriptions.CORRIDOR_WEST,
             IsLocked = true,
             LockDescription = Descriptions.CORRIDOR_WEST_LOCKDESCRIPTION,
+            FirstLookDescription = Descriptions.CORRIDOR_WEST_FIRSTLOOK,
             Grammar = new Grammars(Genders.Male)
         };
 
@@ -28,5 +29,8 @@ internal static class CorridorWestPrerequisites
         corridor.Surroundings.Add(Keys.CORRIDOR_PAINTING, () => Descriptions.CORRIDOR_PAINTING_WEST);
         corridor.Surroundings.Add(Keys.CEILING, () => Descriptions.CEILING);
         corridor.Surroundings.Add(Keys.CORRIDOR_WALLS, () => Descriptions.CORRIDOR_WALLS);
+        corridor.Surroundings.Add(Keys.CORRIDOR_WEST_HOLE, () => Descriptions.CORRIDOR_WEST_HOLE);
+        corridor.Surroundings.Add(Keys.CORRIDOR_WEST_WELD_SEAM, () => Descriptions.CORRIDOR_WEST_WELD_SEAM);
+        corridor.Surroundings.Add(Keys.CORRIDOR_WEST_BULLEYE, () => Descriptions.CORRIDOR_WEST_BULLEYE);
     }
 }

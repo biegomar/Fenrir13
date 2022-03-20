@@ -561,4 +561,13 @@
     <data name="MAINTENANCE_ROOM_DRAWER_HANDLE" xml:space="preserve">
         <value>MAINTENANCE_ROOM_DRAWER_HANDLE</value>
     </data>
+    <data name="CORRIDOR_WEST_HOLE" xml:space="preserve">
+        <value>CORRIDOR_WEST_HOLE</value>
+    </data>
+    <data name="CORRIDOR_WEST_WELD_SEAM" xml:space="preserve">
+        <value>CORRIDOR_WEST_WELD_SEAM</value>
+    </data>
+    <data name="CORRIDOR_WEST_BULLEYE" xml:space="preserve">
+        <value>CORRIDOR_WEST_BULLEYE</value>
+    </data>
 </root>

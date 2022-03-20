@@ -64,4 +64,7 @@
     <data name="QUEST_VIII" xml:space="preserve">
         <value>Stelle die Energieversorgung wieder her</value>
     </data>
+    <data name="QUEST_IX" xml:space="preserve">
+        <value>Kehre zur Brücke zurück</value>
+    </data>
 </root>

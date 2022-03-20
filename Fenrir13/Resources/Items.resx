@@ -498,4 +498,13 @@
     <data name="MAINTENANCE_ROOM_DRAWER_HANDLE" xml:space="preserve">
         <value>Griffe|Griff</value>
     </data>
+    <data name="CORRIDOR_WEST_HOLE" xml:space="preserve">
+        <value>Loch</value>
+    </data>
+    <data name="CORRIDOR_WEST_WELD_SEAM" xml:space="preserve">
+        <value>Schweißnaht</value>
+    </data>
+    <data name="CORRIDOR_WEST_BULLEYE" xml:space="preserve">
+        <value>Bullaugen|Bullauge|Geöffnetes Bullauge</value>
+    </data>
 </root>

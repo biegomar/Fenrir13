@@ -591,7 +591,7 @@ internal class EventProvider
         {
             if (you.IsSitting && this.universe.ActiveLocation.Key == Keys.COMMANDBRIDGE)
             {
-                var location = this.universe.LocationMap.Keys.FirstOrDefault(location => location.Key == Keys.COMPUTER_TERMINAL);
+                var location = this.universe.GetLocationByKey(Keys.COMPUTER_TERMINAL);
                 if (location is { } terminal)
                 {
                     this.universe.ActiveLocation = terminal;
@@ -605,6 +605,26 @@ internal class EventProvider
                         PrintPasswordMessage(Descriptions.COMPUTER_TERMINAL_DISPLAY_PASSWORD);
                     }
                     
+                }
+            }
+        }
+    }
+    
+    internal void AfterSitDownOnQuestsSolved(object sender, ContainerObjectEventArgs eventArgs)
+    {
+        if (this.universe.IsQuestSolved(MetaData.QUEST_VII) && this.universe.IsQuestSolved(MetaData.QUEST_VIII))
+        {
+            if (sender is Player you && you.Key == Keys.PLAYER)
+            {
+                if (you.IsSitting && this.universe.ActiveLocation.Key == Keys.COMMANDBRIDGE)
+                {
+                    var location = this.universe.GetLocationByKey(Keys.COMPUTER_TERMINAL);
+                    if (location is { } terminal)
+                    {
+                        this.universe.ActiveLocation = terminal;
+                        PrintingSubsystem.ActiveLocation(this.universe.ActiveLocation, this.universe.LocationMap);
+                        this.universe.SolveQuest(MetaData.QUEST_IX);
+                    }
                 }
             }
         }
@@ -850,20 +870,28 @@ internal class EventProvider
     private void SolveRobotQuest()
     {
         var engineRoom = this.universe.GetLocationByKey(Keys.ENGINE_ROOM);
-
         if (engineRoom != default)
         {
-            if (!this.universe.IsQuestSolved(MetaData.QUEST_VIII))
-            {
+            if (!this.universe.IsQuestSolved(MetaData.QUEST_VIII)) {
                 engineRoom.Surroundings[Keys.ENGINE_ROOM_RED_DOTS] = () => Descriptions.ENGINE_ROOM_RED_DOTS_NO_ROBOT;    
             }
             else
             {
+                PrintingSubsystem.Resource(Descriptions.ROBOT_FIXING_WALL);
                 engineRoom.Surroundings.Remove(Keys.ENGINE_ROOM_RED_DOTS);
             }
         }
         
+        var corridor = this.universe.GetLocationByKey(Keys.CORRIDOR_WEST);
+        if (corridor != default)
+        {
+            corridor.IsLocked = false;
+            corridor.LockDescription = string.Empty;
+        }
+
         this.universe.SolveQuest(MetaData.QUEST_VII);
+        
+        this.InitiateFinalStep();
     }
     
     private void SolveEnergyQuest()
@@ -878,12 +906,28 @@ internal class EventProvider
             }
             else
             {
+                PrintingSubsystem.Resource(Descriptions.ROBOT_FIXING_WALL);
                 engineRoom.Surroundings.Remove(Keys.ENGINE_ROOM_RED_DOTS);
             }
             
         }
         
         this.universe.SolveQuest(MetaData.QUEST_VIII);
+
+        this.InitiateFinalStep();
+    }
+
+    private void InitiateFinalStep()
+    {
+        if (this.universe.IsQuestSolved(MetaData.QUEST_VII) && this.universe.IsQuestSolved(MetaData.QUEST_VIII))
+        {
+            PrintingSubsystem.ForegroundColor = TextColor.Magenta;
+            PrintingSubsystem.Resource(Descriptions.RETURN_TO_BRIDGE);
+            PrintingSubsystem.ResetColors();
+
+            this.universe.ActivePlayer.AfterSitDown -= this.AfterSitDown;
+            this.universe.ActivePlayer.AfterSitDown += this.AfterSitDownOnQuestsSolved;
+        }
     }
     
     internal void UseOxygenBottleWithHelmet(object sender, UseItemEventArgs eventArgs)

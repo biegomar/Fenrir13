@@ -358,6 +358,33 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Bullaugen|Bullauge|Geöffnetes Bullauge.
+        /// </summary>
+        internal static string CORRIDOR_WEST_BULLEYE {
+            get {
+                return ResourceManager.GetString("CORRIDOR_WEST_BULLEYE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Loch.
+        /// </summary>
+        internal static string CORRIDOR_WEST_HOLE {
+            get {
+                return ResourceManager.GetString("CORRIDOR_WEST_HOLE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Schweißnaht.
+        /// </summary>
+        internal static string CORRIDOR_WEST_WELD_SEAM {
+            get {
+                return ResourceManager.GetString("CORRIDOR_WEST_WELD_SEAM", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Tür|Türen|Kammertür|Kammertüren|Crew-Kammern|Crew-Kammer|Crew Kammern|Crew Kammer|Kammern|Kammer|Crew-Kabinen|Crew-Kabine|Crewkabinen|Crewkabine|Kabinen|Kabine.
         /// </summary>
         internal static string CREW_DOORS {

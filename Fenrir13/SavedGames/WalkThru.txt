@@ -83,3 +83,10 @@ runter
 runter
 l griff
 benutze stange mit griff
+hoch
+n
+drücke close
+drop gurt
+n
+hoch
+w

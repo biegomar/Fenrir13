@@ -172,7 +172,7 @@ In diesem Abschnitt des Korridors liegt die erste Hälfte der sechs Crew-Quartie
         <value>Als Du versuchst den Raum zu verlassen schliesst sich die Tür abrupt. Gleichzeitig ertönt von dem Space-Overall ein kurzes Piepen. Scheinbar kannst Du nicht nackt durch das Raumschiff wandeln.</value>
     </data>
     <data name="CORRIDOR_WEST" xml:space="preserve">
-        <value>Der Korridor durchzieht den gesamten 'Hammerkopf' des Schiffs von Ost nach West. Von ihm gehen Türen in die diversen Räume ab und in der Mitte, also bei gut 50 Metern, führt ein Aufgang zur Brücke und ein Abgang herunter in die Maschinenräume. An den Wänden hängen neben typischen Raum- und Evakuierungsplänen auch Bilder von ehemaligen Mitarbeitern und Crewmitgliedern der Fenrir 13. Ansonsten ist der Flur einfach und karg.</value>
+        <value>Hier am westlichen Ende des Korridors befinden sich die restlichen drei Kabinen der Crew. Ebenso wie im östlichen Teil haben die Türen Bullaugen, wobei nur eines davon geöffnet ist. An der Wand hängt auch hier ein typischer Raum- und Evakuierungsplan. Ansonsten ist der Flur einfach und karg.</value>
     </data>
     <data name="CORRIDOR_MIDEAST" xml:space="preserve">
         <value>Du befindest Dich nun auf dem halben Weg zwischen Deinem Quartier und der Brücke. Auch hier hängt wieder ein Bild an der Wand. Ansonsten ist der Flur einfach und karg.</value>
@@ -837,7 +837,7 @@ Da Du überhaupt keine Anzeichen von blinkenden Lichtern oder Kontrollanzeigen e
         <value>Die Antenne scheint nun genau dort zu sein, wo sie für Deine Aufgabe richtig ist. Du solltest sie also an Ort und Stelle belassen.</value>
     </data>
     <data name="DROID_ANTENNA_MOUNTED" xml:space="preserve">
-        <value>Vorsichtig schraubst Du die Halterung an dem Roboter auf und entfernst die Reste der zerstörten Antenne. Tatsächlich sieht hier noch alles in Ordnung aus. Du nimmst Deine Antenne und fixierst sie gut. Jetzt sollte er wieder ein Signal bekommen!</value>
+        <value>Vorsichtig schraubst Du die Halterung an dem Roboter mit Deinem Werkzeug auf und entfernst die Reste der zerstörten Antenne. Tatsächlich sieht hier noch alles in Ordnung aus. Du nimmst Deine Antenne und fixierst sie gut. Jetzt sollte er wieder ein Signal bekommen!</value>
     </data>
     <data name="MAINTENANCE_ROOM_TOOL_NOT_PRESENT" xml:space="preserve">
         <value>Das ist zwar eine gute Idee, aber ohne das passende Werkzeug wird Dir das nicht gelingen.</value>
@@ -869,7 +869,7 @@ Der Erfolg lässt nicht lange aus sich warten. An immer mehr Stellen am Schiff f
         <value>Vielen Dank, dass Du 'Fenrir 13' gespielt hast. Ich hoffe, es hat Spaß gemacht! Über Feedback würde ich mich sehr freuen!</value>
     </data>
     <data name="CLOSING" xml:space="preserve">
-        <value>Wow! Geschafft! Der Roboter hat nun wieder Energie und kann mit dem System kommunizieren. Als er den Befehl bekommt, löst er sich aus seinem Dock und fährt zur beschädigten Außenwand. 
+        <value>Wow! Geschafft! 
 
 Vollkommen erschöpft und erleichtert kehrst Du ins Innere des Schiffs zurück und kontrollierst auf der Brücke nochmals das Terminal. Alle Systeme laufen wieder und die Crew wird nun geweckt, um alles Weitere zu übernehmen. 
 
@@ -1023,5 +1023,23 @@ Der Punkt verweist auf die mechanische Vorrichtung, um die Solarpanele auszufahr
     <data name="ENGINE_ROOM_RED_DOTS_NO_SOLAR" xml:space="preserve">
         <value>Als Du in das Hologramm greifst, um den roten Punkt zu berühren, erhälst Du detaillierte Informationen dazu: 
 Der Punkt markiert den Reparatur-Droiden und er hat sein Dock auf dem Dach der Brücke. Du kannst erkennen, dass Du von der Schleuse eine einfache Sprossenleiter erklimmen musst, um ihn zu erreichen. Die Analyse der Situation durch den Cluster hat ergeben, dass offenbar derselbe Vorfall, der für das Loch im Rumpf verantwortlich ist auch die Antenne des Droiden tuschiert und abgeknickt hat. Sobald diese durch eine neue ersetzt wird, wird die Kommunikation mit dem Roboter wieder hergestellt und das Loch im Rumpf durch ihn repariert.</value>
+    </data>
+    <data name="CORRIDOR_WEST_FIRSTLOOK" xml:space="preserve">
+        <value>Nachdem der Roboter ganze Arbeit geleistet hat und das Loch geschlossen ist, hat sich das Schott geöffnet und gibt Dir nun den Weg zu den restlichen Kabinen frei.</value>
+    </data>
+    <data name="CORRIDOR_WEST_HOLE" xml:space="preserve">
+        <value>Das Loch ist geschlossen und nur eine deutliche Schweißnaht ist erkennbar.</value>
+    </data>
+    <data name="CORRIDOR_WEST_WELD_SEAM" xml:space="preserve">
+        <value>Der deutliche Saum deutet darauf hin, dass der Roboter von Außen seine Arbeit gut verrichtet hat.</value>
+    </data>
+    <data name="CORRIDOR_WEST_BULLEYE" xml:space="preserve">
+        <value>Du schaust durch das eine geöffnete Bullauge und kannst deutlich erkennen, dass der Cryo-Pod die Aufwachphase dieses Crew-Mitglieds eingeleitet hat. Es handelt sich um den Kapitän der Fenrir 13 und scheinbar geht es ihm gut. Es wird wohl noch einige Zeit brauchen, bis die Aufwachprozedur in ihre Endphase eintritt und der Kapitän ähnliche Empfindungen durchmachen wird wie Du.</value>
+    </data>
+    <data name="RETURN_TO_BRIDGE" xml:space="preserve">
+        <value>&lt;&lt; Hervorragend! Du hast alle Dinge wieder ins Lot gebracht. Am besten kehrst Du jetzt zur Brücke zurück und schaust auf dem Terminal nach, ob es neue Informationen für Dich gibt. &gt;&gt;</value>
+    </data>
+    <data name="ROBOT_FIXING_WALL" xml:space="preserve">
+        <value>Der Roboter hat nun wieder Energie und kann mit dem System kommunizieren. Als er den Befehl bekommt, löst er sich aus seinem Dock und fährt zur beschädigten Außenwand.</value>
     </data>
 </root>
