@@ -89,4 +89,5 @@ drücke close
 drop gurt
 n
 hoch
-w
+hoch
+setzen
