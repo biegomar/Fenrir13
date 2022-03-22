@@ -2702,6 +2702,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Ich verstehe Deinen Plan. Aber von hier kannst Du den Receiver nicht erreichen..
+        /// </summary>
+        internal static string SOCIALROOM_CANT_REACH_RECEIVER_FROM_HERE {
+            get {
+                return ResourceManager.GetString("SOCIALROOM_CANT_REACH_RECEIVER_FROM_HERE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to An der Zimmerdecke befindet sich eine Art Receiver, der sicherlich dazu dient, die Medien auf den Bildschirm zu streamen..
         /// </summary>
         internal static string SOCIALROOM_CEILING {

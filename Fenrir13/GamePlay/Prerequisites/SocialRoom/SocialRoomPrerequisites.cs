@@ -22,6 +22,8 @@ public class SocialRoomPrerequisites
         AddSurroundings(socialRoom);
         
         AddSitDownEvents(socialRoom, eventProvider);
+        
+        AddClimbEvents(socialRoom, eventProvider);
 
         return socialRoom;
     }
@@ -129,5 +131,10 @@ public class SocialRoomPrerequisites
     private static void AddSitDownEvents(Location room, EventProvider eventProvider)
     {
         room.SitDown += eventProvider.SitDownOnCouchInSocialRoom;
+    }
+    
+    private static void AddClimbEvents(Location room, EventProvider eventProvider)
+    {
+        room.Climb += eventProvider.ClimbOnTablesInSocialRoom;
     }
 }

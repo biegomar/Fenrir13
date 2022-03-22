@@ -668,6 +668,26 @@ internal class EventProvider
         }
     }
     
+    internal void ClimbOnTablesInSocialRoom(object sender, ContainerObjectEventArgs eventArgs)
+    {
+        if (sender is Location room && room.Key == Keys.SOCIALROOM)
+        {
+            if (eventArgs.ExternalItemKey == Keys.SOCIALROOM_BILLARD || eventArgs.ExternalItemKey == Keys.SOCIALROOM_GLASS_TABLE)
+            {
+                if (this.universe.ActivePlayer.HasClimbed)
+                {
+                    PrintingSubsystem.Resource(BaseDescriptions.ALREADY_CLIMBED);
+                    return;
+                }
+
+                PrintingSubsystem.Resource(Descriptions.SOCIALROOM_CANT_REACH_RECEIVER_FROM_HERE);    
+                return;
+            }
+            
+            throw new ClimbException(BaseDescriptions.IMPOSSIBLE_CLIMB);
+        }
+    }
+    
     internal void LookAtControlPanel(object sender, ContainerObjectEventArgs eventArgs)
     {
         if (sender is Location bridge && bridge.Key == Keys.COMMANDBRIDGE && eventArgs.ExternalItemKey == Keys.CONTROL_PANEL)

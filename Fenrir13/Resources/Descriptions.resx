@@ -1099,4 +1099,7 @@ Der Punkt markiert den Reparatur-Droiden und er hat sein Dock auf dem Dach der B
     <data name="ROOF_TOP_CLAW" xml:space="preserve">
         <value>Die Krallen greifen in entsprechende Vertiefungen des Roboters und sichern ihn so davor, vom Schiff geschleudert zu werden. </value>
     </data>
+    <data name="SOCIALROOM_CANT_REACH_RECEIVER_FROM_HERE" xml:space="preserve">
+        <value>Ich verstehe Deinen Plan. Aber von hier kannst Du den Receiver nicht erreichen.</value>
+    </data>
 </root>
