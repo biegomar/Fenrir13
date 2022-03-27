@@ -12,7 +12,7 @@ Gibt es dabei Probleme, könnt Ihr mich gerne kontaktieren.
 Folgende Versionen stehen zum Download bereit:
 * linux-arm -> arm-basierte System, z.B. Raspberry-Pi. (ungetestet)  
 * linux-arm64 -> arm-basierte Systeme. Hier konkret Raspberry-Pi 4 auf Ubuntu 20.10. (getestet)  
-* linux-x64 -> x64-basierte Systeme. Standard-Rechner unter Linux  
+* linux-x64 -> x64-basierte Systeme. Standard-Rechner unter Linux. (getestet) 
 * osx-x64 -> Apple macOS-basierte Systeme. (getestet)
 * win-x64 -> x64-basierte Windows-Systeme. Standard-Rechner unter Windows. (getestet)
 * win-x86 -> ältere 32-Bit Windows-Systeme. Älteres Standard-System unter Windows. (ungetestet)
