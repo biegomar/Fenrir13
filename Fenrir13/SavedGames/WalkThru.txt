@@ -1,35 +1,20 @@
+REM auf gehts
 mein name ist Marc
 nimm suit
-l schranktür
+öffne schranktür
 iss riegel
 l display
+rem 'Öffne Deine Zimmertür' geschafft.
 w
 w
-n
-öffne kühlschrank
-ziehe griff
-s
 w
-w
-n
-l gerät
-l klappe
-stecke griff in klappe
-öffne klappe
-nimm flasche
-s
-e
 hoch
-untersuche platte
+l platte
 setzen
 tippe skov
+rem 'Hack Dich ins System' geschafft.
 aufstehen
 runter
-runter
-s
-drop flasche
-n
-hoch
 w
 s
 l powerstation
@@ -41,49 +26,73 @@ runter
 w
 l kiste
 zerstöre schloss mit stange
-öffne kiste
+rem 'Öffne das Sicherheitsschloss' geschafft.
 e
 s
 drop stange
 n
 w
+öffne kiste
 nimm
 e
+hoch
 e
+n
+öffne kühlschrank
+ziehe griff
+s
+w
+w
+n
+l oxygen
+l klappe
+stecke griff in klappe
+öffne klappe
+nimm flasche
+verbinde flasche mit helm
+rem 'Verbinde den Helm mit dem Sauerstoff' geschafft.
+s
+e
+runter
+e
+l schublade
 öffne schublade
 nimm werkzeug
 w
-n
-untersuche rote punkte
-s
 hoch
 e
 s
 l receiver
 steige auf couch
 benutze werkzeug mit antenne
+rem 'Bekomme die Antenne' geschafft.
 absteigen
 n
 w
 runter
+n
+l punkte
 s
-verbinde flasche mit helm
-ziehe mir boots an
-ziehe mir gurt an
-ziehe mir handschuhe an
-ziehe mir helm an
+s
+nimm stange
+ziehe helm an
+ziehe handschuhe an
+ziehe stiefel an
+ziehe gurt an
 verbinde seil mit gurt
 l tastenfeld
 drücke open
-nimm stange
+rem 'Das All' geschafft.
 s
+runter
+benutze stange mit griff
+rem 'Stelle die Energieversorgung wieder her' geschafft.
+hoch
 hoch
 verbinde antenne mit roboter
+rem 'Repariere den Roboter' geschafft.
+rem Nun schnell zurück zur Brücke.
 runter
-runter
-l griff
-benutze stange mit griff
-hoch
 n
 drücke close
 drop gurt

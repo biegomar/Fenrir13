@@ -51,6 +51,7 @@ internal class EngineRoomPrerequisites
         engine.Surroundings.Add(Keys.ENGINE_ROOM_HEAD, () => Descriptions.ENGINE_ROOM_HEAD);
         engine.Surroundings.Add(Keys.ENGINE_ROOM_TANGENT, () => Descriptions.ENGINE_ROOM_TANGENT);
         engine.Surroundings.Add(Keys.ENGINE_ROOM_COMPUTER, () => Descriptions.ENGINE_ROOM_COMPUTER);
+        engine.Surroundings.Add(Keys.QUATUM_CUBE, () => Descriptions.QUATUM_CUBE);
     }
     
     private static void AddAfterLookEvents(Location item, EventProvider eventProvider)

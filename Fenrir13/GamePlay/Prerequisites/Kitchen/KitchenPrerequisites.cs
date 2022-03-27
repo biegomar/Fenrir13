@@ -34,6 +34,7 @@ internal static class KitchenPrerequisites
         kitchen.Surroundings.Add(Keys.TABLE, () => Descriptions.TABLE);
         kitchen.Surroundings.Add(Keys.CHAIR, () => Descriptions.CHAIR);
         kitchen.Surroundings.Add(Keys.KITCHEN_CABINET, () => Descriptions.KITCHEN_CABINET);
+        kitchen.Surroundings.Add(Keys.KITCHEN_FOOD_BAG, () => Descriptions.KITCHEN_FOOD_BAG);
     }
 
     private static Item GetFridge(EventProvider eventProvider)

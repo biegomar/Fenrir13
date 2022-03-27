@@ -532,7 +532,7 @@ Bei genauerer Betrachtung erkennst Du, dass dort eine viereckige Aussparung ist.
         <value>Ohne den montierten Griff kann der Kühlschrank leider nicht geöffnet werden.</value>
     </data>
     <data name="RECYCLER" xml:space="preserve">
-        <value>Hier auf dem Schiff ist Wasser sehr wertvoll. Geschirr und Besteck wird nicht gespült, sondern anderweitig verwertet. Dieser hochmoderne Recycler ist in der Lage, die eingeworfenen Reste exakt von einander zu trennen und einer weiteren Verwertung zuzuführen. Wie das alles geht, ist Dir schleierhaft. Du weißt nur, dass die Nahrungsreste wieder in ihre Grundbausteine überführt werden und dann dem Printer zur Verfügung stehen. Was mit den anderen Materialien passiert, weißt Du nicht.</value>
+        <value>Hier auf dem Schiff ist Wasser sehr wertvoll. Geschirr und Besteck wird nicht gespült, sondern anderweitig verwertet. Dieser hochmoderne Recycler ist in der Lage, die eingeworfenen Reste exakt von einander zu trennen und einer weiteren Verwertung zuzuführen. Wie das alles geht, ist Dir schleierhaft. Du weißt nur, dass die Nahrungsreste wieder in ihre Grundbausteine zerlegt werden und dann dem Printer zur Verfügung stehen. Was mit den anderen Materialien passiert, weißt Du nicht.</value>
     </data>
     <data name="RECYCLER_FIRSTLOOK" xml:space="preserve">
         <value>Aufgrund der aktuellen Energiesituation ist das Gerät vollständig deaktiviert.</value>
@@ -812,7 +812,7 @@ Der Steg ragt weit ins All hinaus und an seiner äußeren Kante steht man vollko
         <value>Genauso behäbig, wie es sich geöffnet hat schließt sich nun das Schott wieder. Du nimmst nun das Geräusch einströmenden Sauerstoffs wahr. Du bist nun wieder vollständig in der sicheren Obhut der Fenrir 13.</value>
     </data>
     <data name="CANT_LEAVE_WITH_TIED_EYELET" xml:space="preserve">
-        <value>Solange das Seil noch mit dem Gurt verbunden ist, kannst Du nicht aus dem Raum gehen.</value>
+        <value>Solange das Seil noch mit dem Gurt verbunden ist, bzw. Du den Gurt trägst, kannst Du nicht aus dem Raum gehen. Vielleicht lässt Du ihn einfach fallen?</value>
     </data>
     <data name="AIRLOCK_OPEN_DROP_CLOTHES" xml:space="preserve">
         <value>Das geht nicht! Du würdest hier im All sofort sterben!</value>
@@ -1082,7 +1082,7 @@ Der Punkt markiert den Reparatur-Droiden und er hat sein Dock auf dem Dach der B
         <value>Die Hülle, und somit auch die Rückseite, besteht aus einer neuartigen Graphen-Stahl-Verbindung und ist ultrafest und dabei hauchdünn und leicht. Die Frage, wie das Geschoss aus dem All es geschafft hat, sie zu durchschlagen, blitzt kurz in Deinen Gedanken auf. Und ist auch schon wieder verschwunden...</value>
     </data>
     <data name="JETTY_SPACE" xml:space="preserve">
-        <value>Der Blick ist gleichermaßen faszinierend und befremdlich. Keine der Konstellationen kommt Dir bekannt vor. Doch die Klarheit des Blicks lässt Dich das strahlende Band der Milchstraße erkennen, in der wir und natürlich noch immer befinden.</value>
+        <value>Der Blick ist gleichermaßen faszinierend und befremdlich. Keine der Konstellationen kommt Dir bekannt vor. Doch die Klarheit des Blicks lässt Dich das strahlende Band der Milchstraße erkennen, in der wir uns natürlich noch immer befinden.</value>
     </data>
     <data name="JETTY_ENGINE" xml:space="preserve">
         <value>Die riesigen Treibwerke sind ein Wunder der Technik ansich. Du hast überhaupt keine Ahnung, wie sie funktionieren.</value>
@@ -1101,5 +1101,20 @@ Der Punkt markiert den Reparatur-Droiden und er hat sein Dock auf dem Dach der B
     </data>
     <data name="SOCIALROOM_CANT_REACH_RECEIVER_FROM_HERE" xml:space="preserve">
         <value>Ich verstehe Deinen Plan. Aber von hier kannst Du den Receiver nicht erreichen.</value>
+    </data>
+    <data name="KITCHEN_FOOD_BAG" xml:space="preserve">
+        <value>Diese Beutel haben verschiedene Größen und Farben. Vermutlich verschiedenste Darreichungen von Fetten, Proteinen, Kohlehydrahten, Vitaminen und noch vielen anderen Stoffen.</value>
+    </data>
+    <data name="AMBULANCE_OXYGEN_HOSE" xml:space="preserve">
+        <value>Die Schläuche ragen aus dem Korpus des Beatmungsgeräts heraus und können mit Beatmungsmasken verbunden werden. Das benötigte Mischverhältnis lässt sich über das Gerät direkt einstellen.</value>
+    </data>
+    <data name="TRY_TO_SIT_ON_GLASS_TABLE" xml:space="preserve">
+        <value>Der Glastisch würder unter Dir zusammenbrechen.</value>
+    </data>
+    <data name="TRY_TO_SIT_ON_BILLARD_TABLE" xml:space="preserve">
+        <value>Du willst den schönen grünen Filz nicht beschädigen und lässt es bleiben.</value>
+    </data>
+    <data name="QUATUM_CUBE" xml:space="preserve">
+        <value>Jeder Würfel ist ein Knoten im Quantencluster und besteht aus einem gläsernen Korpus, der im Inneren seine Recheneinheit preisgibt. Das Licht der Stehlen durchdringt auch die Würfel und lässt sie so Teil der Kunst werden.</value>
     </data>
 </root>

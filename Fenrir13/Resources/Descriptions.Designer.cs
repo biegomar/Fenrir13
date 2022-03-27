@@ -269,6 +269,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Die Schläuche ragen aus dem Korpus des Beatmungsgeräts heraus und können mit Beatmungsmasken verbunden werden. Das benötigte Mischverhältnis lässt sich über das Gerät direkt einstellen..
+        /// </summary>
+        internal static string AMBULANCE_OXYGEN_HOSE {
+            get {
+                return ResourceManager.GetString("AMBULANCE_OXYGEN_HOSE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Ja, Du hast Dich nicht getäuscht. Es handelt sich um ein Beatmungsgerät. Diverse Schläuche und Ventile ermöglichen es, die verschiedenen Gase den gewünschten Anforderungen entsprechend zu mischen. Die Schläuche werden im unteren Bereich des Geräts aus dem Korpus herausgeführt. Darin müssen also die Gase sein. Und tatsächlich erblickst Du an der Rückseite eine Art Verschlussklappe, die das Innere des Korpus zugänglich macht..
         /// </summary>
         internal static string AMBULANCE_RESPIRATOR {
@@ -405,7 +414,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Solange das Seil noch mit dem Gurt verbunden ist, kannst Du nicht aus dem Raum gehen..
+        ///   Looks up a localized string similar to Solange das Seil noch mit dem Gurt verbunden ist, bzw. Du den Gurt trägst, kannst Du nicht aus dem Raum gehen. Vielleicht lässt Du ihn einfach fallen?.
         /// </summary>
         internal static string CANT_LEAVE_WITH_TIED_EYELET {
             get {
@@ -1762,7 +1771,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Blick ist gleichermaßen faszinierend und befremdlich. Keine der Konstellationen kommt Dir bekannt vor. Doch die Klarheit des Blicks lässt Dich das strahlende Band der Milchstraße erkennen, in der wir und natürlich noch immer befinden..
+        ///   Looks up a localized string similar to Der Blick ist gleichermaßen faszinierend und befremdlich. Keine der Konstellationen kommt Dir bekannt vor. Doch die Klarheit des Blicks lässt Dich das strahlende Band der Milchstraße erkennen, in der wir uns natürlich noch immer befinden..
         /// </summary>
         internal static string JETTY_SPACE {
             get {
@@ -1785,6 +1794,15 @@ namespace Fenrir13.Resources {
         internal static string KITCHEN_CABINET {
             get {
                 return ResourceManager.GetString("KITCHEN_CABINET", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Diese Beutel haben verschiedene Größen und Farben. Vermutlich verschiedenste Darreichungen von Fetten, Proteinen, Kohlehydrahten, Vitaminen und noch vielen anderen Stoffen..
+        /// </summary>
+        internal static string KITCHEN_FOOD_BAG {
+            get {
+                return ResourceManager.GetString("KITCHEN_FOOD_BAG", resourceCulture);
             }
         }
         
@@ -2333,6 +2351,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Jeder Würfel ist ein Knoten im Quantencluster und besteht aus einem gläsernen Korpus, der im Inneren seine Recheneinheit preisgibt. Das Licht der Stehlen durchdringt auch die Würfel und lässt sie so Teil der Kunst werden..
+        /// </summary>
+        internal static string QUATUM_CUBE {
+            get {
+                return ResourceManager.GetString("QUATUM_CUBE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Du weißt nicht, welche Freigaben Dir durch den erhöhten Rang Q noch zu Teil werden..
         /// </summary>
         internal static string RANK {
@@ -2342,7 +2369,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Hier auf dem Schiff ist Wasser sehr wertvoll. Geschirr und Besteck wird nicht gespült, sondern anderweitig verwertet. Dieser hochmoderne Recycler ist in der Lage, die eingeworfenen Reste exakt von einander zu trennen und einer weiteren Verwertung zuzuführen. Wie das alles geht, ist Dir schleierhaft. Du weißt nur, dass die Nahrungsreste wieder in ihre Grundbausteine überführt werden und dann dem Printer zur Verfügung stehen. Was mit den anderen Materialien passiert, weißt Du nicht..
+        ///   Looks up a localized string similar to Hier auf dem Schiff ist Wasser sehr wertvoll. Geschirr und Besteck wird nicht gespült, sondern anderweitig verwertet. Dieser hochmoderne Recycler ist in der Lage, die eingeworfenen Reste exakt von einander zu trennen und einer weiteren Verwertung zuzuführen. Wie das alles geht, ist Dir schleierhaft. Du weißt nur, dass die Nahrungsreste wieder in ihre Grundbausteine zerlegt werden und dann dem Printer zur Verfügung stehen. Was mit den anderen Materialien passiert, weißt Du nicht..
         /// </summary>
         internal static string RECYCLER {
             get {
@@ -3045,6 +3072,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Du willst den schönen grünen Filz nicht beschädigen und lässt es bleiben..
+        /// </summary>
+        internal static string TRY_TO_SIT_ON_BILLARD_TABLE {
+            get {
+                return ResourceManager.GetString("TRY_TO_SIT_ON_BILLARD_TABLE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Du setzt Dich kurz auf einen der Stühle, wippst ein wenig vor uns zurück und denkst Dir dann, dass es gerade unangemessen ist, Dich zu setzen..
         /// </summary>
         internal static string TRY_TO_SIT_ON_CHAIR {
@@ -3059,6 +3095,15 @@ namespace Fenrir13.Resources {
         internal static string TRY_TO_SIT_ON_COUCH {
             get {
                 return ResourceManager.GetString("TRY_TO_SIT_ON_COUCH", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Der Glastisch würder unter Dir zusammenbrechen..
+        /// </summary>
+        internal static string TRY_TO_SIT_ON_GLASS_TABLE {
+            get {
+                return ResourceManager.GetString("TRY_TO_SIT_ON_GLASS_TABLE", resourceCulture);
             }
         }
         

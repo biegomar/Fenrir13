@@ -96,6 +96,7 @@ internal static class AmbulancePrerequisites
         location.Surroundings.Add(Keys.AMBULANCE_OP_ITEMS_DETAIL, () => Descriptions.AMBULANCE_OP_ITEMS_DETAIL);
         location.Surroundings.Add(Keys.AMBULANCE_MEDIS, () => Descriptions.AMBULANCE_MEDIS);
         location.Surroundings.Add(Keys.AMBULANCE_RESPIRATOR, () => Descriptions.AMBULANCE_RESPIRATOR);
+        location.Surroundings.Add(Keys.AMBULANCE_OXYGEN_HOSE, () => Descriptions.AMBULANCE_OXYGEN_HOSE);
     }
     
     private static void AddAfterLookEvents(Location ambulance, EventProvider eventProvider)

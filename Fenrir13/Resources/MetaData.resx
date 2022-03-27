@@ -28,7 +28,7 @@
         <value>Fenrir 13 - An Interactive Fiction</value>
     </data>
     <data name="VERSION" xml:space="preserve">
-        <value>v0.9.4</value>
+        <value>v1.0</value>
     </data>
     <data name="ASCII_TITLE" xml:space="preserve">
         <value> ________ _______   ________   ________  ___  ________           _____  ________     
@@ -66,5 +66,8 @@
     </data>
     <data name="QUEST_IX" xml:space="preserve">
         <value>Kehre zur Brücke zurück</value>
+    </data>
+    <data name="BETA_TESTER" xml:space="preserve">
+        <value>Ein herzliches Dankeschön geht an die Beta-Tester Heiko Spies und Marcel Fasterding.</value>
     </data>
 </root>

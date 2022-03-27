@@ -151,7 +151,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to OP-Schränke| OP Schränke|OP-Schrank|OP Schrank|Das Verbandszeug|Verbandszeug|Verbandszeuge|Die Instrumente|Instrumente|Instrument|OP-Besteck.
+        ///   Looks up a localized string similar to OP-Schränke| OP Schränke|Schränke|Schrank|OP-Schrank|OP Schrank|Das Verbandszeug|Verbandszeug|Verbandszeuge|Die Instrumente|Instrumente|Instrument|OP-Besteck.
         /// </summary>
         internal static string AMBULANCE_OP_ITEMS {
             get {
@@ -187,7 +187,16 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Beatmungsgerät|Beatmungsmaschine|Beatmung|Beatmungsapparat|Gerät|Oxygen.
+        ///   Looks up a localized string similar to Schlauch|Schläuche.
+        /// </summary>
+        internal static string AMBULANCE_OXYGEN_HOSE {
+            get {
+                return ResourceManager.GetString("AMBULANCE_OXYGEN_HOSE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Beatmungsgerät|Beatmungsmaschine|Beatmung|Beatmungsapparat|Gerät|Oxygen|Korpus.
         /// </summary>
         internal static string AMBULANCE_RESPIRATOR {
             get {
@@ -547,7 +556,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Quantencluster|Quantencomputer|Computer|Recheneinheit.
+        ///   Looks up a localized string similar to Quantencluster|Quantencomputer|Computer|Recheneinheit|Cluster.
         /// </summary>
         internal static string ENGINE_ROOM_COMPUTER {
             get {
@@ -763,7 +772,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Grüne Pfeile|Grüner Pfeil.
+        ///   Looks up a localized string similar to Grüne Pfeile|Grüner Pfeil|Pfeile|Pfeil.
         /// </summary>
         internal static string GREEN_ARROWS {
             get {
@@ -808,7 +817,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sandsäcke|Sandsack|Sack|Power Bag.
+        ///   Looks up a localized string similar to Sandsäcke|Sandsack|Säcke|Sack|Power Bag.
         /// </summary>
         internal static string GYM_SANDBAG {
             get {
@@ -867,6 +876,15 @@ namespace Fenrir13.Resources {
         internal static string KITCHEN_CABINET {
             get {
                 return ResourceManager.GetString("KITCHEN_CABINET", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Beutelchen|Beutel|Kunststoff|Nahrungsbestandteile|Bestandteile.
+        /// </summary>
+        internal static string KITCHEN_FOOD_BAG {
+            get {
+                return ResourceManager.GetString("KITCHEN_FOOD_BAG", resourceCulture);
             }
         }
         
@@ -1164,6 +1182,15 @@ namespace Fenrir13.Resources {
         internal static string PROXIMA_CENTAURI {
             get {
                 return ResourceManager.GetString("PROXIMA_CENTAURI", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Würfel.
+        /// </summary>
+        internal static string QUATUM_CUBE {
+            get {
+                return ResourceManager.GetString("QUATUM_CUBE", resourceCulture);
             }
         }
         

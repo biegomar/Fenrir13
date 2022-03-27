@@ -241,13 +241,13 @@
         <value>Krankenbett|Krankenhausbett|Bett|Pflegebett</value>
     </data>
     <data name="AMBULANCE_OP_ITEMS" xml:space="preserve">
-        <value>OP-Schränke| OP Schränke|OP-Schrank|OP Schrank|Das Verbandszeug|Verbandszeug|Verbandszeuge|Die Instrumente|Instrumente|Instrument|OP-Besteck</value>
+        <value>OP-Schränke| OP Schränke|Schränke|Schrank|OP-Schrank|OP Schrank|Das Verbandszeug|Verbandszeug|Verbandszeuge|Die Instrumente|Instrumente|Instrument|OP-Besteck</value>
     </data>
     <data name="AMBULANCE_MEDIS" xml:space="preserve">
         <value>Medizinschrank|Medischrank|Medikamente|Medikament|Medis|Schrank</value>
     </data>
     <data name="AMBULANCE_RESPIRATOR" xml:space="preserve">
-        <value>Beatmungsgerät|Beatmungsmaschine|Beatmung|Beatmungsapparat|Gerät|Oxygen</value>
+        <value>Beatmungsgerät|Beatmungsmaschine|Beatmung|Beatmungsapparat|Gerät|Oxygen|Korpus</value>
     </data>
     <data name="AMBULANCE_RESPIRATOR_FLAP" xml:space="preserve">
         <value>Verschlussklappe|Verschlusskappe|Klappe|Kappe</value>
@@ -376,7 +376,7 @@
         <value>Tangente</value>
     </data>
     <data name="ENGINE_ROOM_COMPUTER" xml:space="preserve">
-        <value>Quantencluster|Quantencomputer|Computer|Recheneinheit</value>
+        <value>Quantencluster|Quantencomputer|Computer|Recheneinheit|Cluster</value>
     </data>
     <data name="MAINTENANCE_ROOM_DRAWER" xml:space="preserve">
         <value>Schublade|Schubladen|Schubfach|Schubfächer|Fächer</value>
@@ -442,7 +442,7 @@
         <value>Halterung|Haken|Wandhaken</value>
     </data>
     <data name="GYM_SANDBAG" xml:space="preserve">
-        <value>Sandsäcke|Sandsack|Sack|Power Bag</value>
+        <value>Sandsäcke|Sandsack|Säcke|Sack|Power Bag</value>
     </data>
     <data name="GYM_LOOP" xml:space="preserve">
         <value>Schlaufen|Schlaufe|Griff|Griffe</value>
@@ -466,7 +466,7 @@
         <value>Standort</value>
     </data>
     <data name="GREEN_ARROWS" xml:space="preserve">
-        <value>Grüne Pfeile|Grüner Pfeil</value>
+        <value>Grüne Pfeile|Grüner Pfeil|Pfeile|Pfeil</value>
     </data>
     <data name="EMERGENCY_LIGHT" xml:space="preserve">
         <value>Notbeleuchtung|Notlicht|Beleuchtung|Licht</value>
@@ -545,5 +545,14 @@
     </data>
     <data name="ROOF_TOP_CLAW" xml:space="preserve">
         <value>Krallen|Kralle</value>
+    </data>
+    <data name="KITCHEN_FOOD_BAG" xml:space="preserve">
+        <value>Beutelchen|Beutel|Kunststoff|Nahrungsbestandteile|Bestandteile</value>
+    </data>
+    <data name="AMBULANCE_OXYGEN_HOSE" xml:space="preserve">
+        <value>Schlauch|Schläuche</value>
+    </data>
+    <data name="QUATUM_CUBE" xml:space="preserve">
+        <value>Würfel</value>
     </data>
 </root>

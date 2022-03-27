@@ -62,7 +62,11 @@ internal class ConsolePrintingSubsystem : BaseConsolePrintingSubsystem
         Console.WriteLine($@"{MetaData.DESCRIPTION} - {MetaData.VERSION}");
         Console.WriteLine($@"Written by {MetaData.AUTHOR}");
         Console.WriteLine(MetaData.COPYRIGHT);
+        Console.WriteLine();
+        Console.WriteLine(MetaData.BETA_TESTER);
+        Console.WriteLine();
         Console.WriteLine(GetVersionNumber());
+        Console.WriteLine();
 
         return true;
     }

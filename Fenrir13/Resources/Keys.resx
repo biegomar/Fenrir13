@@ -612,4 +612,13 @@
     <data name="ROOF_TOP_CLAW" xml:space="preserve">
         <value>ROOF_TOP_CLAW</value>
     </data>
+    <data name="KITCHEN_FOOD_BAG" xml:space="preserve">
+        <value>KITCHEN_FOOD_BAG</value>
+    </data>
+    <data name="AMBULANCE_OXYGEN_HOSE" xml:space="preserve">
+        <value>AMBULANCE_OXYGEN_HOSE</value>
+    </data>
+    <data name="QUATUM_CUBE" xml:space="preserve">
+        <value>QUATUM_CUBE</value>
+    </data>
 </root>

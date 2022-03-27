@@ -169,6 +169,16 @@ internal class EventProvider
                 throw new SitDownException(Descriptions.TRY_TO_SIT_ON_SEAT);
             }
 
+            if (eventArgs.ExternalItemKey == Keys.SOCIALROOM_GLASS_TABLE)
+            {
+                throw new SitDownException(Descriptions.TRY_TO_SIT_ON_GLASS_TABLE);    
+            }
+
+            if (eventArgs.ExternalItemKey == Keys.SOCIALROOM_BILLARD)
+            {
+                throw new SitDownException(Descriptions.TRY_TO_SIT_ON_BILLARD_TABLE);
+            }
+
             throw new SitDownException(BaseDescriptions.NO_SEAT);
         }
     }
@@ -475,7 +485,7 @@ internal class EventProvider
         {
             this.universe.ActivePlayer.Items.Remove(item);
             this.universe.ActivePlayer.Clothes.Add(item);
-            PrintingSubsystem.FormattedResource(Descriptions.PULLON_WEARABLE, item.Name, true);
+            PrintingSubsystem.FormattedResource(Descriptions.PULLON_WEARABLE, item.NominativeIndefiniteArticleName, true);
         }
 
         var listOfPossibleWearables = new List<string>()
@@ -649,6 +659,7 @@ internal class EventProvider
                     {
                         this.universe.ActiveLocation = terminal;
                         PrintingSubsystem.ActiveLocation(this.universe.ActiveLocation, this.universe.LocationMap);
+                        this.universe.Score += this.universe.ScoreBoard[nameof(this.AfterSitDownOnQuestsSolved)];
                         this.universe.SolveQuest(MetaData.QUEST_IX);
                     }
                 }

@@ -205,6 +205,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to AMBULANCE_OXYGEN_HOSE.
+        /// </summary>
+        internal static string AMBULANCE_OXYGEN_HOSE {
+            get {
+                return ResourceManager.GetString("AMBULANCE_OXYGEN_HOSE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to AMBULANCE_RESPIRATOR.
         /// </summary>
         internal static string AMBULANCE_RESPIRATOR {
@@ -1015,6 +1024,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to KITCHEN_FOOD_BAG.
+        /// </summary>
+        internal static string KITCHEN_FOOD_BAG {
+            get {
+                return ResourceManager.GetString("KITCHEN_FOOD_BAG", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to LAPTOP.
         /// </summary>
         internal static string LAPTOP {
@@ -1344,6 +1362,15 @@ namespace Fenrir13.Resources {
         internal static string PROXIMA_CENTAURI {
             get {
                 return ResourceManager.GetString("PROXIMA_CENTAURI", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to QUATUM_CUBE.
+        /// </summary>
+        internal static string QUATUM_CUBE {
+            get {
+                return ResourceManager.GetString("QUATUM_CUBE", resourceCulture);
             }
         }
         

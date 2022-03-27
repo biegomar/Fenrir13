@@ -84,6 +84,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Ein herzliches Dankeschön geht an die Beta-Tester Heiko Spies und Marcel Fasterding..
+        /// </summary>
+        internal static string BETA_TESTER {
+            get {
+                return ResourceManager.GetString("BETA_TESTER", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to (c) by Marc Biegota 2021, 2022.
         /// </summary>
         internal static string COPYRIGHT {
@@ -183,7 +192,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to v0.9.4.
+        ///   Looks up a localized string similar to v1.0.
         /// </summary>
         internal static string VERSION {
             get {
