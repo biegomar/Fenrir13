@@ -15,7 +15,6 @@ Folgende Versionen stehen zum Download bereit:
 * linux-x64 -> x64-basierte Systeme. Standard-Rechner unter Linux. (getestet) 
 * osx-x64 -> Apple macOS-basierte Systeme. (getestet)
 * win-x64 -> x64-basierte Windows-Systeme. Standard-Rechner unter Windows. (getestet)
-* win-x86 -> ältere 32-Bit Windows-Systeme. Älteres Standard-System unter Windows. (ungetestet)
 
 # Spiel starten
 Der einfachste Weg, das Spiel zu starten ist, die Datei per Doppelklick aufzurufen. Aber auch der Start über eine bereits geöffnete Console ist möglich. Dazu wechselt Ihr in den Ordner, in dem Ihr Fenrir 13 abgelegt habt und tippt "Fenrir13.exe" (Windows), "./Fenrir13.exe" (Windows Powershell), bzw "./Fenrir13" (Linux und MacOS) ein. 
@@ -35,3 +34,13 @@ Auch hier gilt: gibt es Probleme, könnt Ihr mich gerne kontaktieren.
 Sobald der diesjährige Wettbewerb gestartet ist, werde ich das Spiel auch offiziell veröffentlichen. Die Quelltexte werden dann auch auf GitHub verfügbar sein.
 Als der Wettbewerb angekündigt wurde, befand sich gerade ein anderes Spiel von mir in der Entwicklung. Heretic. Das ist aber viel größer angelegt als die rund 90 Minuten Spielzeit des Wettbewerbs. Daher habe ich mich kurzfristig entschieden, Fenrir 13 ins Leben zu rufen. Um nicht alles erneut zu programmieren, habe ich mich weiterhin entschieden aus Heretic allgemeine Teile in ein eigenes Framework zu überführen und verfügbar zu machen. Auch dieses Framework (Heretic.InteractiveFiction) wird sehr zeitnah auf GitHub veröffentlicht und für Programmierer als NuGet-Paket verfügbar gemacht.
 Es ist durchaus denkbar, dass Fenrir 13 noch technische oder leichte inhaltliche Anpassungen erfährt, vor allem dann, wenn noch echte Fehler entdeckt werden. Aber zumindest die Möglichkeit, aus dem Spiel heraus Spielstände zu laden soll noch ins Framework integriert und dann auch in Fenrir 13 möglich gemacht werden. 
+
+# Kontakt
+Falls Fragen sind, könnt Ihr mich gerne kontaktieren: 
+* Email: fenrir13.beta@online.ms
+* twitter: @biegomar
+* GitHub: github.com/biegomar
+
+
+Viele Grüße  
+Marc Biegota
