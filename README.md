@@ -1,20 +1,29 @@
-# Introduction 
-An interactive fiction. 
+# Einführung 
+Hallo liebe Textadventure-Fans,
+ich freue mich, Euch das Spiel Fenrir 13 zu präsentieren. Hierbei handelt es sich um eine Science Fiction Story rund um den Raumfrachters Fenrir 13 auf seiner Mission zu den entlegenen Monden von Proxima Centauri b.
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+# Spiel verfügbar machen
+Das Spiel ist als Consolen-Spiel konzipiert und läuft auf Windows, Linux und MacOS in deren jeweiligen Consolen-Hosts. Dort nutzt es die Einstellungen, die Ihr aktuell verwendet. Am besten spielt sich Fenrir 13 mit einem schwarzen oder grauen Hintergrund.
+Achtet darauf, die für Euer System richtige Version des Spiels zu benutzen!
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+Achtung! Aufgrund der Rechteeinstellungen wird vermutlich beim Start des Spiels darauf hingewiesen, dass es sich um eine Datei aus einer unbekannten Quelle handelt. Daher müsst Ihr die Ausführung explizit erlauben (Windows). Unter Linux und MacOS müsst Ihr die Ausführungsrechte explizit setzen (z.B. über chmod).
+Gibt es dabei Probleme, könnt Ihr mich gerne kontaktieren.
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+# Spiel starten
+Der einfachste Weg, das Spiel zu starten ist, die Datei per Doppelklick aufzurufen. Aber auch der Start über eine bereits geöffnete Console ist möglich. Dazu wechselt Ihr in den Ordner, in dem Ihr Fenrir 13 abgelegt habt und tippt "Fenrir13.exe" (Windows), "./Fenrir13.exe" (Windows Powershell), bzw "./Fenrir13" (Linux und MacOS) ein. 
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+# Spielstand speichern und laden
+Innerhalb des Spiels braucht Ihr nur das Kommando SAVE eingeben und der Spielstand wird in Eurem Dokumentenordner gespeichert. Der korrekte Pfad und der Name der Datei wird Euch nach der Aktion angezeigt. Die Angabe eines eigenen Pfades oder Dateinamens ist aktuell noch nicht vorgesehen. Daher wird bei jedem Speicher die eine Datei immer überschrieben. Wollt Ihr Euch explizit Spielstände aufbewahren, so müsst Ihr selbständig die Datei kopieren und umbenennen. 
+Im Moment gibt es noch keine Möglichkeit, den Spielstand direkt aus Fenrir 13 zu laden. Wollt Ihr aber bei einem gespeicherten Spielstand weiter spielen, so müsst Ihr das Spiel direkt von der Console aus starten und den Paramter F benutzen. Das sieht dann wie folgt aus:
+Windows: 
+./Fenrir13.exe -F "C:\Users\marcb\Documents\heretic_savedgame.txt"
+Linux und MacOS:
+./Fenrir13 -F "SavedGames/heretic_savedgame.txt"
+
+Bitte denkt daran, dass die Pfade natürlich Euren lokalen Pfaden entsprechen müssen.
+Auch hier gilt: gibt es Probleme, könnt Ihr mich gerne kontaktieren.
+
+# Wie geht es weiter?
+Sobald der diesjährige Wettbewerb gestartet ist, werde ich das Spiel auch offiziell veröffentlichen. Die Quelltexte werden dann auch auf GitHub verfügbar sein.
+Als der Wettbewerb angekündigt wurde, befand sich gerade ein anderes Spiel von mir in der Entwicklung. Heretic. Das ist aber viel größer angelegt als die rund 90 Minuten Spielzeit des Wettbewerbs. Daher habe ich mich kurzfristig entschieden, Fenrir 13 ins Leben zu rufen. Um nicht alles erneut zu programmieren, habe ich mich weiterhin entschieden aus Heretic allgemeine Teile in ein eigenes Framework zu überführen und verfügbar zu machen. Auch dieses Framework (Heretic.InteractiveFiction) wird sehr zeitnah auf GitHub veröffentlicht und für Programmierer als NuGet-Paket verfügbar gemacht.
+Es ist durchaus denkbar, dass Fenrir 13 noch technische oder leichte inhaltliche Anpassungen erfährt, vor allem dann, wenn noch echte Fehler entdeckt werden. Aber zumindest die Möglichkeit, aus dem Spiel heraus Spielstände zu laden soll noch ins Framework integriert und dann auch in Fenrir 13 möglich gemacht werden. 
