@@ -9,6 +9,14 @@ Achtet darauf, die für Euer System richtige Version des Spiels zu benutzen!
 Achtung! Aufgrund der Rechteeinstellungen wird vermutlich beim Start des Spiels darauf hingewiesen, dass es sich um eine Datei aus einer unbekannten Quelle handelt. Daher müsst Ihr die Ausführung explizit erlauben (Windows). Unter Linux und MacOS müsst Ihr die Ausführungsrechte explizit setzen (z.B. über chmod).
 Gibt es dabei Probleme, könnt Ihr mich gerne kontaktieren.
 
+Folgende Versionen stehen zum Download bereit:
+* linux-arm -> arm-basierte System, z.B. Raspberry-Pi. (ungetestet)  
+* linux-arm64 -> arm-basierte Systeme. Hier konkret Raspberry-Pi 4 auf Ubuntu 20.10. (getestet)  
+* linux-x64 -> x64-basierte Systeme. Standard-Rechner unter Linux  
+* osx-x64 -> Apple macOS-basierte Systeme. (getestet)
+* win-x64 -> x64-basierte Windows-Systeme. Standard-Rechner unter Windows. (getestet)
+* win-x86 -> ältere 32-Bit Windows-Systeme. Älteres Standard-System unter Windows. (ungetestet)
+
 # Spiel starten
 Der einfachste Weg, das Spiel zu starten ist, die Datei per Doppelklick aufzurufen. Aber auch der Start über eine bereits geöffnete Console ist möglich. Dazu wechselt Ihr in den Ordner, in dem Ihr Fenrir 13 abgelegt habt und tippt "Fenrir13.exe" (Windows), "./Fenrir13.exe" (Windows Powershell), bzw "./Fenrir13" (Linux und MacOS) ein. 
 
