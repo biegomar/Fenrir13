@@ -1,18 +1,18 @@
 namespace Fenrir13.GamePlay;
 
-public static class ItemWeights
+internal static class ItemWeights
 {
-    public static int DUMBBELL_BAR = 10000;
-    public static int HELMET = 2500;
-    public static int GLOVES = 150;
-    public static int BOOTS = 500;
-    public static int BELT = 150;
-    public static int FRIDGE_DOOR_HANDLE = 200;
-    public static int OXYGEN_BOTTLE = 3550;
-    public static int SOCIALROOM_ANTENNA = 150;
-    public static int MAINTENANCE_ROOM_TOOL = 100;
+    internal static int DUMBBELL_BAR = 10000;
+    internal static int HELMET = 2500;
+    internal static int GLOVES = 150;
+    internal static int BOOTS = 500;
+    internal static int BELT = 150;
+    internal static int FRIDGE_DOOR_HANDLE = 200;
+    internal static int OXYGEN_BOTTLE = 3550;
+    internal static int SOCIALROOM_ANTENNA = 150;
+    internal static int MAINTENANCE_ROOM_TOOL = 100;
     
-    public static Dictionary <string,int> WeightDictionary = new Dictionary<string, int>()
+    internal static Dictionary <string,int> WeightDictionary = new Dictionary<string, int>()
     {
         {nameof(DUMBBELL_BAR), DUMBBELL_BAR},
         {nameof(HELMET), HELMET},

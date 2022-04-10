@@ -338,7 +338,7 @@ Du erkennst eine Cardiostation, die für mehrere Arten von Ausdauertraining ausg
 Am südlichen Ende der Schleuse trennt ein weiteres massives Schott den Raum von einem breiten Steg, der bereits vollständig ins All ragt. </value>
     </data>
     <data name="ENGINE_ROOM" xml:space="preserve">
-        <value>Beim Eintreten in den Raum erwartet Dich eine Symbiose aus hoch modernster Technik und postmoderner Kunst. Das Zentrum des Raumes wird gebildet von drei runden metallischen Stehlen, an deren Kopfende auf einer massiven Platte jeweils ein Würfel ruht. Die Stehlen haben eine Abstand von gut einem Meter zueinander und jeweils eine Kante der Kopfplatte, die Du als Vorne interpretierst, scheint eine Tangente an einen imaginären Kreis anzulegen, um den herum die Säulen angeordnet sind. Ein schwaches, künstliches Leuchten scheint den Stehlen zu entstammen und taucht den Halbkreis den sie bilden in ein futuristisches Licht. Eine Korona aus ebendiesem Licht umfängt die drei Würfel und gibt der Szenerie eine mystische Aura. Ein kaum hörbares Summen schwingt im Raum, dass von den drei Würfeln auszugehen scheint. Als Du einen Schritt weiter in den Raum hinein gehst, hebt sich, wie aus dem Nichts, leichtgängig und geräuschlos eine weitere Stehle aus dem Boden vor Dir. Über ihrer Kopfplatte schwebt ein bläuliches, dreidimensionales Hologramm der Fenrir 13.
+        <value>Beim Eintreten in den Raum erwartet Dich eine Symbiose aus hoch modernster Technik und postmoderner Kunst. Das Zentrum des Raumes wird gebildet von drei runden metallischen Stelen, an deren Kopfende auf einer massiven Platte jeweils ein Würfel ruht. Die Stelen haben eine Abstand von gut einem Meter zueinander und jeweils eine Kante der Kopfplatte, die Du als Vorne interpretierst, scheint eine Tangente an einen imaginären Kreis anzulegen, um den herum die Säulen angeordnet sind. Ein schwaches, künstliches Leuchten scheint den Stehlen zu entstammen und taucht den Halbkreis den sie bilden in ein futuristisches Licht. Eine Korona aus ebendiesem Licht umfängt die drei Würfel und gibt der Szenerie eine mystische Aura. Ein kaum hörbares Summen schwingt im Raum, dass von den drei Würfeln auszugehen scheint. Als Du einen Schritt weiter in den Raum hinein gehst, hebt sich, wie aus dem Nichts, leichtgängig und geräuschlos eine weitere Stehle aus dem Boden vor Dir. Über ihrer Kopfplatte schwebt ein bläuliches, dreidimensionales Hologramm der Fenrir 13.
 Du weißt, dass die Würfel einen redundanten Quantencluster bilden, eine Recheneinheit, so leistungsfähig, um alle Prozesse der bewohnten Planeten gleichzeitig zu steuern. Aber gleichermaßen so erschwinglich, dass mittlerweile jedes Schiff der Flotte davon betrieben wird.</value>
     </data>
     <data name="CARDIO_STATION" xml:space="preserve">
@@ -751,7 +751,7 @@ Der erste markiert den Reparatur-Droiden und er hat sein Dock auf dem Dach der B
 Der Zweite Punkt verweist auf die mechanische Vorrichtung, um die Solarpanele auszufahren. Sie befindet sich unterhalb des Schiffs und kann über dieselbe Treppe erreicht werden. Der Handbetrieb ist zwar prinzipiell möglich, aber für eine untrainierte Person unwahrscheinlich. Daher wird in der Information darauf hingewiesen, einen belastbaren Hebel zu benutzen.</value>
     </data>
     <data name="ENGINE_ROOM_ART" xml:space="preserve">
-        <value>Mit der Kunst sind hier die leuchtenden Stehlen gemeint, die wie auf einem Halbkreis stehend ausgerichtet sind.</value>
+        <value>Mit der Kunst sind hier die leuchtenden Stelen gemeint, die wie auf einem Halbkreis stehend ausgerichtet sind.</value>
     </data>
     <data name="ENGINE_ROOM_TECHNIC" xml:space="preserve">
         <value>Mit der Technik ist der aus drei einzelnen Rechenwürfeln bestehende Quantencluster gemeint.</value>
@@ -760,7 +760,7 @@ Der Zweite Punkt verweist auf die mechanische Vorrichtung, um die Solarpanele au
         <value>Die Stehlen haben eine Abstand von gut einem Meter zueinander und jeweils eine Kante der Kopfplatte, die Du als Vorne interpretierst, scheint eine Tangente an einen imaginären Kreis anzulegen, um den herum die Säulen angeordnet sind. Ein schwaches, künstliches Leuchten scheint den Stehlen zu entstammen und taucht den Halbkreis den sie bilden in ein futuristisches Licht.</value>
     </data>
     <data name="ENGINE_ROOM_HEAD" xml:space="preserve">
-        <value>Die Platte besteht aus dem selben Metal wie die Stehlen und ist gut einen Zentimeter dick. Sie überragt die Fläche der Stehlen um Einiges und bietet somit genug Platz für die Würfel.</value>
+        <value>Die Platte besteht aus dem selben Metal wie die Stelen und ist gut einen Zentimeter dick. Sie überragt die Fläche der Stelen um Einiges und bietet somit genug Platz für die Würfel.</value>
     </data>
     <data name="ENGINE_ROOM_TANGENT" xml:space="preserve">
         <value>Das sagt Wikipedia: Eine Tangente (von lateinisch: tangere ‚berühren‘) ist in der Geometrie eine Gerade, die eine gegebene Kurve in einem bestimmten Punkt berührt.</value>
@@ -1115,6 +1115,6 @@ Der Punkt markiert den Reparatur-Droiden und er hat sein Dock auf dem Dach der B
         <value>Du willst den schönen grünen Filz nicht beschädigen und lässt es bleiben.</value>
     </data>
     <data name="QUATUM_CUBE" xml:space="preserve">
-        <value>Jeder Würfel ist ein Knoten im Quantencluster und besteht aus einem gläsernen Korpus, der im Inneren seine Recheneinheit preisgibt. Das Licht der Stehlen durchdringt auch die Würfel und lässt sie so Teil der Kunst werden.</value>
+        <value>Jeder Würfel ist ein Knoten im Quantencluster und besteht aus einem gläsernen Korpus, der im Inneren seine Recheneinheit preisgibt. Das Licht der Stelen durchdringt auch die Würfel und lässt sie so Teil der Kunst werden.</value>
     </data>
 </root>

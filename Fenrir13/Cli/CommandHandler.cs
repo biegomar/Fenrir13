@@ -38,17 +38,9 @@ internal class CommandHandler
             services.AddSingleton<InputProcessor>();
             services.AddSingleton<EventProvider>();
             services.AddSingleton<Universe>();
-            services.AddSingleton<PeriodicEvent>(new PeriodicEvent()
-            {
-                MinDistanceBetweenEvents = 2,
-                MaxDistanceBetweenEvents = 20,
-                AverageDistanceBetweenEvents = 7,
-                Phrases = string.Empty,
-                Active = false
-            });
         }).Build();
 
-        var gameLoop = ActivatorUtilities.CreateInstance<GameLoop>(host.Services, !string.IsNullOrEmpty(FileName) ? FileName : string.Empty, ConsoleWidth);
-        gameLoop.Run();
+        var gameLoop = ActivatorUtilities.CreateInstance<GameLoop>(host.Services, ConsoleWidth);
+        gameLoop.Run(FileName);
     }
 }

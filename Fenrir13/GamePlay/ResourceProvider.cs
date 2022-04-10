@@ -12,7 +12,6 @@ internal class ResourceProvider: IResourceProvider
     {
         return new Dictionary<string, IEnumerable<string>>();
     }
-
     
     public IDictionary<string, IEnumerable<string>> GetItemsFromResources()
     {

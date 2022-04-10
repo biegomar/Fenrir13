@@ -1097,7 +1097,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Beim Eintreten in den Raum erwartet Dich eine Symbiose aus hoch modernster Technik und postmoderner Kunst. Das Zentrum des Raumes wird gebildet von drei runden metallischen Stehlen, an deren Kopfende auf einer massiven Platte jeweils ein Würfel ruht. Die Stehlen haben eine Abstand von gut einem Meter zueinander und jeweils eine Kante der Kopfplatte, die Du als Vorne interpretierst, scheint eine Tangente an einen imaginären Kreis anzulegen, um den herum die Säulen angeordnet sind. Ein schwaches, künstliches  [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to Beim Eintreten in den Raum erwartet Dich eine Symbiose aus hoch modernster Technik und postmoderner Kunst. Das Zentrum des Raumes wird gebildet von drei runden metallischen Stelen, an deren Kopfende auf einer massiven Platte jeweils ein Würfel ruht. Die Stelen haben eine Abstand von gut einem Meter zueinander und jeweils eine Kante der Kopfplatte, die Du als Vorne interpretierst, scheint eine Tangente an einen imaginären Kreis anzulegen, um den herum die Säulen angeordnet sind. Ein schwaches, künstliches Le [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string ENGINE_ROOM {
             get {
@@ -1106,7 +1106,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Mit der Kunst sind hier die leuchtenden Stehlen gemeint, die wie auf einem Halbkreis stehend ausgerichtet sind..
+        ///   Looks up a localized string similar to Mit der Kunst sind hier die leuchtenden Stelen gemeint, die wie auf einem Halbkreis stehend ausgerichtet sind..
         /// </summary>
         internal static string ENGINE_ROOM_ART {
             get {
@@ -1133,7 +1133,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Platte besteht aus dem selben Metal wie die Stehlen und ist gut einen Zentimeter dick. Sie überragt die Fläche der Stehlen um Einiges und bietet somit genug Platz für die Würfel..
+        ///   Looks up a localized string similar to Die Platte besteht aus dem selben Metal wie die Stelen und ist gut einen Zentimeter dick. Sie überragt die Fläche der Stelen um Einiges und bietet somit genug Platz für die Würfel..
         /// </summary>
         internal static string ENGINE_ROOM_HEAD {
             get {
@@ -2351,7 +2351,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Jeder Würfel ist ein Knoten im Quantencluster und besteht aus einem gläsernen Korpus, der im Inneren seine Recheneinheit preisgibt. Das Licht der Stehlen durchdringt auch die Würfel und lässt sie so Teil der Kunst werden..
+        ///   Looks up a localized string similar to Jeder Würfel ist ein Knoten im Quantencluster und besteht aus einem gläsernen Korpus, der im Inneren seine Recheneinheit preisgibt. Das Licht der Stelen durchdringt auch die Würfel und lässt sie so Teil der Kunst werden..
         /// </summary>
         internal static string QUATUM_CUBE {
             get {

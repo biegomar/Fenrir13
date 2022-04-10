@@ -8,9 +8,10 @@ namespace Fenrir13.Printing;
 
 internal class ConsolePrintingSubsystem : BaseConsolePrintingSubsystem
 {
-    public ConsolePrintingSubsystem()
+    public ConsolePrintingSubsystem(int consoleWidth = 0)
     {
         Console.OutputEncoding = Encoding.UTF8;
+        this.ConsoleWidth = consoleWidth;
     }
     
     public override bool Opening()

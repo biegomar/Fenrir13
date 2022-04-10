@@ -22,16 +22,16 @@ using Heretic.InteractiveFiction.Objects;
 
 namespace Fenrir13.GamePlay;
 
-internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
+internal sealed class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
 {
-    private readonly EventProvider eventProvider;
+    private EventProvider eventProvider;
 
     public GamePrerequisitesAssembler(EventProvider eventProvider)
     {
         this.eventProvider = eventProvider;
     }
 
-    public Universe AssembleGame(Universe universe)
+    public GamePrerequisites AssembleGame()
     {
         var map = new LocationMap(new LocationComparer());
 
@@ -82,13 +82,8 @@ internal class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
         var activeLocation = cryoChamber;
         var activePlayer = PlayerPrerequisites.Get(this.eventProvider);
         var actualQuests = GetQuests();
-        
-        universe.LocationMap = map;
-        universe.ActiveLocation = activeLocation;
-        universe.ActivePlayer = activePlayer;
-        universe.Quests = actualQuests;
-        
-        return universe;
+
+        return new GamePrerequisites(map, activeLocation, activePlayer, null, actualQuests);
     }
 
     private static ICollection<string> GetQuests()
