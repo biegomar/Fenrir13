@@ -1145,9 +1145,9 @@ internal class EventProvider
         }
     }
     
-    internal void BreakEquipmentBoxLock(object sender, BreakItemEventArg eventArg)
+    internal void BreakEquipmentBoxLock(object sender, BreakItemEventArgs eventArgs)
     {
-        if (eventArg.ItemToUse == default)
+        if (eventArgs.ItemToUse == default)
         {
             throw new BreakException(BaseDescriptions.IMPOSSIBLE_BREAK_ITEM);
         }
@@ -1157,7 +1157,7 @@ internal class EventProvider
             var box = this.universe.ActiveLocation.GetItemByKey(Keys.EQUIPMENT_BOX);
             if (box != default)
             {
-                if (eventArg.ItemToUse.Key != Keys.DUMBBELL_BAR)
+                if (eventArgs.ItemToUse.Key != Keys.DUMBBELL_BAR)
                 {
                     throw new BreakException(BaseDescriptions.WRONG_BREAK_ITEM);
                 }
@@ -1190,14 +1190,14 @@ internal class EventProvider
         return boxLock;
     }
     
-    internal void BreakFlapWithDumbbellBar(object sender, BreakItemEventArg eventArg)
+    internal void BreakFlapWithDumbbellBar(object sender, BreakItemEventArgs eventArgs)
     {
-        if (eventArg.ItemToUse == default)
+        if (eventArgs.ItemToUse == default)
         {
             throw new BreakException(BaseDescriptions.IMPOSSIBLE_BREAK_ITEM);
         }
         
-        if (sender is Item flap && flap.Key == Keys.AMBULANCE_RESPIRATOR_FLAP && eventArg.ItemToUse.Key == Keys.DUMBBELL_BAR)
+        if (sender is Item flap && flap.Key == Keys.AMBULANCE_RESPIRATOR_FLAP && eventArgs.ItemToUse.Key == Keys.DUMBBELL_BAR)
         {
             throw new BreakException(Descriptions.AMBULANCE_RESPIRATOR_FLAP_DUMBBELL_BAR_UNBREAKABLE);
         }

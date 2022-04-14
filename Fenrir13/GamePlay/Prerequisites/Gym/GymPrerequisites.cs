@@ -80,25 +80,25 @@ internal static class GymPrerequisites
         return item;
     }
     
-    private static void AddAfterLookEvents(AContainerObject gym, EventProvider eventProvider)
+    private static void AddAfterLookEvents(Location gym, EventProvider eventProvider)
     {
         gym.AfterLook += eventProvider.LookAtPowerStation;
     }
     
-    private static void AddAfterTakeEvents(AContainerObject bar, EventProvider eventProvider)
+    private static void AddAfterTakeEvents(Item bar, EventProvider eventProvider)
     {
         bar.AfterTake += eventProvider.TakeDumbbellBar;
         eventProvider.ScoreBoard.Add(nameof(eventProvider.TakeDumbbellBar), 1);
     }
     
-    private static void AddUseEvents(AContainerObject item, EventProvider eventProvider)
+    private static void AddUseEvents(Item item, EventProvider eventProvider)
     {
         item.Use += eventProvider.UseDumbbellBarWithLever;
         eventProvider.ScoreBoard.Add(nameof(eventProvider.UseDumbbellBarWithLever), 10);
     }
     
-    private static void AddTakeEvents(AContainerObject item, EventProvider eventProvider)
+    private static void AddTakeEvents(Location gym, EventProvider eventProvider)
     {
-        item.Take += eventProvider.TryToTakeThingsFromGym;
+        gym.Take += eventProvider.TryToTakeThingsFromGym;
     }
 }

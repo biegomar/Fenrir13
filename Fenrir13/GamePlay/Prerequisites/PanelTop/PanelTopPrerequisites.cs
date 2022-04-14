@@ -50,12 +50,12 @@ internal static class PanelTopPrerequisites
         panelTop.Surroundings.Add(Keys.JETTY_SPACE, () => Descriptions.JETTY_SPACE);
     }
     
-    private static void AddPullEvents(AContainerObject item, EventProvider eventProvider)
+    private static void AddPullEvents(Item item, EventProvider eventProvider)
     {
         item.Pull += eventProvider.PullLever;
     }
     
-    private static void AddUseEvents(AContainerObject item, EventProvider eventProvider)
+    private static void AddUseEvents(Item item, EventProvider eventProvider)
     {
         item.Use += eventProvider.UseDumbbellBarWithLever;
     }
