@@ -1330,7 +1330,7 @@ internal class EventProvider
 
         if (sender is Item cloth && listOfPossibleWearables.Contains(cloth.Key) && this.isAirlockOpen)
         {
-            throw new BeforeDropException(Descriptions.AIRLOCK_OPEN_DROP_CLOTHES);
+            throw new DropException(Descriptions.AIRLOCK_OPEN_DROP_CLOTHES);
         }
     }
     
