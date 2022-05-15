@@ -2,7 +2,7 @@
 [![Build Status](https://biegota.visualstudio.com/Games/_apis/build/status/Fenrir13?branchName=master)](https://biegota.visualstudio.com/Games/_build/latest?definitionId=9&branchName=master)
 ![GitHub all releases](https://img.shields.io/github/downloads/biegomar/fenrir13/total)  
 Hallo liebe Textadventure-Fans,
-ich freue mich, Euch das Spiel Fenrir 13 zu präsentieren. Hierbei handelt es sich um eine Science Fiction Story rund um den Raumfrachters Fenrir 13 auf seiner Mission zu den entlegenen Monden von Proxima Centauri b.
+ich freue mich, Euch das Spiel Fenrir 13 zu präsentieren. Hierbei handelt es sich um eine Science Fiction Story rund um den Raumfrachter Fenrir 13 auf seiner Mission zu den entlegenen Monden von Proxima Centauri b.
 
 # Spiel verfügbar machen
 Das Spiel ist als Consolen-Spiel konzipiert und läuft auf Windows, Linux und MacOS in deren jeweiligen Consolen-Hosts. Dort nutzt es die Einstellungen, die Ihr aktuell verwendet. Am besten spielt sich Fenrir 13 mit einem schwarzen oder grauen Hintergrund.
