@@ -17,6 +17,7 @@ Folgende Versionen stehen zum Download bereit:
 * linux-x64 -> x64-basierte Systeme. Standard-Rechner unter Linux. (getestet) 
 * osx-x64 -> Apple macOS-basierte Systeme. (getestet)
 * win-x64 -> x64-basierte Windows-Systeme. Standard-Rechner unter Windows. (getestet)
+* win-x86 -> x86-basierte (32 Bit) Windows-Systeme. Standard-Rechner unter Windows. (getestet)
 
 # Spiel starten
 Der einfachste Weg, das Spiel zu starten ist, die Datei per Doppelklick aufzurufen. Aber auch der Start über eine bereits geöffnete Console ist möglich. Dazu wechselt Ihr in den Ordner, in dem Ihr Fenrir 13 abgelegt habt und tippt "Fenrir13.exe" (Windows), "./Fenrir13.exe" (Windows Powershell), bzw "./Fenrir13" (Linux und MacOS) ein. 
