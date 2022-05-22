@@ -25,9 +25,9 @@ Du wirst Dich nie an die Prozedur gewöhnen, die Dich aus dem Cryo-Schlaf zurüc
 Aber etwas ist anders! Das auf- und abschwellende Geräusch ist nach wie vor da. Und es klingt nach einer typischen Alarmsirene. Du schiebst die Kontrolleinheit, die während des Aufwachprozesses Deine Augenbewegungen überwacht hat, zur Seite und setzt Dich in Deinem Cryo-Pod auf. Noch müde und geschwächt erkennst Du nun das Alarmblinken, das Deinen gesamten Raum in rotes Licht taucht. Du mühst Dich aus dem Pod und stehst nun wackelig im Raum. Was genau ist wohl passiert? Und ist der Rest der Crew auch geweckt worden?</value>
     </data>
     <data name="CRYOCHAMBER" xml:space="preserve">
-        <value>Du befindest Dich in Deinem persönlichen Raum des Schiffs. Er ist sehr funktional und spartanisch eingerichtet, wirkt dabei aber dennoch wohnlich. Der Cryo-Pod, in dem Du gerade noch gelegen hast, hat seine Kokon-Form, die dem Passagier während der langen Schlafphase einer Raumreise Schutz und Versorgung bietet, in eine offene Bettform gewandelt. Der Fußboden ist metallisch und nur vor Deinem Bett befindet sich ein kleiner Teppich. Du weißt aus der Erfahrung, dass der Fußboden angenehm beheizt ist und magnetisiert werden kann, damit im Falle von Turbulenzen die größeren Gegenstände gegen Verrutschen gesichert sind. Na ja, zumindest rudimentär. Ein kleiner Arbeitsbereich mit Deinem persönlichen Laptop ist in der rechten Ecke der Wand direkt vor Dir platziert und wenn Du dort sitzt, gibt Dir ein Bullauge den Blick in den Weltraum preis. Ein hochwertiger Bürostuhl ermöglicht ein bequemes Arbeiten und durch die mit Gummi überzogenen Metallrollen kann man erkennen, dass dieser Sitz auch magnetisch befestigt werden kann. 
+        <value>Du befindest Dich in Deinem persönlichen Raum des Schiffs. Er ist sehr funktional und spartanisch eingerichtet, wirkt dabei aber dennoch wohnlich. Der Cryo-Pod, in dem Du gerade noch gelegen hast, hat seine Kokon-Form, die dem Passagier während der langen Schlafphase einer Raumreise Schutz und Versorgung bietet, in eine offene Bettform gewandelt. Ein kleiner Arbeitsbereich mit Deinem persönlichen Laptop ist in der rechten Ecke der Wand direkt vor Dir platziert und wenn Du dort sitzt, gibt Dir ein Bullauge den Blick in den Weltraum preis. 
 Der Rest der Wand wird von einem massiven Schrank mit diversen Schubfächern, einer Schranktür und einer offenen Garderobe dominiert. 
-In der Mitte des Raums befindet sich ein kleiner Tisch, gerade groß genug, um zwei Personen die Möglichkeit zu geben, dort gemeinsam zu essen. Da es aber nur einen passenden Stuhl zum Tisch gibt, scheint diese Möglichkeit gar nicht vorgesehen zu sein. 
+In der Mitte des Raums befindet sich ein kleiner Tisch, gerade groß genug, um zwei Personen die Möglichkeit zu geben, dort gemeinsam zu sitzen. 
 Zu Deiner Rechten, an der Fußseite des Cryo-Pods, befindet sich eine kleine Trennwand und Du kannst dahinter eine bescheidene Waschmöglichkeit und eine Toilette entdecken. 
 Zu Deiner Linken befindet sich die Zimmertür. Auch sie ist aus Metall und als solche eigentlich nur an ihren Umrissen und dem tellergroßen Guckloch in Kopfhöhe zu erkennen. Die Tür ist perfekt in die Wand eingelassen und rechts von ihr befindet sich ein kleines Display. Vermutlich dient es der Bedienung der Tür, denn eine erkennbare Klinke gibt es nicht.</value>
     </data>
@@ -45,13 +45,10 @@ Auch das Display blinkt rot und bedeutet Dir, alsbald einen Blick darauf zu werf
         <value>Du schaust auf Deinen Cryo-Pod, der sich aktuell in ein normales, gemütliches und sehr erholsam dreinschauendes Bett verwandelt hat. So wie es aussieht, wirst Du in der nächsten Zeit weder die eine, noch die andere Funktion benötigen.</value>
     </data>
     <data name="CHAMBER_FLOOR" xml:space="preserve">
-        <value>Der Fußboden ist metallisch, fühlt sich angenehm warm an Deinen Füßen an und kann magnetisiert werden. Ansonsten halt ein normaler Fußboden.</value>
-    </data>
-    <data name="CARPET" xml:space="preserve">
-        <value>Ein einfacher Teppich. Er soll den Raum ein wenig wohnlicher machen. Ansonsten aber nichts Besonderes.</value>
+        <value>Der Fußboden ist metallisch, fühlt sich angenehm warm an Deinen Füßen an und kann magnetisiert werden, so dass bei Turbulenzen die größeren Gegenstände gegen Verrutschen gesichert sind. Ansonsten halt ein normaler Fußboden.</value>
     </data>
     <data name="WORKBENCH" xml:space="preserve">
-        <value>Dein Arbeitsbereich gliedert sich in eine Arbeitsplatte, die bei Bedarf auch eingeklappt werden kann, einige Ablagefächer, die Du mit gewöhnlichen Schreibutensilien bestückt hast, und eine Beleuchtung, die Dir ausreichend Licht für die Arbeit spendet. Auf der Arbeitsplatte steht Dein Laptop und vor der Arbeitsplatte ein entsprechender Bürostuhl.</value>
+        <value>Dein Arbeitsbereich, der bei Bedarf auch eingeklappt werden kann, gliedert sich in einige Ablagefächer, die Du mit gewöhnlichen Schreibutensilien bestückt hast, und eine Beleuchtung, die Dir ausreichend Licht für die Arbeit spendet. Auf der Arbeitsplatte steht Dein Laptop und davor befindet sich ein entsprechender Bürostuhl.</value>
     </data>
     <data name="LAPTOP" xml:space="preserve">
         <value>Dein Laptop ist ein Relikt aus der informationstechnischen Steinzeit. Auch zu Beginn der Reise war das schon so. Normalerweise arbeitet niemand mehr mit solchen Geräten, aber Du magst das irgendwie. Und, es ist Dein Eigenes!
@@ -61,18 +58,15 @@ Du schaust Dir die Maschine an und versuchst sie anzuschalten. Nichts passiert! 
         <value>Die Wand ist ebenfalls metallisch, schmucklos und spartanisch.</value>
     </data>
     <data name="PIERHOLE" xml:space="preserve">
-        <value>Du gehst zu dem runden Fenster in Deiner Arbeitsecke und schaust hinaus ins All. Ein atemberaubender Blick offenbart sich Dir. Am Horizont steht ein Roter Zwerg und hat auf diese Entfernung ungefähr die Größe des Mondes in einer beschaulichen Vollmond-Sommernacht. Du bist zwar kein Astrophysiker, aber Du weißt, dass es sich bei dem Stern um Proxima Centauri handeln muss. Nachdem Eure Expedition in den Bruchstücken eines Mondes des Planeten Proxima Centauri b erfolgreich Erze von seltenen Metallen einsammeln konnte, sollte Euer Raumtransporter noch einmal näher an das Gestirn heranmanövrieren, um die Energie des Schiffes voll aufzuladen. Oh Nein! Wenn Ihr noch immer hier seid, hat Eure Heimreise offensichtlich noch nicht wirklich begonnen. Etwas muss also mächtig schief gegangen sein!
+        <value>Du gehst zu dem runden Fenster in Deiner Arbeitsecke und schaust hinaus ins All. Ein atemberaubender Blick offenbart sich Dir. Am Horizont steht ein Roter Zwerg und hat auf diese Entfernung ungefähr die Größe des Mondes in einer beschaulichen Vollmond-Sommernacht. Du bist zwar kein Astrophysiker, aber Du weißt, dass es sich bei dem Stern um Proxima Centauri handeln muss. Nachdem Eure Expedition in den Bruchstücken eines Mondes des Planeten Proxima Centauri b erfolgreich Erze von seltenen Metallen einsammeln konnte, sollte Euer Raumtransporter noch einmal näher an das Gestirn heran manövrieren, um die Energie des Schiffes voll aufzuladen. Oh Nein! Wenn Ihr noch immer hier seid, hat Eure Heimreise offensichtlich noch nicht wirklich begonnen. Etwas muss also mächtig schief gegangen sein!
 
 Dein Blick löst sich und richtet sich weiter nach Westen und Du schaust nun auf das, was aus Deinen Augenwinkeln heraus schon die ganze Zeit sichtbar war - Euer Schiff in voller Pracht! 
 Es ist die Fenrir-13, ein Raumtransporter der Viking Space Freight Ltd. mit einer maximalen Besatzung von sechs Personen. Es ist eines der kleinen Forschungsschiffe, die für Ersterkundungen in die entlegenen Schürfregionen entsandt werden. Der charakteristische Hammerkopf, der nicht ohne Absicht an Mjölnir, dem Hammer des Thor, erinnert, bildet den Wohn- und Arbeitsbereich für die Crew. Hier finden sich neben der Brücke und den Maschinen- und Technikräumen auch die Quartiere der Besatzung. 
-Dem Hammerkopf entwächst der Cargo-Bereich, der sich bei dieser Schiffsgröße auf ca. 20.000 TEU beläuft, und bildet passend zum Bild den Hammerstil. Der Transport der Erze erfolgt in Containern, die den üblichen Schiffs-Containern sehr ähnlich sind, und das Schiff hat so eine Länge von gut 600 m und eine Breite von ca. 100 m, wenn man den Hammerkopf mit berechnet.
+Dem Hammerkopf entwächst der Cargo-Bereich und bildet passend zum Bild den Hammerstil. 
 Voller Stolz prangt neben einem großen Emblem eines Wolfskopfs der Name des Schiffs in Runen an der Steuerbordseite des Cargo-Bereichs: Raumfrachter Fenrir 13.</value>
     </data>
     <data name="OFFICECHAIR" xml:space="preserve">
         <value>Neuste Materialen sorgen dafür, dass sich der Stuhl perfekt an Deinem Körper ausrichtet und ihn in eine angenehme ergonomische Position bringt. Eine nahezu perfekte Klimaregulierung macht diesen Stuhl zu einem der bequemsten Plätze hier auf dem Schiff. </value>
-    </data>
-    <data name="RUBBER_ROLLS" xml:space="preserve">
-        <value>Nun, auf diesen durch Gummi lärmreduzierten Rollen kannst Du Dich mit Deinem Bürostuhl frei im Raum bewegen.</value>
     </data>
     <data name="CLOSET" xml:space="preserve">
         <value>Genug Platz für alle Dinge, die man während einer Reise in die entlegensten Winkel der Galaxie so braucht - auch wenn man die meiste Zeit der Reise schläft.</value>
@@ -109,10 +103,10 @@ Damit das Schiff permanent in Kontakt zu dem Crew-Mitglied ist, muss der Anzug s
         <value>Der einfach gehaltene Stuhl besteht aus einem Metallrahmen und einer Kunststoffsitzschale. Orange. Chic!</value>
     </data>
     <data name="PARTITION_WALL" xml:space="preserve">
-        <value>Die Trennwand zum Waschbereich soll sicherlich als Sichtschutz dienen, hat aber eher eine psychologische Wirkung. Niemand kann einfach so in den Raum kommen oder durch das Guckloch schauen, um zu sehen, was da wohl gerade passiert. Die Wand ist beidseitig mit einem grauen Filzstoff überzogen und man kann dort leichte Dinge, wie Bilder oder anderen Schnick-Schnack befestigen. Du hast von der Möglichkeit allerdings keinen Gebrauch gemacht.</value>
+        <value>Die Trennwand zum Waschbereich dient als Sichtschutz und ist beidseitig mit einem grauen Filzstoff überzogen und dort kann man leichte Dinge, wie Bilder oder anderen Schnick-Schnack befestigen. Du hast von der Möglichkeit allerdings keinen Gebrauch gemacht.</value>
     </data>
     <data name="WASHINGAREA" xml:space="preserve">
-        <value>Passend zum restlichen Interieur ist auch das Waschbecken aus Metall. Ein Spiegel mit einem Display Deiner zuletzt gemessenen Vitaldaten, eine Armatur mit Start-/Stop-Sensoren und digitaler Temperaturregelung, sowie eine ebenfalls sensorgesteuerte Seifenspendereinheit runden das Bild ab.</value>
+        <value>Passend zum restlichen Interieur ist auch das Waschbecken aus Metall. Ein Spiegel mit einem Display Deiner zuletzt gemessenen Vitaldaten, eine Armatur mit Start-/Stop-Sensoren und digitaler Temperaturregelung runden das Bild ab.</value>
     </data>
     <data name="TOILET" xml:space="preserve">
         <value>Absolut unscheinbar dieser Thron, bestehend aus einem Metallkorpus und einem Toilettensitz aus beheiztem Kunststoff. Doch er ist, neben Deinem Bio-Suit, die zentrale Überwachungsstation Deiner Gesundheit. Jede Ausscheidung wird akribisch analysiert und Dir im Display des Spiegels angezeigt. Viele der Werte sagen Dir noch nicht einmal etwas. Egal. Für Dich ist nur wichtig, dass Du gut umsorgt wirst und jeder erkannte Mangel über Zusätze in der Nahrung beseitigt wird.</value>
@@ -442,7 +436,7 @@ Die Wand mit der Tür ist frei, nur ein kleiner Papiereimer steht dort.</value>
         <value>Mit dem plötzlichen Wiedereinsetzen der Schwerkraft hast Du nicht gerechnet und kannst einige Gegenstände nicht festhalten. Du lässt sie los und im Raum zurück.</value>
     </data>
     <data name="WRITING_MATERIALS" xml:space="preserve">
-        <value>Da sind ein paar Stifte, Textmarker und ein paar Blätter Papier. Aber die sind aktuell nicht wirklich von Bedeutung.</value>
+        <value>Da sind Stifte und ein paar Blätter Papier. Aber die sind aktuell nicht wirklich von Bedeutung.</value>
     </data>
     <data name="CORRIDOR_DESTINATION" xml:space="preserve">
         <value>Von hier erstreckt sich der Korridor nach Osten, sowie nach Westen.</value>
@@ -890,9 +884,6 @@ Am Tag nach Deiner erfolgreichen Intervention sitzt Du mit der gesamten Crew zus
     <data name="PAPER" xml:space="preserve">
         <value>Auch wenn Du für ein dänisches Unternehmen arbeitest, willst Du nicht auf die jahrhundertealten deutschen Industriestandards verzichten. Du siehst dort also einfache weiße Blätter in DIN A4.</value>
     </data>
-    <data name="TEXTMARKER" xml:space="preserve">
-        <value>Vier Textmarker in blau, rot, gelb und grün.</value>
-    </data>
     <data name="PENCILS" xml:space="preserve">
         <value>Ein einfacher Kugelschreiber und ein Bleistift.</value>
     </data>
@@ -901,18 +892,6 @@ Am Tag nach Deiner erfolgreichen Intervention sitzt Du mit der gesamten Crew zus
     </data>
     <data name="PENCIL_II" xml:space="preserve">
         <value>Ein Druckbleistift. Ansonsten nicht wichtig.</value>
-    </data>
-    <data name="TEXTMARKER_BLUE" xml:space="preserve">
-        <value>Der Textmarker ist blau und hat Dir in der Vergangenheit schon gute Dienste erwiesen.</value>
-    </data>
-    <data name="TEXTMARKER_GREEN" xml:space="preserve">
-        <value>Grün ist nicht Deine Lieblingsfarbe, daher ist er fast unbenutzt.</value>
-    </data>
-    <data name="TEXTMARKER_YELLOW" xml:space="preserve">
-        <value>Simple. Einfach. Gelb.</value>
-    </data>
-    <data name="TEXTMARKER_RED" xml:space="preserve">
-        <value>Von Dir häufig verwendet, aber nicht relevant für das Spiel. Wie alle Textmarker hier.</value>
     </data>
     <data name="WHERE_TO_SIT" xml:space="preserve">
         <value>Sag mir doch bitte, worauf ich mich setzen soll.</value>

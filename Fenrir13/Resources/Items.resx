@@ -24,11 +24,8 @@
     <data name="CHAMBER_FLOOR" xml:space="preserve">
         <value>Fußboden|Fussboden|Boden</value>
     </data>
-    <data name="CARPET" xml:space="preserve">
-        <value>Teppich|Läufer</value>
-    </data>
     <data name="WORKBENCH" xml:space="preserve">
-        <value>Arbeitsbereich|Arbeitsplatz|Schreibtisch|Arbeitsplatte</value>
+        <value>Arbeitsbereich|Arbeitsplatz|Schreibtisch|Arbeitsplatte|Platte</value>
     </data>
     <data name="LAPTOP" xml:space="preserve">
         <value>LAPTOP|Rechner|Computer</value>
@@ -41,9 +38,6 @@
     </data>
     <data name="OFFICECHAIR" xml:space="preserve">
         <value>Bürostuhl|Arbeitsstuhl|Sitzgelegenheit</value>
-    </data>
-    <data name="RUBBER_ROLLS" xml:space="preserve">
-        <value>Metallrollen|Rollen|Stuhlrollen|Gummi|Gummirollen</value>
     </data>
     <data name="CLOSET" xml:space="preserve">
         <value>Schrank|Kleiderschrank</value>
@@ -64,7 +58,7 @@
         <value>Bio-Suit| Bio Suit|Space-Overall|Space Overall|Space-Suit|Space Suit|Overall|Anzug|Suit</value>
     </data>
     <data name="TABLE" xml:space="preserve">
-        <value>Tisch</value>
+        <value>Tisch|Metallrahmen|Kunststofftischplatte</value>
     </data>
     <data name="CHAIR" xml:space="preserve">
         <value>Stuhl|Stühle</value>
@@ -408,9 +402,6 @@
     <data name="PAPER" xml:space="preserve">
         <value>Papier|Papierblätter|Blätter|Blatt|Papiere</value>
     </data>
-    <data name="TEXTMARKER" xml:space="preserve">
-        <value>Textmarker</value>
-    </data>
     <data name="PENCILS" xml:space="preserve">
         <value>Stifte|Stift</value>
     </data>
@@ -419,18 +410,6 @@
     </data>
     <data name="PENCIL_II" xml:space="preserve">
         <value>Bleistift</value>
-    </data>
-    <data name="TEXTMARKER_BLUE" xml:space="preserve">
-        <value>blaue Textmarker|blauer Textmarker</value>
-    </data>
-    <data name="TEXTMARKER_GREEN" xml:space="preserve">
-        <value>grüne Textmarker|Grüner Textmarker</value>
-    </data>
-    <data name="TEXTMARKER_YELLOW" xml:space="preserve">
-        <value>gelbe Textmarker|Gelber Textmarker</value>
-    </data>
-    <data name="TEXTMARKER_RED" xml:space="preserve">
-        <value>rote Textmarker|Roter Textmarker</value>
     </data>
     <data name="WEIGHT_PLATES" xml:space="preserve">
         <value>Hantelscheiben|Hantelscheibe|Hantel</value>

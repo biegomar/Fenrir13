@@ -75,13 +75,11 @@ internal static class CryoChamberPrerequisites
     {
         cryoChamber.Surroundings.Add(Keys.CRYOPOD, () => Descriptions.CRYOPOD);
         cryoChamber.Surroundings.Add(Keys.CHAMBER_FLOOR, () => Descriptions.CHAMBER_FLOOR);
-        cryoChamber.Surroundings.Add(Keys.CARPET, () => Descriptions.CARPET);
         cryoChamber.Surroundings.Add(Keys.WORKBENCH, () => Descriptions.WORKBENCH);
         cryoChamber.Surroundings.Add(Keys.LAPTOP, () => Descriptions.LAPTOP);
         cryoChamber.Surroundings.Add(Keys.CHAMBER_WALL, () => Descriptions.CHAMBER_WALL);
         cryoChamber.Surroundings.Add(Keys.PIERHOLE, () => Descriptions.PIERHOLE);
         cryoChamber.Surroundings.Add(Keys.OFFICECHAIR, () => Descriptions.OFFICECHAIR);
-        cryoChamber.Surroundings.Add(Keys.RUBBER_ROLLS, () => Descriptions.RUBBER_ROLLS);
         cryoChamber.Surroundings.Add(Keys.CLOSET, () => Descriptions.CLOSET);
         cryoChamber.Surroundings.Add(Keys.DRAWER, () => Descriptions.DRAWER);
         cryoChamber.Surroundings.Add(Keys.CLOSET_DOOR, () => Descriptions.CLOSET_DOOR);
@@ -105,15 +103,11 @@ internal static class CryoChamberPrerequisites
         cryoChamber.Surroundings.Add(Keys.CRYOCHAMBER_CLOTHS, () => Descriptions.CRYOCHAMBER_CLOTHS);
         cryoChamber.Surroundings.Add(Keys.PROXIMA_CENTAURI, () => Descriptions.PROXIMA_CENTAURI);
         cryoChamber.Surroundings.Add(Keys.PAPER, () => Descriptions.PAPER);
-        cryoChamber.Surroundings.Add(Keys.TEXTMARKER, () => Descriptions.TEXTMARKER);
-        cryoChamber.Surroundings.Add(Keys.TEXTMARKER_RED, () => Descriptions.TEXTMARKER_RED);
-        cryoChamber.Surroundings.Add(Keys.TEXTMARKER_BLUE, () => Descriptions.TEXTMARKER_BLUE);
-        cryoChamber.Surroundings.Add(Keys.TEXTMARKER_YELLOW, () => Descriptions.TEXTMARKER_YELLOW);
-        cryoChamber.Surroundings.Add(Keys.TEXTMARKER_GREEN, () => Descriptions.TEXTMARKER_GREEN);
         cryoChamber.Surroundings.Add(Keys.PENCILS, () => Descriptions.PENCILS);
         cryoChamber.Surroundings.Add(Keys.PENCIL_I, () => Descriptions.PENCIL_I);
         cryoChamber.Surroundings.Add(Keys.PENCIL_II, () => Descriptions.PENCIL_II);
         cryoChamber.Surroundings.Add(Keys.FELT, () => Descriptions.FELT);
+        cryoChamber.Surroundings.Add(Keys.PANEL_TOP_WOLF, () => Descriptions.PANEL_TOP_WOLF);
     }
 
     private static void AddAfterLookEvents(Location cryoChamber, EventProvider eventProvider)

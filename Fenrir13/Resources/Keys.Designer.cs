@@ -286,15 +286,6 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to CARPET.
-        /// </summary>
-        internal static string CARPET {
-            get {
-                return ResourceManager.GetString("CARPET", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to CEILING.
         /// </summary>
         internal static string CEILING {
@@ -1447,15 +1438,6 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RUBBER_ROLLS.
-        /// </summary>
-        internal static string RUBBER_ROLLS {
-            get {
-                return ResourceManager.GetString("RUBBER_ROLLS", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to SIDEWALL.
         /// </summary>
         internal static string SIDEWALL {
@@ -1740,51 +1722,6 @@ namespace Fenrir13.Resources {
         internal static string TABLE {
             get {
                 return ResourceManager.GetString("TABLE", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to TEXTMARKER.
-        /// </summary>
-        internal static string TEXTMARKER {
-            get {
-                return ResourceManager.GetString("TEXTMARKER", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to TEXTMARKER_BLUE.
-        /// </summary>
-        internal static string TEXTMARKER_BLUE {
-            get {
-                return ResourceManager.GetString("TEXTMARKER_BLUE", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to TEXTMARKER_GREEN.
-        /// </summary>
-        internal static string TEXTMARKER_GREEN {
-            get {
-                return ResourceManager.GetString("TEXTMARKER_GREEN", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to TEXTMARKER_RED.
-        /// </summary>
-        internal static string TEXTMARKER_RED {
-            get {
-                return ResourceManager.GetString("TEXTMARKER_RED", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to TEXTMARKER_YELLOW.
-        /// </summary>
-        internal static string TEXTMARKER_YELLOW {
-            get {
-                return ResourceManager.GetString("TEXTMARKER_YELLOW", resourceCulture);
             }
         }
         

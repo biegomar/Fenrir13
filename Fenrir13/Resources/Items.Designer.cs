@@ -268,15 +268,6 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Teppich|Läufer.
-        /// </summary>
-        internal static string CARPET {
-            get {
-                return ResourceManager.GetString("CARPET", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Zimmerdecke|Decke.
         /// </summary>
         internal static string CEILING {
@@ -1258,15 +1249,6 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Metallrollen|Rollen|Stuhlrollen|Gummi|Gummirollen.
-        /// </summary>
-        internal static string RUBBER_ROLLS {
-            get {
-                return ResourceManager.GetString("RUBBER_ROLLS", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Boardwand.
         /// </summary>
         internal static string SIDEWALL {
@@ -1537,56 +1519,11 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Tisch.
+        ///   Looks up a localized string similar to Tisch|Metallrahmen|Kunststofftischplatte.
         /// </summary>
         internal static string TABLE {
             get {
                 return ResourceManager.GetString("TABLE", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Textmarker.
-        /// </summary>
-        internal static string TEXTMARKER {
-            get {
-                return ResourceManager.GetString("TEXTMARKER", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to blaue Textmarker|blauer Textmarker.
-        /// </summary>
-        internal static string TEXTMARKER_BLUE {
-            get {
-                return ResourceManager.GetString("TEXTMARKER_BLUE", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to grüne Textmarker|Grüner Textmarker.
-        /// </summary>
-        internal static string TEXTMARKER_GREEN {
-            get {
-                return ResourceManager.GetString("TEXTMARKER_GREEN", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to rote Textmarker|Roter Textmarker.
-        /// </summary>
-        internal static string TEXTMARKER_RED {
-            get {
-                return ResourceManager.GetString("TEXTMARKER_RED", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to gelbe Textmarker|Gelber Textmarker.
-        /// </summary>
-        internal static string TEXTMARKER_YELLOW {
-            get {
-                return ResourceManager.GetString("TEXTMARKER_YELLOW", resourceCulture);
             }
         }
         
@@ -1645,7 +1582,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Arbeitsbereich|Arbeitsplatz|Schreibtisch|Arbeitsplatte.
+        ///   Looks up a localized string similar to Arbeitsbereich|Arbeitsplatz|Schreibtisch|Arbeitsplatte|Platte.
         /// </summary>
         internal static string WORKBENCH {
             get {

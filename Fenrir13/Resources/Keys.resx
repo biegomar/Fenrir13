@@ -30,9 +30,6 @@
     <data name="CHAMBER_FLOOR" xml:space="preserve">
         <value>CHAMBER_FLOOR</value>
     </data>
-    <data name="CARPET" xml:space="preserve">
-        <value>CARPET</value>
-    </data>
     <data name="WORKBENCH" xml:space="preserve">
         <value>WORKBENCH</value>
     </data>
@@ -47,9 +44,6 @@
     </data>
     <data name="OFFICECHAIR" xml:space="preserve">
         <value>OFFICECHAIR</value>
-    </data>
-    <data name="RUBBER_ROLLS" xml:space="preserve">
-        <value>RUBBER_ROLLS</value>
     </data>
     <data name="CLOSET" xml:space="preserve">
         <value>CLOSET</value>
@@ -471,9 +465,6 @@
     <data name="PAPER" xml:space="preserve">
         <value>PAPER</value>
     </data>
-    <data name="TEXTMARKER" xml:space="preserve">
-        <value>TEXTMARKER</value>
-    </data>
     <data name="PENCILS" xml:space="preserve">
         <value>PENCILS</value>
     </data>
@@ -482,18 +473,6 @@
     </data>
     <data name="PENCIL_II" xml:space="preserve">
         <value>PENCIL_II</value>
-    </data>
-    <data name="TEXTMARKER_BLUE" xml:space="preserve">
-        <value>TEXTMARKER_BLUE</value>
-    </data>
-    <data name="TEXTMARKER_GREEN" xml:space="preserve">
-        <value>TEXTMARKER_GREEN</value>
-    </data>
-    <data name="TEXTMARKER_YELLOW" xml:space="preserve">
-        <value>TEXTMARKER_YELLOW</value>
-    </data>
-    <data name="TEXTMARKER_RED" xml:space="preserve">
-        <value>TEXTMARKER_RED</value>
     </data>
     <data name="WEIGHT_PLATES" xml:space="preserve">
         <value>WEIGHT_PLATES</value>

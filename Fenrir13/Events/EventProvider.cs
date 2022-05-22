@@ -330,9 +330,9 @@ internal class EventProvider
     
     internal void OpenClosetDoor(object sender, ContainerObjectEventArgs eventArgs)
     {
-        if (sender is Location cryoChamber && cryoChamber.Key == Keys.CRYOCHAMBER && eventArgs.ExternalItemKey == Keys.CLOSET_DOOR)
+        if (sender is Location cryoChamber && cryoChamber.Key == Keys.CRYOCHAMBER && (eventArgs.ExternalItemKey == Keys.CLOSET_DOOR || eventArgs.ExternalItemKey == Keys.CLOSET))
         {
-            PrintingSubsystem.Resource(this.universe.ActiveLocation.Surroundings[eventArgs.ExternalItemKey]());
+            PrintingSubsystem.Resource(this.universe.ActiveLocation.Surroundings[Keys.CLOSET_DOOR]());
             
             var bar = this.universe.ActiveLocation.GetItemByKey(Keys.CHOCOLATEBAR);
             if (bar != default)
@@ -353,9 +353,9 @@ internal class EventProvider
     
     private void OpenClosetDoorAgain(object sender, ContainerObjectEventArgs eventArgs)
     {
-        if (sender is Location cryoChamber && cryoChamber.Key == Keys.CRYOCHAMBER && eventArgs.ExternalItemKey == Keys.CLOSET_DOOR)
+        if (sender is Location cryoChamber && cryoChamber.Key == Keys.CRYOCHAMBER && (eventArgs.ExternalItemKey == Keys.CLOSET_DOOR || eventArgs.ExternalItemKey == Keys.CLOSET))
         {
-            var closetDoorDescription = this.universe.ActiveLocation.Surroundings[eventArgs.ExternalItemKey]();
+            var closetDoorDescription = this.universe.ActiveLocation.Surroundings[Keys.CLOSET_DOOR]();
             PrintingSubsystem.Resource(closetDoorDescription);
         }
         else

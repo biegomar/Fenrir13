@@ -61,8 +61,8 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Schleuse dient als Weg nach Draußen und sobald Du komplett eingetreten bist, schließt sich die Tür hinter Dir und ein Ansaugegeräusch gibt Dir zu verstehen, dass sie gegen ein mögliches Vakuum gesichert wird. Du fühlst plötzlich, dass Deine Glieder sich leichter anfühlen, Deine Bewegungen sind mühelos und Du spürst kaum noch Dein eigenes Gewicht. Offenkundig wird hier in der Schleuse bereits auf die künstliche Schwerkraft verzichtet. 
-        ///Am südlichen Ende der Schleuse trennt ein weiteres massives Schott d [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to Die Schleuse dient als Weg nach draußen, und sobald Du komplett eingetreten bist, schließt sich die Tür hinter Dir und ein Ansaugegeräusch gibt Dir zu verstehen, dass sie gegen ein mögliches Vakuum gesichert wird. Du fühlst plötzlich, dass Deine Glieder sich leichter anfühlen, Deine Bewegungen sind mühelos und Du spürst kaum noch Dein eigenes Gewicht. Offenkundig wird hier in der Schleuse bereits auf die künstliche Schwerkraft verzichtet. 
+        ///Am südlichen Ende der Schleuse trennt ein weiteres massives Schott  [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string AIRLOCK {
             get {
@@ -215,7 +215,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Das Bett ermöglicht sowohl eine kurzzeitige Erholung, als auch eine langwierige Rekonvaleszens. Elektronisch verstellbar, top Pflegematratze...alles was ein modernes Pflegebett benötigt..
+        ///   Looks up a localized string similar to Das Bett ermöglicht sowohl eine kurzzeitige Erholung, als auch eine langwierige Rekonvaleszenz. Elektronisch verstellbar, top Pflegematratze...alles was ein modernes Pflegebett benötigt..
         /// </summary>
         internal static string AMBULANCE_BED {
             get {
@@ -224,7 +224,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ein rechteckiger Schrank mit einer abschließbaren Glastür, der mit einem roten Kreuz bedruckt ist und ziemlich prominent an der Wand aufgehängt ist. Durch die Scheibe kannst Du einige Medikamente erkennen. Leichtere Schmerzmittel, aber auch Morphium. Antibiotika und sogar Antidepressiva kannst Du erkennen. Keiner Wunder, dass der Schrank immer verschlossen ist..
+        ///   Looks up a localized string similar to Ein rechteckiger Schrank mit einer abschließbaren Glastür, der mit einem roten Kreuz bedruckt ist und ziemlich prominent an der Wand aufgehängt ist. Durch die Scheibe kannst Du einige Medikamente erkennen. Leichtere Schmerzmittel, aber auch Morphium. Antibiotika und sogar Antidepressiva kannst Du erkennen. Kein Wunder, dass der Schrank immer verschlossen ist..
         /// </summary>
         internal static string AMBULANCE_MEDIS {
             get {
@@ -369,7 +369,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Das Schott ist eine dieser massiven Sicherheitstüren, die es hier im Schiff an vielen Stellen gibt und bei Gefahr dazu dienen, einzelne Sektoren des Schiffs zu isolieren. Es hat ein Sichtfenster..
+        ///   Looks up a localized string similar to Das Schott ist eine dieser massiven Sicherheitstüren, die es hier im Schiff an vielen Stellen gibt und die bei Gefahr dazu dienen, einzelne Sektoren des Schiffs zu isolieren. Es hat ein Sichtfenster..
         /// </summary>
         internal static string BULKHEAD {
             get {
@@ -423,7 +423,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Du Antenne ist zuweit oben, um sie direkt zu erreichen. Vielleicht steigst Du irgendwo drauf, um das zu tun?.
+        ///   Looks up a localized string similar to Du Antenne ist zu weit oben, um sie direkt zu erreichen. Vielleicht steigst Du irgendwo drauf, um das zu tun?.
         /// </summary>
         internal static string CANT_REACH_ANTENNA {
             get {
@@ -450,15 +450,6 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ein einfacher Teppich. Er soll den Raum ein wenig wohnlicher machen. Ansonsten aber nichts Besonderes..
-        /// </summary>
-        internal static string CARPET {
-            get {
-                return ResourceManager.GetString("CARPET", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Jede Decke hier an Bord ist gleich. Sie ist mit einer Art Kunststoff bezogen, der in der Lage ist, wie eine riesige Leinwand beliebige Dinge zu projezieren. Wenn man wollte, könnte man sich aufs Bett legen und Bilder oder Filme schauen. Einige machen das sogar manchmal, aber meistens wird sie als reine indirekte Lichtquelle genutzt, um die Wohn- und Arbeitsbereiche zu erhellen..
         /// </summary>
         internal static string CEILING {
@@ -477,7 +468,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Fußboden ist metallisch, fühlt sich angenehm warm an Deinen Füßen an und kann magnetisiert werden. Ansonsten halt ein normaler Fußboden..
+        ///   Looks up a localized string similar to Der Fußboden ist metallisch, fühlt sich angenehm warm an Deinen Füßen an und kann magnetisiert werden, so dass bei Turbulenzen die größeren Gegenstände gegen Verrutschen gesichert sind. Ansonsten halt ein normaler Fußboden..
         /// </summary>
         internal static string CHAMBER_FLOOR {
             get {
@@ -619,9 +610,9 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Als Du den Menüpunkt auswählst erfährst Du, dass der Hüllenbruch zum Glück nur den westlichen Korridor-Abschnitt betrifft. Allerdings ist dadurch der Zugang zu den weiteren Crew-Kabinen unmöglich. 
+        ///   Looks up a localized string similar to Als Du den Menüpunkt auswählst, erfährst Du, dass der Hüllenbruch zum Glück nur den westlichen Korridor-Abschnitt betrifft. Allerdings ist dadurch der Zugang zu den weiteren Crew-Kabinen unmöglich. 
         ///Weiter erfährst Du, dass das Schiff offenbar einen Service-Roboter an der Schiffshaut mitführt, der genau für diese Art von Reparatur zuständig ist. Aber aus irgendeinem Grund hat er die Arbeit nicht verrichtet. Das System kann leider keinen Kontakt zu dem Roboter aufnehmen und kennt daher den Status nicht.
-        ///Abe [rest of string was truncated]&quot;;.
+        ///Ab [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string COMPUTER_TERMINAL_DISPLAY_REPORT_1 {
             get {
@@ -649,7 +640,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Bedienkonsole ist ein Halbrund, das aus einer abgetönten Glasplatte besteht. Es kann beliebige grafische Objekte, wie auch textliche Beschreibungen direkt projiziert. Sei es als zweidimensionale Abbildung auf der Platte selbst, oder als dreidimensionale holografische Projektion. Die jeweiligen Objekten können dann durch die Personen beliebig bearbeitet, verschoben, verändert oder auch gelöscht werden. Ziemlich cool..
+        ///   Looks up a localized string similar to Die Bedienkonsole ist ein Halbrund, das aus einer abgetönten Glasplatte besteht. Es kann beliebige grafische Objekte, wie auch textliche Beschreibungen direkt projizieren. Sei es als zweidimensionale Abbildung auf der Platte selbst, oder als dreidimensionale holografische Projektion. Die jeweiligen Objekte können dann durch die Personen beliebig bearbeitet, verschoben, verändert oder auch gelöscht werden. Ziemlich cool..
         /// </summary>
         internal static string CONTROL_PANEL {
             get {
@@ -760,7 +751,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to In diesem Abschnitt des Flures hängt das Bild eines Fluchtplans. Der Umriss dieser Etage mit den einzelnen Räumen. Ein roter Punkt markiert Deinen Standort und grüne Pfeile weisen in Richtung Mitte des Korridoren und dann nach unten in die Maschinenräume..
+        ///   Looks up a localized string similar to In diesem Abschnitt des Flures hängt das Bild eines Fluchtplans. Der Umriss dieser Etage mit den einzelnen Räumen. Ein roter Punkt markiert Deinen Standort und grüne Pfeile weisen in Richtung Mitte des Korridors und dann nach unten in die Maschinenräume..
         /// </summary>
         internal static string CORRIDOR_PAINTING_WEST {
             get {
@@ -850,7 +841,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Du befindest Dich in Deinem persönlichen Raum des Schiffs. Er ist sehr funktional und spartanisch eingerichtet, wirkt dabei aber dennoch wohnlich. Der Cryo-Pod, in dem Du gerade noch gelegen hast, hat seine Kokon-Form, die dem Passagier während der langen Schlafphase einer Raumreise Schutz und Versorgung bietet, in eine offene Bettform gewandelt. Der Fußboden ist metallisch und nur vor Deinem Bett befindet sich ein kleiner Teppich. Du weißt aus der Erfahrung, dass der Fußboden angenehm beheizt ist und magne [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to Du befindest Dich in Deinem persönlichen Raum des Schiffs. Er ist sehr funktional und spartanisch eingerichtet, wirkt dabei aber dennoch wohnlich. Der Cryo-Pod, in dem Du gerade noch gelegen hast, hat seine Kokon-Form, die dem Passagier während der langen Schlafphase einer Raumreise Schutz und Versorgung bietet, in eine offene Bettform gewandelt. Ein kleiner Arbeitsbereich mit Deinem persönlichen Laptop ist in der rechten Ecke der Wand direkt vor Dir platziert und wenn Du dort sitzt, gibt Dir ein Bullauge d [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string CRYOCHAMBER {
             get {
@@ -896,7 +887,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Normalerweise kann man das Sichtfenster verschließen, doch aktuell ist der Sichtschutz nicht aktiviert und es dringt der blinkende rote Schein der Alarmbeleuchtung durch das Glas und taucht Dein ansonsten halbdunkles Zimmer in einen gespenstigen Schimmer.
+        ///   Looks up a localized string similar to Normalerweise kann man das Sichtfenster verschließen, doch aktuell ist der Sichtschutz nicht aktiviert und es dringt der blinkende rote Schein der Alarmbeleuchtung durch das Glas und taucht Dein ansonsten halbdunkles Zimmer in einen gespenstischen Schimmer.
         ///Auch das Display blinkt rot und bedeutet Dir, alsbald einen Blick darauf zu werfen. Aber im Moment fühlst Du Dich noch zu schwach und ausgepowert, desorientiert und ausserdem bist Du nackt..
         /// </summary>
         internal static string CRYOCHAMBER_FIRSTLOOK {
@@ -906,7 +897,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ein wirklich stylische Schreibtischlampe mit zwei Teleskopstangen als Halterung für die eine Glühbirne in ihrer Fassung..
+        ///   Looks up a localized string similar to Eine wirklich stylische Schreibtischlampe mit zwei Teleskopstangen als Halterung für die eine Glühbirne in ihrer Fassung..
         /// </summary>
         internal static string CRYOCHAMBER_LAMP {
             get {
@@ -952,7 +943,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to In den Schubladen befinden sie eine Reihe von Kleidungsstücken und auch anderen Dinge, die Du gerade nicht wirklich benötigst..
+        ///   Looks up a localized string similar to In den Schubladen befinden sich eine Reihe von Kleidungsstücken und auch anderen Dinge, die Du gerade nicht wirklich benötigst..
         /// </summary>
         internal static string DRAWER {
             get {
@@ -1133,7 +1124,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Platte besteht aus dem selben Metal wie die Stelen und ist gut einen Zentimeter dick. Sie überragt die Fläche der Stelen um Einiges und bietet somit genug Platz für die Würfel..
+        ///   Looks up a localized string similar to Die Platte besteht aus dem selben Metall wie die Stelen und ist gut einen Zentimeter dick. Sie überragt die Fläche der Stelen um Einiges und bietet somit genug Platz für die Würfel..
         /// </summary>
         internal static string ENGINE_ROOM_HEAD {
             get {
@@ -1142,8 +1133,8 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Als Du in das Hologramm greifst, um die roten Punkte zu berühren, erhälst Du detaillierte Informationen dazu: 
-        ///Der erste markiert den Reparatur-Droiden und er hat sein Dock auf dem Dach der Brücke. Du kannst erkennen, dass Du von der Schleuse eine einfache Sprossenleiter erklimmen musst, um ihn zu erreichen. Die Analyse der Situation durch den Cluster hat ergeben, dass offenbar derselbe Vorfall, der für das Loch im Rumpf verantwortlich ist auch die Antenne des Droiden tuschiert und abgeknickt hat. Sobald d [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to Als Du in das Hologramm greifst, um die roten Punkte zu berühren, erhältst Du detaillierte Informationen dazu: 
+        ///Der erste markiert den Reparatur-Droiden und er hat sein Dock auf dem Dach der Brücke. Du kannst erkennen, dass Du von der Schleuse eine einfache Sprossenleiter erklimmen musst, um ihn zu erreichen. Die Analyse der Situation durch den Cluster hat ergeben, dass offenbar derselbe Vorfall, der für das Loch im Rumpf verantwortlich ist, auch die Antenne des Droiden touchiert und abgeknickt hat. Sobald [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string ENGINE_ROOM_RED_DOTS {
             get {
@@ -1152,7 +1143,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Als Du in das Hologramm greifst, um den roten Punkt zu berühren, erhälst Du detaillierte Informationen dazu: 
+        ///   Looks up a localized string similar to Als Du in das Hologramm greifst, um den roten Punkt zu berühren, erhältst Du detaillierte Informationen dazu: 
         ///Der Punkt verweist auf die mechanische Vorrichtung, um die Solarpanele auszufahren. Sie befindet sich unterhalb des Schiffs und kann über die Leiter erreicht werden. Der Handbetrieb ist zwar prinzipiell möglich, aber für eine untrainierte Person unwahrscheinlich. Daher wird in der Information darauf hingewiesen, einen belastbaren Hebel zu benutzen..
         /// </summary>
         internal static string ENGINE_ROOM_RED_DOTS_NO_ROBOT {
@@ -1162,8 +1153,8 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Als Du in das Hologramm greifst, um den roten Punkt zu berühren, erhälst Du detaillierte Informationen dazu: 
-        ///Der Punkt markiert den Reparatur-Droiden und er hat sein Dock auf dem Dach der Brücke. Du kannst erkennen, dass Du von der Schleuse eine einfache Sprossenleiter erklimmen musst, um ihn zu erreichen. Die Analyse der Situation durch den Cluster hat ergeben, dass offenbar derselbe Vorfall, der für das Loch im Rumpf verantwortlich ist auch die Antenne des Droiden tuschiert und abgeknickt hat. Sobald di [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to Als Du in das Hologramm greifst, um den roten Punkt zu berühren, erhältst Du detaillierte Informationen dazu: 
+        ///Der Punkt markiert den Reparatur-Droiden und er hat sein Dock auf dem Dach der Brücke. Du kannst erkennen, dass Du von der Schleuse eine einfache Sprossenleiter erklimmen musst, um ihn zu erreichen. Die Analyse der Situation durch den Cluster hat ergeben, dass offenbar derselbe Vorfall, der für das Loch im Rumpf verantwortlich ist, auch die Antenne des Droiden touchiert und abgeknickt hat. Sobald  [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string ENGINE_ROOM_RED_DOTS_NO_SOLAR {
             get {
@@ -1199,7 +1190,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Stehlen haben eine Abstand von gut einem Meter zueinander und jeweils eine Kante der Kopfplatte, die Du als Vorne interpretierst, scheint eine Tangente an einen imaginären Kreis anzulegen, um den herum die Säulen angeordnet sind. Ein schwaches, künstliches Leuchten scheint den Stehlen zu entstammen und taucht den Halbkreis den sie bilden in ein futuristisches Licht..
+        ///   Looks up a localized string similar to Die Stelen haben eine Abstand von gut einem Meter zueinander und jeweils eine Kante der Kopfplatte, die Du als Vorne interpretierst, scheint eine Tangente an einen imaginären Kreis anzulegen, um den herum die Säulen angeordnet sind. Ein schwaches, künstliches Leuchten scheint den Stelen zu entstammen und taucht den Halbkreis, den sie bilden, in ein futuristisches Licht..
         /// </summary>
         internal static string ENGINE_ROOM_STEALING {
             get {
@@ -1326,7 +1317,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Nischen sind raumhoch, etwas breiter als einen halben Meter und tief genug, um seine Klamotten komplett verschwinden zu lassen. Auf Brusthöhe ist eine Garderobenstange eingelassen und ermöglich es, daran Jacken oder Hemden aufzuhängen. Auf Höhe der Sitzfläche kann man auf einer Ablage beispielsweise eine Tasche oder Schuhe abstellen. Alles sehr funktional..
+        ///   Looks up a localized string similar to Die Nischen sind raumhoch, etwas breiter als einen halben Meter und tief genug, um seine Klamotten komplett verschwinden zu lassen. Auf Brusthöhe ist eine Garderobenstange eingelassen und ermöglicht es, daran Jacken oder Hemden aufzuhängen. Auf Höhe der Sitzfläche kann man auf einer Ablage beispielsweise eine Tasche oder Schuhe abstellen. Alles sehr funktional..
         /// </summary>
         internal static string EQUIPMENT_ROOM_NICHE {
             get {
@@ -1353,7 +1344,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Öse ist aus Metal und ist mit dem Haltegurt verwoben. Das sieht sehr reißfest und vertrauenswürdig aus..
+        ///   Looks up a localized string similar to Die Öse ist aus Metall und ist mit dem Haltegurt verwoben. Das sieht sehr reißfest und vertrauenswürdig aus..
         /// </summary>
         internal static string EYELET {
             get {
@@ -1669,7 +1660,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ach komm schon. Das Tau ist was für starkte Männer. Es ist 4 cm dick, 25 Meter lang und wiegt wohl so rund 16 Kilo. Das willst Du wirklich mitnehmen?.
+        ///   Looks up a localized string similar to Ach komm schon. Das Tau ist was für starke Männer. Es ist 4 cm dick, 25 Meter lang und wiegt wohl so rund 16 Kilo. Das willst Du wirklich mitnehmen?.
         /// </summary>
         internal static string GYM_ROPES_NO_PICKUP {
             get {
@@ -1696,7 +1687,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Helm schützt Dich im All und lässt Dich atmen. Im Bereich des Hinterkopf führt ein kurzer Schlauch aus dem Helm..
+        ///   Looks up a localized string similar to Der Helm schützt Dich im All und lässt Dich atmen. Im Bereich des Hinterkopfs führt ein kurzer Schlauch aus dem Helm..
         /// </summary>
         internal static string HELMET {
             get {
@@ -1725,7 +1716,7 @@ namespace Fenrir13.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Intervention required
         ///Hull breach detected, structural integrity compromised. Low energy. Low oxygen level.
-        ///Your safety status has been upgraded from Level Z to Level Q. Please proceed to the control bridge..
+        ///Your security status has been upgraded from Level Z to Level Q. Please proceed to the control bridge..
         /// </summary>
         internal static string INTERVENTION_REQUIRED {
             get {
@@ -1753,7 +1744,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die riesigen Treibwerke sind ein Wunder der Technik ansich. Du hast überhaupt keine Ahnung, wie sie funktionieren..
+        ///   Looks up a localized string similar to Die riesigen Triebwerke sind ein Wunder der Technik an sich. Du hast überhaupt keine Ahnung, wie sie funktionieren..
         /// </summary>
         internal static string JETTY_ENGINE {
             get {
@@ -1780,7 +1771,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Für die maximal sechs Personen Besatzung ist die Küche üppig ausgestattet und sehr geräumig. Es finden sich ein Food-Printer für die Zubereitung der individuellen Gerichte, ein Reststoffverwerter, ein Kühlschrank für die Nahrungsbausteine des Druckers, sowie einige Schränke. Wenn man essen möchte, nimmt man an einem der sechs Stühle vor dem geräumigen Tisch in der Mitte des Raumes Platz. Wie überall im Schiff ist der Boden aus magnetisierbarem Metall, um auch hier das Möbiliar gegen Verrutschen zu sichern..
+        ///   Looks up a localized string similar to Für die maximal sechs Personen Besatzung ist die Küche üppig ausgestattet und sehr geräumig. Es finden sich ein Food-Printer für die Zubereitung der individuellen Gerichte, ein Reststoffverwerter, ein Kühlschrank für die Nahrungsbausteine des Druckers, sowie einige Schränke. Wenn man essen möchte, nimmt man an einem der sechs Stühle vor dem geräumigen Tisch in der Mitte des Raumes Platz. Wie überall im Schiff ist der Boden aus magnetisierbarem Metall, um auch hier das Mobiliar gegen Verrutschen zu sichern..
         /// </summary>
         internal static string KITCHEN {
             get {
@@ -1808,7 +1799,7 @@ namespace Fenrir13.Resources {
         
         /// <summary>
         ///   Looks up a localized string similar to Dein Laptop ist ein Relikt aus der informationstechnischen Steinzeit. Auch zu Beginn der Reise war das schon so. Normalerweise arbeitet niemand mehr mit solchen Geräten, aber Du magst das irgendwie. Und, es ist Dein Eigenes!
-        ///Du schaust Dir die Maschine an und versuchst sie anzuschalten. Nichts passiert! Scheinbar ist der Akku leer. Das ist komisch, da das Gerät die gesamte Zeit an der Stromversorgnung hing..
+        ///Du schaust Dir die Maschine an und versuchst sie anzuschalten. Nichts passiert! Scheinbar ist der Akku leer. Das ist komisch, da das Gerät die gesamte Zeit an der Stromversorgung hing..
         /// </summary>
         internal static string LAPTOP {
             get {
@@ -1862,7 +1853,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Du befindest Dich nun auf dem Maschinendeck. Von diesem unaufregenden kleinen Vorraum erhälst Du Zugang zu der technischen Infrastruktur des Schiffs..
+        ///   Looks up a localized string similar to Du befindest Dich nun auf dem Maschinendeck. Von diesem unaufregenden kleinen Vorraum erhältst Du Zugang zu der technischen Infrastruktur des Schiffs..
         /// </summary>
         internal static string MACHINE_CORRIDOR_MID {
             get {
@@ -1871,7 +1862,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Zugang zur Treppe in den Bereich ist aber durch eine Tür gesichert. Sie scheint ähnlich zu funktionieren wie die von Deinem Zimmer. Allerdings öffnet sie sich nicht automatisch. Hm? Wahrscheinlich hast Du einfach keinen Zugang nach Unten. Was übrigens das Konzept eines Fluchtweges ad absurdum führt - aber was soll&apos;s..
+        ///   Looks up a localized string similar to Der Zugang zur Treppe in den Bereich ist aber durch eine Tür gesichert. Sie scheint ähnlich zu funktionieren wie die von Deinem Zimmer. Allerdings öffnet sie sich nicht automatisch. Hm? Wahrscheinlich hast Du einfach keinen Zugang nach unten. Was übrigens das Konzept eines Fluchtweges ad absurdum führt - aber was soll&apos;s..
         /// </summary>
         internal static string MACHINE_CORRIDOR_MID_LOCKDESCRIPTION {
             get {
@@ -1889,7 +1880,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Für alles, was an mechnischen Arbeiten oder Reparaturen ansteht, gibt es diese kleine Werkstatt. An der östlichen Wand steht dafür eine breite Werkbank zur Verfügung. Die große Arbeitsplatte ist sehr aufgeräumt und es befinden sich keine Gegenstände auf ihr. Eine Schublade unterhalb der Platte bietet Platz, um den Bereich gut zu organisieren. Über der Werkbank ist ein Regal angebracht, an dem allerlei Utensilien befestigt sind..
+        ///   Looks up a localized string similar to Für alles, was an mechanischen Arbeiten oder Reparaturen ansteht, gibt es diese kleine Werkstatt. An der östlichen Wand steht dafür eine breite Werkbank zur Verfügung. Die große Arbeitsplatte ist sehr aufgeräumt und es befinden sich keine Gegenstände auf ihr. Eine Schublade unterhalb der Platte bietet Platz, um den Bereich gut zu organisieren. Über der Werkbank ist ein Regal angebracht, an dem allerlei Utensilien befestigt sind..
         /// </summary>
         internal static string MAINTENANCE_ROOM {
             get {
@@ -1952,7 +1943,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Das diese Arbeitsplatte schon einige Male genutzt wurde, lässt sich gut erkennen. Sie besteht aus einer dicken Massivholzplatte, die Gebrauchsspuren aufweist, aber ansonsten in gutem Zustand ist..
+        ///   Looks up a localized string similar to Dass diese Arbeitsplatte schon einige Male genutzt wurde, lässt sich gut erkennen. Sie besteht aus einer dicken Massivholzplatte, die Gebrauchsspuren aufweist, aber ansonsten in gutem Zustand ist..
         /// </summary>
         internal static string MAINTENANCE_ROOM_PLATE {
             get {
@@ -2006,7 +1997,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Den Spiegel schätzt Du so auf 90x120 cm und er ist kristallklar. Wenn Du längere Zeit eine der Ecken mit Deinen Augen fukossierst erscheint ein zusätzliches Display auf der Fläche und präsentiert Dir Deine gängigen Gesundheitsdaten. Als Du diesmal die Daten checkst erschrickst Du. Die letzte Messung ist über 5 Jahre her!.
+        ///   Looks up a localized string similar to Den Spiegel schätzt Du so auf 90x120 cm und er ist kristallklar. Wenn Du längere Zeit eine der Ecken mit Deinen Augen fukossierst, erscheint ein zusätzliches Display auf der Fläche und präsentiert Dir Deine gängigen Gesundheitsdaten. Als Du diesmal die Daten checkst, erschrickst Du. Die letzte Messung ist über 5 Jahre her!.
         /// </summary>
         internal static string MIRROR {
             get {
@@ -2133,7 +2124,7 @@ namespace Fenrir13.Resources {
         
         /// <summary>
         ///   Looks up a localized string similar to Dank der Vertiefung kannst Du die Hantelstange prima als Hebel benutzen. Du setzt an und drückst den Griff damit hoch. Du blickst über den Cargo-Bereich und erkennst, dass sich die Schutzverkleidungen über den Solarkollektoren minimal bewegt haben! Du musst also diesen Griff mehrfach betätigen...
-        ///Du lässt Dich nicht aufhalten und pumpst mit dem Hebel und dem Griff Zug um Zug und die Panele öffnen sich immer weiter. Nach mehreren Minuten schweißtreibender Plackerei ist es geschafft! Die Panels sind frei!
+        ///Du lässt Dich nicht aufhalten und pumpst mit dem Hebel und dem Griff Zug um Zug und die Panele öffnen sich immer weiter. Nach mehreren Minuten schweißtreibender Plackerei ist es geschafft! Die Panele sind frei!
         ///D [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string PANEL_TOP_LEVER_DUMBBELL_BAR {
@@ -2152,7 +2143,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Und tatsächlich erkennst Du einen breiten Griff, den man bequem mit zwei Händen ziehen kann. Aber die Analyse des Quanten-Clusters hatte ja darauf hingewiesen, dass Du besser einen Hebel dafür einsetzten solltest..
+        ///   Looks up a localized string similar to Und tatsächlich erkennst Du einen breiten Griff, den man bequem mit zwei Händen ziehen kann. Aber die Analyse des Quanten-Clusters hatte ja darauf hingewiesen, dass Du besser einen Hebel dafür einsetzen solltest..
         /// </summary>
         internal static string PANEL_TOP_LEVER_REDDOTS_CONTAINMENT {
             get {
@@ -2188,7 +2179,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Je mehr und stabiler die Panels Strom liefern, umso mehr Lichter gehen auch innerhalb des Schiffs wieder an. Die Notbeleuchtung wird nach und nach durch die normale Beleuchtung ersetzt..
+        ///   Looks up a localized string similar to Je mehr und stabiler die Panele Strom liefern, umso mehr Lichter gehen auch innerhalb des Schiffs wieder an. Die Notbeleuchtung wird nach und nach durch die normale Beleuchtung ersetzt..
         /// </summary>
         internal static string PANEL_TOP_WINDOWS {
             get {
@@ -2215,7 +2206,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Trennwand zum Waschbereich soll sicherlich als Sichtschutz dienen, hat aber eher eine psychologische Wirkung. Niemand kann einfach so in den Raum kommen oder durch das Guckloch schauen, um zu sehen, was da wohl gerade passiert. Die Wand ist beidseitig mit einem grauen Filzstoff überzogen und man kann dort leichte Dinge, wie Bilder oder anderen Schnick-Schnack befestigen. Du hast von der Möglichkeit allerdings keinen Gebrauch gemacht..
+        ///   Looks up a localized string similar to Die Trennwand zum Waschbereich dient als Sichtschutz und ist beidseitig mit einem grauen Filzstoff überzogen und dort kann man leichte Dinge, wie Bilder oder anderen Schnick-Schnack befestigen. Du hast von der Möglichkeit allerdings keinen Gebrauch gemacht..
         /// </summary>
         internal static string PARTITION_WALL {
             get {
@@ -2224,7 +2215,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Tür hat ein kleines, tellergroßes Fenster, durch das man in beide Richtungen schauen kann, wenn man das möchte. Es ist elektronisch schaltbar und so kann man bei Bedarf die Transparenz anpassen. Wenn Du hindurch schaust erkennst Du den menschenleeren Korridor..
+        ///   Looks up a localized string similar to Die Tür hat ein kleines, tellergroßes Fenster, durch das man in beide Richtungen schauen kann, wenn man das möchte. Es ist elektronisch schaltbar und so kann man bei Bedarf die Transparenz anpassen. Wenn Du hindurch schaust, erkennst Du den menschenleeren Korridor..
         /// </summary>
         internal static string PEEPHOLE {
             get {
@@ -2269,7 +2260,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Du geht zu dem runden Fenster in Deiner Arbeitsecke und schaust hinaus ins All. Ein atemberaubender Blick offenbart sich Dir. Am Horizont steht ein Roter Zwerg und hat auf diese Entfernung ungefähr die Größe des Mondes in einer beschaulichen Vollmond-Sommernacht. Du bist zwar kein Astrophysiker, aber Du weißt, dass es sich bei dem Stern um Proxima Centauri handeln muss. Nachdem Eure Expedition in den Bruchstücken eines Mondes des Planten Proxima Centauri b erfolgreich Erze von seltenen Metallen einsammeln k [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to Du gehst zu dem runden Fenster in Deiner Arbeitsecke und schaust hinaus ins All. Ein atemberaubender Blick offenbart sich Dir. Am Horizont steht ein Roter Zwerg und hat auf diese Entfernung ungefähr die Größe des Mondes in einer beschaulichen Vollmond-Sommernacht. Du bist zwar kein Astrophysiker, aber Du weißt, dass es sich bei dem Stern um Proxima Centauri handeln muss. Nachdem Eure Expedition in den Bruchstücken eines Mondes des Planeten Proxima Centauri b erfolgreich Erze von seltenen Metallen einsammeln [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string PIERHOLE {
             get {
@@ -2278,7 +2269,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Dieser Sitz ist nochmal einige Nummer komfortabler als der aus Deinem Raum. Du weißt, dass sich die Konsole vor dem Sitz automatisch aktiviert, sobald jemand dort Platz nimmt..
+        ///   Looks up a localized string similar to Dieser Sitz ist nochmal einige Nummern komfortabler als der aus Deinem Raum. Du weißt, dass sich die Konsole vor dem Sitz automatisch aktiviert, sobald jemand dort Platz nimmt..
         /// </summary>
         internal static string PILOT_SEAT {
             get {
@@ -2296,7 +2287,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Als Du an Dir herunter schaust stellst Du fest, dass Du nackt bist. Um den Cryo-Schlaf nicht zu beeinträchtigen wird er ohne Kleidung benutzt..
+        ///   Looks up a localized string similar to Als Du an Dir herunter schaust, stellst Du fest, dass Du nackt bist. Um den Cryo-Schlaf nicht zu beeinträchtigen wird er ohne Kleidung benutzt..
         /// </summary>
         internal static string PLAYER_FIRSTLOOK {
             get {
@@ -2315,7 +2306,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Als Du die rote Taste betätigst, nimmst Du das laute Zischen wahr, dass entsteht, wenn der Sauerstoff aus dem Raum gesaugt wird. Die Beleuchtung wechselt auf ein warnendes Rot und das Schott beginnt sich behäbig zu öffnen. Nach einer gefühlten Ewigkeit erreicht es seine entgültige Position und Du blickst hinaus ins All. Nun trennt Dich nichts mehr von der Unendlichkeit!.
+        ///   Looks up a localized string similar to Als Du die rote Taste betätigst, nimmst Du das laute Zischen wahr, dass entsteht, wenn der Sauerstoff aus dem Raum gesaugt wird. Die Beleuchtung wechselt auf ein warnendes Rot und das Schott beginnt sich behäbig zu öffnen. Nach einer gefühlten Ewigkeit erreicht es seine endgültige Position und Du blickst hinaus ins All. Nun trennt Dich nichts mehr von der Unendlichkeit!.
         /// </summary>
         internal static string PREPARED_FOR_SPACE_WALK {
             get {
@@ -2324,7 +2315,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Genauso behäbig, wie es sich geöffnet hat schließt sich nun das Schott wieder. Du nimmst nun das Geräusch einströmenden Sauerstoffs wahr. Du bist nun wieder vollständig in der sicheren Obhut der Fenrir 13..
+        ///   Looks up a localized string similar to Genauso behäbig, wie es sich geöffnet hat, schließt sich nun das Schott wieder. Du nimmst nun das Geräusch einströmenden Sauerstoffs wahr. Du bist nun wieder vollständig in der sicheren Obhut der Fenrir 13..
         /// </summary>
         internal static string PRESS_GREEN_BUTTON {
             get {
@@ -2432,7 +2423,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to An der Rückseite des Schiffs kannst Du eine Leiter erkennen, die sowohl nach oben, auf das Dach des Wohnbereichs, als auch nach Unten an die Unterseite des Schiffs reicht..
+        ///   Looks up a localized string similar to An der Rückseite des Schiffs kannst Du eine Leiter erkennen, die sowohl nach oben, auf das Dach des Wohnbereichs, als auch nach unten an die Unterseite des Schiffs reicht..
         /// </summary>
         internal static string ROOF_TOP_DESTINATION {
             get {
@@ -2473,15 +2464,6 @@ namespace Fenrir13.Resources {
         internal static string ROUND_STAIRS {
             get {
                 return ResourceManager.GetString("ROUND_STAIRS", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Nun, auf diesen durch Gummi lärmreduzierten Rollen kannst Du Dich mit Deinem Bürostuhl frei im Raum bewegen..
-        /// </summary>
-        internal static string RUBBER_ROLLS {
-            get {
-                return ResourceManager.GetString("RUBBER_ROLLS", resourceCulture);
             }
         }
         
@@ -2540,7 +2522,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Bildschirm scheint seine Inhalte über ein klassiches Funknetz von einem Mediaserver zu beziehen, zumindest deutet ein Receiver an der Decke über der Couch darauf hin..
+        ///   Looks up a localized string similar to Der Bildschirm scheint seine Inhalte über ein klassisches Funknetz von einem Mediaserver zu beziehen, zumindest deutet ein Receiver an der Decke über der Couch darauf hin..
         /// </summary>
         internal static string SOCIALROOM_ANTENNA_CONSTRUCTION_CONTAINMENT {
             get {
@@ -2720,7 +2702,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Du nimmst Dir wahllos eines der Bücher aus dem Regel. &quot;{0}&quot; - ein weiteres Meisterwerk der Weltliteratur. Mit einem Lächeln im Gesicht steckst Du es zurück an seinen Platz..
+        ///   Looks up a localized string similar to Du nimmst Dir wahllos eines der Bücher aus dem Regal. &quot;{0}&quot; - ein weiteres Meisterwerk der Weltliteratur. Mit einem Lächeln im Gesicht steckst Du es zurück an seinen Platz..
         /// </summary>
         internal static string SOCIALROOM_BOOKS {
             get {
@@ -2792,7 +2774,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Bildschirm ist eigentlich eine dünne Folie, die mit geringem Abstand vor die komplette südliche Wand des Raums gespannt wurde. Das Ding ist super brilliant und absolut scharf. Damit macht es richtig Spaß, Serien von SpaceFlix zu schauen..
+        ///   Looks up a localized string similar to Der Bildschirm ist eigentlich eine dünne Folie, die mit geringem Abstand vor die komplette südliche Wand des Raums gespannt wurde. Das Ding ist super brillant und absolut scharf. Damit macht es richtig Spaß, Serien von SpaceFlix zu schauen..
         /// </summary>
         internal static string SOCIALROOM_MONITOR {
             get {
@@ -2846,7 +2828,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ohne, dass Du die entsprechende Schutzkleidung angezogen hast, kannst du nicht hinaus ins All!.
+        ///   Looks up a localized string similar to Ohne dass Du die entsprechende Schutzkleidung angezogen hast, kannst du nicht hinaus ins All!.
         /// </summary>
         internal static string SPACE_CLOTHS_NEEDED {
             get {
@@ -3009,52 +2991,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Vier Textmarker in blau, rot, gelb und grün..
-        /// </summary>
-        internal static string TEXTMARKER {
-            get {
-                return ResourceManager.GetString("TEXTMARKER", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Der Textmarker ist blau und hat Dir in der Vergangenheit schon gute Dienste erwiesen..
-        /// </summary>
-        internal static string TEXTMARKER_BLUE {
-            get {
-                return ResourceManager.GetString("TEXTMARKER_BLUE", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Grün ist nicht Deine Lieblingsfarbe, daher ist er fast unbenutzt..
-        /// </summary>
-        internal static string TEXTMARKER_GREEN {
-            get {
-                return ResourceManager.GetString("TEXTMARKER_GREEN", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Von Dir häufig verwendet, aber nicht relevant für das Spiel. Wie alle Textmarker hier..
-        /// </summary>
-        internal static string TEXTMARKER_RED {
-            get {
-                return ResourceManager.GetString("TEXTMARKER_RED", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Simple. Einfach. Gelb..
-        /// </summary>
-        internal static string TEXTMARKER_YELLOW {
-            get {
-                return ResourceManager.GetString("TEXTMARKER_YELLOW", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Absolut unscheinbar dieser Thron, bestehend aus einem Metallkorpus und einem Toilettensitz aus beheiztem Kunststoff. Doch er ist, neben Deinem Bio-Suit, die zentrale Überwachungsstation Deiner Gesundheit. Jede Ausscheidung wird akribisch analysiert und Dir im Display des Spiegels angezeigt. Viele der Werte sagen Dir noch nicht einmal etwas. Egal. Für Dich ist nur wichtig, dass Du gut umsorgt wirst und jeder erkannte Mangel über Zusätze in der Nahrung beseitigt werden..
+        ///   Looks up a localized string similar to Absolut unscheinbar dieser Thron, bestehend aus einem Metallkorpus und einem Toilettensitz aus beheiztem Kunststoff. Doch er ist, neben Deinem Bio-Suit, die zentrale Überwachungsstation Deiner Gesundheit. Jede Ausscheidung wird akribisch analysiert und Dir im Display des Spiegels angezeigt. Viele der Werte sagen Dir noch nicht einmal etwas. Egal. Für Dich ist nur wichtig, dass Du gut umsorgt wirst und jeder erkannte Mangel über Zusätze in der Nahrung beseitigt wird..
         /// </summary>
         internal static string TOILET {
             get {
@@ -3081,7 +3018,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Du setzt Dich kurz auf einen der Stühle, wippst ein wenig vor uns zurück und denkst Dir dann, dass es gerade unangemessen ist, Dich zu setzen..
+        ///   Looks up a localized string similar to Du setzt Dich kurz auf einen der Stühle, wippst ein wenig vor und zurück und denkst Dir dann, dass es gerade unangemessen ist, Dich zu setzen..
         /// </summary>
         internal static string TRY_TO_SIT_ON_CHAIR {
             get {
@@ -3090,7 +3027,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Du setzt Dich kurz auf das total bequeme Sofa und bekommst sofort Lust auf Chips und Cola. Aber irgendwie hälst Du es für nicht richtig, jetzt zu chillen. Du stehst wieder auf..
+        ///   Looks up a localized string similar to Du setzt Dich kurz auf das total bequeme Sofa und bekommst sofort Lust auf Chips und Cola. Aber irgendwie hältst Du es für nicht richtig, jetzt zu chillen. Du stehst wieder auf..
         /// </summary>
         internal static string TRY_TO_SIT_ON_COUCH {
             get {
@@ -3117,7 +3054,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Du setzt Dich kurz auf einen der total bequemen Sessel und bekommst sofort Lust auf Chips und Cola. Aber irgendwie hälst Du es für nicht richtig, jetzt zu chillen. Du stehst wieder auf..
+        ///   Looks up a localized string similar to Du setzt Dich kurz auf einen der total bequemen Sessel und bekommst sofort Lust auf Chips und Cola. Aber irgendwie hältst Du es für nicht richtig, jetzt zu chillen. Du stehst wieder auf..
         /// </summary>
         internal static string TRY_TO_SIT_ON_SEAT {
             get {
@@ -3144,7 +3081,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Passend zum restlichen Interieur ist auch das Waschbecken aus Metall. Ein Spiegel mit einem Display Deiner zuletzt gemessenen Vitaldaten, eine Armatur mit Start-/Stop-Sensoren und digitaler Temperaturregelung, sowie eine ebenfalls sensorgesteuerte Seifenspendereinheit runden das Bild ab..
+        ///   Looks up a localized string similar to Passend zum restlichen Interieur ist auch das Waschbecken aus Metall. Ein Spiegel mit einem Display Deiner zuletzt gemessenen Vitaldaten, eine Armatur mit Start-/Stop-Sensoren und digitaler Temperaturregelung runden das Bild ab..
         /// </summary>
         internal static string WASHINGAREA {
             get {
@@ -3171,7 +3108,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Dein Arbeitsbereich gliedert sich in eine Arbeitsplatte, die bei Bedarf auch eingeklappt werden kann, einigen Ablagefächern, die Du mit gewöhnlichen Schreibutensilien bestückt hast und einer Beleuchtung, die Dir ausreichend Licht für die Arbeit spendet. Auf der Arbeitsplatte steht Dein Laptop und vor der Arbeitsplatte ein entsprechender Bürostuhl..
+        ///   Looks up a localized string similar to Dein Arbeitsbereich, der bei Bedarf auch eingeklappt werden kann, gliedert sich in einige Ablagefächer, die Du mit gewöhnlichen Schreibutensilien bestückt hast, und eine Beleuchtung, die Dir ausreichend Licht für die Arbeit spendet. Auf der Arbeitsplatte steht Dein Laptop und davor befindet sich ein entsprechender Bürostuhl..
         /// </summary>
         internal static string WORKBENCH {
             get {
@@ -3189,7 +3126,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Da sind ein paar Stifte, Textmarker und ein paar Blätter Papier. Aber die sind aktuell nicht wirklich von Bedeutung..
+        ///   Looks up a localized string similar to Da sind Stifte und ein paar Blätter Papier. Aber die sind aktuell nicht wirklich von Bedeutung..
         /// </summary>
         internal static string WRITING_MATERIALS {
             get {
