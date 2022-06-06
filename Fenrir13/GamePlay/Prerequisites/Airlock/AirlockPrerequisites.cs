@@ -114,13 +114,71 @@ internal class AirlockPrerequisites
     
     private static void AddSurroundings(Location location)
     {
-        location.Surroundings.Add(Keys.CEILING, () => Descriptions.CEILING);
-        location.Surroundings.Add(Keys.CHAMBER_WALL, () => Descriptions.CHAMBER_WALL);
-        location.Surroundings.Add(Keys.AIRLOCK_NORTHERN_WALL, () => Descriptions.AIRLOCK_NORTHERN_WALL);
-        location.Surroundings.Add(Keys.AIRLOCK_SOUTHERN_WALL, () => Descriptions.AIRLOCK_SOUTHERN_WALL);
-        location.Surroundings.Add(Keys.AIRLOCK_BULKHEAD, () => Descriptions.AIRLOCK_BULKHEAD);
-        location.Surroundings.Add(Keys.ROOM_DOOR, () => Descriptions.ROOM_DOOR);
+        var ceiling = new Item()
+        {
+            Key = Keys.CEILING,
+            Name = Items.CEILING,
+            Description = Descriptions.CEILING,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        location.Items.Add(ceiling);
         
+        var wall = new Item()
+        {
+            Key = Keys.CHAMBER_WALL,
+            Name = Items.CHAMBER_WALL,
+            Description = Descriptions.CHAMBER_WALL,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        location.Items.Add(wall);
+        
+        var door = new Item()
+        {
+            Key = Keys.ROOM_DOOR,
+            Description = Descriptions.ROOM_DOOR,
+            Name = Items.ROOM_DOOR,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Neutrum)
+        };
+        location.Items.Add(door);
+        
+        var northWall = new Item()
+        {
+            Key = Keys.AIRLOCK_NORTHERN_WALL,
+            Name = Items.AIRLOCK_NORTHERN_WALL,
+            Description = Descriptions.AIRLOCK_NORTHERN_WALL,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        location.Items.Add(northWall);
+        
+        var southWall = new Item()
+        {
+            Key = Keys.AIRLOCK_SOUTHERN_WALL,
+            Name = Items.AIRLOCK_SOUTHERN_WALL,
+            Description = Descriptions.AIRLOCK_SOUTHERN_WALL,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        location.Items.Add(southWall);
+        
+        var bulkHead = new Item()
+        {
+            Key = Keys.AIRLOCK_BULKHEAD,
+            Name = Items.AIRLOCK_BULKHEAD,
+            Description = Descriptions.AIRLOCK_BULKHEAD,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Neutrum)
+        };
+        location.Items.Add(bulkHead);
     }
     
     private static void AddChangeRoomEvents(Location airlock, EventProvider eventProvider)
