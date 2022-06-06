@@ -2360,15 +2360,6 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Du weißt nicht, welche Freigaben Dir durch den erhöhten Rang Q noch zu Teil werden..
-        /// </summary>
-        internal static string RANK {
-            get {
-                return ResourceManager.GetString("RANK", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Hier auf dem Schiff ist Wasser sehr wertvoll. Geschirr und Besteck wird nicht gespült, sondern anderweitig verwertet. Dieser hochmoderne Recycler ist in der Lage, die eingeworfenen Reste exakt von einander zu trennen und einer weiteren Verwertung zuzuführen. Wie das alles geht, ist Dir schleierhaft. Du weißt nur, dass die Nahrungsreste wieder in ihre Grundbausteine zerlegt werden und dann dem Printer zur Verfügung stehen. Was mit den anderen Materialien passiert, weißt Du nicht..
         /// </summary>
         internal static string RECYCLER {

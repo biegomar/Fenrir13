@@ -118,7 +118,7 @@
         <value>Haftnotiz|Klebezettel|Notiz|Zettel</value>
     </data>
     <data name="CONTROL_PANEL" xml:space="preserve">
-        <value>Bedienkonsole|Konsole|Steuerpult|Pult|Platte|Glasplatte|Halbrund</value>
+        <value>Bedienkonsole|Konsole|Platte|Glasplatte</value>
     </data>
     <data name="OVOID" xml:space="preserve">
         <value>Ovoid</value>
@@ -132,14 +132,11 @@
     <data name="CONTROL_PANEL_CONTENT" xml:space="preserve">
         <value>Instrumente|Bilder|Informationstexte|Daten</value>
     </data>
-    <data name="RANK" xml:space="preserve">
-        <value>Rang|Rangs</value>
-    </data>
     <data name="NECESSITIES" xml:space="preserve">
-        <value>Notwendigkeiten|Notwendigkeit|nautische Notwendigkeiten|nautische Notwendigkeit</value>
+        <value>Notwendigkeiten|nautische Notwendigkeiten</value>
     </data>
     <data name="PERSONAL_SETTINGS" xml:space="preserve">
-        <value>Einstellungen|Einstellung|persönliche Einstellungen|persönliche Einstellung</value>
+        <value>Einstellungen|persönliche Einstellungen</value>
     </data>
     <data name="CARDIO_STATION" xml:space="preserve">
         <value>Cardiostation|Cardiostationen|Cardio</value>

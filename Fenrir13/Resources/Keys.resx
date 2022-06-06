@@ -159,9 +159,6 @@
     <data name="CONTROL_PANEL_CONTENT" xml:space="preserve">
         <value>CONTROL_PANEL_CONTENT</value>
     </data>
-    <data name="RANK" xml:space="preserve">
-        <value>RANK</value>
-    </data>
     <data name="NECESSITIES" xml:space="preserve">
         <value>NECESSITIES</value>
     </data>

@@ -261,9 +261,6 @@ Du weißt, dass jedes Schiff der Flotte eins dieser Portraits an Bord hat. Man l
     <data name="CONTROL_PANEL_CONTENT" xml:space="preserve">
         <value>Im Moment ist die Konsole nicht aktiv und zeigt diese Art von Inhalt nicht an.</value>
     </data>
-    <data name="RANK" xml:space="preserve">
-        <value>Du weißt nicht, welche Freigaben Dir durch den erhöhten Rang Q noch zu Teil werden.</value>
-    </data>
     <data name="NECESSITIES" xml:space="preserve">
         <value>Puh, um ehrlich zu sein...keine Ahnung was nautische Notwendigkeiten so sind.</value>
     </data>

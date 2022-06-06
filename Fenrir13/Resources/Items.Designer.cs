@@ -340,7 +340,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bedienkonsole|Konsole|Steuerpult|Pult|Platte|Glasplatte|Halbrund.
+        ///   Looks up a localized string similar to Bedienkonsole|Konsole|Platte|Glasplatte.
         /// </summary>
         internal static string CONTROL_PANEL {
             get {
@@ -988,7 +988,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Notwendigkeiten|Notwendigkeit|nautische Notwendigkeiten|nautische Notwendigkeit.
+        ///   Looks up a localized string similar to Notwendigkeiten|nautische Notwendigkeiten.
         /// </summary>
         internal static string NECESSITIES {
             get {
@@ -1141,7 +1141,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Einstellungen|Einstellung|persönliche Einstellungen|persönliche Einstellung.
+        ///   Looks up a localized string similar to Einstellungen|persönliche Einstellungen.
         /// </summary>
         internal static string PERSONAL_SETTINGS {
             get {
@@ -1191,15 +1191,6 @@ namespace Fenrir13.Resources {
         internal static string QUATUM_CUBE {
             get {
                 return ResourceManager.GetString("QUATUM_CUBE", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Rang|Rangs.
-        /// </summary>
-        internal static string RANK {
-            get {
-                return ResourceManager.GetString("RANK", resourceCulture);
             }
         }
         

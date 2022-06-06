@@ -1375,15 +1375,6 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RANK.
-        /// </summary>
-        internal static string RANK {
-            get {
-                return ResourceManager.GetString("RANK", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to RECYCLER.
         /// </summary>
         internal static string RECYCLER {

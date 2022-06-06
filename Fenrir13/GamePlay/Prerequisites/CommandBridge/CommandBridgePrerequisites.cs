@@ -29,15 +29,104 @@ internal static class CommandBridgePrerequisites
     
     private static void AddSurroundings(Location location)
     {
-        location.Surroundings.Add(Keys.CONTROL_PANEL, () => Descriptions.CONTROL_PANEL);
-        location.Surroundings.Add(Keys.CONTROL_PANEL_CONTENT, () => Descriptions.CONTROL_PANEL_CONTENT);
-        location.Surroundings.Add(Keys.OVOID, () => Descriptions.OVOID);
-        location.Surroundings.Add(Keys.FRONTSIDE, () => Descriptions.FRONTSIDE);
-        location.Surroundings.Add(Keys.FRONTWINDOW, () => Descriptions.FRONTWINDOW);
-        location.Surroundings.Add(Keys.RANK, () => Descriptions.RANK);
-        location.Surroundings.Add(Keys.NECESSITIES, () => Descriptions.NECESSITIES);
-        location.Surroundings.Add(Keys.PERSONAL_SETTINGS, () => Descriptions.PERSONAL_SETTINGS);
-        location.Surroundings.Add(Keys.CEILING, () => Descriptions.CEILING);
+        var ceiling = new Item()
+        {
+            Key = Keys.CEILING,
+            Name = Items.CEILING,
+            Description = Descriptions.CEILING,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        location.Items.Add(ceiling);
+        
+        var wall = new Item()
+        {
+            Key = Keys.CHAMBER_WALL,
+            Name = Items.CHAMBER_WALL,
+            Description = Descriptions.CHAMBER_WALL,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        location.Items.Add(wall);
+        
+        var controlPanel = new Item()
+        {
+            Key = Keys.CONTROL_PANEL,
+            Name = Items.CONTROL_PANEL,
+            Description = Descriptions.CONTROL_PANEL,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        location.Items.Add(controlPanel);
+        
+        var controlPanelContent = new Item()
+        {
+            Key = Keys.CONTROL_PANEL_CONTENT,
+            Name = Items.CONTROL_PANEL_CONTENT,
+            Description = Descriptions.CONTROL_PANEL_CONTENT,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(isSingular: false)
+        };
+        location.Items.Add(controlPanelContent);
+        
+        var ovoid = new Item()
+        {
+            Key = Keys.OVOID,
+            Name = Items.OVOID,
+            Description = Descriptions.OVOID,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Male)
+        };
+        location.Items.Add(ovoid);
+        
+        var frontSide = new Item()
+        {
+            Key = Keys.FRONTSIDE,
+            Name = Items.FRONTSIDE,
+            Description = Descriptions.FRONTSIDE,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        location.Items.Add(frontSide);
+        
+        var frontWindow = new Item()
+        {
+            Key = Keys.FRONTWINDOW,
+            Name = Items.FRONTWINDOW,
+            Description = Descriptions.FRONTWINDOW,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        location.Items.Add(frontWindow);
+        
+        var necessities = new Item()
+        {
+            Key = Keys.NECESSITIES,
+            Name = Items.NECESSITIES,
+            Description = Descriptions.NECESSITIES,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(isSingular: false)
+        };
+        location.Items.Add(necessities);
+        
+        var personalSettings = new Item()
+        {
+            Key = Keys.PERSONAL_SETTINGS,
+            Name = Items.PERSONAL_SETTINGS,
+            Description = Descriptions.PERSONAL_SETTINGS,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(isSingular: false)
+        };
+        location.Items.Add(personalSettings);
     }
     
     private static void AddAfterLookEvents(Location bridge, EventProvider eventProvider)
