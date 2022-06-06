@@ -235,13 +235,13 @@
         <value>Krankenbett|Krankenhausbett|Bett|Pflegebett</value>
     </data>
     <data name="AMBULANCE_OP_ITEMS" xml:space="preserve">
-        <value>OP-Schränke| OP Schränke|Schränke|Schrank|OP-Schrank|OP Schrank|Das Verbandszeug|Verbandszeug|Verbandszeuge|Die Instrumente|Instrumente|Instrument|OP-Besteck</value>
+        <value>OP-Schränke| OP Schränke|Schränke|Das Verbandszeug|Verbandszeug|Die Instrumente|Instrumente|Instrument|OP-Besteck</value>
     </data>
     <data name="AMBULANCE_MEDIS" xml:space="preserve">
-        <value>Medizinschrank|Medischrank|Medikamente|Medikament|Medis|Schrank</value>
+        <value>Medikamente|Medis</value>
     </data>
     <data name="AMBULANCE_RESPIRATOR" xml:space="preserve">
-        <value>Beatmungsgerät|Beatmungsmaschine|Beatmung|Beatmungsapparat|Gerät|Oxygen|Korpus</value>
+        <value>Beatmungsgerät|Gerät|Oxygen|Korpus</value>
     </data>
     <data name="AMBULANCE_RESPIRATOR_FLAP" xml:space="preserve">
         <value>Verschlussklappe|Verschlusskappe|Klappe|Kappe</value>
@@ -265,7 +265,7 @@
         <value>Sauerstoffflasche|Sauerstoff-Flasche|Sauerstoff|Flasche|Gas</value>
     </data>
     <data name="AMBULANCE_OP_ITEMS_DETAIL" xml:space="preserve">
-        <value>Skalpell|Skalpelle|Der Tupfer|Tupfer|Die Mullbinde|Mullbinde|Mullbinden|Der Adapter|Adapter</value>
+        <value>Dinge|Skalpelle|Tupfer|Mullbinden|Adapter</value>
     </data>
     <data name="CRYOCHAMBER_BULKHEAD" xml:space="preserve">
         <value>Sichtfenster|Glas</value>
@@ -529,9 +529,12 @@
         <value>Beutelchen|Beutel|Kunststoff|Nahrungsbestandteile|Bestandteile</value>
     </data>
     <data name="AMBULANCE_OXYGEN_HOSE" xml:space="preserve">
-        <value>Schlauch|Schläuche</value>
+        <value>Schläuche</value>
     </data>
     <data name="QUATUM_CUBE" xml:space="preserve">
         <value>Würfel</value>
+    </data>
+    <data name="AMBULANCE_MEDIS_CABINET" xml:space="preserve">
+        <value>Medizinschrank|Medischrank</value>
     </data>
 </root>

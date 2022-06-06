@@ -142,7 +142,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Medizinschrank|Medischrank|Medikamente|Medikament|Medis|Schrank.
+        ///   Looks up a localized string similar to Medikamente|Medis.
         /// </summary>
         internal static string AMBULANCE_MEDIS {
             get {
@@ -151,7 +151,16 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to OP-Schränke| OP Schränke|Schränke|Schrank|OP-Schrank|OP Schrank|Das Verbandszeug|Verbandszeug|Verbandszeuge|Die Instrumente|Instrumente|Instrument|OP-Besteck.
+        ///   Looks up a localized string similar to Medizinschrank|Medischrank.
+        /// </summary>
+        internal static string AMBULANCE_MEDIS_CABINET {
+            get {
+                return ResourceManager.GetString("AMBULANCE_MEDIS_CABINET", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OP-Schränke| OP Schränke|Schränke|Das Verbandszeug|Verbandszeug|Die Instrumente|Instrumente|Instrument|OP-Besteck.
         /// </summary>
         internal static string AMBULANCE_OP_ITEMS {
             get {
@@ -160,7 +169,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Skalpell|Skalpelle|Der Tupfer|Tupfer|Die Mullbinde|Mullbinde|Mullbinden|Der Adapter|Adapter.
+        ///   Looks up a localized string similar to Dinge|Skalpelle|Tupfer|Mullbinden|Adapter.
         /// </summary>
         internal static string AMBULANCE_OP_ITEMS_DETAIL {
             get {
@@ -187,7 +196,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Schlauch|Schläuche.
+        ///   Looks up a localized string similar to Schläuche.
         /// </summary>
         internal static string AMBULANCE_OXYGEN_HOSE {
             get {
@@ -196,7 +205,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Beatmungsgerät|Beatmungsmaschine|Beatmung|Beatmungsapparat|Gerät|Oxygen|Korpus.
+        ///   Looks up a localized string similar to Beatmungsgerät|Gerät|Oxygen|Korpus.
         /// </summary>
         internal static string AMBULANCE_RESPIRATOR {
             get {

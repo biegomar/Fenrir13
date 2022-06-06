@@ -87,16 +87,126 @@ internal static class AmbulancePrerequisites
     
     private static void AddSurroundings(Location location)
     {
-        location.Surroundings.Add(Keys.AMBULANCE_OP_TABLE, () => Descriptions.AMBULANCE_OP_TABLE);
-        location.Surroundings.Add(Keys.AMBULANCE_OP_ROBOTER, () => Descriptions.AMBULANCE_OP_ROBOTER);
-        location.Surroundings.Add(Keys.CEILING, () => Descriptions.CEILING);
-        location.Surroundings.Add(Keys.CHAMBER_WALL, () => Descriptions.CHAMBER_WALL);
-        location.Surroundings.Add(Keys.AMBULANCE_BED, () => Descriptions.AMBULANCE_BED);
-        location.Surroundings.Add(Keys.AMBULANCE_OP_ITEMS, () => Descriptions.AMBULANCE_OP_ITEMS);
-        location.Surroundings.Add(Keys.AMBULANCE_OP_ITEMS_DETAIL, () => Descriptions.AMBULANCE_OP_ITEMS_DETAIL);
-        location.Surroundings.Add(Keys.AMBULANCE_MEDIS, () => Descriptions.AMBULANCE_MEDIS);
-        location.Surroundings.Add(Keys.AMBULANCE_RESPIRATOR, () => Descriptions.AMBULANCE_RESPIRATOR);
-        location.Surroundings.Add(Keys.AMBULANCE_OXYGEN_HOSE, () => Descriptions.AMBULANCE_OXYGEN_HOSE);
+        var ceiling = new Item()
+        {
+            Key = Keys.CEILING,
+            Name = Items.CEILING,
+            Description = Descriptions.CEILING,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        location.Items.Add(ceiling);
+        
+        var wall = new Item()
+        {
+            Key = Keys.CHAMBER_WALL,
+            Name = Items.CHAMBER_WALL,
+            Description = Descriptions.CHAMBER_WALL,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        location.Items.Add(wall);
+        
+        var opTable = new Item()
+        {
+            Key = Keys.AMBULANCE_OP_TABLE,
+            Name = Items.AMBULANCE_OP_TABLE,
+            Description = Descriptions.AMBULANCE_OP_TABLE,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Male)
+        };
+        location.Items.Add(opTable);
+        
+        var opRoboter = new Item()
+        {
+            Key = Keys.AMBULANCE_OP_ROBOTER,
+            Name = Items.AMBULANCE_OP_ROBOTER,
+            Description = Descriptions.AMBULANCE_OP_ROBOTER,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Male)
+        };
+        location.Items.Add(opRoboter);
+        
+        var opBed = new Item()
+        {
+            Key = Keys.AMBULANCE_BED,
+            Name = Items.AMBULANCE_BED,
+            Description = Descriptions.AMBULANCE_BED,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Neutrum)
+        };
+        location.Items.Add(opBed);
+        
+        var opItems = new Item()
+        {
+            Key = Keys.AMBULANCE_OP_ITEMS,
+            Name = Items.AMBULANCE_OP_ITEMS,
+            Description = Descriptions.AMBULANCE_OP_ITEMS,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Neutrum)
+        };
+        location.Items.Add(opItems);
+        
+        var opItemDetails = new Item()
+        {
+            Key = Keys.AMBULANCE_OP_ITEMS_DETAIL,
+            Name = Items.AMBULANCE_OP_ITEMS_DETAIL,
+            Description = Descriptions.AMBULANCE_OP_ITEMS_DETAIL,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Neutrum)
+        };
+        location.Items.Add(opItemDetails);
+        
+        var opMedis = new Item()
+        {
+            Key = Keys.AMBULANCE_MEDIS,
+            Name = Items.AMBULANCE_MEDIS,
+            Description = Descriptions.AMBULANCE_MEDIS,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Neutrum, false)
+        };
+        location.Items.Add(opMedis);
+        
+        var opMedisCabinet = new Item()
+        {
+            Key = Keys.AMBULANCE_MEDIS_CABINET,
+            Name = Items.AMBULANCE_MEDIS_CABINET,
+            Description = Descriptions.AMBULANCE_MEDIS_CABINET,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Male, false)
+        };
+        location.Items.Add(opMedisCabinet);
+        
+        var opRespirator = new Item()
+        {
+            Key = Keys.AMBULANCE_RESPIRATOR,
+            Name = Items.AMBULANCE_RESPIRATOR,
+            Description = Descriptions.AMBULANCE_RESPIRATOR,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Neutrum)
+        };
+        location.Items.Add(opRespirator);
+        
+        var opHose = new Item()
+        {
+            Key = Keys.AMBULANCE_OXYGEN_HOSE,
+            Name = Items.AMBULANCE_OXYGEN_HOSE,
+            Description = Descriptions.AMBULANCE_OXYGEN_HOSE,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Male, false)
+        };
+        location.Items.Add(opHose);
     }
     
     private static void AddAfterLookEvents(Location ambulance, EventProvider eventProvider)

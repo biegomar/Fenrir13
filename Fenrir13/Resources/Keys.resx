@@ -600,4 +600,7 @@
     <data name="QUATUM_CUBE" xml:space="preserve">
         <value>QUATUM_CUBE</value>
     </data>
+    <data name="AMBULANCE_MEDIS_CABINET" xml:space="preserve">
+        <value>AMBULANCE_MEDIS_CABINET</value>
+    </data>
 </root>

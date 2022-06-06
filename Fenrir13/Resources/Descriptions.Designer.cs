@@ -224,11 +224,20 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ein rechteckiger Schrank mit einer abschließbaren Glastür, der mit einem roten Kreuz bedruckt ist und ziemlich prominent an der Wand aufgehängt ist. Durch die Scheibe kannst Du einige Medikamente erkennen. Leichtere Schmerzmittel, aber auch Morphium. Antibiotika und sogar Antidepressiva kannst Du erkennen. Kein Wunder, dass der Schrank immer verschlossen ist..
+        ///   Looks up a localized string similar to Du siehst leichtere Schmerzmittel, aber auch Morphium. Antibiotika und sogar Antidepressiva kannst Du erkennen. Kein Wunder, dass der Schrank immer verschlossen ist..
         /// </summary>
         internal static string AMBULANCE_MEDIS {
             get {
                 return ResourceManager.GetString("AMBULANCE_MEDIS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ein rechteckiger Schrank mit einer abschließbaren Glastür, der mit einem roten Kreuz bedruckt ist und ziemlich prominent an der Wand aufgehängt ist. Durch die Scheibe kannst Du einige Medikamente erkennen..
+        /// </summary>
+        internal static string AMBULANCE_MEDIS_CABINET {
+            get {
+                return ResourceManager.GetString("AMBULANCE_MEDIS_CABINET", resourceCulture);
             }
         }
         
