@@ -23,16 +23,95 @@ internal static class EquipmentRoomPrerequisites
         return equipmentRoom;
     }
     
-    private static void AddSurroundings(Location equipmentRoom)
+    private static void AddSurroundings(Location location)
     {
-        equipmentRoom.Surroundings.Add(Keys.CHAMBER_WALL, () => Descriptions.CHAMBER_WALL);
-        equipmentRoom.Surroundings.Add(Keys.EQUIPMENT_ROOM_BENCH, () => Descriptions.EQUIPMENT_ROOM_BENCH);
-        equipmentRoom.Surroundings.Add(Keys.EQUIPMENT_ROOM_NICHE, () => Descriptions.EQUIPMENT_ROOM_NICHE);
-        equipmentRoom.Surroundings.Add(Keys.EQUIPMENT_ROOM_TRASHBIN, () => Descriptions.EQUIPMENT_ROOM_TRASHBIN);
-        equipmentRoom.Surroundings.Add(Keys.EQUIPMENT_ROOM_CLOTH, () => Descriptions.EQUIPMENT_ROOM_CLOTH);
-        equipmentRoom.Surroundings.Add(Keys.EYELET, () => Descriptions.EYELET);
-        equipmentRoom.Surroundings.Add(Keys.CEILING, () => Descriptions.CEILING);
-        equipmentRoom.Surroundings.Add(Keys.ROOM_DOOR, () => Descriptions.ROOM_DOOR);
+        var ceiling = new Item()
+        {
+            Key = Keys.CEILING,
+            Name = Items.CEILING,
+            Description = Descriptions.CEILING,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        location.Items.Add(ceiling);
+        
+        var wall = new Item()
+        {
+            Key = Keys.CHAMBER_WALL,
+            Name = Items.CHAMBER_WALL,
+            Description = Descriptions.CHAMBER_WALL,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        location.Items.Add(wall);
+        
+        var bench = new Item()
+        {
+            Key = Keys.EQUIPMENT_ROOM_BENCH,
+            Name = Items.EQUIPMENT_ROOM_BENCH,
+            Description = Descriptions.EQUIPMENT_ROOM_BENCH,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(isSingular: false)
+        };
+        location.Items.Add(bench);
+        
+        var niche = new Item()
+        {
+            Key = Keys.EQUIPMENT_ROOM_NICHE,
+            Name = Items.EQUIPMENT_ROOM_NICHE,
+            Description = Descriptions.EQUIPMENT_ROOM_NICHE,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(isSingular: false)
+        };
+        location.Items.Add(niche);
+        
+        var trashBin = new Item()
+        {
+            Key = Keys.EQUIPMENT_ROOM_TRASHBIN,
+            Name = Items.EQUIPMENT_ROOM_TRASHBIN,
+            Description = Descriptions.EQUIPMENT_ROOM_TRASHBIN,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(gender: Genders.Male)
+        };
+        location.Items.Add(trashBin);
+        
+        var cloth = new Item()
+        {
+            Key = Keys.EQUIPMENT_ROOM_CLOTH,
+            Name = Items.EQUIPMENT_ROOM_CLOTH,
+            Description = Descriptions.EQUIPMENT_ROOM_CLOTH,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(isSingular: false)
+        };
+        location.Items.Add(cloth);
+        
+        var eyelet = new Item()
+        {
+            Key = Keys.EYELET,
+            Name = Items.EYELET,
+            Description = Descriptions.EYELET,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        location.Items.Add(eyelet);
+        
+        var roomDoor = new Item()
+        {
+            Key = Keys.ROOM_DOOR,
+            Name = Items.ROOM_DOOR,
+            Description = Descriptions.ROOM_DOOR,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        location.Items.Add(roomDoor);
     }
 
     private static Item GetBox(EventProvider eventProvider)
