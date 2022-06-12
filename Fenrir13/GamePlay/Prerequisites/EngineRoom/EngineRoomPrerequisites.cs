@@ -40,18 +40,117 @@ internal class EngineRoomPrerequisites
         return shipModel;
     }
     
-    private static void AddSurroundings(Location engine)
+    private static void AddSurroundings(Location location)
     {
-        engine.Surroundings.Add(Keys.CEILING, () => Descriptions.CEILING);
-        engine.Surroundings.Add(Keys.CHAMBER_WALL, () => Descriptions.CHAMBER_WALL);
-        engine.Surroundings.Add(Keys.ENGINE_ROOM_RED_DOTS, () => Descriptions.ENGINE_ROOM_RED_DOTS);
-        engine.Surroundings.Add(Keys.ENGINE_ROOM_ART, () => Descriptions.ENGINE_ROOM_ART);
-        engine.Surroundings.Add(Keys.ENGINE_ROOM_TECHNIC, () => Descriptions.ENGINE_ROOM_TECHNIC);
-        engine.Surroundings.Add(Keys.ENGINE_ROOM_STEALING, () => Descriptions.ENGINE_ROOM_STEALING);
-        engine.Surroundings.Add(Keys.ENGINE_ROOM_HEAD, () => Descriptions.ENGINE_ROOM_HEAD);
-        engine.Surroundings.Add(Keys.ENGINE_ROOM_TANGENT, () => Descriptions.ENGINE_ROOM_TANGENT);
-        engine.Surroundings.Add(Keys.ENGINE_ROOM_COMPUTER, () => Descriptions.ENGINE_ROOM_COMPUTER);
-        engine.Surroundings.Add(Keys.QUATUM_CUBE, () => Descriptions.QUATUM_CUBE);
+        var ceiling = new Item()
+        {
+            Key = Keys.CEILING,
+            Name = Items.CEILING,
+            Description = Descriptions.CEILING,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        location.Items.Add(ceiling);
+        
+        var wall = new Item()
+        {
+            Key = Keys.CHAMBER_WALL,
+            Name = Items.CHAMBER_WALL,
+            Description = Descriptions.CHAMBER_WALL,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        location.Items.Add(wall);
+        
+        var redDots = new Item()
+        {
+            Key = Keys.ENGINE_ROOM_RED_DOTS,
+            Name = Items.ENGINE_ROOM_RED_DOTS,
+            Description = Descriptions.ENGINE_ROOM_RED_DOTS,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(gender: Genders.Male, isSingular: false)
+        };
+        location.Items.Add(redDots);
+        
+        var art = new Item()
+        {
+            Key = Keys.ENGINE_ROOM_ART,
+            Name = Items.ENGINE_ROOM_ART,
+            Description = Descriptions.ENGINE_ROOM_ART,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        location.Items.Add(art);
+        
+        var technic = new Item()
+        {
+            Key = Keys.ENGINE_ROOM_TECHNIC,
+            Name = Items.ENGINE_ROOM_TECHNIC,
+            Description = Descriptions.ENGINE_ROOM_TECHNIC,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        location.Items.Add(technic);
+        
+        var stealing = new Item()
+        {
+            Key = Keys.ENGINE_ROOM_STEALING,
+            Name = Items.ENGINE_ROOM_STEALING,
+            Description = Descriptions.ENGINE_ROOM_STEALING,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(isSingular: false)
+        };
+        location.Items.Add(stealing);
+        
+        var head = new Item()
+        {
+            Key = Keys.ENGINE_ROOM_HEAD,
+            Name = Items.ENGINE_ROOM_HEAD,
+            Description = Descriptions.ENGINE_ROOM_HEAD,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        location.Items.Add(head);
+        
+        var tangent = new Item()
+        {
+            Key = Keys.ENGINE_ROOM_TANGENT,
+            Name = Items.ENGINE_ROOM_TANGENT,
+            Description = Descriptions.ENGINE_ROOM_TANGENT,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        location.Items.Add(tangent);
+        
+        var computer = new Item()
+        {
+            Key = Keys.ENGINE_ROOM_COMPUTER,
+            Name = Items.ENGINE_ROOM_COMPUTER,
+            Description = Descriptions.ENGINE_ROOM_COMPUTER,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(gender: Genders.Male)
+        };
+        location.Items.Add(computer);
+        
+        var cube = new Item()
+        {
+            Key = Keys.QUATUM_CUBE,
+            Name = Items.QUATUM_CUBE,
+            Description = Descriptions.QUATUM_CUBE,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(gender: Genders.Male)
+        };
+        location.Items.Add(cube);
     }
     
     private static void AddAfterLookEvents(Location item, EventProvider eventProvider)

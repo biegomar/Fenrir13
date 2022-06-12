@@ -547,7 +547,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Kunst|Halbkreis|Licht|Korona.
+        ///   Looks up a localized string similar to Kunst|Korona.
         /// </summary>
         internal static string ENGINE_ROOM_ART {
             get {
@@ -556,7 +556,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Quantencluster|Quantencomputer|Computer|Recheneinheit|Cluster.
+        ///   Looks up a localized string similar to Quantencluster|Quantencomputer|Computer|Cluster.
         /// </summary>
         internal static string ENGINE_ROOM_COMPUTER {
             get {
@@ -565,7 +565,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Kopfende|Platte|Kopfplatte|Kante.
+        ///   Looks up a localized string similar to Kopfplatte|Platte|Kante.
         /// </summary>
         internal static string ENGINE_ROOM_HEAD {
             get {
@@ -574,7 +574,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Rote Punkte|Roter Punkt|Punkte|Punkt.
+        ///   Looks up a localized string similar to Rote Punkte|Punkte.
         /// </summary>
         internal static string ENGINE_ROOM_RED_DOTS {
             get {
@@ -592,7 +592,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Stehlen|Stehle|Säulen|Säule.
+        ///   Looks up a localized string similar to Stelen|Stele|Säulen|Säule.
         /// </summary>
         internal static string ENGINE_ROOM_STEALING {
             get {

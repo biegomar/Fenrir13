@@ -349,25 +349,25 @@
         <value>Hologramm|Hologram|Modell</value>
     </data>
     <data name="ENGINE_ROOM_RED_DOTS" xml:space="preserve">
-        <value>Rote Punkte|Roter Punkt|Punkte|Punkt</value>
+        <value>Rote Punkte|Punkte</value>
     </data>
     <data name="ENGINE_ROOM_ART" xml:space="preserve">
-        <value>Kunst|Halbkreis|Licht|Korona</value>
+        <value>Kunst|Korona</value>
     </data>
     <data name="ENGINE_ROOM_TECHNIC" xml:space="preserve">
         <value>Technik</value>
     </data>
     <data name="ENGINE_ROOM_STEALING" xml:space="preserve">
-        <value>Stehlen|Stehle|Säulen|Säule</value>
+        <value>Stelen|Stele|Säulen|Säule</value>
     </data>
     <data name="ENGINE_ROOM_HEAD" xml:space="preserve">
-        <value>Kopfende|Platte|Kopfplatte|Kante</value>
+        <value>Kopfplatte|Platte|Kante</value>
     </data>
     <data name="ENGINE_ROOM_TANGENT" xml:space="preserve">
         <value>Tangente</value>
     </data>
     <data name="ENGINE_ROOM_COMPUTER" xml:space="preserve">
-        <value>Quantencluster|Quantencomputer|Computer|Recheneinheit|Cluster</value>
+        <value>Quantencluster|Quantencomputer|Computer|Cluster</value>
     </data>
     <data name="MAINTENANCE_ROOM_DRAWER" xml:space="preserve">
         <value>Schublade|Schubladen|Schubfach|Schubfächer|Fächer</value>
