@@ -23,8 +23,37 @@ internal static class CorridorMidEastPrerequisites
     
     private static void AddSurroundings(Location corridor)
     {
-        corridor.Surroundings.Add(Keys.CORRIDOR_PAINTING, () => Descriptions.CORRIDOR_PAINTING_MIDEAST);
-        corridor.Surroundings.Add(Keys.CEILING, () => Descriptions.CEILING);
-        corridor.Surroundings.Add(Keys.CORRIDOR_WALLS, () => Descriptions.CORRIDOR_WALLS);
+        var ceiling = new Item()
+        {
+            Key = Keys.CEILING,
+            Name = Items.CEILING,
+            Description = Descriptions.CEILING,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        corridor.Items.Add(ceiling);
+        
+        var wall = new Item()
+        {
+            Key = Keys.CORRIDOR_WALLS,
+            Name = Items.CORRIDOR_WALLS,
+            Description = Descriptions.CORRIDOR_WALLS,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        corridor.Items.Add(wall);
+        
+        var painting = new Item()
+        {
+            Key = Keys.CORRIDOR_PAINTING,
+            Name = Items.CORRIDOR_PAINTING,
+            Description = Descriptions.CORRIDOR_PAINTING_MIDEAST,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Neutrum)
+        };
+        corridor.Items.Add(painting);
     }
 }

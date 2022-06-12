@@ -23,14 +23,103 @@ internal static class CorridorMidWestPrerequisites
 
     private static void AddSurroundings(Location corridor)
     {
-        corridor.Surroundings.Add(Keys.BULKHEAD, () => Descriptions.BULKHEAD);
-        corridor.Surroundings.Add(Keys.BULKHEAD_WINDOW, () => Descriptions.BULKHEAD_WINDOW);
-        corridor.Surroundings.Add(Keys.CORRIDOR_PAINTING, () => Descriptions.CORRIDOR_PAINTING_MIDWEST);
-        corridor.Surroundings.Add(Keys.CEILING, () => Descriptions.CEILING);
-        corridor.Surroundings.Add(Keys.CORRIDOR_WALLS, () => Descriptions.CORRIDOR_WALLS);
-        corridor.Surroundings.Add(Keys.HOLE, () => Descriptions.HOLE);
-        corridor.Surroundings.Add(Keys.SIDEWALL, () => Descriptions.SIDEWALL);
-        corridor.Surroundings.Add(Keys.CREWCHAMBERS, () => Descriptions.CREWCHAMBERS);
-        corridor.Surroundings.Add(Keys.CREW_DOORS, () => Descriptions.CREW_DOORS);
+        var ceiling = new Item()
+        {
+            Key = Keys.CEILING,
+            Name = Items.CEILING,
+            Description = Descriptions.CEILING,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        corridor.Items.Add(ceiling);
+        
+        var wall = new Item()
+        {
+            Key = Keys.CORRIDOR_WALLS,
+            Name = Items.CORRIDOR_WALLS,
+            Description = Descriptions.CORRIDOR_WALLS,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        corridor.Items.Add(wall);
+        
+        var painting = new Item()
+        {
+            Key = Keys.CORRIDOR_PAINTING,
+            Name = Items.CORRIDOR_PAINTING,
+            Description = Descriptions.CORRIDOR_PAINTING_MIDWEST,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Neutrum)
+        };
+        corridor.Items.Add(painting);
+        
+        var bulkhead = new Item()
+        {
+            Key = Keys.BULKHEAD,
+            Name = Items.BULKHEAD,
+            Description = Descriptions.BULKHEAD,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Neutrum)
+        };
+        corridor.Items.Add(bulkhead);
+        
+        var bulkheadWindow = new Item()
+        {
+            Key = Keys.BULKHEAD_WINDOW,
+            Name = Items.BULKHEAD_WINDOW,
+            Description = Descriptions.BULKHEAD_WINDOW,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Neutrum)
+        };
+        corridor.Items.Add(bulkheadWindow);
+        
+        var hole = new Item()
+        {
+            Key = Keys.HOLE,
+            Name = Items.HOLE,
+            Description = Descriptions.HOLE,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Neutrum)
+        };
+        corridor.Items.Add(hole);
+        
+        var sideWall = new Item()
+        {
+            Key = Keys.SIDEWALL,
+            Name = Items.SIDEWALL,
+            Description = Descriptions.SIDEWALL,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        corridor.Items.Add(sideWall);
+        
+        var crewChambers = new Item()
+        {
+            Key = Keys.CREWCHAMBERS,
+            Name = Items.CREWCHAMBERS,
+            Description = Descriptions.CREWCHAMBERS,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(isSingular: false)
+        };
+        corridor.Items.Add(crewChambers);
+        
+        var crewDoors = new Item()
+        {
+            Key = Keys.CREW_DOORS,
+            Name = Items.CREW_DOORS,
+            Description = Descriptions.CREW_DOORS,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(isSingular: false)
+        };
+        corridor.Items.Add(crewDoors);
     }
 }

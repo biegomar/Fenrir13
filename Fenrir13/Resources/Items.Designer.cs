@@ -250,7 +250,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Schott|Abriegelung.
+        ///   Looks up a localized string similar to Schott.
         /// </summary>
         internal static string BULKHEAD {
             get {
@@ -376,7 +376,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bullaugen|Bullauge|Geöffnetes Bullauge.
+        ///   Looks up a localized string similar to Bullauge|Geöffnetes Bullauge.
         /// </summary>
         internal static string CORRIDOR_WEST_BULLEYE {
             get {
@@ -520,7 +520,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Notbeleuchtung|Notlicht|Beleuchtung|Licht.
+        ///   Looks up a localized string similar to Notbeleuchtung|Beleuchtung.
         /// </summary>
         internal static string EMERGENCY_LIGHT {
             get {
@@ -772,7 +772,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Grüne Pfeile|Grüner Pfeil|Pfeile|Pfeil.
+        ///   Looks up a localized string similar to Grüne Pfeile|Pfeile.
         /// </summary>
         internal static string GREEN_ARROWS {
             get {

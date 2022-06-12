@@ -38,10 +38,59 @@ internal static class CorridorMidPrerequisites
     
     private static void AddSurroundings(Location corridor)
     {
-        corridor.Surroundings.Add(Keys.CEILING, () => Descriptions.CEILING);
-        corridor.Surroundings.Add(Keys.CORRIDOR_WALLS, () => Descriptions.CORRIDOR_WALLS);
-        corridor.Surroundings.Add(Keys.ROOM_DOOR, () => Descriptions.ROOM_DOOR);
-        corridor.Surroundings.Add(Keys.ROUND_STAIRS, () => Descriptions.ROUND_STAIRS);
-        corridor.Surroundings.Add(Keys.STAIRS, () => Descriptions.STAIRS);
+        var ceiling = new Item()
+        {
+            Key = Keys.CEILING,
+            Name = Items.CEILING,
+            Description = Descriptions.CEILING,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        corridor.Items.Add(ceiling);
+        
+        var wall = new Item()
+        {
+            Key = Keys.CORRIDOR_WALLS,
+            Name = Items.CORRIDOR_WALLS,
+            Description = Descriptions.CORRIDOR_WALLS,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        corridor.Items.Add(wall);
+        
+        var door = new Item()
+        {
+            Key = Keys.ROOM_DOOR,
+            Name = Items.ROOM_DOOR,
+            Description = Descriptions.ROOM_DOOR,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        corridor.Items.Add(door);
+        
+        var stairs = new Item()
+        {
+            Key = Keys.STAIRS,
+            Name = Items.STAIRS,
+            Description = Descriptions.STAIRS,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        corridor.Items.Add(stairs);
+        
+        var roundStairs = new Item()
+        {
+            Key = Keys.ROUND_STAIRS,
+            Name = Items.ROUND_STAIRS,
+            Description = Descriptions.ROUND_STAIRS,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        corridor.Items.Add(roundStairs);
     }
 }

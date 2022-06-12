@@ -26,11 +26,70 @@ internal static class CorridorWestPrerequisites
     
     private static void AddSurroundings(Location corridor)
     {
-        corridor.Surroundings.Add(Keys.CORRIDOR_PAINTING, () => Descriptions.CORRIDOR_PAINTING_WEST);
-        corridor.Surroundings.Add(Keys.CEILING, () => Descriptions.CEILING);
-        corridor.Surroundings.Add(Keys.CORRIDOR_WALLS, () => Descriptions.CORRIDOR_WALLS);
-        corridor.Surroundings.Add(Keys.CORRIDOR_WEST_HOLE, () => Descriptions.CORRIDOR_WEST_HOLE);
-        corridor.Surroundings.Add(Keys.CORRIDOR_WEST_WELD_SEAM, () => Descriptions.CORRIDOR_WEST_WELD_SEAM);
-        corridor.Surroundings.Add(Keys.CORRIDOR_WEST_BULLEYE, () => Descriptions.CORRIDOR_WEST_BULLEYE);
+        var ceiling = new Item()
+        {
+            Key = Keys.CEILING,
+            Name = Items.CEILING,
+            Description = Descriptions.CEILING,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        corridor.Items.Add(ceiling);
+        
+        var wall = new Item()
+        {
+            Key = Keys.CORRIDOR_WALLS,
+            Name = Items.CORRIDOR_WALLS,
+            Description = Descriptions.CORRIDOR_WALLS,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        corridor.Items.Add(wall);
+        
+        var painting = new Item()
+        {
+            Key = Keys.CORRIDOR_PAINTING,
+            Name = Items.CORRIDOR_PAINTING,
+            Description = Descriptions.CORRIDOR_PAINTING_WEST,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Neutrum)
+        };
+        corridor.Items.Add(painting);
+        
+        var hole = new Item()
+        {
+            Key = Keys.CORRIDOR_WEST_HOLE,
+            Name = Items.CORRIDOR_WEST_HOLE,
+            Description = Descriptions.CORRIDOR_WEST_HOLE,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Neutrum)
+        };
+        corridor.Items.Add(hole);
+        
+        var seam = new Item()
+        {
+            Key = Keys.CORRIDOR_WEST_WELD_SEAM,
+            Name = Items.CORRIDOR_WEST_WELD_SEAM,
+            Description = Descriptions.CORRIDOR_WEST_WELD_SEAM,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        corridor.Items.Add(seam);
+        
+        var bullEye = new Item()
+        {
+            Key = Keys.CORRIDOR_WEST_BULLEYE,
+            Name = Items.CORRIDOR_WEST_BULLEYE,
+            Description = Descriptions.CORRIDOR_WEST_BULLEYE,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(gender: Genders.Neutrum)
+        };
+        corridor.Items.Add(bullEye);
     }
 }

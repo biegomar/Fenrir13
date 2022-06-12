@@ -100,7 +100,7 @@
         <value>Crew-Kammer-2|Crew-Kammer2|Kammer-2|Kammer2|Crew-Raum 2|Crew-Raum2|Raum-2|Raum2</value>
     </data>
     <data name="BULKHEAD" xml:space="preserve">
-        <value>Schott|Abriegelung</value>
+        <value>Schott</value>
     </data>
     <data name="BULKHEAD_WINDOW" xml:space="preserve">
         <value>Sichtfenster|Glas|Fenster</value>
@@ -442,10 +442,10 @@
         <value>Standort</value>
     </data>
     <data name="GREEN_ARROWS" xml:space="preserve">
-        <value>Grüne Pfeile|Grüner Pfeil|Pfeile|Pfeil</value>
+        <value>Grüne Pfeile|Pfeile</value>
     </data>
     <data name="EMERGENCY_LIGHT" xml:space="preserve">
-        <value>Notbeleuchtung|Notlicht|Beleuchtung|Licht</value>
+        <value>Notbeleuchtung|Beleuchtung</value>
     </data>
     <data name="CREW_DOORS" xml:space="preserve">
         <value>Tür|Türen|Kammertür|Kammertüren|Crew-Kammern|Crew-Kammer|Crew Kammern|Crew Kammer|Kammern|Kammer|Crew-Kabinen|Crew-Kabine|Crewkabinen|Crewkabine|Kabinen|Kabine</value>
@@ -481,7 +481,7 @@
         <value>Schweißnaht</value>
     </data>
     <data name="CORRIDOR_WEST_BULLEYE" xml:space="preserve">
-        <value>Bullaugen|Bullauge|Geöffnetes Bullauge</value>
+        <value>Bullauge|Geöffnetes Bullauge</value>
     </data>
     <data name="SOCIALROOM_MEDIASERVER" xml:space="preserve">
         <value>Mediaserver</value>
