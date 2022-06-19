@@ -513,6 +513,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Das Gerüst bietet durch seine Gestaltung viele Möglichkeiten, um Übungen an ihm zu vollziehen..
+        /// </summary>
+        internal static string CLIMBING_FRAME {
+            get {
+                return ResourceManager.GetString("CLIMBING_FRAME", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Genug Platz für alle Dinge, die man während einer Reise in die entlegensten Winkel der Galaxie so braucht - auch wenn man die meiste Zeit der Reise schläft..
         /// </summary>
         internal static string CLOSET {
@@ -1624,7 +1633,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Tatsächlich siehst Du den Haken an der Wand. Das Tau ist daran befestigt..
+        ///   Looks up a localized string similar to Tatsächlich siehst Du die Halterung an der Wand. Das Tau ist daran befestigt..
         /// </summary>
         internal static string GYM_BRACKET {
             get {

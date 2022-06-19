@@ -142,7 +142,7 @@
         <value>Cardiostation|Cardiostationen|Cardio</value>
     </data>
     <data name="GYM_POWERSTATION" xml:space="preserve">
-        <value>Powerstation|Power|Gewichte|Gewicht</value>
+        <value>Powerstation|Power|Gewichte</value>
     </data>
     <data name="DUMBBELL_BAR" xml:space="preserve">
         <value>Hantelstange|Stange|Hantel</value>
@@ -412,16 +412,16 @@
         <value>Hantelscheiben|Hantelscheibe|Hantel</value>
     </data>
     <data name="GYM_ROPES" xml:space="preserve">
-        <value>Fitness-Tau|Seile|Seil|Fitnesstau|Tau</value>
+        <value>Fitness-Tau|Seil|Fitnesstau|Tau</value>
     </data>
     <data name="GYM_BRACKET" xml:space="preserve">
-        <value>Halterung|Haken|Wandhaken</value>
+        <value>Halterung|Wand-Halterung|Wandhalterung</value>
     </data>
     <data name="GYM_SANDBAG" xml:space="preserve">
-        <value>Sandsäcke|Sandsack|Säcke|Sack|Power Bag</value>
+        <value>Sandsäcke|Säcke|Power Bags|Power-Bags</value>
     </data>
     <data name="GYM_LOOP" xml:space="preserve">
-        <value>Schlaufen|Schlaufe|Griff|Griffe</value>
+        <value>Schlaufen|Griffe</value>
     </data>
     <data name="FELT" xml:space="preserve">
         <value>Filzstoff|Filz</value>
@@ -533,5 +533,8 @@
     </data>
     <data name="AMBULANCE_MEDIS_CABINET" xml:space="preserve">
         <value>Medizinschrank|Medischrank</value>
+    </data>
+    <data name="CLIMBING_FRAME" xml:space="preserve">
+        <value>Klettergerüst|Gerüst</value>
     </data>
 </root>

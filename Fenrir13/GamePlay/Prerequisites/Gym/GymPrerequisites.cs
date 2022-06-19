@@ -25,23 +25,194 @@ internal static class GymPrerequisites
         return gym;
     }
     
-    private static void AddSurroundings(Location gym)
+    private static void AddSurroundings(Location location)
     {
-        gym.Surroundings.Add(Keys.CARDIO_STATION, () => Descriptions.CARDIO_STATION);
-        gym.Surroundings.Add(Keys.GYM_POWERSTATION, () => Descriptions.GYM_POWERSTATION);
-        gym.Surroundings.Add(Keys.EXERCISE_AREA, () => Descriptions.EXERCISE_AREA);
-        gym.Surroundings.Add(Keys.BIKE, () => Descriptions.GYM_FLOSKEL);
-        gym.Surroundings.Add(Keys.CROSSTRAINER, () => Descriptions.GYM_FLOSKEL);
-        gym.Surroundings.Add(Keys.TREADMILL, () => Descriptions.GYM_FLOSKEL);
-        gym.Surroundings.Add(Keys.STEPPER, () => Descriptions.GYM_FLOSKEL);
-        gym.Surroundings.Add(Keys.FITNESSMACHINE, () => Descriptions.FITNESSMACHINE);
-        gym.Surroundings.Add(Keys.WORKOUTS, () => Descriptions.WORKOUTS);
-        gym.Surroundings.Add(Keys.CEILING, () => Descriptions.CEILING);
-        gym.Surroundings.Add(Keys.WEIGHT_PLATES, () => Descriptions.WEIGHT_PLATES);
-        gym.Surroundings.Add(Keys.GYM_ROPES, () => Descriptions.GYM_ROPES);
-        gym.Surroundings.Add(Keys.GYM_BRACKET, () => Descriptions.GYM_BRACKET);
-        gym.Surroundings.Add(Keys.GYM_SANDBAG, () => Descriptions.GYM_SANDBAG);
-        gym.Surroundings.Add(Keys.GYM_LOOP, () => Descriptions.GYM_LOOP);
+        var ceiling = new Item()
+        {
+            Key = Keys.CEILING,
+            Name = Items.CEILING,
+            Description = Descriptions.CEILING,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        location.Items.Add(ceiling);
+        
+        var wall = new Item()
+        {
+            Key = Keys.CHAMBER_WALL,
+            Name = Items.CHAMBER_WALL,
+            Description = Descriptions.CHAMBER_WALL,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        location.Items.Add(wall);
+        
+        var cardio = new Item()
+        {
+            Key = Keys.CARDIO_STATION,
+            Name = Items.CARDIO_STATION,
+            Description = Descriptions.CARDIO_STATION,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        location.Items.Add(cardio);
+        
+        var power = new Item()
+        {
+            Key = Keys.GYM_POWERSTATION,
+            Name = Items.GYM_POWERSTATION,
+            Description = Descriptions.GYM_POWERSTATION,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        location.Items.Add(power);
+        
+        var exercise = new Item()
+        {
+            Key = Keys.EXERCISE_AREA,
+            Name = Items.EXERCISE_AREA,
+            Description = Descriptions.EXERCISE_AREA,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(gender: Genders.Male)
+        };
+        location.Items.Add(exercise);
+        
+        var bike = new Item()
+        {
+            Key = Keys.BIKE,
+            Name = Items.BIKE,
+            Description = Descriptions.GYM_FLOSKEL,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(gender: Genders.Neutrum)
+        };
+        location.Items.Add(bike);
+        
+        var crossTrainer = new Item()
+        {
+            Key = Keys.CROSSTRAINER,
+            Name = Items.CROSSTRAINER,
+            Description = Descriptions.GYM_FLOSKEL,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(gender: Genders.Male)
+        };
+        location.Items.Add(crossTrainer);
+        
+        var treadMill = new Item()
+        {
+            Key = Keys.TREADMILL,
+            Name = Items.TREADMILL,
+            Description = Descriptions.GYM_FLOSKEL,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(gender: Genders.Neutrum)
+        };
+        location.Items.Add(treadMill);
+        
+        var stepper = new Item()
+        {
+            Key = Keys.STEPPER,
+            Name = Items.STEPPER,
+            Description = Descriptions.GYM_FLOSKEL,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(gender: Genders.Male)
+        };
+        location.Items.Add(stepper);
+        
+        var fitnessMachine = new Item()
+        {
+            Key = Keys.FITNESSMACHINE,
+            Name = Items.FITNESSMACHINE,
+            Description = Descriptions.FITNESSMACHINE,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(isSingular: false)
+        };
+        location.Items.Add(fitnessMachine);
+        
+        var workouts = new Item()
+        {
+            Key = Keys.WORKOUTS,
+            Name = Items.WORKOUTS,
+            Description = Descriptions.WORKOUTS,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        location.Items.Add(workouts);
+        
+        var weightPlates = new Item()
+        {
+            Key = Keys.WEIGHT_PLATES,
+            Name = Items.WEIGHT_PLATES,
+            Description = Descriptions.WEIGHT_PLATES,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(isSingular: false)
+        };
+        location.Items.Add(weightPlates);
+        
+        var ropes = new Item()
+        {
+            Key = Keys.GYM_ROPES,
+            Name = Items.GYM_ROPES,
+            Description = Descriptions.GYM_ROPES,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(gender: Genders.Neutrum, isSingular: false)
+        };
+        location.Items.Add(ropes);
+        
+        var climbingFrame = new Item()
+        {
+            Key = Keys.CLIMBING_FRAME,
+            Name = Items.CLIMBING_FRAME,
+            Description = Descriptions.CLIMBING_FRAME,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(gender: Genders.Neutrum)
+        };
+        location.Items.Add(climbingFrame);
+        
+        var bracket = new Item()
+        {
+            Key = Keys.GYM_BRACKET,
+            Name = Items.GYM_BRACKET,
+            Description = Descriptions.GYM_BRACKET,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        location.Items.Add(bracket);
+        
+        var sandBag = new Item()
+        {
+            Key = Keys.GYM_SANDBAG,
+            Name = Items.GYM_SANDBAG,
+            Description = Descriptions.GYM_SANDBAG,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(isSingular: false)
+        };
+        location.Items.Add(sandBag);
+        
+        var loop = new Item()
+        {
+            Key = Keys.GYM_LOOP,
+            Name = Items.GYM_LOOP,
+            Description = Descriptions.GYM_LOOP,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(isSingular: false)
+        };
+        location.Items.Add(loop);
     }
     
     private static Item GetDumbbellRack(EventProvider eventProvider)

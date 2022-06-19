@@ -322,6 +322,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Klettergerüst|Gerüst.
+        /// </summary>
+        internal static string CLIMBING_FRAME {
+            get {
+                return ResourceManager.GetString("CLIMBING_FRAME", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Schrank|Kleiderschrank.
         /// </summary>
         internal static string CLOSET {
@@ -781,7 +790,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Halterung|Haken|Wandhaken.
+        ///   Looks up a localized string similar to Halterung|Wand-Halterung|Wandhalterung.
         /// </summary>
         internal static string GYM_BRACKET {
             get {
@@ -790,7 +799,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Schlaufen|Schlaufe|Griff|Griffe.
+        ///   Looks up a localized string similar to Schlaufen|Griffe.
         /// </summary>
         internal static string GYM_LOOP {
             get {
@@ -799,7 +808,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Powerstation|Power|Gewichte|Gewicht.
+        ///   Looks up a localized string similar to Powerstation|Power|Gewichte.
         /// </summary>
         internal static string GYM_POWERSTATION {
             get {
@@ -808,7 +817,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Fitness-Tau|Seile|Seil|Fitnesstau|Tau.
+        ///   Looks up a localized string similar to Fitness-Tau|Seil|Fitnesstau|Tau.
         /// </summary>
         internal static string GYM_ROPES {
             get {
@@ -817,7 +826,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sandsäcke|Sandsack|Säcke|Sack|Power Bag.
+        ///   Looks up a localized string similar to Sandsäcke|Säcke|Power Bags|Power-Bags.
         /// </summary>
         internal static string GYM_SANDBAG {
             get {

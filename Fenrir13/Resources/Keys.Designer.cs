@@ -340,6 +340,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to CLIMBING_FRAME.
+        /// </summary>
+        internal static string CLIMBING_FRAME {
+            get {
+                return ResourceManager.GetString("CLIMBING_FRAME", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to CLOSET.
         /// </summary>
         internal static string CLOSET {

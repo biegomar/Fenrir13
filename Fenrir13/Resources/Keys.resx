@@ -600,4 +600,7 @@
     <data name="AMBULANCE_MEDIS_CABINET" xml:space="preserve">
         <value>AMBULANCE_MEDIS_CABINET</value>
     </data>
+    <data name="CLIMBING_FRAME" xml:space="preserve">
+        <value>CLIMBING_FRAME</value>
+    </data>
 </root>

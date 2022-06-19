@@ -912,7 +912,7 @@ Am Tag nach Deiner erfolgreichen Intervention sitzt Du mit der gesamten Crew zus
         <value>Ach komm schon. Das Tau ist was für starke Männer. Es ist 4 cm dick, 25 Meter lang und wiegt wohl so rund 16 Kilo. Das willst Du wirklich mitnehmen?</value>
     </data>
     <data name="GYM_BRACKET" xml:space="preserve">
-        <value>Tatsächlich siehst Du den Haken an der Wand. Das Tau ist daran befestigt.</value>
+        <value>Tatsächlich siehst Du die Halterung an der Wand. Das Tau ist daran befestigt.</value>
     </data>
     <data name="GYM_SANDBAG" xml:space="preserve">
         <value>Die Sandsäcke sind typische Power-Bags mit vielen angebrachten Schlaufen und Griffen, um sie vielseitig nutzen zu können. Sie sind sehr schwer, bestimmt über 30 Kilo und somit für Dich in jeglicher Hinsicht uninteressant.</value>
@@ -1095,5 +1095,8 @@ Der Punkt markiert den Reparatur-Droiden und er hat sein Dock auf dem Dach der B
     </data>
     <data name="AMBULANCE_MEDIS_CABINET" xml:space="preserve">
         <value>Ein rechteckiger Schrank mit einer abschließbaren Glastür, der mit einem roten Kreuz bedruckt ist und ziemlich prominent an der Wand aufgehängt ist. Durch die Scheibe kannst Du einige Medikamente erkennen.</value>
+    </data>
+    <data name="CLIMBING_FRAME" xml:space="preserve">
+        <value>Das Gerüst bietet durch seine Gestaltung viele Möglichkeiten, um Übungen an ihm zu vollziehen.</value>
     </data>
 </root>
