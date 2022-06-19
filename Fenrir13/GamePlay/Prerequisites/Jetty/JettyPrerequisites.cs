@@ -21,11 +21,50 @@ internal static class JettyPrerequisites
         return jetty;
     }
     
-    private static void AddSurroundings(Location jetty)
+    private static void AddSurroundings(Location location)
     {
-        jetty.Surroundings.Add(Keys.SPACE_LADDER, () => Descriptions.SPACE_LADDER);
-        jetty.Surroundings.Add(Keys.JETTY_HULL, () => Descriptions.JETTY_HULL);
-        jetty.Surroundings.Add(Keys.JETTY_SPACE, () => Descriptions.JETTY_SPACE);
-        jetty.Surroundings.Add(Keys.JETTY_ENGINE, () => Descriptions.JETTY_ENGINE);
+        var spaceLadder = new Item()
+        {
+            Key = Keys.SPACE_LADDER,
+            Name = Items.SPACE_LADDER,
+            Description = Descriptions.SPACE_LADDER,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        location.Items.Add(spaceLadder);
+        
+        var hull = new Item()
+        {
+            Key = Keys.JETTY_HULL,
+            Name = Items.JETTY_HULL,
+            Description = Descriptions.JETTY_HULL,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        location.Items.Add(hull);
+        
+        var space = new Item()
+        {
+            Key = Keys.JETTY_SPACE,
+            Name = Items.JETTY_SPACE,
+            Description = Descriptions.JETTY_SPACE,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        location.Items.Add(space);
+        
+        var engine = new Item()
+        {
+            Key = Keys.JETTY_ENGINE,
+            Name = Items.JETTY_ENGINE,
+            Description = Descriptions.JETTY_ENGINE,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(isSingular: false)
+        };
+        location.Items.Add(engine);
     }
 }

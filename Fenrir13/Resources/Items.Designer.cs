@@ -853,7 +853,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ionen-Strahlentriebwerke|Ionen Strahlentriebwerke|Strahlentriebwerke|Triebwerke|Ionen-Strahlentriebwerk|Ionen Strahlentriebwerk|Strahlentriebwerk|Triebwerk.
+        ///   Looks up a localized string similar to Ionen-Strahlentriebwerke|Ionen Strahlentriebwerke|Strahlentriebwerke|Triebwerke.
         /// </summary>
         internal static string JETTY_ENGINE {
             get {

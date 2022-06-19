@@ -511,7 +511,7 @@
         <value>All|Sternenhimmel|Sterne|Himmel|Alpha Centauri</value>
     </data>
     <data name="JETTY_ENGINE" xml:space="preserve">
-        <value>Ionen-Strahlentriebwerke|Ionen Strahlentriebwerke|Strahlentriebwerke|Triebwerke|Ionen-Strahlentriebwerk|Ionen Strahlentriebwerk|Strahlentriebwerk|Triebwerk</value>
+        <value>Ionen-Strahlentriebwerke|Ionen Strahlentriebwerke|Strahlentriebwerke|Triebwerke</value>
     </data>
     <data name="AIRLOCK_BULKHEAD" xml:space="preserve">
         <value>Schott</value>
