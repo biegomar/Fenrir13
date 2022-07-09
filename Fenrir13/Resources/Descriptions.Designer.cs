@@ -2006,6 +2006,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Oh man, echt keine Ahnung, welche Funktion diese Dinge alle haben..
+        /// </summary>
+        internal static string MAINTENANCE_ROOM_UTILS {
+            get {
+                return ResourceManager.GetString("MAINTENANCE_ROOM_UTILS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Genug Platz für einfache handwerkliche Tätigkeiten..
         /// </summary>
         internal static string MAINTENANCE_ROOM_WORKBENCH {

@@ -22,15 +22,95 @@ internal static class MaintenanceRoomPrerequisites
         return room;
     }
     
-    private static void AddSurroundings(Location room)
+    private static void AddSurroundings(Location location)
     {
-        room.Surroundings.Add(Keys.CEILING, () => Descriptions.CEILING);
-        room.Surroundings.Add(Keys.CHAMBER_WALL, () => Descriptions.CHAMBER_WALL);
-        room.Surroundings.Add(Keys.MAINTENANCE_ROOM_EAST_WALL, () => Descriptions.MAINTENANCE_ROOM_EAST_WALL);
-        room.Surroundings.Add(Keys.MAINTENANCE_ROOM_SHELF, () => Descriptions.MAINTENANCE_ROOM_SHELF);
-        room.Surroundings.Add(Keys.MAINTENANCE_ROOM_PLATE, () => Descriptions.MAINTENANCE_ROOM_PLATE);
-        room.Surroundings.Add(Keys.SIGNS_OF_USE, () => Descriptions.SIGNS_OF_USE);
-        room.Surroundings.Add(Keys.MAINTENANCE_ROOM_DRAWER_HANDLE, () => Descriptions.MAINTENANCE_ROOM_DRAWER_HANDLE);
+        var ceiling = new Item()
+        {
+            Key = Keys.CEILING,
+            Name = Items.CEILING,
+            Description = Descriptions.CEILING,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        location.Items.Add(ceiling);
+        
+        var wall = new Item()
+        {
+            Key = Keys.CHAMBER_WALL,
+            Name = Items.CHAMBER_WALL,
+            Description = Descriptions.CHAMBER_WALL,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        location.Items.Add(wall);
+        
+        var eastWall = new Item()
+        {
+            Key = Keys.MAINTENANCE_ROOM_EAST_WALL,
+            Name = Items.MAINTENANCE_ROOM_EAST_WALL,
+            Description = Descriptions.MAINTENANCE_ROOM_EAST_WALL,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        location.Items.Add(eastWall);
+        
+        var shelf = new Item()
+        {
+            Key = Keys.MAINTENANCE_ROOM_SHELF,
+            Name = Items.MAINTENANCE_ROOM_SHELF,
+            Description = Descriptions.MAINTENANCE_ROOM_SHELF,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        location.Items.Add(shelf);
+        
+        var utils = new Item()
+        {
+            Key = Keys.MAINTENANCE_ROOM_UTILS,
+            Name = Items.MAINTENANCE_ROOM_UTILS,
+            Description = Descriptions.MAINTENANCE_ROOM_UTILS,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(isSingular: false)
+        };
+        location.Items.Add(utils);
+        
+        var plate = new Item()
+        {
+            Key = Keys.MAINTENANCE_ROOM_PLATE,
+            Name = Items.MAINTENANCE_ROOM_PLATE,
+            Description = Descriptions.MAINTENANCE_ROOM_PLATE,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        location.Items.Add(plate);
+        
+        var signs = new Item()
+        {
+            Key = Keys.SIGNS_OF_USE,
+            Name = Items.SIGNS_OF_USE,
+            Description = Descriptions.SIGNS_OF_USE,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(isSingular: false)
+        };
+        location.Items.Add(signs);
+        
+        var handle = new Item()
+        {
+            Key = Keys.MAINTENANCE_ROOM_DRAWER_HANDLE,
+            Name = Items.MAINTENANCE_ROOM_DRAWER_HANDLE,
+            Description = Descriptions.MAINTENANCE_ROOM_DRAWER_HANDLE,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(isSingular: false)
+        };
+        location.Items.Add(handle);
     }
     
     private static Item GetWorkbench(EventProvider eventProvider)

@@ -463,13 +463,13 @@
         <value>Östliche Wand|Ost Wand</value>
     </data>
     <data name="MAINTENANCE_ROOM_SHELF" xml:space="preserve">
-        <value>Regal|Utensilien</value>
+        <value>Regal</value>
     </data>
     <data name="MAINTENANCE_ROOM_PLATE" xml:space="preserve">
         <value>Platte|Arbeitsplatte</value>
     </data>
     <data name="SIGNS_OF_USE" xml:space="preserve">
-        <value>Gebrauchsspuren|Spuren|Schnitte|Macken|Kerben|Gebrauchsspur|Spur|Macke|Kerbe</value>
+        <value>Gebrauchsspuren|Spuren|Schnitte|Macken|Kerben</value>
     </data>
     <data name="MAINTENANCE_ROOM_DRAWER_HANDLE" xml:space="preserve">
         <value>Griffe|Griff</value>
@@ -536,5 +536,8 @@
     </data>
     <data name="CLIMBING_FRAME" xml:space="preserve">
         <value>Klettergerüst|Gerüst</value>
+    </data>
+    <data name="MAINTENANCE_ROOM_UTILS" xml:space="preserve">
+        <value>Utensilien</value>
     </data>
 </root>

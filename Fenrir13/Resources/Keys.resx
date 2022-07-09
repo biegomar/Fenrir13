@@ -603,4 +603,7 @@
     <data name="CLIMBING_FRAME" xml:space="preserve">
         <value>CLIMBING_FRAME</value>
     </data>
+    <data name="MAINTENANCE_ROOM_UTILS" xml:space="preserve">
+        <value>MAINTENANCE_ROOM_UTILS</value>
+    </data>
 </root>

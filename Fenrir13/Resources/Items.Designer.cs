@@ -889,7 +889,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Beutelchen|Beutel|Kunststoff|Nahrungsbestandteile|Bestandteile.
+        ///   Looks up a localized string similar to Beutelchen|Beutel|Nahrungsbestandteile|Bestandteile.
         /// </summary>
         internal static string KITCHEN_FOOD_BAG {
             get {
@@ -961,7 +961,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Regal|Utensilien.
+        ///   Looks up a localized string similar to Regal.
         /// </summary>
         internal static string MAINTENANCE_ROOM_SHELF {
             get {
@@ -975,6 +975,15 @@ namespace Fenrir13.Resources {
         internal static string MAINTENANCE_ROOM_TOOL {
             get {
                 return ResourceManager.GetString("MAINTENANCE_ROOM_TOOL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Utensilien.
+        /// </summary>
+        internal static string MAINTENANCE_ROOM_UTILS {
+            get {
+                return ResourceManager.GetString("MAINTENANCE_ROOM_UTILS", resourceCulture);
             }
         }
         
@@ -1267,7 +1276,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Gebrauchsspuren|Spuren|Schnitte|Macken|Kerben|Gebrauchsspur|Spur|Macke|Kerbe.
+        ///   Looks up a localized string similar to Gebrauchsspuren|Spuren|Schnitte|Macken|Kerben.
         /// </summary>
         internal static string SIGNS_OF_USE {
             get {
