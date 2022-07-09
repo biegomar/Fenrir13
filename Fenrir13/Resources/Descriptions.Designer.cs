@@ -2928,6 +2928,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Der Blick ist gleichermaßen faszinierend und befremdlich. Keine der Konstellationen kommt Dir bekannt vor. Doch die Klarheit des Blicks lässt Dich das strahlende Band der Milchstraße erkennen, in der wir uns natürlich noch immer befinden..
+        /// </summary>
+        internal static string STARS {
+            get {
+                return ResourceManager.GetString("STARS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Auf dem Klebezettel steht nur ein Wort: {0}.
         /// </summary>
         internal static string STICKY_NOTE {
@@ -3095,6 +3104,15 @@ namespace Fenrir13.Resources {
         internal static string TRY_TO_TAKE_LAPTOP {
             get {
                 return ResourceManager.GetString("TRY_TO_TAKE_LAPTOP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Der Blick ist gleichermaßen faszinierend und befremdlich. Keine der Konstellationen kommt Dir bekannt vor. Doch die Klarheit des Blicks lässt Dich das strahlende Band der Milchstraße erkennen, in der wir uns natürlich noch immer befinden..
+        /// </summary>
+        internal static string UNIVERSE {
+            get {
+                return ResourceManager.GetString("UNIVERSE", resourceCulture);
             }
         }
         

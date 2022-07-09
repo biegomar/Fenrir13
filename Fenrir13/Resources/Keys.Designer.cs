@@ -1726,6 +1726,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to STARS.
+        /// </summary>
+        internal static string STARS {
+            get {
+                return ResourceManager.GetString("STARS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to STEPPER.
         /// </summary>
         internal static string STEPPER {
@@ -1776,6 +1785,15 @@ namespace Fenrir13.Resources {
         internal static string TREADMILL {
             get {
                 return ResourceManager.GetString("TREADMILL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to UNIVERSE.
+        /// </summary>
+        internal static string UNIVERSE {
+            get {
+                return ResourceManager.GetString("UNIVERSE", resourceCulture);
             }
         }
         

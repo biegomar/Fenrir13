@@ -1105,4 +1105,10 @@ Der Punkt markiert den Reparatur-Droiden und er hat sein Dock auf dem Dach der B
     <data name="JETTY_ALPHA" xml:space="preserve">
         <value>Der Blick ist gleichermaßen faszinierend und befremdlich. Keine der Konstellationen kommt Dir bekannt vor. Doch die Klarheit des Blicks lässt Dich das strahlende Band der Milchstraße erkennen, in der wir uns natürlich noch immer befinden.</value>
     </data>
+    <data name="UNIVERSE" xml:space="preserve">
+        <value>Der Blick ist gleichermaßen faszinierend und befremdlich. Keine der Konstellationen kommt Dir bekannt vor. Doch die Klarheit des Blicks lässt Dich das strahlende Band der Milchstraße erkennen, in der wir uns natürlich noch immer befinden.</value>
+    </data>
+    <data name="STARS" xml:space="preserve">
+        <value>Der Blick ist gleichermaßen faszinierend und befremdlich. Keine der Konstellationen kommt Dir bekannt vor. Doch die Klarheit des Blicks lässt Dich das strahlende Band der Milchstraße erkennen, in der wir uns natürlich noch immer befinden.</value>
+    </data>
 </root>

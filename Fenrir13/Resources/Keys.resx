@@ -609,4 +609,10 @@
     <data name="JETTY_ALPHA" xml:space="preserve">
         <value>JETTY_ALPHA</value>
     </data>
+    <data name="UNIVERSE" xml:space="preserve">
+        <value>UNIVERSE</value>
+    </data>
+    <data name="STARS" xml:space="preserve">
+        <value>STARS</value>
+    </data>
 </root>

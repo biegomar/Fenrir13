@@ -114,9 +114,20 @@ internal static class PanelTopPrerequisites
             Description = Descriptions.JETTY_SPACE,
             IsSurrounding = true,
             IsPickAble = false,
-            Grammar = new Grammars()
+            Grammar = new Grammars(Genders.Male)
         };
         location.Items.Add(space);
+        
+        var stars = new Item()
+        {
+            Key = Keys.STARS,
+            Name = Items.STARS,
+            Description = Descriptions.STARS,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Male, isSingular: false)
+        };
+        location.Items.Add(stars);
         
         var alphaCentauri = new Item()
         {
@@ -128,6 +139,17 @@ internal static class PanelTopPrerequisites
             Grammar = new Grammars(Genders.Neutrum, isSingular: false)
         };
         location.Items.Add(alphaCentauri);
+        
+        var universe = new Item()
+        {
+            Key = Keys.UNIVERSE,
+            Name = Items.UNIVERSE,
+            Description = Descriptions.UNIVERSE,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Neutrum)
+        };
+        location.Items.Add(universe);
     }
     
     private static void AddPullEvents(Item item, EventProvider eventProvider)

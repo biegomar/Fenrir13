@@ -880,7 +880,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to All|Sternenhimmel|Sterne|Himmel.
+        ///   Looks up a localized string similar to Sternenhimmel|Himmel.
         /// </summary>
         internal static string JETTY_SPACE {
             get {
@@ -1204,7 +1204,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Proxima Centauri|Roter Zwerg|Proxima|Centauri.
+        ///   Looks up a localized string similar to Proxima Centauri|Proxima|Centauri.
         /// </summary>
         internal static string PROXIMA_CENTAURI {
             get {
@@ -1528,6 +1528,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Sterne.
+        /// </summary>
+        internal static string STARS {
+            get {
+                return ResourceManager.GetString("STARS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Stepper.
         /// </summary>
         internal static string STEPPER {
@@ -1578,6 +1587,15 @@ namespace Fenrir13.Resources {
         internal static string TREADMILL {
             get {
                 return ResourceManager.GetString("TREADMILL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to All|Universum.
+        /// </summary>
+        internal static string UNIVERSE {
+            get {
+                return ResourceManager.GetString("UNIVERSE", resourceCulture);
             }
         }
         

@@ -391,7 +391,7 @@
         <value>Klamotten|Kleidung|Strickjacke|Kleidungsstücke|Kleidungsstück</value>
     </data>
     <data name="PROXIMA_CENTAURI" xml:space="preserve">
-        <value>Proxima Centauri|Roter Zwerg|Proxima|Centauri</value>
+        <value>Proxima Centauri|Proxima|Centauri</value>
     </data>
     <data name="CORRIDOR_WALLS" xml:space="preserve">
         <value>Wände|Wand</value>
@@ -508,7 +508,7 @@
         <value>Hülle|Rückseite</value>
     </data>
     <data name="JETTY_SPACE" xml:space="preserve">
-        <value>All|Sternenhimmel|Sterne|Himmel</value>
+        <value>Sternenhimmel|Himmel</value>
     </data>
     <data name="JETTY_ENGINE" xml:space="preserve">
         <value>Ionen-Strahlentriebwerke|Ionen Strahlentriebwerke|Strahlentriebwerke|Triebwerke</value>
@@ -542,5 +542,11 @@
     </data>
     <data name="JETTY_ALPHA" xml:space="preserve">
         <value>Alpha Centauri</value>
+    </data>
+    <data name="UNIVERSE" xml:space="preserve">
+        <value>All|Universum</value>
+    </data>
+    <data name="STARS" xml:space="preserve">
+        <value>Sterne</value>
     </data>
 </root>
