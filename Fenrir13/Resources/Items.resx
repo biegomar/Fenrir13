@@ -523,7 +523,7 @@
         <value>Krallen|Kralle</value>
     </data>
     <data name="KITCHEN_FOOD_BAG" xml:space="preserve">
-        <value>Beutelchen|Beutel|Kunststoff|Nahrungsbestandteile|Bestandteile</value>
+        <value>Beutelchen|Beutel|Nahrungsbestandteile|Bestandteile</value>
     </data>
     <data name="AMBULANCE_OXYGEN_HOSE" xml:space="preserve">
         <value>Schläuche</value>

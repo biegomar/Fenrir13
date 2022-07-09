@@ -26,15 +26,84 @@ internal static class KitchenPrerequisites
         return kitchen;
     }
 
-    private static void AddSurroundings(Location kitchen)
+    private static void AddSurroundings(Location location)
     {
-        kitchen.Surroundings.Add(Keys.CEILING, () => Descriptions.CEILING);
-        kitchen.Surroundings.Add(Keys.CHAMBER_FLOOR, () => Descriptions.CHAMBER_FLOOR);
-        kitchen.Surroundings.Add(Keys.CHAMBER_WALL, () => Descriptions.CHAMBER_WALL);
-        kitchen.Surroundings.Add(Keys.TABLE, () => Descriptions.TABLE);
-        kitchen.Surroundings.Add(Keys.CHAIR, () => Descriptions.CHAIR);
-        kitchen.Surroundings.Add(Keys.KITCHEN_CABINET, () => Descriptions.KITCHEN_CABINET);
-        kitchen.Surroundings.Add(Keys.KITCHEN_FOOD_BAG, () => Descriptions.KITCHEN_FOOD_BAG);
+        var ceiling = new Item()
+        {
+            Key = Keys.CEILING,
+            Name = Items.CEILING,
+            Description = Descriptions.CEILING,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        location.Items.Add(ceiling);
+        
+        var wall = new Item()
+        {
+            Key = Keys.CHAMBER_WALL,
+            Name = Items.CHAMBER_WALL,
+            Description = Descriptions.CHAMBER_WALL,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        location.Items.Add(wall);
+        
+        var floor = new Item()
+        {
+            Key = Keys.CHAMBER_FLOOR,
+            Name = Items.CHAMBER_FLOOR,
+            Description = Descriptions.CHAMBER_FLOOR,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Male)
+        };
+        location.Items.Add(floor);
+        
+        var table = new Item()
+        {
+            Key = Keys.TABLE,
+            Name = Items.TABLE,
+            Description = Descriptions.TABLE,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Male)
+        };
+        location.Items.Add(table);
+        
+        var chair = new Item()
+        {
+            Key = Keys.CHAIR,
+            Name = Items.CHAIR,
+            Description = Descriptions.CHAIR,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Male)
+        };
+        location.Items.Add(chair);
+        
+        var cabinet = new Item()
+        {
+            Key = Keys.KITCHEN_CABINET,
+            Name = Items.KITCHEN_CABINET,
+            Description = Descriptions.KITCHEN_CABINET,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Male)
+        };
+        location.Items.Add(cabinet);
+        
+        var foodBag = new Item()
+        {
+            Key = Keys.KITCHEN_FOOD_BAG,
+            Name = Items.KITCHEN_FOOD_BAG,
+            Description = Descriptions.KITCHEN_FOOD_BAG,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Male, isSingular: false)
+        };
+        location.Items.Add(foodBag);
     }
 
     private static Item GetFridge(EventProvider eventProvider)
