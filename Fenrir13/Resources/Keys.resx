@@ -606,4 +606,7 @@
     <data name="MAINTENANCE_ROOM_UTILS" xml:space="preserve">
         <value>MAINTENANCE_ROOM_UTILS</value>
     </data>
+    <data name="JETTY_ALPHA" xml:space="preserve">
+        <value>JETTY_ALPHA</value>
+    </data>
 </root>

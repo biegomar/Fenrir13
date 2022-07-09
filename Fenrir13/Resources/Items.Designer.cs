@@ -853,6 +853,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Alpha Centauri.
+        /// </summary>
+        internal static string JETTY_ALPHA {
+            get {
+                return ResourceManager.GetString("JETTY_ALPHA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Ionen-Strahlentriebwerke|Ionen Strahlentriebwerke|Strahlentriebwerke|Triebwerke.
         /// </summary>
         internal static string JETTY_ENGINE {
@@ -871,7 +880,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to All|Sternenhimmel|Sterne|Himmel|Alpha Centauri.
+        ///   Looks up a localized string similar to All|Sternenhimmel|Sterne|Himmel.
         /// </summary>
         internal static string JETTY_SPACE {
             get {
@@ -1096,7 +1105,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Wolfskopf|Wolf|Kopf|Steuerbordseite|Cargo-Bereich.
+        ///   Looks up a localized string similar to Wolfskopf|Wolf|Kopf|Cargo-Bereich.
         /// </summary>
         internal static string PANEL_TOP_WOLF {
             get {

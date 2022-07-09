@@ -1762,6 +1762,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Der Blick ist gleichermaßen faszinierend und befremdlich. Keine der Konstellationen kommt Dir bekannt vor. Doch die Klarheit des Blicks lässt Dich das strahlende Band der Milchstraße erkennen, in der wir uns natürlich noch immer befinden..
+        /// </summary>
+        internal static string JETTY_ALPHA {
+            get {
+                return ResourceManager.GetString("JETTY_ALPHA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Die riesigen Triebwerke sind ein Wunder der Technik an sich. Du hast überhaupt keine Ahnung, wie sie funktionieren..
         /// </summary>
         internal static string JETTY_ENGINE {

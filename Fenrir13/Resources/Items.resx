@@ -490,7 +490,7 @@
         <value>Metallummantelte Versorgungsleitung|Ummantelte Versorgungsleitung|Versorgungsleitung|Metallummantelte Leitung|Ummantelte Leitung|Leitung|Metallummantelte Versorgungsleitungen|Ummantelte Versorgungsleitungen|Versorgungsleitungen|Metallummantelte Leitungen|Ummantelte Leitungen|Leitungen</value>
     </data>
     <data name="PANEL_TOP_WOLF" xml:space="preserve">
-        <value>Wolfskopf|Wolf|Kopf|Steuerbordseite|Cargo-Bereich</value>
+        <value>Wolfskopf|Wolf|Kopf|Cargo-Bereich</value>
     </data>
     <data name="PANEL_TOP_LAMPS" xml:space="preserve">
         <value>Lampen|Lampe|Kontrollleuchten|Kontrollleuchte</value>
@@ -508,7 +508,7 @@
         <value>Hülle|Rückseite</value>
     </data>
     <data name="JETTY_SPACE" xml:space="preserve">
-        <value>All|Sternenhimmel|Sterne|Himmel|Alpha Centauri</value>
+        <value>All|Sternenhimmel|Sterne|Himmel</value>
     </data>
     <data name="JETTY_ENGINE" xml:space="preserve">
         <value>Ionen-Strahlentriebwerke|Ionen Strahlentriebwerke|Strahlentriebwerke|Triebwerke</value>
@@ -539,5 +539,8 @@
     </data>
     <data name="MAINTENANCE_ROOM_UTILS" xml:space="preserve">
         <value>Utensilien</value>
+    </data>
+    <data name="JETTY_ALPHA" xml:space="preserve">
+        <value>Alpha Centauri</value>
     </data>
 </root>

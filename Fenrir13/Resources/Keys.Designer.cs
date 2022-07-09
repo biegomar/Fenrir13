@@ -988,6 +988,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to JETTY_ALPHA.
+        /// </summary>
+        internal static string JETTY_ALPHA {
+            get {
+                return ResourceManager.GetString("JETTY_ALPHA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to JETTY_ENGINE.
         /// </summary>
         internal static string JETTY_ENGINE {

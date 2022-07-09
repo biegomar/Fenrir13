@@ -56,6 +56,17 @@ internal static class JettyPrerequisites
         };
         location.Items.Add(space);
         
+        var alphaCentauri = new Item()
+        {
+            Key = Keys.JETTY_ALPHA,
+            Name = Items.JETTY_ALPHA,
+            Description = Descriptions.JETTY_ALPHA,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Neutrum, isSingular: false)
+        };
+        location.Items.Add(alphaCentauri);
+        
         var engine = new Item()
         {
             Key = Keys.JETTY_ENGINE,
