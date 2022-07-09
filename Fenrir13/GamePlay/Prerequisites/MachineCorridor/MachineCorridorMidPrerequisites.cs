@@ -24,8 +24,17 @@ internal static class MachineCorridorMidPrerequisites
         return corridor;
     }
     
-    private static void AddSurroundings(Location corridor)
+    private static void AddSurroundings(Location location)
     {
-        corridor.Surroundings.Add(Keys.CEILING, () => Descriptions.CEILING);
+        var ceiling = new Item()
+        {
+            Key = Keys.CEILING,
+            Name = Items.CEILING,
+            Description = Descriptions.CEILING,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        location.Items.Add(ceiling);
     }
 }
