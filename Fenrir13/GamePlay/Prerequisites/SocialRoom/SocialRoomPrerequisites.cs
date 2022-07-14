@@ -28,28 +28,226 @@ public class SocialRoomPrerequisites
         return socialRoom;
     }
 
-    private static void AddSurroundings(Location socialRoom)
+    private static void AddSurroundings(Location location)
     {
-        socialRoom.Surroundings.Add(Keys.SOCIALROOM_CEILING, () => Descriptions.SOCIALROOM_CEILING);
-        socialRoom.Surroundings.Add(Keys.SOCIALROOM_MONITOR, () => Descriptions.SOCIALROOM_MONITOR);
-        socialRoom.Surroundings.Add(Keys.SOCIALROOM_SEAT, () => Descriptions.SOCIALROOM_SEAT);
-        socialRoom.Surroundings.Add(Keys.SOCIALROOM_EAST_WALL, () => Descriptions.SOCIALROOM_EAST_WEST_WALL);
-        socialRoom.Surroundings.Add(Keys.SOCIALROOM_WEST_WALL, () => Descriptions.SOCIALROOM_EAST_WEST_WALL);
-        socialRoom.Surroundings.Add(Keys.SOCIALROOM_SOUTH_WALL, () => Descriptions.SOCIALROOM_SOUTH_WALL);
-        socialRoom.Surroundings.Add(Keys.SOCIALROOM_NORTH_WALL, () => Descriptions.SOCIALROOM_NORTH_WALL);
-        socialRoom.Surroundings.Add(Keys.SOCIALROOM_WALL, () => Descriptions.SOCIALROOM_WALL);
-        socialRoom.Surroundings.Add(Keys.SOCIALROOM_SEATGROUP, () => Descriptions.SOCIALROOM_SEATGROUP);
-        socialRoom.Surroundings.Add(Keys.SOCIALROOM_BILLARD, () => Descriptions.SOCIALROOM_BILLARD);
-        socialRoom.Surroundings.Add(Keys.SOCIALROOM_BILLARD_CUE, () => Descriptions.SOCIALROOM_BILLARD_CUE);
-        socialRoom.Surroundings.Add(Keys.SOCIALROOM_BILLARD_BALLS, () => Descriptions.SOCIALROOM_BILLARD_BALLS);
-        socialRoom.Surroundings.Add(Keys.SOCIALROOM_BILLARD_BRUSH, () => Descriptions.SOCIALROOM_BILLARD_BRUSH);
-        socialRoom.Surroundings.Add(Keys.SOCIALROOM_BILLARD_CHALK, () => Descriptions.SOCIALROOM_BILLARD_CHALK);
-        socialRoom.Surroundings.Add(Keys.SOCIALROOM_BILLARD_THINGS, () => Descriptions.SOCIALROOM_BILLARD_THINGS);
-        socialRoom.Surroundings.Add(Keys.SOCIALROOM_BILLARD_TRIANGLE, () => Descriptions.SOCIALROOM_BILLARD_TRIANGLE);
-        socialRoom.Surroundings.Add(Keys.SOCIALROOM_DARTS, () => Descriptions.SOCIALROOM_DARTS);
-        socialRoom.Surroundings.Add(Keys.SOCIALROOM_GLASS_TABLE, () => Descriptions.SOCIALROOM_GLASS_TABLE);
-        socialRoom.Surroundings.Add(Keys.SOCIALROOM_MEDIASERVER, () => Descriptions.SOCIALROOM_MEDIASERVER);
-        socialRoom.Surroundings.Add(Keys.SOCIALROOM_BOOKS, () => string.Format(Descriptions.SOCIALROOM_BOOKS, GetBookTitle()));
+        var ceiling = new Item()
+        {
+            Key = Keys.SOCIALROOM_CEILING,
+            Name = Items.SOCIALROOM_CEILING,
+            Description = Descriptions.SOCIALROOM_CEILING,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        location.Items.Add(ceiling);
+        
+        var monitor = new Item()
+        {
+            Key = Keys.SOCIALROOM_MONITOR,
+            Name = Items.SOCIALROOM_MONITOR,
+            Description = Descriptions.SOCIALROOM_MONITOR,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Male)
+        };
+        location.Items.Add(monitor);
+        
+        var seat = new Item()
+        {
+            Key = Keys.SOCIALROOM_SEAT,
+            Name = Items.SOCIALROOM_SEAT,
+            Description = Descriptions.SOCIALROOM_SEAT,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Male)
+        };
+        location.Items.Add(seat);
+        
+        var eastWall = new Item()
+        {
+            Key = Keys.SOCIALROOM_EAST_WALL,
+            Name = Items.SOCIALROOM_EAST_WALL,
+            Description = Descriptions.SOCIALROOM_EAST_WEST_WALL,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        location.Items.Add(eastWall);
+        
+        var westWall = new Item()
+        {
+            Key = Keys.SOCIALROOM_WEST_WALL,
+            Name = Items.SOCIALROOM_WEST_WALL,
+            Description = Descriptions.SOCIALROOM_EAST_WEST_WALL,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        location.Items.Add(westWall);
+        
+        var southWall = new Item()
+        {
+            Key = Keys.SOCIALROOM_SOUTH_WALL,
+            Name = Items.SOCIALROOM_SOUTH_WALL,
+            Description = Descriptions.SOCIALROOM_SOUTH_WALL,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        location.Items.Add(southWall);
+        
+        var northWall = new Item()
+        {
+            Key = Keys.SOCIALROOM_NORTH_WALL,
+            Name = Items.SOCIALROOM_NORTH_WALL,
+            Description = Descriptions.SOCIALROOM_NORTH_WALL,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        location.Items.Add(northWall);
+        
+        var wall = new Item()
+        {
+            Key = Keys.SOCIALROOM_WALL,
+            Name = Items.SOCIALROOM_WALL,
+            Description = Descriptions.SOCIALROOM_WALL,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        location.Items.Add(wall);
+        
+        var seatGroup = new Item()
+        {
+            Key = Keys.SOCIALROOM_SEATGROUP,
+            Name = Items.SOCIALROOM_SEATGROUP,
+            Description = Descriptions.SOCIALROOM_SEATGROUP,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        location.Items.Add(seatGroup);
+
+        var billardCue = new Item()
+        {
+            Key = Keys.SOCIALROOM_BILLARD_CUE,
+            Name = Items.SOCIALROOM_BILLARD_CUE,
+            Description = Descriptions.SOCIALROOM_BILLARD_CUE,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Male)
+        };
+        location.Items.Add(billardCue);
+        
+        var billardBalls = new Item()
+        {
+            Key = Keys.SOCIALROOM_BILLARD_BALLS,
+            Name = Items.SOCIALROOM_BILLARD_BALLS,
+            Description = Descriptions.SOCIALROOM_BILLARD_BALLS,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(isSingular: false)
+        };
+        location.Items.Add(billardBalls);
+        
+        var billardBrush = new Item()
+        {
+            Key = Keys.SOCIALROOM_BILLARD_BRUSH,
+            Name = Items.SOCIALROOM_BILLARD_BRUSH,
+            Description = Descriptions.SOCIALROOM_BILLARD_BRUSH,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        location.Items.Add(billardBrush);
+        
+        var billardChalk = new Item()
+        {
+            Key = Keys.SOCIALROOM_BILLARD_CHALK,
+            Name = Items.SOCIALROOM_BILLARD_CHALK,
+            Description = Descriptions.SOCIALROOM_BILLARD_CHALK,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        location.Items.Add(billardChalk);
+        
+        var billardThings = new Item()
+        {
+            Key = Keys.SOCIALROOM_BILLARD_THINGS,
+            Name = Items.SOCIALROOM_BILLARD_THINGS,
+            Description = Descriptions.SOCIALROOM_BILLARD_THINGS,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        location.Items.Add(billardThings);
+        
+        var billardTriangle = new Item()
+        {
+            Key = Keys.SOCIALROOM_BILLARD_TRIANGLE,
+            Name = Items.SOCIALROOM_BILLARD_TRIANGLE,
+            Description = Descriptions.SOCIALROOM_BILLARD_TRIANGLE,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Neutrum)
+        };
+        location.Items.Add(billardTriangle);
+        
+        var billard = new Item()
+        {
+            Key = Keys.SOCIALROOM_BILLARD,
+            Name = Items.SOCIALROOM_BILLARD,
+            Description = Descriptions.SOCIALROOM_BILLARD,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Male)
+        };
+        location.Items.Add(billard);
+        
+        var darts = new Item()
+        {
+            Key = Keys.SOCIALROOM_DARTS,
+            Name = Items.SOCIALROOM_DARTS,
+            Description = Descriptions.SOCIALROOM_DARTS,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        location.Items.Add(darts);
+        
+        var glassTable = new Item()
+        {
+            Key = Keys.SOCIALROOM_GLASS_TABLE,
+            Name = Items.SOCIALROOM_GLASS_TABLE,
+            Description = Descriptions.SOCIALROOM_GLASS_TABLE,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Male)
+        };
+        location.Items.Add(glassTable);
+        
+        var mediaServer = new Item()
+        {
+            Key = Keys.SOCIALROOM_MEDIASERVER,
+            Name = Items.SOCIALROOM_MEDIASERVER,
+            Description = Descriptions.SOCIALROOM_MEDIASERVER,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Male)
+        };
+        location.Items.Add(mediaServer);
+        
+        var books = new Item(() => string.Format(Descriptions.SOCIALROOM_BOOKS, GetBookTitle()))
+        {
+            Key = Keys.SOCIALROOM_BOOKS,
+            Name = Items.SOCIALROOM_BOOKS,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Neutrum)
+        };
+        location.Items.Add(books);
     }
 
     private static string GetBookTitle()

@@ -322,7 +322,7 @@
         <value>Billardtisch</value>
     </data>
     <data name="SOCIALROOM_DARTS" xml:space="preserve">
-        <value>Dartscheibe|Darts|Dart|Pfeile|Pfeil</value>
+        <value>Dartscheibe|Darts|Dart|Pfeile</value>
     </data>
     <data name="SOCIALROOM_BILLARD_THINGS" xml:space="preserve">
         <value>Wandhalterung</value>

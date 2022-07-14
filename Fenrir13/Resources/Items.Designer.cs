@@ -1402,7 +1402,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Dartscheibe|Darts|Dart|Pfeile|Pfeil.
+        ///   Looks up a localized string similar to Dartscheibe|Darts|Dart|Pfeile.
         /// </summary>
         internal static string SOCIALROOM_DARTS {
             get {
