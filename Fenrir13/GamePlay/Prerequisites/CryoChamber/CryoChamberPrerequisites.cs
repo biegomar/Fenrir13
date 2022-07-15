@@ -20,14 +20,10 @@ internal static class CryoChamberPrerequisites
         cryoChamber.Items.Add(GetChocolateBar(eventProvider));
         cryoChamber.Items.Add(GetSpaceSuite(eventProvider));
 
-        AddSurroundings(cryoChamber);
-
-        AddAfterLookEvents(cryoChamber, eventProvider);
+        AddSurroundings(cryoChamber, eventProvider);
 
         AddChangeLocationEvents(cryoChamber, eventProvider);
 
-        AddAfterOpenEvents(cryoChamber, eventProvider);
-        
         AddSitDownEvents(cryoChamber, eventProvider);
         
         AddTakeEvents(cryoChamber, eventProvider);
@@ -71,7 +67,7 @@ internal static class CryoChamberPrerequisites
         return spaceSuite;
     }
 
-    private static void AddSurroundings(Location location)
+    private static void AddSurroundings(Location location, EventProvider eventProvider)
     {
         var wall = new Item()
         {
@@ -215,6 +211,8 @@ internal static class CryoChamberPrerequisites
             Grammar = new Grammars()
         };
         location.Items.Add(closetDoor);
+        AddOpenEvents(closetDoor, eventProvider);
+        AddAfterLookEventsForClosetDoor(closetDoor, eventProvider);
         
         var wardrobe = new Item()
         {
@@ -336,6 +334,7 @@ internal static class CryoChamberPrerequisites
             Grammar = new Grammars()
         };
         location.Items.Add(door);
+        AddAfterOpenEvents(door, eventProvider);
         
         var display = new Item()
         {
@@ -347,6 +346,7 @@ internal static class CryoChamberPrerequisites
             Grammar = new Grammars(Genders.Neutrum)
         };
         location.Items.Add(display);
+        AddAfterLookEventsForDisplay(display, eventProvider);
         
         var materials = new Item()
         {
@@ -481,12 +481,15 @@ internal static class CryoChamberPrerequisites
         location.Items.Add(wolf);
     }
 
-    private static void AddAfterLookEvents(Location cryoChamber, EventProvider eventProvider)
+    private static void AddAfterLookEventsForClosetDoor(Item closetDoor, EventProvider eventProvider)
     {
-        cryoChamber.AfterLook += eventProvider.LookAtClosetDoor;
+        closetDoor.AfterLook += eventProvider.LookAtClosetDoor;
         eventProvider.ScoreBoard.Add(nameof(eventProvider.LookAtClosetDoor), 1);
-
-        cryoChamber.AfterLook += eventProvider.LookAtDisplay;
+    }
+    
+    private static void AddAfterLookEventsForDisplay(Item display, EventProvider eventProvider)
+    {
+        display.AfterLook += eventProvider.LookAtDisplay;
         eventProvider.ScoreBoard.Add(nameof(eventProvider.LookAtDisplay), 1);
     }
 
@@ -502,10 +505,14 @@ internal static class CryoChamberPrerequisites
         eventProvider.ScoreBoard.Add(nameof(eventProvider.TakeSpaceSuite), 1);
     }
 
-    private static void AddAfterOpenEvents(Location room, EventProvider eventProvider)
+    private static void AddOpenEvents(Item closetDoor, EventProvider eventProvider)
     {
-        room.AfterOpen += eventProvider.TryToOpenClosedDoor;
-        room.Open += eventProvider.OpenClosetDoor;
+        closetDoor.Open += eventProvider.OpenClosetDoor;
+    }
+    
+    private static void AddAfterOpenEvents(Item cryoChamberDoor, EventProvider eventProvider)
+    {
+        cryoChamberDoor.AfterOpen += eventProvider.TryToOpenCryoChamberDoor;
     }
     
     private static void AddSitDownEvents(Location room, EventProvider eventProvider)

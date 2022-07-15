@@ -283,7 +283,7 @@ internal class EventProvider
 
     internal void LookAtDisplay(object sender, ContainerObjectEventArgs eventArgs)
     {
-        if (sender is Location cryoChamber && cryoChamber.Key == Keys.CRYOCHAMBER && eventArgs.ExternalItemKey == Keys.DISPLAY)
+        if (sender is Item display && display.Key == Keys.DISPLAY)
         {
             if (this.isPowerBarEaten)
             {
@@ -299,7 +299,7 @@ internal class EventProvider
                 {
                     corridor.IsLocked = false;
                     this.universe.Score += this.universe.ScoreBoard[nameof(this.LookAtDisplay)];
-                    cryoChamber.AfterLook -= LookAtDisplay;
+                    display.AfterLook -= LookAtDisplay;
                     this.universe.SolveQuest(MetaData.QUEST_I);
                 }
             }
@@ -312,27 +312,26 @@ internal class EventProvider
 
     internal void LookAtClosetDoor(object sender, ContainerObjectEventArgs eventArgs)
     {
-        if (sender is Location cryoChamber && cryoChamber.Key == Keys.CRYOCHAMBER && eventArgs.ExternalItemKey == Keys.CLOSET_DOOR)
+        if (sender is Item closetDoor && closetDoor.Key == Keys.CLOSET_DOOR)
         {
             var bar = this.universe.ActiveLocation.GetItemByKey(Keys.CHOCOLATEBAR);
-            
             if (bar != default)
             {
                 PrintingSubsystem.Resource(Descriptions.CLOSET_DOOR_FIRSTLOOK);
                 bar.IsHidden = false;
                 this.universe.Score += this.universe.ScoreBoard[nameof(this.LookAtClosetDoor)];
-                cryoChamber.AfterLook -= LookAtClosetDoor;
-                cryoChamber.Open -= OpenClosetDoor;
-                cryoChamber.Open += OpenClosetDoorAgain;
+                closetDoor.AfterLook -= LookAtClosetDoor;
+                closetDoor.Open -= OpenClosetDoor;
+                closetDoor.Open += OpenClosetDoorAgain;
             }
         }
     }
     
     internal void OpenClosetDoor(object sender, ContainerObjectEventArgs eventArgs)
     {
-        if (sender is Location cryoChamber && cryoChamber.Key == Keys.CRYOCHAMBER && (eventArgs.ExternalItemKey == Keys.CLOSET_DOOR || eventArgs.ExternalItemKey == Keys.CLOSET))
+        if (sender is Item closetDoor && closetDoor.Key == Keys.CLOSET_DOOR)
         {
-            PrintingSubsystem.Resource(this.universe.ActiveLocation.Surroundings[Keys.CLOSET_DOOR]());
+            PrintingSubsystem.Resource(closetDoor.Description);
             
             var bar = this.universe.ActiveLocation.GetItemByKey(Keys.CHOCOLATEBAR);
             if (bar != default)
@@ -340,9 +339,9 @@ internal class EventProvider
                 PrintingSubsystem.Resource(Descriptions.CLOSET_DOOR_FIRSTLOOK);
                 bar.IsHidden = false;
                 this.universe.Score += this.universe.ScoreBoard[nameof(this.LookAtClosetDoor)];
-                cryoChamber.AfterLook -= LookAtClosetDoor;
-                cryoChamber.Open -= OpenClosetDoor;
-                cryoChamber.Open += OpenClosetDoorAgain;
+                closetDoor.AfterLook -= LookAtClosetDoor;
+                closetDoor.Open -= OpenClosetDoor;
+                closetDoor.Open += OpenClosetDoorAgain;
             }
         }
         else
@@ -353,14 +352,9 @@ internal class EventProvider
     
     private void OpenClosetDoorAgain(object sender, ContainerObjectEventArgs eventArgs)
     {
-        if (sender is Location cryoChamber && cryoChamber.Key == Keys.CRYOCHAMBER && (eventArgs.ExternalItemKey == Keys.CLOSET_DOOR || eventArgs.ExternalItemKey == Keys.CLOSET))
+        if (sender is Item closetDoor && closetDoor.Key == Keys.CLOSET_DOOR)
         {
-            var closetDoorDescription = this.universe.ActiveLocation.Surroundings[Keys.CLOSET_DOOR]();
-            PrintingSubsystem.Resource(closetDoorDescription);
-        }
-        else
-        {
-            throw new OpenException(BaseDescriptions.IMPOSSIBLE_OPEN);
+            PrintingSubsystem.Resource(closetDoor.Description);
         }
     }
     
@@ -393,9 +387,9 @@ internal class EventProvider
         }
     }
     
-    internal void TryToOpenClosedDoor(object sender, ContainerObjectEventArgs eventArgs)
+    internal void TryToOpenCryoChamberDoor(object sender, ContainerObjectEventArgs eventArgs)
     {
-        if (sender is Location cryoChamber && cryoChamber.Key == Keys.CRYOCHAMBER && eventArgs.ExternalItemKey == Keys.CRYOCHAMBER_DOOR)
+        if (sender is Item cryoChamberDoor && cryoChamberDoor.Key == Keys.CRYOCHAMBER_DOOR)
         {
             PrintingSubsystem.Resource(Descriptions.CRYOCHAMBER_DOOR_TRY_OPEN);
         }
@@ -939,23 +933,32 @@ internal class EventProvider
         var engineRoom = this.universe.GetLocationByKey(Keys.ENGINE_ROOM);
         if (engineRoom != default)
         {
-            if (!this.universe.IsQuestSolved(MetaData.QUEST_VIII)) {
-                engineRoom.Surroundings[Keys.ENGINE_ROOM_RED_DOTS] = () => Descriptions.ENGINE_ROOM_RED_DOTS_NO_ROBOT;    
+            if (!this.universe.IsQuestSolved(MetaData.QUEST_VIII))
+            {
+                var item = engineRoom.GetItemByKey(Keys.ENGINE_ROOM_RED_DOTS);
+                if (item != default)
+                {
+                    item.Description = Descriptions.ENGINE_ROOM_RED_DOTS_NO_ROBOT;
+                }
             }
             else
             {
                 PrintingSubsystem.Resource(Descriptions.ROBOT_FIXING_WALL);
-                
+
                 var droid = this.universe.ActiveLocation.Items.SingleOrDefault(x => x.Key == Keys.DROID);
                 if (droid != default)
                 {
                     this.universe.ActiveLocation.Items.Remove(droid);
                 }
                 
-                engineRoom.Surroundings.Remove(Keys.ENGINE_ROOM_RED_DOTS);
+                var item = engineRoom.GetItemByKey(Keys.ENGINE_ROOM_RED_DOTS);
+                if (item != default)
+                {
+                    engineRoom.RemoveItem(item);    
+                }
             }
         }
-        
+
         var corridor = this.universe.GetLocationByKey(Keys.CORRIDOR_WEST);
         if (corridor != default)
         {
@@ -976,7 +979,11 @@ internal class EventProvider
         {
             if (!this.universe.IsQuestSolved(MetaData.QUEST_VII))
             {
-                engineRoom.Surroundings[Keys.ENGINE_ROOM_RED_DOTS] = () => Descriptions.ENGINE_ROOM_RED_DOTS_NO_SOLAR;    
+                var item = engineRoom.GetItemByKey(Keys.ENGINE_ROOM_RED_DOTS);
+                if (item != default)
+                {
+                    item.Description = Descriptions.ENGINE_ROOM_RED_DOTS_NO_SOLAR;
+                }
             }
             else
             {
@@ -989,7 +996,11 @@ internal class EventProvider
                     roof.Items.Remove(droid);
                 }
                 
-                engineRoom.Surroundings.Remove(Keys.ENGINE_ROOM_RED_DOTS);
+                var item = engineRoom.GetItemByKey(Keys.ENGINE_ROOM_RED_DOTS);
+                if (item != default)
+                {
+                    engineRoom.RemoveItem(item);    
+                }
             }
             
         }
