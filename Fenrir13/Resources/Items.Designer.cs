@@ -448,7 +448,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Klamotten|Kleidung|Strickjacke|Kleidungsstücke|Kleidungsstück.
+        ///   Looks up a localized string similar to Klamotten|Kleidung|Strickjacke|Kleidungsstücke.
         /// </summary>
         internal static string CRYOCHAMBER_CLOTHS {
             get {
@@ -475,7 +475,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Cryopod|Cryo-Pod|Bett|Schlafplatz|Schlafkammer|Pod|Kokon.
+        ///   Looks up a localized string similar to Cryopod|Cryo-Pod|Bett|Schlafplatz|Pod|Kokon.
         /// </summary>
         internal static string CRYOPOD {
             get {
@@ -484,7 +484,16 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Display|Anzeige.
+        ///   Looks up a localized string similar to Bett.
+        /// </summary>
+        internal static string CRYOPOD_BED {
+            get {
+                return ResourceManager.GetString("CRYOPOD_BED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Display.
         /// </summary>
         internal static string DISPLAY {
             get {
@@ -1024,7 +1033,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bürostuhl|Arbeitsstuhl|Sitzgelegenheit.
+        ///   Looks up a localized string similar to Bürostuhl|Arbeitsstuhl.
         /// </summary>
         internal static string OFFICECHAIR {
             get {
@@ -1123,7 +1132,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Trennwand|Sichtschutz.
+        ///   Looks up a localized string similar to Trennwand.
         /// </summary>
         internal static string PARTITION_WALL {
             get {
@@ -1159,7 +1168,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Stifte|Stift.
+        ///   Looks up a localized string similar to Stifte.
         /// </summary>
         internal static string PENCILS {
             get {
@@ -1177,7 +1186,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bullauge|Fenster|Weltraum|All|Weltall|Auge|Schiff|Raumschiff.
+        ///   Looks up a localized string similar to Bullauge|Fenster|All|Weltall|Auge|Schiff|Raumschiff.
         /// </summary>
         internal static string PIERHOLE {
             get {
@@ -1609,11 +1618,20 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Waschmöglichkeit|Waschbereich|Bad|Badezimmer|Waschbecken.
+        ///   Looks up a localized string similar to Waschmöglichkeit|Waschgelegenheit.
         /// </summary>
         internal static string WASHINGAREA {
             get {
                 return ResourceManager.GetString("WASHINGAREA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bad|Badezimmer|Waschbecken.
+        /// </summary>
+        internal static string WASHINGAREA_BASIN {
+            get {
+                return ResourceManager.GetString("WASHINGAREA_BASIN", resourceCulture);
             }
         }
         
@@ -1645,7 +1663,7 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Schreibutensilien|Utensilien|Schreibmaterial|Schreibmaterialien|Ablagefächer|Ablagefach.
+        ///   Looks up a localized string similar to Schreibutensilien|Utensilien|Schreibmaterialien|Ablagefächer.
         /// </summary>
         internal static string WRITING_MATERIALS {
             get {

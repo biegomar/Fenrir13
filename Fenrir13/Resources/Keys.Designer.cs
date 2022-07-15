@@ -574,6 +574,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to CRYOPOD_BED.
+        /// </summary>
+        internal static string CRYOPOD_BED {
+            get {
+                return ResourceManager.GetString("CRYOPOD_BED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to DISPLAY.
         /// </summary>
         internal static string DISPLAY {
@@ -1812,6 +1821,15 @@ namespace Fenrir13.Resources {
         internal static string WASHINGAREA {
             get {
                 return ResourceManager.GetString("WASHINGAREA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to WASHINGAREA_BASIN.
+        /// </summary>
+        internal static string WASHINGAREA_BASIN {
+            get {
+                return ResourceManager.GetString("WASHINGAREA_BASIN", resourceCulture);
             }
         }
         

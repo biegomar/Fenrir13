@@ -19,7 +19,7 @@
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
     <data name="CRYOPOD" xml:space="preserve">
-        <value>Cryopod|Cryo-Pod|Bett|Schlafplatz|Schlafkammer|Pod|Kokon</value>
+        <value>Cryopod|Cryo-Pod|Bett|Schlafplatz|Pod|Kokon</value>
     </data>
     <data name="CHAMBER_FLOOR" xml:space="preserve">
         <value>Fußboden|Fussboden|Boden</value>
@@ -34,10 +34,10 @@
         <value>Wand|Zimmerwand|Wände|Zimmerwände|Raumwand|Raumwände</value>
     </data>
     <data name="PIERHOLE" xml:space="preserve">
-        <value>Bullauge|Fenster|Weltraum|All|Weltall|Auge|Schiff|Raumschiff</value>
+        <value>Bullauge|Fenster|All|Weltall|Auge|Schiff|Raumschiff</value>
     </data>
     <data name="OFFICECHAIR" xml:space="preserve">
-        <value>Bürostuhl|Arbeitsstuhl|Sitzgelegenheit</value>
+        <value>Bürostuhl|Arbeitsstuhl</value>
     </data>
     <data name="CLOSET" xml:space="preserve">
         <value>Schrank|Kleiderschrank</value>
@@ -64,10 +64,10 @@
         <value>Stuhl|Stühle</value>
     </data>
     <data name="PARTITION_WALL" xml:space="preserve">
-        <value>Trennwand|Sichtschutz</value>
+        <value>Trennwand</value>
     </data>
     <data name="WASHINGAREA" xml:space="preserve">
-        <value>Waschmöglichkeit|Waschbereich|Bad|Badezimmer|Waschbecken</value>
+        <value>Waschmöglichkeit|Waschgelegenheit</value>
     </data>
     <data name="TOILET" xml:space="preserve">
         <value>Toilette|Klo|Pott|Thron</value>
@@ -88,7 +88,7 @@
         <value>Zimmertür|Tür</value>
     </data>
     <data name="DISPLAY" xml:space="preserve">
-        <value>Display|Anzeige</value>
+        <value>Display</value>
     </data>
     <data name="TOILET_SEAT" xml:space="preserve">
         <value>Toilettensitz|Klobrille|Klositz|WC-Sitz</value>
@@ -217,7 +217,7 @@
         <value>Schrank|Schränke</value>
     </data>
     <data name="WRITING_MATERIALS" xml:space="preserve">
-        <value>Schreibutensilien|Utensilien|Schreibmaterial|Schreibmaterialien|Ablagefächer|Ablagefach</value>
+        <value>Schreibutensilien|Utensilien|Schreibmaterialien|Ablagefächer</value>
     </data>
     <data name="AMBULANCE_OP_TABLE" xml:space="preserve">
         <value>OP-Tisch|OP Tisch|Tisch|Liegefläche|Tischplatte</value>
@@ -388,7 +388,7 @@
         <value>Schreibtischlampe|Lampe|Glühbirne|Fassung|Teleskopstange|Teleskopstangen|Halterung|Beleuchtung</value>
     </data>
     <data name="CRYOCHAMBER_CLOTHS" xml:space="preserve">
-        <value>Klamotten|Kleidung|Strickjacke|Kleidungsstücke|Kleidungsstück</value>
+        <value>Klamotten|Kleidung|Strickjacke|Kleidungsstücke</value>
     </data>
     <data name="PROXIMA_CENTAURI" xml:space="preserve">
         <value>Proxima Centauri|Proxima|Centauri</value>
@@ -400,7 +400,7 @@
         <value>Papier|Papierblätter|Blätter|Blatt|Papiere</value>
     </data>
     <data name="PENCILS" xml:space="preserve">
-        <value>Stifte|Stift</value>
+        <value>Stifte</value>
     </data>
     <data name="PENCIL_I" xml:space="preserve">
         <value>Kugelschreiber|Kuli</value>
@@ -548,5 +548,11 @@
     </data>
     <data name="STARS" xml:space="preserve">
         <value>Sterne</value>
+    </data>
+    <data name="CRYOPOD_BED" xml:space="preserve">
+        <value>Bett</value>
+    </data>
+    <data name="WASHINGAREA_BASIN" xml:space="preserve">
+        <value>Bad|Badezimmer|Waschbecken</value>
     </data>
 </root>

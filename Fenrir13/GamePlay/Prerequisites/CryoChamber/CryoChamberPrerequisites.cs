@@ -71,43 +71,414 @@ internal static class CryoChamberPrerequisites
         return spaceSuite;
     }
 
-    private static void AddSurroundings(Location cryoChamber)
+    private static void AddSurroundings(Location location)
     {
-        cryoChamber.Surroundings.Add(Keys.CRYOPOD, () => Descriptions.CRYOPOD);
-        cryoChamber.Surroundings.Add(Keys.CHAMBER_FLOOR, () => Descriptions.CHAMBER_FLOOR);
-        cryoChamber.Surroundings.Add(Keys.WORKBENCH, () => Descriptions.WORKBENCH);
-        cryoChamber.Surroundings.Add(Keys.LAPTOP, () => Descriptions.LAPTOP);
-        cryoChamber.Surroundings.Add(Keys.CHAMBER_WALL, () => Descriptions.CHAMBER_WALL);
-        cryoChamber.Surroundings.Add(Keys.PIERHOLE, () => Descriptions.PIERHOLE);
-        cryoChamber.Surroundings.Add(Keys.OFFICECHAIR, () => Descriptions.OFFICECHAIR);
-        cryoChamber.Surroundings.Add(Keys.CLOSET, () => Descriptions.CLOSET);
-        cryoChamber.Surroundings.Add(Keys.DRAWER, () => Descriptions.DRAWER);
-        cryoChamber.Surroundings.Add(Keys.CLOSET_DOOR, () => Descriptions.CLOSET_DOOR);
-        cryoChamber.Surroundings.Add(Keys.WARDROBE, () => Descriptions.WARDROBE);
-        cryoChamber.Surroundings.Add(Keys.TABLE, () => Descriptions.TABLE);
-        cryoChamber.Surroundings.Add(Keys.CHAIR, () => Descriptions.CHAIR);
-        cryoChamber.Surroundings.Add(Keys.PARTITION_WALL, () => Descriptions.PARTITION_WALL);
-        cryoChamber.Surroundings.Add(Keys.WASHINGAREA, () => Descriptions.WASHINGAREA);
-        cryoChamber.Surroundings.Add(Keys.TOILET, () => Descriptions.TOILET);
-        cryoChamber.Surroundings.Add(Keys.MIRROR, () => Descriptions.MIRROR);
-        cryoChamber.Surroundings.Add(Keys.OUTLINES, () => Descriptions.OUTLINES);
-        cryoChamber.Surroundings.Add(Keys.PEEPHOLE, () => Descriptions.PEEPHOLE);
-        cryoChamber.Surroundings.Add(Keys.LATCH, () => Descriptions.LATCH);
-        cryoChamber.Surroundings.Add(Keys.CRYOCHAMBER_DOOR, () => Descriptions.CRYOCHAMBER_DOOR);
-        cryoChamber.Surroundings.Add(Keys.DISPLAY, () => Descriptions.DISPLAY);
-        cryoChamber.Surroundings.Add(Keys.TOILET_SEAT, () => Descriptions.TOILET_SEAT);
-        cryoChamber.Surroundings.Add(Keys.WRITING_MATERIALS, () => Descriptions.WRITING_MATERIALS);
-        cryoChamber.Surroundings.Add(Keys.CEILING, () => Descriptions.CEILING);
-        cryoChamber.Surroundings.Add(Keys.CRYOCHAMBER_BULKHEAD, () => Descriptions.CRYOCHAMBER_BULKHEAD);
-        cryoChamber.Surroundings.Add(Keys.CRYOCHAMBER_LAMP, () => Descriptions.CRYOCHAMBER_LAMP);
-        cryoChamber.Surroundings.Add(Keys.CRYOCHAMBER_CLOTHS, () => Descriptions.CRYOCHAMBER_CLOTHS);
-        cryoChamber.Surroundings.Add(Keys.PROXIMA_CENTAURI, () => Descriptions.PROXIMA_CENTAURI);
-        cryoChamber.Surroundings.Add(Keys.PAPER, () => Descriptions.PAPER);
-        cryoChamber.Surroundings.Add(Keys.PENCILS, () => Descriptions.PENCILS);
-        cryoChamber.Surroundings.Add(Keys.PENCIL_I, () => Descriptions.PENCIL_I);
-        cryoChamber.Surroundings.Add(Keys.PENCIL_II, () => Descriptions.PENCIL_II);
-        cryoChamber.Surroundings.Add(Keys.FELT, () => Descriptions.FELT);
-        cryoChamber.Surroundings.Add(Keys.PANEL_TOP_WOLF, () => Descriptions.PANEL_TOP_WOLF);
+        var wall = new Item()
+        {
+            Key = Keys.CHAMBER_WALL,
+            Name = Items.CHAMBER_WALL,
+            Description = Descriptions.CHAMBER_WALL,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        location.Items.Add(wall);
+        
+        var floor = new Item()
+        {
+            Key = Keys.CHAMBER_FLOOR,
+            Name = Items.CHAMBER_FLOOR,
+            Description = Descriptions.CHAMBER_FLOOR,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Male)
+        };
+        location.Items.Add(floor);
+        
+        var table = new Item()
+        {
+            Key = Keys.TABLE,
+            Name = Items.TABLE,
+            Description = Descriptions.TABLE,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Male)
+        };
+        location.Items.Add(table);
+        
+        var chair = new Item()
+        {
+            Key = Keys.CHAIR,
+            Name = Items.CHAIR,
+            Description = Descriptions.CHAIR,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Male)
+        };
+        location.Items.Add(chair);
+        
+        var pod = new Item()
+        {
+            Key = Keys.CRYOPOD,
+            Name = Items.CRYOPOD,
+            Description = Descriptions.CRYOPOD,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Male)
+        };
+        location.Items.Add(pod);
+        
+        var bed = new Item()
+        {
+            Key = Keys.CRYOPOD_BED,
+            Name = Items.CRYOPOD_BED,
+            Description = Descriptions.CRYOPOD,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Neutrum)
+        };
+        location.Items.Add(bed);
+        
+        var workbench = new Item()
+        {
+            Key = Keys.WORKBENCH,
+            Name = Items.WORKBENCH,
+            Description = Descriptions.WORKBENCH,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        location.Items.Add(workbench);
+        
+        var laptop = new Item()
+        {
+            Key = Keys.LAPTOP,
+            Name = Items.LAPTOP,
+            Description = Descriptions.LAPTOP,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Male)
+        };
+        location.Items.Add(laptop);
+        
+        var pierHole = new Item()
+        {
+            Key = Keys.PIERHOLE,
+            Name = Items.PIERHOLE,
+            Description = Descriptions.PIERHOLE,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Neutrum)
+        };
+        location.Items.Add(pierHole);
+        
+        var officeChair = new Item()
+        {
+            Key = Keys.OFFICECHAIR,
+            Name = Items.OFFICECHAIR,
+            Description = Descriptions.OFFICECHAIR,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Male)
+        };
+        location.Items.Add(officeChair);
+        
+        var closet = new Item()
+        {
+            Key = Keys.CLOSET,
+            Name = Items.CLOSET,
+            Description = Descriptions.CLOSET,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Male)
+        };
+        location.Items.Add(closet);
+        
+        var drawer = new Item()
+        {
+            Key = Keys.DRAWER,
+            Name = Items.DRAWER,
+            Description = Descriptions.DRAWER,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        location.Items.Add(drawer);
+        
+        var closetDoor = new Item()
+        {
+            Key = Keys.CLOSET_DOOR,
+            Name = Items.CLOSET_DOOR,
+            Description = Descriptions.CLOSET_DOOR,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        location.Items.Add(closetDoor);
+        
+        var wardrobe = new Item()
+        {
+            Key = Keys.WARDROBE,
+            Name = Items.WARDROBE,
+            Description = Descriptions.WARDROBE,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        location.Items.Add(wardrobe);
+        
+        var partitionWall = new Item()
+        {
+            Key = Keys.PARTITION_WALL,
+            Name = Items.PARTITION_WALL,
+            Description = Descriptions.PARTITION_WALL,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        location.Items.Add(partitionWall);
+        
+        var washingArea = new Item()
+        {
+            Key = Keys.WASHINGAREA,
+            Name = Items.WASHINGAREA,
+            Description = Descriptions.WASHINGAREA,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        location.Items.Add(washingArea);
+        
+        var washingAreaBasin = new Item()
+        {
+            Key = Keys.WASHINGAREA_BASIN,
+            Name = Items.WASHINGAREA_BASIN,
+            Description = Descriptions.WASHINGAREA,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Neutrum)
+        };
+        location.Items.Add(washingAreaBasin);
+        
+        var toilet = new Item()
+        {
+            Key = Keys.TOILET,
+            Name = Items.TOILET,
+            Description = Descriptions.TOILET,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        location.Items.Add(toilet);
+        
+        var toiletSeat = new Item()
+        {
+            Key = Keys.TOILET_SEAT,
+            Name = Items.TOILET_SEAT,
+            Description = Descriptions.TOILET_SEAT,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Male)
+        };
+        location.Items.Add(toiletSeat);
+        
+        var mirror = new Item()
+        {
+            Key = Keys.MIRROR,
+            Name = Items.MIRROR,
+            Description = Descriptions.MIRROR,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Male)
+        };
+        location.Items.Add(mirror);
+        
+        var outlines = new Item()
+        {
+            Key = Keys.OUTLINES,
+            Name = Items.OUTLINES,
+            Description = Descriptions.OUTLINES,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Male)
+        };
+        location.Items.Add(outlines);
+        
+        var peephole = new Item()
+        {
+            Key = Keys.PEEPHOLE,
+            Name = Items.PEEPHOLE,
+            Description = Descriptions.PEEPHOLE,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Neutrum)
+        };
+        location.Items.Add(peephole);
+        
+        var latch = new Item()
+        {
+            Key = Keys.LATCH,
+            Name = Items.LATCH,
+            Description = Descriptions.LATCH,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        location.Items.Add(latch);
+        
+        var door = new Item()
+        {
+            Key = Keys.CRYOCHAMBER_DOOR,
+            Name = Items.CRYOCHAMBER_DOOR,
+            Description = Descriptions.CRYOCHAMBER_DOOR,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        location.Items.Add(door);
+        
+        var display = new Item()
+        {
+            Key = Keys.DISPLAY,
+            Name = Items.DISPLAY,
+            Description = Descriptions.DISPLAY,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Neutrum)
+        };
+        location.Items.Add(display);
+        
+        var materials = new Item()
+        {
+            Key = Keys.WRITING_MATERIALS,
+            Name = Items.WRITING_MATERIALS,
+            Description = Descriptions.WRITING_MATERIALS,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Neutrum, isSingular: false)
+        };
+        location.Items.Add(materials);
+        
+        var ceiling = new Item()
+        {
+            Key = Keys.CEILING,
+            Name = Items.CEILING,
+            Description = Descriptions.CEILING,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        location.Items.Add(ceiling);
+        
+        var bulkhead = new Item()
+        {
+            Key = Keys.CRYOCHAMBER_BULKHEAD,
+            Name = Items.CRYOCHAMBER_BULKHEAD,
+            Description = Descriptions.CRYOCHAMBER_BULKHEAD,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Neutrum)
+        };
+        location.Items.Add(bulkhead);
+        
+        var lamp = new Item()
+        {
+            Key = Keys.CRYOCHAMBER_LAMP,
+            Name = Items.CRYOCHAMBER_LAMP,
+            Description = Descriptions.CRYOCHAMBER_LAMP,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars()
+        };
+        location.Items.Add(lamp);
+        
+        var cloths = new Item()
+        {
+            Key = Keys.CRYOCHAMBER_CLOTHS,
+            Name = Items.CRYOCHAMBER_CLOTHS,
+            Description = Descriptions.CRYOCHAMBER_CLOTHS,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(isSingular: false)
+        };
+        location.Items.Add(cloths);
+        
+        var proxima = new Item()
+        {
+            Key = Keys.PROXIMA_CENTAURI,
+            Name = Items.PROXIMA_CENTAURI,
+            Description = Descriptions.PROXIMA_CENTAURI,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Neutrum, isSingular: false)
+        };
+        location.Items.Add(proxima);
+        
+        var paper = new Item()
+        {
+            Key = Keys.PAPER,
+            Name = Items.PAPER,
+            Description = Descriptions.PAPER,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Neutrum)
+        };
+        location.Items.Add(paper);
+        
+        var pencils = new Item()
+        {
+            Key = Keys.PENCILS,
+            Name = Items.PENCILS,
+            Description = Descriptions.PENCILS,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Male, isSingular: false)
+        };
+        location.Items.Add(pencils);
+        
+        var pencilOne = new Item()
+        {
+            Key = Keys.PENCIL_I,
+            Name = Items.PENCIL_I,
+            Description = Descriptions.PENCIL_I,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Male)
+        };
+        location.Items.Add(pencilOne);
+        
+        var pencilTwo = new Item()
+        {
+            Key = Keys.PENCIL_II,
+            Name = Items.PENCIL_II,
+            Description = Descriptions.PENCIL_II,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Male)
+        };
+        location.Items.Add(pencilTwo);
+        
+        var felt = new Item()
+        {
+            Key = Keys.FELT,
+            Name = Items.FELT,
+            Description = Descriptions.FELT,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Male)
+        };
+        location.Items.Add(felt);
+        
+        var wolf = new Item()
+        {
+            Key = Keys.PANEL_TOP_WOLF,
+            Name = Items.PANEL_TOP_WOLF,
+            Description = Descriptions.PANEL_TOP_WOLF,
+            IsSurrounding = true,
+            IsPickAble = false,
+            Grammar = new Grammars(Genders.Male)
+        };
+        location.Items.Add(wolf);
     }
 
     private static void AddAfterLookEvents(Location cryoChamber, EventProvider eventProvider)

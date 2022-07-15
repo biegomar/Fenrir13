@@ -615,4 +615,10 @@
     <data name="STARS" xml:space="preserve">
         <value>STARS</value>
     </data>
+    <data name="CRYOPOD_BED" xml:space="preserve">
+        <value>CRYOPOD_BED</value>
+    </data>
+    <data name="WASHINGAREA_BASIN" xml:space="preserve">
+        <value>WASHINGAREA_BASIN</value>
+    </data>
 </root>
