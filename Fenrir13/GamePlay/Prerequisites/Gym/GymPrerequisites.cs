@@ -166,7 +166,7 @@ internal static class GymPrerequisites
             Description = Descriptions.GYM_ROPES,
             IsSurrounding = true,
             IsPickAble = false,
-            Grammar = new Grammars(gender: Genders.Neutrum, isSingular: false)
+            Grammar = new Grammars(gender: Genders.Neutrum)
         };
         location.Items.Add(ropes);
         
