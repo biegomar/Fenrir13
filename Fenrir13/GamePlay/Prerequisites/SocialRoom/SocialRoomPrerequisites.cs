@@ -19,16 +19,14 @@ public class SocialRoomPrerequisites
         socialRoom.Items.Add(GetCouch(eventProvider));
         socialRoom.Items.Add(GetAntennaConstruction(eventProvider));
         
-        AddSurroundings(socialRoom);
-        
-        AddSitDownEvents(socialRoom, eventProvider);
-        
+        AddSurroundings(socialRoom, eventProvider);
+
         AddClimbEvents(socialRoom, eventProvider);
 
         return socialRoom;
     }
 
-    private static void AddSurroundings(Location location)
+    private static void AddSurroundings(Location location, EventProvider eventProvider)
     {
         var ceiling = new Item()
         {
@@ -59,9 +57,11 @@ public class SocialRoomPrerequisites
             Description = Descriptions.SOCIALROOM_SEAT,
             IsSurrounding = true,
             IsPickAble = false,
+            IsSeatAble = true,
             Grammar = new Grammars(Genders.Male)
         };
         location.Items.Add(seat);
+        AddSitDownEvents(seat, eventProvider);
         
         var eastWall = new Item()
         {
@@ -202,9 +202,11 @@ public class SocialRoomPrerequisites
             Description = Descriptions.SOCIALROOM_BILLARD,
             IsSurrounding = true,
             IsPickAble = false,
+            IsSeatAble = true,
             Grammar = new Grammars(Genders.Male)
         };
         location.Items.Add(billard);
+        AddSitDownEvents(billard, eventProvider);
         
         var darts = new Item()
         {
@@ -224,9 +226,11 @@ public class SocialRoomPrerequisites
             Description = Descriptions.SOCIALROOM_GLASS_TABLE,
             IsSurrounding = true,
             IsPickAble = false,
+            IsSeatAble = true,
             Grammar = new Grammars(Genders.Male)
         };
         location.Items.Add(glassTable);
+        AddSitDownEvents(glassTable, eventProvider);
         
         var mediaServer = new Item()
         {
@@ -326,9 +330,9 @@ public class SocialRoomPrerequisites
         item.Use += eventProvider.MountAntennaToDroid;
     }
     
-    private static void AddSitDownEvents(Location room, EventProvider eventProvider)
+    private static void AddSitDownEvents(Item item, EventProvider eventProvider)
     {
-        room.SitDown += eventProvider.SitDownOnCouchInSocialRoom;
+        item.SitDown += eventProvider.SitDownOnCouchInSocialRoom;
     }
     
     private static void AddClimbEvents(Location room, EventProvider eventProvider)

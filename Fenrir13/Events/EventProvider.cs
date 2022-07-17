@@ -152,24 +152,19 @@ internal class EventProvider
     
     internal void SitDownOnCouchInSocialRoom(object sender, SitDownEventArgs eventArgs)
     {
-        if (sender is Location activeLocation && activeLocation.Key == Keys.SOCIALROOM)
+        if (sender is Item item)
         {
-            if (string.IsNullOrEmpty(eventArgs.ExternalItemKey))
-            {
-                throw new SitDownException(Descriptions.WHERE_TO_SIT);
-            }
-
-            if (eventArgs.ExternalItemKey == Keys.SOCIALROOM_SEAT)
+            if (item.Key == Keys.SOCIALROOM_SEAT)
             {
                 throw new SitDownException(Descriptions.TRY_TO_SIT_ON_SEAT);
             }
 
-            if (eventArgs.ExternalItemKey == Keys.SOCIALROOM_GLASS_TABLE)
+            if (item.Key == Keys.SOCIALROOM_GLASS_TABLE)
             {
                 throw new SitDownException(Descriptions.TRY_TO_SIT_ON_GLASS_TABLE);    
             }
 
-            if (eventArgs.ExternalItemKey == Keys.SOCIALROOM_BILLARD)
+            if (item.Key == Keys.SOCIALROOM_BILLARD)
             {
                 throw new SitDownException(Descriptions.TRY_TO_SIT_ON_BILLARD_TABLE);
             }
