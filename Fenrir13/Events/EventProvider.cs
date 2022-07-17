@@ -134,19 +134,14 @@ internal class EventProvider
 
     internal void SitDownOnChairInCryoChamber(object sender, SitDownEventArgs eventArgs)
     {
-        if (sender is Location activeLocation && activeLocation.Key == Keys.CRYOCHAMBER)
+        if (sender is Item chair)
         {
-            if (string.IsNullOrEmpty(eventArgs.ExternalItemKey))
-            {
-                throw new SitDownException(Descriptions.WHERE_TO_SIT);
-            }
-
-            if (eventArgs.ExternalItemKey == Keys.CHAIR)
+            if (chair.Key == Keys.CHAIR)
             {
                 throw new SitDownException(Descriptions.TRY_TO_SIT_ON_CHAIR);
             }
 
-            if (eventArgs.ExternalItemKey == Keys.OFFICECHAIR)
+            if (chair.Key == Keys.OFFICECHAIR)
             {
                 throw new SitDownException(Descriptions.TRY_TO_SIT_ON_OFFICECHAIR);
             }
@@ -191,19 +186,6 @@ internal class EventProvider
         }
     }
 
-    internal void TryToTakeThingsFromCryoChamber(object sender, ContainerObjectEventArgs eventArgs)
-    {
-        if (sender is Location activeLocation && activeLocation.Key == Keys.CRYOCHAMBER)
-        {
-            if (eventArgs.ExternalItemKey == Keys.LAPTOP)
-            {
-                throw new TakeException(Descriptions.TRY_TO_TAKE_LAPTOP);
-            }
-            
-            throw new TakeException(this.GetRandomPhrase(BaseDescriptions.IMPOSSIBLE_PICKUP));
-        }
-    }
-    
     internal void TryToTakeThingsFromGym(object sender, ContainerObjectEventArgs eventArgs)
     {
         if (sender is Location activeLocation && activeLocation.Key == Keys.GYM)

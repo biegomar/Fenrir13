@@ -23,11 +23,7 @@ internal static class CryoChamberPrerequisites
         AddSurroundings(cryoChamber, eventProvider);
 
         AddChangeLocationEvents(cryoChamber, eventProvider);
-
-        AddSitDownEvents(cryoChamber, eventProvider);
         
-        AddTakeEvents(cryoChamber, eventProvider);
-
         return cryoChamber;
     }
 
@@ -109,9 +105,11 @@ internal static class CryoChamberPrerequisites
             Description = Descriptions.CHAIR,
             IsSurrounding = true,
             IsPickAble = false,
+            IsSeatAble = true,
             Grammar = new Grammars(Genders.Male)
         };
         location.Items.Add(chair);
+        AddSitDownEvents(chair, eventProvider);
         
         var pod = new Item()
         {
@@ -175,9 +173,11 @@ internal static class CryoChamberPrerequisites
             Description = Descriptions.OFFICECHAIR,
             IsSurrounding = true,
             IsPickAble = false,
+            IsSeatAble = true,
             Grammar = new Grammars(Genders.Male)
         };
         location.Items.Add(officeChair);
+        AddSitDownEvents(officeChair, eventProvider);
         
         var closet = new Item()
         {
@@ -208,6 +208,8 @@ internal static class CryoChamberPrerequisites
             Description = Descriptions.CLOSET_DOOR,
             IsSurrounding = true,
             IsPickAble = false,
+            IsCloseAble = true,
+            IsClosed = true,
             Grammar = new Grammars()
         };
         location.Items.Add(closetDoor);
@@ -515,16 +517,11 @@ internal static class CryoChamberPrerequisites
         cryoChamberDoor.AfterOpen += eventProvider.TryToOpenCryoChamberDoor;
     }
     
-    private static void AddSitDownEvents(Location room, EventProvider eventProvider)
+    private static void AddSitDownEvents(Item item, EventProvider eventProvider)
     {
-        room.SitDown += eventProvider.SitDownOnChairInCryoChamber;
+        item.SitDown += eventProvider.SitDownOnChairInCryoChamber;
     }
     
-    private static void AddTakeEvents(Location room, EventProvider eventProvider)
-    {
-        room.Take += eventProvider.TryToTakeThingsFromCryoChamber;
-    }
-
     private static void AddChangeLocationEvents(Location room, EventProvider eventProvider)
     {
         room.BeforeChangeLocation += eventProvider.CantLeaveWithoutSuiteAndUneatenBar;
