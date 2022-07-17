@@ -19,14 +19,12 @@ internal static class KitchenPrerequisites
         kitchen.Items.Add(GetFoodPrinter(eventProvider));
         kitchen.Items.Add(GetRecycler(eventProvider));
 
-        AddSurroundings(kitchen);
-        
-        AddSitDownEvents(kitchen, eventProvider);
-        
+        AddSurroundings(kitchen, eventProvider);
+
         return kitchen;
     }
 
-    private static void AddSurroundings(Location location)
+    private static void AddSurroundings(Location location, EventProvider eventProvider)
     {
         var ceiling = new Item()
         {
@@ -79,9 +77,11 @@ internal static class KitchenPrerequisites
             Description = Descriptions.CHAIR,
             IsSurrounding = true,
             IsPickAble = false,
+            IsSeatAble = true,
             Grammar = new Grammars(Genders.Male)
         };
         location.Items.Add(chair);
+        AddSitDownEvents(chair, eventProvider);
         
         var cabinet = new Item()
         {
@@ -169,9 +169,9 @@ internal static class KitchenPrerequisites
         eventProvider.ScoreBoard.Add(nameof(eventProvider.PushDoorHandleIntoRespiratorFlap), 5);
     }
     
-    private static void AddSitDownEvents(Location room, EventProvider eventProvider)
+    private static void AddSitDownEvents(Item item, EventProvider eventProvider)
     {
-        room.SitDown += eventProvider.SitDownOnChairInKitchen;
+        item.SitDown += eventProvider.SitDownOnChairInKitchen;
     }
     
     private static Item GetFoodPrinter(EventProvider eventProvider)

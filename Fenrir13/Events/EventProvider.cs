@@ -180,7 +180,7 @@ internal class EventProvider
     
     internal void SitDownOnChairInKitchen(object sender, SitDownEventArgs eventArgs)
     {
-        if (sender is Location activeLocation && activeLocation.Key == Keys.KITCHEN)
+        if (sender is Item chair && chair.Key == Keys.CHAIR)
         {
             throw new SitDownException(Descriptions.TRY_TO_SIT_ON_CHAIR);
         }
