@@ -188,14 +188,14 @@ internal class EventProvider
 
     internal void TryToTakeThingsFromGym(object sender, ContainerObjectEventArgs eventArgs)
     {
-        if (sender is Location activeLocation && activeLocation.Key == Keys.GYM)
+        if (sender is Item item)
         {
-            if (eventArgs.ExternalItemKey == Keys.GYM_ROPES)
+            if (item.Key == Keys.GYM_ROPES)
             {
                 throw new TakeException(Descriptions.GYM_ROPES_NO_PICKUP);
             }
             
-            if (eventArgs.ExternalItemKey == Keys.GYM_SANDBAG)
+            if (item.Key == Keys.GYM_SANDBAG)
             {
                 throw new TakeException(Descriptions.GYM_SANDBAG_NO_PICKUP);
             }
@@ -203,7 +203,7 @@ internal class EventProvider
             throw new TakeException(this.GetRandomPhrase(BaseDescriptions.IMPOSSIBLE_PICKUP));
         }
     }
-    
+
     internal void PushRedButton(object sender, PushItemEventArgs eventArgs)
     {
         if (sender is Item redButton && redButton.Key == Keys.AIRLOCK_KEYPAD_RED_BUTTON)

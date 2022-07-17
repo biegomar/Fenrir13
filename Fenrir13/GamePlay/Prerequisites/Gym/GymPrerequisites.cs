@@ -18,14 +18,13 @@ internal static class GymPrerequisites
 
         gym.Items.Add(GetDumbbellRack(eventProvider));
         
-        AddSurroundings(gym);
+        AddSurroundings(gym, eventProvider);
         AddAfterLookEvents(gym, eventProvider);
-        AddTakeEvents(gym, eventProvider);
-        
+
         return gym;
     }
     
-    private static void AddSurroundings(Location location)
+    private static void AddSurroundings(Location location, EventProvider eventProvider)
     {
         var ceiling = new Item()
         {
@@ -169,6 +168,7 @@ internal static class GymPrerequisites
             Grammar = new Grammars(gender: Genders.Neutrum)
         };
         location.Items.Add(ropes);
+        AddTakeEvents(ropes, eventProvider);
         
         var climbingFrame = new Item()
         {
@@ -202,6 +202,7 @@ internal static class GymPrerequisites
             Grammar = new Grammars(isSingular: false)
         };
         location.Items.Add(sandBag);
+        AddTakeEvents(sandBag, eventProvider);
         
         var loop = new Item()
         {
@@ -268,8 +269,8 @@ internal static class GymPrerequisites
         eventProvider.ScoreBoard.Add(nameof(eventProvider.UseDumbbellBarWithLever), 10);
     }
     
-    private static void AddTakeEvents(Location gym, EventProvider eventProvider)
+    private static void AddTakeEvents(Item item, EventProvider eventProvider)
     {
-        gym.Take += eventProvider.TryToTakeThingsFromGym;
+        item.BeforeTake += eventProvider.TryToTakeThingsFromGym;
     }
 }
