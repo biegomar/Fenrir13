@@ -28,7 +28,7 @@
         <value>Arbeitsbereich|Arbeitsplatz|Schreibtisch|Arbeitsplatte|Platte</value>
     </data>
     <data name="LAPTOP" xml:space="preserve">
-        <value>LAPTOP|Rechner|Computer</value>
+        <value>Laptop|Rechner|Computer</value>
     </data>
     <data name="CHAMBER_WALL" xml:space="preserve">
         <value>Wand|Zimmerwand|Wände|Zimmerwände|Raumwand|Raumwände</value>

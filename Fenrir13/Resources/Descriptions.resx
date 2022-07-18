@@ -112,7 +112,7 @@ Damit das Schiff permanent in Kontakt zu dem Crew-Mitglied ist, muss der Anzug s
         <value>Absolut unscheinbar dieser Thron, bestehend aus einem Metallkorpus und einem Toilettensitz aus beheiztem Kunststoff. Doch er ist, neben Deinem Bio-Suit, die zentrale Überwachungsstation Deiner Gesundheit. Jede Ausscheidung wird akribisch analysiert und Dir im Display des Spiegels angezeigt. Viele der Werte sagen Dir noch nicht einmal etwas. Egal. Für Dich ist nur wichtig, dass Du gut umsorgt wirst und jeder erkannte Mangel über Zusätze in der Nahrung beseitigt wird.</value>
     </data>
     <data name="MIRROR" xml:space="preserve">
-        <value>Den Spiegel schätzt Du so auf 90x120 cm und er ist kristallklar. Wenn Du längere Zeit eine der Ecken mit Deinen Augen fukossierst, erscheint ein zusätzliches Display auf der Fläche und präsentiert Dir Deine gängigen Gesundheitsdaten. Als Du diesmal die Daten checkst, erschrickst Du. Die letzte Messung ist über 5 Jahre her!</value>
+        <value>Den Spiegel schätzt Du so auf 90x120 cm und er ist kristallklar. Wenn Du längere Zeit eine der Ecken mit Deinen Augen fukossierst, erscheint ein zusätzliches Display auf der Fläche und präsentiert Dir Deine gängigen Gesundheitsdaten.</value>
     </data>
     <data name="OUTLINES" xml:space="preserve">
         <value>Naja, es handelt sich um einen ganz schmalen Grat zwischen der Tür und der Wand.</value>
@@ -1110,5 +1110,8 @@ Der Punkt markiert den Reparatur-Droiden und er hat sein Dock auf dem Dach der B
     </data>
     <data name="STARS" xml:space="preserve">
         <value>Der Blick ist gleichermaßen faszinierend und befremdlich. Keine der Konstellationen kommt Dir bekannt vor. Doch die Klarheit des Blicks lässt Dich das strahlende Band der Milchstraße erkennen, in der wir uns natürlich noch immer befinden.</value>
+    </data>
+    <data name="MIRROR_FIRSTLOOK" xml:space="preserve">
+        <value>Als Du diesmal die Daten checkst, erschrickst Du. Die letzte Messung ist über 5 Jahre her!</value>
     </data>
 </root>

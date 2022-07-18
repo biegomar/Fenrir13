@@ -2033,11 +2033,20 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Den Spiegel schätzt Du so auf 90x120 cm und er ist kristallklar. Wenn Du längere Zeit eine der Ecken mit Deinen Augen fukossierst, erscheint ein zusätzliches Display auf der Fläche und präsentiert Dir Deine gängigen Gesundheitsdaten. Als Du diesmal die Daten checkst, erschrickst Du. Die letzte Messung ist über 5 Jahre her!.
+        ///   Looks up a localized string similar to Den Spiegel schätzt Du so auf 90x120 cm und er ist kristallklar. Wenn Du längere Zeit eine der Ecken mit Deinen Augen fukossierst, erscheint ein zusätzliches Display auf der Fläche und präsentiert Dir Deine gängigen Gesundheitsdaten..
         /// </summary>
         internal static string MIRROR {
             get {
                 return ResourceManager.GetString("MIRROR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Als Du diesmal die Daten checkst, erschrickst Du. Die letzte Messung ist über 5 Jahre her!.
+        /// </summary>
+        internal static string MIRROR_FIRSTLOOK {
+            get {
+                return ResourceManager.GetString("MIRROR_FIRSTLOOK", resourceCulture);
             }
         }
         

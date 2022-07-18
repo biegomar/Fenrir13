@@ -287,6 +287,7 @@ internal static class CryoChamberPrerequisites
             Key = Keys.MIRROR,
             Name = Items.MIRROR,
             Description = Descriptions.MIRROR,
+            FirstLookDescription = Descriptions.MIRROR_FIRSTLOOK,
             IsSurrounding = true,
             IsPickAble = false,
             Grammar = new Grammars(Genders.Male)

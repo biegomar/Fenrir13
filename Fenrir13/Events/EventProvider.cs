@@ -294,12 +294,7 @@ internal class EventProvider
             var bar = this.universe.ActiveLocation.GetItemByKey(Keys.CHOCOLATEBAR);
             if (bar != default)
             {
-                PrintingSubsystem.Resource(Descriptions.CLOSET_DOOR_FIRSTLOOK);
-                bar.IsHidden = false;
-                this.universe.Score += this.universe.ScoreBoard[nameof(this.LookAtClosetDoor)];
-                closetDoor.AfterLook -= LookAtClosetDoor;
-                closetDoor.Open -= OpenClosetDoor;
-                closetDoor.Open += OpenClosetDoorAgain;
+                handleClosetDoor(bar, closetDoor);
             }
         }
     }
@@ -313,12 +308,7 @@ internal class EventProvider
             var bar = this.universe.ActiveLocation.GetItemByKey(Keys.CHOCOLATEBAR);
             if (bar != default)
             {
-                PrintingSubsystem.Resource(Descriptions.CLOSET_DOOR_FIRSTLOOK);
-                bar.IsHidden = false;
-                this.universe.Score += this.universe.ScoreBoard[nameof(this.LookAtClosetDoor)];
-                closetDoor.AfterLook -= LookAtClosetDoor;
-                closetDoor.Open -= OpenClosetDoor;
-                closetDoor.Open += OpenClosetDoorAgain;
+                handleClosetDoor(bar, closetDoor);
             }
         }
         else
@@ -326,11 +316,23 @@ internal class EventProvider
             throw new OpenException(BaseDescriptions.IMPOSSIBLE_OPEN);
         }
     }
-    
+
+    private void handleClosetDoor(Item bar, Item closetDoor)
+    {
+        PrintingSubsystem.Resource(Descriptions.CLOSET_DOOR_FIRSTLOOK);
+        bar.IsHidden = false;
+        this.universe.Score += this.universe.ScoreBoard[nameof(this.LookAtClosetDoor)];
+        closetDoor.AfterLook -= LookAtClosetDoor;
+        closetDoor.Open -= OpenClosetDoor;
+        closetDoor.Open += OpenClosetDoorAgain;
+        closetDoor.IsClosed = false;
+    }
+
     private void OpenClosetDoorAgain(object sender, ContainerObjectEventArgs eventArgs)
     {
         if (sender is Item closetDoor && closetDoor.Key == Keys.CLOSET_DOOR)
         {
+            closetDoor.IsClosed = false;
             PrintingSubsystem.Resource(closetDoor.Description);
         }
     }
