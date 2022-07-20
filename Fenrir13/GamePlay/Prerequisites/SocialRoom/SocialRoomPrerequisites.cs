@@ -1,5 +1,6 @@
 using Fenrir13.Events;
 using Fenrir13.Resources;
+using Heretic.InteractiveFiction.GamePlay;
 using Heretic.InteractiveFiction.Objects;
 
 namespace Fenrir13.GamePlay.Prerequisites.SocialRoom;
@@ -15,7 +16,7 @@ public class SocialRoomPrerequisites
             Description = Descriptions.SOCIALROOM,
             Grammar = new Grammars(Genders.Male)
         };
-
+        
         socialRoom.Items.Add(GetCouch(eventProvider));
         socialRoom.Items.Add(GetAntennaConstruction(eventProvider));
         
@@ -243,10 +244,11 @@ public class SocialRoomPrerequisites
         };
         location.Items.Add(mediaServer);
         
-        var books = new Item(() => string.Format(Descriptions.SOCIALROOM_BOOKS, GetBookTitle()))
+        var books = new Item
         {
             Key = Keys.SOCIALROOM_BOOKS,
             Name = Items.SOCIALROOM_BOOKS,
+            Description = GetBookTitle(),
             IsSurrounding = true,
             IsPickAble = false,
             Grammar = new Grammars(Genders.Neutrum)
@@ -254,7 +256,7 @@ public class SocialRoomPrerequisites
         location.Items.Add(books);
     }
 
-    private static string GetBookTitle()
+    private static Func<string> GetBookTitle()
     {
         var bookList = new List<string>
         {
@@ -266,7 +268,7 @@ public class SocialRoomPrerequisites
         
         var rnd = new Random();
         
-        return bookList[rnd.Next(0, bookList.Count)];
+        return () => string.Format(Descriptions.SOCIALROOM_BOOKS, bookList[rnd.Next(0, bookList.Count)]);
     }
 
     private static Item GetCouch(EventProvider eventProvider)
