@@ -374,14 +374,24 @@ internal class EventProvider
         }
     }
     
-    internal void EatChocolateBar(object sender, ContainerObjectEventArgs eventArgs)
+    internal void EatChocolateBar(object sender, UseItemEventArgs eventArgs)
     {
         if (sender is Item powerBar && powerBar.Key == Keys.CHOCOLATEBAR)
         {
             this.universe.Score += this.universe.ScoreBoard[nameof(this.EatChocolateBar)];
-            powerBar.AfterEat -= EatChocolateBar;
+            powerBar.Use -= EatChocolateBar;
             PrintingSubsystem.Resource(Descriptions.CHOCOLATEBAR_EATEN);
-            this.universe.ActivePlayer.Items.Remove(powerBar);
+            if (this.universe.ActivePlayer.Items.Contains(powerBar))
+            {
+                this.universe.ActivePlayer.Items.Remove(powerBar);
+            }
+            else
+            {
+                this.universe.ActiveLocation.Items.Remove(powerBar);
+            }
+
+            this.universe.ActiveObject = default;
+            
             this.isPowerBarEaten = true;
         }
     }

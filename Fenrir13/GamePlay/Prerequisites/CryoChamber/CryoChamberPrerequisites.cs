@@ -1,6 +1,7 @@
 using System.Runtime.CompilerServices;
 using Fenrir13.Events;
 using Fenrir13.Resources;
+using Heretic.InteractiveFiction.GamePlay;
 using Heretic.InteractiveFiction.Objects;
 
 namespace Fenrir13.GamePlay.Prerequisites.CryoChamber;
@@ -19,7 +20,9 @@ internal static class CryoChamberPrerequisites
 
         cryoChamber.Items.Add(GetChocolateBar(eventProvider));
         cryoChamber.Items.Add(GetSpaceSuite(eventProvider));
-
+        
+        cryoChamber.AddOptionalVerb(VerbKeys.USE, "ISS|ESS|ESSE", "Fehler!");
+        
         AddSurroundings(cryoChamber, eventProvider);
 
         AddChangeLocationEvents(cryoChamber, eventProvider);
@@ -34,13 +37,12 @@ internal static class CryoChamberPrerequisites
             Key = Keys.CHOCOLATEBAR,
             Description = Descriptions.CHOCOLATEBAR,
             Name = Items.CHOCOLATEBAR,
-            IsEatable = true,
             IsHidden = true,
             IsUnveilAble = false,
             Grammar = new Grammars(Genders.Male)
         };
 
-        AddAfterEatEvents(bar, eventProvider);
+        AddUseEvents(bar, eventProvider);
 
         return bar;
     }
@@ -140,7 +142,7 @@ internal static class CryoChamberPrerequisites
             Description = Descriptions.WORKBENCH,
             IsSurrounding = true,
             IsPickAble = false,
-            Grammar = new Grammars()
+            Grammar = new Grammars(Genders.Male)
         };
         location.Items.Add(workbench);
         
@@ -496,9 +498,9 @@ internal static class CryoChamberPrerequisites
         eventProvider.ScoreBoard.Add(nameof(eventProvider.LookAtDisplay), 1);
     }
 
-    private static void AddAfterEatEvents(Item chocolateBar, EventProvider eventProvider)
+    private static void AddUseEvents(Item chocolateBar, EventProvider eventProvider)
     {
-        chocolateBar.AfterEat += eventProvider.EatChocolateBar;
+        chocolateBar.Use += eventProvider.EatChocolateBar;
         eventProvider.ScoreBoard.Add(nameof(eventProvider.EatChocolateBar), 5);
     }
 

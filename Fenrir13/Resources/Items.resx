@@ -25,7 +25,7 @@
         <value>Fußboden|Fussboden|Boden</value>
     </data>
     <data name="WORKBENCH" xml:space="preserve">
-        <value>Arbeitsbereich|Arbeitsplatz|Schreibtisch|Arbeitsplatte|Platte</value>
+        <value>Arbeitsbereich|Arbeitsplatz|Schreibtisch|Arbeitsplatte|Platte|Arbeitsecke</value>
     </data>
     <data name="LAPTOP" xml:space="preserve">
         <value>Laptop|Rechner|Computer</value>
