@@ -227,6 +227,5 @@ internal static class AmbulancePrerequisites
     private static void AddOpenCloseEvents(Item item, EventProvider eventProvider)
     {
         item.BeforeOpen += eventProvider.OpenFlap;
-        item.BeforeClose += eventProvider.CloseFlap;
     }
 }

@@ -1251,21 +1251,6 @@ internal class EventProvider
         }
     }
     
-    internal void CloseFlap(object sender, ContainerObjectEventArgs eventArgs)
-    {
-        if (sender is Item flap && flap.Key == Keys.AMBULANCE_RESPIRATOR_FLAP)
-        {
-            if (!flap.IsClosed)
-            {
-                var oxygen = this.universe.ActiveLocation.GetItemByKey(Keys.OXYGEN_BOTTLE);
-                if (oxygen != default)
-                {
-                    //oxygen.IsHidden = true;
-                }
-            }
-        }
-    }
-
     internal void TakeDumbbellBar(object sender, ContainerObjectEventArgs eventArg)
     {
         if (sender is Item bar && bar.Key == Keys.DUMBBELL_BAR)
