@@ -22,8 +22,6 @@ public class SocialRoomPrerequisites
         
         AddSurroundings(socialRoom, eventProvider);
 
-        AddClimbEvents(socialRoom, eventProvider);
-
         return socialRoom;
     }
 
@@ -204,10 +202,12 @@ public class SocialRoomPrerequisites
             IsSurrounding = true,
             IsPickAble = false,
             IsSeatAble = true,
+            IsClimbAble = true,
             Grammar = new Grammars(Genders.Male)
         };
         location.Items.Add(billard);
         AddSitDownEvents(billard, eventProvider);
+        AddClimbEvents(billard, eventProvider);
         
         var darts = new Item()
         {
@@ -228,10 +228,12 @@ public class SocialRoomPrerequisites
             IsSurrounding = true,
             IsPickAble = false,
             IsSeatAble = true,
+            IsClimbAble = true,
             Grammar = new Grammars(Genders.Male)
         };
         location.Items.Add(glassTable);
         AddSitDownEvents(glassTable, eventProvider);
+        AddClimbEvents(glassTable, eventProvider);
         
         var mediaServer = new Item()
         {
@@ -337,8 +339,8 @@ public class SocialRoomPrerequisites
         item.SitDown += eventProvider.SitDownOnCouchInSocialRoom;
     }
     
-    private static void AddClimbEvents(Location room, EventProvider eventProvider)
+    private static void AddClimbEvents(Item item, EventProvider eventProvider)
     {
-        room.Climb += eventProvider.ClimbOnTablesInSocialRoom;
+        item.BeforeClimb += eventProvider.ClimbOnTablesInSocialRoom;
     }
 }

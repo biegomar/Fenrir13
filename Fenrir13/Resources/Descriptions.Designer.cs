@@ -1752,6 +1752,15 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Das wirkt nicht so, als könne man es essen!.
+        /// </summary>
+        internal static string ITEM_NOT_EATABLE {
+            get {
+                return ResourceManager.GetString("ITEM_NOT_EATABLE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Voller Demut und Ehrfurcht stehst Du auf dem breiten Steg und blickst in die schwarze Tiefe des Alls. Noch nie zuvor hast Du es gewagt, Dich dieser Herausforderung zu stellen. Wenn es die Situation nicht erfordern würde, hättest Du es auch jetzt noch nicht. Aber es nützt nichts: Du wirst Deine Angst überwinden müssen.
         ///Der Steg ragt weit ins All hinaus und an seiner äußeren Kante steht man vollkommen im All, ohne die schützende Hülle des Schiffs. Du lässt Deinen Blick schweifen und kannst überall nur den fü [rest of string was truncated]&quot;;.
         /// </summary>

@@ -664,18 +664,16 @@ internal class EventProvider
     
     internal void ClimbOnTablesInSocialRoom(object sender, ContainerObjectEventArgs eventArgs)
     {
-        if (sender is Location room && room.Key == Keys.SOCIALROOM)
+        if (sender is Item table)
         {
-            if (eventArgs.ExternalItemKey == Keys.SOCIALROOM_BILLARD || eventArgs.ExternalItemKey == Keys.SOCIALROOM_GLASS_TABLE)
+            if (table.Key == Keys.SOCIALROOM_BILLARD || table.Key == Keys.SOCIALROOM_GLASS_TABLE)
             {
                 if (this.universe.ActivePlayer.HasClimbed)
                 {
-                    PrintingSubsystem.Resource(BaseDescriptions.ALREADY_CLIMBED);
-                    return;
+                    throw new ClimbException(BaseDescriptions.ALREADY_CLIMBED);
                 }
 
-                PrintingSubsystem.Resource(Descriptions.SOCIALROOM_CANT_REACH_RECEIVER_FROM_HERE);    
-                return;
+                throw new ClimbException(Descriptions.SOCIALROOM_CANT_REACH_RECEIVER_FROM_HERE);
             }
             
             throw new ClimbException(BaseDescriptions.IMPOSSIBLE_CLIMB);
@@ -1197,9 +1195,14 @@ internal class EventProvider
             throw new BreakException(BaseDescriptions.IMPOSSIBLE_BREAK_ITEM);
         }
         
-        if (sender is Item flap && flap.Key == Keys.AMBULANCE_RESPIRATOR_FLAP && eventArgs.ItemToUse.Key == Keys.DUMBBELL_BAR)
+        if (sender is Item flap)
         {
-            throw new BreakException(Descriptions.AMBULANCE_RESPIRATOR_FLAP_DUMBBELL_BAR_UNBREAKABLE);
+            if (flap.Key == Keys.AMBULANCE_RESPIRATOR_FLAP && eventArgs.ItemToUse.Key == Keys.DUMBBELL_BAR)
+            {
+                throw new BreakException(Descriptions.AMBULANCE_RESPIRATOR_FLAP_DUMBBELL_BAR_UNBREAKABLE);    
+            }
+            
+            throw new BreakException(String.Format(BaseDescriptions.INAPPROPRIATE_TOOL, flap.DativeArticleName.LowerFirstChar()));    
         }
     }
     

@@ -3,6 +3,7 @@ using Fenrir13.Events;
 using Fenrir13.Resources;
 using Heretic.InteractiveFiction.GamePlay;
 using Heretic.InteractiveFiction.Objects;
+using Heretic.InteractiveFiction.Resources;
 
 namespace Fenrir13.GamePlay.Prerequisites.CryoChamber;
 
@@ -21,7 +22,7 @@ internal static class CryoChamberPrerequisites
         cryoChamber.Items.Add(GetChocolateBar(eventProvider));
         cryoChamber.Items.Add(GetSpaceSuite(eventProvider));
         
-        cryoChamber.AddOptionalVerb(VerbKeys.USE, "ISS|ESS|ESSE", "Fehler!");
+        cryoChamber.AddOptionalVerb(VerbKeys.USE, OptionalVerbs.EAT, Descriptions.ITEM_NOT_EATABLE);
         
         AddSurroundings(cryoChamber, eventProvider);
 
