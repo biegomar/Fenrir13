@@ -1651,6 +1651,24 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Du willst jetzt nicht wirklich mit {0} fahren, oder?.
+        /// </summary>
+        internal static string GYM_IMPOSSIBLE_RIDE {
+            get {
+                return ResourceManager.GetString("GYM_IMPOSSIBLE_RIDE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Du willst jetzt nicht wirklich mit {0} trainieren, oder?.
+        /// </summary>
+        internal static string GYM_IMPOSSIBLE_TRAINING {
+            get {
+                return ResourceManager.GetString("GYM_IMPOSSIBLE_TRAINING", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Die Schlaufen sind mit dem Sack vernäht und geben dem Trainierenden die Möglichkeit einen ordentlichen Halt an dem Gerät zu haben..
         /// </summary>
         internal static string GYM_LOOP {
@@ -2500,6 +2518,15 @@ namespace Fenrir13.Resources {
         internal static string ROOM_DOOR {
             get {
                 return ResourceManager.GetString("ROOM_DOOR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Seilchenspringen ist im Moment wirklich nicht das Richtige!.
+        /// </summary>
+        internal static string ROPE_SKIPPING {
+            get {
+                return ResourceManager.GetString("ROPE_SKIPPING", resourceCulture);
             }
         }
         

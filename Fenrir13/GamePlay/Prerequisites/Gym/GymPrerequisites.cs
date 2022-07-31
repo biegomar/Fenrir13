@@ -1,5 +1,6 @@
 using Fenrir13.Events;
 using Fenrir13.Resources;
+using Heretic.InteractiveFiction.GamePlay;
 using Heretic.InteractiveFiction.Objects;
 
 namespace Fenrir13.GamePlay.Prerequisites.Gym;
@@ -15,6 +16,8 @@ internal static class GymPrerequisites
             Description = Descriptions.GYM,
             Grammar = new Grammars(Genders.Male)
         };
+        
+        AddNewVerbs(gym);
 
         gym.Items.Add(GetDumbbellRack(eventProvider));
         
@@ -22,6 +25,12 @@ internal static class GymPrerequisites
         AddAfterLookEvents(gym, eventProvider);
 
         return gym;
+    }
+
+    private static void AddNewVerbs(Location gym)
+    {
+        gym.AddOptionalVerb(VerbKeys.USE, OptionalVerbs.DRIVE, Descriptions.GYM_IMPOSSIBLE_RIDE);
+        gym.AddOptionalVerb(VerbKeys.USE, OptionalVerbs.TRAIN, Descriptions.GYM_IMPOSSIBLE_TRAINING);
     }
     
     private static void AddSurroundings(Location location, EventProvider eventProvider)
@@ -169,6 +178,7 @@ internal static class GymPrerequisites
         };
         location.Items.Add(ropes);
         AddTakeEvents(ropes, eventProvider);
+        AddRopeSkippingEvent(ropes, eventProvider);
         
         var climbingFrame = new Item()
         {
@@ -214,6 +224,11 @@ internal static class GymPrerequisites
             Grammar = new Grammars(isSingular: false)
         };
         location.Items.Add(loop);
+    }
+
+    private static void AddRopeSkippingEvent(Item rope, EventProvider eventProvider)
+    {
+        rope.Jump += eventProvider.RopeSkipping;
     }
     
     private static Item GetDumbbellRack(EventProvider eventProvider)

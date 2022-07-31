@@ -316,6 +316,16 @@ internal class EventProvider
             throw new OpenException(BaseDescriptions.IMPOSSIBLE_OPEN);
         }
     }
+    
+    internal void RopeSkipping(object sender, ContainerObjectEventArgs eventArgs)
+    {
+        if (sender is Item rope && rope.Key == Keys.GYM_ROPES)
+        {
+            throw new JumpException(Descriptions.ROPE_SKIPPING);
+        }
+        
+        throw new JumpException(BaseDescriptions.NOTHING_HAPPENS);
+    }
 
     private void handleClosetDoor(Item bar, Item closetDoor)
     {

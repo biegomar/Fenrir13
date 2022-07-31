@@ -61,11 +61,29 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ISS|ESS|ESSE.
+        ///   Looks up a localized string similar to Fahre|Fahr.
+        /// </summary>
+        internal static string DRIVE {
+            get {
+                return ResourceManager.GetString("DRIVE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Iss|Ess|Esse.
         /// </summary>
         internal static string EAT {
             get {
                 return ResourceManager.GetString("EAT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Trainiere|Trainier.
+        /// </summary>
+        internal static string TRAIN {
+            get {
+                return ResourceManager.GetString("TRAIN", resourceCulture);
             }
         }
     }
