@@ -326,6 +326,16 @@ internal class EventProvider
         
         throw new JumpException(BaseDescriptions.NOTHING_HAPPENS);
     }
+    
+    internal void TakeLaptop(object sender, ContainerObjectEventArgs eventArgs)
+    {
+        if (sender is Item laptop && laptop.Key == Keys.LAPTOP)
+        {
+            throw new TakeException(Descriptions.ROPE_SKIPPING);
+        }
+        
+        throw new TakeException(BaseDescriptions.NOTHING_HAPPENS);
+    }
 
     private void handleClosetDoor(Item bar, Item closetDoor)
     {
@@ -667,7 +677,7 @@ internal class EventProvider
             if (you.IsSitting && eventArgs.ItemToSitOn.Key == Keys.SOCIALROOM_COUCH)
             {
                 PrintingSubsystem.Resource(Descriptions.TRY_TO_SIT_ON_COUCH);
-                you.StandUp();
+                you.StandUpFromSeat();
             }
         }
     }
