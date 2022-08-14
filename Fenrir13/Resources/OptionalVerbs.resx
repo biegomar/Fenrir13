@@ -27,4 +27,7 @@
     <data name="TRAIN" xml:space="preserve">
         <value>Trainiere|Trainier</value>
     </data>
+    <data name="PUT" xml:space="preserve">
+        <value>Stelle|Stell</value>
+    </data>
 </root>

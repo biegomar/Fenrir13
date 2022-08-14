@@ -17,6 +17,8 @@ public class SocialRoomPrerequisites
             Grammar = new Grammars(Genders.Male)
         };
         
+        socialRoom.AddOptionalVerb(VerbKeys.CLIMB, OptionalVerbs.PUT, string.Empty);
+        
         socialRoom.Items.Add(GetCouch(eventProvider));
         socialRoom.Items.Add(GetAntennaConstruction(eventProvider));
         
