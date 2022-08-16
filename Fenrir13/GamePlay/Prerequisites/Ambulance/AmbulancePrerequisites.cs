@@ -20,7 +20,7 @@ internal static class AmbulancePrerequisites
         
         AddSurroundings(ambulance);
         
-        AddAfterLookEvents(ambulance, eventProvider);
+        AddBeforeLookEvents(ambulance, eventProvider);
         
         return ambulance;
     }
@@ -33,7 +33,6 @@ internal static class AmbulancePrerequisites
             Name = Items.AMBULANCE_RESPIRATOR,
             Description = Descriptions.AMBULANCE_RESPIRATOR,
             IsPickAble = false,
-            IsHidden = true,
             IsUnveilAble = false,
             Grammar = new Grammars(Genders.Neutrum)
         };
@@ -209,9 +208,9 @@ internal static class AmbulancePrerequisites
         location.Items.Add(opHose);
     }
     
-    private static void AddAfterLookEvents(Location ambulance, EventProvider eventProvider)
+    private static void AddBeforeLookEvents(Location ambulance, EventProvider eventProvider)
     {
-        ambulance.AfterLook += eventProvider.LookAtRespirator;
+        ambulance.BeforeLook += eventProvider.LookAtRespirator;
     }
     
     private static void AddUseEvents(Item item, EventProvider eventProvider)

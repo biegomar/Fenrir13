@@ -41,7 +41,7 @@ internal class EventProvider
     {
         if (sender is Item fridgeHandle && fridgeHandle.Key == Keys.FRIDGE_DOOR_HANDLE)
         {
-            var fridge = this.universe.ActiveLocation.GetItemByKey(Keys.FRIDGE);
+            var fridge = this.universe.ActiveLocation.GetItem(Keys.FRIDGE);
             if (fridge != default)
             {
                 fridgeHandle.IsPickAble = true;
@@ -98,7 +98,7 @@ internal class EventProvider
     
     private void UseHandleOnFlap(Item respiratorFlap, Item doorHandle)
     {
-        var respirator = this.universe.ActiveLocation.GetItemByKey(Keys.AMBULANCE_RESPIRATOR);
+        var respirator = this.universe.ActiveLocation.GetItem(Keys.AMBULANCE_RESPIRATOR);
         if (respirator != default)
         {
             respirator.IsLocked = false;
@@ -270,7 +270,7 @@ internal class EventProvider
                 PrintingSubsystem.ResetColors();
                 PrintingSubsystem.Resource(Descriptions.INTERVENTION_REQUIRED_INTERPRETATION);
                 
-                var corridorMap = this.universe.GetLocationMapByEnumString(Enum.GetName(Directions.W));
+                var corridorMap = this.universe.GetDestinationNodeFromActiveLocationByDirection(Directions.W);
                 var corridor = corridorMap.Location;
                 if (corridor is { IsLocked: true })
                 {
@@ -291,7 +291,7 @@ internal class EventProvider
     {
         if (sender is Item closetDoor && closetDoor.Key == Keys.CLOSET_DOOR)
         {
-            var bar = this.universe.ActiveLocation.GetItemByKey(Keys.CHOCOLATEBAR);
+            var bar = this.universe.ActiveLocation.GetItem(Keys.CHOCOLATEBAR);
             if (bar != default)
             {
                 handleClosetDoor(bar, closetDoor);
@@ -305,7 +305,7 @@ internal class EventProvider
         {
             PrintingSubsystem.Resource(closetDoor.Description);
             
-            var bar = this.universe.ActiveLocation.GetItemByKey(Keys.CHOCOLATEBAR);
+            var bar = this.universe.ActiveLocation.GetItem(Keys.CHOCOLATEBAR);
             if (bar != default)
             {
                 handleClosetDoor(bar, closetDoor);
@@ -337,7 +337,7 @@ internal class EventProvider
         throw new TakeException(BaseDescriptions.NOTHING_HAPPENS);
     }
 
-    private void handleClosetDoor(Item bar, Item closetDoor)
+    private void handleClosetDoor(AHereticObject bar, AHereticObject closetDoor)
     {
         PrintingSubsystem.Resource(Descriptions.CLOSET_DOOR_FIRSTLOOK);
         bar.IsHidden = false;
@@ -361,12 +361,12 @@ internal class EventProvider
     {
         if (sender is Location ambulance && ambulance.Key == Keys.AMBULANCE && eventArgs.ExternalItemKey == Keys.AMBULANCE_RESPIRATOR)
         {
-            var respirator = this.universe.ActiveLocation.GetItemByKey(Keys.AMBULANCE_RESPIRATOR);
+            var respirator = this.universe.ActiveLocation.GetItem(Keys.AMBULANCE_RESPIRATOR);
             
             if (respirator != default)
             {
                 respirator.IsHidden = false;
-                ambulance.AfterLook -= LookAtRespirator;
+                ambulance.BeforeLook -= LookAtRespirator;
             }
         }
     }
@@ -375,7 +375,7 @@ internal class EventProvider
     {
         if (sender is Location engineRoom && engineRoom.Key == Keys.ENGINE_ROOM && eventArgs.ExternalItemKey == Keys.ENGINE_ROOM_RED_DOTS)
         {
-            var lever = this.universe.GetObjectFromWorldByKey(Keys.PANEL_TOP_LEVER);
+            var lever = this.universe.GetObjectFromWorld(Keys.PANEL_TOP_LEVER);
             if (lever != default)
             {
                 lever.ContainmentDescription = Descriptions.PANEL_TOP_LEVER_REDDOTS_CONTAINMENT;
@@ -436,7 +436,7 @@ internal class EventProvider
         {
             if (this.isPowerBarEaten)
             {
-                var suite = this.universe.ActiveLocation.GetItemByKey(Keys.SPACE_SUIT);
+                var suite = this.universe.ActiveLocation.GetItem(Keys.SPACE_SUIT);
                 if (suite != default)
                 {
                     throw new BeforeChangeLocationException(Descriptions.CANT_LEAVE_CHAMBER);
@@ -473,7 +473,7 @@ internal class EventProvider
                 belt = this.universe.ActivePlayer.Items.FirstOrDefault(x => x.Key == Keys.BELT);
             }
             
-            var eyelet = belt?.GetItemByKey(Keys.EYELET);
+            var eyelet = belt?.GetItem(Keys.EYELET);
             
             if (belt != null && eyelet != default && eyelet.LinkedTo.Count > 0)
             {
@@ -704,7 +704,7 @@ internal class EventProvider
     {
         if (sender is Location bridge && bridge.Key == Keys.COMMANDBRIDGE && eventArgs.ExternalItemKey == Keys.CONTROL_PANEL)
         {
-            var note = this.universe.ActiveLocation.GetItemByKey(Keys.STICKY_NOTE);
+            var note = this.universe.ActiveLocation.GetItem(Keys.STICKY_NOTE);
             if (note != default)
             {
                 note.IsHidden = false;
@@ -720,7 +720,7 @@ internal class EventProvider
     {
         if (sender is Location gym && gym.Key == Keys.GYM && eventArgs.ExternalItemKey == Keys.GYM_POWERSTATION)
         {
-            var rack = this.universe.ActiveLocation.GetItemByKey(Keys.DUMBBELL_RACK);
+            var rack = this.universe.ActiveLocation.GetItem(Keys.DUMBBELL_RACK);
             if (rack != default)
             {
                 rack.IsHidden = false;
@@ -747,14 +747,14 @@ internal class EventProvider
                     throw new UseException(Descriptions.CANT_REACH_ANTENNA);
                 }
 
-                if (this.universe.ActivePlayer.GetUnhiddenItemByKey(Keys.MAINTENANCE_ROOM_TOOL) == default)
+                if (this.universe.ActivePlayer.GetUnhiddenItem(Keys.MAINTENANCE_ROOM_TOOL) == default)
                 {
                     this.universe.PickObject(tool);
                 }
                 
-                if (this.universe.ActivePlayer.GetUnhiddenItemByKey(Keys.SOCIALROOM_ANTENNA) == default)
+                if (this.universe.ActivePlayer.GetUnhiddenItem(Keys.SOCIALROOM_ANTENNA) == default)
                 {
-                    var receiver = this.universe.GetObjectFromWorldByKey(Keys.SOCIALROOM_ANTENNA_CONSTRUCTION);
+                    var receiver = this.universe.GetObjectFromWorld(Keys.SOCIALROOM_ANTENNA_CONSTRUCTION);
                     if (receiver != default)
                     {
                         this.universe.ActivePlayer.Items.Add(antenna);
@@ -823,17 +823,17 @@ internal class EventProvider
             
             if (tool != default && antenna != default)
             {
-                if (this.universe.ActivePlayer.GetUnhiddenItemByKey(Keys.MAINTENANCE_ROOM_TOOL) == default)
+                if (this.universe.ActivePlayer.GetUnhiddenItem(Keys.MAINTENANCE_ROOM_TOOL) == default)
                 {
                     this.universe.PickObject(tool);
                 }
                 
-                if (this.universe.ActivePlayer.GetUnhiddenItemByKey(Keys.SOCIALROOM_ANTENNA) == default)
+                if (this.universe.ActivePlayer.GetUnhiddenItem(Keys.SOCIALROOM_ANTENNA) == default)
                 {
                     this.universe.PickObject(antenna);
                 }
                 
-                var droid = this.universe.ActiveLocation.GetItemByKey(Keys.DROID);
+                var droid = this.universe.ActiveLocation.GetItem(Keys.DROID);
                 if (droid != default)
                 {
                     this.universe.ActivePlayer.Items.Remove(antenna);
@@ -876,13 +876,13 @@ internal class EventProvider
             
             if (antenna != default && droid != default)
             {
-                var tool = this.universe.GetObjectFromWorldByKey(Keys.MAINTENANCE_ROOM_TOOL) as Item;
+                var tool = this.universe.GetObjectFromWorld(Keys.MAINTENANCE_ROOM_TOOL) as Item;
                 if (tool == default)
                 {
                     throw new UseException(Descriptions.MAINTENANCE_ROOM_TOOL_NOT_PRESENT); 
                 }
                 
-                if (this.universe.ActivePlayer.GetUnhiddenItemByKey(Keys.MAINTENANCE_ROOM_TOOL) == default)
+                if (this.universe.ActivePlayer.GetUnhiddenItem(Keys.MAINTENANCE_ROOM_TOOL) == default)
                 {
                     if (!this.universe.PickObject(tool))
                     {
@@ -890,7 +890,7 @@ internal class EventProvider
                     }
                 }
                 
-                if (this.universe.ActivePlayer.GetUnhiddenItemByKey(Keys.SOCIALROOM_ANTENNA) == default)
+                if (this.universe.ActivePlayer.GetUnhiddenItem(Keys.SOCIALROOM_ANTENNA) == default)
                 {
                     this.universe.PickObject(antenna);
                 }
@@ -922,7 +922,7 @@ internal class EventProvider
 
     private void ChangeShipModelContainment()
     {
-        if (this.universe.GetObjectFromWorldByKey(Keys.ENGINE_ROOM_SHIP_MODEL) is Item shipModel)
+        if (this.universe.GetObjectFromWorld(Keys.ENGINE_ROOM_SHIP_MODEL) is Item shipModel)
         {
             if (shipModel.ContainmentDescription == Descriptions.ENGINE_ROOM_SHIP_MODEL_CONTAINMENT)
             {
@@ -942,7 +942,7 @@ internal class EventProvider
         {
             if (!this.universe.IsQuestSolved(MetaData.QUEST_VIII))
             {
-                var item = engineRoom.GetItemByKey(Keys.ENGINE_ROOM_RED_DOTS);
+                var item = engineRoom.GetItem(Keys.ENGINE_ROOM_RED_DOTS);
                 if (item != default)
                 {
                     item.Description = Descriptions.ENGINE_ROOM_RED_DOTS_NO_ROBOT;
@@ -958,7 +958,7 @@ internal class EventProvider
                     this.universe.ActiveLocation.Items.Remove(droid);
                 }
                 
-                var item = engineRoom.GetItemByKey(Keys.ENGINE_ROOM_RED_DOTS);
+                var item = engineRoom.GetItem(Keys.ENGINE_ROOM_RED_DOTS);
                 if (item != default)
                 {
                     engineRoom.RemoveItem(item);    
@@ -986,7 +986,7 @@ internal class EventProvider
         {
             if (!this.universe.IsQuestSolved(MetaData.QUEST_VII))
             {
-                var item = engineRoom.GetItemByKey(Keys.ENGINE_ROOM_RED_DOTS);
+                var item = engineRoom.GetItem(Keys.ENGINE_ROOM_RED_DOTS);
                 if (item != default)
                 {
                     item.Description = Descriptions.ENGINE_ROOM_RED_DOTS_NO_SOLAR;
@@ -1003,7 +1003,7 @@ internal class EventProvider
                     roof.Items.Remove(droid);
                 }
                 
-                var item = engineRoom.GetItemByKey(Keys.ENGINE_ROOM_RED_DOTS);
+                var item = engineRoom.GetItem(Keys.ENGINE_ROOM_RED_DOTS);
                 if (item != default)
                 {
                     engineRoom.RemoveItem(item);    
@@ -1040,12 +1040,12 @@ internal class EventProvider
 
             if (oxygenBottle != default && helmet != default)
             {
-                if (this.universe.ActivePlayer.GetUnhiddenItemByKey(Keys.OXYGEN_BOTTLE) == default)
+                if (this.universe.ActivePlayer.GetUnhiddenItem(Keys.OXYGEN_BOTTLE) == default)
                 {
                     this.universe.PickObject(oxygenBottle);
                 }
                 
-                if (this.universe.ActivePlayer.GetUnhiddenItemByKey(Keys.HELMET) == default)
+                if (this.universe.ActivePlayer.GetUnhiddenItem(Keys.HELMET) == default)
                 {
                     this.universe.PickObject(helmet);
                 }
@@ -1089,7 +1089,7 @@ internal class EventProvider
             
             if (dumbbellBar != default && lever != default)
             {
-                if (this.universe.ActivePlayer.GetUnhiddenItemByKey(Keys.DUMBBELL_BAR) == default)
+                if (this.universe.ActivePlayer.GetUnhiddenItem(Keys.DUMBBELL_BAR) == default)
                 {
                     this.universe.PickObject(dumbbellBar);
                 }
@@ -1101,7 +1101,7 @@ internal class EventProvider
                 dumbbellBar.Use -= UseDumbbellBarWithLever;
                 lever.Use -= UseDumbbellBarWithLever;
 
-                var droid = this.universe.GetObjectFromWorldByKey(Keys.DROID);
+                var droid = this.universe.GetObjectFromWorld(Keys.DROID);
                 if (droid != default)
                 {
                     droid.ContainmentDescription = Descriptions.DROID_ENERGY_CONTAINMENT;
@@ -1141,9 +1141,9 @@ internal class EventProvider
 
             if (rope != default && endPoint != default)
             {
-                if (this.universe.ActivePlayer.GetUnhiddenItemByKey(Keys.BELT) == default)
+                if (this.universe.ActivePlayer.GetUnhiddenItem(Keys.BELT) == default)
                 {
-                    var belt = this.universe.ActiveLocation.GetItemByKey(Keys.BELT);
+                    var belt = this.universe.ActiveLocation.GetItem(Keys.BELT);
                     this.universe.PickObject(belt);
                 }
                 
@@ -1172,7 +1172,7 @@ internal class EventProvider
 
         if (sender is Item boxLock && boxLock.Key == Keys.EQUIPMENT_BOX_LOCK)
         {
-            var box = this.universe.ActiveLocation.GetItemByKey(Keys.EQUIPMENT_BOX);
+            var box = this.universe.ActiveLocation.GetItem(Keys.EQUIPMENT_BOX);
             if (box != default)
             {
                 if (eventArgs.ItemToUse.Key != Keys.DUMBBELL_BAR)
@@ -1244,7 +1244,7 @@ internal class EventProvider
         {
             if (fridge.IsClosed)
             {
-                var handle = fridge.GetItemByKey(Keys.FRIDGE_DOOR_HANDLE);
+                var handle = fridge.GetItem(Keys.FRIDGE_DOOR_HANDLE);
                 if (handle != default)
                 {
                     handle.IsHidden = false;
@@ -1261,7 +1261,7 @@ internal class EventProvider
         {
             if (flap.IsClosed)
             {
-                var oxygen = this.universe.ActiveLocation.GetItemByKey(Keys.OXYGEN_BOTTLE);
+                var oxygen = this.universe.ActiveLocation.GetItem(Keys.OXYGEN_BOTTLE);
                 if (oxygen != default)
                 {
                     oxygen.IsHidden = false;
