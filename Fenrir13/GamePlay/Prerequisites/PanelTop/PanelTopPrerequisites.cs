@@ -29,7 +29,7 @@ internal static class PanelTopPrerequisites
             Name = Items.PANEL_TOP_LEVER,
             Description = Descriptions.PANEL_TOP_LEVER,
             ContainmentDescription = Descriptions.PANEL_TOP_LEVER_CONTAINMENT,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(Genders.Male)
         };
 
@@ -47,7 +47,7 @@ internal static class PanelTopPrerequisites
             Name = Items.PANEL_TOP_SUPPLYLINES,
             Description = Descriptions.PANEL_TOP_SUPPLYLINES,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(isSingular: false)
         };
         location.Items.Add(lines);
@@ -58,7 +58,7 @@ internal static class PanelTopPrerequisites
             Name = Items.PANEL_TOP_WOLF,
             Description = Descriptions.PANEL_TOP_WOLF,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(Genders.Male)
         };
         location.Items.Add(wolf);
@@ -69,7 +69,7 @@ internal static class PanelTopPrerequisites
             Name = Items.PANEL_TOP_LAMPS,
             Description = Descriptions.PANEL_TOP_LAMPS,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(isSingular: false)
         };
         location.Items.Add(lamps);
@@ -80,7 +80,7 @@ internal static class PanelTopPrerequisites
             Name = Items.PANEL_TOP_WINDOWS,
             Description = Descriptions.PANEL_TOP_WINDOWS,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(isSingular: false)
         };
         location.Items.Add(windows);
@@ -91,7 +91,7 @@ internal static class PanelTopPrerequisites
             Name = Items.PANEL_TOP_PANELS,
             Description = Descriptions.PANEL_TOP_PANELS,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(isSingular: false)
         };
         location.Items.Add(panels);
@@ -102,7 +102,7 @@ internal static class PanelTopPrerequisites
             Name = Items.SPACE_LADDER,
             Description = Descriptions.SPACE_LADDER,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars()
         };
         location.Items.Add(ladder);
@@ -113,7 +113,7 @@ internal static class PanelTopPrerequisites
             Name = Items.JETTY_SPACE,
             Description = Descriptions.JETTY_SPACE,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(Genders.Male)
         };
         location.Items.Add(space);
@@ -124,7 +124,7 @@ internal static class PanelTopPrerequisites
             Name = Items.STARS,
             Description = Descriptions.STARS,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(Genders.Male, isSingular: false)
         };
         location.Items.Add(stars);
@@ -135,7 +135,7 @@ internal static class PanelTopPrerequisites
             Name = Items.JETTY_ALPHA,
             Description = Descriptions.JETTY_ALPHA,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(Genders.Neutrum, isSingular: false)
         };
         location.Items.Add(alphaCentauri);
@@ -146,7 +146,7 @@ internal static class PanelTopPrerequisites
             Name = Items.UNIVERSE,
             Description = Descriptions.UNIVERSE,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(Genders.Neutrum)
         };
         location.Items.Add(universe);

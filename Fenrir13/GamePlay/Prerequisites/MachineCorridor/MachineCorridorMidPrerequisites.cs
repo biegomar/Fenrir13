@@ -32,7 +32,7 @@ internal static class MachineCorridorMidPrerequisites
             Name = Items.CEILING,
             Description = Descriptions.CEILING,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars()
         };
         location.Items.Add(ceiling);

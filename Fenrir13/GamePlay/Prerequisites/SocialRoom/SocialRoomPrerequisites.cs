@@ -35,7 +35,7 @@ public class SocialRoomPrerequisites
             Name = Items.SOCIALROOM_CEILING,
             Description = Descriptions.SOCIALROOM_CEILING,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars()
         };
         location.Items.Add(ceiling);
@@ -46,7 +46,7 @@ public class SocialRoomPrerequisites
             Name = Items.SOCIALROOM_MONITOR,
             Description = Descriptions.SOCIALROOM_MONITOR,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(Genders.Male)
         };
         location.Items.Add(monitor);
@@ -57,8 +57,8 @@ public class SocialRoomPrerequisites
             Name = Items.SOCIALROOM_SEAT,
             Description = Descriptions.SOCIALROOM_SEAT,
             IsSurrounding = true,
-            IsPickAble = false,
-            IsSeatAble = true,
+            IsPickable = false,
+            IsSeatable = true,
             Grammar = new Grammars(Genders.Male)
         };
         location.Items.Add(seat);
@@ -70,7 +70,7 @@ public class SocialRoomPrerequisites
             Name = Items.SOCIALROOM_EAST_WALL,
             Description = Descriptions.SOCIALROOM_EAST_WEST_WALL,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars()
         };
         location.Items.Add(eastWall);
@@ -81,7 +81,7 @@ public class SocialRoomPrerequisites
             Name = Items.SOCIALROOM_WEST_WALL,
             Description = Descriptions.SOCIALROOM_EAST_WEST_WALL,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars()
         };
         location.Items.Add(westWall);
@@ -92,7 +92,7 @@ public class SocialRoomPrerequisites
             Name = Items.SOCIALROOM_SOUTH_WALL,
             Description = Descriptions.SOCIALROOM_SOUTH_WALL,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars()
         };
         location.Items.Add(southWall);
@@ -103,7 +103,7 @@ public class SocialRoomPrerequisites
             Name = Items.SOCIALROOM_NORTH_WALL,
             Description = Descriptions.SOCIALROOM_NORTH_WALL,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars()
         };
         location.Items.Add(northWall);
@@ -114,7 +114,7 @@ public class SocialRoomPrerequisites
             Name = Items.SOCIALROOM_WALL,
             Description = Descriptions.SOCIALROOM_WALL,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars()
         };
         location.Items.Add(wall);
@@ -125,7 +125,7 @@ public class SocialRoomPrerequisites
             Name = Items.SOCIALROOM_SEATGROUP,
             Description = Descriptions.SOCIALROOM_SEATGROUP,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars()
         };
         location.Items.Add(seatGroup);
@@ -136,7 +136,7 @@ public class SocialRoomPrerequisites
             Name = Items.SOCIALROOM_BILLARD_CUE,
             Description = Descriptions.SOCIALROOM_BILLARD_CUE,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(Genders.Male)
         };
         location.Items.Add(billardCue);
@@ -147,7 +147,7 @@ public class SocialRoomPrerequisites
             Name = Items.SOCIALROOM_BILLARD_BALLS,
             Description = Descriptions.SOCIALROOM_BILLARD_BALLS,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(isSingular: false)
         };
         location.Items.Add(billardBalls);
@@ -158,7 +158,7 @@ public class SocialRoomPrerequisites
             Name = Items.SOCIALROOM_BILLARD_BRUSH,
             Description = Descriptions.SOCIALROOM_BILLARD_BRUSH,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars()
         };
         location.Items.Add(billardBrush);
@@ -169,7 +169,7 @@ public class SocialRoomPrerequisites
             Name = Items.SOCIALROOM_BILLARD_CHALK,
             Description = Descriptions.SOCIALROOM_BILLARD_CHALK,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars()
         };
         location.Items.Add(billardChalk);
@@ -180,7 +180,7 @@ public class SocialRoomPrerequisites
             Name = Items.SOCIALROOM_BILLARD_THINGS,
             Description = Descriptions.SOCIALROOM_BILLARD_THINGS,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars()
         };
         location.Items.Add(billardThings);
@@ -191,7 +191,7 @@ public class SocialRoomPrerequisites
             Name = Items.SOCIALROOM_BILLARD_TRIANGLE,
             Description = Descriptions.SOCIALROOM_BILLARD_TRIANGLE,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(Genders.Neutrum)
         };
         location.Items.Add(billardTriangle);
@@ -202,9 +202,9 @@ public class SocialRoomPrerequisites
             Name = Items.SOCIALROOM_BILLARD,
             Description = Descriptions.SOCIALROOM_BILLARD,
             IsSurrounding = true,
-            IsPickAble = false,
-            IsSeatAble = true,
-            IsClimbAble = true,
+            IsPickable = false,
+            IsSeatable = true,
+            IsClimbable = true,
             Grammar = new Grammars(Genders.Male)
         };
         location.Items.Add(billard);
@@ -217,7 +217,7 @@ public class SocialRoomPrerequisites
             Name = Items.SOCIALROOM_DARTS,
             Description = Descriptions.SOCIALROOM_DARTS,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars()
         };
         location.Items.Add(darts);
@@ -228,9 +228,9 @@ public class SocialRoomPrerequisites
             Name = Items.SOCIALROOM_GLASS_TABLE,
             Description = Descriptions.SOCIALROOM_GLASS_TABLE,
             IsSurrounding = true,
-            IsPickAble = false,
-            IsSeatAble = true,
-            IsClimbAble = true,
+            IsPickable = false,
+            IsSeatable = true,
+            IsClimbable = true,
             Grammar = new Grammars(Genders.Male)
         };
         location.Items.Add(glassTable);
@@ -243,7 +243,7 @@ public class SocialRoomPrerequisites
             Name = Items.SOCIALROOM_MEDIASERVER,
             Description = Descriptions.SOCIALROOM_MEDIASERVER,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(Genders.Male)
         };
         location.Items.Add(mediaServer);
@@ -254,7 +254,7 @@ public class SocialRoomPrerequisites
             Name = Items.SOCIALROOM_BOOKS,
             Description = GetBookTitle(),
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(Genders.Neutrum)
         };
         location.Items.Add(books);
@@ -282,9 +282,9 @@ public class SocialRoomPrerequisites
             Key = Keys.SOCIALROOM_COUCH,
             Name = Items.SOCIALROOM_COUCH,
             Description = Descriptions.SOCIALROOM_COUCH,
-            IsClimbAble = true,
-            IsSeatAble = true,
-            IsPickAble = false
+            IsClimbable = true,
+            IsSeatable = true,
+            IsPickable = false
         };
         
         return couch;
@@ -298,7 +298,7 @@ public class SocialRoomPrerequisites
             Name = Items.SOCIALROOM_ANTENNA_CONSTRUCTION,
             Description = Descriptions.SOCIALROOM_ANTENNA_CONSTRUCTION,
             ContainmentDescription = Descriptions.SOCIALROOM_ANTENNA_CONSTRUCTION_CONTAINMENT,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(Genders.Male)
         };
         

@@ -31,7 +31,7 @@ internal static class CorridorEastPrerequisites
             Name = Items.CEILING,
             Description = Descriptions.CEILING,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars()
         };
         corridor.Items.Add(ceiling);
@@ -42,7 +42,7 @@ internal static class CorridorEastPrerequisites
             Name = Items.CORRIDOR_WALLS,
             Description = Descriptions.CORRIDOR_WALLS,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars()
         };
         corridor.Items.Add(wall);
@@ -53,7 +53,7 @@ internal static class CorridorEastPrerequisites
             Name = Items.CORRIDOR_PAINTING,
             Description = Descriptions.CORRIDOR_PAINTING_EAST,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(Genders.Neutrum)
         };
         corridor.Items.Add(painting);
@@ -64,7 +64,7 @@ internal static class CorridorEastPrerequisites
             Name = Items.EMPTYCREWCHAMBERONE,
             Description = Descriptions.EMPTYCREWCHAMBERONE,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(Genders.Neutrum)
         };
         corridor.Items.Add(chamberOne);
@@ -75,7 +75,7 @@ internal static class CorridorEastPrerequisites
             Name = Items.EMPTYCREWCHAMBERTWO,
             Description = Descriptions.EMPTYCREWCHAMBERTWO,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(Genders.Neutrum)
         };
         corridor.Items.Add(chamberTwo);
@@ -86,7 +86,7 @@ internal static class CorridorEastPrerequisites
             Name = Items.RED_DOT,
             Description = Descriptions.RED_DOT,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(Genders.Male)
         };
         corridor.Items.Add(redDot);
@@ -97,7 +97,7 @@ internal static class CorridorEastPrerequisites
             Name = Items.LOCATION,
             Description = Descriptions.LOCATION,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(Genders.Male)
         };
         corridor.Items.Add(location);
@@ -108,7 +108,7 @@ internal static class CorridorEastPrerequisites
             Name = Items.GREEN_ARROWS,
             Description = Descriptions.GREEN_ARROWS,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(Genders.Male, isSingular: false)
         };
         corridor.Items.Add(greenArrows);
@@ -119,7 +119,7 @@ internal static class CorridorEastPrerequisites
             Name = Items.EMERGENCY_LIGHT,
             Description = Descriptions.EMERGENCY_LIGHT,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars()
         };
         corridor.Items.Add(emergencyLight);

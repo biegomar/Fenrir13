@@ -32,8 +32,8 @@ internal static class AmbulancePrerequisites
             Key = Keys.AMBULANCE_RESPIRATOR,
             Name = Items.AMBULANCE_RESPIRATOR,
             Description = Descriptions.AMBULANCE_RESPIRATOR,
-            IsPickAble = false,
-            IsUnveilAble = false,
+            IsPickable = false,
+            IsUnveilable = false,
             Grammar = new Grammars(Genders.Neutrum)
         };
         
@@ -52,7 +52,7 @@ internal static class AmbulancePrerequisites
             Description = Descriptions.OXYGEN_BOTTLE,
             Weight = ItemWeights.OXYGEN_BOTTLE,
             IsHidden = true,
-            IsUnveilAble = false
+            IsUnveilable = false
         };
         
         AddUseEvents(oxygenBottle, eventProvider);
@@ -69,10 +69,10 @@ internal static class AmbulancePrerequisites
             Description = Descriptions.AMBULANCE_RESPIRATOR_FLAP,
             FirstLookDescription = Descriptions.AMBULANCE_RESPIRATOR_FLAP_FIRSTLOOK,
             ContainmentDescription = Descriptions.AMBULANCE_RESPIRATOR_FLAP_CONTAINMENT,
-            IsPickAble = false,
-            IsLockAble = true,
+            IsPickable = false,
+            IsLockable = true,
             IsLocked = true,
-            IsCloseAble = true,
+            IsCloseable = true,
             IsClosed = true,
             IsBreakable = true,
             LockDescription = Descriptions.AMBULANCE_RESPIRATOR_FLAP_LOCK
@@ -92,7 +92,7 @@ internal static class AmbulancePrerequisites
             Name = Items.CEILING,
             Description = Descriptions.CEILING,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars()
         };
         location.Items.Add(ceiling);
@@ -103,7 +103,7 @@ internal static class AmbulancePrerequisites
             Name = Items.CHAMBER_WALL,
             Description = Descriptions.CHAMBER_WALL,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars()
         };
         location.Items.Add(wall);
@@ -114,7 +114,7 @@ internal static class AmbulancePrerequisites
             Name = Items.AMBULANCE_OP_TABLE,
             Description = Descriptions.AMBULANCE_OP_TABLE,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(Genders.Male)
         };
         location.Items.Add(opTable);
@@ -125,7 +125,7 @@ internal static class AmbulancePrerequisites
             Name = Items.AMBULANCE_OP_ROBOTER,
             Description = Descriptions.AMBULANCE_OP_ROBOTER,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(Genders.Male)
         };
         location.Items.Add(opRoboter);
@@ -136,7 +136,7 @@ internal static class AmbulancePrerequisites
             Name = Items.AMBULANCE_BED,
             Description = Descriptions.AMBULANCE_BED,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(Genders.Neutrum)
         };
         location.Items.Add(opBed);
@@ -147,7 +147,7 @@ internal static class AmbulancePrerequisites
             Name = Items.AMBULANCE_OP_ITEMS,
             Description = Descriptions.AMBULANCE_OP_ITEMS,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(Genders.Neutrum)
         };
         location.Items.Add(opItems);
@@ -158,7 +158,7 @@ internal static class AmbulancePrerequisites
             Name = Items.AMBULANCE_OP_ITEMS_DETAIL,
             Description = Descriptions.AMBULANCE_OP_ITEMS_DETAIL,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(Genders.Neutrum)
         };
         location.Items.Add(opItemDetails);
@@ -169,7 +169,7 @@ internal static class AmbulancePrerequisites
             Name = Items.AMBULANCE_MEDIS,
             Description = Descriptions.AMBULANCE_MEDIS,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(Genders.Neutrum, false)
         };
         location.Items.Add(opMedis);
@@ -180,7 +180,7 @@ internal static class AmbulancePrerequisites
             Name = Items.AMBULANCE_MEDIS_CABINET,
             Description = Descriptions.AMBULANCE_MEDIS_CABINET,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(Genders.Male, false)
         };
         location.Items.Add(opMedisCabinet);
@@ -191,7 +191,7 @@ internal static class AmbulancePrerequisites
             Name = Items.AMBULANCE_RESPIRATOR,
             Description = Descriptions.AMBULANCE_RESPIRATOR,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(Genders.Neutrum)
         };
         location.Items.Add(opRespirator);
@@ -202,7 +202,7 @@ internal static class AmbulancePrerequisites
             Name = Items.AMBULANCE_OXYGEN_HOSE,
             Description = Descriptions.AMBULANCE_OXYGEN_HOSE,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(Genders.Male, false)
         };
         location.Items.Add(opHose);

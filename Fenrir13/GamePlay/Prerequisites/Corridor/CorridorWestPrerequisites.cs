@@ -32,7 +32,7 @@ internal static class CorridorWestPrerequisites
             Name = Items.CEILING,
             Description = Descriptions.CEILING,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars()
         };
         corridor.Items.Add(ceiling);
@@ -43,7 +43,7 @@ internal static class CorridorWestPrerequisites
             Name = Items.CORRIDOR_WALLS,
             Description = Descriptions.CORRIDOR_WALLS,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars()
         };
         corridor.Items.Add(wall);
@@ -54,7 +54,7 @@ internal static class CorridorWestPrerequisites
             Name = Items.CORRIDOR_PAINTING,
             Description = Descriptions.CORRIDOR_PAINTING_WEST,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(Genders.Neutrum)
         };
         corridor.Items.Add(painting);
@@ -65,7 +65,7 @@ internal static class CorridorWestPrerequisites
             Name = Items.CORRIDOR_WEST_HOLE,
             Description = Descriptions.CORRIDOR_WEST_HOLE,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(Genders.Neutrum)
         };
         corridor.Items.Add(hole);
@@ -76,7 +76,7 @@ internal static class CorridorWestPrerequisites
             Name = Items.CORRIDOR_WEST_WELD_SEAM,
             Description = Descriptions.CORRIDOR_WEST_WELD_SEAM,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars()
         };
         corridor.Items.Add(seam);
@@ -87,7 +87,7 @@ internal static class CorridorWestPrerequisites
             Name = Items.CORRIDOR_WEST_BULLEYE,
             Description = Descriptions.CORRIDOR_WEST_BULLEYE,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(gender: Genders.Neutrum)
         };
         corridor.Items.Add(bullEye);

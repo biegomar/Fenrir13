@@ -29,7 +29,7 @@ internal static class CorridorMidEastPrerequisites
             Name = Items.CEILING,
             Description = Descriptions.CEILING,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars()
         };
         corridor.Items.Add(ceiling);
@@ -40,7 +40,7 @@ internal static class CorridorMidEastPrerequisites
             Name = Items.CORRIDOR_WALLS,
             Description = Descriptions.CORRIDOR_WALLS,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars()
         };
         corridor.Items.Add(wall);
@@ -51,7 +51,7 @@ internal static class CorridorMidEastPrerequisites
             Name = Items.CORRIDOR_PAINTING,
             Description = Descriptions.CORRIDOR_PAINTING_MIDEAST,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(Genders.Neutrum)
         };
         corridor.Items.Add(painting);

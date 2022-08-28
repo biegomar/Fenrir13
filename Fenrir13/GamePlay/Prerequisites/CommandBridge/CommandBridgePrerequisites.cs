@@ -35,7 +35,7 @@ internal static class CommandBridgePrerequisites
             Name = Items.CEILING,
             Description = Descriptions.CEILING,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars()
         };
         location.Items.Add(ceiling);
@@ -46,7 +46,7 @@ internal static class CommandBridgePrerequisites
             Name = Items.CHAMBER_WALL,
             Description = Descriptions.CHAMBER_WALL,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars()
         };
         location.Items.Add(wall);
@@ -57,7 +57,7 @@ internal static class CommandBridgePrerequisites
             Name = Items.CONTROL_PANEL,
             Description = Descriptions.CONTROL_PANEL,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars()
         };
         location.Items.Add(controlPanel);
@@ -68,7 +68,7 @@ internal static class CommandBridgePrerequisites
             Name = Items.CONTROL_PANEL_CONTENT,
             Description = Descriptions.CONTROL_PANEL_CONTENT,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(isSingular: false)
         };
         location.Items.Add(controlPanelContent);
@@ -79,7 +79,7 @@ internal static class CommandBridgePrerequisites
             Name = Items.OVOID,
             Description = Descriptions.OVOID,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(Genders.Male)
         };
         location.Items.Add(ovoid);
@@ -90,7 +90,7 @@ internal static class CommandBridgePrerequisites
             Name = Items.FRONTSIDE,
             Description = Descriptions.FRONTSIDE,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars()
         };
         location.Items.Add(frontSide);
@@ -101,7 +101,7 @@ internal static class CommandBridgePrerequisites
             Name = Items.FRONTWINDOW,
             Description = Descriptions.FRONTWINDOW,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars()
         };
         location.Items.Add(frontWindow);
@@ -112,7 +112,7 @@ internal static class CommandBridgePrerequisites
             Name = Items.NECESSITIES,
             Description = Descriptions.NECESSITIES,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(isSingular: false)
         };
         location.Items.Add(necessities);
@@ -123,7 +123,7 @@ internal static class CommandBridgePrerequisites
             Name = Items.PERSONAL_SETTINGS,
             Description = Descriptions.PERSONAL_SETTINGS,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(isSingular: false)
         };
         location.Items.Add(personalSettings);
@@ -142,8 +142,8 @@ internal static class CommandBridgePrerequisites
             Key = Keys.PILOT_SEAT,
             Name = Items.PILOT_SEAT,
             Description = Descriptions.PILOT_SEAT,
-            IsPickAble = false,
-            IsSeatAble = true,
+            IsPickable = false,
+            IsSeatable = true,
             Grammar = new Grammars(Genders.Male)
         };
         
@@ -158,7 +158,7 @@ internal static class CommandBridgePrerequisites
             Name = Items.STICKY_NOTE,
             Description = string.Format(Descriptions.STICKY_NOTE, Descriptions.TERMINAL_PASSWORD_HINT),
             IsHidden = true,
-            IsUnveilAble = false
+            IsUnveilable = false
         };
         
         return stickyNote;

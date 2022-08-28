@@ -41,7 +41,7 @@ internal static class GymPrerequisites
             Name = Items.CEILING,
             Description = Descriptions.CEILING,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars()
         };
         location.Items.Add(ceiling);
@@ -52,7 +52,7 @@ internal static class GymPrerequisites
             Name = Items.CHAMBER_WALL,
             Description = Descriptions.CHAMBER_WALL,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars()
         };
         location.Items.Add(wall);
@@ -63,7 +63,7 @@ internal static class GymPrerequisites
             Name = Items.CARDIO_STATION,
             Description = Descriptions.CARDIO_STATION,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars()
         };
         location.Items.Add(cardio);
@@ -74,7 +74,7 @@ internal static class GymPrerequisites
             Name = Items.GYM_POWERSTATION,
             Description = Descriptions.GYM_POWERSTATION,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars()
         };
         location.Items.Add(power);
@@ -85,7 +85,7 @@ internal static class GymPrerequisites
             Name = Items.EXERCISE_AREA,
             Description = Descriptions.EXERCISE_AREA,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(gender: Genders.Male)
         };
         location.Items.Add(exercise);
@@ -96,7 +96,7 @@ internal static class GymPrerequisites
             Name = Items.BIKE,
             Description = Descriptions.GYM_FLOSKEL,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(gender: Genders.Neutrum)
         };
         location.Items.Add(bike);
@@ -107,7 +107,7 @@ internal static class GymPrerequisites
             Name = Items.CROSSTRAINER,
             Description = Descriptions.GYM_FLOSKEL,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(gender: Genders.Male)
         };
         location.Items.Add(crossTrainer);
@@ -118,7 +118,7 @@ internal static class GymPrerequisites
             Name = Items.TREADMILL,
             Description = Descriptions.GYM_FLOSKEL,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(gender: Genders.Neutrum)
         };
         location.Items.Add(treadMill);
@@ -129,7 +129,7 @@ internal static class GymPrerequisites
             Name = Items.STEPPER,
             Description = Descriptions.GYM_FLOSKEL,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(gender: Genders.Male)
         };
         location.Items.Add(stepper);
@@ -140,7 +140,7 @@ internal static class GymPrerequisites
             Name = Items.FITNESSMACHINE,
             Description = Descriptions.FITNESSMACHINE,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(isSingular: false)
         };
         location.Items.Add(fitnessMachine);
@@ -151,7 +151,7 @@ internal static class GymPrerequisites
             Name = Items.WORKOUTS,
             Description = Descriptions.WORKOUTS,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars()
         };
         location.Items.Add(workouts);
@@ -162,7 +162,7 @@ internal static class GymPrerequisites
             Name = Items.WEIGHT_PLATES,
             Description = Descriptions.WEIGHT_PLATES,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(isSingular: false)
         };
         location.Items.Add(weightPlates);
@@ -173,7 +173,7 @@ internal static class GymPrerequisites
             Name = Items.GYM_ROPES,
             Description = Descriptions.GYM_ROPES,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(gender: Genders.Neutrum)
         };
         location.Items.Add(ropes);
@@ -186,7 +186,7 @@ internal static class GymPrerequisites
             Name = Items.CLIMBING_FRAME,
             Description = Descriptions.CLIMBING_FRAME,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(gender: Genders.Neutrum)
         };
         location.Items.Add(climbingFrame);
@@ -197,7 +197,7 @@ internal static class GymPrerequisites
             Name = Items.GYM_BRACKET,
             Description = Descriptions.GYM_BRACKET,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars()
         };
         location.Items.Add(bracket);
@@ -208,7 +208,7 @@ internal static class GymPrerequisites
             Name = Items.GYM_SANDBAG,
             Description = Descriptions.GYM_SANDBAG,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(isSingular: false)
         };
         location.Items.Add(sandBag);
@@ -220,7 +220,7 @@ internal static class GymPrerequisites
             Name = Items.GYM_LOOP,
             Description = Descriptions.GYM_LOOP,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(isSingular: false)
         };
         location.Items.Add(loop);
@@ -239,8 +239,8 @@ internal static class GymPrerequisites
             Name = Items.DUMBBELL_RACK,
             Description = Descriptions.DUMBBELL_RACK,
             IsHidden = true,
-            IsUnveilAble = false,
-            IsPickAble = false
+            IsUnveilable = false,
+            IsPickable = false
         };
         
         item.Items.Add(GetDumbbellBar(eventProvider));

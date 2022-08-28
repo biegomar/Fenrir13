@@ -29,7 +29,7 @@ internal static class CorridorMidPrerequisites
             Key = Keys.PORTRAIT,
             Name = Items.PORTRAIT,
             Description = Descriptions.PORTRAIT,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(Genders.Neutrum)
         };
 
@@ -44,7 +44,7 @@ internal static class CorridorMidPrerequisites
             Name = Items.CEILING,
             Description = Descriptions.CEILING,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars()
         };
         corridor.Items.Add(ceiling);
@@ -55,7 +55,7 @@ internal static class CorridorMidPrerequisites
             Name = Items.CORRIDOR_WALLS,
             Description = Descriptions.CORRIDOR_WALLS,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars()
         };
         corridor.Items.Add(wall);
@@ -66,7 +66,7 @@ internal static class CorridorMidPrerequisites
             Name = Items.ROOM_DOOR,
             Description = Descriptions.ROOM_DOOR,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars()
         };
         corridor.Items.Add(door);
@@ -77,7 +77,7 @@ internal static class CorridorMidPrerequisites
             Name = Items.STAIRS,
             Description = Descriptions.STAIRS,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars()
         };
         corridor.Items.Add(stairs);
@@ -88,7 +88,7 @@ internal static class CorridorMidPrerequisites
             Name = Items.ROUND_STAIRS,
             Description = Descriptions.ROUND_STAIRS,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars()
         };
         corridor.Items.Add(roundStairs);

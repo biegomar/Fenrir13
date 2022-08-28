@@ -32,7 +32,7 @@ internal static class KitchenPrerequisites
             Name = Items.CEILING,
             Description = Descriptions.CEILING,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars()
         };
         location.Items.Add(ceiling);
@@ -43,7 +43,7 @@ internal static class KitchenPrerequisites
             Name = Items.CHAMBER_WALL,
             Description = Descriptions.CHAMBER_WALL,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars()
         };
         location.Items.Add(wall);
@@ -54,7 +54,7 @@ internal static class KitchenPrerequisites
             Name = Items.CHAMBER_FLOOR,
             Description = Descriptions.CHAMBER_FLOOR,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(Genders.Male)
         };
         location.Items.Add(floor);
@@ -65,7 +65,7 @@ internal static class KitchenPrerequisites
             Name = Items.TABLE,
             Description = Descriptions.TABLE,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(Genders.Male)
         };
         location.Items.Add(table);
@@ -76,8 +76,8 @@ internal static class KitchenPrerequisites
             Name = Items.CHAIR,
             Description = Descriptions.CHAIR,
             IsSurrounding = true,
-            IsPickAble = false,
-            IsSeatAble = true,
+            IsPickable = false,
+            IsSeatable = true,
             Grammar = new Grammars(Genders.Male)
         };
         location.Items.Add(chair);
@@ -89,7 +89,7 @@ internal static class KitchenPrerequisites
             Name = Items.KITCHEN_CABINET,
             Description = Descriptions.KITCHEN_CABINET,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(Genders.Male)
         };
         location.Items.Add(cabinet);
@@ -100,7 +100,7 @@ internal static class KitchenPrerequisites
             Name = Items.KITCHEN_FOOD_BAG,
             Description = Descriptions.KITCHEN_FOOD_BAG,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(Genders.Male, isSingular: false)
         };
         location.Items.Add(foodBag);
@@ -117,8 +117,8 @@ internal static class KitchenPrerequisites
             OpenDescription = Descriptions.FRIDGE_OPEN,
             LockDescription = Descriptions.FRIDGE_LOCKED,
             IsClosed = true,
-            IsCloseAble = true,
-            IsPickAble = false,
+            IsCloseable = true,
+            IsPickable = false,
             Grammar = new Grammars(Genders.Male)
         };
         
@@ -143,9 +143,9 @@ internal static class KitchenPrerequisites
             Description = Descriptions.FRIDGE_DOOR_HANDLE,
             ContainmentDescription = Descriptions.FRIDGE_DOOR_HANDLE_CONTAINMENT,
             UnPickAbleDescription = Descriptions.FRIDGE_DOOR_HANDLE_UNPICKABLE,
-            IsUnveilAble = false,
+            IsUnveilable = false,
             IsHidden = true,
-            IsPickAble = false,
+            IsPickable = false,
             Weight = ItemWeights.FRIDGE_DOOR_HANDLE,
             Grammar = new Grammars(Genders.Male)
         };
@@ -184,8 +184,8 @@ internal static class KitchenPrerequisites
             CloseDescription = Descriptions.FOOD_PRINTER_CLOSE,
             OpenDescription = Descriptions.FOOD_PRINTER_OPEN,
             IsClosed = true,
-            IsCloseAble = true,
-            IsPickAble = false,
+            IsCloseable = true,
+            IsPickable = false,
             Grammar = new Grammars(Genders.Male)
         };
         
@@ -200,7 +200,7 @@ internal static class KitchenPrerequisites
             Name = Items.RECYCLER,
             Description = Descriptions.RECYCLER,
             FirstLookDescription = Descriptions.RECYCLER_FIRSTLOOK,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(Genders.Male)
         };
         

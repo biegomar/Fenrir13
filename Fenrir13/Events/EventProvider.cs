@@ -44,7 +44,7 @@ internal class EventProvider
             var fridge = this.universe.ActiveLocation.GetItem(Keys.FRIDGE);
             if (fridge != default)
             {
-                fridgeHandle.IsPickAble = true;
+                fridgeHandle.IsPickable = true;
                 PrintingSubsystem.Resource(Descriptions.FRIDGE_DOOR_HANDLE_PULL);
                 var isHandlePicked = this.universe.PickObject(fridgeHandle, true);
                 if (!isHandlePicked || !this.universe.ActivePlayer.Items.Contains(fridgeHandle))
@@ -106,7 +106,7 @@ internal class EventProvider
             respiratorFlap.LinkedTo.Add(doorHandle);
             respiratorFlap.FirstLookDescription = string.Empty;
             doorHandle.LinkedToDescription = Descriptions.FRIDGE_DOOR_HANDLE_FLAP_LINKEDTO;
-            doorHandle.IsPickAble = false;
+            doorHandle.IsPickable = false;
             doorHandle.UnPickAbleDescription = Descriptions.FRIDGE_DOOR_HANDLE_FLAP_UNPICKABLE;
             this.universe.ActivePlayer.Items.Remove(doorHandle);
             PrintingSubsystem.Resource(Descriptions.FRIDGE_DOOR_HANDLE_PUSHED);
@@ -1191,7 +1191,7 @@ internal class EventProvider
             Name = Items.EQUIPMENT_BOX_LOCK,
             Description = Descriptions.EQUIPMENT_BOX_LOCK_DESTROYED,
             ContainmentDescription = Descriptions.EQUIPMENT_BOX_LOCK_BREAK_CONTAINMENT,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(Genders.Neutrum)
         };
         

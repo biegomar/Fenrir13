@@ -30,7 +30,7 @@ internal static class MaintenanceRoomPrerequisites
             Name = Items.CEILING,
             Description = Descriptions.CEILING,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars()
         };
         location.Items.Add(ceiling);
@@ -41,7 +41,7 @@ internal static class MaintenanceRoomPrerequisites
             Name = Items.CHAMBER_WALL,
             Description = Descriptions.CHAMBER_WALL,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars()
         };
         location.Items.Add(wall);
@@ -52,7 +52,7 @@ internal static class MaintenanceRoomPrerequisites
             Name = Items.MAINTENANCE_ROOM_EAST_WALL,
             Description = Descriptions.MAINTENANCE_ROOM_EAST_WALL,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars()
         };
         location.Items.Add(eastWall);
@@ -63,7 +63,7 @@ internal static class MaintenanceRoomPrerequisites
             Name = Items.MAINTENANCE_ROOM_SHELF,
             Description = Descriptions.MAINTENANCE_ROOM_SHELF,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars()
         };
         location.Items.Add(shelf);
@@ -74,7 +74,7 @@ internal static class MaintenanceRoomPrerequisites
             Name = Items.MAINTENANCE_ROOM_UTILS,
             Description = Descriptions.MAINTENANCE_ROOM_UTILS,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(isSingular: false)
         };
         location.Items.Add(utils);
@@ -85,7 +85,7 @@ internal static class MaintenanceRoomPrerequisites
             Name = Items.MAINTENANCE_ROOM_PLATE,
             Description = Descriptions.MAINTENANCE_ROOM_PLATE,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars()
         };
         location.Items.Add(plate);
@@ -96,7 +96,7 @@ internal static class MaintenanceRoomPrerequisites
             Name = Items.SIGNS_OF_USE,
             Description = Descriptions.SIGNS_OF_USE,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(isSingular: false)
         };
         location.Items.Add(signs);
@@ -107,7 +107,7 @@ internal static class MaintenanceRoomPrerequisites
             Name = Items.MAINTENANCE_ROOM_DRAWER_HANDLE,
             Description = Descriptions.MAINTENANCE_ROOM_DRAWER_HANDLE,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(isSingular: false)
         };
         location.Items.Add(handle);
@@ -120,7 +120,7 @@ internal static class MaintenanceRoomPrerequisites
             Key = Keys.MAINTENANCE_ROOM_WORKBENCH,
             Name = Items.MAINTENANCE_ROOM_WORKBENCH,
             Description = Descriptions.MAINTENANCE_ROOM_WORKBENCH,
-            IsPickAble = false
+            IsPickable = false
         };
 
         result.Items.Add(GetDrawer(eventProvider));
@@ -138,8 +138,8 @@ internal static class MaintenanceRoomPrerequisites
             ContainmentDescription = Descriptions.MAINTENANCE_ROOM_DRAWER_CONTAINMENT,
             CloseDescription = Descriptions.MAINTENANCE_ROOM_DRAWER_CLOSE,
             OpenDescription = Descriptions.MAINTENANCE_ROOM_DRAWER_OPEN,
-            IsPickAble = false,
-            IsCloseAble = true,
+            IsPickable = false,
+            IsCloseable = true,
             IsClosed = true
         };
 

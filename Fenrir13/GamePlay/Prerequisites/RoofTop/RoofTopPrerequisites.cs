@@ -31,7 +31,7 @@ internal static class RoofTopPrerequisites
             Name = Items.DROID,
             Description = Descriptions.DROID,
             FirstLookDescription = Descriptions.DROID_FIRSTLOOK,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(Genders.Male)
         };
         
@@ -48,7 +48,7 @@ internal static class RoofTopPrerequisites
             Name = Items.JETTY_SPACE,
             Description = Descriptions.JETTY_SPACE,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(Genders.Male)
         };
         location.Items.Add(space);
@@ -59,7 +59,7 @@ internal static class RoofTopPrerequisites
             Name = Items.STARS,
             Description = Descriptions.STARS,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(Genders.Male, isSingular: false)
         };
         location.Items.Add(stars);
@@ -70,7 +70,7 @@ internal static class RoofTopPrerequisites
             Name = Items.JETTY_ALPHA,
             Description = Descriptions.JETTY_ALPHA,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(Genders.Neutrum, isSingular: false)
         };
         location.Items.Add(alphaCentauri);
@@ -81,7 +81,7 @@ internal static class RoofTopPrerequisites
             Name = Items.UNIVERSE,
             Description = Descriptions.UNIVERSE,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(Genders.Neutrum, isSingular: false)
         };
         location.Items.Add(universe);
@@ -92,7 +92,7 @@ internal static class RoofTopPrerequisites
             Name = Items.SPACE_LADDER,
             Description = Descriptions.SPACE_LADDER,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars()
         };
         location.Items.Add(ladder);
@@ -103,7 +103,7 @@ internal static class RoofTopPrerequisites
             Name = Items.PROXIMA_CENTAURI,
             Description = Descriptions.PROXIMA_CENTAURI,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(Genders.Neutrum, isSingular: false)
         };
         location.Items.Add(proxima);
@@ -114,7 +114,7 @@ internal static class RoofTopPrerequisites
             Name = Items.ROOF_TOP_CLAW,
             Description = Descriptions.ROOF_TOP_CLAW,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(isSingular: false)
         };
         location.Items.Add(claw);
@@ -125,7 +125,7 @@ internal static class RoofTopPrerequisites
             Name = Items.ROOF_TOP_DOCK,
             Description = Descriptions.ROOF_TOP_DOCK,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(Genders.Neutrum)
         };
         location.Items.Add(dock);

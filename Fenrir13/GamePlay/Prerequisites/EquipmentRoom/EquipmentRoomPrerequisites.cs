@@ -31,7 +31,7 @@ internal static class EquipmentRoomPrerequisites
             Name = Items.CEILING,
             Description = Descriptions.CEILING,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars()
         };
         location.Items.Add(ceiling);
@@ -42,7 +42,7 @@ internal static class EquipmentRoomPrerequisites
             Name = Items.CHAMBER_WALL,
             Description = Descriptions.CHAMBER_WALL,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars()
         };
         location.Items.Add(wall);
@@ -53,7 +53,7 @@ internal static class EquipmentRoomPrerequisites
             Name = Items.EQUIPMENT_ROOM_BENCH,
             Description = Descriptions.EQUIPMENT_ROOM_BENCH,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(isSingular: false)
         };
         location.Items.Add(bench);
@@ -64,7 +64,7 @@ internal static class EquipmentRoomPrerequisites
             Name = Items.EQUIPMENT_ROOM_NICHE,
             Description = Descriptions.EQUIPMENT_ROOM_NICHE,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(isSingular: false)
         };
         location.Items.Add(niche);
@@ -75,7 +75,7 @@ internal static class EquipmentRoomPrerequisites
             Name = Items.EQUIPMENT_ROOM_TRASHBIN,
             Description = Descriptions.EQUIPMENT_ROOM_TRASHBIN,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(gender: Genders.Male)
         };
         location.Items.Add(trashBin);
@@ -86,7 +86,7 @@ internal static class EquipmentRoomPrerequisites
             Name = Items.EQUIPMENT_ROOM_CLOTH,
             Description = Descriptions.EQUIPMENT_ROOM_CLOTH,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(isSingular: false)
         };
         location.Items.Add(cloth);
@@ -97,7 +97,7 @@ internal static class EquipmentRoomPrerequisites
             Name = Items.EYELET,
             Description = Descriptions.EYELET,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars()
         };
         location.Items.Add(eyelet);
@@ -108,7 +108,7 @@ internal static class EquipmentRoomPrerequisites
             Name = Items.ROOM_DOOR,
             Description = Descriptions.ROOM_DOOR,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars()
         };
         location.Items.Add(roomDoor);
@@ -126,8 +126,8 @@ internal static class EquipmentRoomPrerequisites
             CloseDescription = Descriptions.EQUIPMENT_BOX_CLOSED,
             IsClosed = true,
             IsLocked = true,
-            IsCloseAble = true,
-            IsPickAble = false
+            IsCloseable = true,
+            IsPickable = false
         };
         
         box.LinkedTo.Add(GetBoxLock(eventProvider));
@@ -149,7 +149,7 @@ internal static class EquipmentRoomPrerequisites
             Name = Items.EQUIPMENT_BOX_LOCK,
             Description = Descriptions.EQUIPMENT_BOX_LOCK,
             LinkedToDescription = Descriptions.EQUIPMENT_BOX_LOCK_CONTAINMENT,
-            IsPickAble = false,
+            IsPickable = false,
             IsHidden = true,
             IsBreakable = true,
             Grammar = new Grammars(Genders.Neutrum)
@@ -247,7 +247,7 @@ internal static class EquipmentRoomPrerequisites
             ContainmentDescription = Descriptions.EYELET_CONTAINMENT,
             LinkedToDescription = Descriptions.EYELET_LINKEDTO,
             IsHidden = true,
-            IsPickAble = false
+            IsPickable = false
         };
 
         AddEyeletUseEvents(eyelet, eventProvider);

@@ -29,7 +29,7 @@ internal static class CorridorMidWestPrerequisites
             Name = Items.CEILING,
             Description = Descriptions.CEILING,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars()
         };
         corridor.Items.Add(ceiling);
@@ -40,7 +40,7 @@ internal static class CorridorMidWestPrerequisites
             Name = Items.CORRIDOR_WALLS,
             Description = Descriptions.CORRIDOR_WALLS,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars()
         };
         corridor.Items.Add(wall);
@@ -51,7 +51,7 @@ internal static class CorridorMidWestPrerequisites
             Name = Items.CORRIDOR_PAINTING,
             Description = Descriptions.CORRIDOR_PAINTING_MIDWEST,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(Genders.Neutrum)
         };
         corridor.Items.Add(painting);
@@ -62,7 +62,7 @@ internal static class CorridorMidWestPrerequisites
             Name = Items.BULKHEAD,
             Description = Descriptions.BULKHEAD,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(Genders.Neutrum)
         };
         corridor.Items.Add(bulkhead);
@@ -73,7 +73,7 @@ internal static class CorridorMidWestPrerequisites
             Name = Items.BULKHEAD_WINDOW,
             Description = Descriptions.BULKHEAD_WINDOW,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(Genders.Neutrum)
         };
         corridor.Items.Add(bulkheadWindow);
@@ -84,7 +84,7 @@ internal static class CorridorMidWestPrerequisites
             Name = Items.HOLE,
             Description = Descriptions.HOLE,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(Genders.Neutrum)
         };
         corridor.Items.Add(hole);
@@ -95,7 +95,7 @@ internal static class CorridorMidWestPrerequisites
             Name = Items.SIDEWALL,
             Description = Descriptions.SIDEWALL,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars()
         };
         corridor.Items.Add(sideWall);
@@ -106,7 +106,7 @@ internal static class CorridorMidWestPrerequisites
             Name = Items.CREWCHAMBERS,
             Description = Descriptions.CREWCHAMBERS,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(isSingular: false)
         };
         corridor.Items.Add(crewChambers);
@@ -117,7 +117,7 @@ internal static class CorridorMidWestPrerequisites
             Name = Items.CREW_DOORS,
             Description = Descriptions.CREW_DOORS,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(isSingular: false)
         };
         corridor.Items.Add(crewDoors);

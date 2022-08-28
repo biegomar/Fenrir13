@@ -33,7 +33,7 @@ internal class EngineRoomPrerequisites
             Name = Items.ENGINE_ROOM_SHIP_MODEL, 
             Description = Descriptions.ENGINE_ROOM_SHIP_MODEL,
             ContainmentDescription = Descriptions.ENGINE_ROOM_SHIP_MODEL_CONTAINMENT,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(Genders.Neutrum)
         };
 
@@ -48,7 +48,7 @@ internal class EngineRoomPrerequisites
             Name = Items.CEILING,
             Description = Descriptions.CEILING,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars()
         };
         location.Items.Add(ceiling);
@@ -59,7 +59,7 @@ internal class EngineRoomPrerequisites
             Name = Items.CHAMBER_WALL,
             Description = Descriptions.CHAMBER_WALL,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars()
         };
         location.Items.Add(wall);
@@ -70,7 +70,7 @@ internal class EngineRoomPrerequisites
             Name = Items.ENGINE_ROOM_RED_DOTS,
             Description = Descriptions.ENGINE_ROOM_RED_DOTS,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(gender: Genders.Male, isSingular: false)
         };
         location.Items.Add(redDots);
@@ -81,7 +81,7 @@ internal class EngineRoomPrerequisites
             Name = Items.ENGINE_ROOM_ART,
             Description = Descriptions.ENGINE_ROOM_ART,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars()
         };
         location.Items.Add(art);
@@ -92,7 +92,7 @@ internal class EngineRoomPrerequisites
             Name = Items.ENGINE_ROOM_TECHNIC,
             Description = Descriptions.ENGINE_ROOM_TECHNIC,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars()
         };
         location.Items.Add(technic);
@@ -103,7 +103,7 @@ internal class EngineRoomPrerequisites
             Name = Items.ENGINE_ROOM_STEALING,
             Description = Descriptions.ENGINE_ROOM_STEALING,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(isSingular: false)
         };
         location.Items.Add(stealing);
@@ -114,7 +114,7 @@ internal class EngineRoomPrerequisites
             Name = Items.ENGINE_ROOM_HEAD,
             Description = Descriptions.ENGINE_ROOM_HEAD,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars()
         };
         location.Items.Add(head);
@@ -125,7 +125,7 @@ internal class EngineRoomPrerequisites
             Name = Items.ENGINE_ROOM_TANGENT,
             Description = Descriptions.ENGINE_ROOM_TANGENT,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars()
         };
         location.Items.Add(tangent);
@@ -136,7 +136,7 @@ internal class EngineRoomPrerequisites
             Name = Items.ENGINE_ROOM_COMPUTER,
             Description = Descriptions.ENGINE_ROOM_COMPUTER,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(gender: Genders.Male)
         };
         location.Items.Add(computer);
@@ -147,7 +147,7 @@ internal class EngineRoomPrerequisites
             Name = Items.QUATUM_CUBE,
             Description = Descriptions.QUATUM_CUBE,
             IsSurrounding = true,
-            IsPickAble = false,
+            IsPickable = false,
             Grammar = new Grammars(gender: Genders.Male)
         };
         location.Items.Add(cube);
