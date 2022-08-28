@@ -69,15 +69,6 @@ namespace Fenrir13.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Iss|Ess|Esse.
-        /// </summary>
-        internal static string EAT {
-            get {
-                return ResourceManager.GetString("EAT", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Stelle|Stell.
         /// </summary>
         internal static string PUT {

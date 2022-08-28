@@ -22,8 +22,6 @@ internal static class CryoChamberPrerequisites
         cryoChamber.Items.Add(GetChocolateBar(eventProvider));
         cryoChamber.Items.Add(GetSpaceSuite(eventProvider));
         
-        cryoChamber.AddOptionalVerb(VerbKeys.USE, OptionalVerbs.EAT, Descriptions.ITEM_NOT_EATABLE);
-        
         AddSurroundings(cryoChamber, eventProvider);
 
         AddChangeLocationEvents(cryoChamber, eventProvider);
@@ -40,10 +38,11 @@ internal static class CryoChamberPrerequisites
             Name = Items.CHOCOLATEBAR,
             IsHidden = true,
             IsUnveilAble = false,
+            IsEatable = true,
             Grammar = new Grammars(Genders.Male)
         };
 
-        AddUseEvents(bar, eventProvider);
+        AddEatEvents(bar, eventProvider);
 
         return bar;
     }
@@ -499,9 +498,9 @@ internal static class CryoChamberPrerequisites
         eventProvider.ScoreBoard.Add(nameof(eventProvider.LookAtDisplay), 1);
     }
 
-    private static void AddUseEvents(Item chocolateBar, EventProvider eventProvider)
+    private static void AddEatEvents(Item chocolateBar, EventProvider eventProvider)
     {
-        chocolateBar.Use += eventProvider.EatChocolateBar;
+        chocolateBar.Eat += eventProvider.EatChocolateBar;
         eventProvider.ScoreBoard.Add(nameof(eventProvider.EatChocolateBar), 5);
     }
 
