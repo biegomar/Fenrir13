@@ -120,8 +120,7 @@ internal class AirlockPrerequisites
             Name = Items.CEILING,
             Description = Descriptions.CEILING,
             IsSurrounding = true,
-            IsPickable = false,
-            Grammar = new Grammars()
+            IsPickable = false
         };
         location.Items.Add(ceiling);
         
@@ -131,8 +130,7 @@ internal class AirlockPrerequisites
             Name = Items.CHAMBER_WALL,
             Description = Descriptions.CHAMBER_WALL,
             IsSurrounding = true,
-            IsPickable = false,
-            Grammar = new Grammars()
+            IsPickable = false
         };
         location.Items.Add(wall);
         
@@ -142,8 +140,7 @@ internal class AirlockPrerequisites
             Description = Descriptions.ROOM_DOOR,
             Name = Items.ROOM_DOOR,
             IsSurrounding = true,
-            IsPickable = false,
-            Grammar = new Grammars(Genders.Neutrum)
+            IsPickable = false
         };
         location.Items.Add(door);
         
@@ -153,8 +150,7 @@ internal class AirlockPrerequisites
             Name = Items.AIRLOCK_NORTHERN_WALL,
             Description = Descriptions.AIRLOCK_NORTHERN_WALL,
             IsSurrounding = true,
-            IsPickable = false,
-            Grammar = new Grammars()
+            IsPickable = false
         };
         location.Items.Add(northWall);
         
@@ -164,8 +160,7 @@ internal class AirlockPrerequisites
             Name = Items.AIRLOCK_SOUTHERN_WALL,
             Description = Descriptions.AIRLOCK_SOUTHERN_WALL,
             IsSurrounding = true,
-            IsPickable = false,
-            Grammar = new Grammars()
+            IsPickable = false
         };
         location.Items.Add(southWall);
         
