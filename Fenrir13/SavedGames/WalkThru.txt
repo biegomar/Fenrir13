@@ -66,7 +66,7 @@ l receiver
 steige auf couch
 benutze werkzeug mit antenne
 rem 'Bekomme die Antenne' geschafft.
-absteigen
+steige ab
 n
 w
 runter

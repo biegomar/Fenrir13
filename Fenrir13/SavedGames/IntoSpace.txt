@@ -62,7 +62,7 @@ s
 l receiver
 steige auf couch
 benutze werkzeug mit antenne
-absteigen
+steige ab
 n
 w
 runter
