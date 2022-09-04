@@ -567,12 +567,6 @@ Bei genauerer Betrachtung erkennst Du, dass dort eine viereckige Aussparung ist.
     <data name="SPACE_SUIT_UNDROPABLE" xml:space="preserve">
         <value>Das geht leider nicht. Damit das Schiff permanent in Kontakt zu dem Crew-Mitglied ist, muss der Anzug ständig getragen werden. </value>
     </data>
-    <data name="PULLON_WEARABLE" xml:space="preserve">
-        <value>Du hast {0} angezogen.</value>
-    </data>
-    <data name="ALREADY_WEARING" xml:space="preserve">
-        <value>Du scheinst {0} schon zu tragen.</value>
-    </data>
     <data name="LINK_OXYGEN_BOTTLE_TO_HELMET" xml:space="preserve">
         <value>Du verschraubst den Schlauch des Helms mit der Sauerstoffflasche. Kurz darauf siehst Du, wie sich das Gewebe des Helms verändert und sich spinnennetzartig um die Sauerstoffflasche legt und sie am Ende vollständig umhüllt. Beide bilden nun eine Einheit und ermöglichen Dir einen kurzen Ausflug ins All.</value>
     </data>

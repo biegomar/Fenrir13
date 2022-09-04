@@ -20,8 +20,7 @@ public class PlayerPrerequisites
         
         AddSitDownEvents(player, eventProvider);
         AddStandUpEvents(player, eventProvider);
-        AddPullEvents(player, eventProvider);
-
+        
         return player;
     }
 
@@ -36,11 +35,5 @@ public class PlayerPrerequisites
         you.AfterSitDown += eventProvider.AfterSitDown;
         you.AfterSitDown += eventProvider.AfterSitDownOnCouch;
         eventProvider.ScoreBoard.Add(nameof(eventProvider.AfterSitDownOnQuestsSolved), 1);
-    }
-    
-    private static void AddPullEvents(Player you, EventProvider eventProvider)
-    {
-        you.Pull += eventProvider.PullOnWearablesOnPlayer;
-        
     }
 }

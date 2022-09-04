@@ -169,11 +169,11 @@ internal static class EquipmentRoomPrerequisites
             Description = Descriptions.HELMET,
             FirstLookDescription = Descriptions.HELMET_FIRSTLOOK,
             IsHidden = true,
+            IsWearable = true,
             Weight = ItemWeights.HELMET,
             Grammar = new Grammars(Genders.Male)
         };
-
-        AddPullOnEvents(helmet, eventProvider);
+        
         AddUseEvents(helmet, eventProvider);
         AddBeforeDropEvents(helmet, eventProvider);
         
@@ -188,11 +188,11 @@ internal static class EquipmentRoomPrerequisites
             Name = Items.GLOVES,
             Description = Descriptions.GLOVES,
             IsHidden = true,
+            IsWearable = true,
             Weight = ItemWeights.GLOVES,
             Grammar = new Grammars(Genders.Male, false)
         };
-
-        AddPullOnEvents(gloves, eventProvider);
+        
         AddBeforeDropEvents(gloves, eventProvider);
         
         return gloves;
@@ -206,11 +206,11 @@ internal static class EquipmentRoomPrerequisites
             Name = Items.BOOTS,
             Description = Descriptions.BOOTS,
             IsHidden = true,
+            IsWearable = true,
             Weight = ItemWeights.BOOTS,
             Grammar = new Grammars(Genders.Male, false)
         };
-
-        AddPullOnEvents(boots, eventProvider);
+        
         AddBeforeDropEvents(boots, eventProvider);
         
         return boots;
@@ -224,6 +224,7 @@ internal static class EquipmentRoomPrerequisites
             Name = Items.BELT,
             Description = Descriptions.BELT,
             IsHidden = true,
+            IsWearable = true,
             Weight = ItemWeights.BELT,
             Grammar = new Grammars(Genders.Male)
         };
@@ -231,7 +232,6 @@ internal static class EquipmentRoomPrerequisites
         belt.Items.Add(GetEyelet(eventProvider));
         
         AddEyeletUseEvents(belt, eventProvider);
-        AddPullOnEvents(belt, eventProvider);
         AddBeforeDropEvents(belt, eventProvider);
 
         return belt;
@@ -281,10 +281,5 @@ internal static class EquipmentRoomPrerequisites
     private static void AddBeforeDropEvents(Item item, EventProvider eventProvider)
     {
         item.BeforeDrop += eventProvider.DropClothsWithOpenAirlock;
-    }
-    
-    private static void AddPullOnEvents(Item item, EventProvider eventProvider)
-    {
-        item.Pull += eventProvider.PullOnWearables;
     }
 }
