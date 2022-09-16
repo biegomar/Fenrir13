@@ -4,6 +4,7 @@ using Fenrir13.Printing;
 using Fenrir13.Resources;
 using Heretic.InteractiveFiction.GamePlay;
 using Heretic.InteractiveFiction.GamePlay.EventSystem;
+using Heretic.InteractiveFiction.Grammars;
 using Heretic.InteractiveFiction.Objects;
 using Heretic.InteractiveFiction.Subsystems;
 using Microsoft.Extensions.DependencyInjection;
@@ -34,6 +35,7 @@ internal class CommandHandler
             services.AddSingleton<IPrintingSubsystem, ConsolePrintingSubsystem>();
             services.AddSingleton<IGamePrerequisitesAssembler, GamePrerequisitesAssembler>();
             services.AddSingleton<IResourceProvider, ResourceProvider>();
+            services.AddSingleton<IGrammar, GermanGrammar>();
             services.AddSingleton<GameLoop>();
             services.AddSingleton<InputProcessor>();
             services.AddSingleton<EventProvider>();
