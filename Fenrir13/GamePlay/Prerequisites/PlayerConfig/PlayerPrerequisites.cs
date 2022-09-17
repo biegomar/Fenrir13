@@ -4,7 +4,7 @@ using Heretic.InteractiveFiction.Objects;
 
 namespace Fenrir13.GamePlay.Prerequisites.PlayerConfig;
 
-public class PlayerPrerequisites
+public static class PlayerPrerequisites
 {
     internal static Player Get(EventProvider eventProvider)
     {
@@ -20,6 +20,7 @@ public class PlayerPrerequisites
         
         AddSitDownEvents(player, eventProvider);
         AddStandUpEvents(player, eventProvider);
+        AddToBeEvents(player, eventProvider);
         
         return player;
     }
@@ -35,5 +36,10 @@ public class PlayerPrerequisites
         you.AfterSitDown += eventProvider.AfterSitDown;
         you.AfterSitDown += eventProvider.AfterSitDownOnCouch;
         eventProvider.ScoreBoard.Add(nameof(eventProvider.AfterSitDownOnQuestsSolved), 1);
+    }
+
+    private static void AddToBeEvents(Player you, EventProvider eventProvider)
+    {
+        you.ToBe += eventProvider.SetPlayersName;
     }
 }

@@ -2,6 +2,7 @@ using System.Text;
 using Fenrir13.GamePlay;
 using Fenrir13.Resources;
 using Heretic.InteractiveFiction.Exceptions;
+using Heretic.InteractiveFiction.GamePlay;
 using Heretic.InteractiveFiction.GamePlay.EventSystem.EventArgs;
 using Heretic.InteractiveFiction.Objects;
 using Heretic.InteractiveFiction.Resources;
@@ -13,6 +14,7 @@ namespace Fenrir13.Events;
 internal class EventProvider
 {
     private readonly Universe universe;
+    private readonly ObjectHandler objectHandler;
     private readonly IPrintingSubsystem PrintingSubsystem;
     private bool isPowerBarEaten;
     private bool isAccessGranted;
@@ -24,6 +26,7 @@ internal class EventProvider
     {
         this.PrintingSubsystem = printingSubsystem;
         this.universe = universe;
+        this.objectHandler = new ObjectHandler(this.universe);
         this.isPowerBarEaten = false;
         this.isAccessGranted = false;
         this.isAirlockOpen = false;
@@ -375,7 +378,7 @@ internal class EventProvider
     {
         if (sender is Location engineRoom && engineRoom.Key == Keys.ENGINE_ROOM && eventArgs.ExternalItemKey == Keys.ENGINE_ROOM_RED_DOTS)
         {
-            var lever = this.universe.GetObjectFromWorld(Keys.PANEL_TOP_LEVER);
+            var lever = this.objectHandler.GetObjectFromWorldByKey(Keys.PANEL_TOP_LEVER);
             if (lever != default)
             {
                 lever.ContainmentDescription = Descriptions.PANEL_TOP_LEVER_REDDOTS_CONTAINMENT;
@@ -654,7 +657,7 @@ internal class EventProvider
                 
                 if (this.universe.ActivePlayer.GetUnhiddenItem(Keys.SOCIALROOM_ANTENNA) == default)
                 {
-                    var receiver = this.universe.GetObjectFromWorld(Keys.SOCIALROOM_ANTENNA_CONSTRUCTION);
+                    var receiver = this.objectHandler.GetObjectFromWorldByKey(Keys.SOCIALROOM_ANTENNA_CONSTRUCTION);
                     if (receiver != default)
                     {
                         this.universe.ActivePlayer.Items.Add(antenna);
@@ -776,7 +779,7 @@ internal class EventProvider
             
             if (antenna != default && droid != default)
             {
-                var tool = this.universe.GetObjectFromWorld(Keys.MAINTENANCE_ROOM_TOOL) as Item;
+                var tool = this.objectHandler.GetObjectFromWorldByKey(Keys.MAINTENANCE_ROOM_TOOL) as Item;
                 if (tool == default)
                 {
                     throw new UseException(Descriptions.MAINTENANCE_ROOM_TOOL_NOT_PRESENT); 
@@ -822,7 +825,7 @@ internal class EventProvider
 
     private void ChangeShipModelContainment()
     {
-        if (this.universe.GetObjectFromWorld(Keys.ENGINE_ROOM_SHIP_MODEL) is Item shipModel)
+        if (this.objectHandler.GetObjectFromWorldByKey(Keys.ENGINE_ROOM_SHIP_MODEL) is Item shipModel)
         {
             if (shipModel.ContainmentDescription == Descriptions.ENGINE_ROOM_SHIP_MODEL_CONTAINMENT)
             {
@@ -929,6 +932,16 @@ internal class EventProvider
             this.universe.ActivePlayer.AfterSitDown += this.AfterSitDownOnQuestsSolved;
         }
     }
+
+    internal void SetPlayersName(object sender, ContainerObjectEventArgs eventArgs)
+    {
+        if (sender is Player)
+        {
+            this.universe.ActivePlayer.Name = eventArgs.ExternalItemKey;
+            this.universe.ActivePlayer.IsStranger = false;
+            PrintingSubsystem.ActivePlayer(this.universe.ActivePlayer);
+        }
+    }
     
     internal void UseOxygenBottleWithHelmet(object sender, UseItemEventArgs eventArgs)
     {
@@ -1001,7 +1014,7 @@ internal class EventProvider
                 dumbbellBar.Use -= UseDumbbellBarWithLever;
                 lever.Use -= UseDumbbellBarWithLever;
 
-                var droid = this.universe.GetObjectFromWorld(Keys.DROID);
+                var droid = this.objectHandler.GetObjectFromWorldByKey(Keys.DROID);
                 if (droid != default)
                 {
                     droid.ContainmentDescription = Descriptions.DROID_ENERGY_CONTAINMENT;
