@@ -1,9 +1,9 @@
 REM auf gehts
-mein name ist Marc
+ich bin Marc
 nimm den suit
 öffne die schranktür
 iss den riegel
-l das display
+schaue dir das display an
 rem 'Öffne Deine Zimmertür' geschafft.
 w
 w
@@ -13,7 +13,7 @@ schaue dir die platte an
 setz dich hin
 tippe skov
 rem 'Hack Dich ins System' geschafft.
-aufstehen
+stehe auf
 runter
 w
 s
@@ -29,42 +29,42 @@ zerstöre das schloss mit der stange
 rem 'Öffne das Sicherheitsschloss' geschafft.
 e
 s
-drop stange
+lass die stange fallen
 n
 w
-öffne kiste
+öffne die kiste
 nimm
 e
 hoch
 e
 n
-öffne kühlschrank
-ziehe griff
+öffne den kühlschrank
+ziehe an dem griff
 s
 w
 w
 n
 l oxygen
 l klappe
-stecke griff in klappe
-öffne klappe
-nimm flasche
-verbinde flasche mit helm
+stecke den griff in die klappe
+öffne die klappe
+nimm die flasche
+verbinde die flasche mit dem helm
 rem 'Verbinde den Helm mit dem Sauerstoff' geschafft.
 s
 e
 runter
 e
-l schublade
-öffne schublade
-nimm werkzeug
+schaue dir die schublade
+öffne sie
+nimm das werkzeug
 w
 hoch
 e
 s
-l receiver
-steige auf couch
-benutze werkzeug mit antenne
+schaue dir den receiver an
+steige auf die couch
+benutze das werkzeug mit der antenne
 rem 'Bekomme die Antenne' geschafft.
 steige ab
 n
@@ -75,11 +75,11 @@ l punkte
 s
 s
 nimm stange
-ziehe helm an
-ziehe handschuhe an
-ziehe stiefel an
-ziehe gurt an
-verbinde seil mit gurt
+ziehe dir den helm an
+ziehe dir die handschuhe an
+ziehe dir die stiefel an
+ziehe dir den gurt an
+verbinde das seil mit dem gurt
 l tastenfeld
 drücke open
 rem 'Das All' geschafft.
@@ -99,4 +99,5 @@ drop gurt
 n
 hoch
 hoch
+score
 setzen

@@ -70,7 +70,7 @@ internal class ResourceProvider: IResourceProvider
 
         return result;
     }
-    
+
     private IEnumerable<string> NormalizeResourceList(IEnumerable<string> inputList)
     {
         var result = new List<string>();
