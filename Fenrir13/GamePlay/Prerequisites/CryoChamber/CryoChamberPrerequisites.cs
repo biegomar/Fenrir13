@@ -155,6 +155,7 @@ internal static class CryoChamberPrerequisites
             IsPickable = false,
             Grammar = new Grammars(Genders.Male)
         };
+        AddBeforeTakeEvents(laptop, eventProvider);
         location.Items.Add(laptop);
         
         var pierHole = new Item()
@@ -508,6 +509,11 @@ internal static class CryoChamberPrerequisites
     {
         item.AfterTake += eventProvider.TakeSpaceSuite;
         eventProvider.ScoreBoard.Add(nameof(eventProvider.TakeSpaceSuite), 1);
+    }
+    
+    private static void AddBeforeTakeEvents(Item item, EventProvider eventProvider)
+    {
+        item.BeforeTake += eventProvider.TakeLaptop;
     }
 
     private static void AddOpenEvents(Item closetDoor, EventProvider eventProvider)

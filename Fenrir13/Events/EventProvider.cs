@@ -334,7 +334,7 @@ internal class EventProvider
     {
         if (sender is Item laptop && laptop.Key == Keys.LAPTOP)
         {
-            throw new TakeException(Descriptions.ROPE_SKIPPING);
+            throw new TakeException(Descriptions.TRY_TO_TAKE_LAPTOP);
         }
         
         throw new TakeException(BaseDescriptions.NOTHING_HAPPENS);
