@@ -35,7 +35,7 @@ internal static class AmbulancePrerequisites
             Description = Descriptions.AMBULANCE_RESPIRATOR,
             IsPickable = false,
             IsUnveilable = false,
-            Grammar = new Grammars(Genders.Neutrum)
+            Grammar = new IndividualObjectGrammar(Genders.Neutrum)
         };
         
         respirator.Items.Add(GetFlap(eventProvider));
@@ -94,7 +94,7 @@ internal static class AmbulancePrerequisites
             Description = Descriptions.CEILING,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars()
+            Grammar = new IndividualObjectGrammar()
         };
         location.Items.Add(ceiling);
         
@@ -105,7 +105,7 @@ internal static class AmbulancePrerequisites
             Description = Descriptions.CHAMBER_WALL,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars()
+            Grammar = new IndividualObjectGrammar()
         };
         location.Items.Add(wall);
         
@@ -116,7 +116,7 @@ internal static class AmbulancePrerequisites
             Description = Descriptions.AMBULANCE_OP_TABLE,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Male)
+            Grammar = new IndividualObjectGrammar(Genders.Male)
         };
         location.Items.Add(opTable);
         
@@ -127,7 +127,7 @@ internal static class AmbulancePrerequisites
             Description = Descriptions.AMBULANCE_OP_ROBOTER,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Male)
+            Grammar = new IndividualObjectGrammar(Genders.Male)
         };
         location.Items.Add(opRoboter);
         
@@ -138,7 +138,7 @@ internal static class AmbulancePrerequisites
             Description = Descriptions.AMBULANCE_BED,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Neutrum)
+            Grammar = new IndividualObjectGrammar(Genders.Neutrum)
         };
         location.Items.Add(opBed);
         
@@ -149,7 +149,7 @@ internal static class AmbulancePrerequisites
             Description = Descriptions.AMBULANCE_OP_ITEMS,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Neutrum)
+            Grammar = new IndividualObjectGrammar(Genders.Neutrum)
         };
         location.Items.Add(opItems);
         
@@ -160,7 +160,7 @@ internal static class AmbulancePrerequisites
             Description = Descriptions.AMBULANCE_OP_ITEMS_DETAIL,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Neutrum)
+            Grammar = new IndividualObjectGrammar(Genders.Neutrum)
         };
         location.Items.Add(opItemDetails);
         
@@ -171,7 +171,7 @@ internal static class AmbulancePrerequisites
             Description = Descriptions.AMBULANCE_MEDIS,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Neutrum, false)
+            Grammar = new IndividualObjectGrammar(Genders.Neutrum, false)
         };
         location.Items.Add(opMedis);
         
@@ -182,7 +182,7 @@ internal static class AmbulancePrerequisites
             Description = Descriptions.AMBULANCE_MEDIS_CABINET,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Male, false)
+            Grammar = new IndividualObjectGrammar(Genders.Male, false)
         };
         location.Items.Add(opMedisCabinet);
         
@@ -193,7 +193,7 @@ internal static class AmbulancePrerequisites
             Description = Descriptions.AMBULANCE_RESPIRATOR,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Neutrum)
+            Grammar = new IndividualObjectGrammar(Genders.Neutrum)
         };
         location.Items.Add(opRespirator);
         
@@ -204,7 +204,7 @@ internal static class AmbulancePrerequisites
             Description = Descriptions.AMBULANCE_OXYGEN_HOSE,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Male, false)
+            Grammar = new IndividualObjectGrammar(Genders.Male, false)
         };
         location.Items.Add(opHose);
     }

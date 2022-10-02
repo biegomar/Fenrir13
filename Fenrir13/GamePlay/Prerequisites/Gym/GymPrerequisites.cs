@@ -15,7 +15,7 @@ internal static class GymPrerequisites
             Key = Keys.GYM,
             Name = Locations.GYM,
             Description = Descriptions.GYM,
-            Grammar = new Grammars(Genders.Male)
+            Grammar = new IndividualObjectGrammar(Genders.Male)
         };
         
         AddNewVerbs(gym);
@@ -43,7 +43,7 @@ internal static class GymPrerequisites
             Description = Descriptions.CEILING,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars()
+            Grammar = new IndividualObjectGrammar()
         };
         location.Items.Add(ceiling);
         
@@ -54,7 +54,7 @@ internal static class GymPrerequisites
             Description = Descriptions.CHAMBER_WALL,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars()
+            Grammar = new IndividualObjectGrammar()
         };
         location.Items.Add(wall);
         
@@ -65,7 +65,7 @@ internal static class GymPrerequisites
             Description = Descriptions.CARDIO_STATION,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars()
+            Grammar = new IndividualObjectGrammar()
         };
         location.Items.Add(cardio);
         
@@ -76,7 +76,7 @@ internal static class GymPrerequisites
             Description = Descriptions.GYM_POWERSTATION,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars()
+            Grammar = new IndividualObjectGrammar()
         };
         location.Items.Add(power);
         
@@ -87,7 +87,7 @@ internal static class GymPrerequisites
             Description = Descriptions.EXERCISE_AREA,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(gender: Genders.Male)
+            Grammar = new IndividualObjectGrammar(gender: Genders.Male)
         };
         location.Items.Add(exercise);
         
@@ -98,7 +98,7 @@ internal static class GymPrerequisites
             Description = Descriptions.GYM_FLOSKEL,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(gender: Genders.Neutrum)
+            Grammar = new IndividualObjectGrammar(gender: Genders.Neutrum)
         };
         location.Items.Add(bike);
         
@@ -109,7 +109,7 @@ internal static class GymPrerequisites
             Description = Descriptions.GYM_FLOSKEL,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(gender: Genders.Male)
+            Grammar = new IndividualObjectGrammar(gender: Genders.Male)
         };
         location.Items.Add(crossTrainer);
         
@@ -120,7 +120,7 @@ internal static class GymPrerequisites
             Description = Descriptions.GYM_FLOSKEL,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(gender: Genders.Neutrum)
+            Grammar = new IndividualObjectGrammar(gender: Genders.Neutrum)
         };
         location.Items.Add(treadMill);
         
@@ -131,7 +131,7 @@ internal static class GymPrerequisites
             Description = Descriptions.GYM_FLOSKEL,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(gender: Genders.Male)
+            Grammar = new IndividualObjectGrammar(gender: Genders.Male)
         };
         location.Items.Add(stepper);
         
@@ -142,7 +142,7 @@ internal static class GymPrerequisites
             Description = Descriptions.FITNESSMACHINE,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(isSingular: false)
+            Grammar = new IndividualObjectGrammar(isSingular: false)
         };
         location.Items.Add(fitnessMachine);
         
@@ -153,7 +153,7 @@ internal static class GymPrerequisites
             Description = Descriptions.WORKOUTS,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars()
+            Grammar = new IndividualObjectGrammar()
         };
         location.Items.Add(workouts);
         
@@ -164,7 +164,7 @@ internal static class GymPrerequisites
             Description = Descriptions.WEIGHT_PLATES,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(isSingular: false)
+            Grammar = new IndividualObjectGrammar(isSingular: false)
         };
         location.Items.Add(weightPlates);
         
@@ -175,7 +175,7 @@ internal static class GymPrerequisites
             Description = Descriptions.GYM_ROPES,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(gender: Genders.Neutrum)
+            Grammar = new IndividualObjectGrammar(gender: Genders.Neutrum)
         };
         location.Items.Add(ropes);
         AddTakeEvents(ropes, eventProvider);
@@ -188,7 +188,7 @@ internal static class GymPrerequisites
             Description = Descriptions.CLIMBING_FRAME,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(gender: Genders.Neutrum)
+            Grammar = new IndividualObjectGrammar(gender: Genders.Neutrum)
         };
         location.Items.Add(climbingFrame);
         
@@ -199,7 +199,7 @@ internal static class GymPrerequisites
             Description = Descriptions.GYM_BRACKET,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars()
+            Grammar = new IndividualObjectGrammar()
         };
         location.Items.Add(bracket);
         
@@ -210,7 +210,7 @@ internal static class GymPrerequisites
             Description = Descriptions.GYM_SANDBAG,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(isSingular: false)
+            Grammar = new IndividualObjectGrammar(isSingular: false)
         };
         location.Items.Add(sandBag);
         AddTakeEvents(sandBag, eventProvider);
@@ -222,7 +222,7 @@ internal static class GymPrerequisites
             Description = Descriptions.GYM_LOOP,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(isSingular: false)
+            Grammar = new IndividualObjectGrammar(isSingular: false)
         };
         location.Items.Add(loop);
     }

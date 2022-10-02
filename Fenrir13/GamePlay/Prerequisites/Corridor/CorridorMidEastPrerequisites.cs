@@ -14,7 +14,7 @@ internal static class CorridorMidEastPrerequisites
             Key = Keys.CORRIDOR_MIDEAST,
             Name = Locations.CORRIDOR_MIDEAST,
             Description = Descriptions.CORRIDOR_MIDEAST,
-            Grammar = new Grammars(Genders.Male)
+            Grammar = new IndividualObjectGrammar(Genders.Male)
         };
         
         AddSurroundings(corridor);
@@ -31,7 +31,7 @@ internal static class CorridorMidEastPrerequisites
             Description = Descriptions.CEILING,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars()
+            Grammar = new IndividualObjectGrammar()
         };
         corridor.Items.Add(ceiling);
         
@@ -42,7 +42,7 @@ internal static class CorridorMidEastPrerequisites
             Description = Descriptions.CORRIDOR_WALLS,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars()
+            Grammar = new IndividualObjectGrammar()
         };
         corridor.Items.Add(wall);
         
@@ -53,7 +53,7 @@ internal static class CorridorMidEastPrerequisites
             Description = Descriptions.CORRIDOR_PAINTING_MIDEAST,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Neutrum)
+            Grammar = new IndividualObjectGrammar(Genders.Neutrum)
         };
         corridor.Items.Add(painting);
     }

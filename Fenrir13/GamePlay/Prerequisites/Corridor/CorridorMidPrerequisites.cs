@@ -14,7 +14,7 @@ internal static class CorridorMidPrerequisites
             Key = Keys.CORRIDOR_MID,
             Name = Locations.CORRIDOR_MID,
             Description = Descriptions.CORRIDOR_MID,
-            Grammar = new Grammars(Genders.Male)
+            Grammar = new IndividualObjectGrammar(Genders.Male)
         };
         
         AddSurroundings(corridor);
@@ -31,7 +31,7 @@ internal static class CorridorMidPrerequisites
             Name = Items.PORTRAIT,
             Description = Descriptions.PORTRAIT,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Neutrum)
+            Grammar = new IndividualObjectGrammar(Genders.Neutrum)
         };
 
         return portrait;
@@ -46,7 +46,7 @@ internal static class CorridorMidPrerequisites
             Description = Descriptions.CEILING,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars()
+            Grammar = new IndividualObjectGrammar()
         };
         corridor.Items.Add(ceiling);
         
@@ -57,7 +57,7 @@ internal static class CorridorMidPrerequisites
             Description = Descriptions.CORRIDOR_WALLS,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars()
+            Grammar = new IndividualObjectGrammar()
         };
         corridor.Items.Add(wall);
         
@@ -68,7 +68,7 @@ internal static class CorridorMidPrerequisites
             Description = Descriptions.ROOM_DOOR,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars()
+            Grammar = new IndividualObjectGrammar()
         };
         corridor.Items.Add(door);
         
@@ -79,7 +79,7 @@ internal static class CorridorMidPrerequisites
             Description = Descriptions.STAIRS,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars()
+            Grammar = new IndividualObjectGrammar()
         };
         corridor.Items.Add(stairs);
         
@@ -90,7 +90,7 @@ internal static class CorridorMidPrerequisites
             Description = Descriptions.ROUND_STAIRS,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars()
+            Grammar = new IndividualObjectGrammar()
         };
         corridor.Items.Add(roundStairs);
     }

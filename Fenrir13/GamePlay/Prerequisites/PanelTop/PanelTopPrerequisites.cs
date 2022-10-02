@@ -31,7 +31,7 @@ internal static class PanelTopPrerequisites
             Description = Descriptions.PANEL_TOP_LEVER,
             ContainmentDescription = Descriptions.PANEL_TOP_LEVER_CONTAINMENT,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Male)
+            Grammar = new IndividualObjectGrammar(Genders.Male)
         };
 
         AddPullEvents(lever, eventProvider);
@@ -49,7 +49,7 @@ internal static class PanelTopPrerequisites
             Description = Descriptions.PANEL_TOP_SUPPLYLINES,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(isSingular: false)
+            Grammar = new IndividualObjectGrammar(isSingular: false)
         };
         location.Items.Add(lines);
         
@@ -60,7 +60,7 @@ internal static class PanelTopPrerequisites
             Description = Descriptions.PANEL_TOP_WOLF,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Male)
+            Grammar = new IndividualObjectGrammar(Genders.Male)
         };
         location.Items.Add(wolf);
         
@@ -71,7 +71,7 @@ internal static class PanelTopPrerequisites
             Description = Descriptions.PANEL_TOP_LAMPS,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(isSingular: false)
+            Grammar = new IndividualObjectGrammar(isSingular: false)
         };
         location.Items.Add(lamps);
         
@@ -82,7 +82,7 @@ internal static class PanelTopPrerequisites
             Description = Descriptions.PANEL_TOP_WINDOWS,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(isSingular: false)
+            Grammar = new IndividualObjectGrammar(isSingular: false)
         };
         location.Items.Add(windows);
         
@@ -93,7 +93,7 @@ internal static class PanelTopPrerequisites
             Description = Descriptions.PANEL_TOP_PANELS,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(isSingular: false)
+            Grammar = new IndividualObjectGrammar(isSingular: false)
         };
         location.Items.Add(panels);
         
@@ -104,7 +104,7 @@ internal static class PanelTopPrerequisites
             Description = Descriptions.SPACE_LADDER,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars()
+            Grammar = new IndividualObjectGrammar()
         };
         location.Items.Add(ladder);
         
@@ -115,7 +115,7 @@ internal static class PanelTopPrerequisites
             Description = Descriptions.JETTY_SPACE,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Male)
+            Grammar = new IndividualObjectGrammar(Genders.Male)
         };
         location.Items.Add(space);
         
@@ -126,7 +126,7 @@ internal static class PanelTopPrerequisites
             Description = Descriptions.STARS,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Male, isSingular: false)
+            Grammar = new IndividualObjectGrammar(Genders.Male, isSingular: false)
         };
         location.Items.Add(stars);
         
@@ -137,7 +137,7 @@ internal static class PanelTopPrerequisites
             Description = Descriptions.JETTY_ALPHA,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Neutrum, isSingular: false)
+            Grammar = new IndividualObjectGrammar(Genders.Neutrum, isSingular: false)
         };
         location.Items.Add(alphaCentauri);
         
@@ -148,7 +148,7 @@ internal static class PanelTopPrerequisites
             Description = Descriptions.UNIVERSE,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Neutrum)
+            Grammar = new IndividualObjectGrammar(Genders.Neutrum)
         };
         location.Items.Add(universe);
     }

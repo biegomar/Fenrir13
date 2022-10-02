@@ -17,7 +17,7 @@ internal static class CorridorWestPrerequisites
             IsLocked = true,
             LockDescription = Descriptions.CORRIDOR_WEST_LOCKDESCRIPTION,
             FirstLookDescription = Descriptions.CORRIDOR_WEST_FIRSTLOOK,
-            Grammar = new Grammars(Genders.Male)
+            Grammar = new IndividualObjectGrammar(Genders.Male)
         };
 
         AddSurroundings(corridor);
@@ -34,7 +34,7 @@ internal static class CorridorWestPrerequisites
             Description = Descriptions.CEILING,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars()
+            Grammar = new IndividualObjectGrammar()
         };
         corridor.Items.Add(ceiling);
         
@@ -45,7 +45,7 @@ internal static class CorridorWestPrerequisites
             Description = Descriptions.CORRIDOR_WALLS,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars()
+            Grammar = new IndividualObjectGrammar()
         };
         corridor.Items.Add(wall);
         
@@ -56,7 +56,7 @@ internal static class CorridorWestPrerequisites
             Description = Descriptions.CORRIDOR_PAINTING_WEST,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Neutrum)
+            Grammar = new IndividualObjectGrammar(Genders.Neutrum)
         };
         corridor.Items.Add(painting);
         
@@ -67,7 +67,7 @@ internal static class CorridorWestPrerequisites
             Description = Descriptions.CORRIDOR_WEST_HOLE,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Neutrum)
+            Grammar = new IndividualObjectGrammar(Genders.Neutrum)
         };
         corridor.Items.Add(hole);
         
@@ -78,7 +78,7 @@ internal static class CorridorWestPrerequisites
             Description = Descriptions.CORRIDOR_WEST_WELD_SEAM,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars()
+            Grammar = new IndividualObjectGrammar()
         };
         corridor.Items.Add(seam);
         
@@ -89,7 +89,7 @@ internal static class CorridorWestPrerequisites
             Description = Descriptions.CORRIDOR_WEST_BULLEYE,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(gender: Genders.Neutrum)
+            Grammar = new IndividualObjectGrammar(gender: Genders.Neutrum)
         };
         corridor.Items.Add(bullEye);
     }

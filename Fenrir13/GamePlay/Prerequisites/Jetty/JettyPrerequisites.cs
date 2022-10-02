@@ -14,7 +14,7 @@ internal static class JettyPrerequisites
             Key = Keys.JETTY,
             Name = Locations.JETTY,
             Description = Descriptions.JETTY,
-            Grammar = new Grammars(Genders.Male)
+            Grammar = new IndividualObjectGrammar(Genders.Male)
         };
 
         AddSurroundings(jetty);
@@ -31,7 +31,7 @@ internal static class JettyPrerequisites
             Description = Descriptions.SPACE_LADDER,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars()
+            Grammar = new IndividualObjectGrammar()
         };
         location.Items.Add(spaceLadder);
         
@@ -42,7 +42,7 @@ internal static class JettyPrerequisites
             Description = Descriptions.JETTY_HULL,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars()
+            Grammar = new IndividualObjectGrammar()
         };
         location.Items.Add(hull);
         
@@ -53,7 +53,7 @@ internal static class JettyPrerequisites
             Description = Descriptions.JETTY_SPACE,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Male)
+            Grammar = new IndividualObjectGrammar(Genders.Male)
         };
         location.Items.Add(space);
         
@@ -64,7 +64,7 @@ internal static class JettyPrerequisites
             Description = Descriptions.STARS,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Male, isSingular: false)
+            Grammar = new IndividualObjectGrammar(Genders.Male, isSingular: false)
         };
         location.Items.Add(stars);
         
@@ -75,7 +75,7 @@ internal static class JettyPrerequisites
             Description = Descriptions.JETTY_ALPHA,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Neutrum, isSingular: false)
+            Grammar = new IndividualObjectGrammar(Genders.Neutrum, isSingular: false)
         };
         location.Items.Add(alphaCentauri);
         
@@ -86,7 +86,7 @@ internal static class JettyPrerequisites
             Description = Descriptions.UNIVERSE,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Neutrum, isSingular: false)
+            Grammar = new IndividualObjectGrammar(Genders.Neutrum, isSingular: false)
         };
         location.Items.Add(universe);
         
@@ -97,7 +97,7 @@ internal static class JettyPrerequisites
             Description = Descriptions.JETTY_ENGINE,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(isSingular: false)
+            Grammar = new IndividualObjectGrammar(isSingular: false)
         };
         location.Items.Add(engine);
     }

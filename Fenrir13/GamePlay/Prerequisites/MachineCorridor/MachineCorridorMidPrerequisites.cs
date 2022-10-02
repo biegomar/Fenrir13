@@ -17,7 +17,7 @@ internal static class MachineCorridorMidPrerequisites
             Description = Descriptions.MACHINE_CORRIDOR_MID,
             IsLocked = true,
             LockDescription = Descriptions.MACHINE_CORRIDOR_MID_LOCKDESCRIPTION,
-            Grammar = new Grammars(Genders.Male)
+            Grammar = new IndividualObjectGrammar(Genders.Male)
         };
         
         AddSurroundings(corridor);
@@ -34,7 +34,7 @@ internal static class MachineCorridorMidPrerequisites
             Description = Descriptions.CEILING,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars()
+            Grammar = new IndividualObjectGrammar()
         };
         location.Items.Add(ceiling);
     }

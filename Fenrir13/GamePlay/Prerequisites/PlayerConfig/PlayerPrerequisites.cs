@@ -16,7 +16,7 @@ public static class PlayerPrerequisites
             Description = Descriptions.PLAYER,
             FirstLookDescription = Descriptions.PLAYER_FIRSTLOOK,
             MaxPayload = 10000,
-            Grammar = new Grammars(Genders.Male, isPlayer:true)
+            Grammar = new IndividualObjectGrammar(Genders.Male, isPlayer:true)
         };
         
         AddSitDownEvents(player, eventProvider);

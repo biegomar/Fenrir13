@@ -15,7 +15,7 @@ internal static class ComputerTerminalPrerequisites
             Name = Locations.COMPUTER_TERMINAL,
             Description = Descriptions.COMPUTER_TERMINAL,
             FirstLookDescription = Descriptions.COMPUTER_TERMINAL_FIRSTLOOK,
-            Grammar = new Grammars(Genders.Neutrum)
+            Grammar = new IndividualObjectGrammar(Genders.Neutrum)
         };
         
         AddWriteEvents(terminal, eventProvider);
