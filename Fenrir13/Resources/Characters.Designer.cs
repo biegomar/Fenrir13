@@ -44,11 +44,5 @@ namespace Fenrir13.Resources {
                 resourceCulture = value;
             }
         }
-        
-        internal static string PLAYER {
-            get {
-                return ResourceManager.GetString("PLAYER", resourceCulture);
-            }
-        }
     }
 }

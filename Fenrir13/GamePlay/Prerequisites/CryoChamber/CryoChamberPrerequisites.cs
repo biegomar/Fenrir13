@@ -534,6 +534,6 @@ internal static class CryoChamberPrerequisites
     
     private static void AddChangeLocationEvents(Location room, EventProvider eventProvider)
     {
-        room.BeforeChangeLocation += eventProvider.CantLeaveWithoutSuiteAndUneatenBar;
+        room.BeforeLeaveLocation += eventProvider.CantLeaveWithoutSuiteAndUneatenBar;
     }
 }

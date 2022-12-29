@@ -179,10 +179,10 @@ internal class AirlockPrerequisites
     
     private static void AddChangeRoomEvents(Location airlock, EventProvider eventProvider)
     {
-        airlock.AfterChangeLocation += eventProvider.EnterAirlock;
-        airlock.BeforeChangeLocation += eventProvider.CantLeaveWithOpenBulkHeadOrTiedRope;
-        airlock.BeforeChangeLocation += eventProvider.CantLeaveWithoutOpenBulkHead;
-        airlock.BeforeChangeLocation += eventProvider.LeaveAirlock;
+        airlock.EnterLocation += eventProvider.EnterAirlock;
+        airlock.BeforeLeaveLocation += eventProvider.CantLeaveWithOpenBulkHeadOrTiedRope;
+        airlock.BeforeLeaveLocation += eventProvider.CantLeaveWithoutOpenBulkHead;
+        airlock.BeforeLeaveLocation += eventProvider.LeaveAirlock;
     }
     
     private static void AddUseEvents(Item item, EventProvider eventProvider)

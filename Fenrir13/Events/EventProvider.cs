@@ -423,7 +423,7 @@ internal class EventProvider
         }
     }
     
-    internal void CantLeaveWithoutSuiteAndUneatenBar(object sender, ChangeLocationEventArgs eventArgs)
+    internal void CantLeaveWithoutSuiteAndUneatenBar(object sender, LeaveLocationEventArgs eventArgs)
     {
         if (sender is Location chamber && chamber.Key == Keys.CRYOCHAMBER
             && eventArgs.NewDestinationNode.Location.Key == Keys.CORRIDOR_EAST)
@@ -433,32 +433,32 @@ internal class EventProvider
                 var suite = this.universe.ActiveLocation.GetItem(Keys.SPACE_SUIT);
                 if (suite != default)
                 {
-                    throw new BeforeChangeLocationException(Descriptions.CANT_LEAVE_CHAMBER);
+                    throw new LeaveLocationException(Descriptions.CANT_LEAVE_CHAMBER);
                 }   
             }
         }
     }
     
-    internal void CantLeaveWithoutOpenBulkHead(object sender, ChangeLocationEventArgs eventArgs)
+    internal void CantLeaveWithoutOpenBulkHead(object sender, LeaveLocationEventArgs eventArgs)
     {
         if (sender is Location airlock && airlock.Key == Keys.AIRLOCK
                                        && eventArgs.NewDestinationNode.Location.Key == Keys.JETTY)
         {
             if (!isAirlockOpen)
             {
-                throw new BeforeChangeLocationException(Descriptions.CANT_LEAVE_AIRLOCK);
+                throw new LeaveLocationException(Descriptions.CANT_LEAVE_AIRLOCK);
             }
         }
     }
     
-    internal void CantLeaveWithOpenBulkHeadOrTiedRope(object sender, ChangeLocationEventArgs eventArgs)
+    internal void CantLeaveWithOpenBulkHeadOrTiedRope(object sender, LeaveLocationEventArgs eventArgs)
     {
         if (sender is Location airlock && airlock.Key == Keys.AIRLOCK
                                        && eventArgs.NewDestinationNode.Location.Key == Keys.MACHINE_CORRIDOR_MID)
         {
             if (isAirlockOpen)
             {
-                throw new BeforeChangeLocationException(Descriptions.CANT_LEAVE_OPEN_AIRLOCK);
+                throw new LeaveLocationException(Descriptions.CANT_LEAVE_OPEN_AIRLOCK);
             }
             
             var belt = this.universe.ActivePlayer.Clothes.FirstOrDefault(x => x.Key == Keys.BELT);
@@ -471,7 +471,7 @@ internal class EventProvider
             
             if (belt != null && eyelet != default && eyelet.LinkedTo.Count > 0)
             {
-                throw new BeforeChangeLocationException(Descriptions.CANT_LEAVE_WITH_TIED_EYELET);
+                throw new LeaveLocationException(Descriptions.CANT_LEAVE_WITH_TIED_EYELET);
             }
         }
     }
@@ -1135,8 +1135,9 @@ internal class EventProvider
             {
                 throw new BreakException(Descriptions.AMBULANCE_RESPIRATOR_FLAP_DUMBBELL_BAR_UNBREAKABLE);    
             }
-            
-            throw new BreakException(String.Format(BaseDescriptions.INAPPROPRIATE_TOOL, flap.DativeArticleName.LowerFirstChar()));    
+
+            var flapName = ArticleHandler.GetNameWithArticleForObject(flap, GrammarCase.Dative, lowerFirstCharacter: true);
+            throw new BreakException(String.Format(BaseDescriptions.INAPPROPRIATE_TOOL, flapName));    
         }
     }
     
@@ -1256,7 +1257,7 @@ internal class EventProvider
         }
     }
     
-    internal void EnterAirlock(object sender, ChangeLocationEventArgs eventArgs)
+    internal void EnterAirlock(object sender, EnterLocationEventArgs eventArgs)
     {
         if (sender is Location airlock && airlock.Key == Keys.AIRLOCK)
         {
@@ -1266,7 +1267,7 @@ internal class EventProvider
         }
     }
     
-    internal void LeaveAirlock(object sender, ChangeLocationEventArgs eventArgs)
+    internal void LeaveAirlock(object sender, LeaveLocationEventArgs eventArgs)
     {
         if (sender is Location airlock && airlock.Key == Keys.AIRLOCK 
                                        && eventArgs.NewDestinationNode.Location.Key == Keys.MACHINE_CORRIDOR_MID 
