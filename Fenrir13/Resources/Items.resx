@@ -55,7 +55,7 @@
         <value>Garderobe</value>
     </data>
     <data name="SPACE_SUIT" xml:space="preserve">
-        <value>Bio-Suit| Bio Suit|Space-Overall|Space Overall|Space-Suit|Space Suit|Overall|Anzug|Suit</value>
+        <value>Bio-Suit|Bio Suit|Space-Overall|Space Overall|Space-Suit|Space Suit|Overall|Anzug|Suit</value>
     </data>
     <data name="TABLE" xml:space="preserve">
         <value>Tisch|Metallrahmen|Kunststofftischplatte</value>
