@@ -1120,4 +1120,7 @@ Der Punkt markiert den Reparatur-Droiden und er hat sein Dock auf dem Dach der B
     <data name="ROPE_SKIPPING" xml:space="preserve">
         <value>Seilchenspringen ist im Moment wirklich nicht das Richtige!</value>
     </data>
+    <data name="PORTRAIT_TO_HEAVY" xml:space="preserve">
+        <value>Das Gemälde ist viel zu groß und sperrig, als das Du es sinnvoll mitnehmen könntest.</value>
+    </data>
 </root>

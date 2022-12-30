@@ -1266,6 +1266,14 @@ internal class EventProvider
             PrintingSubsystem.Resource(Descriptions.ZERO_GRAVITY);
         }
     }
+
+    internal void TryToPickupPortrait(object sender, ContainerObjectEventArgs eventArgs)
+    {
+        if (sender is Item portrait && portrait.Key == Keys.PORTRAIT)
+        {
+            throw new TakeException(Descriptions.PORTRAIT_TO_HEAVY);
+        }
+    }
     
     internal void LeaveAirlock(object sender, LeaveLocationEventArgs eventArgs)
     {

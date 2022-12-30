@@ -33,8 +33,15 @@ internal static class CorridorMidPrerequisites
             IsPickable = false,
             Grammar = new IndividualObjectGrammar(Genders.Neutrum)
         };
+        
+        AddTakeEvents(portrait, eventProvider);
 
         return portrait;
+    }
+
+    private static void AddTakeEvents(Item portrait, EventProvider eventProvider)
+    {
+        portrait.BeforeTake += eventProvider.TryToPickupPortrait;
     }
     
     private static void AddSurroundings(Location corridor)
