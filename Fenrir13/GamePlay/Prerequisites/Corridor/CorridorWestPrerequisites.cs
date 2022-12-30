@@ -51,8 +51,8 @@ internal static class CorridorWestPrerequisites
         
         var painting = new Item()
         {
-            Key = Keys.CORRIDOR_PAINTING,
-            Name = Items.CORRIDOR_PAINTING,
+            Key = Keys.CORRIDOR_PAINTING_WEST,
+            Name = Items.CORRIDOR_PAINTING_WEST,
             Description = Descriptions.CORRIDOR_PAINTING_WEST,
             IsSurrounding = true,
             IsPickable = false,

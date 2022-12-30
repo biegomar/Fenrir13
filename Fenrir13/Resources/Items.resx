@@ -555,4 +555,16 @@
     <data name="WASHINGAREA_BASIN" xml:space="preserve">
         <value>Bad|Badezimmer|Waschbecken</value>
     </data>
+    <data name="CORRIDOR_PAINTING_MIDEAST" xml:space="preserve">
+        <value>Bild|Bilder|Plakat|Poster</value>
+    </data>
+    <data name="CORRIDOR_PAINTING_EAST" xml:space="preserve">
+        <value>Bild|Bilder|Plakat|Poster</value>
+    </data>
+    <data name="CORRIDOR_PAINTING_MIDWEST" xml:space="preserve">
+        <value>Bild|Bilder|Plakat|Poster</value>
+    </data>
+    <data name="CORRIDOR_PAINTING_WEST" xml:space="preserve">
+        <value>Bild|Bilder|Plakat|Poster</value>
+    </data>
 </root>
