@@ -16,6 +16,7 @@ internal static class CorridorEastPrerequisites
             Description = Descriptions.CORRIDOR_EAST,
             IsLocked = true,
             LockDescription = Descriptions.CORRIDOR_EAST_LOCKDESCRIPTION,
+            Adjectives = Adjectives.CORRIDOR_EAST,
             Grammar = new IndividualObjectGrammar(Genders.Male)
         };
         

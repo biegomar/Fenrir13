@@ -17,6 +17,7 @@ internal static class CorridorWestPrerequisites
             IsLocked = true,
             LockDescription = Descriptions.CORRIDOR_WEST_LOCKDESCRIPTION,
             FirstLookDescription = Descriptions.CORRIDOR_WEST_FIRSTLOOK,
+            Adjectives = Adjectives.CORRIDOR_WEST,
             Grammar = new IndividualObjectGrammar(Genders.Male)
         };
 
