@@ -295,29 +295,92 @@ internal class EventProvider
     {
         if (sender is Item closetDoor && closetDoor.Key == Keys.CLOSET_DOOR)
         {
-            var bar = this.universe.ActiveLocation.GetItem(Keys.CHOCOLATEBAR);
-            if (bar != default)
-            {
-                handleClosetDoor(bar, closetDoor);
-            }
+            HandleClosetPart();
         }
     }
-    
-    internal void OpenClosetDoor(object sender, ContainerObjectEventArgs eventArgs)
+
+    internal void OpenCloset(object sender, ContainerObjectEventArgs eventArgs)
     {
-        if (sender is Item closetDoor && closetDoor.Key == Keys.CLOSET_DOOR)
+        if (sender is Item closetPart && (closetPart.Key == Keys.CLOSET || closetPart.Key == Keys.CLOSET_DOOR))
         {
-            PrintingSubsystem.Resource(closetDoor.Description);
-            
-            var bar = this.universe.ActiveLocation.GetItem(Keys.CHOCOLATEBAR);
-            if (bar != default)
-            {
-                handleClosetDoor(bar, closetDoor);
-            }
+            PrintingSubsystem.Resource(Descriptions.CLOSET_DOOR);
+            HandleClosetPart();
         }
         else
         {
             throw new OpenException(BaseDescriptions.IMPOSSIBLE_OPEN);
+        }
+    }
+
+    internal void CloseCloset(object sender, ContainerObjectEventArgs eventArgs)
+    {
+        if (sender is Item closetPart && (closetPart.Key == Keys.CLOSET || closetPart.Key == Keys.CLOSET_DOOR))
+        {
+            CloseClosetPart();
+        }
+        else
+        {
+            throw new CloseException(BaseDescriptions.IMPOSSIBLE_CLOSE);
+        }
+    }
+    
+    private void CloseClosetPart()
+    {
+        if (this.universe.ActiveLocation.GetItem(Keys.CLOSET_DOOR) is { } closetDoor)
+        {
+            closetDoor.IsClosed = true;
+        }
+
+        if (this.universe.ActiveLocation.GetItem(Keys.CLOSET) is { } closet)
+        {
+            closet.IsClosed = true;
+        }
+    }
+    
+    private void HandleClosetPart()
+    {
+        void prepareObject(Item item)
+        {
+            item.AfterLook -= LookAtClosetDoor;
+            item.Open -= OpenCloset;
+            item.Open += OpenClosetAgain;
+            item.IsClosed = false;
+        }
+
+        PrintingSubsystem.Resource(Descriptions.CLOSET_DOOR_FIRSTLOOK);
+        var bar = this.universe.ActiveLocation.GetItem(Keys.CHOCOLATEBAR);
+        if (bar != default)
+        {
+            bar.IsHidden = false;
+            this.universe.Score += this.universe.ScoreBoard[nameof(this.LookAtClosetDoor)];  
+        }
+        
+        var closetDoor = this.universe.ActiveLocation.GetItem(Keys.CLOSET_DOOR);
+        if (closetDoor != default)
+        {
+            prepareObject(closetDoor);
+        }
+        
+        var closet = this.universe.ActiveLocation.GetItem(Keys.CLOSET);
+        if (closet != default)
+        {
+            prepareObject(closet);
+        }
+    }
+
+    private void OpenClosetAgain(object sender, ContainerObjectEventArgs eventArgs)
+    {
+        if (sender is Item closetPart && (closetPart.Key == Keys.CLOSET_DOOR || closetPart.Key == Keys.CLOSET))
+        {
+            if (this.universe.ActiveLocation.GetItem(Keys.CLOSET_DOOR) is { } closetDoor)
+            {
+                closetDoor.IsClosed = true;
+            }
+
+            if (this.universe.ActiveLocation.GetItem(Keys.CLOSET) is { } closet)
+            {
+                closet.IsClosed = true;
+            }
         }
     }
     
@@ -341,26 +404,6 @@ internal class EventProvider
         throw new TakeException(BaseDescriptions.NOTHING_HAPPENS);
     }
 
-    private void handleClosetDoor(AHereticObject bar, AHereticObject closetDoor)
-    {
-        PrintingSubsystem.Resource(Descriptions.CLOSET_DOOR_FIRSTLOOK);
-        bar.IsHidden = false;
-        this.universe.Score += this.universe.ScoreBoard[nameof(this.LookAtClosetDoor)];
-        closetDoor.AfterLook -= LookAtClosetDoor;
-        closetDoor.Open -= OpenClosetDoor;
-        closetDoor.Open += OpenClosetDoorAgain;
-        closetDoor.IsClosed = false;
-    }
-
-    private void OpenClosetDoorAgain(object sender, ContainerObjectEventArgs eventArgs)
-    {
-        if (sender is Item closetDoor && closetDoor.Key == Keys.CLOSET_DOOR)
-        {
-            closetDoor.IsClosed = false;
-            PrintingSubsystem.Resource(closetDoor.Description);
-        }
-    }
-    
     internal void LookAtRespirator(object sender, ContainerObjectEventArgs eventArgs)
     {
         if (sender is Location ambulance && ambulance.Key == Keys.AMBULANCE && eventArgs.ExternalItemKey == Keys.AMBULANCE_RESPIRATOR)

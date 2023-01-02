@@ -1,6 +1,5 @@
 using Fenrir13.Events;
 using Fenrir13.Resources;
-using Heretic.InteractiveFiction.GamePlay;
 using Heretic.InteractiveFiction.Grammars;
 using Heretic.InteractiveFiction.Objects;
 
@@ -17,8 +16,6 @@ public class SocialRoomPrerequisites
             Description = Descriptions.SOCIALROOM,
             Grammar = new IndividualObjectGrammar(Genders.Male)
         };
-        
-        socialRoom.AddOptionalVerb(VerbKeys.CLIMB, OptionalVerbs.PUT, string.Empty);
         
         socialRoom.Items.Add(GetCouch(eventProvider));
         socialRoom.Items.Add(GetAntennaConstruction(eventProvider));

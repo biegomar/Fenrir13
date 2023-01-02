@@ -190,21 +190,13 @@ internal static class CryoChamberPrerequisites
             Description = Descriptions.CLOSET,
             IsSurrounding = true,
             IsPickable = false,
+            IsCloseable = true,
+            IsClosed = true,
             Grammar = new IndividualObjectGrammar(Genders.Male)
         };
         location.Items.Add(closet);
-        
-        var drawer = new Item()
-        {
-            Key = Keys.DRAWER,
-            Name = Items.DRAWER,
-            Description = Descriptions.DRAWER,
-            IsSurrounding = true,
-            IsPickable = false,
-            Grammar = new IndividualObjectGrammar()
-        };
-        location.Items.Add(drawer);
-        
+        AddOpenCloseClosetEvents(closet, eventProvider);
+
         var closetDoor = new Item()
         {
             Key = Keys.CLOSET_DOOR,
@@ -217,8 +209,19 @@ internal static class CryoChamberPrerequisites
             Grammar = new IndividualObjectGrammar()
         };
         location.Items.Add(closetDoor);
-        AddOpenEvents(closetDoor, eventProvider);
+        AddOpenCloseClosetEvents(closetDoor, eventProvider);
         AddAfterLookEventsForClosetDoor(closetDoor, eventProvider);
+        
+        var drawer = new Item()
+        {
+            Key = Keys.DRAWER,
+            Name = Items.DRAWER,
+            Description = Descriptions.DRAWER,
+            IsSurrounding = true,
+            IsPickable = false,
+            Grammar = new IndividualObjectGrammar()
+        };
+        location.Items.Add(drawer);
         
         var wardrobe = new Item()
         {
@@ -517,9 +520,10 @@ internal static class CryoChamberPrerequisites
         item.BeforeTake += eventProvider.TakeLaptop;
     }
 
-    private static void AddOpenEvents(Item closetDoor, EventProvider eventProvider)
+    private static void AddOpenCloseClosetEvents(Item item, EventProvider eventProvider)
     {
-        closetDoor.Open += eventProvider.OpenClosetDoor;
+        item.Open += eventProvider.OpenCloset;
+        item.Close += eventProvider.CloseCloset;
     }
     
     private static void AddAfterOpenEvents(Item cryoChamberDoor, EventProvider eventProvider)
