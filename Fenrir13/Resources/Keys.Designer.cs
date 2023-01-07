@@ -525,12 +525,6 @@ namespace Fenrir13.Resources {
             }
         }
         
-        internal static string EYELET {
-            get {
-                return ResourceManager.GetString("EYELET", resourceCulture);
-            }
-        }
-        
         internal static string WRITING_MATERIALS {
             get {
                 return ResourceManager.GetString("WRITING_MATERIALS", resourceCulture);

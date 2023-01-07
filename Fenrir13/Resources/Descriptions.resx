@@ -61,7 +61,7 @@ Du schaust Dir die Maschine an und versuchst sie anzuschalten. Nichts passiert! 
         <value>Du gehst zu dem runden Fenster in Deiner Arbeitsecke und schaust hinaus ins All. Ein atemberaubender Blick offenbart sich Dir. Am Horizont steht ein Roter Zwerg und hat auf diese Entfernung ungefähr die Größe des Mondes in einer beschaulichen Vollmond-Sommernacht. Du bist zwar kein Astrophysiker, aber Du weißt, dass es sich bei dem Stern um Proxima Centauri handeln muss. Nachdem Eure Expedition in den Bruchstücken eines Mondes des Planeten Proxima Centauri b erfolgreich Erze von seltenen Metallen einsammeln konnte, sollte Euer Raumtransporter noch einmal näher an das Gestirn heran manövrieren, um die Energie des Schiffes voll aufzuladen. Oh Nein! Wenn Ihr noch immer hier seid, hat Eure Heimreise offensichtlich noch nicht wirklich begonnen. Etwas muss also mächtig schief gegangen sein!
 
 Dein Blick löst sich und richtet sich weiter nach Westen und Du schaust nun auf das, was aus Deinen Augenwinkeln heraus schon die ganze Zeit sichtbar war - Euer Schiff in voller Pracht! 
-Es ist die Fenrir-13, ein Raumtransporter der Viking Space Freight Ltd. mit einer maximalen Besatzung von sechs Personen. Es ist eines der kleinen Forschungsschiffe, die für Ersterkundungen in die entlegenen Schürfregionen entsandt werden. Der charakteristische Hammerkopf, der nicht ohne Absicht an Mjölnir, dem Hammer des Thor, erinnert, bildet den Wohn- und Arbeitsbereich für die Crew. Hier finden sich neben der Brücke und den Maschinen- und Technikräumen auch die Quartiere der Besatzung. 
+Es ist die Fenrir 13, ein Raumtransporter der Viking Space Freight Ltd. mit einer maximalen Besatzung von sechs Personen. Es ist eines der kleinen Forschungsschiffe, die für Ersterkundungen in die entlegenen Schürfregionen entsandt werden. Der charakteristische Hammerkopf, der nicht ohne Absicht an Mjölnir, dem Hammer des Thor, erinnert, bildet den Wohn- und Arbeitsbereich für die Crew. Hier finden sich neben der Brücke und den Maschinen- und Technikräumen auch die Quartiere der Besatzung. 
 Dem Hammerkopf entwächst der Cargo-Bereich und bildet passend zum Bild den Hammerstil. 
 Voller Stolz prangt neben einem großen Emblem eines Wolfskopfs der Name des Schiffs in Runen an der Steuerbordseite des Cargo-Bereichs: Raumfrachter Fenrir 13.</value>
     </data>
@@ -322,7 +322,7 @@ Du erkennst eine Cardiostation, die für mehrere Arten von Ausdauertraining ausg
         <value>Der Raum ist wie ein großes, gemütliches Wohnzimmer aufgebaut. Eine einladend aussehende Couch ist vor einem riesigen Bildschirm platziert. Zwei weitere Sessel machen die Sitzgruppe perfekt. Vor der Couch steht ein kleiner Glastisch. An der östlichen und der westlichen Wand befinden sich Bücherregale, die anachronistisch dem Fortschritt trotzen und reale Bücher beinhalten. Ein Billardtisch steht hinter der Couch und nimmt dort eine große Fläche des Raumes ein. An der nördlichen Wand hängt rechts neben der Eingangstür eine Dartscheibe und links davon stecken die Cues in einer passenden Wandhalterung.</value>
     </data>
     <data name="KITCHEN" xml:space="preserve">
-        <value>Für die maximal sechs Personen Besatzung ist die Küche üppig ausgestattet und sehr geräumig. Es finden sich ein Food-Printer für die Zubereitung der individuellen Gerichte, ein Reststoffverwerter, ein Kühlschrank für die Nahrungsbausteine des Druckers, sowie einige Schränke. Wenn man essen möchte, nimmt man an einem der sechs Stühle vor dem geräumigen Tisch in der Mitte des Raumes Platz. Wie überall im Schiff ist der Boden aus magnetisierbarem Metall, um auch hier das Mobiliar gegen Verrutschen zu sichern.</value>
+        <value>Für die maximal sechs Personen Besatzung ist die Küche üppig ausgestattet und sehr geräumig. Es finden sich ein Food-Printer für die Zubereitung der individuellen Gerichte, ein Reststoffverwerter, ein Kühlschrank für die Nahrungsbausteine des Druckers, sowie einige Schränke. Wenn man essen möchte, nimmt man an einem der sechs Stühle vor dem geräumigen Tisch in der Mitte des Raumes Platz.</value>
     </data>
     <data name="AIRLOCK" xml:space="preserve">
         <value>Die Schleuse dient als Weg nach draußen, und sobald Du komplett eingetreten bist, schließt sich die Tür hinter Dir und ein Ansaugegeräusch gibt Dir zu verstehen, dass sie gegen ein mögliches Vakuum gesichert wird. Du fühlst plötzlich, dass Deine Glieder sich leichter anfühlen, Deine Bewegungen sind mühelos und Du spürst kaum noch Dein eigenes Gewicht. Offenkundig wird hier in der Schleuse bereits auf die künstliche Schwerkraft verzichtet. 
@@ -423,12 +423,6 @@ Die Wand mit der Tür ist frei, nur ein kleiner Papiereimer steht dort.</value>
     <data name="BELT" xml:space="preserve">
         <value>Dieses sehr dünne und leichte Geschirr dient bei Spaziergängen im All zur Sicherung.</value>
     </data>
-    <data name="EYELET" xml:space="preserve">
-        <value>Die Öse ist aus Metall und ist mit dem Haltegurt verwoben. Das sieht sehr reißfest und vertrauenswürdig aus.</value>
-    </data>
-    <data name="EYELET_CONTAINMENT" xml:space="preserve">
-        <value>An einer Öse am Geschirr lässt sich eine Haltevorrichtung einhaken.</value>
-    </data>
     <data name="GRAVITY_ITEM_DROP" xml:space="preserve">
         <value>Mit dem plötzlichen Wiedereinsetzen der Schwerkraft hast Du nicht gerechnet und kannst einige Gegenstände nicht festhalten. Du lässt sie los und im Raum zurück.</value>
     </data>
@@ -449,7 +443,7 @@ Die Wand mit der Tür ist frei, nur ein kleiner Papiereimer steht dort.</value>
     </data>
     <data name="AMBULANCE" xml:space="preserve">
         <value>Die Krankenstation ist eine der wichtigsten Einrichtungen in Raumschiffen der Viking-Klasse und dient der medizinischen Grundversorgung. Sehr zentral steht ein OP-Tisch, auf dem ein spezieller OP-Roboter einfachere Eingriffe durchführen kann. Er ist unter die Decke montiert und vier Arme garantieren eine sehr flexible und variantenreiche OP-Technik. Zum Beginn der Reise kam er einmal zum Einsatz, als einer der Mechaniker eine Blinddarmentzündung hatte. Für extreme Verletzungen oder schwerwiegende OPs ist der Roboter allerdings nicht ausgelegt. 
-An einer Wand steht ein Krankenbett, um kurzfristige Genesungsaufenthalte zu gewährleisten. Im Fall des Blinddarms konnte der Mechaniker aber direkt wieder in seine Kabine und dort in seinem Bett die Wunde auskurieren. An dem Bett steht offensichtlich ein Beatmungsgerät, zumindest interpretierst Du die Aufschrift "OXYGEN" in diese Richtung.
+An einer Wand steht ein Krankenbett, um kurzfristige Genesungsaufenthalte zu gewährleisten. Im Fall des Blinddarms konnte der Mechaniker aber direkt wieder in seine Kabine und dort in seinem Bett die Wunde auskurieren.
 In einigen typischen OP-Schränken sind alle relevanten Instrumente und Verbandszeuge untergebracht und in einem separaten, verschlossenen Medizinschrank lagern Medikamente, für den nur der Kapitän den passenden Schlüssel hat.</value>
     </data>
     <data name="AMBULANCE_OP_TABLE" xml:space="preserve">
@@ -589,11 +583,8 @@ Bei genauerer Betrachtung erkennst Du, dass dort eine viereckige Aussparung ist.
     <data name="AIRLOCK_ROPE_CONTAINMENT" xml:space="preserve">
         <value>Auf der Winde befindet sich ein Seil aus Graphen, dieser hauchdünnen Kohlenstoffverbindung, die sehr leicht und absolut reißfest ist.</value>
     </data>
-    <data name="EYELET_LINKEDTO" xml:space="preserve">
-        <value>Im Moment ist die Öse des Gurtes fest mit dem Graphen-Haken verbunden.</value>
-    </data>
     <data name="AIRLOCK_ROPE_LINKEDTO" xml:space="preserve">
-        <value>Das Graphen-Seil ist mit seinem Haken fest mit ihr verbunden.</value>
+        <value>Das Graphen-Seil ist mit seinem Haken fest verbunden.</value>
     </data>
     <data name="OXYGEN_NEEDED" xml:space="preserve">
         <value>Du benötigst noch Sauerstoff!</value>
@@ -1122,5 +1113,17 @@ Der Punkt markiert den Reparatur-Droiden und er hat sein Dock auf dem Dach der B
     </data>
     <data name="PORTRAIT_TO_HEAVY" xml:space="preserve">
         <value>Das Gemälde ist viel zu groß und sperrig, als das Du es sinnvoll mitnehmen könntest.</value>
+    </data>
+    <data name="AMBULANCE_RESPIRATOR_CONTAINMENT" xml:space="preserve">
+        <value>An dem Bett steht offensichtlich ein Beatmungsgerät, zumindest interpretierst Du die Aufschrift "OXYGEN" in diese Richtung.</value>
+    </data>
+    <data name="TURN_SHIP_MODEL" xml:space="preserve">
+        <value>Du legst Deine Hände - so gut es eben mit einem Hologram geht - um das Modell, drehst es ein wenig hin und her und schaust Dir die Fenrir 13 aus allen Perspektiven an. Interessant, aber Du erhälst dadurch keine weiteren Informationen.</value>
+    </data>
+    <data name="ITEM_NOT_SCREWABLE" xml:space="preserve">
+        <value>Du kannst das nicht abschrauben.</value>
+    </data>
+    <data name="ITEM_NOT_SCREW_ON_ABLE" xml:space="preserve">
+        <value>Du kannst das nicht anschrauben.</value>
     </data>
 </root>

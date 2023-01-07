@@ -56,5 +56,17 @@ namespace Fenrir13.Resources {
                 return ResourceManager.GetString("CORRIDOR_WEST", resourceCulture);
             }
         }
+        
+        internal static string AIRLOCK_KEYPAD_GREEN_BUTTON {
+            get {
+                return ResourceManager.GetString("AIRLOCK_KEYPAD_GREEN_BUTTON", resourceCulture);
+            }
+        }
+        
+        internal static string AIRLOCK_KEYPAD_RED_BUTTON {
+            get {
+                return ResourceManager.GetString("AIRLOCK_KEYPAD_RED_BUTTON", resourceCulture);
+            }
+        }
     }
 }

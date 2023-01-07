@@ -429,12 +429,6 @@ namespace Fenrir13.Resources {
             }
         }
         
-        internal static string EYELET {
-            get {
-                return ResourceManager.GetString("EYELET", resourceCulture);
-            }
-        }
-        
         internal static string KITCHEN_CABINET {
             get {
                 return ResourceManager.GetString("KITCHEN_CABINET", resourceCulture);

@@ -258,9 +258,6 @@
     <data name="BELT" xml:space="preserve">
         <value>BELT</value>
     </data>
-    <data name="EYELET" xml:space="preserve">
-        <value>EYELET</value>
-    </data>
     <data name="WRITING_MATERIALS" xml:space="preserve">
         <value>WRITING_MATERIALS</value>
     </data>

@@ -91,18 +91,7 @@ internal static class EquipmentRoomPrerequisites
             Grammar = new IndividualObjectGrammar(isSingular: false)
         };
         location.Items.Add(cloth);
-        
-        var eyelet = new Item()
-        {
-            Key = Keys.EYELET,
-            Name = Items.EYELET,
-            Description = Descriptions.EYELET,
-            IsSurrounding = true,
-            IsPickable = false,
-            Grammar = new IndividualObjectGrammar()
-        };
-        location.Items.Add(eyelet);
-        
+
         var roomDoor = new Item()
         {
             Key = Keys.ROOM_DOOR,
@@ -171,11 +160,12 @@ internal static class EquipmentRoomPrerequisites
             FirstLookDescription = Descriptions.HELMET_FIRSTLOOK,
             IsHidden = true,
             IsWearable = true,
+            IsLinkable = true,
             Weight = ItemWeights.HELMET,
             Grammar = new IndividualObjectGrammar(Genders.Male)
         };
         
-        AddUseEvents(helmet, eventProvider);
+        AddConnectEvents(helmet, eventProvider);
         AddBeforeDropEvents(helmet, eventProvider);
         
         return helmet;
@@ -226,37 +216,16 @@ internal static class EquipmentRoomPrerequisites
             Description = Descriptions.BELT,
             IsHidden = true,
             IsWearable = true,
+            IsLinkable = true,
             Weight = ItemWeights.BELT,
             Grammar = new IndividualObjectGrammar(Genders.Male)
         };
         
-        belt.Items.Add(GetEyelet(eventProvider));
-        
-        AddEyeletUseEvents(belt, eventProvider);
         AddBeforeDropEvents(belt, eventProvider);
 
         return belt;
     }
     
-    private static Item GetEyelet(EventProvider eventProvider)
-    {
-        var eyelet = new Item()
-        {
-            Key = Keys.EYELET,
-            Name = Items.EYELET,
-            Description = Descriptions.EYELET,
-            ContainmentDescription = Descriptions.EYELET_CONTAINMENT,
-            LinkedToDescription = Descriptions.EYELET_LINKEDTO,
-            IsHidden = true,
-            IsPickable = false
-        };
-
-        AddEyeletUseEvents(eyelet, eventProvider);
-        
-        return eyelet;
-    }
-    
-
     private static void AddBreakEvents(Item box, EventProvider eventProvider)
     {
         box.Break += eventProvider.BreakEquipmentBoxLock;
@@ -268,15 +237,10 @@ internal static class EquipmentRoomPrerequisites
         box.AfterOpen += eventProvider.OpenEquipmentBox;
     }
     
-    private static void AddUseEvents(Item item, EventProvider eventProvider)
+    private static void AddConnectEvents(Item item, EventProvider eventProvider)
     {
-        item.Use += eventProvider.UseOxygenBottleWithHelmet;
-        eventProvider.ScoreBoard.Add(nameof(eventProvider.UseOxygenBottleWithHelmet), 5);
-    }
-    
-    private static void AddEyeletUseEvents(Item item, EventProvider eventProvider)
-    {
-        item.Use += eventProvider.UseAirlockRopeWithEyeletOrBelt;
+        item.Connect += eventProvider.ConnectOxygenBottleWithHelmet;
+        eventProvider.ScoreBoard.Add(nameof(eventProvider.ConnectOxygenBottleWithHelmet), 5);
     }
     
     private static void AddBeforeDropEvents(Item item, EventProvider eventProvider)

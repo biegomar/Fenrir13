@@ -27,4 +27,10 @@
     <data name="PUT" xml:space="preserve">
         <value>Stelle|Stell</value>
     </data>
+    <data name="SCREW" xml:space="preserve">
+        <value>Schraub:ab|Schraube:ab</value>
+    </data>
+    <data name="SCREW_ON" xml:space="preserve">
+        <value>Schraub:an|Schraube:an</value>
+    </data>
 </root>

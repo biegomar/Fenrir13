@@ -37,6 +37,8 @@ internal class EngineRoomPrerequisites
             IsPickable = false,
             Grammar = new IndividualObjectGrammar(Genders.Neutrum)
         };
+        
+        AddATurnEvents(shipModel, eventProvider);
 
         return shipModel;
     }
@@ -158,5 +160,10 @@ internal class EngineRoomPrerequisites
     {
         item.AfterLook += eventProvider.LookAtRedDots;
         eventProvider.ScoreBoard.Add(nameof(eventProvider.LookAtRedDots), 1);
+    }
+    
+    private static void AddATurnEvents(Item hologram, EventProvider eventProvider)
+    {
+        hologram.Turn += eventProvider.TurnHologram;
     }
 }

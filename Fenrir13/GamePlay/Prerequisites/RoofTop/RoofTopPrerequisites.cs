@@ -1,5 +1,6 @@
 using Fenrir13.Events;
 using Fenrir13.Resources;
+using Heretic.InteractiveFiction.GamePlay;
 using Heretic.InteractiveFiction.Grammars;
 using Heretic.InteractiveFiction.Objects;
 
@@ -21,7 +22,14 @@ internal static class RoofTopPrerequisites
         
         room.Items.Add(GetDroid(eventProvider));
 
+        AddNewVerbs(room);
+        
         return room;
+    }
+    
+    private static void AddNewVerbs(Location socialRoom)
+    {
+        socialRoom.AddOptionalVerb(VerbKeys.CONNECT, OptionalVerbs.SCREW_ON, Descriptions.ITEM_NOT_SCREW_ON_ABLE);
     }
 
     private static Item GetDroid(EventProvider eventProvider)
@@ -33,10 +41,9 @@ internal static class RoofTopPrerequisites
             Description = Descriptions.DROID,
             FirstLookDescription = Descriptions.DROID_FIRSTLOOK,
             IsPickable = false,
+            IsLinkable = true,
             Grammar = new IndividualObjectGrammar(Genders.Male)
         };
-        
-        AddUseEvents(droid, eventProvider);
 
         return droid;
     }
@@ -130,10 +137,5 @@ internal static class RoofTopPrerequisites
             Grammar = new IndividualObjectGrammar(Genders.Neutrum)
         };
         location.Items.Add(dock);
-    }
-    
-    private static void AddUseEvents(Item item, EventProvider eventProvider)
-    {
-        item.Use += eventProvider.MountAntennaToDroid;
     }
 }

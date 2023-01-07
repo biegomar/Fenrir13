@@ -759,18 +759,6 @@ namespace Fenrir13.Resources {
             }
         }
         
-        internal static string EYELET {
-            get {
-                return ResourceManager.GetString("EYELET", resourceCulture);
-            }
-        }
-        
-        internal static string EYELET_CONTAINMENT {
-            get {
-                return ResourceManager.GetString("EYELET_CONTAINMENT", resourceCulture);
-            }
-        }
-        
         internal static string GRAVITY_ITEM_DROP {
             get {
                 return ResourceManager.GetString("GRAVITY_ITEM_DROP", resourceCulture);
@@ -1080,12 +1068,6 @@ namespace Fenrir13.Resources {
         internal static string AIRLOCK_ROPE_CONTAINMENT {
             get {
                 return ResourceManager.GetString("AIRLOCK_ROPE_CONTAINMENT", resourceCulture);
-            }
-        }
-        
-        internal static string EYELET_LINKEDTO {
-            get {
-                return ResourceManager.GetString("EYELET_LINKEDTO", resourceCulture);
             }
         }
         
@@ -2124,6 +2106,30 @@ namespace Fenrir13.Resources {
         internal static string PORTRAIT_TO_HEAVY {
             get {
                 return ResourceManager.GetString("PORTRAIT_TO_HEAVY", resourceCulture);
+            }
+        }
+        
+        internal static string AMBULANCE_RESPIRATOR_CONTAINMENT {
+            get {
+                return ResourceManager.GetString("AMBULANCE_RESPIRATOR_CONTAINMENT", resourceCulture);
+            }
+        }
+        
+        internal static string TURN_SHIP_MODEL {
+            get {
+                return ResourceManager.GetString("TURN_SHIP_MODEL", resourceCulture);
+            }
+        }
+        
+        internal static string ITEM_NOT_SCREWABLE {
+            get {
+                return ResourceManager.GetString("ITEM_NOT_SCREWABLE", resourceCulture);
+            }
+        }
+        
+        internal static string ITEM_NOT_SCREW_ON_ABLE {
+            get {
+                return ResourceManager.GetString("ITEM_NOT_SCREW_ON_ABLE", resourceCulture);
             }
         }
     }

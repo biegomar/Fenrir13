@@ -1,5 +1,6 @@
 using Fenrir13.Events;
 using Fenrir13.Resources;
+using Heretic.InteractiveFiction.GamePlay;
 using Heretic.InteractiveFiction.Grammars;
 using Heretic.InteractiveFiction.Objects;
 
@@ -21,8 +22,15 @@ public class SocialRoomPrerequisites
         socialRoom.Items.Add(GetAntennaConstruction(eventProvider));
         
         AddSurroundings(socialRoom, eventProvider);
+        
+        AddNewVerbs(socialRoom);
 
         return socialRoom;
+    }
+    
+    private static void AddNewVerbs(Location socialRoom)
+    {
+        socialRoom.AddOptionalVerb(VerbKeys.USE, OptionalVerbs.SCREW, Descriptions.ITEM_NOT_SCREWABLE);
     }
 
     private static void AddSurroundings(Location location, EventProvider eventProvider)
@@ -314,6 +322,7 @@ public class SocialRoomPrerequisites
             Description = Descriptions.SOCIALROOM_ANTENNA,
             LinkedToDescription = Descriptions.SOCIALROOM_ANTENNA_LINKEDTODESCRIPTION,
             IsHidden = true,
+            IsLinkable = true,
             Weight = ItemWeights.SOCIALROOM_ANTENNA
         };
         
@@ -328,10 +337,11 @@ public class SocialRoomPrerequisites
         item.BeforeTake += eventProvider.BeforeTakeAntenna;
     }
     
-    private static void AddUseEvents(Item item, EventProvider eventProvider)
+    private static void AddUseEvents(Item antenna, EventProvider eventProvider)
     {
-        item.Use += eventProvider.UseToolWithAntennaInSocialRoom;
-        item.Use += eventProvider.MountAntennaToDroid;
+        antenna.Use += eventProvider.UseToolWithAntennaInSocialRoom;
+        antenna.Connect += eventProvider.MountAntennaToDroid;
+        eventProvider.ScoreBoard.Add(nameof(eventProvider.MountAntennaToDroid), 10);
     }
     
     private static void AddSitDownEvents(Item item, EventProvider eventProvider)

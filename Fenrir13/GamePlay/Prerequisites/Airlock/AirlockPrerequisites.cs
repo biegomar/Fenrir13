@@ -54,6 +54,7 @@ internal class AirlockPrerequisites
             Description = Descriptions.AIRLOCK_KEYPAD_GREEN_BUTTON,
             IsHidden = true,
             IsPickable = false,
+            Adjectives = Adjectives.AIRLOCK_KEYPAD_GREEN_BUTTON,
             Grammar = new IndividualObjectGrammar(Genders.Male)
         };
         
@@ -71,6 +72,7 @@ internal class AirlockPrerequisites
             Description = Descriptions.AIRLOCK_KEYPAD_RED_BUTTON,
             IsHidden = true,
             IsPickable = false,
+            Adjectives = Adjectives.AIRLOCK_KEYPAD_RED_BUTTON,
             Grammar = new IndividualObjectGrammar(Genders.Male)
         };
 
@@ -104,10 +106,11 @@ internal class AirlockPrerequisites
             ContainmentDescription = Descriptions.AIRLOCK_ROPE_CONTAINMENT,
             LinkedToDescription = Descriptions.AIRLOCK_ROPE_LINKEDTO,
             IsPickable = false,
+            IsLinkable = true,
             Grammar = new IndividualObjectGrammar(Genders.Neutrum)
         };
         
-        AddUseEvents(airlockRope, eventProvider);
+        AddConnectEvents(airlockRope, eventProvider);
 
         return airlockRope;
     }
@@ -185,10 +188,10 @@ internal class AirlockPrerequisites
         airlock.BeforeLeaveLocation += eventProvider.LeaveAirlock;
     }
     
-    private static void AddUseEvents(Item item, EventProvider eventProvider)
+    private static void AddConnectEvents(Item item, EventProvider eventProvider)
     {
-        item.Use += eventProvider.UseAirlockRopeWithEyeletOrBelt;
-        eventProvider.ScoreBoard.Add(nameof(eventProvider.UseAirlockRopeWithEyeletOrBelt), 1);
+        item.Connect += eventProvider.ConnectAirlockRopeWithBelt;
+        eventProvider.ScoreBoard.Add(nameof(eventProvider.ConnectAirlockRopeWithBelt), 1);
     }
     
     private static void AddPushRedButtonEvents(Item item, EventProvider eventProvider)

@@ -1,10 +1,8 @@
-REM auf gehts
 ich bin Marc
 nimm den suit
 öffne die schranktür
 iss den riegel
-schaue dir das display an
-rem 'Öffne Deine Zimmertür' geschafft.
+l das display
 w
 w
 w
@@ -12,8 +10,7 @@ hoch
 schaue dir die platte an
 setz dich hin
 tippe skov
-rem 'Hack Dich ins System' geschafft.
-stehe auf
+aufstehen
 runter
 w
 s
@@ -26,17 +23,31 @@ runter
 w
 l kiste
 zerstöre das schloss mit der stange
-rem 'Öffne das Sicherheitsschloss' geschafft.
+öffne kiste
 e
 s
 lass die stange fallen
 n
 w
-öffne die kiste
-nimm
+ziehe dir den helm an
+ziehe dir die handschuhe an
+ziehe dir die stiefel an
+ziehe dir den gurt an
 e
+e
+öffne die schublade
+schaue in die schublade
+nimm werkzeug
+w
 hoch
 e
+s
+schaue dir den receiver an
+steige auf die couch
+schraube die antenne mit dem werkzeug ab
+rem 'Bekomme die Antenne' geschafft.
+steige ab
+n
 n
 öffne den kühlschrank
 ziehe an dem griff
@@ -54,50 +65,23 @@ rem 'Verbinde den Helm mit dem Sauerstoff' geschafft.
 s
 e
 runter
-e
-schaue dir die schublade
-öffne sie
-nimm das werkzeug
-w
-hoch
-e
-s
-schaue dir den receiver an
-steige auf die couch
-schraube die antenne mit dem werkzeug ab
-rem 'Bekomme die Antenne' geschafft.
-steige ab
-n
-w
-runter
 n
 l punkte
 s
 s
 nimm stange
-ziehe dir den helm an
-ziehe dir die handschuhe an
-ziehe dir die stiefel an
-ziehe dir den gurt an
 verbinde das seil mit dem gurt
 l tastenfeld
-drücke open
+drücke roten knopf
 rem 'Das All' geschafft.
 s
+hoch
+schraube die antenne mit dem werkzeug an den roboter
+rem 'Repariere den Roboter' geschafft.
+runter
 runter
 benutze stange mit griff
 rem 'Stelle die Energieversorgung wieder her' geschafft.
 hoch
-hoch
-verbinde antenne mit roboter
-rem 'Repariere den Roboter' geschafft.
-rem Nun schnell zurück zur Brücke.
-runter
 n
 drücke close
-drop gurt
-n
-hoch
-hoch
-score
-setzen

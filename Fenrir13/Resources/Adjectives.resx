@@ -24,4 +24,10 @@
     <data name="CORRIDOR_WEST" xml:space="preserve">
         <value>westlich</value>
     </data>
+    <data name="AIRLOCK_KEYPAD_GREEN_BUTTON" xml:space="preserve">
+        <value>grün</value>
+    </data>
+    <data name="AIRLOCK_KEYPAD_RED_BUTTON" xml:space="preserve">
+        <value>rot</value>
+    </data>
 </root>
