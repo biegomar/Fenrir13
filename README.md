@@ -39,7 +39,7 @@ Es ist durchaus denkbar, dass Fenrir 13 noch technische oder leichte inhaltliche
 
 # Kontakt
 Falls Fragen sind, könnt Ihr mich gerne kontaktieren: 
-* Email: fenrir13.beta@online.ms
+* Email: interactive.fiction@online.ms
 * twitter: @biegomar
 * GitHub: github.com/biegomar
 
