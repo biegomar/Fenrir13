@@ -74,5 +74,11 @@ namespace Fenrir13.Resources {
                 return ResourceManager.GetString("SCREW_ON", resourceCulture);
             }
         }
+        
+        internal static string LEVER {
+            get {
+                return ResourceManager.GetString("LEVER", resourceCulture);
+            }
+        }
     }
 }

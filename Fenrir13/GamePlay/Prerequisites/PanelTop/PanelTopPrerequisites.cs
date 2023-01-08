@@ -1,5 +1,6 @@
 using Fenrir13.Events;
 using Fenrir13.Resources;
+using Heretic.InteractiveFiction.GamePlay;
 using Heretic.InteractiveFiction.Grammars;
 using Heretic.InteractiveFiction.Objects;
 
@@ -19,7 +20,15 @@ internal static class PanelTopPrerequisites
         AddSurroundings(panelTop);
         
         panelTop.Items.Add(GetLever(eventProvider));
+        
+        AddNewVerbs(panelTop);
+        
         return panelTop;
+    }
+    
+    private static void AddNewVerbs(Location socialRoom)
+    {
+        socialRoom.AddOptionalVerb(VerbKeys.USE, OptionalVerbs.LEVER, Descriptions.ITEM_NOT_SCREW_ON_ABLE);
     }
 
     private static Item GetLever(EventProvider eventProvider)

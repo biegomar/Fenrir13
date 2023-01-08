@@ -33,4 +33,7 @@
     <data name="SCREW_ON" xml:space="preserve">
         <value>Schraub:an|Schraube:an</value>
     </data>
+    <data name="LEVER" xml:space="preserve">
+        <value>Hebel|Hebeln</value>
+    </data>
 </root>

@@ -379,7 +379,7 @@
         <value>Service-Roboter|Serviceroboter|Wartungsroboter|Roboter|Droid</value>
     </data>
     <data name="PANEL_TOP_LEVER" xml:space="preserve">
-        <value>Handgriff|Hebel|Griff|Vorrichtung</value>
+        <value>Handgriff|Griff|Vorrichtung</value>
     </data>
     <data name="CRYOCHAMBER_LAMP" xml:space="preserve">
         <value>Schreibtischlampe|Lampe|Glühbirne|Fassung|Teleskopstange|Teleskopstangen|Halterung|Beleuchtung</value>

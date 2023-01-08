@@ -77,6 +77,7 @@ internal static class AmbulancePrerequisites
             IsClosed = true,
             IsBreakable = true,
             IsHidden = true,
+            IsLinkable = true,
             LockDescription = Descriptions.AMBULANCE_RESPIRATOR_FLAP_LOCK
         };
         

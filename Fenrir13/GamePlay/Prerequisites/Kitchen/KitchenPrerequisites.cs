@@ -147,6 +147,7 @@ internal static class KitchenPrerequisites
             IsUnveilable = false,
             IsHidden = true,
             IsPickable = false,
+            IsLinkable = true,
             Weight = ItemWeights.FRIDGE_DOOR_HANDLE,
             Grammar = new IndividualObjectGrammar(Genders.Male)
         };
@@ -167,6 +168,8 @@ internal static class KitchenPrerequisites
     {
         item.Push += eventProvider.PushDoorHandleIntoRespiratorFlap;
         item.Use += eventProvider.UseDoorHandleWithRespiratorFlap;
+        item.Connect += eventProvider.ConnectDoorHandleWithRespiratorFlap;
+        item.Disconnect += eventProvider.TryToDisconnectHandleFromFlap;
         eventProvider.ScoreBoard.Add(nameof(eventProvider.PushDoorHandleIntoRespiratorFlap), 5);
     }
     

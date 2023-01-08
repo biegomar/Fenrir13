@@ -80,8 +80,13 @@ schraube die antenne mit dem werkzeug an den roboter
 rem 'Repariere den Roboter' geschafft.
 runter
 runter
-benutze stange mit griff
+hebel den griff mit der stange
 rem 'Stelle die Energieversorgung wieder her' geschafft.
 hoch
 n
 drücke close
+trenne das seil von dem gurt
+n
+hoch
+hoch
+setzen

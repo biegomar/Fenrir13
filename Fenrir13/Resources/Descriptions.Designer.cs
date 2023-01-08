@@ -2132,5 +2132,11 @@ namespace Fenrir13.Resources {
                 return ResourceManager.GetString("ITEM_NOT_SCREW_ON_ABLE", resourceCulture);
             }
         }
+        
+        internal static string ITEM_NOT_LEVERABLE {
+            get {
+                return ResourceManager.GetString("ITEM_NOT_LEVERABLE", resourceCulture);
+            }
+        }
     }
 }

@@ -1126,4 +1126,7 @@ Der Punkt markiert den Reparatur-Droiden und er hat sein Dock auf dem Dach der B
     <data name="ITEM_NOT_SCREW_ON_ABLE" xml:space="preserve">
         <value>Du kannst das nicht anschrauben.</value>
     </data>
+    <data name="ITEM_NOT_LEVERABLE" xml:space="preserve">
+        <value>Du kannst das nicht aushebeln.</value>
+    </data>
 </root>
