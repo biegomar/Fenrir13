@@ -1,5 +1,4 @@
 # Einführung 
-[![Build Status](https://biegota.visualstudio.com/Games/_apis/build/status/Fenrir13?branchName=master)](https://biegota.visualstudio.com/Games/_build/latest?definitionId=9&branchName=master)
 ![GitHub all releases](https://img.shields.io/github/downloads/biegomar/fenrir13/total)  
 Hallo liebe Textadventure-Fans,
 ich freue mich, Euch das Spiel Fenrir 13 zu präsentieren. Hierbei handelt es sich um eine Science Fiction Story rund um den Raumfrachter Fenrir 13 auf seiner Mission zu den entlegenen Monden von Proxima Centauri b.
