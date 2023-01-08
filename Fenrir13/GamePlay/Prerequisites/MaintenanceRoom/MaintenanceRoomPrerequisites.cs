@@ -1,5 +1,6 @@
 using Fenrir13.Events;
 using Fenrir13.Resources;
+using Heretic.InteractiveFiction.Grammars;
 using Heretic.InteractiveFiction.Objects;
 
 namespace Fenrir13.GamePlay.Prerequisites.MaintenanceRoom;
@@ -31,7 +32,7 @@ internal static class MaintenanceRoomPrerequisites
             Description = Descriptions.CEILING,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars()
+            Grammar = new IndividualObjectGrammar()
         };
         location.Items.Add(ceiling);
         
@@ -42,7 +43,7 @@ internal static class MaintenanceRoomPrerequisites
             Description = Descriptions.CHAMBER_WALL,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars()
+            Grammar = new IndividualObjectGrammar()
         };
         location.Items.Add(wall);
         
@@ -53,7 +54,7 @@ internal static class MaintenanceRoomPrerequisites
             Description = Descriptions.MAINTENANCE_ROOM_EAST_WALL,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars()
+            Grammar = new IndividualObjectGrammar()
         };
         location.Items.Add(eastWall);
         
@@ -64,7 +65,7 @@ internal static class MaintenanceRoomPrerequisites
             Description = Descriptions.MAINTENANCE_ROOM_SHELF,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars()
+            Grammar = new IndividualObjectGrammar()
         };
         location.Items.Add(shelf);
         
@@ -75,7 +76,7 @@ internal static class MaintenanceRoomPrerequisites
             Description = Descriptions.MAINTENANCE_ROOM_UTILS,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(isSingular: false)
+            Grammar = new IndividualObjectGrammar(isSingular: false)
         };
         location.Items.Add(utils);
         
@@ -86,7 +87,7 @@ internal static class MaintenanceRoomPrerequisites
             Description = Descriptions.MAINTENANCE_ROOM_PLATE,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars()
+            Grammar = new IndividualObjectGrammar()
         };
         location.Items.Add(plate);
         
@@ -97,7 +98,7 @@ internal static class MaintenanceRoomPrerequisites
             Description = Descriptions.SIGNS_OF_USE,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(isSingular: false)
+            Grammar = new IndividualObjectGrammar(isSingular: false)
         };
         location.Items.Add(signs);
         
@@ -108,7 +109,7 @@ internal static class MaintenanceRoomPrerequisites
             Description = Descriptions.MAINTENANCE_ROOM_DRAWER_HANDLE,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(isSingular: false)
+            Grammar = new IndividualObjectGrammar(isSingular: false)
         };
         location.Items.Add(handle);
     }
@@ -158,7 +159,7 @@ internal static class MaintenanceRoomPrerequisites
             ContainmentDescription = Descriptions.MAINTENANCE_ROOM_TOOL_CONTAINMENT,
             IsHidden = true,
             Weight = ItemWeights.MAINTENANCE_ROOM_TOOL,
-            Grammar = new Grammars(Genders.Neutrum)
+            Grammar = new IndividualObjectGrammar(Genders.Neutrum)
         };
         
         AddTakeEvents(result, eventProvider);
@@ -177,8 +178,5 @@ internal static class MaintenanceRoomPrerequisites
     {
         item.Use += eventProvider.UseToolWithAntennaInSocialRoom;
         eventProvider.ScoreBoard.Add(nameof(eventProvider.UseToolWithAntennaInSocialRoom), 5);
-        
-        item.Use += eventProvider.MountAntennaToDroid;
-        eventProvider.ScoreBoard.Add(nameof(eventProvider.MountAntennaToDroid), 10);
     }
 }

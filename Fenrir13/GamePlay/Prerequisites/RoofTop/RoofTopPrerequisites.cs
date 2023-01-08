@@ -1,5 +1,7 @@
 using Fenrir13.Events;
 using Fenrir13.Resources;
+using Heretic.InteractiveFiction.GamePlay;
+using Heretic.InteractiveFiction.Grammars;
 using Heretic.InteractiveFiction.Objects;
 
 namespace Fenrir13.GamePlay.Prerequisites.RoofTop;
@@ -13,14 +15,21 @@ internal static class RoofTopPrerequisites
             Key = Keys.ROOF_TOP,
             Name = Locations.ROOF_TOP,
             Description = Descriptions.ROOF_TOP,
-            Grammar = new Grammars(Genders.Neutrum)
+            Grammar = new IndividualObjectGrammar(Genders.Neutrum)
         };
         
         AddSurroundings(room);
         
         room.Items.Add(GetDroid(eventProvider));
 
+        AddNewVerbs(room);
+        
         return room;
+    }
+    
+    private static void AddNewVerbs(Location socialRoom)
+    {
+        socialRoom.AddOptionalVerb(VerbKeys.CONNECT, OptionalVerbs.SCREW_ON, Descriptions.ITEM_NOT_SCREW_ON_ABLE);
     }
 
     private static Item GetDroid(EventProvider eventProvider)
@@ -32,10 +41,9 @@ internal static class RoofTopPrerequisites
             Description = Descriptions.DROID,
             FirstLookDescription = Descriptions.DROID_FIRSTLOOK,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Male)
+            IsLinkable = true,
+            Grammar = new IndividualObjectGrammar(Genders.Male)
         };
-        
-        AddUseEvents(droid, eventProvider);
 
         return droid;
     }
@@ -49,7 +57,7 @@ internal static class RoofTopPrerequisites
             Description = Descriptions.JETTY_SPACE,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Male)
+            Grammar = new IndividualObjectGrammar(Genders.Male)
         };
         location.Items.Add(space);
         
@@ -60,7 +68,7 @@ internal static class RoofTopPrerequisites
             Description = Descriptions.STARS,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Male, isSingular: false)
+            Grammar = new IndividualObjectGrammar(Genders.Male, isSingular: false)
         };
         location.Items.Add(stars);
         
@@ -71,7 +79,7 @@ internal static class RoofTopPrerequisites
             Description = Descriptions.JETTY_ALPHA,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Neutrum, isSingular: false)
+            Grammar = new IndividualObjectGrammar(Genders.Neutrum, isSingular: false)
         };
         location.Items.Add(alphaCentauri);
         
@@ -82,7 +90,7 @@ internal static class RoofTopPrerequisites
             Description = Descriptions.UNIVERSE,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Neutrum, isSingular: false)
+            Grammar = new IndividualObjectGrammar(Genders.Neutrum, isSingular: false)
         };
         location.Items.Add(universe);
         
@@ -93,7 +101,7 @@ internal static class RoofTopPrerequisites
             Description = Descriptions.SPACE_LADDER,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars()
+            Grammar = new IndividualObjectGrammar()
         };
         location.Items.Add(ladder);
         
@@ -104,7 +112,7 @@ internal static class RoofTopPrerequisites
             Description = Descriptions.PROXIMA_CENTAURI,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Neutrum, isSingular: false)
+            Grammar = new IndividualObjectGrammar(Genders.Neutrum, isSingular: false)
         };
         location.Items.Add(proxima);
         
@@ -115,7 +123,7 @@ internal static class RoofTopPrerequisites
             Description = Descriptions.ROOF_TOP_CLAW,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(isSingular: false)
+            Grammar = new IndividualObjectGrammar(isSingular: false)
         };
         location.Items.Add(claw);
         
@@ -126,13 +134,8 @@ internal static class RoofTopPrerequisites
             Description = Descriptions.ROOF_TOP_DOCK,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Neutrum)
+            Grammar = new IndividualObjectGrammar(Genders.Neutrum)
         };
         location.Items.Add(dock);
-    }
-    
-    private static void AddUseEvents(Item item, EventProvider eventProvider)
-    {
-        item.Use += eventProvider.MountAntennaToDroid;
     }
 }

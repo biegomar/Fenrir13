@@ -14,21 +14,21 @@ namespace Fenrir13.Resources {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Characters {
+    internal class Adjectives {
         
         private static System.Resources.ResourceManager resourceMan;
         
         private static System.Globalization.CultureInfo resourceCulture;
         
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Characters() {
+        internal Adjectives() {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         internal static System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.Equals(null, resourceMan)) {
-                    System.Resources.ResourceManager temp = new System.Resources.ResourceManager("Fenrir13.Resources.Characters", typeof(Characters).Assembly);
+                    System.Resources.ResourceManager temp = new System.Resources.ResourceManager("Fenrir13.Resources.Adjectives", typeof(Adjectives).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -42,6 +42,30 @@ namespace Fenrir13.Resources {
             }
             set {
                 resourceCulture = value;
+            }
+        }
+        
+        internal static string CORRIDOR_EAST {
+            get {
+                return ResourceManager.GetString("CORRIDOR_EAST", resourceCulture);
+            }
+        }
+        
+        internal static string CORRIDOR_WEST {
+            get {
+                return ResourceManager.GetString("CORRIDOR_WEST", resourceCulture);
+            }
+        }
+        
+        internal static string AIRLOCK_KEYPAD_GREEN_BUTTON {
+            get {
+                return ResourceManager.GetString("AIRLOCK_KEYPAD_GREEN_BUTTON", resourceCulture);
+            }
+        }
+        
+        internal static string AIRLOCK_KEYPAD_RED_BUTTON {
+            get {
+                return ResourceManager.GetString("AIRLOCK_KEYPAD_RED_BUTTON", resourceCulture);
             }
         }
     }

@@ -1,16 +1,12 @@
 using Fenrir13.Events;
 using Fenrir13.GamePlay;
 using Fenrir13.Printing;
-using Fenrir13.Resources;
 using Heretic.InteractiveFiction.GamePlay;
-using Heretic.InteractiveFiction.GamePlay.EventSystem;
 using Heretic.InteractiveFiction.Grammars;
 using Heretic.InteractiveFiction.Objects;
 using Heretic.InteractiveFiction.Subsystems;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 using PowerArgs;
-
 
 namespace Fenrir13.Cli;
 
@@ -30,19 +26,18 @@ internal class CommandHandler
 
     public void Main()
     {
-        var host = Host.CreateDefaultBuilder().ConfigureServices((context, services) =>
-        {
-            services.AddSingleton<IPrintingSubsystem, ConsolePrintingSubsystem>();
-            services.AddSingleton<IGamePrerequisitesAssembler, GamePrerequisitesAssembler>();
-            services.AddSingleton<IResourceProvider, ResourceProvider>();
-            services.AddSingleton<IGrammar, GermanGrammar>();
-            services.AddSingleton<GameLoop>();
-            services.AddSingleton<InputProcessor>();
-            services.AddSingleton<EventProvider>();
-            services.AddSingleton<Universe>();
-        }).Build();
+        IServiceCollection services = new ServiceCollection();
+        services.AddSingleton<IPrintingSubsystem, ConsolePrintingSubsystem>();
+        services.AddSingleton<IGamePrerequisitesAssembler, GamePrerequisitesAssembler>();
+        services.AddSingleton<IResourceProvider, ResourceProvider>();
+        services.AddSingleton<IGrammar, GermanGrammar>();
+        services.AddSingleton<GameLoop>();
+        services.AddSingleton<InputProcessor>();
+        services.AddSingleton<EventProvider>();
+        services.AddSingleton<Universe>();
+        var serviceProvider = services.BuildServiceProvider();
 
-        var gameLoop = ActivatorUtilities.CreateInstance<GameLoop>(host.Services, ConsoleWidth);
+        var gameLoop = ActivatorUtilities.CreateInstance<GameLoop>(serviceProvider, ConsoleWidth);
         gameLoop.Run(FileName);
     }
 }

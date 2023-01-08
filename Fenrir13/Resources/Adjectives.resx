@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 
 <root>
     <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
@@ -18,22 +18,16 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-    <data name="DRIVE" xml:space="preserve">
-        <value>Fahre|Fahr</value>
+    <data name="CORRIDOR_EAST" xml:space="preserve">
+        <value>östlich</value>
     </data>
-    <data name="TRAIN" xml:space="preserve">
-        <value>Trainiere|Trainier</value>
+    <data name="CORRIDOR_WEST" xml:space="preserve">
+        <value>westlich</value>
     </data>
-    <data name="PUT" xml:space="preserve">
-        <value>Stelle|Stell</value>
+    <data name="AIRLOCK_KEYPAD_GREEN_BUTTON" xml:space="preserve">
+        <value>grün</value>
     </data>
-    <data name="SCREW" xml:space="preserve">
-        <value>Schraub:ab|Schraube:ab</value>
-    </data>
-    <data name="SCREW_ON" xml:space="preserve">
-        <value>Schraub:an|Schraube:an</value>
-    </data>
-    <data name="LEVER" xml:space="preserve">
-        <value>Hebel|Hebeln</value>
+    <data name="AIRLOCK_KEYPAD_RED_BUTTON" xml:space="preserve">
+        <value>rot</value>
     </data>
 </root>

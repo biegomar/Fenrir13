@@ -1,5 +1,6 @@
 using Fenrir13.Events;
 using Fenrir13.Resources;
+using Heretic.InteractiveFiction.Grammars;
 using Heretic.InteractiveFiction.Objects;
 
 namespace Fenrir13.GamePlay.Prerequisites.EngineRoom;
@@ -13,7 +14,7 @@ internal class EngineRoomPrerequisites
             Key = Keys.ENGINE_ROOM,
             Name = Locations.ENGINE_ROOM,
             Description = Descriptions.ENGINE_ROOM,
-            Grammar = new Grammars(Genders.Male)
+            Grammar = new IndividualObjectGrammar(Genders.Male)
         };
 
         engine.Items.Add(GetShipModel(eventProvider));
@@ -34,8 +35,10 @@ internal class EngineRoomPrerequisites
             Description = Descriptions.ENGINE_ROOM_SHIP_MODEL,
             ContainmentDescription = Descriptions.ENGINE_ROOM_SHIP_MODEL_CONTAINMENT,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Neutrum)
+            Grammar = new IndividualObjectGrammar(Genders.Neutrum)
         };
+        
+        AddATurnEvents(shipModel, eventProvider);
 
         return shipModel;
     }
@@ -49,7 +52,7 @@ internal class EngineRoomPrerequisites
             Description = Descriptions.CEILING,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars()
+            Grammar = new IndividualObjectGrammar()
         };
         location.Items.Add(ceiling);
         
@@ -60,7 +63,7 @@ internal class EngineRoomPrerequisites
             Description = Descriptions.CHAMBER_WALL,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars()
+            Grammar = new IndividualObjectGrammar()
         };
         location.Items.Add(wall);
         
@@ -71,7 +74,7 @@ internal class EngineRoomPrerequisites
             Description = Descriptions.ENGINE_ROOM_RED_DOTS,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(gender: Genders.Male, isSingular: false)
+            Grammar = new IndividualObjectGrammar(gender: Genders.Male, isSingular: false)
         };
         location.Items.Add(redDots);
         
@@ -82,7 +85,7 @@ internal class EngineRoomPrerequisites
             Description = Descriptions.ENGINE_ROOM_ART,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars()
+            Grammar = new IndividualObjectGrammar()
         };
         location.Items.Add(art);
         
@@ -93,7 +96,7 @@ internal class EngineRoomPrerequisites
             Description = Descriptions.ENGINE_ROOM_TECHNIC,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars()
+            Grammar = new IndividualObjectGrammar()
         };
         location.Items.Add(technic);
         
@@ -104,7 +107,7 @@ internal class EngineRoomPrerequisites
             Description = Descriptions.ENGINE_ROOM_STEALING,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(isSingular: false)
+            Grammar = new IndividualObjectGrammar(isSingular: false)
         };
         location.Items.Add(stealing);
         
@@ -115,7 +118,7 @@ internal class EngineRoomPrerequisites
             Description = Descriptions.ENGINE_ROOM_HEAD,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars()
+            Grammar = new IndividualObjectGrammar()
         };
         location.Items.Add(head);
         
@@ -126,7 +129,7 @@ internal class EngineRoomPrerequisites
             Description = Descriptions.ENGINE_ROOM_TANGENT,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars()
+            Grammar = new IndividualObjectGrammar()
         };
         location.Items.Add(tangent);
         
@@ -137,7 +140,7 @@ internal class EngineRoomPrerequisites
             Description = Descriptions.ENGINE_ROOM_COMPUTER,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(gender: Genders.Male)
+            Grammar = new IndividualObjectGrammar(gender: Genders.Male)
         };
         location.Items.Add(computer);
         
@@ -148,7 +151,7 @@ internal class EngineRoomPrerequisites
             Description = Descriptions.QUATUM_CUBE,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(gender: Genders.Male)
+            Grammar = new IndividualObjectGrammar(gender: Genders.Male)
         };
         location.Items.Add(cube);
     }
@@ -157,5 +160,10 @@ internal class EngineRoomPrerequisites
     {
         item.AfterLook += eventProvider.LookAtRedDots;
         eventProvider.ScoreBoard.Add(nameof(eventProvider.LookAtRedDots), 1);
+    }
+    
+    private static void AddATurnEvents(Item hologram, EventProvider eventProvider)
+    {
+        hologram.Turn += eventProvider.TurnHologram;
     }
 }

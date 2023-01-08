@@ -1,5 +1,6 @@
 using Fenrir13.Events;
 using Fenrir13.Resources;
+using Heretic.InteractiveFiction.Grammars;
 using Heretic.InteractiveFiction.Objects;
 
 namespace Fenrir13.GamePlay.Prerequisites.Corridor;
@@ -13,7 +14,7 @@ internal static class CorridorMidEastPrerequisites
             Key = Keys.CORRIDOR_MIDEAST,
             Name = Locations.CORRIDOR_MIDEAST,
             Description = Descriptions.CORRIDOR_MIDEAST,
-            Grammar = new Grammars(Genders.Male)
+            Grammar = new IndividualObjectGrammar(Genders.Male)
         };
         
         AddSurroundings(corridor);
@@ -30,7 +31,7 @@ internal static class CorridorMidEastPrerequisites
             Description = Descriptions.CEILING,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars()
+            Grammar = new IndividualObjectGrammar()
         };
         corridor.Items.Add(ceiling);
         
@@ -41,18 +42,18 @@ internal static class CorridorMidEastPrerequisites
             Description = Descriptions.CORRIDOR_WALLS,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars()
+            Grammar = new IndividualObjectGrammar()
         };
         corridor.Items.Add(wall);
         
         var painting = new Item()
         {
-            Key = Keys.CORRIDOR_PAINTING,
-            Name = Items.CORRIDOR_PAINTING,
+            Key = Keys.CORRIDOR_PAINTING_MIDEAST,
+            Name = Items.CORRIDOR_PAINTING_MIDEAST,
             Description = Descriptions.CORRIDOR_PAINTING_MIDEAST,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Neutrum)
+            Grammar = new IndividualObjectGrammar(Genders.Neutrum)
         };
         corridor.Items.Add(painting);
     }

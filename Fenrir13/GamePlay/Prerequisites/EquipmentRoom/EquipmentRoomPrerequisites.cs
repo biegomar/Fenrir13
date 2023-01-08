@@ -1,5 +1,6 @@
 using Fenrir13.Events;
 using Fenrir13.Resources;
+using Heretic.InteractiveFiction.Grammars;
 using Heretic.InteractiveFiction.Objects;
 
 namespace Fenrir13.GamePlay.Prerequisites.EquipmentRoom;
@@ -13,7 +14,7 @@ internal static class EquipmentRoomPrerequisites
             Key = Keys.EQUIPMENT_ROOM,
             Name = Locations.EQUIPMENT_ROOM,
             Description = Descriptions.EQUIPMENT_ROOM,
-            Grammar = new Grammars(Genders.Male)
+            Grammar = new IndividualObjectGrammar(Genders.Male)
         };
         
         equipmentRoom.Items.Add(GetBox(eventProvider));
@@ -32,7 +33,7 @@ internal static class EquipmentRoomPrerequisites
             Description = Descriptions.CEILING,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars()
+            Grammar = new IndividualObjectGrammar()
         };
         location.Items.Add(ceiling);
         
@@ -43,7 +44,7 @@ internal static class EquipmentRoomPrerequisites
             Description = Descriptions.CHAMBER_WALL,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars()
+            Grammar = new IndividualObjectGrammar()
         };
         location.Items.Add(wall);
         
@@ -54,7 +55,7 @@ internal static class EquipmentRoomPrerequisites
             Description = Descriptions.EQUIPMENT_ROOM_BENCH,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(isSingular: false)
+            Grammar = new IndividualObjectGrammar(isSingular: false)
         };
         location.Items.Add(bench);
         
@@ -65,7 +66,7 @@ internal static class EquipmentRoomPrerequisites
             Description = Descriptions.EQUIPMENT_ROOM_NICHE,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(isSingular: false)
+            Grammar = new IndividualObjectGrammar(isSingular: false)
         };
         location.Items.Add(niche);
         
@@ -76,7 +77,7 @@ internal static class EquipmentRoomPrerequisites
             Description = Descriptions.EQUIPMENT_ROOM_TRASHBIN,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(gender: Genders.Male)
+            Grammar = new IndividualObjectGrammar(gender: Genders.Male)
         };
         location.Items.Add(trashBin);
         
@@ -87,21 +88,10 @@ internal static class EquipmentRoomPrerequisites
             Description = Descriptions.EQUIPMENT_ROOM_CLOTH,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(isSingular: false)
+            Grammar = new IndividualObjectGrammar(isSingular: false)
         };
         location.Items.Add(cloth);
-        
-        var eyelet = new Item()
-        {
-            Key = Keys.EYELET,
-            Name = Items.EYELET,
-            Description = Descriptions.EYELET,
-            IsSurrounding = true,
-            IsPickable = false,
-            Grammar = new Grammars()
-        };
-        location.Items.Add(eyelet);
-        
+
         var roomDoor = new Item()
         {
             Key = Keys.ROOM_DOOR,
@@ -109,7 +99,7 @@ internal static class EquipmentRoomPrerequisites
             Description = Descriptions.ROOM_DOOR,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars()
+            Grammar = new IndividualObjectGrammar()
         };
         location.Items.Add(roomDoor);
     }
@@ -152,7 +142,7 @@ internal static class EquipmentRoomPrerequisites
             IsPickable = false,
             IsHidden = true,
             IsBreakable = true,
-            Grammar = new Grammars(Genders.Neutrum)
+            Grammar = new IndividualObjectGrammar(Genders.Neutrum)
         };
         
         AddBreakEvents(boxLock, eventProvider);
@@ -170,11 +160,12 @@ internal static class EquipmentRoomPrerequisites
             FirstLookDescription = Descriptions.HELMET_FIRSTLOOK,
             IsHidden = true,
             IsWearable = true,
+            IsLinkable = true,
             Weight = ItemWeights.HELMET,
-            Grammar = new Grammars(Genders.Male)
+            Grammar = new IndividualObjectGrammar(Genders.Male)
         };
         
-        AddUseEvents(helmet, eventProvider);
+        AddConnectEvents(helmet, eventProvider);
         AddBeforeDropEvents(helmet, eventProvider);
         
         return helmet;
@@ -190,7 +181,7 @@ internal static class EquipmentRoomPrerequisites
             IsHidden = true,
             IsWearable = true,
             Weight = ItemWeights.GLOVES,
-            Grammar = new Grammars(Genders.Male, false)
+            Grammar = new IndividualObjectGrammar(Genders.Male, false)
         };
         
         AddBeforeDropEvents(gloves, eventProvider);
@@ -208,7 +199,7 @@ internal static class EquipmentRoomPrerequisites
             IsHidden = true,
             IsWearable = true,
             Weight = ItemWeights.BOOTS,
-            Grammar = new Grammars(Genders.Male, false)
+            Grammar = new IndividualObjectGrammar(Genders.Male, false)
         };
         
         AddBeforeDropEvents(boots, eventProvider);
@@ -225,37 +216,16 @@ internal static class EquipmentRoomPrerequisites
             Description = Descriptions.BELT,
             IsHidden = true,
             IsWearable = true,
+            IsLinkable = true,
             Weight = ItemWeights.BELT,
-            Grammar = new Grammars(Genders.Male)
+            Grammar = new IndividualObjectGrammar(Genders.Male)
         };
         
-        belt.Items.Add(GetEyelet(eventProvider));
-        
-        AddEyeletUseEvents(belt, eventProvider);
         AddBeforeDropEvents(belt, eventProvider);
 
         return belt;
     }
     
-    private static Item GetEyelet(EventProvider eventProvider)
-    {
-        var eyelet = new Item()
-        {
-            Key = Keys.EYELET,
-            Name = Items.EYELET,
-            Description = Descriptions.EYELET,
-            ContainmentDescription = Descriptions.EYELET_CONTAINMENT,
-            LinkedToDescription = Descriptions.EYELET_LINKEDTO,
-            IsHidden = true,
-            IsPickable = false
-        };
-
-        AddEyeletUseEvents(eyelet, eventProvider);
-        
-        return eyelet;
-    }
-    
-
     private static void AddBreakEvents(Item box, EventProvider eventProvider)
     {
         box.Break += eventProvider.BreakEquipmentBoxLock;
@@ -267,15 +237,10 @@ internal static class EquipmentRoomPrerequisites
         box.AfterOpen += eventProvider.OpenEquipmentBox;
     }
     
-    private static void AddUseEvents(Item item, EventProvider eventProvider)
+    private static void AddConnectEvents(Item item, EventProvider eventProvider)
     {
-        item.Use += eventProvider.UseOxygenBottleWithHelmet;
-        eventProvider.ScoreBoard.Add(nameof(eventProvider.UseOxygenBottleWithHelmet), 5);
-    }
-    
-    private static void AddEyeletUseEvents(Item item, EventProvider eventProvider)
-    {
-        item.Use += eventProvider.UseAirlockRopeWithEyeletOrBelt;
+        item.Connect += eventProvider.ConnectOxygenBottleWithHelmet;
+        eventProvider.ScoreBoard.Add(nameof(eventProvider.ConnectOxygenBottleWithHelmet), 5);
     }
     
     private static void AddBeforeDropEvents(Item item, EventProvider eventProvider)

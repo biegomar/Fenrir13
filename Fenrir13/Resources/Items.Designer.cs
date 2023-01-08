@@ -429,12 +429,6 @@ namespace Fenrir13.Resources {
             }
         }
         
-        internal static string EYELET {
-            get {
-                return ResourceManager.GetString("EYELET", resourceCulture);
-            }
-        }
-        
         internal static string KITCHEN_CABINET {
             get {
                 return ResourceManager.GetString("KITCHEN_CABINET", resourceCulture);
@@ -1116,6 +1110,30 @@ namespace Fenrir13.Resources {
         internal static string WASHINGAREA_BASIN {
             get {
                 return ResourceManager.GetString("WASHINGAREA_BASIN", resourceCulture);
+            }
+        }
+        
+        internal static string CORRIDOR_PAINTING_MIDEAST {
+            get {
+                return ResourceManager.GetString("CORRIDOR_PAINTING_MIDEAST", resourceCulture);
+            }
+        }
+        
+        internal static string CORRIDOR_PAINTING_EAST {
+            get {
+                return ResourceManager.GetString("CORRIDOR_PAINTING_EAST", resourceCulture);
+            }
+        }
+        
+        internal static string CORRIDOR_PAINTING_MIDWEST {
+            get {
+                return ResourceManager.GetString("CORRIDOR_PAINTING_MIDWEST", resourceCulture);
+            }
+        }
+        
+        internal static string CORRIDOR_PAINTING_WEST {
+            get {
+                return ResourceManager.GetString("CORRIDOR_PAINTING_WEST", resourceCulture);
             }
         }
     }

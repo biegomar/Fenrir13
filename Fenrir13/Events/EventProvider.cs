@@ -4,6 +4,7 @@ using Fenrir13.Resources;
 using Heretic.InteractiveFiction.Exceptions;
 using Heretic.InteractiveFiction.GamePlay;
 using Heretic.InteractiveFiction.GamePlay.EventSystem.EventArgs;
+using Heretic.InteractiveFiction.Grammars;
 using Heretic.InteractiveFiction.Objects;
 using Heretic.InteractiveFiction.Resources;
 using Heretic.InteractiveFiction.Subsystems;
@@ -107,6 +108,7 @@ internal class EventProvider
             respirator.IsLocked = false;
             respiratorFlap.IsLocked = false;
             respiratorFlap.LinkedTo.Add(doorHandle);
+            doorHandle.LinkedTo.Add(respiratorFlap);
             respiratorFlap.FirstLookDescription = string.Empty;
             doorHandle.LinkedToDescription = Descriptions.FRIDGE_DOOR_HANDLE_FLAP_LINKEDTO;
             doorHandle.IsPickable = false;
@@ -116,6 +118,50 @@ internal class EventProvider
             this.universe.Score += this.universe.ScoreBoard[nameof(this.PushDoorHandleIntoRespiratorFlap)];
             doorHandle.Push -= PushDoorHandleIntoRespiratorFlap;
             doorHandle.Use -= UseDoorHandleWithRespiratorFlap;
+            doorHandle.Connect -= ConnectDoorHandleWithRespiratorFlap;
+        }
+    }
+
+    internal void TryToDisconnectHandleFromFlap(object sender, DisconnectEventArgs eventArgs)
+    {
+        if (sender is Item { IsLinked: true })
+        {
+            throw new DisconnectException("Der Griff steckt fest in der Klappe und kann nicht wieder entfernt werden.");
+        }
+    }
+    
+    internal void ConnectDoorHandleWithRespiratorFlap(object sender, ConnectEventArgs eventArgs)
+    {
+        if (sender is Item doorHandle && doorHandle.Key == Keys.FRIDGE_DOOR_HANDLE)
+        {
+            if (eventArgs.ItemToUse is Item respiratorFlap && respiratorFlap.Key == Keys.AMBULANCE_RESPIRATOR_FLAP)
+            {
+                ConnectHandleOnFlap(respiratorFlap, doorHandle);
+            }
+            else
+            {
+                throw new ConnectException(BaseDescriptions.DOES_NOT_WORK);
+            }
+        }
+    }
+    
+    private void ConnectHandleOnFlap(Item respiratorFlap, Item doorHandle)
+    {
+        var respirator = this.universe.ActiveLocation.GetItem(Keys.AMBULANCE_RESPIRATOR);
+        if (respirator != default)
+        {
+            respirator.IsLocked = false;
+            respiratorFlap.IsLocked = false;
+            respiratorFlap.FirstLookDescription = string.Empty;
+            doorHandle.LinkedToDescription = Descriptions.FRIDGE_DOOR_HANDLE_FLAP_LINKEDTO;
+            doorHandle.IsPickable = false;
+            doorHandle.UnPickAbleDescription = Descriptions.FRIDGE_DOOR_HANDLE_FLAP_UNPICKABLE;
+            this.universe.ActivePlayer.Items.Remove(doorHandle);
+            PrintingSubsystem.Resource(Descriptions.FRIDGE_DOOR_HANDLE_PUSHED);
+            this.universe.Score += this.universe.ScoreBoard[nameof(this.PushDoorHandleIntoRespiratorFlap)];
+            doorHandle.Push -= PushDoorHandleIntoRespiratorFlap;
+            doorHandle.Use -= UseDoorHandleWithRespiratorFlap;
+            doorHandle.Connect -= ConnectDoorHandleWithRespiratorFlap;
         }
     }
 
@@ -231,10 +277,8 @@ internal class EventProvider
                 if (isHelmetLinkedToOxygen)
                 {
                     var belt = this.universe.ActivePlayer.Clothes.First(x => x.Key == Keys.BELT);
-                    var eyelet = belt.Items.First(x => x.Key == Keys.EYELET);
-                
-                    var isEyeletLinkedToRope = eyelet.LinkedTo.Any(x => x.Key == Keys.AIRLOCK_ROPE);
-                    if (isEyeletLinkedToRope)
+                    var isBeltLinkedToRope = belt.LinkedTo.Any(x => x.Key == Keys.AIRLOCK_ROPE);
+                    if (isBeltLinkedToRope)
                     {
                         this.isAirlockOpen = true;
                         PrintingSubsystem.Resource(Descriptions.PREPARED_FOR_SPACE_WALK);
@@ -294,29 +338,92 @@ internal class EventProvider
     {
         if (sender is Item closetDoor && closetDoor.Key == Keys.CLOSET_DOOR)
         {
-            var bar = this.universe.ActiveLocation.GetItem(Keys.CHOCOLATEBAR);
-            if (bar != default)
-            {
-                handleClosetDoor(bar, closetDoor);
-            }
+            HandleClosetPart();
         }
     }
-    
-    internal void OpenClosetDoor(object sender, ContainerObjectEventArgs eventArgs)
+
+    internal void OpenCloset(object sender, ContainerObjectEventArgs eventArgs)
     {
-        if (sender is Item closetDoor && closetDoor.Key == Keys.CLOSET_DOOR)
+        if (sender is Item closetPart && (closetPart.Key == Keys.CLOSET || closetPart.Key == Keys.CLOSET_DOOR))
         {
-            PrintingSubsystem.Resource(closetDoor.Description);
-            
-            var bar = this.universe.ActiveLocation.GetItem(Keys.CHOCOLATEBAR);
-            if (bar != default)
-            {
-                handleClosetDoor(bar, closetDoor);
-            }
+            PrintingSubsystem.Resource(Descriptions.CLOSET_DOOR);
+            HandleClosetPart();
         }
         else
         {
             throw new OpenException(BaseDescriptions.IMPOSSIBLE_OPEN);
+        }
+    }
+
+    internal void CloseCloset(object sender, ContainerObjectEventArgs eventArgs)
+    {
+        if (sender is Item closetPart && (closetPart.Key == Keys.CLOSET || closetPart.Key == Keys.CLOSET_DOOR))
+        {
+            CloseClosetPart();
+        }
+        else
+        {
+            throw new CloseException(BaseDescriptions.IMPOSSIBLE_CLOSE);
+        }
+    }
+    
+    private void CloseClosetPart()
+    {
+        if (this.universe.ActiveLocation.GetItem(Keys.CLOSET_DOOR) is { } closetDoor)
+        {
+            closetDoor.IsClosed = true;
+        }
+
+        if (this.universe.ActiveLocation.GetItem(Keys.CLOSET) is { } closet)
+        {
+            closet.IsClosed = true;
+        }
+    }
+    
+    private void HandleClosetPart()
+    {
+        void prepareObject(Item item)
+        {
+            item.AfterLook -= LookAtClosetDoor;
+            item.Open -= OpenCloset;
+            item.Open += OpenClosetAgain;
+            item.IsClosed = false;
+        }
+
+        PrintingSubsystem.Resource(Descriptions.CLOSET_DOOR_FIRSTLOOK);
+        var bar = this.universe.ActiveLocation.GetItem(Keys.CHOCOLATEBAR);
+        if (bar != default)
+        {
+            bar.IsHidden = false;
+            this.universe.Score += this.universe.ScoreBoard[nameof(this.LookAtClosetDoor)];  
+        }
+        
+        var closetDoor = this.universe.ActiveLocation.GetItem(Keys.CLOSET_DOOR);
+        if (closetDoor != default)
+        {
+            prepareObject(closetDoor);
+        }
+        
+        var closet = this.universe.ActiveLocation.GetItem(Keys.CLOSET);
+        if (closet != default)
+        {
+            prepareObject(closet);
+        }
+    }
+
+    private void OpenClosetAgain(object sender, ContainerObjectEventArgs eventArgs)
+    {
+        if (sender is Item closetPart && (closetPart.Key == Keys.CLOSET_DOOR || closetPart.Key == Keys.CLOSET))
+        {
+            if (this.universe.ActiveLocation.GetItem(Keys.CLOSET_DOOR) is { } closetDoor)
+            {
+                closetDoor.IsClosed = true;
+            }
+
+            if (this.universe.ActiveLocation.GetItem(Keys.CLOSET) is { } closet)
+            {
+                closet.IsClosed = true;
+            }
         }
     }
     
@@ -340,37 +447,12 @@ internal class EventProvider
         throw new TakeException(BaseDescriptions.NOTHING_HAPPENS);
     }
 
-    private void handleClosetDoor(AHereticObject bar, AHereticObject closetDoor)
-    {
-        PrintingSubsystem.Resource(Descriptions.CLOSET_DOOR_FIRSTLOOK);
-        bar.IsHidden = false;
-        this.universe.Score += this.universe.ScoreBoard[nameof(this.LookAtClosetDoor)];
-        closetDoor.AfterLook -= LookAtClosetDoor;
-        closetDoor.Open -= OpenClosetDoor;
-        closetDoor.Open += OpenClosetDoorAgain;
-        closetDoor.IsClosed = false;
-    }
-
-    private void OpenClosetDoorAgain(object sender, ContainerObjectEventArgs eventArgs)
-    {
-        if (sender is Item closetDoor && closetDoor.Key == Keys.CLOSET_DOOR)
-        {
-            closetDoor.IsClosed = false;
-            PrintingSubsystem.Resource(closetDoor.Description);
-        }
-    }
-    
     internal void LookAtRespirator(object sender, ContainerObjectEventArgs eventArgs)
     {
-        if (sender is Location ambulance && ambulance.Key == Keys.AMBULANCE && eventArgs.ExternalItemKey == Keys.AMBULANCE_RESPIRATOR)
+        if (sender is Item respirator && respirator.Key == Keys.AMBULANCE_RESPIRATOR)
         {
-            var respirator = this.universe.ActiveLocation.GetItem(Keys.AMBULANCE_RESPIRATOR);
-            
-            if (respirator != default)
-            {
-                respirator.IsHidden = false;
-                ambulance.BeforeLook -= LookAtRespirator;
-            }
+            respirator.ContainmentDescription = string.Empty;
+            respirator.BeforeLook -= LookAtRespirator;
         }
     }
     
@@ -386,6 +468,14 @@ internal class EventProvider
             
             this.universe.Score += this.universe.ScoreBoard[nameof(this.LookAtRedDots)];
             engineRoom.AfterLook -= LookAtRedDots;
+        }
+    }
+
+    internal void TurnHologram(object sender, ContainerObjectEventArgs eventArgs)
+    {
+        if (sender is Item hologram && hologram.Key == Keys.ENGINE_ROOM_SHIP_MODEL)
+        {
+            this.PrintingSubsystem.Resource(Descriptions.TURN_SHIP_MODEL);
         }
     }
     
@@ -422,7 +512,7 @@ internal class EventProvider
         }
     }
     
-    internal void CantLeaveWithoutSuiteAndUneatenBar(object sender, ChangeLocationEventArgs eventArgs)
+    internal void CantLeaveWithoutSuiteAndUneatenBar(object sender, LeaveLocationEventArgs eventArgs)
     {
         if (sender is Location chamber && chamber.Key == Keys.CRYOCHAMBER
             && eventArgs.NewDestinationNode.Location.Key == Keys.CORRIDOR_EAST)
@@ -432,45 +522,43 @@ internal class EventProvider
                 var suite = this.universe.ActiveLocation.GetItem(Keys.SPACE_SUIT);
                 if (suite != default)
                 {
-                    throw new BeforeChangeLocationException(Descriptions.CANT_LEAVE_CHAMBER);
+                    throw new LeaveLocationException(Descriptions.CANT_LEAVE_CHAMBER);
                 }   
             }
         }
     }
     
-    internal void CantLeaveWithoutOpenBulkHead(object sender, ChangeLocationEventArgs eventArgs)
+    internal void CantLeaveWithoutOpenBulkHead(object sender, LeaveLocationEventArgs eventArgs)
     {
         if (sender is Location airlock && airlock.Key == Keys.AIRLOCK
                                        && eventArgs.NewDestinationNode.Location.Key == Keys.JETTY)
         {
             if (!isAirlockOpen)
             {
-                throw new BeforeChangeLocationException(Descriptions.CANT_LEAVE_AIRLOCK);
+                throw new LeaveLocationException(Descriptions.CANT_LEAVE_AIRLOCK);
             }
         }
     }
     
-    internal void CantLeaveWithOpenBulkHeadOrTiedRope(object sender, ChangeLocationEventArgs eventArgs)
+    internal void CantLeaveWithOpenBulkHeadOrTiedRope(object sender, LeaveLocationEventArgs eventArgs)
     {
         if (sender is Location airlock && airlock.Key == Keys.AIRLOCK
                                        && eventArgs.NewDestinationNode.Location.Key == Keys.MACHINE_CORRIDOR_MID)
         {
             if (isAirlockOpen)
             {
-                throw new BeforeChangeLocationException(Descriptions.CANT_LEAVE_OPEN_AIRLOCK);
+                throw new LeaveLocationException(Descriptions.CANT_LEAVE_OPEN_AIRLOCK);
             }
             
-            var belt = this.universe.ActivePlayer.Clothes.FirstOrDefault(x => x.Key == Keys.BELT);
+            var belt = this.universe.ActivePlayer.Clothes.SingleOrDefault(x => x.Key == Keys.BELT);
             if (belt == default)
             {
-                belt = this.universe.ActivePlayer.Items.FirstOrDefault(x => x.Key == Keys.BELT);
+                belt = this.universe.ActivePlayer.Items.SingleOrDefault(x => x.Key == Keys.BELT);
             }
             
-            var eyelet = belt?.GetItem(Keys.EYELET);
-            
-            if (belt != null && eyelet != default && eyelet.LinkedTo.Count > 0)
+            if (belt is { IsLinked: true })
             {
-                throw new BeforeChangeLocationException(Descriptions.CANT_LEAVE_WITH_TIED_EYELET);
+                throw new LeaveLocationException(Descriptions.CANT_LEAVE_WITH_TIED_EYELET);
             }
         }
     }
@@ -631,9 +719,14 @@ internal class EventProvider
             }
         }
     }
-    
+
     internal void UseToolWithAntennaInSocialRoom(object sender, UseItemEventArgs eventArgs)
     {
+        if (eventArgs.ItemToUse == default)
+        {
+            throw new UseException(BaseDescriptions.WHAT_TO_USE);
+        }
+        
         if (sender is Item itemOne 
             && eventArgs.ItemToUse is Item itemTwo 
             && itemOne.Key != itemTwo.Key
@@ -682,145 +775,57 @@ internal class EventProvider
 
     
 
-    internal void MountAntennaToDroid(object sender, UseItemEventArgs eventArgs)
+    internal void MountAntennaToDroid(object sender, ConnectEventArgs eventArgs)
     {
-        if (sender is Item itemOne
-            && eventArgs.ItemToUse is Item itemTwo
-            && itemOne.Key != itemTwo.Key
-            && this.universe.ActiveLocation.Key == Keys.ROOF_TOP)
+        if (this.universe.ActiveLocation.Key == Keys.ROOF_TOP)
         {
-            var itemList = new List<Item> { itemOne, itemTwo };
-            var tool = itemList.SingleOrDefault(i => i.Key == Keys.MAINTENANCE_ROOM_TOOL);
-
-            if (tool != default)
+            if (sender is Item antenna)
             {
-                this.UseToolWithAntennaOnRoofTop(sender, eventArgs);
-            }
-            else
-            {
-                this.UseAntennaOnDroid(sender, eventArgs);
+                if (eventArgs.ItemToUse is Item)
+                {
+                    this.ConnectAntennaToDroid(sender, eventArgs);
+                    
+                    return;
+                }
+                
+                throw new ConnectException(string.Format(BaseDescriptions.WHAT_TO_CONNECT_TO,
+                    ArticleHandler.GetNameWithArticleForObject(antenna, GrammarCase.Dative,
+                        lowerFirstCharacter: true)));    
             }
         }
     }
     
-    private void UseToolWithAntennaOnRoofTop(object sender, UseItemEventArgs eventArgs)
+    private void ConnectAntennaToDroid(object sender, ConnectEventArgs eventArgs)
     {
-        if (sender is Item itemOne 
-            && eventArgs.ItemToUse is Item itemTwo 
-            && itemOne.Key != itemTwo.Key
-            && this.universe.ActiveLocation.Key == Keys.ROOF_TOP)
+        if (sender is Item antenna && eventArgs.ItemToUse is Item droid && droid.Key == Keys.DROID)
         {
-            var itemList = new List<Item> { itemOne, itemTwo };
-            var tool = itemList.SingleOrDefault(i => i.Key == Keys.MAINTENANCE_ROOM_TOOL);
-            var secondItem = itemList.SingleOrDefault(i => i.Key == Keys.SOCIALROOM_ANTENNA);
-            Item antenna = secondItem;
-
-            if (tool != default && secondItem == default)
+            if (!this.universe.ActivePlayer.OwnsItem(Keys.MAINTENANCE_ROOM_TOOL))
             {
-                secondItem = itemList.SingleOrDefault(i => i.Key == Keys.DROID);
-                if (secondItem != default)
-                {
-                    antenna = this.universe.ActivePlayer.Items.SingleOrDefault(i => i.Key == Keys.SOCIALROOM_ANTENNA);
-                }
+                throw new ConnectException(Descriptions.MAINTENANCE_ROOM_TOOL_NOT_PRESENT);
             }
+
+            if (!this.universe.ActivePlayer.OwnsItem(Keys.SOCIALROOM_ANTENNA))
+            {
+                this.universe.PickObject(antenna);
+            }
+
+            this.universe.ActivePlayer.Items.Remove(antenna);
+            droid.FirstLookDescription = string.Empty;
+            antenna.LinkedToDescription = Descriptions.DROID_ANTENNA_LINKDESCRIPTION;
+
+            PrintingSubsystem.Resource(Descriptions.DROID_ANTENNA_MOUNTED);
+
+            ChangeShipModelContainment();
+
+            antenna.Connect -= MountAntennaToDroid;
+
+            this.universe.Score += this.universe.ScoreBoard[nameof(MountAntennaToDroid)];
+            this.SolveRobotQuest();
             
-            if (tool != default && antenna != default)
-            {
-                if (this.universe.ActivePlayer.GetUnhiddenItem(Keys.MAINTENANCE_ROOM_TOOL) == default)
-                {
-                    this.universe.PickObject(tool);
-                }
-                
-                if (this.universe.ActivePlayer.GetUnhiddenItem(Keys.SOCIALROOM_ANTENNA) == default)
-                {
-                    this.universe.PickObject(antenna);
-                }
-                
-                var droid = this.universe.ActiveLocation.GetItem(Keys.DROID);
-                if (droid != default)
-                {
-                    this.universe.ActivePlayer.Items.Remove(antenna);
-                    droid.LinkedTo.Add(antenna);
-                    droid.FirstLookDescription = string.Empty;
-                    
-                    antenna.LinkedTo.Add(droid);
-                    antenna.LinkedToDescription = Descriptions.DROID_ANTENNA_LINKDESCRIPTION;
-
-                    PrintingSubsystem.Resource(Descriptions.DROID_ANTENNA_MOUNTED);
-
-                    ChangeShipModelContainment();
-                        
-                    tool.Use -= MountAntennaToDroid;
-                    antenna.Use -= MountAntennaToDroid;
-                    droid.Use -= MountAntennaToDroid;
-
-                    this.universe.Score += this.universe.ScoreBoard[nameof(MountAntennaToDroid)];
-                    this.SolveRobotQuest();
-                }
-                else
-                {
-                    throw new UseException(BaseDescriptions.DOES_NOT_WORK);
-                }
-            }
-            else
-            {
-                throw new UseException(BaseDescriptions.DOES_NOT_WORK);
-            }
+            return;
         }
-    }
-    
-    private void UseAntennaOnDroid(object sender, UseItemEventArgs eventArgs)
-    {
-        if (sender is Item itemOne && eventArgs.ItemToUse is Item itemTwo && itemOne.Key != itemTwo.Key)
-        {
-            var itemList = new List<Item> { itemOne, itemTwo };
-            var antenna = itemList.SingleOrDefault(i => i.Key == Keys.SOCIALROOM_ANTENNA);
-            var droid = itemList.SingleOrDefault(i => i.Key == Keys.DROID);
-            
-            if (antenna != default && droid != default)
-            {
-                var tool = this.objectHandler.GetObjectFromWorldByKey(Keys.MAINTENANCE_ROOM_TOOL) as Item;
-                if (tool == default)
-                {
-                    throw new UseException(Descriptions.MAINTENANCE_ROOM_TOOL_NOT_PRESENT); 
-                }
-                
-                if (this.universe.ActivePlayer.GetUnhiddenItem(Keys.MAINTENANCE_ROOM_TOOL) == default)
-                {
-                    if (!this.universe.PickObject(tool))
-                    {
-                        throw new UseException(Descriptions.MAINTENANCE_ROOM_TOOL_NOT_PRESENT);
-                    }
-                }
-                
-                if (this.universe.ActivePlayer.GetUnhiddenItem(Keys.SOCIALROOM_ANTENNA) == default)
-                {
-                    this.universe.PickObject(antenna);
-                }
-                
-                this.universe.ActivePlayer.Items.Remove(antenna);
-                droid.LinkedTo.Add(antenna);
-                droid.FirstLookDescription = string.Empty;
-                
-                antenna.LinkedTo.Add(droid);
-                antenna.LinkedToDescription = Descriptions.DROID_ANTENNA_LINKDESCRIPTION;
 
-                PrintingSubsystem.Resource(Descriptions.DROID_ANTENNA_MOUNTED);
-
-                ChangeShipModelContainment();
-                    
-                tool.Use -= MountAntennaToDroid;
-                antenna.Use -= MountAntennaToDroid;
-                droid.Use -= MountAntennaToDroid;
-
-                this.universe.Score += this.universe.ScoreBoard[nameof(MountAntennaToDroid)];
-                this.SolveRobotQuest();
-            }
-            else
-            {
-                throw new UseException(BaseDescriptions.DOES_NOT_WORK);
-            }
-        }    
+        throw new ConnectException(BaseDescriptions.DOES_NOT_WORK);
     }
 
     private void ChangeShipModelContainment()
@@ -943,57 +948,52 @@ internal class EventProvider
         }
     }
     
-    internal void UseOxygenBottleWithHelmet(object sender, UseItemEventArgs eventArgs)
+    internal void ConnectOxygenBottleWithHelmet(object sender, ConnectEventArgs eventArgs)
     {
-        if (sender is Item itemOne && eventArgs.ItemToUse is Item itemTwo && itemOne.Key != itemTwo.Key)
+        if (sender is Item helmet && helmet.Key == Keys.HELMET && eventArgs.ItemToUse is Item oxygenBottle && oxygenBottle.Key == Keys.OXYGEN_BOTTLE)
         {
-            var itemList = new List<Item> { itemOne, itemTwo };
-            var oxygenBottle = itemList.SingleOrDefault(i => i.Key == Keys.OXYGEN_BOTTLE);
-            var helmet = itemList.SingleOrDefault(i => i.Key == Keys.HELMET);
-
-            if (oxygenBottle != default && helmet != default)
+            if (!this.universe.ActivePlayer.OwnsItem(Keys.OXYGEN_BOTTLE))
             {
-                if (this.universe.ActivePlayer.GetUnhiddenItem(Keys.OXYGEN_BOTTLE) == default)
-                {
-                    this.universe.PickObject(oxygenBottle);
-                }
+                this.universe.PickObject(oxygenBottle);
+            }
                 
-                if (this.universe.ActivePlayer.GetUnhiddenItem(Keys.HELMET) == default)
-                {
-                    this.universe.PickObject(helmet);
-                }
-                
-                oxygenBottle.LinkedTo.Add(helmet);
+            if (!this.universe.ActivePlayer.OwnsItem(Keys.HELMET))
+            {
+                this.universe.PickObject(helmet);
+            }
+            
+            this.universe.ActivePlayer.Items.Remove(oxygenBottle);
 
-                this.universe.ActivePlayer.Items.Remove(oxygenBottle);
-                
-                helmet.LinkedTo.Add(oxygenBottle);
-                helmet.FirstLookDescription = string.Empty;
+            helmet.FirstLookDescription = string.Empty;
 
-                if (this.universe.ActivePlayer.Clothes.Contains(helmet))
-                {
-                    PrintingSubsystem.FormattedResource(Descriptions.LINK_OXYGEN_BOTTLE_TO_HELMET_WITH_HELMET_ON,
-                        Descriptions.LINK_OXYGEN_BOTTLE_TO_HELMET);
-                }
-                else
-                {
-                    PrintingSubsystem.Resource(Descriptions.LINK_OXYGEN_BOTTLE_TO_HELMET);    
-                }
-                oxygenBottle.Use -= UseOxygenBottleWithHelmet;
-                helmet.Use -= UseOxygenBottleWithHelmet;
-
-                this.universe.Score += this.universe.ScoreBoard[nameof(UseOxygenBottleWithHelmet)];
-                this.universe.SolveQuest(MetaData.QUEST_V);
+            if (this.universe.ActivePlayer.Clothes.Contains(helmet))
+            {
+                PrintingSubsystem.FormattedResource(Descriptions.LINK_OXYGEN_BOTTLE_TO_HELMET_WITH_HELMET_ON,
+                    Descriptions.LINK_OXYGEN_BOTTLE_TO_HELMET);
             }
             else
             {
-                throw new UseException(BaseDescriptions.DOES_NOT_WORK);
+                PrintingSubsystem.Resource(Descriptions.LINK_OXYGEN_BOTTLE_TO_HELMET);
             }
+
+            helmet.Connect -= ConnectOxygenBottleWithHelmet;
+
+            this.universe.Score += this.universe.ScoreBoard[nameof(ConnectOxygenBottleWithHelmet)];
+            this.universe.SolveQuest(MetaData.QUEST_V);
+        }
+        else
+        {
+            throw new ConnectException(BaseDescriptions.DOES_NOT_WORK);    
         }
     }
 
     internal void UseDumbbellBarWithLever(object sender, UseItemEventArgs eventArgs)
     {
+        if (eventArgs.ItemToUse == default)
+        {
+            throw new UseException(BaseDescriptions.WHAT_TO_USE);
+        }
+        
         if (sender is Item itemOne && eventArgs.ItemToUse is Item itemTwo && itemOne.Key != itemTwo.Key)
         {
             var itemList = new List<Item> { itemOne, itemTwo };
@@ -1034,48 +1034,38 @@ internal class EventProvider
         }
     }
 
-    internal void UseAirlockRopeWithEyeletOrBelt(object sender, UseItemEventArgs eventArgs)
+    internal void ConnectAirlockRopeWithBelt(object sender, ConnectEventArgs eventArgs)
     {
-        if (sender is Item itemOne && eventArgs.ItemToUse is Item itemTwo && itemOne.Key != itemTwo.Key)
+        if (sender is Item rope && rope.Key == Keys.AIRLOCK_ROPE)
         {
-            var itemList = new List<Item> { itemOne, itemTwo };
-            var rope = itemList.SingleOrDefault(i => i.Key == Keys.AIRLOCK_ROPE);
-            var endPoint = itemList.SingleOrDefault(i => i.Key == Keys.EYELET);
-
-            if (rope != default && endPoint == default)
+            if (eventArgs.ItemToUse is Item fixPoint && Keys.BELT == fixPoint.Key)
             {
-                endPoint = itemList.SingleOrDefault(i => i.Key == Keys.BELT);
-                if (endPoint != default)
+                var itemName = ArticleHandler.GetNameWithArticleForObject(fixPoint, GrammarCase.Accusative);
+                
+                if (!this.universe.ActivePlayer.OwnsObject(fixPoint))
                 {
-                    endPoint.Use -= UseAirlockRopeWithEyeletOrBelt;
-                    endPoint = endPoint.Items.SingleOrDefault(i => i.Key == Keys.EYELET);
+                    throw new ConnectException(string.Format(BaseDescriptions.ITEM_NOT_OWNED_FORMATTED, itemName,
+                        true));
                 }
-            }
 
-            if (rope != default && endPoint != default)
-            {
-                if (this.universe.ActivePlayer.GetUnhiddenItem(Keys.BELT) == default)
+                if (!this.universe.ActivePlayer.WearsItem(fixPoint))
                 {
-                    var belt = this.universe.ActiveLocation.GetItem(Keys.BELT);
-                    this.universe.PickObject(belt);
+                    throw new ConnectException(string.Format(BaseDescriptions.ITEM_NOT_WEARN, itemName,
+                        true));
                 }
                 
-                rope.LinkedTo.Add(endPoint);
-                endPoint.LinkedTo.Add(rope);
-
                 PrintingSubsystem.Resource(Descriptions.LINK_ROPE_TO_EYELET);
-                rope.Use -= UseAirlockRopeWithEyeletOrBelt;
-                endPoint.Use -= UseAirlockRopeWithEyeletOrBelt;
+                rope.Connect -= ConnectAirlockRopeWithBelt;
 
-                this.universe.Score += this.universe.ScoreBoard[nameof(UseAirlockRopeWithEyeletOrBelt)];
-            }
-            else
-            {
-                throw new UseException(BaseDescriptions.DOES_NOT_WORK);
+                this.universe.Score += this.universe.ScoreBoard[nameof(ConnectAirlockRopeWithBelt)];
+                
+                return;
             }
         }
+        
+        throw new ConnectException(BaseDescriptions.DOES_NOT_WORK);
     }
-    
+
     internal void BreakEquipmentBoxLock(object sender, BreakItemEventArgs eventArgs)
     {
         if (eventArgs.ItemToUse == default)
@@ -1115,7 +1105,7 @@ internal class EventProvider
             Description = Descriptions.EQUIPMENT_BOX_LOCK_DESTROYED,
             ContainmentDescription = Descriptions.EQUIPMENT_BOX_LOCK_BREAK_CONTAINMENT,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Neutrum)
+            Grammar = new IndividualObjectGrammar(Genders.Neutrum)
         };
         
         return boxLock;
@@ -1134,8 +1124,9 @@ internal class EventProvider
             {
                 throw new BreakException(Descriptions.AMBULANCE_RESPIRATOR_FLAP_DUMBBELL_BAR_UNBREAKABLE);    
             }
-            
-            throw new BreakException(String.Format(BaseDescriptions.INAPPROPRIATE_TOOL, flap.DativeArticleName.LowerFirstChar()));    
+
+            var flapName = ArticleHandler.GetNameWithArticleForObject(flap, GrammarCase.Dative, lowerFirstCharacter: true);
+            throw new BreakException(String.Format(BaseDescriptions.INAPPROPRIATE_TOOL, flapName));    
         }
     }
     
@@ -1255,7 +1246,7 @@ internal class EventProvider
         }
     }
     
-    internal void EnterAirlock(object sender, ChangeLocationEventArgs eventArgs)
+    internal void EnterAirlock(object sender, EnterLocationEventArgs eventArgs)
     {
         if (sender is Location airlock && airlock.Key == Keys.AIRLOCK)
         {
@@ -1264,8 +1255,16 @@ internal class EventProvider
             PrintingSubsystem.Resource(Descriptions.ZERO_GRAVITY);
         }
     }
+
+    internal void TryToPickupPortrait(object sender, ContainerObjectEventArgs eventArgs)
+    {
+        if (sender is Item portrait && portrait.Key == Keys.PORTRAIT)
+        {
+            throw new TakeException(Descriptions.PORTRAIT_TO_HEAVY);
+        }
+    }
     
-    internal void LeaveAirlock(object sender, ChangeLocationEventArgs eventArgs)
+    internal void LeaveAirlock(object sender, LeaveLocationEventArgs eventArgs)
     {
         if (sender is Location airlock && airlock.Key == Keys.AIRLOCK 
                                        && eventArgs.NewDestinationNode.Location.Key == Keys.MACHINE_CORRIDOR_MID 

@@ -1,5 +1,6 @@
 using Fenrir13.Events;
 using Fenrir13.Resources;
+using Heretic.InteractiveFiction.Grammars;
 using Heretic.InteractiveFiction.Objects;
 
 namespace Fenrir13.GamePlay.Prerequisites.PlayerConfig;
@@ -15,7 +16,7 @@ public static class PlayerPrerequisites
             Description = Descriptions.PLAYER,
             FirstLookDescription = Descriptions.PLAYER_FIRSTLOOK,
             MaxPayload = 10000,
-            Grammar = new Grammars(Genders.Male, isPlayer:true)
+            Grammar = new IndividualObjectGrammar(Genders.Male)
         };
         
         AddSitDownEvents(player, eventProvider);

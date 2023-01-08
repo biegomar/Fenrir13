@@ -1,23 +1,31 @@
-nimm overall
-l all
-l schranktür
-iss riegel
-l display
+ich bin Marc
+nimm den suit
+öffne die schranktür
+iss den riegel
+l das display
 w
 w
 w
 hoch
-l platte
-setzen
+schaue dir die platte an
+setz dich hin
 tippe skov
 aufstehen
 runter
 w
 s
-l powerstation
-l ablage
-nimm stange
+schaue dir die powerstation an
+schaue dir die ablage an
+nimm die stange
 n
 e
 runter
+w
+l kiste
+zerstöre das schloss mit der stange
+öffne kiste
+e
+s
+lass die stange fallen
+n
 e

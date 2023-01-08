@@ -2,6 +2,7 @@ using System.Runtime.CompilerServices;
 using Fenrir13.Events;
 using Fenrir13.Resources;
 using Heretic.InteractiveFiction.GamePlay;
+using Heretic.InteractiveFiction.Grammars;
 using Heretic.InteractiveFiction.Objects;
 using Heretic.InteractiveFiction.Resources;
 
@@ -39,7 +40,7 @@ internal static class CryoChamberPrerequisites
             IsHidden = true,
             IsUnveilable = false,
             IsEatable = true,
-            Grammar = new Grammars(Genders.Male)
+            Grammar = new IndividualObjectGrammar(Genders.Male)
         };
 
         AddEatEvents(bar, eventProvider);
@@ -57,7 +58,7 @@ internal static class CryoChamberPrerequisites
             IsDropable = false,
             ContainmentDescription = Descriptions.SPACE_SUIT_CONTAINMENT,
             UnDropAbleDescription = Descriptions.SPACE_SUIT_UNDROPABLE,
-            Grammar = new Grammars(Genders.Male)
+            Grammar = new IndividualObjectGrammar(Genders.Male)
         };
 
         AddAfterTakeEvents(spaceSuite, eventProvider);
@@ -74,7 +75,7 @@ internal static class CryoChamberPrerequisites
             Description = Descriptions.CHAMBER_WALL,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars()
+            Grammar = new IndividualObjectGrammar()
         };
         location.Items.Add(wall);
         
@@ -85,7 +86,7 @@ internal static class CryoChamberPrerequisites
             Description = Descriptions.CHAMBER_FLOOR,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Male)
+            Grammar = new IndividualObjectGrammar(Genders.Male)
         };
         location.Items.Add(floor);
         
@@ -96,7 +97,7 @@ internal static class CryoChamberPrerequisites
             Description = Descriptions.TABLE,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Male)
+            Grammar = new IndividualObjectGrammar(Genders.Male)
         };
         location.Items.Add(table);
         
@@ -108,7 +109,7 @@ internal static class CryoChamberPrerequisites
             IsSurrounding = true,
             IsPickable = false,
             IsSeatable = true,
-            Grammar = new Grammars(Genders.Male)
+            Grammar = new IndividualObjectGrammar(Genders.Male)
         };
         location.Items.Add(chair);
         AddSitDownEvents(chair, eventProvider);
@@ -120,7 +121,7 @@ internal static class CryoChamberPrerequisites
             Description = Descriptions.CRYOPOD,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Male)
+            Grammar = new IndividualObjectGrammar(Genders.Male)
         };
         location.Items.Add(pod);
         
@@ -131,7 +132,7 @@ internal static class CryoChamberPrerequisites
             Description = Descriptions.CRYOPOD,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Neutrum)
+            Grammar = new IndividualObjectGrammar(Genders.Neutrum)
         };
         location.Items.Add(bed);
         
@@ -142,7 +143,7 @@ internal static class CryoChamberPrerequisites
             Description = Descriptions.WORKBENCH,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Male)
+            Grammar = new IndividualObjectGrammar(Genders.Male)
         };
         location.Items.Add(workbench);
         
@@ -153,7 +154,7 @@ internal static class CryoChamberPrerequisites
             Description = Descriptions.LAPTOP,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Male)
+            Grammar = new IndividualObjectGrammar(Genders.Male)
         };
         AddBeforeTakeEvents(laptop, eventProvider);
         location.Items.Add(laptop);
@@ -165,7 +166,7 @@ internal static class CryoChamberPrerequisites
             Description = Descriptions.PIERHOLE,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Neutrum)
+            Grammar = new IndividualObjectGrammar(Genders.Neutrum)
         };
         location.Items.Add(pierHole);
         
@@ -177,7 +178,7 @@ internal static class CryoChamberPrerequisites
             IsSurrounding = true,
             IsPickable = false,
             IsSeatable = true,
-            Grammar = new Grammars(Genders.Male)
+            Grammar = new IndividualObjectGrammar(Genders.Male)
         };
         location.Items.Add(officeChair);
         AddSitDownEvents(officeChair, eventProvider);
@@ -189,21 +190,13 @@ internal static class CryoChamberPrerequisites
             Description = Descriptions.CLOSET,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Male)
+            IsCloseable = true,
+            IsClosed = true,
+            Grammar = new IndividualObjectGrammar(Genders.Male)
         };
         location.Items.Add(closet);
-        
-        var drawer = new Item()
-        {
-            Key = Keys.DRAWER,
-            Name = Items.DRAWER,
-            Description = Descriptions.DRAWER,
-            IsSurrounding = true,
-            IsPickable = false,
-            Grammar = new Grammars()
-        };
-        location.Items.Add(drawer);
-        
+        AddOpenCloseClosetEvents(closet, eventProvider);
+
         var closetDoor = new Item()
         {
             Key = Keys.CLOSET_DOOR,
@@ -213,11 +206,22 @@ internal static class CryoChamberPrerequisites
             IsPickable = false,
             IsCloseable = true,
             IsClosed = true,
-            Grammar = new Grammars()
+            Grammar = new IndividualObjectGrammar()
         };
         location.Items.Add(closetDoor);
-        AddOpenEvents(closetDoor, eventProvider);
+        AddOpenCloseClosetEvents(closetDoor, eventProvider);
         AddAfterLookEventsForClosetDoor(closetDoor, eventProvider);
+        
+        var drawer = new Item()
+        {
+            Key = Keys.DRAWER,
+            Name = Items.DRAWER,
+            Description = Descriptions.DRAWER,
+            IsSurrounding = true,
+            IsPickable = false,
+            Grammar = new IndividualObjectGrammar()
+        };
+        location.Items.Add(drawer);
         
         var wardrobe = new Item()
         {
@@ -226,7 +230,7 @@ internal static class CryoChamberPrerequisites
             Description = Descriptions.WARDROBE,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars()
+            Grammar = new IndividualObjectGrammar()
         };
         location.Items.Add(wardrobe);
         
@@ -237,7 +241,7 @@ internal static class CryoChamberPrerequisites
             Description = Descriptions.PARTITION_WALL,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars()
+            Grammar = new IndividualObjectGrammar()
         };
         location.Items.Add(partitionWall);
         
@@ -248,7 +252,7 @@ internal static class CryoChamberPrerequisites
             Description = Descriptions.WASHINGAREA,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars()
+            Grammar = new IndividualObjectGrammar()
         };
         location.Items.Add(washingArea);
         
@@ -259,7 +263,7 @@ internal static class CryoChamberPrerequisites
             Description = Descriptions.WASHINGAREA,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Neutrum)
+            Grammar = new IndividualObjectGrammar(Genders.Neutrum)
         };
         location.Items.Add(washingAreaBasin);
         
@@ -270,7 +274,7 @@ internal static class CryoChamberPrerequisites
             Description = Descriptions.TOILET,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars()
+            Grammar = new IndividualObjectGrammar()
         };
         location.Items.Add(toilet);
         
@@ -281,7 +285,7 @@ internal static class CryoChamberPrerequisites
             Description = Descriptions.TOILET_SEAT,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Male)
+            Grammar = new IndividualObjectGrammar(Genders.Male)
         };
         location.Items.Add(toiletSeat);
         
@@ -293,7 +297,7 @@ internal static class CryoChamberPrerequisites
             FirstLookDescription = Descriptions.MIRROR_FIRSTLOOK,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Male)
+            Grammar = new IndividualObjectGrammar(Genders.Male)
         };
         location.Items.Add(mirror);
         
@@ -304,7 +308,7 @@ internal static class CryoChamberPrerequisites
             Description = Descriptions.OUTLINES,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Male)
+            Grammar = new IndividualObjectGrammar(Genders.Male)
         };
         location.Items.Add(outlines);
         
@@ -315,7 +319,7 @@ internal static class CryoChamberPrerequisites
             Description = Descriptions.PEEPHOLE,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Neutrum)
+            Grammar = new IndividualObjectGrammar(Genders.Neutrum)
         };
         location.Items.Add(peephole);
         
@@ -326,7 +330,7 @@ internal static class CryoChamberPrerequisites
             Description = Descriptions.LATCH,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars()
+            Grammar = new IndividualObjectGrammar()
         };
         location.Items.Add(latch);
         
@@ -337,7 +341,7 @@ internal static class CryoChamberPrerequisites
             Description = Descriptions.CRYOCHAMBER_DOOR,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars()
+            Grammar = new IndividualObjectGrammar()
         };
         location.Items.Add(door);
         AddAfterOpenEvents(door, eventProvider);
@@ -349,7 +353,7 @@ internal static class CryoChamberPrerequisites
             Description = Descriptions.DISPLAY,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Neutrum)
+            Grammar = new IndividualObjectGrammar(Genders.Neutrum)
         };
         location.Items.Add(display);
         AddAfterLookEventsForDisplay(display, eventProvider);
@@ -361,7 +365,7 @@ internal static class CryoChamberPrerequisites
             Description = Descriptions.WRITING_MATERIALS,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Neutrum, isSingular: false)
+            Grammar = new IndividualObjectGrammar(Genders.Neutrum, isSingular: false)
         };
         location.Items.Add(materials);
         
@@ -372,7 +376,7 @@ internal static class CryoChamberPrerequisites
             Description = Descriptions.CEILING,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars()
+            Grammar = new IndividualObjectGrammar()
         };
         location.Items.Add(ceiling);
         
@@ -383,7 +387,7 @@ internal static class CryoChamberPrerequisites
             Description = Descriptions.CRYOCHAMBER_BULKHEAD,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Neutrum)
+            Grammar = new IndividualObjectGrammar(Genders.Neutrum)
         };
         location.Items.Add(bulkhead);
         
@@ -394,7 +398,7 @@ internal static class CryoChamberPrerequisites
             Description = Descriptions.CRYOCHAMBER_LAMP,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars()
+            Grammar = new IndividualObjectGrammar()
         };
         location.Items.Add(lamp);
         
@@ -405,7 +409,7 @@ internal static class CryoChamberPrerequisites
             Description = Descriptions.CRYOCHAMBER_CLOTHS,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(isSingular: false)
+            Grammar = new IndividualObjectGrammar(isSingular: false)
         };
         location.Items.Add(cloths);
         
@@ -416,7 +420,7 @@ internal static class CryoChamberPrerequisites
             Description = Descriptions.PROXIMA_CENTAURI,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Neutrum, isSingular: false)
+            Grammar = new IndividualObjectGrammar(Genders.Neutrum, isSingular: false)
         };
         location.Items.Add(proxima);
         
@@ -427,7 +431,7 @@ internal static class CryoChamberPrerequisites
             Description = Descriptions.PAPER,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Neutrum)
+            Grammar = new IndividualObjectGrammar(Genders.Neutrum)
         };
         location.Items.Add(paper);
         
@@ -438,7 +442,7 @@ internal static class CryoChamberPrerequisites
             Description = Descriptions.PENCILS,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Male, isSingular: false)
+            Grammar = new IndividualObjectGrammar(Genders.Male, isSingular: false)
         };
         location.Items.Add(pencils);
         
@@ -449,7 +453,7 @@ internal static class CryoChamberPrerequisites
             Description = Descriptions.PENCIL_I,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Male)
+            Grammar = new IndividualObjectGrammar(Genders.Male)
         };
         location.Items.Add(pencilOne);
         
@@ -460,7 +464,7 @@ internal static class CryoChamberPrerequisites
             Description = Descriptions.PENCIL_II,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Male)
+            Grammar = new IndividualObjectGrammar(Genders.Male)
         };
         location.Items.Add(pencilTwo);
         
@@ -471,7 +475,7 @@ internal static class CryoChamberPrerequisites
             Description = Descriptions.FELT,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Male)
+            Grammar = new IndividualObjectGrammar(Genders.Male)
         };
         location.Items.Add(felt);
         
@@ -482,7 +486,7 @@ internal static class CryoChamberPrerequisites
             Description = Descriptions.PANEL_TOP_WOLF,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Male)
+            Grammar = new IndividualObjectGrammar(Genders.Male)
         };
         location.Items.Add(wolf);
     }
@@ -516,9 +520,10 @@ internal static class CryoChamberPrerequisites
         item.BeforeTake += eventProvider.TakeLaptop;
     }
 
-    private static void AddOpenEvents(Item closetDoor, EventProvider eventProvider)
+    private static void AddOpenCloseClosetEvents(Item item, EventProvider eventProvider)
     {
-        closetDoor.Open += eventProvider.OpenClosetDoor;
+        item.Open += eventProvider.OpenCloset;
+        item.Close += eventProvider.CloseCloset;
     }
     
     private static void AddAfterOpenEvents(Item cryoChamberDoor, EventProvider eventProvider)
@@ -533,6 +538,6 @@ internal static class CryoChamberPrerequisites
     
     private static void AddChangeLocationEvents(Location room, EventProvider eventProvider)
     {
-        room.BeforeChangeLocation += eventProvider.CantLeaveWithoutSuiteAndUneatenBar;
+        room.BeforeLeaveLocation += eventProvider.CantLeaveWithoutSuiteAndUneatenBar;
     }
 }

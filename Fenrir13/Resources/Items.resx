@@ -55,7 +55,7 @@
         <value>Garderobe</value>
     </data>
     <data name="SPACE_SUIT" xml:space="preserve">
-        <value>Bio-Suit| Bio Suit|Space-Overall|Space Overall|Space-Suit|Space Suit|Overall|Anzug|Suit</value>
+        <value>Bio-Suit|Bio Suit|Space-Overall|Space Overall|Space-Suit|Space Suit|Overall|Anzug|Suit</value>
     </data>
     <data name="TABLE" xml:space="preserve">
         <value>Tisch|Metallrahmen|Kunststofftischplatte</value>
@@ -181,7 +181,7 @@
         <value>Handschuhe|Handschuhen</value>
     </data>
     <data name="BOOTS" xml:space="preserve">
-        <value>Stiefel|Moonboots|Boots|Schuhe</value>
+        <value>Stiefel|Moonboots|Boots|Schuhe|Schuhen</value>
     </data>
     <data name="EQUIPMENT_BOX_LOCK" xml:space="preserve">
         <value>Vorhängeschloss|Schloss|Schloß</value>
@@ -190,10 +190,10 @@
         <value>Tastenfeld|Tastatur</value>
     </data>
     <data name="AIRLOCK_KEYPAD_RED_BUTTON" xml:space="preserve">
-        <value>Rote Knopf|Roter Knopf|Roten Knopf|Rote Taste|OPEN</value>
+        <value>Knopf|Taste||OPEN</value>
     </data>
     <data name="AIRLOCK_KEYPAD_GREEN_BUTTON" xml:space="preserve">
-        <value>Grüne Knopf|Grüner Knopf|Grünen Knopf|Grüne Taste|CLOSE</value>
+        <value>Knopf|Taste|CLOSE</value>
     </data>
     <data name="EQUIPMENT_ROOM_BENCH" xml:space="preserve">
         <value>Sitzbänke|Sitzbank|Turnbänke|Turnbank|Bänke|Bank|Ausstattung</value>
@@ -209,9 +209,6 @@
     </data>
     <data name="BELT" xml:space="preserve">
         <value>Sicherungsgurt|Gurt|Geschirr|Sicherungsgeschirr</value>
-    </data>
-    <data name="EYELET" xml:space="preserve">
-        <value>Öse</value>
     </data>
     <data name="KITCHEN_CABINET" xml:space="preserve">
         <value>Schrank|Schränke</value>
@@ -271,7 +268,7 @@
         <value>Graphen-Seil|Seil|Sicherungsseil|Sicherungsleine|Leine</value>
     </data>
     <data name="AIRLOCK_CABLE_WINCH" xml:space="preserve">
-        <value>Seilwinde|Seil|Winde</value>
+        <value>Seilwinde|Winde</value>
     </data>
     <data name="AIRLOCK_NORTHERN_WALL" xml:space="preserve">
         <value>Nördliche Wand</value>
@@ -346,7 +343,7 @@
         <value>Glastisch|Tisch</value>
     </data>
     <data name="ENGINE_ROOM_SHIP_MODEL" xml:space="preserve">
-        <value>Hologramm|Hologram|Modell</value>
+        <value>Hologramm|Hologram|Modell|Schiff</value>
     </data>
     <data name="ENGINE_ROOM_RED_DOTS" xml:space="preserve">
         <value>Rote Punkte|Punkte</value>
@@ -382,7 +379,7 @@
         <value>Service-Roboter|Serviceroboter|Wartungsroboter|Roboter|Droid</value>
     </data>
     <data name="PANEL_TOP_LEVER" xml:space="preserve">
-        <value>Handgriff|Hebel|Griff|Vorrichtung</value>
+        <value>Handgriff|Griff|Vorrichtung</value>
     </data>
     <data name="CRYOCHAMBER_LAMP" xml:space="preserve">
         <value>Schreibtischlampe|Lampe|Glühbirne|Fassung|Teleskopstange|Teleskopstangen|Halterung|Beleuchtung</value>
@@ -554,5 +551,17 @@
     </data>
     <data name="WASHINGAREA_BASIN" xml:space="preserve">
         <value>Bad|Badezimmer|Waschbecken</value>
+    </data>
+    <data name="CORRIDOR_PAINTING_MIDEAST" xml:space="preserve">
+        <value>Bild|Bilder|Plakat|Poster</value>
+    </data>
+    <data name="CORRIDOR_PAINTING_EAST" xml:space="preserve">
+        <value>Bild|Bilder|Plakat|Poster</value>
+    </data>
+    <data name="CORRIDOR_PAINTING_MIDWEST" xml:space="preserve">
+        <value>Bild|Bilder|Plakat|Poster</value>
+    </data>
+    <data name="CORRIDOR_PAINTING_WEST" xml:space="preserve">
+        <value>Bild|Bilder|Plakat|Poster</value>
     </data>
 </root>

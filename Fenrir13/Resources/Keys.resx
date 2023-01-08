@@ -258,9 +258,6 @@
     <data name="BELT" xml:space="preserve">
         <value>BELT</value>
     </data>
-    <data name="EYELET" xml:space="preserve">
-        <value>EYELET</value>
-    </data>
     <data name="WRITING_MATERIALS" xml:space="preserve">
         <value>WRITING_MATERIALS</value>
     </data>
@@ -620,5 +617,17 @@
     </data>
     <data name="WASHINGAREA_BASIN" xml:space="preserve">
         <value>WASHINGAREA_BASIN</value>
+    </data>
+    <data name="CORRIDOR_PAINTING_MIDEAST" xml:space="preserve">
+        <value>CORRIDOR_PAINTING_MIDEAST</value>
+    </data>
+    <data name="CORRIDOR_PAINTING_EAST" xml:space="preserve">
+        <value>CORRIDOR_PAINTING_EAST</value>
+    </data>
+    <data name="CORRIDOR_PAINTING_MIDWEST" xml:space="preserve">
+        <value>CORRIDOR_PAINTING_MIDWEST</value>
+    </data>
+    <data name="CORRIDOR_PAINTING_WEST" xml:space="preserve">
+        <value>CORRIDOR_PAINTING_WEST</value>
     </data>
 </root>

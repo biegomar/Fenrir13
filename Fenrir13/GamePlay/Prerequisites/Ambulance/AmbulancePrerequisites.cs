@@ -1,6 +1,7 @@
 using System.Runtime.CompilerServices;
 using Fenrir13.Events;
 using Fenrir13.Resources;
+using Heretic.InteractiveFiction.Grammars;
 using Heretic.InteractiveFiction.Objects;
 
 namespace Fenrir13.GamePlay.Prerequisites.Ambulance;
@@ -19,9 +20,7 @@ internal static class AmbulancePrerequisites
         ambulance.Items.Add(GetRespirator(eventProvider));
         
         AddSurroundings(ambulance);
-        
-        AddBeforeLookEvents(ambulance, eventProvider);
-        
+
         return ambulance;
     }
     
@@ -32,13 +31,16 @@ internal static class AmbulancePrerequisites
             Key = Keys.AMBULANCE_RESPIRATOR,
             Name = Items.AMBULANCE_RESPIRATOR,
             Description = Descriptions.AMBULANCE_RESPIRATOR,
+            ContainmentDescription = Descriptions.AMBULANCE_RESPIRATOR_CONTAINMENT,
             IsPickable = false,
             IsUnveilable = false,
-            Grammar = new Grammars(Genders.Neutrum)
+            Grammar = new IndividualObjectGrammar(Genders.Neutrum)
         };
         
         respirator.Items.Add(GetFlap(eventProvider));
         respirator.Items.Add(GetOxygenBottle(eventProvider));
+        
+        AddAfterLookEvents(respirator, eventProvider);
         
         return respirator;
     }
@@ -52,11 +54,10 @@ internal static class AmbulancePrerequisites
             Description = Descriptions.OXYGEN_BOTTLE,
             Weight = ItemWeights.OXYGEN_BOTTLE,
             IsHidden = true,
-            IsUnveilable = false
+            IsUnveilable = false,
+            IsLinkable = true
         };
         
-        AddUseEvents(oxygenBottle, eventProvider);
-
         return oxygenBottle;
     }
     
@@ -75,6 +76,8 @@ internal static class AmbulancePrerequisites
             IsCloseable = true,
             IsClosed = true,
             IsBreakable = true,
+            IsHidden = true,
+            IsLinkable = true,
             LockDescription = Descriptions.AMBULANCE_RESPIRATOR_FLAP_LOCK
         };
         
@@ -93,7 +96,7 @@ internal static class AmbulancePrerequisites
             Description = Descriptions.CEILING,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars()
+            Grammar = new IndividualObjectGrammar()
         };
         location.Items.Add(ceiling);
         
@@ -104,7 +107,7 @@ internal static class AmbulancePrerequisites
             Description = Descriptions.CHAMBER_WALL,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars()
+            Grammar = new IndividualObjectGrammar()
         };
         location.Items.Add(wall);
         
@@ -115,7 +118,7 @@ internal static class AmbulancePrerequisites
             Description = Descriptions.AMBULANCE_OP_TABLE,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Male)
+            Grammar = new IndividualObjectGrammar(Genders.Male)
         };
         location.Items.Add(opTable);
         
@@ -126,7 +129,7 @@ internal static class AmbulancePrerequisites
             Description = Descriptions.AMBULANCE_OP_ROBOTER,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Male)
+            Grammar = new IndividualObjectGrammar(Genders.Male)
         };
         location.Items.Add(opRoboter);
         
@@ -137,7 +140,7 @@ internal static class AmbulancePrerequisites
             Description = Descriptions.AMBULANCE_BED,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Neutrum)
+            Grammar = new IndividualObjectGrammar(Genders.Neutrum)
         };
         location.Items.Add(opBed);
         
@@ -148,7 +151,7 @@ internal static class AmbulancePrerequisites
             Description = Descriptions.AMBULANCE_OP_ITEMS,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Neutrum)
+            Grammar = new IndividualObjectGrammar(Genders.Neutrum)
         };
         location.Items.Add(opItems);
         
@@ -159,7 +162,7 @@ internal static class AmbulancePrerequisites
             Description = Descriptions.AMBULANCE_OP_ITEMS_DETAIL,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Neutrum)
+            Grammar = new IndividualObjectGrammar(Genders.Neutrum)
         };
         location.Items.Add(opItemDetails);
         
@@ -170,7 +173,7 @@ internal static class AmbulancePrerequisites
             Description = Descriptions.AMBULANCE_MEDIS,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Neutrum, false)
+            Grammar = new IndividualObjectGrammar(Genders.Neutrum, false)
         };
         location.Items.Add(opMedis);
         
@@ -181,21 +184,10 @@ internal static class AmbulancePrerequisites
             Description = Descriptions.AMBULANCE_MEDIS_CABINET,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Male, false)
+            Grammar = new IndividualObjectGrammar(Genders.Male, false)
         };
         location.Items.Add(opMedisCabinet);
-        
-        var opRespirator = new Item()
-        {
-            Key = Keys.AMBULANCE_RESPIRATOR,
-            Name = Items.AMBULANCE_RESPIRATOR,
-            Description = Descriptions.AMBULANCE_RESPIRATOR,
-            IsSurrounding = true,
-            IsPickable = false,
-            Grammar = new Grammars(Genders.Neutrum)
-        };
-        location.Items.Add(opRespirator);
-        
+
         var opHose = new Item()
         {
             Key = Keys.AMBULANCE_OXYGEN_HOSE,
@@ -203,21 +195,16 @@ internal static class AmbulancePrerequisites
             Description = Descriptions.AMBULANCE_OXYGEN_HOSE,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Male, false)
+            Grammar = new IndividualObjectGrammar(Genders.Male, false)
         };
         location.Items.Add(opHose);
     }
     
-    private static void AddBeforeLookEvents(Location ambulance, EventProvider eventProvider)
+    private static void AddAfterLookEvents(Item item, EventProvider eventProvider)
     {
-        ambulance.BeforeLook += eventProvider.LookAtRespirator;
+        item.AfterLook += eventProvider.LookAtRespirator;
     }
-    
-    private static void AddUseEvents(Item item, EventProvider eventProvider)
-    {
-        item.Use += eventProvider.UseOxygenBottleWithHelmet;
-    }
-    
+
     private static void AddBreakEvents(Item item, EventProvider eventProvider)
     {
         item.Break += eventProvider.BreakFlapWithDumbbellBar;

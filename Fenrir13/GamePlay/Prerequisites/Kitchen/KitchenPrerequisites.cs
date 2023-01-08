@@ -1,5 +1,6 @@
 using Fenrir13.Events;
 using Fenrir13.Resources;
+using Heretic.InteractiveFiction.Grammars;
 using Heretic.InteractiveFiction.Objects;
 
 namespace Fenrir13.GamePlay.Prerequisites.Kitchen;
@@ -33,7 +34,7 @@ internal static class KitchenPrerequisites
             Description = Descriptions.CEILING,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars()
+            Grammar = new IndividualObjectGrammar()
         };
         location.Items.Add(ceiling);
         
@@ -44,7 +45,7 @@ internal static class KitchenPrerequisites
             Description = Descriptions.CHAMBER_WALL,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars()
+            Grammar = new IndividualObjectGrammar()
         };
         location.Items.Add(wall);
         
@@ -55,7 +56,7 @@ internal static class KitchenPrerequisites
             Description = Descriptions.CHAMBER_FLOOR,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Male)
+            Grammar = new IndividualObjectGrammar(Genders.Male)
         };
         location.Items.Add(floor);
         
@@ -66,7 +67,7 @@ internal static class KitchenPrerequisites
             Description = Descriptions.TABLE,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Male)
+            Grammar = new IndividualObjectGrammar(Genders.Male)
         };
         location.Items.Add(table);
         
@@ -78,7 +79,7 @@ internal static class KitchenPrerequisites
             IsSurrounding = true,
             IsPickable = false,
             IsSeatable = true,
-            Grammar = new Grammars(Genders.Male)
+            Grammar = new IndividualObjectGrammar(Genders.Male)
         };
         location.Items.Add(chair);
         AddSitDownEvents(chair, eventProvider);
@@ -90,7 +91,7 @@ internal static class KitchenPrerequisites
             Description = Descriptions.KITCHEN_CABINET,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Male)
+            Grammar = new IndividualObjectGrammar(Genders.Male)
         };
         location.Items.Add(cabinet);
         
@@ -101,7 +102,7 @@ internal static class KitchenPrerequisites
             Description = Descriptions.KITCHEN_FOOD_BAG,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Male, isSingular: false)
+            Grammar = new IndividualObjectGrammar(Genders.Male, isSingular: false)
         };
         location.Items.Add(foodBag);
     }
@@ -119,7 +120,7 @@ internal static class KitchenPrerequisites
             IsClosed = true,
             IsCloseable = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Male)
+            Grammar = new IndividualObjectGrammar(Genders.Male)
         };
         
         fridge.Items.Add(GetHandle(eventProvider));
@@ -146,8 +147,9 @@ internal static class KitchenPrerequisites
             IsUnveilable = false,
             IsHidden = true,
             IsPickable = false,
+            IsLinkable = true,
             Weight = ItemWeights.FRIDGE_DOOR_HANDLE,
-            Grammar = new Grammars(Genders.Male)
+            Grammar = new IndividualObjectGrammar(Genders.Male)
         };
 
         AddPullEvents(handle, eventProvider);
@@ -166,6 +168,8 @@ internal static class KitchenPrerequisites
     {
         item.Push += eventProvider.PushDoorHandleIntoRespiratorFlap;
         item.Use += eventProvider.UseDoorHandleWithRespiratorFlap;
+        item.Connect += eventProvider.ConnectDoorHandleWithRespiratorFlap;
+        item.Disconnect += eventProvider.TryToDisconnectHandleFromFlap;
         eventProvider.ScoreBoard.Add(nameof(eventProvider.PushDoorHandleIntoRespiratorFlap), 5);
     }
     
@@ -186,7 +190,7 @@ internal static class KitchenPrerequisites
             IsClosed = true,
             IsCloseable = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Male)
+            Grammar = new IndividualObjectGrammar(Genders.Male)
         };
         
         return oven;
@@ -201,7 +205,7 @@ internal static class KitchenPrerequisites
             Description = Descriptions.RECYCLER,
             FirstLookDescription = Descriptions.RECYCLER_FIRSTLOOK,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Male)
+            Grammar = new IndividualObjectGrammar(Genders.Male)
         };
         
         return recycler;

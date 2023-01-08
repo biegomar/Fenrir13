@@ -1,5 +1,6 @@
 using Fenrir13.Events;
 using Fenrir13.Resources;
+using Heretic.InteractiveFiction.Grammars;
 using Heretic.InteractiveFiction.Objects;
 using Microsoft.VisualBasic;
 
@@ -36,7 +37,7 @@ internal static class CommandBridgePrerequisites
             Description = Descriptions.CEILING,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars()
+            Grammar = new IndividualObjectGrammar()
         };
         location.Items.Add(ceiling);
         
@@ -47,7 +48,7 @@ internal static class CommandBridgePrerequisites
             Description = Descriptions.CHAMBER_WALL,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars()
+            Grammar = new IndividualObjectGrammar()
         };
         location.Items.Add(wall);
         
@@ -58,7 +59,7 @@ internal static class CommandBridgePrerequisites
             Description = Descriptions.CONTROL_PANEL,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars()
+            Grammar = new IndividualObjectGrammar()
         };
         location.Items.Add(controlPanel);
         
@@ -69,7 +70,7 @@ internal static class CommandBridgePrerequisites
             Description = Descriptions.CONTROL_PANEL_CONTENT,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(isSingular: false)
+            Grammar = new IndividualObjectGrammar(isSingular: false)
         };
         location.Items.Add(controlPanelContent);
         
@@ -80,7 +81,7 @@ internal static class CommandBridgePrerequisites
             Description = Descriptions.OVOID,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Male)
+            Grammar = new IndividualObjectGrammar(Genders.Male)
         };
         location.Items.Add(ovoid);
         
@@ -91,7 +92,7 @@ internal static class CommandBridgePrerequisites
             Description = Descriptions.FRONTSIDE,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars()
+            Grammar = new IndividualObjectGrammar()
         };
         location.Items.Add(frontSide);
         
@@ -102,7 +103,7 @@ internal static class CommandBridgePrerequisites
             Description = Descriptions.FRONTWINDOW,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars()
+            Grammar = new IndividualObjectGrammar()
         };
         location.Items.Add(frontWindow);
         
@@ -113,7 +114,7 @@ internal static class CommandBridgePrerequisites
             Description = Descriptions.NECESSITIES,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(isSingular: false)
+            Grammar = new IndividualObjectGrammar(isSingular: false)
         };
         location.Items.Add(necessities);
         
@@ -124,7 +125,7 @@ internal static class CommandBridgePrerequisites
             Description = Descriptions.PERSONAL_SETTINGS,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(isSingular: false)
+            Grammar = new IndividualObjectGrammar(isSingular: false)
         };
         location.Items.Add(personalSettings);
     }
@@ -144,7 +145,7 @@ internal static class CommandBridgePrerequisites
             Description = Descriptions.PILOT_SEAT,
             IsPickable = false,
             IsSeatable = true,
-            Grammar = new Grammars(Genders.Male)
+            Grammar = new IndividualObjectGrammar(Genders.Male)
         };
         
         return pilotSeat;

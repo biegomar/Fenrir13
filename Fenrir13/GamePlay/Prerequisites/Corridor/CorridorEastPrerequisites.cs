@@ -1,5 +1,6 @@
 using Fenrir13.Events;
 using Fenrir13.Resources;
+using Heretic.InteractiveFiction.Grammars;
 using Heretic.InteractiveFiction.Objects;
 
 namespace Fenrir13.GamePlay.Prerequisites.Corridor;
@@ -15,7 +16,8 @@ internal static class CorridorEastPrerequisites
             Description = Descriptions.CORRIDOR_EAST,
             IsLocked = true,
             LockDescription = Descriptions.CORRIDOR_EAST_LOCKDESCRIPTION,
-            Grammar = new Grammars(Genders.Male)
+            Adjectives = Adjectives.CORRIDOR_EAST,
+            Grammar = new IndividualObjectGrammar(Genders.Male)
         };
         
         AddSurroundings(corridor);
@@ -32,7 +34,7 @@ internal static class CorridorEastPrerequisites
             Description = Descriptions.CEILING,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars()
+            Grammar = new IndividualObjectGrammar()
         };
         corridor.Items.Add(ceiling);
         
@@ -43,18 +45,18 @@ internal static class CorridorEastPrerequisites
             Description = Descriptions.CORRIDOR_WALLS,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars()
+            Grammar = new IndividualObjectGrammar()
         };
         corridor.Items.Add(wall);
         
         var painting = new Item()
         {
-            Key = Keys.CORRIDOR_PAINTING,
-            Name = Items.CORRIDOR_PAINTING,
+            Key = Keys.CORRIDOR_PAINTING_EAST,
+            Name = Items.CORRIDOR_PAINTING_EAST,
             Description = Descriptions.CORRIDOR_PAINTING_EAST,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Neutrum)
+            Grammar = new IndividualObjectGrammar(Genders.Neutrum)
         };
         corridor.Items.Add(painting);
         
@@ -65,7 +67,7 @@ internal static class CorridorEastPrerequisites
             Description = Descriptions.EMPTYCREWCHAMBERONE,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Neutrum)
+            Grammar = new IndividualObjectGrammar(Genders.Neutrum)
         };
         corridor.Items.Add(chamberOne);
         
@@ -76,7 +78,7 @@ internal static class CorridorEastPrerequisites
             Description = Descriptions.EMPTYCREWCHAMBERTWO,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Neutrum)
+            Grammar = new IndividualObjectGrammar(Genders.Neutrum)
         };
         corridor.Items.Add(chamberTwo);
         
@@ -87,7 +89,7 @@ internal static class CorridorEastPrerequisites
             Description = Descriptions.RED_DOT,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Male)
+            Grammar = new IndividualObjectGrammar(Genders.Male)
         };
         corridor.Items.Add(redDot);
         
@@ -98,7 +100,7 @@ internal static class CorridorEastPrerequisites
             Description = Descriptions.LOCATION,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Male)
+            Grammar = new IndividualObjectGrammar(Genders.Male)
         };
         corridor.Items.Add(location);
         
@@ -109,7 +111,7 @@ internal static class CorridorEastPrerequisites
             Description = Descriptions.GREEN_ARROWS,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Male, isSingular: false)
+            Grammar = new IndividualObjectGrammar(Genders.Male, isSingular: false)
         };
         corridor.Items.Add(greenArrows);
         
@@ -120,7 +122,7 @@ internal static class CorridorEastPrerequisites
             Description = Descriptions.EMERGENCY_LIGHT,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars()
+            Grammar = new IndividualObjectGrammar()
         };
         corridor.Items.Add(emergencyLight);
     }

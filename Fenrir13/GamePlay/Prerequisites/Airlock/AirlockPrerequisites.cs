@@ -1,6 +1,7 @@
 using System.Runtime.CompilerServices;
 using Fenrir13.Events;
 using Fenrir13.Resources;
+using Heretic.InteractiveFiction.Grammars;
 using Heretic.InteractiveFiction.Objects;
 
 namespace Fenrir13.GamePlay.Prerequisites.Airlock;
@@ -35,7 +36,7 @@ internal class AirlockPrerequisites
             Description = Descriptions.AIRLOCK_KEYPAD,
             ContainmentDescription = Descriptions.AIRLOCK_KEYPAD_CONTAINMENT,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Neutrum)
+            Grammar = new IndividualObjectGrammar(Genders.Neutrum)
         };
         
         keyPad.Items.Add(GetGreenButton(eventProvider));
@@ -53,7 +54,8 @@ internal class AirlockPrerequisites
             Description = Descriptions.AIRLOCK_KEYPAD_GREEN_BUTTON,
             IsHidden = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Male)
+            Adjectives = Adjectives.AIRLOCK_KEYPAD_GREEN_BUTTON,
+            Grammar = new IndividualObjectGrammar(Genders.Male)
         };
         
         AddPushGreenButtonEvents(greenButton, eventProvider);
@@ -70,7 +72,8 @@ internal class AirlockPrerequisites
             Description = Descriptions.AIRLOCK_KEYPAD_RED_BUTTON,
             IsHidden = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Male)
+            Adjectives = Adjectives.AIRLOCK_KEYPAD_RED_BUTTON,
+            Grammar = new IndividualObjectGrammar(Genders.Male)
         };
 
         AddPushRedButtonEvents(redButton, eventProvider);
@@ -103,10 +106,11 @@ internal class AirlockPrerequisites
             ContainmentDescription = Descriptions.AIRLOCK_ROPE_CONTAINMENT,
             LinkedToDescription = Descriptions.AIRLOCK_ROPE_LINKEDTO,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Neutrum)
+            IsLinkable = true,
+            Grammar = new IndividualObjectGrammar(Genders.Neutrum)
         };
         
-        AddUseEvents(airlockRope, eventProvider);
+        AddConnectEvents(airlockRope, eventProvider);
 
         return airlockRope;
     }
@@ -171,23 +175,23 @@ internal class AirlockPrerequisites
             Description = Descriptions.AIRLOCK_BULKHEAD,
             IsSurrounding = true,
             IsPickable = false,
-            Grammar = new Grammars(Genders.Neutrum)
+            Grammar = new IndividualObjectGrammar(Genders.Neutrum)
         };
         location.Items.Add(bulkHead);
     }
     
     private static void AddChangeRoomEvents(Location airlock, EventProvider eventProvider)
     {
-        airlock.AfterChangeLocation += eventProvider.EnterAirlock;
-        airlock.BeforeChangeLocation += eventProvider.CantLeaveWithOpenBulkHeadOrTiedRope;
-        airlock.BeforeChangeLocation += eventProvider.CantLeaveWithoutOpenBulkHead;
-        airlock.BeforeChangeLocation += eventProvider.LeaveAirlock;
+        airlock.EnterLocation += eventProvider.EnterAirlock;
+        airlock.BeforeLeaveLocation += eventProvider.CantLeaveWithOpenBulkHeadOrTiedRope;
+        airlock.BeforeLeaveLocation += eventProvider.CantLeaveWithoutOpenBulkHead;
+        airlock.BeforeLeaveLocation += eventProvider.LeaveAirlock;
     }
     
-    private static void AddUseEvents(Item item, EventProvider eventProvider)
+    private static void AddConnectEvents(Item item, EventProvider eventProvider)
     {
-        item.Use += eventProvider.UseAirlockRopeWithEyeletOrBelt;
-        eventProvider.ScoreBoard.Add(nameof(eventProvider.UseAirlockRopeWithEyeletOrBelt), 1);
+        item.Connect += eventProvider.ConnectAirlockRopeWithBelt;
+        eventProvider.ScoreBoard.Add(nameof(eventProvider.ConnectAirlockRopeWithBelt), 1);
     }
     
     private static void AddPushRedButtonEvents(Item item, EventProvider eventProvider)

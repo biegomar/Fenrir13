@@ -59,6 +59,8 @@ internal sealed class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
         var panelTop = PanelTopPrerequisites.Get(this.eventProvider);
         
         map.Add(cryoChamber, CryoChamberLocationMap(corridorEast));
+        map.Add(emptyChamberOne, new List<DestinationNode>());
+        map.Add(emptyChamberTwo, new List<DestinationNode>());
         map.Add(corridorEast, CorridorEastLocationMap(cryoChamber, corridorMidEast, emptyChamberOne, emptyChamberTwo));
         map.Add(corridorMidEast, CorridorMidEastLocationMap(corridorEast, corridorMid, socialRoom, kitchen));
         map.Add(corridorMid, CorridorMidLocationMap(corridorMidEast, corridorMidWest, bridge, machineCorridorMid));
@@ -135,7 +137,7 @@ internal sealed class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
         };
         return locationMap;
     }
-
+    
     private static IEnumerable<DestinationNode> AirlockLocationMap(Location machineCorridorMid, Location jetty)
     {
         var locationMap = new List<DestinationNode>
