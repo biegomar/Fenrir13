@@ -30,8 +30,8 @@ internal static class GymPrerequisites
 
     private static void AddNewVerbs(Location gym)
     {
-        gym.AddOptionalVerb(VerbKeys.USE, OptionalVerbs.DRIVE, Descriptions.GYM_IMPOSSIBLE_RIDE);
-        gym.AddOptionalVerb(VerbKeys.USE, OptionalVerbs.TRAIN, Descriptions.GYM_IMPOSSIBLE_TRAINING);
+        gym.AddOptionalVerb(VerbKey.USE, OptionalVerbs.DRIVE, Descriptions.GYM_IMPOSSIBLE_RIDE);
+        gym.AddOptionalVerb(VerbKey.USE, OptionalVerbs.TRAIN, Descriptions.GYM_IMPOSSIBLE_TRAINING);
     }
     
     private static void AddSurroundings(Location location, EventProvider eventProvider)
@@ -276,13 +276,13 @@ internal static class GymPrerequisites
     private static void AddAfterTakeEvents(Item bar, EventProvider eventProvider)
     {
         bar.AfterTake += eventProvider.TakeDumbbellBar;
-        eventProvider.ScoreBoard.Add(nameof(eventProvider.TakeDumbbellBar), 1);
+        eventProvider.RegisterScore(nameof(eventProvider.TakeDumbbellBar), 1);
     }
     
     private static void AddUseEvents(Item item, EventProvider eventProvider)
     {
         item.Use += eventProvider.UseDumbbellBarWithLever;
-        eventProvider.ScoreBoard.Add(nameof(eventProvider.UseDumbbellBarWithLever), 10);
+        eventProvider.RegisterScore(nameof(eventProvider.UseDumbbellBarWithLever), 10);
     }
     
     private static void AddTakeEvents(Item item, EventProvider eventProvider)

@@ -11,6 +11,7 @@
     <PackageReference Include="Heretic.InteractiveFiction" Version="0.10.2" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.0" />
+    <PackageReference Include="Microsoft.NET.Build.Containers" Version="0.3.2" />
     <PackageReference Include="PowerArgs" Version="4.0.0" />
   </ItemGroup>
 

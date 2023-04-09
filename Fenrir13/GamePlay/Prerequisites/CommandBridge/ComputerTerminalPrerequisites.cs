@@ -26,6 +26,6 @@ internal static class ComputerTerminalPrerequisites
     private static void AddWriteEvents(Location terminal, EventProvider eventProvider)
     {
         terminal.Write += eventProvider.WriteTextToComputerTerminal;
-        eventProvider.ScoreBoard.Add(nameof(eventProvider.WriteTextToComputerTerminal), 5);
+        eventProvider.RegisterScore(nameof(eventProvider.WriteTextToComputerTerminal), 5);
     }
 }

@@ -159,7 +159,7 @@ internal class EngineRoomPrerequisites
     private static void AddAfterLookEvents(Location item, EventProvider eventProvider)
     {
         item.AfterLook += eventProvider.LookAtRedDots;
-        eventProvider.ScoreBoard.Add(nameof(eventProvider.LookAtRedDots), 1);
+        eventProvider.RegisterScore(nameof(eventProvider.LookAtRedDots), 1);
     }
     
     private static void AddATurnEvents(Item hologram, EventProvider eventProvider)

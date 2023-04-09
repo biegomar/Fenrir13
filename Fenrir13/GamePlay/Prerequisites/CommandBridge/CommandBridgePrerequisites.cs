@@ -133,7 +133,7 @@ internal static class CommandBridgePrerequisites
     private static void AddAfterLookEvents(Location bridge, EventProvider eventProvider)
     {
         bridge.AfterLook += eventProvider.LookAtControlPanel;
-        eventProvider.ScoreBoard.Add(nameof(eventProvider.LookAtControlPanel), 1);
+        eventProvider.RegisterScore(nameof(eventProvider.LookAtControlPanel), 1);
     }
 
     private static Item GetPilotSeat(EventProvider eventProvider)

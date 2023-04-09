@@ -1,7 +1,5 @@
 using System.Text;
 using Fenrir13.Resources;
-using Heretic.InteractiveFiction.Grammars;
-using Heretic.InteractiveFiction.Objects;
 using Heretic.InteractiveFiction.Resources;
 using Heretic.InteractiveFiction.Subsystems;
 
@@ -46,7 +44,7 @@ internal class ConsolePrintingSubsystem : BaseConsolePrintingSubsystem
     public override bool TitleAndScore(int score, int maxScore)
     {
         var (version, productName) = GetMetaInfo();
-        Console.Title = $@"{productName} - {version} ({string.Format(BaseDescriptions.SCORE, score, maxScore)} )";
+        Console.Title = $@"{productName} - {version} ({string.Format(BaseDescriptions.ACTUAL_SCORE, score, maxScore)} )";
         return true;
     }
 
@@ -70,17 +68,6 @@ internal class ConsolePrintingSubsystem : BaseConsolePrintingSubsystem
         Console.WriteLine(GetVersionNumber());
         Console.WriteLine();
 
-        return true;
-    }
-    
-    public override bool Help(IList<Verb> verbs)
-    {
-        GeneralHelp();
-        VerbGroupDirections(verbs);
-        VerbInteractItems(verbs);
-        VerbContainers(verbs);
-        VerbMetaInfos(verbs);
-        
         return true;
     }
 }

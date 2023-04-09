@@ -171,12 +171,12 @@ internal static class MaintenanceRoomPrerequisites
     private static void AddTakeEvents(Item item, EventProvider eventProvider)
     {
         item.AfterTake += eventProvider.TakeTool;
-        eventProvider.ScoreBoard.Add(nameof(eventProvider.TakeTool), 1);
+        eventProvider.RegisterScore(nameof(eventProvider.TakeTool), 1);
     }
     
     private static void AddUseEvents(Item item, EventProvider eventProvider)
     {
         item.Use += eventProvider.UseToolWithAntennaInSocialRoom;
-        eventProvider.ScoreBoard.Add(nameof(eventProvider.UseToolWithAntennaInSocialRoom), 5);
+        eventProvider.RegisterScore(nameof(eventProvider.UseToolWithAntennaInSocialRoom), 5);
     }
 }

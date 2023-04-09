@@ -229,7 +229,7 @@ internal static class EquipmentRoomPrerequisites
     private static void AddBreakEvents(Item box, EventProvider eventProvider)
     {
         box.Break += eventProvider.BreakEquipmentBoxLock;
-        eventProvider.ScoreBoard.Add(nameof(eventProvider.BreakEquipmentBoxLock), 5);
+        eventProvider.RegisterScore(nameof(eventProvider.BreakEquipmentBoxLock), 5);
     }
     
     private static void AddOpenEvents(Item box, EventProvider eventProvider)
@@ -240,7 +240,7 @@ internal static class EquipmentRoomPrerequisites
     private static void AddConnectEvents(Item item, EventProvider eventProvider)
     {
         item.Connect += eventProvider.ConnectOxygenBottleWithHelmet;
-        eventProvider.ScoreBoard.Add(nameof(eventProvider.ConnectOxygenBottleWithHelmet), 5);
+        eventProvider.RegisterScore(nameof(eventProvider.ConnectOxygenBottleWithHelmet), 5);
     }
     
     private static void AddBeforeDropEvents(Item item, EventProvider eventProvider)

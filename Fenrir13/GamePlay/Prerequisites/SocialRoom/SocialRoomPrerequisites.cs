@@ -30,7 +30,7 @@ public class SocialRoomPrerequisites
     
     private static void AddNewVerbs(Location socialRoom)
     {
-        socialRoom.AddOptionalVerb(VerbKeys.USE, OptionalVerbs.SCREW, Descriptions.ITEM_NOT_SCREWABLE);
+        socialRoom.AddOptionalVerb(VerbKey.USE, OptionalVerbs.SCREW, Descriptions.ITEM_NOT_SCREWABLE);
     }
 
     private static void AddSurroundings(Location location, EventProvider eventProvider)
@@ -341,7 +341,7 @@ public class SocialRoomPrerequisites
     {
         antenna.Use += eventProvider.UseToolWithAntennaInSocialRoom;
         antenna.Connect += eventProvider.MountAntennaToDroid;
-        eventProvider.ScoreBoard.Add(nameof(eventProvider.MountAntennaToDroid), 10);
+        eventProvider.RegisterScore(nameof(eventProvider.MountAntennaToDroid), 10);
     }
     
     private static void AddSitDownEvents(Item item, EventProvider eventProvider)

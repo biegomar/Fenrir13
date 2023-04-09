@@ -36,7 +36,7 @@ public static class PlayerPrerequisites
     {
         you.AfterSitDown += eventProvider.AfterSitDown;
         you.AfterSitDown += eventProvider.AfterSitDownOnCouch;
-        eventProvider.ScoreBoard.Add(nameof(eventProvider.AfterSitDownOnQuestsSolved), 1);
+        eventProvider.RegisterScore(nameof(eventProvider.AfterSitDownOnQuestsSolved), 1);
     }
 
     private static void AddToBeEvents(Player you, EventProvider eventProvider)

@@ -191,13 +191,13 @@ internal class AirlockPrerequisites
     private static void AddConnectEvents(Item item, EventProvider eventProvider)
     {
         item.Connect += eventProvider.ConnectAirlockRopeWithBelt;
-        eventProvider.ScoreBoard.Add(nameof(eventProvider.ConnectAirlockRopeWithBelt), 1);
+        eventProvider.RegisterScore(nameof(eventProvider.ConnectAirlockRopeWithBelt), 1);
     }
     
     private static void AddPushRedButtonEvents(Item item, EventProvider eventProvider)
     {
         item.Push += eventProvider.PushRedButton;
-        eventProvider.ScoreBoard.Add(nameof(eventProvider.PushRedButton), 5);
+        eventProvider.RegisterScore(nameof(eventProvider.PushRedButton), 5);
     }
     
     private static void AddPushGreenButtonEvents(Item item, EventProvider eventProvider)

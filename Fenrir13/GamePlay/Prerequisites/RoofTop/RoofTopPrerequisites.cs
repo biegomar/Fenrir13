@@ -29,7 +29,7 @@ internal static class RoofTopPrerequisites
     
     private static void AddNewVerbs(Location socialRoom)
     {
-        socialRoom.AddOptionalVerb(VerbKeys.CONNECT, OptionalVerbs.SCREW_ON, Descriptions.ITEM_NOT_SCREW_ON_ABLE);
+        socialRoom.AddOptionalVerb(VerbKey.CONNECT, OptionalVerbs.SCREW_ON, Descriptions.ITEM_NOT_SCREW_ON_ABLE);
     }
 
     private static Item GetDroid(EventProvider eventProvider)

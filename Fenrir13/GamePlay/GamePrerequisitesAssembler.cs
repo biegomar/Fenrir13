@@ -15,25 +15,86 @@ using Fenrir13.GamePlay.Prerequisites.PanelTop;
 using Fenrir13.GamePlay.Prerequisites.PlayerConfig;
 using Fenrir13.GamePlay.Prerequisites.RoofTop;
 using Fenrir13.GamePlay.Prerequisites.SocialRoom;
+using Fenrir13.Printing;
 using Fenrir13.Resources;
 using Heretic.InteractiveFiction.Comparer;
 using Heretic.InteractiveFiction.GamePlay;
+using Heretic.InteractiveFiction.Grammars;
 using Heretic.InteractiveFiction.Objects;
+using Heretic.InteractiveFiction.Subsystems;
 
 namespace Fenrir13.GamePlay;
 
 internal sealed class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
 {
     private EventProvider eventProvider;
+    private IPrintingSubsystem printingSubsystem;
+    private IResourceProvider resourceProvider;
+    private IHelpSubsystem helpSubsystem;
+    private IGrammar grammar;
+    private IVerbHandler verbHandler;
+    private ScoreBoard scoreBoard;
+    private Universe universe;
 
-    public GamePrerequisitesAssembler(EventProvider eventProvider)
+    public GamePrerequisitesAssembler()
     {
-        this.eventProvider = eventProvider;
+        this.resourceProvider = new ResourceProvider();
+        this.printingSubsystem = new ConsolePrintingSubsystem();
+
+        this.universe = new Universe(printingSubsystem, resourceProvider);
+        this.scoreBoard = new ScoreBoard(printingSubsystem);
+        this.eventProvider = new EventProvider(universe, printingSubsystem, scoreBoard);
+
+        this.verbHandler = new GermanVerbHandler(universe, resourceProvider);
+        this.grammar = new GermanGrammar(resourceProvider, verbHandler);
+        this.helpSubsystem = new BaseHelpSubsystem(grammar, printingSubsystem);
+    }
+    
+    public IPrintingSubsystem PrintingSubsystem
+    {
+        get => printingSubsystem;
+        set => printingSubsystem = value;
     }
 
-    public GamePrerequisites AssembleGame()
+    public IResourceProvider ResourceProvider
     {
-        var map = new LocationMap(new LocationComparer());
+        get => resourceProvider;
+        set => resourceProvider = value;
+    }
+
+    public IHelpSubsystem HelpSubsystem
+    {
+        get => helpSubsystem;
+        set => helpSubsystem = value;
+    }
+
+    public IGrammar Grammar
+    {
+        get => grammar;
+        set => grammar = value;
+    }
+
+    public IVerbHandler VerbHandler
+    {
+        get => verbHandler;
+        set => verbHandler = value;
+    }
+
+    public ScoreBoard ScoreBoard
+    {
+        get => scoreBoard;
+        set => scoreBoard = value;
+    }
+
+    public Universe Universe
+    {
+        get => universe;
+        set => universe = value;
+    }
+
+    public void AssembleGame()
+    {
+        var locationMap = new LocationMap(new LocationComparer());
 
         var cryoChamber = CryoChamberPrerequisites.Get(this.eventProvider);
         var corridorEast = CorridorEastPrerequisites.Get(this.eventProvider);
@@ -58,34 +119,37 @@ internal sealed class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
         var roofTop = RoofTopPrerequisites.Get(this.eventProvider);
         var panelTop = PanelTopPrerequisites.Get(this.eventProvider);
         
-        map.Add(cryoChamber, CryoChamberLocationMap(corridorEast));
-        map.Add(emptyChamberOne, new List<DestinationNode>());
-        map.Add(emptyChamberTwo, new List<DestinationNode>());
-        map.Add(corridorEast, CorridorEastLocationMap(cryoChamber, corridorMidEast, emptyChamberOne, emptyChamberTwo));
-        map.Add(corridorMidEast, CorridorMidEastLocationMap(corridorEast, corridorMid, socialRoom, kitchen));
-        map.Add(corridorMid, CorridorMidLocationMap(corridorMidEast, corridorMidWest, bridge, machineCorridorMid));
-        map.Add(corridorMidWest, CorridorMidWestLocationMap(corridorMid, corridorWest, gym, ambulance));
-        map.Add(corridorWest, CorridorWestLocationMap(corridorMidWest));
-        map.Add(bridge, BridgeLocationMap(corridorMid));
-        map.Add(computerTerminal, new List<DestinationNode>());
-        map.Add(machineCorridorMid, MachineCorridorMidLocationMap(corridorMid, airlock, engineRoom, equipmentRoom, maintenanceRoom));
-        map.Add(gym, GymLocationMap(corridorMidWest));
-        map.Add(ambulance, AmbulanceLocationMap(corridorMidWest));
-        map.Add(socialRoom, SocialRoomLocationMap(corridorMidEast));
-        map.Add(kitchen, KitchenLocationMap(corridorMidEast));
-        map.Add(airlock, AirlockLocationMap(machineCorridorMid, jetty));
-        map.Add(jetty, JettyLocationMap(airlock, roofTop, panelTop));
-        map.Add(roofTop, RoofTopLocationMap(jetty));
-        map.Add(panelTop, PanelTopLocationMap(jetty));
-        map.Add(engineRoom, EngineRoomLocationMap(machineCorridorMid));
-        map.Add(equipmentRoom, EquipmentRoomLocationMap(machineCorridorMid));
-        map.Add(maintenanceRoom, MaintenanceRoomLocationMap(machineCorridorMid));
+        locationMap.Add(cryoChamber, CryoChamberLocationMap(corridorEast));
+        locationMap.Add(emptyChamberOne, new List<DestinationNode>());
+        locationMap.Add(emptyChamberTwo, new List<DestinationNode>());
+        locationMap.Add(corridorEast, CorridorEastLocationMap(cryoChamber, corridorMidEast, emptyChamberOne, emptyChamberTwo));
+        locationMap.Add(corridorMidEast, CorridorMidEastLocationMap(corridorEast, corridorMid, socialRoom, kitchen));
+        locationMap.Add(corridorMid, CorridorMidLocationMap(corridorMidEast, corridorMidWest, bridge, machineCorridorMid));
+        locationMap.Add(corridorMidWest, CorridorMidWestLocationMap(corridorMid, corridorWest, gym, ambulance));
+        locationMap.Add(corridorWest, CorridorWestLocationMap(corridorMidWest));
+        locationMap.Add(bridge, BridgeLocationMap(corridorMid));
+        locationMap.Add(computerTerminal, new List<DestinationNode>());
+        locationMap.Add(machineCorridorMid, MachineCorridorMidLocationMap(corridorMid, airlock, engineRoom, equipmentRoom, maintenanceRoom));
+        locationMap.Add(gym, GymLocationMap(corridorMidWest));
+        locationMap.Add(ambulance, AmbulanceLocationMap(corridorMidWest));
+        locationMap.Add(socialRoom, SocialRoomLocationMap(corridorMidEast));
+        locationMap.Add(kitchen, KitchenLocationMap(corridorMidEast));
+        locationMap.Add(airlock, AirlockLocationMap(machineCorridorMid, jetty));
+        locationMap.Add(jetty, JettyLocationMap(airlock, roofTop, panelTop));
+        locationMap.Add(roofTop, RoofTopLocationMap(jetty));
+        locationMap.Add(panelTop, PanelTopLocationMap(jetty));
+        locationMap.Add(engineRoom, EngineRoomLocationMap(machineCorridorMid));
+        locationMap.Add(equipmentRoom, EquipmentRoomLocationMap(machineCorridorMid));
+        locationMap.Add(maintenanceRoom, MaintenanceRoomLocationMap(machineCorridorMid));
 
         var activeLocation = cryoChamber;
         var activePlayer = PlayerPrerequisites.Get(this.eventProvider);
         var actualQuests = GetQuests();
-
-        return new GamePrerequisites(map, activeLocation, activePlayer, null, actualQuests);
+        
+        this.universe.LocationMap = locationMap;
+        this.universe.ActiveLocation = activeLocation;
+        this.universe.ActivePlayer = activePlayer;
+        this.universe.Quests = actualQuests;
     }
 
     private static ICollection<string> GetQuests()

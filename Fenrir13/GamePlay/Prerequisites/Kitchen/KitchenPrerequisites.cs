@@ -161,7 +161,7 @@ internal static class KitchenPrerequisites
     private static void AddPullEvents(Item item, EventProvider eventProvider)
     {
         item.Pull += eventProvider.PullFridgeHandle;
-        eventProvider.ScoreBoard.Add(nameof(eventProvider.PullFridgeHandle), 1);
+        eventProvider.RegisterScore(nameof(eventProvider.PullFridgeHandle), 1);
     }
     
     private static void AddPushEvents(Item item, EventProvider eventProvider)
@@ -170,7 +170,7 @@ internal static class KitchenPrerequisites
         item.Use += eventProvider.UseDoorHandleWithRespiratorFlap;
         item.Connect += eventProvider.ConnectDoorHandleWithRespiratorFlap;
         item.Disconnect += eventProvider.TryToDisconnectHandleFromFlap;
-        eventProvider.ScoreBoard.Add(nameof(eventProvider.PushDoorHandleIntoRespiratorFlap), 5);
+        eventProvider.RegisterScore(nameof(eventProvider.PushDoorHandleIntoRespiratorFlap), 5);
     }
     
     private static void AddSitDownEvents(Item item, EventProvider eventProvider)

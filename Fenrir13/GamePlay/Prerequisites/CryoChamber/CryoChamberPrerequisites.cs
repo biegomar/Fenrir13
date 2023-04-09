@@ -494,25 +494,25 @@ internal static class CryoChamberPrerequisites
     private static void AddAfterLookEventsForClosetDoor(Item closetDoor, EventProvider eventProvider)
     {
         closetDoor.AfterLook += eventProvider.LookAtClosetDoor;
-        eventProvider.ScoreBoard.Add(nameof(eventProvider.LookAtClosetDoor), 1);
+        eventProvider.RegisterScore(nameof(eventProvider.LookAtClosetDoor), 1);
     }
     
     private static void AddAfterLookEventsForDisplay(Item display, EventProvider eventProvider)
     {
         display.AfterLook += eventProvider.LookAtDisplay;
-        eventProvider.ScoreBoard.Add(nameof(eventProvider.LookAtDisplay), 1);
+        eventProvider.RegisterScore(nameof(eventProvider.LookAtDisplay), 1);
     }
 
     private static void AddEatEvents(Item chocolateBar, EventProvider eventProvider)
     {
         chocolateBar.Eat += eventProvider.EatChocolateBar;
-        eventProvider.ScoreBoard.Add(nameof(eventProvider.EatChocolateBar), 5);
+        eventProvider.RegisterScore(nameof(eventProvider.EatChocolateBar), 5);
     }
 
     private static void AddAfterTakeEvents(Item item, EventProvider eventProvider)
     {
         item.AfterTake += eventProvider.TakeSpaceSuite;
-        eventProvider.ScoreBoard.Add(nameof(eventProvider.TakeSpaceSuite), 1);
+        eventProvider.RegisterScore(nameof(eventProvider.TakeSpaceSuite), 1);
     }
     
     private static void AddBeforeTakeEvents(Item item, EventProvider eventProvider)

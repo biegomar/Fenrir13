@@ -17,23 +17,28 @@ internal class EventProvider
     private readonly Universe universe;
     private readonly ObjectHandler objectHandler;
     private readonly IPrintingSubsystem PrintingSubsystem;
+    private readonly ScoreBoard scoreBoard;
     private bool isPowerBarEaten;
     private bool isAccessGranted;
     private bool isAirlockOpen;
-
-    internal IDictionary<string, int> ScoreBoard => this.universe.ScoreBoard;
-
-    public EventProvider(Universe universe, IPrintingSubsystem printingSubsystem)
+    
+    public EventProvider(Universe universe, IPrintingSubsystem printingSubsystem, ScoreBoard scoreBoard)
     {
         this.PrintingSubsystem = printingSubsystem;
+        this.scoreBoard = scoreBoard;
         this.universe = universe;
         this.objectHandler = new ObjectHandler(this.universe);
         this.isPowerBarEaten = false;
         this.isAccessGranted = false;
         this.isAirlockOpen = false;
     }
+    
+    internal void RegisterScore(string key, int value)
+    {
+        this.scoreBoard.RegisterScore(key, value);
+    }
 
-    internal void PullLever(object sender, ContainerObjectEventArgs eventArgs)
+    internal void PullLever(object? sender, ContainerObjectEventArgs eventArgs)
     {
         if (sender is Item lever && lever.Key == Keys.PANEL_TOP_LEVER)
         {
@@ -41,7 +46,7 @@ internal class EventProvider
         }
     }
     
-    internal void PullFridgeHandle(object sender, ContainerObjectEventArgs eventArgs)
+    internal void PullFridgeHandle(object? sender, ContainerObjectEventArgs eventArgs)
     {
         if (sender is Item fridgeHandle && fridgeHandle.Key == Keys.FRIDGE_DOOR_HANDLE)
         {
@@ -64,13 +69,13 @@ internal class EventProvider
                 fridgeHandle.IsHidden = false;
                 fridgeHandle.ContainmentDescription = string.Empty;
                     
-                this.universe.Score += this.universe.ScoreBoard[nameof(this.PullFridgeHandle)];
+                this.scoreBoard.WinScore(nameof(PullFridgeHandle));
                 fridgeHandle.Pull -= PullFridgeHandle;
             }
         }
     }
     
-    internal void PushDoorHandleIntoRespiratorFlap(object sender, PushItemEventArgs eventArgs)
+    internal void PushDoorHandleIntoRespiratorFlap(object? sender, PushItemEventArgs eventArgs)
     {
         if (sender is Item doorHandle && doorHandle.Key == Keys.FRIDGE_DOOR_HANDLE)
         {
@@ -85,7 +90,7 @@ internal class EventProvider
         }
     }
 
-    internal void UseDoorHandleWithRespiratorFlap(object sender, UseItemEventArgs eventArgs)
+    internal void UseDoorHandleWithRespiratorFlap(object? sender, UseItemEventArgs eventArgs)
     {
         if (sender is Item doorHandle && doorHandle.Key == Keys.FRIDGE_DOOR_HANDLE)
         {
@@ -115,14 +120,15 @@ internal class EventProvider
             doorHandle.UnPickAbleDescription = Descriptions.FRIDGE_DOOR_HANDLE_FLAP_UNPICKABLE;
             this.universe.ActivePlayer.Items.Remove(doorHandle);
             PrintingSubsystem.Resource(Descriptions.FRIDGE_DOOR_HANDLE_PUSHED);
-            this.universe.Score += this.universe.ScoreBoard[nameof(this.PushDoorHandleIntoRespiratorFlap)];
+            
+            this.scoreBoard.WinScore(nameof(PushDoorHandleIntoRespiratorFlap));
             doorHandle.Push -= PushDoorHandleIntoRespiratorFlap;
             doorHandle.Use -= UseDoorHandleWithRespiratorFlap;
             doorHandle.Connect -= ConnectDoorHandleWithRespiratorFlap;
         }
     }
 
-    internal void TryToDisconnectHandleFromFlap(object sender, DisconnectEventArgs eventArgs)
+    internal void TryToDisconnectHandleFromFlap(object? sender, DisconnectEventArgs eventArgs)
     {
         if (sender is Item { IsLinked: true })
         {
@@ -130,7 +136,7 @@ internal class EventProvider
         }
     }
     
-    internal void ConnectDoorHandleWithRespiratorFlap(object sender, ConnectEventArgs eventArgs)
+    internal void ConnectDoorHandleWithRespiratorFlap(object? sender, ConnectEventArgs eventArgs)
     {
         if (sender is Item doorHandle && doorHandle.Key == Keys.FRIDGE_DOOR_HANDLE)
         {
@@ -158,14 +164,15 @@ internal class EventProvider
             doorHandle.UnPickAbleDescription = Descriptions.FRIDGE_DOOR_HANDLE_FLAP_UNPICKABLE;
             this.universe.ActivePlayer.Items.Remove(doorHandle);
             PrintingSubsystem.Resource(Descriptions.FRIDGE_DOOR_HANDLE_PUSHED);
-            this.universe.Score += this.universe.ScoreBoard[nameof(this.PushDoorHandleIntoRespiratorFlap)];
+            
+            this.scoreBoard.WinScore(nameof(PushDoorHandleIntoRespiratorFlap));
             doorHandle.Push -= PushDoorHandleIntoRespiratorFlap;
             doorHandle.Use -= UseDoorHandleWithRespiratorFlap;
             doorHandle.Connect -= ConnectDoorHandleWithRespiratorFlap;
         }
     }
 
-    internal void PushGreenButton(object sender, PushItemEventArgs eventArgs)
+    internal void PushGreenButton(object? sender, PushItemEventArgs eventArgs)
     {
         if (sender is Item greenButton && greenButton.Key == Keys.AIRLOCK_KEYPAD_GREEN_BUTTON)
         {
@@ -181,7 +188,7 @@ internal class EventProvider
         }
     }
 
-    internal void SitDownOnChairInCryoChamber(object sender, SitDownEventArgs eventArgs)
+    internal void SitDownOnChairInCryoChamber(object? sender, SitDownEventArgs eventArgs)
     {
         if (sender is Item chair)
         {
@@ -199,7 +206,7 @@ internal class EventProvider
         }
     }
     
-    internal void SitDownOnCouchInSocialRoom(object sender, SitDownEventArgs eventArgs)
+    internal void SitDownOnCouchInSocialRoom(object? sender, SitDownEventArgs eventArgs)
     {
         if (sender is Item item)
         {
@@ -222,7 +229,7 @@ internal class EventProvider
         }
     }
     
-    internal void SitDownOnChairInKitchen(object sender, SitDownEventArgs eventArgs)
+    internal void SitDownOnChairInKitchen(object? sender, SitDownEventArgs eventArgs)
     {
         if (sender is Item chair && chair.Key == Keys.CHAIR)
         {
@@ -230,7 +237,7 @@ internal class EventProvider
         }
     }
 
-    internal void TryToTakeThingsFromGym(object sender, ContainerObjectEventArgs eventArgs)
+    internal void TryToTakeThingsFromGym(object? sender, ContainerObjectEventArgs eventArgs)
     {
         if (sender is Item item)
         {
@@ -248,7 +255,7 @@ internal class EventProvider
         }
     }
 
-    internal void PushRedButton(object sender, PushItemEventArgs eventArgs)
+    internal void PushRedButton(object? sender, PushItemEventArgs eventArgs)
     {
         if (sender is Item redButton && redButton.Key == Keys.AIRLOCK_KEYPAD_RED_BUTTON)
         {
@@ -284,7 +291,7 @@ internal class EventProvider
                         PrintingSubsystem.Resource(Descriptions.PREPARED_FOR_SPACE_WALK);
                         if (!this.universe.IsQuestSolved(MetaData.QUEST_VI))
                         {
-                            this.universe.Score += this.universe.ScoreBoard[nameof(this.PushRedButton)];
+                            this.scoreBoard.WinScore(nameof(PushRedButton));
                             this.universe.SolveQuest(MetaData.QUEST_VI);
                         }
                     }
@@ -305,7 +312,7 @@ internal class EventProvider
         }
     }
 
-    internal void LookAtDisplay(object sender, ContainerObjectEventArgs eventArgs)
+    internal void LookAtDisplay(object? sender, ContainerObjectEventArgs eventArgs)
     {
         if (sender is Item display && display.Key == Keys.DISPLAY)
         {
@@ -317,12 +324,12 @@ internal class EventProvider
                 PrintingSubsystem.ResetColors();
                 PrintingSubsystem.Resource(Descriptions.INTERVENTION_REQUIRED_INTERPRETATION);
                 
-                var corridorMap = this.universe.GetDestinationNodeFromActiveLocationByDirection(Directions.W);
-                var corridor = corridorMap.Location;
+                var corridorMap = this.objectHandler.GetDestinationNodeFromActiveLocationByDirection(Directions.W);
+                var corridor = corridorMap?.Location;
                 if (corridor is { IsLocked: true })
                 {
                     corridor.IsLocked = false;
-                    this.universe.Score += this.universe.ScoreBoard[nameof(this.LookAtDisplay)];
+                    this.scoreBoard.WinScore(nameof(LookAtDisplay));
                     display.AfterLook -= LookAtDisplay;
                     this.universe.SolveQuest(MetaData.QUEST_I);
                 }
@@ -334,7 +341,7 @@ internal class EventProvider
         }
     }
 
-    internal void LookAtClosetDoor(object sender, ContainerObjectEventArgs eventArgs)
+    internal void LookAtClosetDoor(object? sender, ContainerObjectEventArgs eventArgs)
     {
         if (sender is Item closetDoor && closetDoor.Key == Keys.CLOSET_DOOR)
         {
@@ -342,7 +349,7 @@ internal class EventProvider
         }
     }
 
-    internal void OpenCloset(object sender, ContainerObjectEventArgs eventArgs)
+    internal void OpenCloset(object? sender, ContainerObjectEventArgs eventArgs)
     {
         if (sender is Item closetPart && (closetPart.Key == Keys.CLOSET || closetPart.Key == Keys.CLOSET_DOOR))
         {
@@ -355,7 +362,7 @@ internal class EventProvider
         }
     }
 
-    internal void CloseCloset(object sender, ContainerObjectEventArgs eventArgs)
+    internal void CloseCloset(object? sender, ContainerObjectEventArgs eventArgs)
     {
         if (sender is Item closetPart && (closetPart.Key == Keys.CLOSET || closetPart.Key == Keys.CLOSET_DOOR))
         {
@@ -395,7 +402,7 @@ internal class EventProvider
         if (bar != default)
         {
             bar.IsHidden = false;
-            this.universe.Score += this.universe.ScoreBoard[nameof(this.LookAtClosetDoor)];  
+            this.scoreBoard.WinScore(nameof(LookAtClosetDoor));
         }
         
         var closetDoor = this.universe.ActiveLocation.GetItem(Keys.CLOSET_DOOR);
@@ -411,7 +418,7 @@ internal class EventProvider
         }
     }
 
-    private void OpenClosetAgain(object sender, ContainerObjectEventArgs eventArgs)
+    private void OpenClosetAgain(object? sender, ContainerObjectEventArgs eventArgs)
     {
         if (sender is Item closetPart && (closetPart.Key == Keys.CLOSET_DOOR || closetPart.Key == Keys.CLOSET))
         {
@@ -427,7 +434,7 @@ internal class EventProvider
         }
     }
     
-    internal void RopeSkipping(object sender, ContainerObjectEventArgs eventArgs)
+    internal void RopeSkipping(object? sender, ContainerObjectEventArgs eventArgs)
     {
         if (sender is Item rope && rope.Key == Keys.GYM_ROPES)
         {
@@ -437,7 +444,7 @@ internal class EventProvider
         throw new JumpException(BaseDescriptions.NOTHING_HAPPENS);
     }
     
-    internal void TakeLaptop(object sender, ContainerObjectEventArgs eventArgs)
+    internal void TakeLaptop(object? sender, ContainerObjectEventArgs eventArgs)
     {
         if (sender is Item laptop && laptop.Key == Keys.LAPTOP)
         {
@@ -447,7 +454,7 @@ internal class EventProvider
         throw new TakeException(BaseDescriptions.NOTHING_HAPPENS);
     }
 
-    internal void LookAtRespirator(object sender, ContainerObjectEventArgs eventArgs)
+    internal void LookAtRespirator(object? sender, ContainerObjectEventArgs eventArgs)
     {
         if (sender is Item respirator && respirator.Key == Keys.AMBULANCE_RESPIRATOR)
         {
@@ -456,7 +463,7 @@ internal class EventProvider
         }
     }
     
-    internal void LookAtRedDots(object sender, ContainerObjectEventArgs eventArgs)
+    internal void LookAtRedDots(object? sender, ContainerObjectEventArgs eventArgs)
     {
         if (sender is Location engineRoom && engineRoom.Key == Keys.ENGINE_ROOM && eventArgs.ExternalItemKey == Keys.ENGINE_ROOM_RED_DOTS)
         {
@@ -466,12 +473,12 @@ internal class EventProvider
                 lever.ContainmentDescription = Descriptions.PANEL_TOP_LEVER_REDDOTS_CONTAINMENT;
             }
             
-            this.universe.Score += this.universe.ScoreBoard[nameof(this.LookAtRedDots)];
+            this.scoreBoard.WinScore(nameof(LookAtRedDots));
             engineRoom.AfterLook -= LookAtRedDots;
         }
     }
 
-    internal void TurnHologram(object sender, ContainerObjectEventArgs eventArgs)
+    internal void TurnHologram(object? sender, ContainerObjectEventArgs eventArgs)
     {
         if (sender is Item hologram && hologram.Key == Keys.ENGINE_ROOM_SHIP_MODEL)
         {
@@ -479,7 +486,7 @@ internal class EventProvider
         }
     }
     
-    internal void TryToOpenCryoChamberDoor(object sender, ContainerObjectEventArgs eventArgs)
+    internal void TryToOpenCryoChamberDoor(object? sender, ContainerObjectEventArgs eventArgs)
     {
         if (sender is Item cryoChamberDoor && cryoChamberDoor.Key == Keys.CRYOCHAMBER_DOOR)
         {
@@ -487,11 +494,11 @@ internal class EventProvider
         }
     }
     
-    internal void EatChocolateBar(object sender, ContainerObjectEventArgs eventArgs)
+    internal void EatChocolateBar(object? sender, ContainerObjectEventArgs eventArgs)
     {
         if (sender is Item powerBar && powerBar.Key == Keys.CHOCOLATEBAR)
         {
-            this.universe.Score += this.universe.ScoreBoard[nameof(this.EatChocolateBar)];
+            this.scoreBoard.WinScore(nameof(EatChocolateBar));
             powerBar.Eat -= EatChocolateBar;
             this.isPowerBarEaten = true;
 
@@ -499,23 +506,24 @@ internal class EventProvider
         }
     }
     
-    internal void TakeSpaceSuite(object sender, ContainerObjectEventArgs eventArgs)
+    internal void TakeSpaceSuite(object? sender, ContainerObjectEventArgs eventArgs)
     {
         if (sender is Item spaceSuite && spaceSuite.Key == Keys.SPACE_SUIT)
         {
             this.universe.ActivePlayer.FirstLookDescription = string.Empty;
             this.universe.ActivePlayer.Clothes.Add(spaceSuite);
             this.universe.ActivePlayer.Items.Remove(spaceSuite);
-            this.universe.Score += this.universe.ScoreBoard[nameof(this.TakeSpaceSuite)];
+            
+            this.scoreBoard.WinScore(nameof(TakeSpaceSuite));
             PrintingSubsystem.Resource(Descriptions.SPACE_SUIT_TAKEN);
             spaceSuite.AfterTake -= TakeSpaceSuite;
         }
     }
     
-    internal void CantLeaveWithoutSuiteAndUneatenBar(object sender, LeaveLocationEventArgs eventArgs)
+    internal void CantLeaveWithoutSuiteAndUneatenBar(object? sender, LeaveLocationEventArgs eventArgs)
     {
         if (sender is Location chamber && chamber.Key == Keys.CRYOCHAMBER
-            && eventArgs.NewDestinationNode.Location.Key == Keys.CORRIDOR_EAST)
+            && eventArgs.NewDestinationNode?.Location?.Key == Keys.CORRIDOR_EAST)
         {
             if (this.isPowerBarEaten)
             {
@@ -528,10 +536,10 @@ internal class EventProvider
         }
     }
     
-    internal void CantLeaveWithoutOpenBulkHead(object sender, LeaveLocationEventArgs eventArgs)
+    internal void CantLeaveWithoutOpenBulkHead(object? sender, LeaveLocationEventArgs eventArgs)
     {
         if (sender is Location airlock && airlock.Key == Keys.AIRLOCK
-                                       && eventArgs.NewDestinationNode.Location.Key == Keys.JETTY)
+                                       && eventArgs.NewDestinationNode?.Location?.Key == Keys.JETTY)
         {
             if (!isAirlockOpen)
             {
@@ -540,10 +548,10 @@ internal class EventProvider
         }
     }
     
-    internal void CantLeaveWithOpenBulkHeadOrTiedRope(object sender, LeaveLocationEventArgs eventArgs)
+    internal void CantLeaveWithOpenBulkHeadOrTiedRope(object? sender, LeaveLocationEventArgs eventArgs)
     {
         if (sender is Location airlock && airlock.Key == Keys.AIRLOCK
-                                       && eventArgs.NewDestinationNode.Location.Key == Keys.MACHINE_CORRIDOR_MID)
+                                       && eventArgs.NewDestinationNode?.Location?.Key == Keys.MACHINE_CORRIDOR_MID)
         {
             if (isAirlockOpen)
             {
@@ -563,7 +571,7 @@ internal class EventProvider
         }
     }
     
-    internal void BeforeStandUp(object sender, ContainerObjectEventArgs eventArgs)
+    internal void BeforeStandUp(object? sender, ContainerObjectEventArgs eventArgs)
     {
         if (sender is Player you && you.Key == Keys.PLAYER)
         {
@@ -578,7 +586,7 @@ internal class EventProvider
         }
     }
 
-    internal void BeforeTakeAntenna(object sender, ContainerObjectEventArgs eventArgs)
+    internal void BeforeTakeAntenna(object? sender, ContainerObjectEventArgs eventArgs)
     {
         if (sender is Item antenna && antenna.Key == Keys.SOCIALROOM_ANTENNA)
         {
@@ -604,7 +612,7 @@ internal class EventProvider
         }
     }
     
-    internal void AfterStandUp(object sender, ContainerObjectEventArgs eventArgs)
+    internal void AfterStandUp(object? sender, ContainerObjectEventArgs eventArgs)
     {
         if (sender is Player you && you.Key == Keys.PLAYER)
         {
@@ -615,13 +623,13 @@ internal class EventProvider
         }
     }
     
-    internal void AfterSitDown(object sender, SitDownEventArgs eventArgs)
+    internal void AfterSitDown(object? sender, SitDownEventArgs eventArgs)
     {
         if (sender is Player you && you.Key == Keys.PLAYER)
         {
             if (you.IsSitting && this.universe.ActiveLocation.Key == Keys.COMMANDBRIDGE)
             {
-                var location = this.universe.GetLocationByKey(Keys.COMPUTER_TERMINAL);
+                var location = this.objectHandler.GetLocationByKey(Keys.COMPUTER_TERMINAL);
                 if (location is { } terminal)
                 {
                     this.universe.ActiveLocation = terminal;
@@ -640,7 +648,7 @@ internal class EventProvider
         }
     }
     
-    internal void AfterSitDownOnQuestsSolved(object sender, SitDownEventArgs eventArgs)
+    internal void AfterSitDownOnQuestsSolved(object? sender, SitDownEventArgs eventArgs)
     {
         if (this.universe.IsQuestSolved(MetaData.QUEST_VII) && this.universe.IsQuestSolved(MetaData.QUEST_VIII))
         {
@@ -648,12 +656,13 @@ internal class EventProvider
             {
                 if (you.IsSitting && this.universe.ActiveLocation.Key == Keys.COMMANDBRIDGE)
                 {
-                    var location = this.universe.GetLocationByKey(Keys.COMPUTER_TERMINAL);
+                    var location = this.objectHandler.GetLocationByKey(Keys.COMPUTER_TERMINAL);
                     if (location is { } terminal)
                     {
                         this.universe.ActiveLocation = terminal;
                         PrintingSubsystem.ActiveLocation(this.universe.ActiveLocation, this.universe.LocationMap);
-                        this.universe.Score += this.universe.ScoreBoard[nameof(this.AfterSitDownOnQuestsSolved)];
+                        
+                        this.scoreBoard.WinScore(nameof(AfterSitDownOnQuestsSolved));
                         this.universe.SolveQuest(MetaData.QUEST_IX);
                     }
                 }
@@ -661,11 +670,11 @@ internal class EventProvider
         }
     }
     
-    internal void AfterSitDownOnCouch(object sender, SitDownEventArgs eventArgs)
+    internal void AfterSitDownOnCouch(object? sender, SitDownEventArgs eventArgs)
     {
         if (sender is Player you && you.Key == Keys.PLAYER)
         {
-            if (you.IsSitting && eventArgs.ItemToSitOn.Key == Keys.SOCIALROOM_COUCH)
+            if (you.IsSitting && eventArgs.ItemToSitOn?.Key == Keys.SOCIALROOM_COUCH)
             {
                 PrintingSubsystem.Resource(Descriptions.TRY_TO_SIT_ON_COUCH);
                 you.StandUpFromSeat();
@@ -673,7 +682,7 @@ internal class EventProvider
         }
     }
     
-    internal void ClimbOnTablesInSocialRoom(object sender, ContainerObjectEventArgs eventArgs)
+    internal void ClimbOnTablesInSocialRoom(object? sender, ContainerObjectEventArgs eventArgs)
     {
         if (sender is Item table)
         {
@@ -691,7 +700,7 @@ internal class EventProvider
         }
     }
     
-    internal void LookAtControlPanel(object sender, ContainerObjectEventArgs eventArgs)
+    internal void LookAtControlPanel(object? sender, ContainerObjectEventArgs eventArgs)
     {
         if (sender is Location bridge && bridge.Key == Keys.COMMANDBRIDGE && eventArgs.ExternalItemKey == Keys.CONTROL_PANEL)
         {
@@ -701,13 +710,14 @@ internal class EventProvider
                 note.IsHidden = false;
                 PrintingSubsystem.Resource(Descriptions.STICKY_NOTE_FOUND);
                 this.universe.PickObject(note, true);
-                this.universe.Score += this.universe.ScoreBoard[nameof(this.LookAtControlPanel)];
+                
+                this.scoreBoard.WinScore(nameof(LookAtControlPanel));
                 bridge.AfterLook -= LookAtControlPanel;
             }
         }
     }
 
-    internal void LookAtPowerStation(object sender, ContainerObjectEventArgs eventArgs)
+    internal void LookAtPowerStation(object? sender, ContainerObjectEventArgs eventArgs)
     {
         if (sender is Location gym && gym.Key == Keys.GYM && eventArgs.ExternalItemKey == Keys.GYM_POWERSTATION)
         {
@@ -720,7 +730,7 @@ internal class EventProvider
         }
     }
 
-    internal void UseToolWithAntennaInSocialRoom(object sender, UseItemEventArgs eventArgs)
+    internal void UseToolWithAntennaInSocialRoom(object? sender, UseItemEventArgs eventArgs)
     {
         if (eventArgs.ItemToUse == default)
         {
@@ -763,7 +773,7 @@ internal class EventProvider
                 tool.Use -= UseToolWithAntennaInSocialRoom;
                 antenna.Use -= UseToolWithAntennaInSocialRoom;
 
-                this.universe.Score += this.universe.ScoreBoard[nameof(UseToolWithAntennaInSocialRoom)];
+                this.scoreBoard.WinScore(nameof(UseToolWithAntennaInSocialRoom));
                 this.universe.SolveQuest(MetaData.QUEST_IV);
             }
             else
@@ -775,7 +785,7 @@ internal class EventProvider
 
     
 
-    internal void MountAntennaToDroid(object sender, ConnectEventArgs eventArgs)
+    internal void MountAntennaToDroid(object? sender, ConnectEventArgs eventArgs)
     {
         if (this.universe.ActiveLocation.Key == Keys.ROOF_TOP)
         {
@@ -795,7 +805,7 @@ internal class EventProvider
         }
     }
     
-    private void ConnectAntennaToDroid(object sender, ConnectEventArgs eventArgs)
+    private void ConnectAntennaToDroid(object? sender, ConnectEventArgs eventArgs)
     {
         if (sender is Item antenna && eventArgs.ItemToUse is Item droid && droid.Key == Keys.DROID)
         {
@@ -819,7 +829,7 @@ internal class EventProvider
 
             antenna.Connect -= MountAntennaToDroid;
 
-            this.universe.Score += this.universe.ScoreBoard[nameof(MountAntennaToDroid)];
+            this.scoreBoard.WinScore(nameof(MountAntennaToDroid));
             this.SolveRobotQuest();
             
             return;
@@ -845,7 +855,7 @@ internal class EventProvider
 
     private void SolveRobotQuest()
     {
-        var engineRoom = this.universe.GetLocationByKey(Keys.ENGINE_ROOM);
+        var engineRoom = this.objectHandler.GetLocationByKey(Keys.ENGINE_ROOM);
         if (engineRoom != default)
         {
             if (!this.universe.IsQuestSolved(MetaData.QUEST_VIII))
@@ -874,7 +884,7 @@ internal class EventProvider
             }
         }
 
-        var corridor = this.universe.GetLocationByKey(Keys.CORRIDOR_WEST);
+        var corridor = this.objectHandler.GetLocationByKey(Keys.CORRIDOR_WEST);
         if (corridor != default)
         {
             corridor.IsLocked = false;
@@ -888,7 +898,7 @@ internal class EventProvider
     
     private void SolveEnergyQuest()
     {
-        var engineRoom = this.universe.GetLocationByKey(Keys.ENGINE_ROOM);
+        var engineRoom = this.objectHandler.GetLocationByKey(Keys.ENGINE_ROOM);
 
         if (engineRoom != default)
         {
@@ -904,17 +914,17 @@ internal class EventProvider
             {
                 PrintingSubsystem.Resource(Descriptions.ROBOT_FIXING_WALL);
 
-                var roof = this.universe.GetLocationByKey(Keys.ROOF_TOP);
-                var droid = roof.Items.SingleOrDefault(x => x.Key == Keys.DROID);
-                if (droid != default)
+                if (this.objectHandler.GetLocationByKey(Keys.ROOF_TOP) is {} roof)
                 {
-                    roof.Items.Remove(droid);
-                }
-                
-                var item = engineRoom.GetItem(Keys.ENGINE_ROOM_RED_DOTS);
-                if (item != default)
-                {
-                    engineRoom.RemoveItem(item);    
+                    if (roof.Items.SingleOrDefault(x => x.Key == Keys.DROID) is {} droid)
+                    {
+                        roof.Items.Remove(droid);
+                    }
+
+                    if (engineRoom.GetItem(Keys.ENGINE_ROOM_RED_DOTS) is {} item)
+                    {
+                        engineRoom.RemoveItem(item);
+                    }
                 }
             }
             
@@ -938,7 +948,7 @@ internal class EventProvider
         }
     }
 
-    internal void SetPlayersName(object sender, ContainerObjectEventArgs eventArgs)
+    internal void SetPlayersName(object? sender, ContainerObjectEventArgs eventArgs)
     {
         if (sender is Player)
         {
@@ -948,7 +958,7 @@ internal class EventProvider
         }
     }
     
-    internal void ConnectOxygenBottleWithHelmet(object sender, ConnectEventArgs eventArgs)
+    internal void ConnectOxygenBottleWithHelmet(object? sender, ConnectEventArgs eventArgs)
     {
         if (sender is Item helmet && helmet.Key == Keys.HELMET && eventArgs.ItemToUse is Item oxygenBottle && oxygenBottle.Key == Keys.OXYGEN_BOTTLE)
         {
@@ -978,7 +988,7 @@ internal class EventProvider
 
             helmet.Connect -= ConnectOxygenBottleWithHelmet;
 
-            this.universe.Score += this.universe.ScoreBoard[nameof(ConnectOxygenBottleWithHelmet)];
+            this.scoreBoard.WinScore(nameof(ConnectOxygenBottleWithHelmet));
             this.universe.SolveQuest(MetaData.QUEST_V);
         }
         else
@@ -987,7 +997,7 @@ internal class EventProvider
         }
     }
 
-    internal void UseDumbbellBarWithLever(object sender, UseItemEventArgs eventArgs)
+    internal void UseDumbbellBarWithLever(object? sender, UseItemEventArgs eventArgs)
     {
         if (eventArgs.ItemToUse == default)
         {
@@ -1024,7 +1034,7 @@ internal class EventProvider
                     }
                 }
 
-                this.universe.Score += this.universe.ScoreBoard[nameof(UseDumbbellBarWithLever)];
+                this.scoreBoard.WinScore(nameof(UseDumbbellBarWithLever));
                 this.SolveEnergyQuest();
             }
             else
@@ -1034,7 +1044,7 @@ internal class EventProvider
         }
     }
 
-    internal void ConnectAirlockRopeWithBelt(object sender, ConnectEventArgs eventArgs)
+    internal void ConnectAirlockRopeWithBelt(object? sender, ConnectEventArgs eventArgs)
     {
         if (sender is Item rope && rope.Key == Keys.AIRLOCK_ROPE)
         {
@@ -1057,7 +1067,7 @@ internal class EventProvider
                 PrintingSubsystem.Resource(Descriptions.LINK_ROPE_TO_EYELET);
                 rope.Connect -= ConnectAirlockRopeWithBelt;
 
-                this.universe.Score += this.universe.ScoreBoard[nameof(ConnectAirlockRopeWithBelt)];
+                this.scoreBoard.WinScore(nameof(ConnectAirlockRopeWithBelt));
                 
                 return;
             }
@@ -1066,7 +1076,7 @@ internal class EventProvider
         throw new ConnectException(BaseDescriptions.DOES_NOT_WORK);
     }
 
-    internal void BreakEquipmentBoxLock(object sender, BreakItemEventArgs eventArgs)
+    internal void BreakEquipmentBoxLock(object? sender, BreakItemEventArgs eventArgs)
     {
         if (eventArgs.ItemToUse == default)
         {
@@ -1089,7 +1099,7 @@ internal class EventProvider
                 
                 this.universe.ActiveLocation.Items.Add(this.GetDestroyedBoxLock());
                 
-                this.universe.Score += this.universe.ScoreBoard[nameof(this.BreakEquipmentBoxLock)];
+                this.scoreBoard.WinScore(nameof(BreakEquipmentBoxLock));
                 boxLock.Break -= BreakEquipmentBoxLock;    
                 this.universe.SolveQuest(MetaData.QUEST_III);
             }
@@ -1111,7 +1121,7 @@ internal class EventProvider
         return boxLock;
     }
     
-    internal void BreakFlapWithDumbbellBar(object sender, BreakItemEventArgs eventArgs)
+    internal void BreakFlapWithDumbbellBar(object? sender, BreakItemEventArgs eventArgs)
     {
         if (eventArgs.ItemToUse == default)
         {
@@ -1130,7 +1140,7 @@ internal class EventProvider
         }
     }
     
-    internal void OpenEquipmentBox(object sender, ContainerObjectEventArgs eventArg)
+    internal void OpenEquipmentBox(object? sender, ContainerObjectEventArgs eventArg)
     {
         if (sender is Item box && box.Key == Keys.EQUIPMENT_BOX)
         {
@@ -1142,7 +1152,7 @@ internal class EventProvider
         }
     }
 
-    internal void OpenFridge(object sender, ContainerObjectEventArgs eventArgs)
+    internal void OpenFridge(object? sender, ContainerObjectEventArgs eventArgs)
     {
         if (sender is Item fridge && fridge.Key == Keys.FRIDGE)
         {
@@ -1159,7 +1169,7 @@ internal class EventProvider
         }
     }
     
-    internal void OpenFlap(object sender, ContainerObjectEventArgs eventArgs)
+    internal void OpenFlap(object? sender, ContainerObjectEventArgs eventArgs)
     {
         if (sender is Item flap && flap.Key == Keys.AMBULANCE_RESPIRATOR_FLAP)
         {
@@ -1175,25 +1185,25 @@ internal class EventProvider
         }
     }
     
-    internal void TakeDumbbellBar(object sender, ContainerObjectEventArgs eventArg)
+    internal void TakeDumbbellBar(object? sender, ContainerObjectEventArgs eventArg)
     {
         if (sender is Item bar && bar.Key == Keys.DUMBBELL_BAR)
         {
-            this.universe.Score += this.universe.ScoreBoard[nameof(this.TakeDumbbellBar)];
+            this.scoreBoard.WinScore(nameof(TakeDumbbellBar));
             bar.AfterTake -= TakeDumbbellBar;
         }
     }
     
-    internal void TakeTool(object sender, ContainerObjectEventArgs eventArg)
+    internal void TakeTool(object? sender, ContainerObjectEventArgs eventArg)
     {
         if (sender is Item tool && tool.Key == Keys.MAINTENANCE_ROOM_TOOL)
         {
-            this.universe.Score += this.universe.ScoreBoard[nameof(this.TakeTool)];
+            this.scoreBoard.WinScore(nameof(TakeTool));
             tool.AfterTake -= TakeTool;
         }
     }
     
-    internal void WriteTextToComputerTerminal(object sender, WriteEventArgs eventArgs)
+    internal void WriteTextToComputerTerminal(object? sender, WriteEventArgs eventArgs)
     {
         if (sender is Location terminal && terminal.Key == Keys.COMPUTER_TERMINAL)
         {
@@ -1203,13 +1213,13 @@ internal class EventProvider
                 {
                     PrintingSubsystem.Resource(Descriptions.TERMINAL_PASSWORD_SUCCESS);
                     PrintPasswordMessage(Descriptions.COMPUTER_TERMINAL_DISPLAY_REPORT);
-                    var room = this.GetRoom(Keys.MACHINE_CORRIDOR_MID);
-                    if (room != default)
+                    if (this.GetRoom(Keys.MACHINE_CORRIDOR_MID) is {} room)
                     {
                         room.IsLocked = false;
                     }
                     this.isAccessGranted = true;
-                    this.universe.Score += this.universe.ScoreBoard[nameof(this.WriteTextToComputerTerminal)];
+                    
+                    this.scoreBoard.WinScore(nameof(WriteTextToComputerTerminal));
                     this.universe.SolveQuest(MetaData.QUEST_II);
                 }
                 else if (eventArgs.Text.ToLower() == Descriptions.TERMINAL_PASSWORD_HINT.ToLower())
@@ -1230,7 +1240,7 @@ internal class EventProvider
         }
     }
 
-    internal void DropClothsWithOpenAirlock(object sender, ContainerObjectEventArgs eventArgs)
+    internal void DropClothsWithOpenAirlock(object? sender, ContainerObjectEventArgs eventArgs)
     {
         var listOfPossibleWearables = new List<string>()
         {
@@ -1246,7 +1256,7 @@ internal class EventProvider
         }
     }
     
-    internal void EnterAirlock(object sender, EnterLocationEventArgs eventArgs)
+    internal void EnterAirlock(object? sender, EnterLocationEventArgs eventArgs)
     {
         if (sender is Location airlock && airlock.Key == Keys.AIRLOCK)
         {
@@ -1256,7 +1266,7 @@ internal class EventProvider
         }
     }
 
-    internal void TryToPickupPortrait(object sender, ContainerObjectEventArgs eventArgs)
+    internal void TryToPickupPortrait(object? sender, ContainerObjectEventArgs eventArgs)
     {
         if (sender is Item portrait && portrait.Key == Keys.PORTRAIT)
         {
@@ -1264,10 +1274,10 @@ internal class EventProvider
         }
     }
     
-    internal void LeaveAirlock(object sender, LeaveLocationEventArgs eventArgs)
+    internal void LeaveAirlock(object? sender, LeaveLocationEventArgs eventArgs)
     {
         if (sender is Location airlock && airlock.Key == Keys.AIRLOCK 
-                                       && eventArgs.NewDestinationNode.Location.Key == Keys.MACHINE_CORRIDOR_MID 
+                                       && eventArgs.NewDestinationNode?.Location?.Key == Keys.MACHINE_CORRIDOR_MID 
                                        && !this.isAirlockOpen)
         {
             var isItemDropped = false;
@@ -1322,7 +1332,7 @@ internal class EventProvider
         }
     }
 
-    private Location GetRoom(string locationKey)
+    private Location? GetRoom(string locationKey)
     {
         var room = this.universe.LocationMap.Keys.FirstOrDefault(location => location.Key == locationKey);
         
