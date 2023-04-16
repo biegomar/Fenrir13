@@ -38,6 +38,11 @@ internal sealed class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
 
     public GamePrerequisitesAssembler()
     {
+        InitializeSystem();
+    }
+
+    private void InitializeSystem()
+    {
         this.resourceProvider = new ResourceProvider();
         this.printingSubsystem = new ConsolePrintingSubsystem();
 
@@ -49,7 +54,7 @@ internal sealed class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
         this.grammar = new GermanGrammar(resourceProvider, verbHandler);
         this.helpSubsystem = new BaseHelpSubsystem(grammar, printingSubsystem);
     }
-    
+
     public IPrintingSubsystem PrintingSubsystem
     {
         get => printingSubsystem;
@@ -150,6 +155,11 @@ internal sealed class GamePrerequisitesAssembler: IGamePrerequisitesAssembler
         this.universe.ActiveLocation = activeLocation;
         this.universe.ActivePlayer = activePlayer;
         this.universe.Quests = actualQuests;
+    }
+
+    public void Restart()
+    {
+        InitializeSystem();
     }
 
     private static ICollection<string> GetQuests()

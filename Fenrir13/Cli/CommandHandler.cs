@@ -27,21 +27,9 @@ internal class CommandHandler
 
     public void Main()
     {
-        IServiceCollection services = new ServiceCollection();
-        services.AddSingleton<IPrintingSubsystem, ConsolePrintingSubsystem>();
-        services.AddSingleton<IGamePrerequisitesAssembler, GamePrerequisitesAssembler>();
-        services.AddSingleton<IResourceProvider, ResourceProvider>();
-        services.AddSingleton<IVerbHandler, GermanVerbHandler>();
-        services.AddSingleton<IGrammar, GermanGrammar>();
-        services.AddSingleton<IHelpSubsystem, HelpSubsystem>();
-        services.AddSingleton<GameLoop>();
-        services.AddSingleton<InputProcessor>();
-        services.AddSingleton<ScoreBoard>();
-        services.AddSingleton<EventProvider>();
-        services.AddSingleton<Universe>();
-        var serviceProvider = services.BuildServiceProvider();
+        IGamePrerequisitesAssembler gamePrerequisitesAssembler = new GamePrerequisitesAssembler();
+        var gameLoop = new GameLoop(gamePrerequisitesAssembler);
 
-        var gameLoop = ActivatorUtilities.CreateInstance<GameLoop>(serviceProvider, ConsoleWidth);
         gameLoop.Run(FileName);
     }
 }
