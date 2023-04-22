@@ -28,7 +28,7 @@ internal class CommandHandler
     public void Main()
     {
         IGamePrerequisitesAssembler gamePrerequisitesAssembler = new GamePrerequisitesAssembler();
-        var gameLoop = new GameLoop(gamePrerequisitesAssembler);
+        var gameLoop = new GameLoop(gamePrerequisitesAssembler, ConsoleWidth);
 
         gameLoop.Run(FileName);
     }
