@@ -1,6 +1,6 @@
 ﻿<component name="ProjectRunConfigurationManager">
   <configuration default="false" name="Fenrir13_linux-arm" type="DotNetFolderPublish" factoryName="Publish to folder">
-    <riderPublish configuration="Release" delete_existing_files="true" platform="Any CPU" produce_single_file="true" runtime="linux-arm" self_contained="true" target_folder="$PROJECT_DIR$/Fenrir13/bin/Release/net7.0/publish/linux-arm" target_framework="net7.0" trim_unused_assemblies="true" uuid_high="4958722553135186760" uuid_low="-8789459951775639066" />
+    <riderPublish configuration="Release" delete_existing_files="true" platform="Any CPU" produce_single_file="true" runtime="linux-arm" self_contained="true" target_folder="$PROJECT_DIR$/Fenrir13/bin/Release/net6.0/publish/linux-arm" target_framework="net6.0" trim_unused_assemblies="true" uuid_high="4958722553135186760" uuid_low="-8789459951775639066" />
     <method v="2" />
   </configuration>
 </component>
