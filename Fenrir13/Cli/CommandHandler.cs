@@ -1,12 +1,5 @@
-using Fenrir13.Events;
 using Fenrir13.GamePlay;
-using Fenrir13.Help;
-using Fenrir13.Printing;
 using Heretic.InteractiveFiction.GamePlay;
-using Heretic.InteractiveFiction.Grammars;
-using Heretic.InteractiveFiction.Objects;
-using Heretic.InteractiveFiction.Subsystems;
-using Microsoft.Extensions.DependencyInjection;
 using PowerArgs;
 
 namespace Fenrir13.Cli;
