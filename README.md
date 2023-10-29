@@ -36,13 +36,3 @@ Auch hier gilt: gibt es Probleme, könnt Ihr mich gerne kontaktieren.
 Sobald der diesjährige Wettbewerb gestartet ist, werde ich das Spiel auch offiziell veröffentlichen. Die Quelltexte werden dann auch auf GitHub verfügbar sein.
 Als der Wettbewerb angekündigt wurde, befand sich gerade ein anderes Spiel von mir in der Entwicklung. Heretic. Das ist aber viel größer angelegt als die rund 90 Minuten Spielzeit des Wettbewerbs. Daher habe ich mich kurzfristig entschieden, Fenrir 13 ins Leben zu rufen. Um nicht alles erneut zu programmieren, habe ich mich weiterhin entschieden aus Heretic allgemeine Teile in ein eigenes Framework zu überführen und verfügbar zu machen. Auch dieses Framework (Heretic.InteractiveFiction) wird sehr zeitnah auf GitHub veröffentlicht und für Programmierer als NuGet-Paket verfügbar gemacht.
 Es ist durchaus denkbar, dass Fenrir 13 noch technische oder leichte inhaltliche Anpassungen erfährt, vor allem dann, wenn noch echte Fehler entdeckt werden. Aber zumindest die Möglichkeit, aus dem Spiel heraus Spielstände zu laden soll noch ins Framework integriert und dann auch in Fenrir 13 möglich gemacht werden. 
-
-# Kontakt
-Falls Fragen sind, könnt Ihr mich gerne kontaktieren: 
-* Email: interactive.fiction@online.ms
-* twitter: @biegomar
-* GitHub: github.com/biegomar
-
-
-Viele Grüße  
-Marc Biegota
