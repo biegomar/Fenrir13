@@ -386,3 +386,7 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# Qodana
+qodana.yaml
+.repograph
