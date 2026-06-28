@@ -1295,7 +1295,7 @@ internal class EventProvider
                     }
                 }
 
-                itemWeight = this.universe.ActivePlayer.GetActualPayload();;
+                itemWeight = this.universe.ActivePlayer.GetActualPayload();
             } while (itemWeight > this.universe.ActivePlayer.MaxPayload);
 
             if (isItemDropped)

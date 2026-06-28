@@ -21,8 +21,8 @@ internal static class CommandBridgePrerequisites
         
         AddAfterLookEvents(commandBridge, eventProvider);
         
-        commandBridge.Items.Add(GetPilotSeat(eventProvider));
-        commandBridge.Items.Add(GetStickyNote(eventProvider));
+        commandBridge.Items.Add(GetPilotSeat());
+        commandBridge.Items.Add(GetStickyNote());
 
         return commandBridge;
     }
@@ -135,7 +135,7 @@ internal static class CommandBridgePrerequisites
         eventProvider.RegisterScore(nameof(eventProvider.LookAtControlPanel), 1);
     }
 
-    private static Item GetPilotSeat(EventProvider eventProvider)
+    private static Item GetPilotSeat()
     {
         var pilotSeat = new Item()
         {
@@ -150,7 +150,7 @@ internal static class CommandBridgePrerequisites
         return pilotSeat;
     }
     
-    private static Item GetStickyNote(EventProvider eventProvider)
+    private static Item GetStickyNote()
     {
         var stickyNote = new Item()
         {

@@ -37,14 +37,14 @@ internal static class AmbulancePrerequisites
         };
         
         respirator.Items.Add(GetFlap(eventProvider));
-        respirator.Items.Add(GetOxygenBottle(eventProvider));
+        respirator.Items.Add(GetOxygenBottle());
         
         AddAfterLookEvents(respirator, eventProvider);
         
         return respirator;
     }
 
-    private static Item GetOxygenBottle(EventProvider eventProvider)
+    private static Item GetOxygenBottle()
     {
         var oxygenBottle = new Item
         {
