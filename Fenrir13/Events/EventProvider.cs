@@ -1,4 +1,3 @@
-using System.Text;
 using Fenrir13.GamePlay;
 using Fenrir13.Resources;
 using Heretic.InteractiveFiction.Exceptions;
@@ -8,7 +7,6 @@ using Heretic.InteractiveFiction.Grammars;
 using Heretic.InteractiveFiction.Objects;
 using Heretic.InteractiveFiction.Resources;
 using Heretic.InteractiveFiction.Subsystems;
-using PowerArgs;
 
 namespace Fenrir13.Events;
 

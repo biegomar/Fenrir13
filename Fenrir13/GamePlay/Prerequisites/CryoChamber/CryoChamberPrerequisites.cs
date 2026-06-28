@@ -1,10 +1,7 @@
-using System.Runtime.CompilerServices;
 using Fenrir13.Events;
 using Fenrir13.Resources;
-using Heretic.InteractiveFiction.GamePlay;
 using Heretic.InteractiveFiction.Grammars;
 using Heretic.InteractiveFiction.Objects;
-using Heretic.InteractiveFiction.Resources;
 
 namespace Fenrir13.GamePlay.Prerequisites.CryoChamber;
 
